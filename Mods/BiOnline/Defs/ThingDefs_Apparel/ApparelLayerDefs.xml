@@ -1,0 +1,26 @@
+<Defs>
+
+  <ApparelLayerDef>
+    <defName>Footwear</defName>
+    <label>footwear</label>
+    <drawOrder>230</drawOrder>
+  </ApparelLayerDef>
+
+  <ApparelLayerDef>
+    <defName>Handwear</defName>
+    <label>handwear</label>
+    <drawOrder>240</drawOrder>
+  </ApparelLayerDef>
+
+  <ApparelLayerDef>
+    <defName>OverheadExtra</defName>
+    <label>extras</label>
+    <drawOrder>500</drawOrder>
+	<modExtensions>
+		<li Class="CombatExtended.ApparelLayerExtension">
+			<IsHeadwear>true</IsHeadwear>
+		</li>
+	</modExtensions>	
+  </ApparelLayerDef>
+
+</Defs>

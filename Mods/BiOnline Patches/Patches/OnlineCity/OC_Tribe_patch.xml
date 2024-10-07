@@ -1,0 +1,129 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>OnlineCity</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!--Бафф характеристик -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ScenarioDef[defName="OC_LostTribe"]/scenario/parts</xpath>
+					<value>
+							<li Class="ScenPart_StatFactor">
+                                <def>StatFactor</def>
+                                <stat>Ability_DetectChancePerEntropy</stat>
+                                <factor>0.7</factor>
+                            </li>
+							<li Class="ScenPart_StartingThing_Defined">
+							  <def>StartingThing_Defined</def>
+							  <thingDef>Seed_Potato</thingDef>
+							  <count>100</count>
+							</li>
+							<li Class="ScenPart_StartingThing_Defined">
+							  <def>StartingThing_Defined</def>
+							  <thingDef>Seed_Tinctoria</thingDef>
+							  <count>15</count>
+							</li>
+                            <li Class="ScenPart_StatFactor">
+                                <def>StatFactor</def>
+                                <stat>FoodPoisonChanceFixedHuman</stat>
+                                <factor>0.5</factor>
+                            </li>
+                            <li Class="ScenPart_StatFactor">
+                                <def>StatFactor</def>
+                                <stat>CaravanRidingSpeedFactor</stat>
+                                <factor>2.5</factor>
+                            </li>
+                            <li Class="ScenPart_StatFactor">
+                                <def>StatFactor</def>
+                                <stat>ForagedNutritionPerDay</stat>
+                                <factor>2.5</factor>
+                            </li>
+                            <li Class="ScenPart_StartingResearch">
+                                <def>StartingResearch</def>
+                                <project>TribeBorn</project>
+                            </li>
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Healing_Elixir</thingDef>
+								<count>30</count>
+							</li>
+
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Grower_Elixir</thingDef>
+								<count>20</count>
+							</li>
+
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Pemmican</thingDef>
+								<count>600</count>
+							</li>
+
+							<li Class="ScenPart_StartingThing_Defined">
+							  <def>StartingThing_Defined</def>
+							  <thingDef>Ammo_Arrow_Stone</thingDef>
+							  <count>200</count>
+							</li>
+
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Pila</thingDef>
+								<count>20</count>
+							</li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Weapon_GrenadeStickBomb</thingDef>
+								<count>30</count>
+							</li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>TentA</thingDef>
+								<count>1</count>
+							</li>
+						
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>TentB</thingDef>
+								<count>2</count>
+							</li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>MeleeWeapon_Wood_BattleHammer</thingDef>
+								<count>1</count>
+							</li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>MeleeWeapon_FlameSpear</thingDef>
+								<count>1</count>
+							</li>	
+	
+								<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Wooden_Shield</thingDef>
+								<count>2</count>
+							</li>	
+							
+							<li Class="BiOnline.Scenarios.ScenPart_FactionReputationLimiter">
+								<def>FactionReputationLimiter</def>
+								<reputation>
+									<PMC>-100~80</PMC>
+								</reputation>
+							</li>	
+							
+					</value>
+				</li>
+				
+				
+			</operations>
+			
+		</match>
+
+	</Operation>
+</Patch>

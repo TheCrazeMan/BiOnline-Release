@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<Structure_Walls.label>Стены</Structure_Walls.label>
+<Structure_Walls.description>Стены</Structure_Walls.description>
+
+<Structure_Doors.label>Двери</Structure_Doors.label>
+<Structure_Doors.description>Двери</Structure_Doors.description>
+
+<Structure_DoubleDoors.label>Двойные двери</Structure_DoubleDoors.label>
+<Structure_DoubleDoors.description>Двойные двери</Structure_DoubleDoors.description>
+
+<Structure_Fence.label>Забор</Structure_Fence.label>
+<Structure_Fence.description>Забор</Structure_Fence.description>
+
+<Production_Cooking.label>Кулинария</Production_Cooking.label>
+<Production_Cooking.description>Кулинария</Production_Cooking.description>
+
+<Production_Medicine.label>Медицина</Production_Medicine.label>
+<Production_Medicine.description>Медицина</Production_Medicine.description>
+
+<Production_Sewing.label>Шитьё</Production_Sewing.label>
+<Production_Sewing.description>Шитьё</Production_Sewing.description>
+
+<Production_Workbench.label>Верстаки</Production_Workbench.label>
+<Production_Workbench.description>Верстаки</Production_Workbench.description>
+
+<Production_Farming.label>Фермерство</Production_Farming.label>
+<Production_Farming.description>Фермерство</Production_Farming.description>
+
+<Production_Chemistry.label>Химия</Production_Chemistry.label>
+<Production_Chemistry.description>Химия</Production_Chemistry.description>
+
+<Production_Processing.label>Обработка</Production_Processing.label>
+<Production_Processing.description>Обработка</Production_Processing.description>
+
+<Production_Smelters.label>Плавильни</Production_Smelters.label>
+<Production_Smelters.description>Плавильни</Production_Smelters.description>
+
+<Production_Forge.label>Кузницы</Production_Forge.label>
+<Production_Forge.description>Кузницы</Production_Forge.description>
+
+<Production_Mechanisms.label>Механизмы</Production_Mechanisms.label>
+<Production_Mechanisms.description>Механизмы</Production_Mechanisms.description>
+
+<Production_Mining.label>Добыча</Production_Mining.label>
+<Production_Mining.description>Добыча</Production_Mining.description>
+
+<Production_Misc.label>Разное</Production_Misc.label>
+<Production_Misc.description>Разное</Production_Misc.description>
+
+<Production_Art.label>Творчество</Production_Art.label>
+<Production_Art.description>Творчество</Production_Art.description>
+
+<Production_Research.label>Исследование</Production_Research.label>
+<Production_Research.description>Исследование</Production_Research.description>
+
+<!--Мебель-->
+
+<Furniture_SingleBed.label>Односпальные кровати</Furniture_SingleBed.label>
+<Furniture_SingleBed.description>Односпальные кровати</Furniture_SingleBed.description>
+
+<Furniture_DoubleBed.label>Двуспальные кровать</Furniture_DoubleBed.label>
+<Furniture_DoubleBed.description>Двуспальные кровать</Furniture_DoubleBed.description>
+
+<Furniture_Lighting.label>Освещение</Furniture_Lighting.label>
+<Furniture_Lighting.description>Освещение</Furniture_Lighting.description>
+
+<Furniture_Decorations.label>Декорации</Furniture_Decorations.label>
+<Furniture_Decorations.description>Декорации</Furniture_Decorations.description>
+
+<Furniture_Animal.label>Мебель для животных</Furniture_Animal.label>
+<Furniture_Animal.description>Мебель для животных</Furniture_Animal.description>
+
+<Furniture_Tables.label>Столы</Furniture_Tables.label>
+<Furniture_Tables.description>Столы</Furniture_Tables.description>
+
+<Furniture_Chairs.label>Места для сиденья</Furniture_Chairs.label>
+<Furniture_Chairs.description>Места для сиденья</Furniture_Chairs.description>
+
+<Furniture_Monuments.label>Монументы</Furniture_Monuments.label>
+<Furniture_Monuments.description>Монументы</Furniture_Monuments.description>
+
+<Furniture_Music.label>Музыка</Furniture_Music.label>
+<Furniture_Music.description>Музыка</Furniture_Music.description>
+
+<Furniture_Children.label>Для детей</Furniture_Children.label>
+<Furniture_Children.description>Мебель для детей</Furniture_Children.description>
+
+<Furniture.label>Мебель</Furniture.label>
+<Furniture.description>Мебель</Furniture.description>
+
+
+<DiggingSpots.label>Место копания</DiggingSpots.label>
+
+<Events.label>События</Events.label>
+
+
+
+
+
+
+</LanguageData>

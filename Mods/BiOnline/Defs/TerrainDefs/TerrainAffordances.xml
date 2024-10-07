@@ -1,0 +1,15 @@
+<Defs>
+
+  <TerrainAffordanceDef>
+    <defName>TerrainWater</defName>
+    <label>clay</label>
+    <order>3600</order>
+  </TerrainAffordanceDef>
+  
+  <TerrainAffordanceDef>
+    <defName>TerrainDirt</defName>
+    <label>Stony</label>
+    <order>3700</order>
+  </TerrainAffordanceDef>  
+  
+</Defs>

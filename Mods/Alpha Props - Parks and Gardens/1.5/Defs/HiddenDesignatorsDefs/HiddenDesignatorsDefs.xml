@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VFEProps.HiddenDesignatorsDef>
+		<defName>AProps_HiddenDesignators</defName>
+		<hiddenDesignators>			
+			
+			<li>AP_CheckeredLawn</li>
+			<li>AP_CircularLawn</li>
+			<li>AP_Pool</li>
+			<li>AP_Lawn</li>
+			<li>AP_PoolBorderTiles</li>
+			<li>AP_ZenSand</li>
+			<li>AP_Hedge</li>
+			<li>AP_Hedge_Flowery</li>
+			<li>AP_Hedge_FloweryTwo</li>
+			<li>AP_LowHedge</li>
+			<li>AP_Hedge_Ocular</li>
+			<li>VFEPD_AP_LamplightA_Functional</li>
+			<li>VFEPD_AP_LamplightB_Functional</li>
+			<li>VFEPD_AP_LamplightC_Functional</li>
+			<li>VFEPD_AP_LamplightD_Functional</li>
+			<li>VFEPD_AP_LamplightE_Functional</li>
+			<li>VFEPD_AP_LamplightL_Functional</li>
+			<li>VFEPD_AP_LamplightT_Functional</li>
+			<li>VFEPD_AP_ParkBench_Functional</li>
+			<li>VFEPD_AP_SimpleParkBench_Functional</li>
+			<li>VFEPD_AP_StoneBench_Functional</li>
+			
+		</hiddenDesignators>							
+	</VFEProps.HiddenDesignatorsDef>
+
+
+
+
+
+</Defs>

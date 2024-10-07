@@ -1,0 +1,19 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>OnlineCity</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ScenarioDef[defName="OC_Crashlanded" or defName="OC_Sanguophage"]</xpath>
+				</li>
+				
+			</operations>
+			
+		</match>
+
+	</Operation>
+</Patch>

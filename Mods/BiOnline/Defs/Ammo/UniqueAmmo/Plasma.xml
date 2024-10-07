@@ -1,0 +1,328 @@
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoPlasma</defName>
+		<label>Plasma cell</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>Things/Ammo/Plasma/PlasmaDefault/PlasmaDefault_c</iconPath>
+	</ThingCategoryDef>
+
+	<!-- AmmoSets -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_PlasmaCell_Shotgun</defName>
+		<label>plasma cells</label>
+		<ammoTypes>
+			<Ammo_PlasmaCell>Bullet_PlasmaSG</Ammo_PlasmaCell>
+			<Ammo_PlasmaCell_Overcharge>Bullet_PlasmaSG_Overcharge</Ammo_PlasmaCell_Overcharge>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_PlasmaCell_Sniper</defName>
+		<label>plasma cells</label>
+		<ammoTypes>
+			<Ammo_PlasmaCell>Bullet_PlasmaSniper</Ammo_PlasmaCell>
+			<Ammo_PlasmaCell_Overcharge>Bullet_PlasmaSniper_Overcharge</Ammo_PlasmaCell_Overcharge>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_PlasmaCell_Mini</defName>
+		<label>plasma cells</label>
+		<ammoTypes>
+			<Ammo_PlasmaCell>Bullet_PlasmaMini</Ammo_PlasmaCell>
+			<Ammo_PlasmaCell_Overcharge>Bullet_PlasmaMini_Overcharge</Ammo_PlasmaCell_Overcharge>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- Ammo items -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoPlasmaCannonBase">
+		<defName>Ammo_PlasmaCell</defName>
+		<label>plasma cell</label>
+		<graphicData>
+			<texPath>Things/Ammo/Plasma/PlasmaDefault</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<menuHidden>False</menuHidden>
+		<destroyOnDrop>False</destroyOnDrop>		
+		<statBases>
+			<MarketValue>3.54</MarketValue>
+		</statBases>	
+		<ammoClass>DefaultPlasma</ammoClass>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.5</explosiveRadius>
+				<explosiveDamageType>Plasma</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.033</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.33</startWickHitPointsPercent>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explodeOnKilled>True</explodeOnKilled>
+				<wickTicks>60~90</wickTicks>
+			</li>
+		</comps>
+		<tradeTags Inherit="False">
+			<li>CE_AmmoInjector</li>
+			<li>CE_Ammo</li>		
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>AmmoPlasma</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoPlasmaCannonBase">
+		<defName>Ammo_PlasmaCell_Overcharge</defName>
+		<label>overcharged plasma cell</label>
+		<graphicData>
+			<texPath>Things/Ammo/Plasma/PlasmaOvercharge</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<menuHidden>False</menuHidden>
+		<destroyOnDrop>False</destroyOnDrop>		
+		<statBases>
+			<MarketValue>8.54</MarketValue>
+		</statBases>
+		<generateAllowChance>0.5</generateAllowChance>
+		<ammoClass>OverchargedPlasma</ammoClass>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1</explosiveRadius>
+				<explosiveDamageType>PlasmaOvercharge</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.052</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.33</startWickHitPointsPercent>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explodeOnKilled>True</explodeOnKilled>
+				<wickTicks>60~90</wickTicks>
+			</li>
+		</comps>
+		<tradeTags Inherit="False">
+			<li>CE_AmmoInjector</li>
+			<li>CE_Ammo</li>		
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>AmmoPlasma</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- Projectile bases -->
+
+	<ThingDef Name="BasePlasmaProjectile" ParentName="BaseBulletCE" Abstract="True">
+		<graphicData>
+			<texPath>Things/Projectile/OverchargePlasma_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlowDistorted</shaderType>
+			<color>(99,238,33)</color>
+		  <shaderParameters>
+			<_DistortionTex>/Other/Ripples</_DistortionTex>
+			<_distortionIntensity>0.3</_distortionIntensity>
+			<_DistortionScale>0.4</_DistortionScale>
+			<_distortionScrollSpeed>(0.07, 0.07, 0.0)</_distortionScrollSpeed>
+		  </shaderParameters>	
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Plasma</damageDef>
+		</projectile>
+		<thingClass>CombatExtended.BulletCE</thingClass>
+	</ThingDef>
+
+	<ThingDef Name="OverchargePlasmaProjectile" ParentName="BaseBulletCE" Abstract="True">
+		<graphicData>
+			<texPath>Things/Projectile/OverchargePlasma_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlowDistorted</shaderType>
+			<color>(145,83,238)</color>
+		  <shaderParameters>
+			<_DistortionTex>/Other/Ripples</_DistortionTex>
+			<_distortionIntensity>0.3</_distortionIntensity>
+			<_DistortionScale>0.4</_DistortionScale>
+			<_distortionScrollSpeed>(0.07, 0.07, 0.0)</_distortionScrollSpeed>
+		  </shaderParameters>	
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>PlasmaOvercharge</damageDef>
+		</projectile>
+		<thingClass>CombatExtended.BulletCE</thingClass>
+	</ThingDef>
+
+	<!-- Projectiles themselves -->
+
+	<ThingDef ParentName="BasePlasmaProjectile">
+		<defName>Bullet_PlasmaSG</defName>
+		<label>plasma shotgun pellet</label>
+		<graphicData>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>15</speed>
+			<damageFalloff>false</damageFalloff>
+			<gravityFactor>0.6</gravityFactor>
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationSharp>50</armorPenetrationSharp>
+			<armorPenetrationBlunt>4</armorPenetrationBlunt>
+			<pelletCount>4</pelletCount>
+			<extraDamages>
+				<li>
+					<def>Plasma</def>
+					<amount>12</amount>
+					<armorPenetration>1.075</armorPenetration>
+					<chance>1</chance>
+				</li>
+			</extraDamages>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>7</damageAmountBase>
+				<explosiveDamageType>Plasma</explosiveDamageType>
+				<explosiveRadius>0.9</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OverchargePlasmaProjectile">
+		<defName>Bullet_PlasmaSG_Overcharge</defName>
+		<label>overcharged plasma shotgun pellet</label>
+		<graphicData>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>20</speed>
+			<damageFalloff>false</damageFalloff>
+			<gravityFactor>0.6</gravityFactor>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>80</armorPenetrationSharp>
+			<armorPenetrationBlunt>4</armorPenetrationBlunt>
+			<pelletCount>4</pelletCount>
+			<extraDamages>
+				<li>
+					<def>PlasmaOvercharge</def>
+					<amount>15</amount>
+					<armorPenetration>2</armorPenetration>
+					<chance>0.99</chance>
+				</li>
+			</extraDamages>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>14</damageAmountBase>
+				<explosiveDamageType>PlasmaOvercharge</explosiveDamageType>
+				<explosiveRadius>0.9</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Sniper -->
+
+	<ThingDef ParentName="BasePlasmaProjectile">
+		<defName>Bullet_PlasmaSniper</defName>
+		<label>plasma sniper shot</label>
+		<graphicData>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>30</speed>
+			<damageFalloff>false</damageFalloff>
+			<gravityFactor>0.6</gravityFactor>
+			<damageAmountBase>45</damageAmountBase>
+			<armorPenetrationSharp>50</armorPenetrationSharp>
+			<armorPenetrationBlunt>4</armorPenetrationBlunt>
+			<pelletCount>1</pelletCount>	
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>72</damageAmountBase>
+				<explosiveDamageType>Plasma</explosiveDamageType>
+				<explosiveRadius>1.4</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OverchargePlasmaProjectile">
+		<defName>Bullet_PlasmaSniper_Overcharge</defName>
+		<label>overcharged plasma sniper shot</label>
+		<graphicData>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>35</speed>
+			<damageFalloff>false</damageFalloff>
+			<gravityFactor>0.6</gravityFactor>
+			<damageAmountBase>36</damageAmountBase>
+			<armorPenetrationSharp>80</armorPenetrationSharp>
+			<armorPenetrationBlunt>4</armorPenetrationBlunt>
+			<pelletCount>1</pelletCount>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>98</damageAmountBase>
+				<explosiveDamageType>PlasmaOvercharge</explosiveDamageType>
+				<explosiveRadius>1.4</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Minigun -->
+
+	<ThingDef ParentName="BasePlasmaProjectile">
+		<defName>Bullet_PlasmaMini</defName>
+		<label>plasma minigun shot</label>
+		<graphicData>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>30</speed>
+			<damageFalloff>false</damageFalloff>
+			<gravityFactor>0.6</gravityFactor>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>50</armorPenetrationSharp>
+			<armorPenetrationBlunt>4</armorPenetrationBlunt>
+			<pelletCount>1</pelletCount>	
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>30</damageAmountBase>
+				<explosiveDamageType>Plasma</explosiveDamageType>
+				<explosiveRadius>0.9</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OverchargePlasmaProjectile">
+		<defName>Bullet_PlasmaMini_Overcharge</defName>
+		<label>overcharged plasma minigun shot</label>
+		<graphicData>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>35</speed>
+			<damageFalloff>false</damageFalloff>
+			<gravityFactor>0.6</gravityFactor>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationSharp>80</armorPenetrationSharp>
+			<armorPenetrationBlunt>4</armorPenetrationBlunt>
+			<pelletCount>1</pelletCount>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>30</damageAmountBase>
+				<explosiveDamageType>PlasmaOvercharge</explosiveDamageType>
+				<explosiveRadius>0.9</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

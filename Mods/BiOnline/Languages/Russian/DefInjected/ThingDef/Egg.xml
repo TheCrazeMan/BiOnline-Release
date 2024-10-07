@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+
+	<EggAlligatorFertilized.label>яйцо аллигатора (оплодотворенное)</EggAlligatorFertilized.label>
+	<EggAlligatorFertilized.description>Оплодотворенное яйцо аллигатора. Если все пройдет удачно, из него вылупится аллигатор. Его можно есть сырым, но намного лучше приготовить его.</EggAlligatorFertilized.description>
+
+	<EggCrocodileUnfertilized.label>яйцо крокодила (неоплодотворенное)</EggCrocodileUnfertilized.label>
+	<EggCrocodileUnfertilized.description>Неоплодотворенное яйцо крокодила. Его можно есть сырым, но гораздо лучше приготовить его.</EggCrocodileUnfertilized.description>
+
+	<EggCrocodileFertilized.label>яйцо крокодила (оплодотворенное)</EggCrocodileFertilized.label>
+	<EggCrocodileFertilized.description>Оплодотворенное яйцо крокодила. Если все пройдет удачно, из него вылупится крокодил. Его можно есть сырым, но намного лучше приготовить его.</EggCrocodileFertilized.description>
+
+	<EggDesertTortoiseUnfertilized.label>яйцо пустынной черепахи (неоплодотворенное)</EggDesertTortoiseUnfertilized.label>
+	<EggDesertTortoiseUnfertilized.description>Неоплодотворенное яйцо пустынной черепахи. Его можно есть сырым, но гораздо лучше приготовить его.</EggDesertTortoiseUnfertilized.description>
+
+	<EggDesertTortoiseFertilized.label>яйцо пустынной черепахи (оплодотворенное)</EggDesertTortoiseFertilized.label>
+	<EggDesertTortoiseFertilized.description>Оплодотворенное яйцо пустынной черепахи. Если все пройдет удачно, из него вылупится пустынная черепаха. Его можно есть сырым, но намного лучше приготовить его.</EggDesertTortoiseFertilized.description>
+
+
+</LanguageData>

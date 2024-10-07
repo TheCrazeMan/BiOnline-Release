@@ -1,0 +1,27 @@
+<LanguageData>
+
+	<MeleeWeapon_PMCPlasmaSword.label>Меч Врангр</MeleeWeapon_PMCPlasmaSword.label>
+	<MeleeWeapon_PMCPlasmaSword.description>Мечи серии Врангр - лучшее, чего смог добиться Катарсис самостоятельно. Да, они определённо уступают имперским образцам, однако все его недостатки совершенно незаметны в руках опытного бойца.</MeleeWeapon_PMCPlasmaSword.description>
+	<MeleeWeapon_PMCPlasmaSword.tools.0.label>рукоять</MeleeWeapon_PMCPlasmaSword.tools.0.label>
+	<MeleeWeapon_PMCPlasmaSword.tools.1.label>лезвие</MeleeWeapon_PMCPlasmaSword.tools.1.label>
+	<MeleeWeapon_PMCPlasmaSword.tools.2.label>остриё</MeleeWeapon_PMCPlasmaSword.tools.2.label>
+	
+	<MeleeWeapon_PMCPlasmaGlaive.label>Глефа Арам</MeleeWeapon_PMCPlasmaGlaive.label>
+	<MeleeWeapon_PMCPlasmaGlaive.description>Несмотря на её грозный вид, этой глефой куда лучше защищаться, чем нападать. Арам - заказное оружие, покупаемое Катарсисом для его лучших бойцов.</MeleeWeapon_PMCPlasmaGlaive.description>
+	<MeleeWeapon_PMCPlasmaGlaive.tools.0.label>древко</MeleeWeapon_PMCPlasmaGlaive.tools.0.label>
+	<MeleeWeapon_PMCPlasmaGlaive.tools.1.label>лезвие</MeleeWeapon_PMCPlasmaGlaive.tools.1.label>
+	<MeleeWeapon_PMCPlasmaGlaive.tools.2.label>остриё</MeleeWeapon_PMCPlasmaGlaive.tools.2.label>
+	
+	<MeleeWeapon_PMCPlasmaHammer.label>Молот Шарур</MeleeWeapon_PMCPlasmaHammer.label>
+	<MeleeWeapon_PMCPlasmaHammer.description>Плазменный молот, определённо можно назвать концептуальным оружием. Тем не менее, в рядах пехотинцев Катарсиса Шарур отлично прижился, поэтому с производства его не сняли.</MeleeWeapon_PMCPlasmaHammer.description>
+	<MeleeWeapon_PMCPlasmaHammer.tools.0.label>рукоять</MeleeWeapon_PMCPlasmaHammer.tools.0.label>
+	<MeleeWeapon_PMCPlasmaHammer.tools.1.label>боевая часть</MeleeWeapon_PMCPlasmaHammer.tools.1.label>
+	<MeleeWeapon_PMCPlasmaHammer.tools.2.label>шип</MeleeWeapon_PMCPlasmaHammer.tools.2.label>
+	
+	<MeleeWeapon_PMCPlasmaDagger.label>Кинжал Ченту</MeleeWeapon_PMCPlasmaDagger.label>
+	<MeleeWeapon_PMCPlasmaDagger.description>Небольшой плазменный клинок - оружие последнего шанса. Как бы то ни было, не думайте, что вы заведомо выиграли в схватке, если ваш оппонент внезапно выхватил этот кинжал, это может стоить вам жизни.</MeleeWeapon_PMCPlasmaDagger.description>
+	<MeleeWeapon_PMCPlasmaDagger.tools.0.label>рукоять</MeleeWeapon_PMCPlasmaDagger.tools.0.label>
+	<MeleeWeapon_PMCPlasmaDagger.tools.1.label>лезвие</MeleeWeapon_PMCPlasmaDagger.tools.1.label>
+	<MeleeWeapon_PMCPlasmaDagger.tools.2.label>остриё</MeleeWeapon_PMCPlasmaDagger.tools.2.label>
+	
+</LanguageData>

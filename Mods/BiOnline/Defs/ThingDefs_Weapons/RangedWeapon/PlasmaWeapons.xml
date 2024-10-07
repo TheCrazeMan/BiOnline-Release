@@ -1,0 +1,494 @@
+<Defs>
+
+	<!-- Guns -->
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_PlasmaShotgun</defName>
+    <label>Plasma shotgun</label>
+    <description>Charged-shot bullpup sub-machine gun highly effective in close-quarters combat.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/PlasmaShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>1</SightsEfficiency>
+	  <MarketValue>3215</MarketValue>
+      <ShotSpread>0.35</ShotSpread>
+      <SwayFactor>1.15</SwayFactor>
+      <Bulk>9.00</Bulk>
+      <Mass>4.50</Mass>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.69</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PlasmaRifle</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>0.8</warmupTime>
+        <range>22</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>8</magazineSize>
+        <reloadTime>4.5</reloadTime>
+        <ammoSet>AmmoSet_PlasmaCell_Shotgun</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>SuppressFire</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.0,1.0</DrawSize>
+        <DrawOffset>0.0,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+    <weaponTags>
+	  <li>CE_AI_BROOM</li>
+	  <li>PMC_ShortShots</li>
+	  <li>PlasmaWeapon</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>	
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_PlasmaSniper</defName>
+    <label>Plasma sniper rifle</label>
+    <description>Charged-shot bullpup sub-machine gun highly effective in close-quarters combat.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/PlasmaSniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>1.5</SightsEfficiency>
+	  <MarketValue>3215</MarketValue>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>0.45</SwayFactor>
+      <Bulk>9.00</Bulk>
+      <Mass>4.50</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.69</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PlasmaRifle</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>4.5</warmupTime>
+        <range>81</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+		<recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>4</magazineSize>
+        <reloadTime>7.5</reloadTime>
+        <ammoSet>AmmoSet_PlasmaCell_Sniper</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.2,1.2</DrawSize>
+        <DrawOffset>0.0,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+    <weaponTags>
+	  <li>PMC_Sniper</li>
+	  <li>PlasmaWeapon</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_PlasmaDMR</defName>
+    <label>Plasma DMR</label>
+    <description>Charged-shot bullpup sub-machine gun highly effective in close-quarters combat.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/PlasmaDMR</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>1.35</SightsEfficiency>
+	  <MarketValue>3215</MarketValue>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.35</SwayFactor>
+      <Bulk>9.00</Bulk>
+      <Mass>4.50</Mass>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.69</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PlasmaRifle</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>1.5</warmupTime>
+        <range>61</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>3.5</reloadTime>
+        <ammoSet>AmmoSet_PlasmaCell_Sniper</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.0,1.0</DrawSize>
+        <DrawOffset>0.0,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+    <weaponTags>
+	  <li>PMC_Sniper</li>
+	  <li>PlasmaWeapon</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_PlasmaMinigun</defName>
+    <label>Plasma minigun</label>
+    <description>Charged-shot bullpup sub-machine gun highly effective in close-quarters combat.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/PlasmaMini</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>1.1</SightsEfficiency>
+	  <MarketValue>5215</MarketValue>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.95</SwayFactor>
+      <Bulk>12.00</Bulk>
+      <Mass>24.50</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.2</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PlasmaRifle</defaultProjectile>
+        <burstShotCount>50</burstShotCount>
+		<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <warmupTime>2.5</warmupTime>
+        <range>69</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>		
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>300</magazineSize>
+        <reloadTime>12.5</reloadTime>
+        <ammoSet>AmmoSet_PlasmaCell_Mini</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>25</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.00,1.00</DrawSize>
+			<DrawOffset>0.1,-0.15</DrawOffset>
+		</li>
+    </modExtensions>
+    <weaponTags>
+	  <li>PMC_Heavy</li>
+	  <li>PlasmaWeapon</li>
+	  <li>CE_AI_Suppressive</li>
+    </weaponTags>
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_PlasmaHMG</defName>
+    <label>Plasma heavy machine gun</label>
+    <description>Charged-shot bullpup sub-machine gun highly effective in close-quarters combat.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/PlasmaHMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>	  
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>1.1</SightsEfficiency>
+	  <MarketValue>5215</MarketValue>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.1</SwayFactor>
+      <Bulk>12.00</Bulk>
+      <Mass>24.50</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.2</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PlasmaRifle</defaultProjectile>
+        <burstShotCount>10</burstShotCount>
+		<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <warmupTime>2.5</warmupTime>
+        <range>69</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>		
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>50</magazineSize>
+        <reloadTime>12.5</reloadTime>
+        <ammoSet>AmmoSet_PlasmaCell_Sniper</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.00,1.00</DrawSize>
+			<DrawOffset>0.2,-0.45</DrawOffset>
+		</li>
+    </modExtensions>
+    <weaponTags>
+	  <li>PMC_Heavy</li>
+	  <li>PlasmaWeapon</li>
+	  <li>CE_AI_Suppressive</li>
+    </weaponTags>
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<AmmoSet_BlunderbussShot.label>Blunderbuss shot</AmmoSet_BlunderbussShot.label>
+	
+	<AmmoSet_MakeshiftGauge.label>Makeshift gauge</AmmoSet_MakeshiftGauge.label>
+	
+	<AmmoSet_MakeshiftMagnum.label>Makeshift magnum</AmmoSet_MakeshiftMagnum.label>
+	
+	<AmmoSet_MakeshiftSoviet.label>Makeshift soviet</AmmoSet_MakeshiftSoviet.label>
+	
+	<AmmoSet_MakeshiftKarov.label>Makeshift karov</AmmoSet_MakeshiftKarov.label>
+	
+	<AmmoSet_MakeshiftSniper.label>Makeshift sniper</AmmoSet_MakeshiftSniper.label>
+
+	<AmmoSet_BallistaBolt.label>Ballista bolts</AmmoSet_BallistaBolt.label>
+	
+	<AmmoSet_BeeSwarmBallistaBolt.label>Ballista bolts</AmmoSet_BeeSwarmBallistaBolt.label>
+	
+	<AmmoSet_TrebuchetBalls.label>Trebuchet balls</AmmoSet_TrebuchetBalls.label>
+</LanguageData>

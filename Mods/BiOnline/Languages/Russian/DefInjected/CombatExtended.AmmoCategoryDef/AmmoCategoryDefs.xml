@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<LanguageData>
+
+	<BallistaBolt.label>Болт баллисты</BallistaBolt.label>
+	<BallistaBolt.description>Снаряд баллисты.</BallistaBolt.description>
+	
+	<BallistaBoltExplosive.label>Взрывной болт баллисты</BallistaBoltExplosive.label>
+	<BallistaBoltExplosive.description>Тяжелый взрывной снаряд баллисты.</BallistaBoltExplosive.description>
+	
+	<BallistaBoltExpansive.label>Бронебойный болт баллисты</BallistaBoltExpansive.label>
+	<BallistaBoltExpansive.description>Тяжелый снаряд баллисты.</BallistaBoltExpansive.description>
+
+	<Flechette.label>Флешетты</Flechette.label>
+	<Flechette.labelShort>Флешетты</Flechette.labelShort>
+	<Flechette.description>Патрон, начинённый острыми дротиками или дробинками. Создан для того, чтобы и пробивать броню, и наносить урон.</Flechette.description>
+
+	<SlugAP.label>Бронебойная пуля</SlugAP.label>
+	<SlugAP.labelShort>БП</SlugAP.labelShort>
+	<SlugAP.description>Патрон для дробовика с бронебойной пулей.</SlugAP.description>
+
+	<DefaultPlasma.label>Плазма</DefaultPlasma.label>
+	<DefaultPlasma.labelShort>Плазма</DefaultPlasma.labelShort>
+	<DefaultPlasma.description>Ячейка с концентрированной плазмой.</DefaultPlasma.description>
+
+	<OverchargedPlasma.label>Перегруженная плазма</OverchargedPlasma.label>
+	<OverchargedPlasma.labelShort>ПП</OverchargedPlasma.labelShort>
+	<OverchargedPlasma.description>Ячейка с перегруженной плазмой.</OverchargedPlasma.description>
+
+	<HEBolts.label>Взрывные болты</HEBolts.label>
+	<HEBolts.labelShort>Болты</HEBolts.labelShort>
+	<HEBolts.description>Взрывные болты, используемые только боссами ЧВК.</HEBolts.description>
+	
+</LanguageData>

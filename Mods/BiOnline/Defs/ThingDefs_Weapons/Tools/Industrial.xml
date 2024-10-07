@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="MeleeWeaponMotor" ParentName="BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<recipeMaker>
+		  <researchPrerequisite>Machining</researchPrerequisite>	
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="MeleeWeaponMotor">
+		<defName>BiO_IndustrialChainsaw</defName>
+		<label>chainsaw</label>
+		<description>A powered saw equipped with a set of teeth attached to a rotating chain. Originally designed for cutting down trees but like many tools on the rim it can be a devistating weapon when used against fleshy opponents.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Industrial/IndustrialChainsaw</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>4.5</Mass>
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		<costList>
+		  <Copper>30</Copper>
+		  <Steel>100</Steel>
+		  <Polymers>80</Polymers>
+		  <ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<equippedStatOffsets>
+		  <PlantWorkSpeed>0.80</PlantWorkSpeed>
+		  <MoveSpeed>-0.35</MoveSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>bit</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>0.6</armorPenetrationBlunt>
+			</li>		
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>1</cooldownTime>
+				<armorPenetrationBlunt>6.4</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.22</armorPenetrationSharp>
+			</li>	
+			
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>
+  
+
+	<ThingDef ParentName="MeleeWeaponMotor">
+		<defName>PowerTool_IndustrialJackHammer</defName>
+		<label>jackhammer</label>
+		<description>A powered screwdriver for assembling devices. Improves work speed on industrial assembly lines.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Industrial/IndustrialJackHammer</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>6.5</Mass>
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<costList>
+		  <Copper>35</Copper>
+		  <Steel>120</Steel>
+		  <Polymers>80</Polymers>
+		  <ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<equippedStatOffsets>
+			<MiningSpeed>0.80</MiningSpeed>
+			<MoveSpeed>-0.30</MoveSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>0.32</cooldownTime>
+				<armorPenetrationBlunt>12.4</armorPenetrationBlunt>
+				<armorPenetrationSharp>7.22</armorPenetrationSharp>
+			</li>
+
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>
+  
+  
+	<ThingDef ParentName="MeleeWeaponMotor">
+		<defName>PowerTool_IndustrialDrill</defName>
+		<label>drill</label>
+		<description>A powered screwdriver for assembling devices. Improves work speed on industrial assembly lines.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Industrial/IndustrialDrill</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>1.8</Mass>
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<costList>
+		  <Copper>25</Copper>
+		  <Steel>75</Steel>
+		  <Polymers>50</Polymers>
+		  <ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.80</ConstructionSpeed>
+			<GeneralLaborSpeed>0.20</GeneralLaborSpeed>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<tools>
+
+			<li Class="CombatExtended.ToolCE">
+				<label>bit</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+			</li>	
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>0.23</cooldownTime>
+				<armorPenetrationBlunt>6.4</armorPenetrationBlunt>
+				<armorPenetrationSharp>2.22</armorPenetrationSharp>
+			</li>
+
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>
+  
+  
+</Defs>

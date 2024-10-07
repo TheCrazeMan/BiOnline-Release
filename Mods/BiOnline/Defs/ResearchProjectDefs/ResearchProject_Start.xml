@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--Имперское начало-->
+	<ResearchProjectDef>
+        <defName>Imperialbeginning</defName>
+<!-- 		<tab>StartResearch</tab> -->
+        <label>Imperial Beginning</label>
+        <description>This technology is available only to a Imperial Beginning</description>
+        <baseCost>500000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+		<techprintCount>100</techprintCount>
+		<techprintMarketValue>1000</techprintMarketValue>
+		<techprintCommonality>0</techprintCommonality>
+		<heldByFactionCategoryTags>							
+		<li>Empire</li>
+		</heldByFactionCategoryTags>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+	<!--Непрекрытый-->
+	<ResearchProjectDef>
+        <defName>NakedBrutality</defName>
+<!-- 		<tab>StartResearch</tab> -->
+        <label>Naked Brutality</label>
+        <description>This technology is available only to a Naked Brutality</description>
+        <baseCost>500000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+		<techprintCount>100</techprintCount>
+		<techprintMarketValue>1000</techprintMarketValue>
+		<techprintCommonality>0</techprintCommonality>
+		<heldByFactionCategoryTags>							
+		<li>Empire</li>
+		</heldByFactionCategoryTags>		
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,184,184,150)</defaultColor>
+			</li>
+		</modExtensions>			
+    </ResearchProjectDef>
+	<!--Богатый иследователь-->
+    <ResearchProjectDef>
+        <defName>RichExplorer</defName>
+<!-- 		<tab>StartResearch</tab> -->
+        <label>RichExplorer</label>
+        <description>This technology is available only to a RichExplorer</description>
+        <baseCost>500000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+		<techprintCount>100</techprintCount>
+		<techprintMarketValue>1000</techprintMarketValue>
+		<techprintCommonality>0</techprintCommonality>
+		<heldByFactionCategoryTags>							
+		<li>Empire</li>
+		</heldByFactionCategoryTags>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(184,255,255,150)</defaultColor>
+			</li>
+		</modExtensions>			
+    </ResearchProjectDef>
+	<!--Племя-->
+	<ResearchProjectDef>
+        <defName>TribeBorn</defName>
+<!-- 		<tab>StartResearch</tab> -->
+        <label>Born in a tribe</label>
+        <description>The technology is available only to aborigines</description>
+        <baseCost>500000</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <tags>
+            <li>TribalStart</li>
+        </tags>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+		<techprintCount>100</techprintCount>
+        <techprintMarketValue>1000</techprintMarketValue>
+		<techprintCommonality>0</techprintCommonality>
+		<heldByFactionCategoryTags>							
+		<li>Empire</li>
+		</heldByFactionCategoryTags>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(220,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>			
+    </ResearchProjectDef>
+
+</Defs>

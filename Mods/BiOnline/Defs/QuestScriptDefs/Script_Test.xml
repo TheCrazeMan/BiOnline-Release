@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<QuestScriptDef>
+		<defName>StoryQuest_1_OutlanderCivil</defName>
+		<label>First story quest</label>
+		<description>My first story quest</description>
+		<rootSelectionWeight>2.2</rootSelectionWeight>
+		<rootMinPoints>0</rootMinPoints>
+		<autoAccept>true</autoAccept>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->[verb] [place]</li>
+				<li>verb->Unique</li>
+				<li>verb->Interesting</li>
+				<li>verb->Fortunate</li>
+				<li>verb->Uncommon</li>
+				<li>place->Shack</li>
+				<li>place->Place</li>
+				<li>place->Site</li>
+				<li>place->Goodies</li>
+				<li>place->Supplies</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription(askerIsNull==true)->We've intercepted messages about some interesting place with valuable items not far from [map_definite].</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_GetMap"/>
+				<li Class="QuestNode_IsSet">
+					<name>asker</name>
+					<elseNode Class="QuestNode_RandomNode">
+						<nodes>
+							<li Class="QuestNode_Set">
+								<name>askerIsNull</name>
+								<value>true</value>
+								<selectionWeight>1</selectionWeight>
+							</li>
+						</nodes>
+					</elseNode>
+				</li>
+				<li Class="QuestNode_GetSiteTile">
+					<storeAs>siteTile</storeAs>
+					<preferCloserTiles>true</preferCloserTiles>
+				</li>
+				<li Class="QuestNode_GetFaction">
+					<storeAs>siteFaction</storeAs>
+					<allowEnemy>true</allowEnemy>
+				</li>
+				<li Class="BiOnline.Quests.QuestNode_RandomPlace">
+					<storeAs>site</storeAs>
+					<faction>$siteFaction</faction>
+					<tile>$siteTile</tile>
+					<worldObjectDef>StoryRandomPlace</worldObjectDef>
+					<mapBlueprintTags>
+						<li>Farmland</li>
+					</mapBlueprintTags>
+				</li>
+				<li Class="QuestNode_SpawnWorldObjects">
+					<worldObjects>$site</worldObjects>
+				</li>
+				
+				<!-- помечаем квест сюжетным, не забываем про inSignal о завершении квеста -->
+				<li Class="BiOnline.Quests.QuestNode_StoryQuest">
+					<inSignal>questComplete</inSignal>
+					<faction>$siteFaction</faction>
+				</li>
+				
+				<li Class="QuestNode_NoWorldObject">
+					<worldObject>$site</worldObject>
+					<outSignalComplete>questComplete</outSignalComplete>
+					<node Class="QuestNode_End"/>
+				</li>
+			</nodes>
+		</root>
+		
+		<!-- екстеншин -->
+		<modExtensions>
+			<li Class="BiOnline.Quests.QuestScriptDefDefModExtension">
+				<!-- использовать ли квест в генерации "Случайное место". Для сюжетных квестов УБРАТЬ -->
+				<unknownPlaceGenerationSettings>
+					<unknownPlaceGenerationFactionWhitelist>
+						<li>OutlanderCivil</li>
+					</unknownPlaceGenerationFactionWhitelist>
+				</unknownPlaceGenerationSettings>
+			</li>
+		</modExtensions>
+	</QuestScriptDef>
+	
+</Defs>

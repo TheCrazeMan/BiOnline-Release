@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BackstoryDef[defName="Slaughterer58" or defName="ExoticChef96"]/possessions</xpath>
+			<value>
+
+				<possessions>
+					<Meat_Bison>10</Meat_Bison>
+				</possessions>
+
+			</value>
+	</Operation>
+	
+
+</Patch>

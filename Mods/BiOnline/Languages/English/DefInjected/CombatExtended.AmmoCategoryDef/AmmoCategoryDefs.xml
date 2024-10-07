@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<LanguageData>
+
+	<BallistaBolt.label>Ballista bolt</BallistaBolt.label>
+	<BallistaBolt.description>Ballista bolt</BallistaBolt.description>
+	
+	<BallistaBoltExplosive.label>Explosive ballista bolt</BallistaBoltExplosive.label>
+	<BallistaBoltExplosive.description>Heavy explosive ballista bolt.</BallistaBoltExplosive.description>
+	
+	<BallistaBoltExpansive.label>Armorpiercing ballista bolt.</BallistaBoltExpansive.label>
+	<BallistaBoltExpansive.description>Heavy iron ballista bolt.</BallistaBoltExpansive.description>
+	
+</LanguageData>

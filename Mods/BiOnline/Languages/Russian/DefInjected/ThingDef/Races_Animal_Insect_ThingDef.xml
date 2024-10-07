@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Races/Races_Animal_Insect.xml-->
+<Ammo_EquiteOnly.label>Токсичная игла Эквита</Ammo_EquiteOnly.label>
+<Bullet_EquiteToxicNeedle.label>Ядовитая игла Эквита</Bullet_EquiteToxicNeedle.label>
+<EquiteGun.label>Хвост Эквита</EquiteGun.label>
+<EquiteGun.tools.0.label>хвост</EquiteGun.tools.0.label>
+<Bomber.label>Бомбардир</Bomber.label>
+<Bomber.description>Проворный маленький жук, имеющий несколько отличительных признаков от мегаскарабея. Крылья за спиной и мешочек с токсинами делают его угрозой, хотя и небольшой. Особенно опасны они в больших количествах.</Bomber.description>
+<Bomber.tools.0.label>мандибула</Bomber.tools.0.label>
+<Bomber.tools.1.label>голова</Bomber.tools.1.label>
+<Equite.label>Эквит</Equite.label>
+<Equite.description>По своим характеристикам Equite уже более похож на спелопеда, но имеет отличительную особенность стрелять сгустками токсинов, а также более высокую скорость передвижения, чем его собрат по размеру. Броня этого жука ничем не отличается, разве что хуже из-за мешка с токсинами на спине.</Equite.description>
+<Equite.tools.0.label>мандибула</Equite.tools.0.label>
+<Equite.tools.1.label>голова</Equite.tools.1.label>
+<Ritter.label>Риттер</Ritter.label>
+<Ritter.description>Массивный жук с еще более массивными передними конечностями. Хотя он не может похвастаться быстрым передвижением, его лобовая броня способна выдержать несколько попаданий из крупнокалиберного оружия, а мощная атака ближнего боя может надолго оглушить противника. Разумеется, лучше не подпускать его слишком близко к себе.</Ritter.description>
+<Ritter.tools.0.label>Головной коготь</Ritter.tools.0.label>
+<Ritter.tools.1.label>рог</Ritter.tools.1.label>
+
+</LanguageData>

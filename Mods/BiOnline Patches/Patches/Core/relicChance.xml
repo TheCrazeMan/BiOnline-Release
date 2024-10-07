@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="MeleeWeapon_PlasmaSwordBladelink" or
+			defName="MeleeWeapon_PlasmaSword" or
+			defName="MeleeWeapon_ZeusHammerBladelink" or
+			defName="MeleeWeapon_Zeushammer" or
+			defName="MeleeWeapon_MonoSwordBladelink" or
+			defName="MeleeWeapon_MonoSword"]/relicChance
+		</xpath>
+		<value>
+			<relicChance>0</relicChance>
+		</value>
+	</Operation>
+
+	
+</Patch>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/RecipeDef/Recipes_Grindstone.xml-->
+<WheatFlour_x25.label>Молоть муку из пшеницы х25</WheatFlour_x25.label>
+<WheatFlour_x25.description>Создать пшеничную муку</WheatFlour_x25.description>
+<WheatFlour_x25.jobString>Молет пшеницу</WheatFlour_x25.jobString>
+
+<WheatFlour_x100.label>Молоть муку из пшеницы х100</WheatFlour_x100.label>
+<WheatFlour_x100.description>Создать пшеничную муку</WheatFlour_x100.description>
+<WheatFlour_x100.jobString>Молет пшеницу</WheatFlour_x100.jobString>
+
+<Flour_x25.label>Молоть муку x25</Flour_x25.label>
+<Flour_x25.description>Создать муку из различных зерновых</Flour_x25.description>.
+<Flour_x25.jobString>Молет зерновые</Flour_x25.jobString>
+
+<Flour_x100.label>Молоть муку х100</Flour_x100.label>
+<Flour_x100.description>Создать муку из различных зерновых</Flour_x100.description>.
+<Flour_x100.jobString>Молет зерновые</Flour_x100.jobString>
+
+<Sugar_x25.label>Молоть сахар х25</Sugar_x25.label>
+<Sugar_x25.description>Молоть сахарную свёклу на сахар</Sugar_x25.description>.
+<Sugar_x25.jobString>Молет свеклу</Sugar_x25.jobString>
+
+<Sugar_x100.label>Молоть сахара х100</Sugar_x100.label>
+<Sugar_x100.description>Молоть сахарную свёклу на сахар</Sugar_x100.description>
+<Sugar_x100.jobString>Молет свеклу</Sugar_x100.jobString>
+
+</LanguageData>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[
+					@Name="CannonBallBase" or 
+					@ParentName="CannonBallBase" or 
+					@Name="BaseMiniCannonBall" or
+					@ParentName="BaseMiniCannonBall" or
+					@Name="HandMortarBombBase" or 
+					@ParentName="HandMortarBombBase"]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

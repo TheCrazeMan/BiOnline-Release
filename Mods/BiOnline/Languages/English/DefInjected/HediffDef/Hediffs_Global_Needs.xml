@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Nutrients.label>Nutrients</Nutrients.label>
+	<Nutrients.description>Nutrients that pawn needs to live.</Nutrients.description>
+	<Nutrients.stages.imbalance.label>Imbalance</Nutrients.stages.imbalance.label>
+	<Nutrients.stages.precarious_balance.label>Delicate balance</Nutrients.stages.precarious_balance.label>
+	<Nutrients.stages.balance.label>Balance</Nutrients.stages.balance.label>
+	<Nutrients.stages.perfect_balance.label>Perfect balance</Nutrients.stages.perfect_balance.label>
+
+
+</LanguageData>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ScenarioDef[defName="LostTribe" or defName="TheRichExplorer" or defName="NakedBrutality" or defName="Mechanitor" or defName="Sanguophage" or defName="TheAnomaly"]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

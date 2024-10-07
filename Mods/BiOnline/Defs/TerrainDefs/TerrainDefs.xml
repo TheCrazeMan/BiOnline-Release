@@ -1,0 +1,94 @@
+<Defs>
+	<TerrainDef>
+		<defName>SoftSandBuildable</defName>
+		<label>Soft sand</label>
+		<texturePath>Terrain/Surfaces/SoftSand</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<pathCost>14</pathCost>
+		<driesTo>Sand</driesTo>
+		<layerable>true</layerable>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>0</fertility>
+		<takeFootprints>true</takeFootprints>
+		<designationCategory>Floors</designationCategory>
+		<costList>
+			<Sand>75</Sand>
+		</costList>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>SulphuricWater</defName>
+		<texturePath>Terrain/Surfaces/SulphuricWater</texturePath>
+		<label>Sulphuric water</label>
+		<renderPrecedence>395</renderPrecedence>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>Solonchak</defName>
+		<label>Solonchak</label>
+		<texturePath>Terrain/Surfaces/Solonchak</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>375</renderPrecedence>
+		<pathCost>3</pathCost>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Diggable</li>
+		</affordances>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Cleanliness>-3</Cleanliness>
+		</statBases>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<avoidWander>true</avoidWander>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>Stellacite</defName>
+		<label>Stellacite</label>
+		<texturePath>Terrain/Surfaces/Stellacite</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>375</renderPrecedence>
+		<pathCost>3</pathCost>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<statBases>
+		  <Beauty>-2</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<avoidWander>true</avoidWander>
+	</TerrainDef>
+	
+</Defs>

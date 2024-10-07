@@ -1,0 +1,305 @@
+<Defs>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_SpecOps_Assault</defName>
+    <label>Trigger's gun</label>
+    <description>Unique heavy weapon that uses one of the PMC bosses - Trigger.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/SpecOps_Assault</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>1</SightsEfficiency>
+	  <MarketValue>5215</MarketValue>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>1.55</SwayFactor>
+      <Bulk>16.50</Bulk>
+      <Mass>59</Mass>
+      <RangedWeapon_Cooldown>0.42</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.22</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PMC_Bolter</defaultProjectile>
+        <burstShotCount>5</burstShotCount>
+        <warmupTime>1.3</warmupTime>
+        <range>42</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+		<targetParams>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>		
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>40</magazineSize>
+        <reloadTime>6.2</reloadTime>
+        <ammoSet>AmmoSet_PMC_Bolter</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>4</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.0,1.0</DrawSize>
+        <DrawOffset>0.0,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+    <weaponTags>
+	  <li>CE_AI_BROOM</li>
+	  <li>PMC_Trigger</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>	
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_SpecOps_Sniper</defName>
+    <label>Nomad's gun</label>
+    <description>Unique heavy weapon that uses one of the PMC bosses - Nomad.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/SpecOps_Sniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>	  
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>2</SightsEfficiency>
+	  <MarketValue>5215</MarketValue>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>0.02</SwayFactor>
+      <Bulk>16.50</Bulk>
+      <Mass>14.4</Mass>
+      <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+	  <NightVisionEfficiency_Weapon>0.6</NightVisionEfficiency_Weapon>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.22</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PMC_Sniper</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>1.85</warmupTime>
+        <range>112</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+		<targetParams>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>		
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>5.2</reloadTime>
+        <ammoSet>AmmoSet_PMC_Sniper</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.20,1.20</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+    <weaponTags>
+	  <li>PMC_Nomad</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>	
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PMC_SpecOps_HMG</defName>
+    <label>IronClaw's gun</label>
+    <description>Unique heavy weapon that uses one of the PMC bosses - IronClaw.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/SpecOps_HMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>	  
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <SightsEfficiency>1</SightsEfficiency>
+	  <MarketValue>5215</MarketValue>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>1.55</SwayFactor>
+      <Bulk>16.50</Bulk>
+      <Mass>195</Mass>
+      <RangedWeapon_Cooldown>1.62</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.92</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PMC_HMG</defaultProjectile>
+        <burstShotCount>10</burstShotCount>
+		<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <warmupTime>1.3</warmupTime>
+        <range>62</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+		<targetParams>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>		
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>100</magazineSize>
+        <reloadTime>10.2</reloadTime>
+        <ammoSet>AmmoSet_PMC_HMG</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+	  <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.30,1.30</DrawSize>
+			<DrawOffset>0.35,-0.35</DrawOffset>
+		</li>
+    </modExtensions>
+    <weaponTags>
+	  <li>CE_AI_Suppressive</li>
+	  <li>PMC_IronClaw</li>
+    </weaponTags>
+	<smeltable>false</smeltable>
+  </ThingDef>
+
+</Defs>

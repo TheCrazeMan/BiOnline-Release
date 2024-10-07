@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Items/Misc/Items_Resource_RawPlant.xml-->
+<TM_RawBroots.label>Белые грибы</TM_RawBroots.label>
+<TM_RawBroots.description>Волокнистые белые отвары, которые растут диким образом.\nПлеменные люди владеют знаниями, позволяющими использовать их для приготовления лечебных напитков.</TM_RawBroots.description>
+
+<TM_RawRedPetals.label>Красные лепестки</TM_RawRedPetals.label>
+<TM_RawRedPetals.description>Мелкие и мягкие лепестки небольшого растения.\nПлемена владеют знаниями по их использованию для приготовления лечебных напитков.</TM_RawRedPetals.description>
+
+<TM_RawShrooms.label>Грибы</TM_RawShrooms.label>
+<TM_RawShrooms.description>Мелкие грибы, используемые племенами для приготовления медицинских напитков, бесполезные для большинства развитых цивилизаций.</TM_RawShrooms.description>
+
+<TM_RawDarkBerries.label>Тёмные ягоды</TM_RawDarkBerries.label>
+<TM_RawDarkBerries.description>Мелкие черные плоды со странного куста, которые могут быть вредны для организма, если не знать, как их использовать.</TM_RawDarkBerries.description>
+
+<BiO_AnimaGrass.label>Трава души</BiO_AnimaGrass.label>
+<BiO_AnimaGrass.description>Срезал пучок пси-травы. Она все еще светится</BiO_AnimaGrass.description>
+
+<RawCarrots.label>Морковь</RawCarrots.label>
+<RawCarrots.description>Сырая морковь.</RawCarrots.description>
+
+<RawBeet.label>Свекла</RawBeet.label>
+<RawBeet.description>Свекла сырая.</RawBeet.description>
+
+<RawGrape.label>Виноград</RawGrape.label>
+<RawGrape.description>Сырой виноград.</RawGrape.description>
+
+<RawTomato.label>Томаты</RawTomato.label>
+<RawTomato.description>Сырые помидоры.</RawTomato.description>
+
+<RawBlackPepper.label>Чёрный перец</RawBlackPepper.label>
+<RawBlackPepper.description>Сырой черный перец. Измельчите его, чтобы сделать хорошую приправу.</RawBlackPepper.description>
+
+<CocoaBeans.label>Какао-бобы</CocoaBeans.label>
+<CocoaBeans.description>Сырые какао-бобы. Могут быть использованы для приготовления шоколада.</CocoaBeans.description>
+
+<TeaLeaves.label>Листья чая</TeaLeaves.label>
+<TeaLeaves.description>Сырые какао-бобы. Могут быть использованы для приготовления шоколада.</TeaLeaves.description>
+
+<RawWheat.label>Пшеница</RawWheat.label>
+<RawWheat.description>Отрезанный пучок пшеницы. Можно использовать для приготовления муки.</RawWheat.description>
+
+<RawSoy.label>Соя</RawSoy.label>
+<RawSoy.description>Бобы сои, имеют большое количество белка. Приготовленое из них тофу, может заменить мясо</RawSoy.description>
+
+</LanguageData>

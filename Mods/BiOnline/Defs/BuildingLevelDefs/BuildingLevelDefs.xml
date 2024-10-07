@@ -1,0 +1,3404 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<!--     <BiOnline.Things.BuildingLevelDef>
+        <defName>Test</defName> -->
+		<!-- <endDate>1-31-2024 12:00:00</endDate> --> <!-- Дата окончания dd-MM-yyyy HH:mm:ss МСК. Необязательное. -->
+<!-- 		<lastLevelisEndless>true</lastLevelisEndless>
+		<levels>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/1</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked1</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished1</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>SaltCandy</thingDef>
+						<count>100</count>
+					</li>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>100</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>Silver</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>Gold</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.1</chance>
+						<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.1</chance>
+						<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.1</chance>
+						<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_QuestScriptDef">
+						<chance>0.1</chance>
+						<questScriptDef>MimJoins</questScriptDef>
+						<points>100~500</points>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.01</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/2</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked2</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished2</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>SaltCandy</thingDef>
+						<count>200</count>
+					</li>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>200</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>Silver</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>Gold</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_QuestScriptDef">
+						<chance>0.2</chance>
+						<questScriptDef>MimJoins</questScriptDef>
+						<points>100~500</points>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.02</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/3</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked3</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished3</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>SaltCandy</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>300</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>Silver</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>Gold</thingDef>
+						<count>600</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_QuestScriptDef">
+						<chance>0.3</chance>
+						<questScriptDef>MimJoins</questScriptDef>
+						<points>100~500</points>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.03</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/4</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked4</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished4</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>SaltCandy</thingDef>
+						<count>400</count>
+					</li>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>400</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>Silver</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>Gold</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_QuestScriptDef">
+						<chance>0.3</chance>
+						<questScriptDef>MimJoins</questScriptDef>
+						<points>100~500</points>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.03</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/5</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked5</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished5</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>SaltCandy</thingDef>
+						<count>500</count>
+					</li>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>Silver</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>Gold</thingDef>
+						<count>1000</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_QuestScriptDef">
+						<chance>0.5</chance>
+						<questScriptDef>MimJoins</questScriptDef>
+						<points>100~500</points>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.05</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/6</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked6</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished6</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>WoodLog</thingDef>
+						<count>200</count>
+					</li>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>200</count>
+					</li>
+					<li>
+						<thingDef>Gold</thingDef>
+						<count>200</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>MealLavish</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.1</chance>
+						<thingDef>ArchotechArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.1</chance>
+						<thingDef>ArchotechLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.1</chance>
+						<thingDef>ArchotechEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.06</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/7</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked7</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished7</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>WoodLog</thingDef>
+						<count>400</count>
+					</li>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>400</count>
+					</li>
+					<li>
+						<thingDef>Gold</thingDef>
+						<count>400</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>MealLavish</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>250</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>250</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>250</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>ArchotechArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>ArchotechLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>ArchotechEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.07</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/8</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked8</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished8</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>WoodLog</thingDef>
+						<count>600</count>
+					</li>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>600</count>
+					</li>
+					<li>
+						<thingDef>Gold</thingDef>
+						<count>600</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>MealLavish</thingDef>
+						<count>30</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>300</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>300</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>300</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>ArchotechArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>ArchotechLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>ArchotechEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.08</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>		
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/9</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked9</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished9</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>WoodLog</thingDef>
+						<count>800</count>
+					</li>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>800</count>
+					</li>
+					<li>
+						<thingDef>Gold</thingDef>
+						<count>800</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>MealLavish</thingDef>
+						<count>35</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>350</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>350</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>350</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.4</chance>
+						<thingDef>ArchotechArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.4</chance>
+						<thingDef>ArchotechLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.4</chance>
+						<thingDef>ArchotechEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.09</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>	
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/10</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked10</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished10</finishedIconPath>
+				<message>
+					<title>Задание доступно Король-Лич</title>
+					<text>Завершение уровня открыло задание Король-Лич</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>WoodLog</thingDef>
+						<count>1000</count>
+					</li>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>1000</count>
+					</li>
+					<li>
+						<thingDef>Gold</thingDef>
+						<count>1000</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>MealLavish</thingDef>
+						<count>40</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>ArchotechArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>ArchotechLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>ArchotechEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.10</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>	
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/11</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked11</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished11</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>HemogenPack</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>BiO_AnimaGrass</thingDef>
+						<count>50</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>Leather_Thrumbo</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>100</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>100</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>100</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.2</chance>
+						<thingDef>CyberBionicsArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.11</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>	
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/12</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked12</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished12</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>HemogenPack</thingDef>
+						<count>100</count>
+					</li>
+					<li>
+						<thingDef>BiO_AnimaGrass</thingDef>
+						<count>100</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>Leather_Thrumbo</thingDef>
+						<count>300</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>150</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>150</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>150</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>CyberBionicsArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.12</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>			
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/13</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked13</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished13</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>HemogenPack</thingDef>
+						<count>150</count>
+					</li>
+					<li>
+						<thingDef>BiO_AnimaGrass</thingDef>
+						<count>150</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>Leather_Thrumbo</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.4</chance>
+						<thingDef>CyberBionicsArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.13</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/14</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked14</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished14</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>HemogenPack</thingDef>
+						<count>150</count>
+					</li>
+					<li>
+						<thingDef>BiO_AnimaGrass</thingDef>
+						<count>150</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>Leather_Thrumbo</thingDef>
+						<count>500</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>250</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>250</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>250</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>CyberBionicsArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.14</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/15</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked15</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished15</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>HemogenPack</thingDef>
+						<count>200</count>
+					</li>
+					<li>
+						<thingDef>BiO_AnimaGrass</thingDef>
+						<count>200</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>FrostmourneII</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>Leather_Thrumbo</thingDef>
+						<count>500</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>300</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>300</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>300</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>CyberBionicsArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.15</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/16</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked16</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished16</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>TM_RawShrooms</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>RawPotatoes</thingDef>
+						<count>500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Luciferium</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MedicineUltratech</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterBombardment</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterMechCluster</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterPowerBeam</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.16</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/17</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked17</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished17</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>TM_RawShrooms</thingDef>
+						<count>100</count>
+					</li>
+					<li>
+						<thingDef>RawPotatoes</thingDef>
+						<count>1000</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Luciferium</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MedicineUltratech</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterBombardment</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterMechCluster</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterPowerBeam</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.17</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/18</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked18</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished18</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>TM_RawShrooms</thingDef>
+						<count>150</count>
+					</li>
+					<li>
+						<thingDef>RawPotatoes</thingDef>
+						<count>1500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Luciferium</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MedicineUltratech</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterBombardment</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterMechCluster</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterPowerBeam</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.18</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/19</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked19</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished19</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>TM_RawShrooms</thingDef>
+						<count>150</count>
+					</li>
+					<li>
+						<thingDef>RawPotatoes</thingDef>
+						<count>1500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Luciferium</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MedicineUltratech</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterBombardment</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterMechCluster</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterPowerBeam</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.19</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/20</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked20</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished20</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>TM_RawShrooms</thingDef>
+						<count>150</count>
+					</li>
+					<li>
+						<thingDef>RawPotatoes</thingDef>
+						<count>1500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Luciferium</thingDef>
+						<count>30</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MedicineUltratech</thingDef>
+						<count>30</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterBombardment</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterMechCluster</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>OrbitalTargeterPowerBeam</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.20</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/21</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked21</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished21</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Iron_Skin_Elixir</thingDef>
+						<count>25</count>
+					</li>
+					<li>
+						<thingDef>Healing_Elixir</thingDef>
+						<count>25</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Schnapps</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Beer</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Wine</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_PyroForm</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_MulE</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_DefleXitol</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Flexitol</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Dofa</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Regenostas</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Trasylol_500k</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.21</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/22</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked22</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished22</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Iron_Skin_Elixir</thingDef>
+						<count>30</count>
+					</li>
+					<li>
+						<thingDef>Healing_Elixir</thingDef>
+						<count>30</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Schnapps</thingDef>
+						<count>30</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Beer</thingDef>
+						<count>30</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Wine</thingDef>
+						<count>30</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_PyroForm</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_MulE</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_DefleXitol</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Flexitol</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Dofa</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Regenostas</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Trasylol_500k</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.22</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/23</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked23</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished23</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Iron_Skin_Elixir</thingDef>
+						<count>35</count>
+					</li>
+					<li>
+						<thingDef>Healing_Elixir</thingDef>
+						<count>35</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Schnapps</thingDef>
+						<count>35</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Beer</thingDef>
+						<count>35</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Wine</thingDef>
+						<count>35</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_PyroForm</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_MulE</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_DefleXitol</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Flexitol</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Dofa</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Regenostas</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Trasylol_500k</thingDef>
+						<count>15</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.23</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/24</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked24</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished24</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Iron_Skin_Elixir</thingDef>
+						<count>40</count>
+					</li>
+					<li>
+						<thingDef>Healing_Elixir</thingDef>
+						<count>40</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Schnapps</thingDef>
+						<count>40</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Beer</thingDef>
+						<count>40</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Wine</thingDef>
+						<count>40</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_PyroForm</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_MulE</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_DefleXitol</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Flexitol</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Dofa</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Regenostas</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Trasylol_500k</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.24</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/25</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked25</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished25</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Iron_Skin_Elixir</thingDef>
+						<count>45</count>
+					</li>
+					<li>
+						<thingDef>Healing_Elixir</thingDef>
+						<count>45</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Schnapps</thingDef>
+						<count>45</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Beer</thingDef>
+						<count>45</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Wine</thingDef>
+						<count>45</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_PyroForm</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_MulE</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_DefleXitol</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Flexitol</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Dofa</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Regenostas</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Trasylol_500k</thingDef>
+						<count>25</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/26</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked26</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished26</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramite</thingDef>
+						<count>100</count>
+					</li>
+					<li>
+						<thingDef>Mithril</thingDef>
+						<count>100</count>
+					</li>
+					<li>
+						<thingDef>Chlorophyte</thingDef>
+						<count>100</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>CE_Gun_ChargeSMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>CE_Gun_ChargeShotgun</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>CE_Gun_ChargeAMR</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>CE_Gun_ChargeSniperRifle</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>CE_Gun_ChargeLMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x18mmCharged</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12GaugeCharged</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x24mmCharged</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_8x50mmCharged</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12x72mmCharged</thingDef>
+						<count>200</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.26</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/27</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked27</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished27</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramite</thingDef>
+						<count>200</count>
+					</li>
+					<li>
+						<thingDef>Mithril</thingDef>
+						<count>200</count>
+					</li>
+					<li>
+						<thingDef>Chlorophyte</thingDef>
+						<count>200</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>CE_Gun_ChargeSMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>CE_Gun_ChargeShotgun</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>CE_Gun_ChargeAMR</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>CE_Gun_ChargeSniperRifle</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.6</chance>
+						<thingDef>CE_Gun_ChargeLMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x18mmCharged</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12GaugeCharged</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x24mmCharged</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_8x50mmCharged</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12x72mmCharged</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.27</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/28</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked28</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished28</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramite</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>Mithril</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>Chlorophyte</thingDef>
+						<count>300</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.7</chance>
+						<thingDef>CE_Gun_ChargeSMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.7</chance>
+						<thingDef>CE_Gun_ChargeShotgun</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.7</chance>
+						<thingDef>CE_Gun_ChargeAMR</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.7</chance>
+						<thingDef>CE_Gun_ChargeSniperRifle</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.7</chance>
+						<thingDef>CE_Gun_ChargeLMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x18mmCharged</thingDef>
+						<count>600</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12GaugeCharged</thingDef>
+						<count>600</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x24mmCharged</thingDef>
+						<count>600</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_8x50mmCharged</thingDef>
+						<count>600</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12x72mmCharged</thingDef>
+						<count>600</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.28</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/29</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked29</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished29</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramite</thingDef>
+						<count>400</count>
+					</li>
+					<li>
+						<thingDef>Mithril</thingDef>
+						<count>400</count>
+					</li>
+					<li>
+						<thingDef>Chlorophyte</thingDef>
+						<count>400</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>CE_Gun_ChargeSMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>CE_Gun_ChargeShotgun</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>CE_Gun_ChargeAMR</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>CE_Gun_ChargeSniperRifle</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.8</chance>
+						<thingDef>CE_Gun_ChargeLMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x18mmCharged</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12GaugeCharged</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x24mmCharged</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_8x50mmCharged</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12x72mmCharged</thingDef>
+						<count>800</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.29</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/30</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked30</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished30</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramite</thingDef>
+						<count>500</count>
+					</li>
+					<li>
+						<thingDef>Mithril</thingDef>
+						<count>500</count>
+					</li>
+					<li>
+						<thingDef>Chlorophyte</thingDef>
+						<count>500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.9</chance>
+						<thingDef>CE_Gun_ChargeSMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.9</chance>
+						<thingDef>CE_Gun_ChargeShotgun</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.9</chance>
+						<thingDef>CE_Gun_ChargeAMR</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.9</chance>
+						<thingDef>CE_Gun_ChargeSniperRifle</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.9</chance>
+						<thingDef>CE_Gun_ChargeLMG</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x18mmCharged</thingDef>
+						<count>1000</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12GaugeCharged</thingDef>
+						<count>1000</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_6x24mmCharged</thingDef>
+						<count>1000</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_8x50mmCharged</thingDef>
+						<count>1000</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>Ammo_12x72mmCharged</thingDef>
+						<count>1000</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.30</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/31</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked31</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished31</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramics</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>Glass</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>BIO_Cold_Stone</thingDef>
+						<count>300</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumHealer</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumResurrector</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Shooting</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Melee</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Construction</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Mining</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Crafting</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Artistic</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.31</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/32</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked32</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished32</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramics</thingDef>
+						<count>600</count>
+					</li>
+					<li>
+						<thingDef>Glass</thingDef>
+						<count>600</count>
+					</li>
+					<li>
+						<thingDef>BIO_Cold_Stone</thingDef>
+						<count>600</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumHealer</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumResurrector</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Shooting</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Melee</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Construction</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Mining</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Crafting</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Artistic</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.32</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/33</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked33</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished33</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramics</thingDef>
+						<count>900</count>
+					</li>
+					<li>
+						<thingDef>Glass</thingDef>
+						<count>900</count>
+					</li>
+					<li>
+						<thingDef>BIO_Cold_Stone</thingDef>
+						<count>900</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumHealer</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumResurrector</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Shooting</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Melee</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Construction</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Mining</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Crafting</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Artistic</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.33</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/34</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked34</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished34</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramics</thingDef>
+						<count>1200</count>
+					</li>
+					<li>
+						<thingDef>Glass</thingDef>
+						<count>1200</count>
+					</li>
+					<li>
+						<thingDef>BIO_Cold_Stone</thingDef>
+						<count>1200</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumHealer</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumResurrector</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Shooting</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Melee</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Construction</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Mining</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Crafting</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Artistic</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.34</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/35</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked35</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished35</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Ceramics</thingDef>
+						<count>1500</count>
+					</li>
+					<li>
+						<thingDef>Glass</thingDef>
+						<count>1500</count>
+					</li>
+					<li>
+						<thingDef>BIO_Cold_Stone</thingDef>
+						<count>1500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumHealer</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>MechSerumResurrector</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Shooting</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Melee</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Construction</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Mining</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Crafting</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>Neurotrainer_Artistic</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.35</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/36</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked36</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished36</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>PumpkinLollipop</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>Marmalade</thingDef>
+						<count>300</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicTongue</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEar</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicStomach</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicArm</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicLeg</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicSpine</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEye</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicHeart</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.36</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/37</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked37</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished37</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>600</count>
+					</li>
+					<li>
+						<thingDef>PumpkinLollipop</thingDef>
+						<count>600</count>
+					</li>
+					<li>
+						<thingDef>Marmalade</thingDef>
+						<count>600</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicTongue</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEar</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicStomach</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicSpine</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicHeart</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.37</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/38</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked38</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished38</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>900</count>
+					</li>
+					<li>
+						<thingDef>PumpkinLollipop</thingDef>
+						<count>900</count>
+					</li>
+					<li>
+						<thingDef>Marmalade</thingDef>
+						<count>900</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicTongue</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEar</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicStomach</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicArm</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicLeg</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicSpine</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEye</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicHeart</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.38</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/39</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked39</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished39</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>1200</count>
+					</li>
+					<li>
+						<thingDef>PumpkinLollipop</thingDef>
+						<count>1200</count>
+					</li>
+					<li>
+						<thingDef>Marmalade</thingDef>
+						<count>1200</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicTongue</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEar</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicStomach</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicArm</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicLeg</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicSpine</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEye</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicHeart</thingDef>
+						<count>4</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.39</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/40</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked40</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished40</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Candy</thingDef>
+						<count>1500</count>
+					</li>
+					<li>
+						<thingDef>PumpkinLollipop</thingDef>
+						<count>1500</count>
+					</li>
+					<li>
+						<thingDef>Marmalade</thingDef>
+						<count>1500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>1</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicTongue</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEar</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicStomach</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicArm</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicLeg</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicSpine</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicEye</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.50</chance>
+						<thingDef>BionicHeart</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.40</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li> -->
+<!-- 			<li>
+				<unlockedIconPath>UI/Special/Unlocked/41</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked41</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished41</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/42</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked42</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished42</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/43</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked43</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished43</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/44</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked44</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished44</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/45</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked45</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished45</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/46</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked46</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished46</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/47</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked47</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished47</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/48</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked48</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished48</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/49</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked49</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished49</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Steel</thingDef>
+						<count>5</count>
+					</li>
+				</requirements>
+			</li>
+			<li>
+				<unlockedIconPath>UI/Special/Unlocked/50</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked/locked50</lockedIconPath>
+				<finishedIconPath>UI/Special/Finished/finished50</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+			</li> -->
+<!-- 			<li>
+				<unlockedIconPath>UI/Special/∞</unlockedIconPath>
+				<lockedIconPath>UI/Special/Locked∞</lockedIconPath>
+				<finishedIconPath>UI/Special/Unlocked∞</finishedIconPath>
+				<message>
+					<title>Уровень завершён</title>
+					<text>Уровень завершён</text>
+				</message>
+				<requirements>
+					<li>
+						<thingDef>Gold</thingDef>
+						<count>500</count>
+					</li>
+				</requirements>
+				<rewards>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicTongue</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicEar</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicStomach</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicSpine</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.75</chance>
+						<thingDef>BionicHeart</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>AlloysMithril</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>AlloysCeramite</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>AlloysChlorophyte</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_PyroForm</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_MulE</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_DefleXitol</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Flexitol</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Dofa</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Regenostas</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>NB_Trasylol_500k</thingDef>
+						<count>3</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.5</chance>
+						<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>ArchotechArm</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>ArchotechLeg</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>ArchotechEye</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>OrbitalTargeterBombardment</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>OrbitalTargeterMechCluster</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.3</chance>
+						<thingDef>OrbitalTargeterPowerBeam</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>Neurotrainer_Shooting</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>Neurotrainer_Melee</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>Neurotrainer_Construction</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>Neurotrainer_Mining</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>Neurotrainer_Crafting</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.25</chance>
+						<thingDef>Neurotrainer_Artistic</thingDef>
+						<count>1</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.15</chance>
+						<thingDef>MechSerumHealer</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.15</chance>
+						<thingDef>MechSerumResurrector</thingDef>
+						<count>5</count>
+					</li>
+					<li Class="BiOnline.Things.BuildingLevelDefReward_Thing">
+						<chance>0.1</chance>
+						<thingDef>spacecomponent</thingDef>
+						<count>1</count>
+					</li>
+				</rewards>
+			</li>
+		</levels>
+    </BiOnline.Things.BuildingLevelDef>
+	 -->
+	
+</Defs>

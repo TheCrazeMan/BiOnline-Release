@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sd] Advanced Powergeneration (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+                 <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sd_adv_powergen_adv_wind_turbine"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Titanium>40</Titanium>
+                            <AlloysMithril>20</AlloysMithril>
+                            <Copper>80</Copper>
+                            <Plasteel>200</Plasteel>
+                            <ComponentIndustrial>3</ComponentIndustrial>
+                            <ComponentSpacer>2</ComponentSpacer>
+                        </costList>
+
+                    </value>
+                </li>                 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sd_adv_powergen_adv_solar_generator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+							<Glass>120</Glass>
+                            <AlloysMithril>20</AlloysMithril>
+                            <Copper>80</Copper>
+                            <Steel>40</Steel>
+                            <Plasteel>200</Plasteel>
+                            <ComponentIndustrial>5</ComponentIndustrial>
+                            <ComponentSpacer>2</ComponentSpacer>
+                        </costList>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sd_adv_powergen_adv_geothermal_generator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+							<HardenedGlass>45</HardenedGlass>
+                            <AlloysMithril>60</AlloysMithril>              
+                            <Copper>80</Copper>
+                            <Plasteel>400</Plasteel>
+                            <Steel>200</Steel>
+                            <Titanium>200</Titanium>
+                            <ComponentIndustrial>12</ComponentIndustrial>
+                            <ComponentSpacer>4</ComponentSpacer>
+                        </costList>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sd_adv_powergen_nuclear_power_plant"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+							<HardenedGlass>75</HardenedGlass>
+                            <AlloysChlorophyte>100</AlloysChlorophyte>
+                            <AlloysMithril>100</AlloysMithril>
+                            <AlloysCeramite>100</AlloysCeramite>
+                            <Copper>200</Copper>
+                            <Steel>400</Steel>
+                            <Titanium>400</Titanium>
+                            <ComponentSpacer>20</ComponentSpacer>
+                        </costList>
+
+                    </value>
+                </li>
+               
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="sd_adv_powergen_nuclear_power_plant"]/comps</xpath>
+                    <value>
+                    
+                        
+                            <li Class="CompProperties_Refuelable">
+                                <fuelConsumptionRate>5</fuelConsumptionRate>
+                                <fuelCapacity>200</fuelCapacity>
+                                <fuelFilter>
+                                  <thingDefs>
+                                    <li>Uranium</li>
+                                  </thingDefs>
+                                </fuelFilter>
+                                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                            </li>
+                        
+
+                    </value>
+                </li> 
+				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <WoodLog>10</WoodLog>
+                            <Steel>150</Steel>
+                            <ComponentIndustrial>5</ComponentIndustrial>
+                            <ComponentSpacer>4</ComponentSpacer>
+                        </costList>
+
+                    </value>
+                </li> 
+                
+			</operations>
+		</match>
+	</Operation>
+</Patch>

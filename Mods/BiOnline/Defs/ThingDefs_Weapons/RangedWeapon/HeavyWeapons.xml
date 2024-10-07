@@ -1,0 +1,539 @@
+<Defs>
+
+	<!-- Пулемёт -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BiO_NB_HeavyMachineGun</defName>
+    <label>Batyanya</label> <!-- "Батяня" -->
+    <description>Ancient general-purpose machine gun. The rugged design makes it a popular weapon for the people inhabiting Rimworlds.</description>
+	<techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/NB_HMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>	
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <WorkToMake>56000</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>2.36</SwayFactor>
+      <Bulk>18.92</Bulk>
+      <Mass>27.50</Mass>
+      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+    </statBases>
+	<tradeability>Sellable</tradeability>
+    <costList>
+      <Plasteel>120</Plasteel>
+	  <ReinforcedBarrel>1</ReinforcedBarrel>
+	  <BIO_Cold_Stone>150</BIO_Cold_Stone>
+	  <AlloysCeramite>20</AlloysCeramite>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+	<weaponTags>
+		<li>Bipod_LMG</li>
+	</weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.44</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>62</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>HeavyMG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>100</magazineSize>
+        <reloadTime>9.2</reloadTime>
+        <ammoSet>AmmoSet_127x108mm</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>NB_HeavyWeapons</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>	  
+    </recipeMaker>
+    <tools>
+        <li Class="CombatExtended.ToolCE">
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2.44</cooldownTime>
+			<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+    </tools>	
+  </ThingDef>
+
+	<!-- Автоматический тяжёлый дробовик -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BiO_NB_HeavyShotgun</defName>
+    <label>Alabai</label> <!-- "Алабай" -->
+    <description>Ancient assault shotgun designed for full-auto fire in close quarters.</description>
+	<techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/NB_HeavyShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <WorkToMake>40500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.14</ShotSpread>
+      <SwayFactor>1.51</SwayFactor>
+      <Bulk>11.60</Bulk>
+      <Mass>7.45</Mass>
+      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Plasteel>80</Plasteel>
+		<ReinforcedBarrel>1</ReinforcedBarrel>
+		<BIO_Cold_Stone>75</BIO_Cold_Stone>
+		<AlloysCeramite>10</AlloysCeramite>
+		<ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.04</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <warmupTime>0.6</warmupTime>
+        <range>24</range>
+        <soundCast>Shot_Shotgun_NoRack</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>20</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_23x75mmR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>NB_HeavyWeapons</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>	  
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.10,1.15</DrawSize>
+        <DrawOffset>0.1,-0.1</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+	<!-- Тяжёлый ПП-->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BiO_NB_HeavySMG</defName>
+    <label>Bumblebee</label> <!-- "Шмель" -->
+    <description>Charged-shot bullpup sub-machine gun highly effective in close-quarters combat.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>	
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/NB_HeavySMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <WorkToMake>37500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>0.75</SwayFactor>
+      <Bulk>6.00</Bulk>
+      <Mass>3.50</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Plasteel>75</Plasteel>
+		<Titanium>20</Titanium>
+		<ReinforcedBarrel>1</ReinforcedBarrel>
+		<AlloysCeramite>12</AlloysCeramite>
+		<ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.39</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x21mmGyurza_FMJ</defaultProjectile>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <warmupTime>0.5</warmupTime>
+        <range>26</range>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>40</magazineSize>
+        <reloadTime>4.5</reloadTime>
+        <ammoSet>AmmoSet_9x21mmGyurza</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>NB_HeavyWeapons</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.15,1.15</DrawSize>
+        <DrawOffset>0.00,-0.03</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+	<!-- Тяжеленный гранатомёт -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BiO_NB_GrenadeLauncher</defName>
+    <label>Calendula</label>  <!-- "Календула" -->
+    <description>Ancient, man-portable grenade launcher. The 6-shot cylinder allows for a relatively high volume of fire.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/NB_GrenadeLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>		
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <WorkToMake>55500</WorkToMake>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>0.95</SwayFactor>
+      <Bulk>8.65</Bulk>
+      <Mass>15.3</Mass>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Glass>20</Glass>
+		<Plasteel>125</Plasteel>
+		<Titanium>20</Titanium>
+		<ReinforcedBarrel>3</ReinforcedBarrel>
+		<AlloysCeramite>40</AlloysCeramite>
+		<ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.24</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_40x53mmVOG25Grenade_HE</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>0.6</warmupTime>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>		
+        <range>47</range>
+		<minRange>3</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>24</magazineSize>
+        <reloadTime>8.3</reloadTime>
+        <ammoSet>AmmoSet_40x53mmVOG25Grenade</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>	  
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>NB_HeavyWeapons</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>	  
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.0,1.0</DrawSize>
+        <DrawOffset>0.0,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+	<!-- Тяжёлая штурмовая винтовка -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BiO_NB_HeavyAssaultRifle</defName>
+    <label>Anarchy</label>  <!-- "Анархия" -->
+    <description>Ancient, man-portable grenade launcher. The 6-shot cylinder allows for a relatively high volume of fire.</description>
+    <techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Spacer/NB_HeavyAssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>	
+    <soundInteract>Interact_Rifle</soundInteract>
+	<relicChance>0</relicChance>
+    <statBases>
+      <WorkToMake>55500</WorkToMake>
+      <Mass>3.2</Mass>
+      <Bulk>7.0</Bulk>
+      <SwayFactor>0.95</SwayFactor>
+      <ShotSpread>0.04</ShotSpread>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Plasteel>125</Plasteel>
+		<Titanium>20</Titanium>
+		<ReinforcedBarrel>2</ReinforcedBarrel>
+		<AlloysCeramite>15</AlloysCeramite>
+		<ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>True</hasStandardCommand>
+        <defaultProjectile>Bullet_127x55mm_FMJ</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <warmupTime>1.0</warmupTime>
+        <range>50</range>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <recoilAmount>1.6</recoilAmount>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>42</magazineSize>
+        <reloadTime>3.2</reloadTime>
+        <ammoSet>AmmoSet_127x55mm</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_UnderBarrel">
+          <propsUnderBarrel>
+            <magazineSize>1</magazineSize>
+            <reloadTime>3</reloadTime>
+            <ammoSet>AmmoSet_40x53mmVOG25Grenade</ammoSet>
+          </propsUnderBarrel>
+          <verbPropsUnderBarrel>
+            <recoilAmount>2.71</recoilAmount>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Bullet_40x53mmVOG25Grenade_HE</defaultProjectile>
+            <warmupTime>1.1</warmupTime>
+            <range>40</range>
+            <targetParams>
+              <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <soundCast>InfernoCannon_Fire</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>5</muzzleFlashScale>
+          </verbPropsUnderBarrel>
+          <propsFireModesUnderBarrel>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+            <aiAimMode>AimedShot</aiAimMode>
+            <aimedBurstShotCount>1</aimedBurstShotCount>
+          </propsFireModesUnderBarrel>
+      </li>	  
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>NB_HeavyWeapons</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>	  
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.0,1.0</DrawSize>
+        <DrawOffset>0.0,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

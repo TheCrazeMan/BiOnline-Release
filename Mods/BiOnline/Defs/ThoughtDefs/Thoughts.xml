@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Гнилостный запах-->
+	<ThoughtDef>
+		<defName>PutridSmell</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>PutridSmellEffect</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>putrid smell</label>
+				<description>a terrible smell</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!--суп из опилок-->
+	<ThoughtDef>
+		<defName>AteSawdustSoup</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>ate Sawdust soup</label>
+				<description>I had to eat a disgusting, tasteless meal. I know it keeps you alive, but nobody wants to swallow that glop.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!--Вкусный напиток-->
+	<ThoughtDef>
+		<defName>TastyDrink</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/GenericGood</icon>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Tasty drink</label>
+				<description>It's a delicious hot drink. I feel energized and my mood is lifted!</description>
+				<baseMoodEffect>+4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!--Конфеты-->
+	<ThoughtDef>
+		<defName>AteTheCandy</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/GenericGood</icon>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Ate the candy</label>
+				<description>This candy is unbelievably delicious! Sour, sweet, oh, yuck, there's licorice in it...</description>
+				<baseMoodEffect>+6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!--Лакрица-->
+	<ThoughtDef>
+		<defName>AteTheLicorice</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Ate the candy</label>
+				<description>Ewww, it's licorice! It's so gross.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

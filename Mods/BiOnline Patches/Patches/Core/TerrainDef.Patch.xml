@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+
+            <operations>          
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[@Name="FlagstoneBase" or @Name="TileStoneBase2"]</xpath>
+                    <value>
+						<researchPrerequisites>
+						<li>Stonecutting</li>
+						</researchPrerequisites>
+                    </value>
+                </li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[@Name="TileStoneBase"]/researchPrerequisites/li</xpath>
+					<value>
+					
+					  <li>CoveringI</li>
+					  
+					</value>
+				</li>				
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/TerrainDef[@Name="FineTileStoneBase"]/researchPrerequisites/li</xpath>
+                    <value>
+                    
+						<li>CoveringII</li>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/TerrainDef[@Name="IdeoStoneTileBase"]/researchPrerequisites/li</xpath>
+                    <value>
+                    
+						<li>CoveringII</li>
+
+                    </value>
+                </li>			
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/TerrainDef[defName="Concrete" or defName="PavedTile"]/researchPrerequisites/li</xpath>
+                    <value>
+                    
+						<li>Smithing</li>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+                    <value>
+						<researchPrerequisites>
+							<li>CoveringI</li>
+						</researchPrerequisites>
+                    </value>
+                </li>					
+            </operations>
+        </match>
+    </Operation>
+</Patch>

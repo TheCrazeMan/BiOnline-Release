@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Nutrients.label>БЖУ</Nutrients.label>
+	<Nutrients.description>БЖУ</Nutrients.description>
+	<Nutrients.stages.imbalance.label>Дисбаланс</Nutrients.stages.imbalance.label>
+	<Nutrients.stages.precarious_balance.label>Шаткий баланс</Nutrients.stages.precarious_balance.label>
+	<Nutrients.stages.balance.label>Баланс</Nutrients.stages.balance.label>
+	<Nutrients.stages.perfect_balance.label>Идеальный баланс</Nutrients.stages.perfect_balance.label>
+
+
+</LanguageData>

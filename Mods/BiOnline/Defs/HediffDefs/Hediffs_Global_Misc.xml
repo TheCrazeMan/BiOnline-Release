@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Мим-->
+	<HediffDef>
+		<defName>Mim</defName>
+		<label>Mim</label>
+		<description>Mim</description>
+		<lethalSeverity>1</lethalSeverity>
+		<initialSeverity>0.1</initialSeverity>
+		<hediffClass>BiOnline.Hediffs.Hediff_Mim</hediffClass>
+		<stages>
+			<li>
+				<label>minor</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Трупный паразит-->
+	<HediffDef>
+		<defName>RisenCorpse</defName>
+		<label>Cadaverous parasites</label>
+		<description>A terrible disease caused by some unknown parasites that begin to multiply in the human body only after his death. If the body is charged, then after death it can begin to move and show signs of life. The only way to avoid the danger from this disease is to burn the body. If this is not done within the specified time, the corpse will begin to pose a threat to others and may lead to new infections.</description>
+		<lethalSeverity>1</lethalSeverity>
+		<initialSeverity>0.1</initialSeverity>
+		<hediffClass>BiOnline.Hediffs.Hediff_RisenCorpse</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Киберпсихоз-->
+	<HediffDef>
+		<defName>Cyberpsychosis</defName>
+		<label>Cyberpsychosis</label>
+		<description>Cyberpsychosis can be caused by a large number of implants. If you start to feel worse, use Immuno-Blockers or remove most of your implants.</description>
+		<lethalSeverity>5</lethalSeverity>
+		<initialSeverity>0.1</initialSeverity>
+		<hediffClass>HediffWithComps</hediffClass>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.4</severityPerDay>
+				<showHoursToRecover>false</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>Invisible</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>Light</label>
+				<becomeVisible>true</becomeVisible>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>Medium</label>
+				<becomeVisible>true</becomeVisible>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.4</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<label>Heavy</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.5</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.6</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.8</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>4.5</minSeverity>
+				<label>Lethal</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Прилив адреналина-->
+	<HediffDef>
+		<defName>AdrenalineRush</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>Adrenaline rush</label>
+		<description>The kidneys produce large amounts of adrenaline over a short period of time. This effect is similar to taking Go-juice without the side effects.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.1</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Ускоренная регенерация-->
+	<HediffDef>
+		<defName>AcceleratedRegeneration</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>Accelerated regeneration</label>
+		<description>The kidneys produce large amounts of adrenaline over a short period of time. This effect is similar to taking Go-juice without the side effects.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<totalBleedFactor>0.4</totalBleedFactor>
+				<painFactor>0.8</painFactor>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.70</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>BrainOvercharge</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>Brain overcharge</label>
+		<description>This pawn's brain is now overcharged and works at it's twice speed.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>					
+				</capMods>
+			<statOffsets>
+				<GlobalLearningFactor>0.75</GlobalLearningFactor>
+				<ResearchSpeed>0.15</ResearchSpeed>
+			</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>	
+	
+	<!--Горячий напиток-->
+	<HediffDef>
+		<defName>ElectricShock</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>Electric shock</label>
+		<description>A strong electric shock paralyzes a pawn for a while</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-3.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>-0.4</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.40</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Горячий напиток-->
+	<HediffDef>
+		<defName>HotDrink</defName>
+		<label>Drank a hot drink</label>
+		<description>Drinking hot coffee or tea is warming and invigorating.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-3.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.7</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef Abstract="True"
+	           Name="IVHediffBase"
+	           ParentName="DiseaseBase">
+		<initialSeverity>0.01</initialSeverity>
+		<maxSeverity>0.01</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>100~100</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+	<!--Переливание крови-->
+	<HediffDef ParentName="IVHediffBase">
+		<defName>Blood_Hediff</defName>
+		<defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+		<label>Intravenous Therapy (Blood)</label>
+		<description>Intravenous Therapy (blood transfusion)</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BleedRate</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Обезболивающие-->
+	<HediffDef ParentName="IVHediffBase">
+		<defName>Painkiller_Hediff</defName>
+		<defaultLabelColor>(1, 1, 0.2)</defaultLabelColor>
+		<label>Intravenous Therapy (Painkiller)</label>
+		<description>Intravenous Therapy (Painkiller)</description>
+		<stages>
+			<li>
+				<painFactor>0.05</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Парентеральное питание-->
+	<HediffDef ParentName="IVHediffBase">
+		<defName>Nutrition_Hediff</defName>
+		<defaultLabelColor>(0.2, 1, 0.2)</defaultLabelColor>
+		<label>Intravenous Therapy (Nutrition)</label>
+		<description>Intravenous Therapy (Nutrition)</description>
+		<stages>
+			<li>
+				<hungerRateFactor>0.0</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--Антибиотики-->
+	<HediffDef ParentName="IVHediffBase">
+		<defName>Antibiotics_Hediff</defName>
+		<defaultLabelColor>(0.5, 0.5, 1)</defaultLabelColor>
+		<label>Intravenous Therapy (Antibiotics)</label>
+		<description>Intravenous Therapy (Antibiotics)</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

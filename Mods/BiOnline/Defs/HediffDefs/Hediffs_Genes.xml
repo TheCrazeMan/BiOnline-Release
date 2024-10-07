@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>PutridSmell</defName>
+		<label>Putrid smell</label>
+		<description>TODO</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="BiOnline.Genes.HediffCompProperties_GiveHediffsInRangeExtended">
+				<range>5</range>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+				</targetingParameters>
+				<hediff>PutridSmellEffect</hediff>
+				<disablingGeneDef>PutridSmell</disablingGeneDef>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<makeImmuneTo>
+					<li>PutridSmellEffect</li>
+				</makeImmuneTo>
+			</li>
+      </stages>
+	</HediffDef>
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>PutridSmellEffect</defName>
+		<label>Putrid smell effect</label>
+		<description>TODO</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

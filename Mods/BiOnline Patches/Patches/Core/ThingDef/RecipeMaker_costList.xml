@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Удаление recipeMaker в медикаментах -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="MedicineIndustrial"]/recipeMaker</xpath>
+	</Operation>
+	<!--Удаление costlist в медикаментах -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="MedicineIndustrial"]/costList</xpath>
+	</Operation>
+</Patch>

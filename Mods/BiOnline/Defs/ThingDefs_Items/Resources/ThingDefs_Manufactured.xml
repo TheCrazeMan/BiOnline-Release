@@ -1,0 +1,663 @@
+<Defs>
+	<!--=============== Медицина ====================-->
+	<!--Бинт-->
+	<ThingDef ParentName="MedicineBase">
+		<defName>Bandages</defName>
+		<label>Bandages</label>
+		<description>A strip of cloth used for dressing wounds, applying bandages.  Can repair 2 wounds at a time, must be replaced every 4 hours.</description>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Medicine/Bandages</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MarketValue>6</MarketValue>
+			<Mass>0.25</Mass>
+			<Flammability>2</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>300</WorkToMake>
+			<MedicalPotency>0.20</MedicalPotency>
+			<MedicalQualityMax>0.20</MedicalQualityMax>
+		</statBases>
+		<costList>
+			<Cloth>3</Cloth>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<recipeUsers>
+				<li>DrugLab</li>
+				<li>CraftingSpot</li>
+				<li>TribalBench</li>
+				<li>MedicalBench</li>
+			</recipeUsers>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<displayPriority>2000</displayPriority>
+		</recipeMaker>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+	<!--Гемостатик-->
+<!-- 	<ThingDef ParentName="MedicineBase">
+		<defName>Hemostatic</defName>
+		<label>Hemostatic</label>
+		<description>Hemostatic has a hemostatic effect in direct contact with damaged body tissues. Eliminates 6 bleedings at a time, requires replacement every 6 hours.</description>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Medicine/Hemostatic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>36</MarketValue>
+			<Mass>0.15</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>600</WorkToMake>
+		</statBases>
+		<costList>
+			<Neutroamine>4</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<recipeUsers>
+				<li>DrugLab</li>
+				<li>MedicalBench</li>
+			</recipeUsers>
+			<researchPrerequisite>MedicineIII</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<displayPriority>2000</displayPriority>
+		</recipeMaker>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef> -->
+	<!-- Стёкла -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Glass</defName>
+		<label>glass</label>
+		<description>A hard, brittle substance known for transparency. Made by fusing sand with stone and cooling rapidly.</description>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(168, 229, 255)</color>
+			<texPath>Things/Item/Glass</texPath>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>Resources</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<statBases>
+			<MarketValue>1.4</MarketValue>
+			<Mass>0.4</Mass>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<categories Inherit="False">
+				<li>Glass</li>
+			</categories>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<commonality>0</commonality>
+			<color>RGBA(168, 229, 255, 133)</color>
+			<statOffsets>
+				<Beauty>4</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.35</MaxHitPoints>
+				<Beauty>1.5</Beauty>
+				<WorkToMake>2</WorkToMake>
+				<WorkToBuild>3</WorkToBuild>
+				<Flammability>0</Flammability>
+				<Comfort>0.8</Comfort>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>HardenedGlass</defName>
+		<label>armored glass</label>
+		<description>Glass, but armored. Found it's usage in a lot of industires.</description>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(168, 229, 255)</color>
+			<texPath>Things/Item/HardenedGlass</texPath>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>Resources</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<statBases>
+			<MarketValue>2.2</MarketValue>
+			<Mass>0.5</Mass>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<categories Inherit="False">
+				<li>Glass</li>
+			</categories>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<commonality>0</commonality>
+			<color>RGBA(105, 105, 105, 133)</color>
+			<statOffsets>
+				<Beauty>-4</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>1.35</MaxHitPoints>
+				<Beauty>0.5</Beauty>
+				<WorkToMake>2.8</WorkToMake>
+				<WorkToBuild>4.2</WorkToBuild>
+				<Flammability>0</Flammability>
+				<Comfort>0.8</Comfort>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+	<!-- Кирпич -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RawBrick</defName>
+		<label>Raw bricks</label>
+		<description>Raw brick, that needs to be kiln baked so that it can be used in construction.</description>
+		<graphicData>
+			<texPath>Things/Item/RawBrick</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>0.01</MarketValue>
+			<Mass>0.28</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase"
+	          Name="Brick">
+		<defName>Brick</defName>
+		<label>Bricks</label>
+		<description>Block of stone. Mostly useful for building long-lasting, simple structures. Unlike stone blocks, bricks can be used only in creating walls and columns.</description>
+		<graphicData>
+			<texPath>Things/Item/Bricks</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>Buyable</tradeability>
+		<statBases>
+			<MaxHitPoints>1050</MaxHitPoints>
+			<MarketValue>0.9</MarketValue>
+			<Mass>0.38</Mass>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+			<Beauty>-12</Beauty>
+			<ConstructionSpeedFactor>1</ConstructionSpeedFactor>
+		</statBases>
+		<thingCategories>
+			<li>StoneBlocks</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<stuffProps>
+			<categories>
+				<li>Brick</li>
+			</categories>
+			<commonality>0.05</commonality>
+			<appearance>Bricks</appearance>
+			<statOffsets>
+				<WorkToBuild>140</WorkToBuild>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>0.4</MarketValue>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<WorkToBuild>5.8</WorkToBuild>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+			<color>(136, 69, 53)</color>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Керамика -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Ceramics">
+		<defName>Ceramics</defName>
+		<label>Ceramics</label>
+		<description>Bunch of ceramics. Can be used in pottery and defensive purpose.</description>
+		<graphicData>
+			<texPath>Things/Item/Ceramics/Ceramics</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1.8</MarketValue>
+			<Mass>0.38</Mass>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+			<Beauty>-12</Beauty>
+			<ConstructionSpeedFactor>1</ConstructionSpeedFactor>
+		</statBases>
+		<thingCategories>
+			<li>Resources</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<stuffProps>
+			<categories>
+				<li>Ceramics</li>
+			</categories>
+			<commonality>0.05</commonality>
+			<appearance>Metal</appearance>
+			<statOffsets>
+				<WorkToBuild>120</WorkToBuild>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.45</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<Beauty>1.2</Beauty>
+				<WorkToBuild>2.8</WorkToBuild>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+			<color>(140, 112, 93)</color>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Цемент -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Cementum">
+		<defName>Cementum</defName>
+		<label>Cementum</label>
+		<description>A bucket of cementum.</description>
+		<graphicData>
+			<texPath>Things/Item/Cementum/Cementum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<MarketValue>0.4</MarketValue>
+			<Mass>0.58</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Cementum</li>
+			</categories>
+			<commonality>0.05</commonality>
+			<appearance>Metal</appearance>
+			<statOffsets>
+				<WorkToBuild>240</WorkToBuild>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>1.20</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<Beauty>0.8</Beauty>
+				<WorkToBuild>3.8</WorkToBuild>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+			<color>(100, 100, 100)</color>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+		</stuffProps>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>SulfuricAcid</defName>
+		<label>Sulfuric Acid</label>
+		<description>A container of sulfuric acid</description>
+		<graphicData>
+			<texPath>Things/Item/SulfuricAcid</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>2.4</MarketValue>
+			<Mass>0.38</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Polymers</defName>
+		<label>Polymers</label>
+		<description>Pile of polymers</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Polymers</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>2.4</MarketValue>
+			<Mass>0.38</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!--======= СВЯЗАНО С ЕДОЙ/СХ =======-->
+	<!-- Соль -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Salt">
+		<defName>Salt</defName>
+		<label>Salt</label>
+		<description>A pile of salt.</description>
+		<graphicData>
+			<texPath>Things/Item/Salt/Salt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>Buyable</tradeability>
+		<statBases>
+			<OreGridCommonality>1</OreGridCommonality>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>0.12</MarketValue>
+			<Mass>0.18</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<deepCommonality>0.75</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>5~15</deepLumpSizeRange>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Селитра -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Saltpeter">
+		<defName>Saltpeter</defName>
+		<label>Saltpeter</label>
+		<description>A bag of saltpeter, important fertilizer.</description>
+		<graphicData>
+			<texPath>Things/Item/Saltpeter/Saltpeter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>Buyable</tradeability>
+		<statBases>
+			<OreGridCommonality>1</OreGridCommonality>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>0.42</MarketValue>
+			<Mass>0.18</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<stackLimit>500</stackLimit>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<deepCommonality>0.8</deepCommonality>
+		<deepCountPerPortion>70</deepCountPerPortion>
+		<deepLumpSizeRange>5~15</deepLumpSizeRange>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Цукор -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Sugar">
+		<defName>Sugar</defName>
+		<label>Sugar</label>
+		<description>A pile of sugar.</description>
+		<graphicData>
+			<texPath>Things/Item/Sugar/Sugar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>0.42</MarketValue>
+			<Mass>0.48</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Специя -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Spice">
+		<defName>Spice</defName>
+		<label>Spice</label>
+		<description>A pile of different spices of all the colors.</description>
+		<graphicData>
+			<texPath>Things/Item/Spice/Spice</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1.06</MarketValue>
+			<Mass>0.05</Mass>
+			<Beauty>-6</Beauty>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Мука -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Flour">
+		<defName>Flour</defName>
+		<label>Flour</label>
+		<description>A bag of flour.</description>
+		<graphicData>
+			<texPath>Things/Item/Flour/Flour</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1.20</MarketValue>
+			<Mass>0.8</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>45</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Меласса (Патока) -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Molasses</defName>
+		<label>Molasses</label>
+		<description>A bucket of molasses. Can be used to produce yeasts in fermentation jug.</description>
+		<graphicData>
+			<texPath>Things/Item/FoodRelated/Molasses</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>0.22</MarketValue>
+			<Mass>0.48</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!-- Дрожжи-ежжи -->
+	<ThingDef ParentName="ResourceBase"
+	          Name="Yeasts">
+		<defName>Yeasts</defName>
+		<label>Yeasts</label>
+		<description>A package of yeasts.</description>
+		<graphicData>
+			<texPath>Things/Item/Yeasts</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1.05</MarketValue>
+			<Mass>0.15</Mass>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	<!--Комплект синткани-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>SynthreadKit</defName>
+		<label>Synthread kit</label>
+		<description>A set of components for creating synthread</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Manufactured/SynthreadKit</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>6</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+	<!--Комплект гиперткани-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>HyperweaveKit</defName>
+		<label>Hyperweave kit</label>
+		<description>A set of components for creating hyperweave</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Manufactured/HyperweaveKit</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>9.2</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+	<!--Комплект армированной ткани-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>ArmoredClothKit</defName>
+		<label>Armored cloth kit</label>
+		<description>A set of components for creating armored cloth</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Manufactured/ArmoredClothKit</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>9.2</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+</Defs>

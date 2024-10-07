@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Leather_Wildebeest.label>шкура гну</Leather_Wildebeest.label>
+	<Leather_Wildebeest.description>Толстый, но ломкий мех и кожа гну. Хотя она обеспечивает некоторую степень защиты от повреждений, долговечность изделия значительно уменьшается.</Leather_Wildebeest.description>
+
+	<Leather_Pinniped.label>кожа ластоногого</Leather_Pinniped.label>
+	<Leather_Pinniped.description>Дубленая и высушенная кожа ластоногого. Она имеет среднюю прочность, но хорошо изолирует от жары.</Leather_Pinniped.description>
+
+	<Leather_Tiger.label>кожа тигра</Leather_Tiger.label>
+	<Leather_Tiger.description>На старой Земле тигры часто становились целью браконьеров из-за их роскошных шкур, что чуть не привело к их исчезновению. С учетом почти полной беззакония на Окраине, тигровая кожа рассматривается как еще один экзотический товар, которым торгуют между поселениями.</Leather_Tiger.description>
+
+	<Leather_Lion.label>шкура льва</Leather_Lion.label>
+	<Leather_Lion.description>Прочная, роскошная кожа царя животного мира. Часто востребована филантропами урбсфер.</Leather_Lion.description>
+
+	<Leather_Hippopotamus.label>кожа гиппопотама</Leather_Hippopotamus.label>
+	<Leather_Hippopotamus.description>Толстая кожа гиппопотама. Она не только чрезвычайно прочная, но и обеспечивает значительную теплоизоляцию.</Leather_Hippopotamus.description>
+
+</LanguageData>

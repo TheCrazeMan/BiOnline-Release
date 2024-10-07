@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!--Defs/ThingDefs_Plants/Seeds.xml-->
+	
+	<SeedBeet.label>Семена свекла</SeedBeet.label>
+	<SeedBeet.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedBeet.description>
+
+	<SeedBlackPepper.label>Семена чёрного перца</SeedBlackPepper.label>
+	<SeedBlackPepper.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedBlackPepper.description>
+
+	<SeedBroots.label>Семена белых грибов</SeedBroots.label>
+	<SeedBroots.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedBroots.description>
+
+	<SeedCarrot.label>Семена моркови</SeedCarrot.label>
+	<SeedCarrot.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedCarrot.description>
+
+	<SeedDarkBerryBush.label>Семена темных ягод</SeedDarkBerryBush.label>
+	<SeedDarkBerryBush.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedDarkBerryBush.description>
+	
+	<SeedGrape.label>Семена винограда</SeedGrape.label>
+	<SeedGrape.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedGrape.description>
+
+	<SeedRedPetals.label>Семена красных лепестков</SeedRedPetals.label>
+	<SeedRedPetals.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedRedPetals.description>
+
+	<SeedShrooms.label>Семена грибов</SeedShrooms.label>
+	<SeedShrooms.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedShrooms.description>
+
+	<SeedSulfurPoppy.label>Семена сернистого мака</SeedSulfurPoppy.label>
+	<SeedSulfurPoppy.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedSulfurPoppy.description>
+
+	<SeedTea.label>Семена чайного куста</SeedTea.label>
+	<SeedTea.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedTea.description>
+
+	<SeedTomato.label>Семена томата</SeedTomato.label>
+	<SeedTomato.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedTomato.description>
+
+	<SeedWheat.label>Семена пшеницы</SeedWheat.label>
+	<SeedWheat.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedWheat.description>
+
+	<Seed_Rice.label>Семена риса</Seed_Rice.label>
+	<Seed_Rice.description>Эти генетически модифицированные семена риса способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Rice.description>
+
+	<Seed_Potato.label>Семена картофеля</Seed_Potato.label>
+	<Seed_Potato.description>Эти генетически модифицированные семена картофеля способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Potato.description>
+
+	<Seed_Corn.label>Семена кукурузы</Seed_Corn.label>
+	<Seed_Corn.description>Эти генетически модифицированные семена кукурузы способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Corn.description>
+
+	<Seed_Strawberry.label>Семена клубники</Seed_Strawberry.label>
+	<Seed_Strawberry.description>Эти генетически модифицированные семена клубники способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Strawberry.description>
+
+	<Seed_Hops.label>Семена хмеля</Seed_Hops.label>
+	<Seed_Hops.description>Эти генетически модифицированные семена хмеля способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Hops.description>
+
+	<Seed_Smokeleaf.label>Семена дымолиста</Seed_Smokeleaf.label>
+	<Seed_Smokeleaf.description>Эти генетически модифицированные семена дымолиста способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Smokeleaf.description>
+
+	<Seed_Psychoid.label>Семена психолиста</Seed_Psychoid.label>
+	<Seed_Psychoid.description>Эти генетически модифицированные семена психолиста способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Psychoid.description>
+
+	<Seed_TreeDrago.label>Семена драконового дерева</Seed_TreeDrago.label>
+	<Seed_TreeDrago.description>Эти генетически модифицированные семена драконового дерева способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeDrago.description>
+
+	<Seed_TreeWillow.label>Семена ивы</Seed_TreeWillow.label>
+	<Seed_TreeWillow.description>Эти генетически модифицированные семена ивы способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeWillow.description>
+
+	<Seed_TreeCypress.label>Семена кипариса</Seed_TreeCypress.label>
+	<Seed_TreeCypress.description>Эти генетически модифицированные семена кипариса способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeCypress.description>
+
+	<Seed_TreeMaple.label>Семена клена</Seed_TreeMaple.label>
+	<Seed_TreeMaple.description>Эти генетически модифицированные семена клена способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeMaple.description>
+
+	<Seed_TreeOak.label>Семена дуба</Seed_TreeOak.label>
+	<Seed_TreeOak.description>Эти генетически модифицированные семена дуба способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeOak.description>
+
+	<Seed_TreePoplar.label>Семена тополя</Seed_TreePoplar.label>
+	<Seed_TreePoplar.description>Эти генетически модифицированные семена тополя способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreePoplar.description>
+
+	<Seed_TreePine.label>Семена сосны</Seed_TreePine.label>
+	<Seed_TreePine.description>Эти генетически модифицированные семена сосны способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreePine.description>
+
+	<Seed_TreeBirch.label>Семена березы</Seed_TreeBirch.label>
+	<Seed_TreeBirch.description>Эти генетически модифицированные семена березы способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeBirch.description>
+
+	<Seed_TreeTeak.label>Семена тикового дерева</Seed_TreeTeak.label>
+	<Seed_TreeTeak.description>Эти генетически модифицированные семена тикового дерева способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeTeak.description>
+
+	<Seed_TreeCecropia.label>Семена цекропии</Seed_TreeCecropia.label>
+	<Seed_TreeCecropia.description>Эти генетически модифицированные семена цекропии способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeCecropia.description>
+
+	<Seed_TreePalm.label>Семена пальмы</Seed_TreePalm.label>
+	<Seed_TreePalm.description>Эти генетически модифицированные семена пальмы способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreePalm.description>
+
+	<Seed_TreeBamboo.label>Семена бамбука</Seed_TreeBamboo.label>
+	<Seed_TreeBamboo.description>Эти генетически модифицированные семена бамбука способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_TreeBamboo.description>
+
+	<Seed_SaguaroCactus.label>Семена кактуса</Seed_SaguaroCactus.label>
+	<Seed_SaguaroCactus.description>Эти генетически модифицированные семена кактуса способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_SaguaroCactus.description>
+
+	<Seed_Cotton.label>Семена хлопка</Seed_Cotton.label>
+	<Seed_Cotton.description>Эти генетически модифицированные семена хлопка способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Cotton.description>
+
+	<Seed_Devilstrand.label>Споры дьявлонитника</Seed_Devilstrand.label>
+	<Seed_Devilstrand.description>Эти генетически модифицированные споры дьявлонитника способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Devilstrand.description>
+
+	<Seed_Healroot.label>Семена лечебного корня</Seed_Healroot.label>
+	<Seed_Healroot.description>Эти генетически модифицированные семена лечебного корня способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Healroot.description>
+
+	<Seed_Cocoa.label>Семена какао</Seed_Cocoa.label>
+	<Seed_Cocoa.description>Эти генетически модифицированные семена какао способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Cocoa.description>
+
+	<Seed_Tinctoria.label>Семена нео-индигоферы</Seed_Tinctoria.label>
+	<Seed_Tinctoria.description>Эти генетически модифицированные семена нео-индигоферы способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Tinctoria.description>
+
+	<Seed_Nutrifungus.label>Споры нутригриба</Seed_Nutrifungus.label>
+	<Seed_Nutrifungus.description>Эти генетически модифицированные споры нутригриба способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Nutrifungus.description>
+
+	<Seed_Bonsai.label>Семена бонсая</Seed_Bonsai.label>
+	<Seed_Bonsai.description>Эти генетически модифицированные семена бонсая способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Bonsai.description>
+
+	<Seed_Fibercorn.label>Семена волокноцвета</Seed_Fibercorn.label>
+	<Seed_Fibercorn.description>Эти генетически модифицированные семена волокноцвета способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Fibercorn.description>
+
+	<Seed_Toxipotato.label>Семена токситофеля</Seed_Toxipotato.label>
+	<Seed_Toxipotato.description>Эти генетически модифицированные семена токситофеля способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Toxipotato.description>
+
+	<Seed_PebbleCactus.label>Семена галечного кактуса</Seed_PebbleCactus.label>
+	<Seed_PebbleCactus.description>Эти генетически модифицированные семена галечного кактуса способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_PebbleCactus.description>
+
+	<Seed_GrayPine.label>Семена серой сосны</Seed_GrayPine.label>
+	<Seed_GrayPine.description>Эти генетически модифицированные семена серой сосны способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_GrayPine.description>
+
+	<Seed_Witchwood.label>Семена ведьминого дерева</Seed_Witchwood.label>
+	<Seed_Witchwood.description>Эти генетически модифицированные семена ведьминого дерева способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_Witchwood.description>
+
+	<Seed_RatPalm.label>Семена крысиной пальмы</Seed_RatPalm.label>
+	<Seed_RatPalm.description>Эти генетически модифицированные семена крысиной пальмы способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</Seed_RatPalm.description>
+
+	<SeedSoy.label>Cемена сои</SeedSoy.label>
+	<SeedSoy.description>Эти генетически модифицированные семена сои способны произрастать в самых разных чужеродных средах на протяжении нескольких поколений.</SeedSoy.description>
+	
+</LanguageData>

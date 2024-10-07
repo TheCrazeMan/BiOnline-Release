@@ -1,0 +1,49 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MendAndRecycle</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TableMending"]/comps</xpath>
+				<value>
+				 
+				    <comps>
+<!-- 						<li Class="CompProperties_Power">
+						<compClass>CompPowerTrader</compClass>
+						<basePowerConsumption>200</basePowerConsumption>
+						</li> -->
+						
+						<li Class="CompProperties_Refuelable">
+						<fuelConsumptionRate>5.0</fuelConsumptionRate>
+						<fuelCapacity>5.0</fuelCapacity>
+						<fuelFilter>
+							<thingDefs>
+								<li>MendingKit</li>
+							</thingDefs>
+						</fuelFilter>
+						<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+						</li>
+						
+						<li Class="CompProperties_Flickable"/>
+						
+						<li Class="CompProperties_AffectedByFacilities">
+							<linkableFacilities>
+							  <li>ToolCabinet</li>
+							</linkableFacilities>
+						</li>
+						
+						<li Class="CompProperties_Breakdownable"/>
+					</comps> 
+				 
+				</value>
+			  </li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>

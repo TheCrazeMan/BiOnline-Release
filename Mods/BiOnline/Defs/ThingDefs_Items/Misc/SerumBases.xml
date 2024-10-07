@@ -1,0 +1,677 @@
+<Defs>
+
+	<!-- Сыворотка исцеления -->
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>MechSerumHealer_Uncoded</defName>
+		<label>Serum Healer Uncoded</label>
+		<description>Uncoded mech healer serum. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Healing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Medicine>15</Medicine>
+		  </skillRequirements>	  
+		</recipeMaker>
+		<costList>
+			<Healing_Elixir>5</Healing_Elixir>
+			<HemogenPack>20</HemogenPack>
+			<AlloysChlorophyte>10</AlloysChlorophyte>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<!-- Сыворотка воскрешения -->
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>MechSerumResurrector_Uncoded</defName>
+		<label>Serum Resurrector Uncoded</label>
+		<description>Uncoded mech resurrector serum. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Ressurect</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>1575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Medicine>18</Medicine>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<MechSerumHealer>3</MechSerumHealer>
+			<HemogenPack>30</HemogenPack>
+			<BiO_AnimaGrass>20</BiO_AnimaGrass>
+			<Luciferium>5</Luciferium>
+			<AlloysChlorophyte>10</AlloysChlorophyte>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<!-- Нейротренеры (навыки) -->
+	
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Shooting_Uncoded</defName> <!-- Дальний бой -->
+		<label>Uncoded shooting neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Shooting>8</Shooting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>1</SubcoreRegular>
+			<GoJuice>12</GoJuice>
+			<AlloysChlorophyte>3</AlloysChlorophyte>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+	</ThingDef>	
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Melee_Uncoded</defName> <!-- Ближний бой -->
+		<label>Uncoded melee neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Melee>8</Melee>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>1</SubcoreRegular>
+			<GoJuice>12</GoJuice>
+			<AlloysChlorophyte>3</AlloysChlorophyte>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Construction_Uncoded</defName> <!-- Строительство -->
+		<label>Uncoded Construction neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Construction>8</Construction>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>2</SubcoreRegular>
+			<GoJuice>16</GoJuice>
+			<AlloysChlorophyte>5</AlloysChlorophyte>
+			<Lead>120</Lead>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Mining_Uncoded</defName> <!-- Горное дело -->
+		<label>Uncoded Mining neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Mining>8</Mining>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>2</SubcoreRegular>
+			<GoJuice>16</GoJuice>
+			<AlloysChlorophyte>5</AlloysChlorophyte>
+			<Lead>120</Lead>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Cooking_Uncoded</defName> <!-- Кулинария -->
+		<label>Uncoded Cooking neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Cooking>8</Cooking>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>1</SubcoreRegular>
+			<GoJuice>12</GoJuice>
+			<AlloysChlorophyte>3</AlloysChlorophyte>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Plants_Uncoded</defName> <!-- Растениеводство -->
+		<label>Uncoded Plants neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Plants>8</Plants>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>2</SubcoreRegular>
+			<GoJuice>16</GoJuice>
+			<AlloysChlorophyte>5</AlloysChlorophyte>
+			<Lead>120</Lead>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Animals_Uncoded</defName> <!-- Животноводство -->
+		<label>Uncoded Animals neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Animals>8</Animals>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>1</SubcoreRegular>
+			<GoJuice>12</GoJuice>
+			<AlloysChlorophyte>3</AlloysChlorophyte>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Crafting_Uncoded</defName> <!-- Ремесло -->
+		<label>Uncoded Crafting neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>2</SubcoreRegular>
+			<GoJuice>16</GoJuice>
+			<AlloysChlorophyte>8</AlloysChlorophyte>
+			<Gold>5</Gold>
+			<Lead>150</Lead>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Artistic_Uncoded</defName> <!-- Искусство -->
+		<label>Uncoded Artistic neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Artistic>8</Artistic>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>1</SubcoreRegular>
+			<GoJuice>12</GoJuice>
+			<AlloysChlorophyte>3</AlloysChlorophyte>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Medicine_Uncoded</defName> <!-- Медицина -->
+		<label>Uncoded Medicine neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Medicine>8</Medicine>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>		
+			<SubcoreRegular>2</SubcoreRegular>
+			<GoJuice>16</GoJuice>
+			<AlloysChlorophyte>5</AlloysChlorophyte>
+			<Lead>120</Lead>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Social_Uncoded</defName> <!-- Общение -->
+		<label>Uncoded Social neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>		
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Social>8</Social>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>2</SubcoreRegular>
+			<GoJuice>16</GoJuice>
+			<AlloysChlorophyte>8</AlloysChlorophyte>
+			<Gold>5</Gold>
+			<Lead>150</Lead>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase" >
+		<defName>Neurotrainer_Intellectual_Uncoded</defName> <!-- Умственный труд -->
+		<label>Uncoded Intellectual neurotrainer</label>
+		<description>Uncoded neurotrainer. Needs to be encoded to use</description>
+		<graphicData>
+			<texPath>Things/Item/Uncoded_Serums/Uncoded_Serum_Skill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>575</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>false</intricate>
+		<thingCategories>
+			<li>BiO_Components</li>
+		</thingCategories>
+		<recipeMaker>
+		  <researchPrerequisite>SerumProduction</researchPrerequisite>
+		  <recipeUsers>
+			<li>SerumCentrifuge</li>
+		  </recipeUsers>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Intellectual</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <skillRequirements>
+			<Intellectual>8</Intellectual>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SubcoreRegular>1</SubcoreRegular>
+			<GoJuice>12</GoJuice>
+			<AlloysChlorophyte>3</AlloysChlorophyte>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+	</ThingDef>
+
+</Defs>

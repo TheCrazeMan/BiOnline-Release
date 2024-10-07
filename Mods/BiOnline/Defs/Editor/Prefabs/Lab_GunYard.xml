@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.BuildingPrefabDef>
+		<defName>Lab_GunYard</defName>
+		<label>Стрельбище (лаба)</label>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<prefabRect>
+			<cellsCount>80</cellsCount>
+			<prefabSize>(10, 8)</prefabSize>
+			<centerPosition>(38, 0, 45)</centerPosition>
+			<cellsDeflate>
+DcOHNkIBAADQR6Uh0VAIRdNKVkMlTZT4/7/p3nNuEARBwpyXNn126NId9z225I0vjvxy16R5y9766offhjyw4JV3vjn2x7ApT7z2
+3o6frox46KkVH+w6ce2eR55ZtWXPqb9GTVu05qN9Z26MmfHcum3fnftn3KwXNnxy4MJ/tw==
+</cellsDeflate>
+		</prefabRect>
+		<terrain>
+			<cellsCount>80</cellsCount>
+			<terrainDefDeflate>
+Cy5JLcrMSQ0BYutgItgBiWWpKWCWb2pJYg5JLGLMH3i7nPPzkotSS4hjjFozQqxJLCpILQlKTcGUAwA=
+</terrainDefDeflate>
+			<terrainCellsDeflate>
+DcOHNkIBAADQR6Uh0VAIRdNKVkMlTZT4/7/p3nNuEATBjruGDBtxz6gx4ybcN+mBKQ89Mm3GrDmPzVvwxFPPLHruhZeWLHvltRWr
+1qzbsOmNt95574MtH2375LMvvvpmx649+747cOjID8d+OnHqzLkLl3757Y8r1/668c9/tw==
+</terrainCellsDeflate>
+		</terrain>
+		<buildings>
+			<cellsCount>33</cellsCount>
+			<positionsDeflate>
+Lc07CoNAAATQNRZi9ABZPyDWWgnB0iYQRbz/cfKCO/CqgZkYQuhoObmY+bBwsPFmYuTFTkEW7tQ8qXiwUpIzEGnSV883bfz7Hw==
+</positionsDeflate>
+			<defsDeflate>
+tY9PC4JAEMW/Ukm3PWX+OYS0pAidZFwnnHYYZVurj58khocOQXQZfg9m3ntTQM24fgRGFW9KUAym4FHldmC+9mS/wARqRwY8dRKO
+Bq3aiiEU/3L7XeQt8lmVSayjKveIrBnERnSjBp0qBufQV3tdzpgFm1U4vfJhLnpPliGMV3zEZo7owaDbdeKBZAxYbp2QubsrncZV
+Bv2hvqDx/1BP
+</defsDeflate>
+			<things>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Ammo_WeaponsAdvanced</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_WeaponsAdvanced</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_WeaponsAdvanced</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Ammo_WeaponsAdvanced</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Ammo_WeaponsAdvanced</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_WeaponsAdvanced</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Ammo_WeaponsAdvanced</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+			</things>
+		</buildings>
+		<items IsNull="True" />
+		<roof>
+			<cellsCount>79</cellsCount>
+			<roofDefDeflate>
+C8rPT3POzysuKSpNLklNsQ4a5Y/yR/mj/OHJBwA=
+</roofDefDeflate>
+			<roofCellsDeflate>
+DcOJUkEBAADAR45E6FAYRCdFFwqVm1To///G7swGQRCEDLtnxKgx4+6b8MCkKQ9NmzHrkceeeGrOM8/NW7BoybIVL6xa89Irr73x
+1jvrNrz3waYtH33y2Rdfbdux65vv9uw78MNPvxw6cuzEqTPnLlz67coff/1z7cat/+4A
+</roofCellsDeflate>
+		</roof>
+		<pawns IsNull="True" />
+		<commonality>1</commonality>
+	</BiOnline.MapGenerator.BuildingPrefabDef>
+</Defs>

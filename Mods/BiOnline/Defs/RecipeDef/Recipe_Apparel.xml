@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RecipeDef>
+		<defName>Make_Apparel_Crown_PSY</defName>
+		<label>Make psionic crown</label>
+		<description>Make psionic crown.</description>
+		<jobString>Make psionic crown.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>30000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<researchPrerequisite>Awakening_PSY</researchPrerequisite>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Psi_Fiber</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chlorophyte</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Gold</li>
+			<li>Chlorophyte</li>
+			<li>Psi_Fiber</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_Crown_PSY>1</Apparel_Crown_PSY>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Apparel_Coronet_PSY</defName>
+		<label>Make psionic coronet</label>
+		<description>Make psionic coronet.</description>
+		<jobString>Make psionic coronet.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>30000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<researchPrerequisite>Awakening_PSY</researchPrerequisite>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Psi_Fiber</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chlorophyte</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Gold</li>
+			<li>Chlorophyte</li>
+			<li>Psi_Fiber</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_Coronet_PSY>1</Apparel_Coronet_PSY>
+		</products>
+	</RecipeDef>
+
+	<!--Рубашка из эльтекса рецепт-->
+	<RecipeDef>
+		<defName>Craft_Apparel_PsyfocusShirt</defName>
+		<label>Craft EltexShirt</label>
+		<description>Craft EltexShirt.</description>
+		<researchPrerequisite>Filling_PSY</researchPrerequisite>
+		<jobString>Craft EltexShirt.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>14000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Eltex</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>		
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Eltex</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_PsyfocusShirt>1</Apparel_PsyfocusShirt>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<!--Жилетка из эльтекса рецепт-->
+	<RecipeDef>
+		<defName>Craft_Apparel_PsyfocusVest</defName>
+		<label>Craft EltexVest</label>
+		<description>Craft EltexVest.</description>
+		<researchPrerequisite>Filling_PSY</researchPrerequisite>
+		<jobString>Craft EltexVest.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>16000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Eltex</li>
+					</thingDefs>
+				</filter>
+				<count>65</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Eltex</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_PsyfocusVest>1</Apparel_PsyfocusVest>
+		</products>
+		<skillRequirements>
+			<Crafting>13</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<!--Тафья из эльтекса рецепт-->
+	<RecipeDef>
+		<defName>Craft_Apparel_EltexSkullcap</defName>
+		<label>Craft EltexSkullcap</label>
+		<description>Craft EltexSkullcap.</description>
+		<researchPrerequisite>Filling_PSY</researchPrerequisite>
+		<jobString>Craft EltexSkullcap.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>24000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Eltex</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Psi_Fiber</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Eltex</li>
+				<li>Psi_Fiber</li>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_EltexSkullcap>1</Apparel_EltexSkullcap>
+		</products>
+		<skillRequirements>
+			<Crafting>13</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+
+	<!--Шлём из эльтекса рецепт-->
+	<RecipeDef>
+		<defName>Craft_Apparel_PsyfocusHelmet</defName>
+		<label>Craft EltexHelmet</label>
+		<description>Craft EltexHelmet.</description>
+		<researchPrerequisite>Filling_PSY</researchPrerequisite>
+		<jobString>Craft EltexHelmet.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>18000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Eltex</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Eltex</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_PsyfocusHelmet>1</Apparel_PsyfocusHelmet>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<!--Мантия из эльтекса-->
+	<RecipeDef>
+		<defName>Craft_Apparel_PsyfocusRobe_PSY</defName>
+		<label>Craft Robe PSY</label>
+		<description>Craft  Robe PSY.</description>
+		<researchPrerequisite>Filling_PSY</researchPrerequisite>
+		<jobString>Craft Robe PSY.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>18000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Psi_Fiber</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chlorophyte</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Eltex</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Eltex</li>
+				<li>Plasteel</li>
+				<li>Psi_Fiber</li>
+				<li>Chlorophyte</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_PsyfocusRobe_PSY>1</Apparel_PsyfocusRobe_PSY>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+</Defs>

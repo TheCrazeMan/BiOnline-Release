@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AbilityDef Name="LongJump">
+		<defName>LongjumpFoot</defName>
+		<label>longjump</label>
+		<description>Jump to a distant location using super-strong hemogen-powered legs.</description>
+		<iconPath>UI/Abilities/Longjump</iconPath>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<hostile>false</hostile>
+		<hotKey>Misc1</hotKey>
+		<verbProperties>
+		  <verbClass>Verb_CastAbilityJump</verbClass>
+		  <label>jump</label>
+		  <violent>false</violent>
+		  <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+		  <warmupTime>0.2</warmupTime>
+		  <range>16</range>
+		  <requireLineOfSight>false</requireLineOfSight>
+		  <soundCast>Longjump_Jump</soundCast>
+		  <soundLanding>Longjump_Land</soundLanding>
+		  <targetParams>
+			<canTargetLocations>true</canTargetLocations>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+		  </targetParams>
+		</verbProperties>
+		<jobDef>CastJump</jobDef>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>Cyberpsychosis</hediffDef>
+			<severity>0.60</severity>
+			<onlyBrain>false</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>false</replaceExisting>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+<!-- 	<AbilityDef Name="EMP">
+		<defName>EMPWave</defName>
+		<label>EMP wave</label>
+		<description>The concentration of implant energy and its abrupt release results in a powerful EMP shock</description>
+		<iconPath>UI/Ability/EMPWave</iconPath>
+		<cooldownTicksRange>1800</cooldownTicksRange>
+		<hostile>true</hostile>
+		<hotKey>Misc1</hotKey>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0.5</warmupTime>
+		  <requireLineOfSight>false</requireLineOfSight>
+		  <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+		  <drawAimPie>false</drawAimPie>
+		  <range>4</range>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="BiOnline.Abilities.CompProperties_Explosion">
+                <explosiveRadius>4</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<ignoreCaster>true</ignoreCaster>
+            </li>
+		</comps>
+	</AbilityDef> -->
+	
+	
+	<AbilityDef>
+		<defName>AdrenalineRush</defName>
+		<label>Adrenaline rush</label>
+		<description>The implant causes the kidneys to produce large amounts of adrenaline for a short period of time. This effect is similar to taking Go-juice with no adverse effects.</description>
+		<iconPath>UI/Ability/AdrenalineRush</iconPath>
+		<cooldownTicksRange>120000</cooldownTicksRange>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<hotKey>Misc1</hotKey>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0</warmupTime>
+		  <range>-1</range>
+		  <drawAimPie>False</drawAimPie>
+		  <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>AdrenalineRush</hediffDef>
+			<onlyBrain>false</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>true</replaceExisting>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>AcceleratedRegeneration</defName>
+		<label>Accelerated regeneration</label>
+		<description>The implant causes the kidneys to produce large amounts of adrenaline for a short period of time. This effect is similar to taking Go-juice with no adverse effects.</description>
+		<iconPath>UI/Ability/AcceleratedRegeneration</iconPath>
+		<cooldownTicksRange>120000</cooldownTicksRange>
+		<hostile>false</hostile>
+		<hotKey>Misc1</hotKey>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>		
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0</warmupTime>
+		  <range>-1</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>AcceleratedRegeneration</hediffDef>
+			<onlyBrain>false</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>True</replaceExisting>
+		  </li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>BrainOvercharge</defName>
+		<label>Brain overcharge</label>
+		<description>Integrated chip allows brain of user to adapt to pretty much every situation. Deccission making and working skills are enchanced a lot.</description>
+		<iconPath>UI/Ability/AcceleratedRegeneration</iconPath>
+		<cooldownTicksRange>160000</cooldownTicksRange>
+		<hostile>false</hostile>
+		<hotKey>Misc1</hotKey>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>		
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0</warmupTime>
+		  <range>-1</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>BrainOvercharge</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>True</replaceExisting>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>ElectroDischarge</defName>
+		<label>Electro-discharge</label>
+		<description>Electro-discharge</description>
+		<iconPath>UI/Ability/ElectroDischarge</iconPath>
+		<hotKey>Misc12</hotKey>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<hostile>true</hostile>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <range>-1</range>
+		  <warmupTime>2</warmupTime>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>True</requireLineOfSight>		
+		  <targetParams>
+			<onlyTargetPrisonersOfColony>false</onlyTargetPrisonersOfColony>
+			<neverTargetIncapacitated>True</neverTargetIncapacitated>
+			<canTargetAnimals>True</canTargetAnimals>
+			<canTargetHumans>True</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>ElectricShock</hediffDef>
+			<onlyBrain>false</onlyBrain>
+			<onlyApplyToSelf>false</onlyApplyToSelf>
+			<replaceExisting>True</replaceExisting>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>

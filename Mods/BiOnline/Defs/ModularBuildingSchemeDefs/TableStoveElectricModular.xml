@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BiOnline.Things.ModularBuildingSchemeDef>
+        <defName>TableStoveElectricModular</defName>
+        <parts>
+            <li>
+                <tag>PreservationModule</tag>
+                <label>Preservation module</label>
+				<groups>
+					<li>
+						<thingFilter>
+							<thingDefs>
+								<li>PreservationModule</li>
+							</thingDefs>
+						</thingFilter>
+						<cellOffset>(2, 0, 0)</cellOffset>
+					</li>
+				</groups>
+            </li>
+        </parts>
+    </BiOnline.Things.ModularBuildingSchemeDef>
+
+</Defs>

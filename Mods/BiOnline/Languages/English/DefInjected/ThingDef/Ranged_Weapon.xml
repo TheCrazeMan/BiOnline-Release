@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Самодельные пушки-->
+	
+	<BiO_Makeshift_Shotgun.label>Argument</BiO_Makeshift_Shotgun.label>
+	<BiO_Makeshift_Shotgun.description>A shotgun made by a collective farm handyman from what he could find at a metal salvage yard. Single-shot, but it's a killer. For both the shooter and the one being shot at.</BiO_Makeshift_Shotgun.description>
+	
+	<BiO_Makeshift_Magnum.label>Little killer</BiO_Makeshift_Magnum.label>
+	<BiO_Makeshift_Magnum.description>It's a compact homemade gun. You can definitely hit with it. If you try hard enough.</BiO_Makeshift_Magnum.description>
+	
+	<BiO_Makeshift_AutoRifle.label>Trasher</BiO_Makeshift_AutoRifle.label>
+	<BiO_Makeshift_AutoRifle.description>Something resembling a good old Kalashnikov assault rifle, assembled somewhere in Pakistan by local craftsmen. It shoots a lot, it hurts. It's good if you can't find anything better.</BiO_Makeshift_AutoRifle.description>
+	
+	<BiO_Makeshift_SMG.label>Mosquito</BiO_Makeshift_SMG.label>
+	<BiO_Makeshift_SMG.description>This mosquito is obviously more vicious than the ones in your countryside. Nevertheless, it is not a great tool, but you will definitely be able to fight back with dichlorvos.</BiO_Makeshift_SMG.description>
+	
+	<BiO_Makeshift_Rifle.label>Pugach</BiO_Makeshift_Rifle.label>
+	<BiO_Makeshift_Rifle.description>The scarecrow is a special type.Only when you're fully drunk will you be able to handle him.  Nobody knows why Pugach came out the way he did, but nevertheless, he kills. And he does it quite well.</BiO_Makeshift_Rifle.description>
+	
+	<!-- Тяжеленные пушки -->
+	
+	<BiO_NB_HeavyMachineGun.label>Batyanya</BiO_NB_HeavyMachineGun.label>
+	<BiO_NB_HeavyMachineGun.description>This big machine gun is the father of all handguns. It may not be mobile, but it has a lot of firepower: no one will be left alive after even a dozen shots.</BiO_NB_HeavyMachineGun.description>
+	
+	<BiO_NB_HeavyShotgun.label>Alabai</BiO_NB_HeavyShotgun.label>
+	<BiO_NB_HeavyShotgun.description>Alabays are really huge dogs. Huge and quite kind. This one, however, is an exception. This automatic shotgun can maul anyone who comes within twenty meters.</BiO_NB_HeavyShotgun.description>
+	
+	<BiO_NB_HeavySMG.label>Bumblebee</BiO_NB_HeavySMG.label>
+	<BiO_NB_HeavySMG.description>The only one of the ancient specimens suitable for fans of dynamic battles. This compact submachine gun will allow you to easily use your shield if you need extra armor with it.</BiO_NB_HeavySMG.description>
+	
+	<BiO_NB_GrenadeLauncher.label>Calendula</BiO_NB_GrenadeLauncher.label>
+	<BiO_NB_GrenadeLauncher.description>Don't let the bland name put you off. The Calendula is one of the most devastating hand grenade launchers ever invented. Three grenades, firing almost simultaneously, will leave no chance for your enemies.</BiO_NB_GrenadeLauncher.description>
+
+	<BiO_NB_HeavyAssaultRifle.label>Anarchy</BiO_NB_HeavyAssaultRifle.label>
+	<BiO_NB_HeavyAssaultRifle.description>Anarchy is the mother of order. And this weapon is a tool to establish it. It is ironic that this assault rifle used to be in service with a number of developed countries, which were famous for their totalitarianism. Now it has been modified to include a grenade launcher and, of course, the red letter "A".</BiO_NB_HeavyAssaultRifle.description>
+	
+</LanguageData>

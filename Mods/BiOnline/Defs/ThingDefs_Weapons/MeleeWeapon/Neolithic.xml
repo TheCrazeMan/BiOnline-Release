@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Деревянный молот-->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_Wood_BattleHammer</defName>
+		<label>Woody battle hammer</label>
+		<description>The two-handed war hammer represents a simple but effective weapon. It was made of wood and is massive in size. The handle of the hammer is long enough to hold it with two hands and deliver powerful blows.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Neolithic/BattleHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>NeolithicTwoHandled</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>2400</WorkToMake>
+			<Mass>4</Mass>
+			<Bulk>5</Bulk>
+			<MeleeCounterParryBonus>0.05</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.80</MeleeCritChance>
+			<MeleeParryChance>0.05</MeleeParryChance>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<costList>
+			<WoodLog>80</WoodLog>
+			<Hay>20</Hay>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>TribalBench</li>
+			</recipeUsers>
+			<displayPriority>300</displayPriority>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<chanceFactor>0.33</chanceFactor>
+				<cooldownTime>1.78</cooldownTime>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<chanceFactor>1</chanceFactor>
+				<power>22</power>
+				<cooldownTime>3.50</cooldownTime>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.20,1.20</DrawSize>
+		</li>		
+		</modExtensions>
+	</ThingDef>
+	<!--Каменное копьё-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_StonySpear</defName>
+		<label>Stony spear</label>
+		<description>Created from stone and wood, this weapon is a long stick with a stone tip attached to it. Stone spears were one of the first weapons created by man. They were used for hunting, defense, and battle.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Neolithic/StoneSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>Spear</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>2400</WorkToMake>
+			<Mass>3</Mass>
+			<Bulk>13</Bulk>
+			<MeleeCounterParryBonus>1.3</MeleeCounterParryBonus>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.1</MeleeCritChance>
+			<MeleeParryChance>1.15</MeleeParryChance>
+			<MeleeDodgeChance>0.8</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<costList>
+			<WoodLog>20</WoodLog>
+			<Hay>5</Hay>
+		</costList>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>TribalBench</li>
+			</recipeUsers>
+			<displayPriority>330</displayPriority>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.35</cooldownTime>
+				<chanceFactor>0.15</chanceFactor>
+				<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.78</cooldownTime>
+				<chanceFactor>0.05</chanceFactor>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.19</cooldownTime>
+				<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+				<armorPenetrationSharp>1.25</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.20,1.20</DrawSize>
+		</li>		
+		</modExtensions>
+		<comps Inherit="False">
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li>
+			<compClass>CompEquippable</compClass>
+		  </li>
+		  <li Class="CompProperties_Styleable"/>
+		</comps>		
+	</ThingDef>
+
+	<!-- Огненное копьё -->
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_FlameSpear</defName>
+		<label>Flame spear</label>
+		<description>Created from stone and wood, this weapon is a long stick with a stone tip attached to it. Stone spears were one of the first weapons created by man. They were used for hunting, defense, and battle.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Neolithic/FlameSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>Spear</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToMake>2600</WorkToMake>
+			<Mass>3</Mass>
+			<Bulk>13</Bulk>
+			<MeleeCounterParryBonus>1.3</MeleeCounterParryBonus>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.1</MeleeCritChance>
+			<MeleeParryChance>1.15</MeleeParryChance>
+			<MeleeDodgeChance>0.8</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<costList>
+			<WoodLog>20</WoodLog>
+			<Gunpowder>20</Gunpowder>
+			<Paper>5</Paper>
+			<Hay>15</Hay>
+		</costList>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>TribalBench</li>
+			</recipeUsers>
+			<displayPriority>330</displayPriority>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.35</cooldownTime>
+				<chanceFactor>0.15</chanceFactor>
+				<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.78</cooldownTime>
+				<chanceFactor>0.05</chanceFactor>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.19</cooldownTime>
+				<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+				<armorPenetrationSharp>1.25</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.20,1.20</DrawSize>
+		</li>		
+		</modExtensions>
+		<comps Inherit="False">
+		  <li Class="CompProperties_EquippableAbilityReloadable">
+			<abilityDef>FireSpear</abilityDef>
+			<maxCharges>1</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>burner charge</chargeNoun>
+			<ammoDef>Gunpowder</ammoDef>
+			<ammoCountPerCharge>20</ammoCountPerCharge>
+			<baseReloadTicks>180</baseReloadTicks>
+		  </li>
+		  <li Class="CompProperties_Styleable"></li>
+		  <li Class="CompProperties_Forbiddable"/>		  
+		</comps>
+	</ThingDef>
+
+	  <AbilityDef>
+		<defName>FireSpear</defName>
+		<label>fire spew</label>
+		<description>Spit a stream of sticky, flammable bile from the mouth. The bile can ignite anything or anyone it hits, and also form flaming pools on the ground.\n\nThe bile is generated and stored by an organ in the neck, along with a separate pouch of hypergolic reactant for ignition.</description>
+		<iconPath>UI/Abilities/FireSpew</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <requireLineOfSight>true</requireLineOfSight>
+		  <range>7.9</range>
+		  <warmupTime>1</warmupTime>
+		  <soundCast>FireSpew_Resolve</soundCast>
+		  <targetParams>
+			<canTargetLocations>true</canTargetLocations>
+		  </targetParams>
+		  <flammabilityAttachFireChanceCurve>
+			<points>
+			  <li>(0.2, 0)</li>
+			  <li>(1, 1)</li>
+			</points>
+		  </flammabilityAttachFireChanceCurve>		  
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityFireSpew">
+			<range>7.9</range>
+			<lineWidthEnd>3</lineWidthEnd>
+			<filthDef>Filth_FlammableBile</filthDef>
+			<damAmount>12</damAmount>
+			<canHitFilledCells>true</canHitFilledCells>
+		  </li>
+		</comps>
+	  </AbilityDef>
+
+	
+</Defs>

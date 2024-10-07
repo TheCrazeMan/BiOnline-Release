@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Производство-->
+	<BarrelProcessor.label>Бочка для броженния</BarrelProcessor.label>
+	<BarrelProcessor.description>Сооружение, предназначенное для процесса брожения различных напитков. Бочка для брожения обеспечивает оптимальные условия для процесса брожения, что позволяет получить качественный и ароматный напиток.</BarrelProcessor.description>
+  
+	<Advanced_Smelter.label>Индукционная тигельная печь</Advanced_Smelter.label>
+	<Advanced_Smelter.description>Индукционная тигельная печь, позволяет получать экстремальные температуры для переплавки руд. Её главным минусом является отсутствие регулировки температуры и огромные расходы электроэнергии.</Advanced_Smelter.description>
+	
+	<BiO_Smelter.label>Каменная плавильня</BiO_Smelter.label>
+	<BiO_Smelter.description>Большая каменная печь, может использоваться для изготовления сплавов и пиролиза древесины.</BiO_Smelter.description>
+	
+	<Bio_Cold_Stone_cooler.label>Хладокаменный охладитель</Bio_Cold_Stone_cooler.label>
+	<Bio_Cold_Stone_cooler.description>Устройство, способное поддерживать минусовую температуру в небольших помещениях. Принцип действия основан на разрушении холодного камня.</Bio_Cold_Stone_cooler.description>
+	
+	<BiO_writingDesk.label>Письменный стол</BiO_writingDesk.label>
+	<BiO_writingDesk.description>Стол для письменных работ. Используется для написания теорий и книг.</BiO_writingDesk.description>
+	
+	<FermentingJug.label>Кувшин</FermentingJug.label>
+	<FermentingJug.description>Кувшин для броженния сырого сусла, браги и прочего.</FermentingJug.description>
+	
+	<DryingRack.label>Сушилка</DryingRack.label>
+	<DryingRack.description>Сушилка. Позволяет сушить мясо и различные травы.</DryingRack.description>
+	
+	<Jug.label>Кувшин для ферментации</Jug.label>
+	<Jug.description>Кувшин для ферментации, в нём можете производить различные напитки.</Jug.description>
+	
+	<Advanced_Hydroponics.label>Продвинутая гидропоника (1х1)</Advanced_Hydroponics.label>
+	<Advanced_Hydroponics.description>Продвинутая гидропоника, предназначенная для выращивания почти любых растений. Каждая отдельная ячейка оборудованна солнечной лампой.</Advanced_Hydroponics.description>
+
+	<MedicalBench.label>Медицинский станок</MedicalBench.label>
+	<MedicalBench.description>Усовершенствованная версия верстака, предназначенная для работы с медицинскими препаратами и бионическими протезами.</MedicalBench.description>
+
+	<SerumCoder.label>Кодировщик сывороток</SerumCoder.label>
+	<SerumCoder.description>Простыми словами - котёл зельевара, только для утопичных миров. Позволяет создавать сыворотки, а так же нейротренеры. Удовольствие это не из дешёвых, а так же занимает довольно длительное время.</SerumCoder.description>
+	
+	<!--Мебель-->
+	
+	<StrawBed.label>Соломенная кровать</StrawBed.label>
+	<StrawBed.description>Простая и быстрая в изготовлении плетеная кровать, набитая соломой для большего комфорта.</StrawBed.description>
+	
+	<StrawBedDouble.label>Соломенная двойная кровать</StrawBedDouble.label>
+	<StrawBedDouble.description>Простая и быстрая в изготовлении плетеная кровать, набитая соломой для большего комфорта.</StrawBedDouble.description>
+	
+	<FurBed.label>Кровать из шкур</FurBed.label>
+	<FurBed.description>Сколько морских свинок вы убили для того, чтобы это сделать?</FurBed.description>
+	
+	<DoubleFurBed.label>Двойная кровать из шкур</DoubleFurBed.label>
+	<DoubleFurBed.description>Двуспальная кровать из шкур животных. Удобнее чем солома</DoubleFurBed.description>
+	
+	<HealingRootBed.label>Травяная кровать</HealingRootBed.label>
+	<HealingRootBed.description>Возможно называть деревянный каркас, набитый лечебными травами, кроватью - кощунство, но по крайней мере это значительно способствует залечиванию ран.</HealingRootBed.description>
+	
+	<TentA.label>Палатка (1 человек)</TentA.label>
+	<TentA.description>Одноместная палатка. Отлично подходит для ночёвки</TentA.description>
+	
+	<TentB.label>Палатка (2 человека)</TentB.label>
+	<TentB.description>Двухместная палатка. Отлично подходит для ночёвки</TentB.description>
+	
+	<TentC.label>Палатка (3 человека)</TentC.label>
+	<TentC.description>Трёхместная палатка. Отлично подходит для ночёвки</TentC.description>
+	
+	<TentD.label>Палатка (4 человека)</TentD.label>
+	<TentD.description>Четырёхместная палатка с котелком. Отлично подходит для ночёвки</TentD.description>
+
+	<TentModern.label>Современная палатка (1 человека)</TentModern.label>
+	<TentModern.description>Одноместная палатка с котелком. Отлично подходит для ночёвки</TentModern.description>	
+	<!--Оборона-->
+	
+	<Turret_Ballista.label>Баллиста</Turret_Ballista.label>
+	<Turret_Ballista.description>Баллиста - это мощное оружие, способное запускать большие болты на огромное расстояния. Эффективная как при осаде, так и при обороне, точная конструкция наводит страх на врагов, но после каждого выстрела ее необходимо перезаряжать.</Turret_Ballista.description>
+	
+	<DankPyon_Gun_BallistaTurret.label>Баллиста</DankPyon_Gun_BallistaTurret.label>
+	<DankPyon_Gun_BallistaTurret.description>Древнее военное осадное орудие в виде арбалета, установленного на деревянной конструкции.</DankPyon_Gun_BallistaTurret.description>
+</LanguageData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Новая руда-->
+  
+  <BIO_Cold_Stone.label>Хладокамень</BIO_Cold_Stone.label>
+  <BIO_Cold_Stone.description>Минерал синего цвета. Выглядит очень привлекательно,  на ощупь очень холодный.</BIO_Cold_Stone.description>
+
+  <Titanium_ore.label>Титан</Titanium_ore.label>
+  <Titanium_ore.description>Титан - это легкий переходный металл серебристо-белого цвета. Он обладает высокой коррозионной стойкостью.</Titanium_ore.description>
+
+  <Ceramite.label>Керамит</Ceramite.label>
+  <Ceramite.description>Керамит — это ударопрочный материал на основе керамики. Точно неизвестно, как он появился, одна из теорий заключается в том, что это окаменелые остатки жизнедеятельности жуков.</Ceramite.description>
+
+  <Chlorophyte.label>Хлорофит</Chlorophyte.label>
+  <Chlorophyte.description>Твердая руда, найденная в джунглях, используется для изготовления высококачественной мебели и может быть использована для ремонта вещей.</Chlorophyte.description>
+
+  <Mithril.label>Мифрил</Mithril.label>
+  <Mithril.description>Мифрил легкий и прочный, в четыре раза прочнее железа, более того, он намного легче своего материала, который обладает высокой пластичностью и не выцветает с годами, но требует очень высоких температур для обработки.</Mithril.description>
+  
+  <BiO_Sulfur.label>Сера</BiO_Sulfur.label>
+  <BiO_Sulfur.description>Очень мелкий желтый порошок.  При добавлении угля получится порох.</BiO_Sulfur.description>
+  
+  <BIO_IronOre.label>Железо</BIO_IronOre.label>
+  <BIO_IronOre.description>Основной металл, используемый для изготовления всевозможных предметов, широко распространенный среди средневековых цивилизаций. Сочетание этого металла с некоторыми химическими веществами позволяет получить сталь, гораздо более прочный материал.</BIO_IronOre.description>
+  
+  <BIO_Coal.label>Уголь</BIO_Coal.label>
+  <BIO_Coal.description>Уголь состоит в основном из углерода с переменным количеством других элементов. Обычно используется как топливо или как ингредиент в сплавах, например, в стали.</BIO_Coal.description>
+
+  <CopperOre.label>Медь</CopperOre.label>
+  <CopperOre.description>Как и железо, медь тоже должна быть обработана, чтобы стать хоть как-то полезной.</CopperOre.description>
+  
+  <LeadOre.label>Свинец</LeadOre.label>
+  <LeadOre.description>Кусок мягкого, но очень тяжелого металла. Может быть легко превращен во множество полезных вещей.</LeadOre.description>
+</LanguageData>

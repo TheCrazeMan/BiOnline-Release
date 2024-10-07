@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>DrinksTab</defName>
+		<label>Drinks</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+	
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Seeds</defName>
+		<label>Seeds</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Pistols</defName>
+		<label>Pistols</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>	
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Shotguns</defName>
+		<label>Shotguns</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Carbine</defName>
+		<label>Carbine</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Rifle</defName>
+		<label>Rifle</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>HighCaliber</defName>
+		<label>High caliber</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>FBAmmo</defName>
+		<label>Ammo</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>WBExplosives</defName>
+		<label>Explosives</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Misc</defName>
+		<label>Misc</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>	
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Serums</defName>
+		<label>Serums</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Drugs</defName>
+		<label>Drugs</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Tier1</defName>
+		<label>Tier 1</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>	
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Tier2</defName>
+		<label>Tier 2</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>	
+
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Tier3</defName>
+		<label>Tier 3</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+	
+	<BiOnline.Recipes.BuildingTabCategoryDef>
+		<defName>Sweet</defName>
+		<label>Sweet</label>
+	</BiOnline.Recipes.BuildingTabCategoryDef>
+
+</Defs>

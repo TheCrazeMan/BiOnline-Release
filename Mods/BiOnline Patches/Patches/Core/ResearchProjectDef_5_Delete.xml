@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ResearchProjectDef[
+	defName="Hydroponics" or 
+	defName="AirConditioning" or 
+	defName="GrowthVats" or 
+	defName="FertilityProcedures" or 
+	defName="ToxifierGenerator" or 
+	defName="VitalsMonitor" or 
+	defName="HospitalBed" or 
+	defName="MoisturePump" or 
+	defName="FoamTurret" or 
+	defName="SterileMaterials" or 
+	defName="GeothermalPower"  or 
+	defName="IEDs" or 
+	defName="Firefoam" or 
+	defName="PackagedSurvivalMeal" or 
+	defName="Autodoors" or 
+	defName="SolarPanels" or 
+	defName="NutrientPaste" or 
+	defName="WatermillGenerator" or 
+	defName="Greatbow" or 
+	defName="GoJuiceProduction" or 
+	defName="WakeUpProduction" or 
+	defName="RecurveBow" or 
+	defName="Pemmican"  or 
+	defName="Devilstrand" or 
+	defName="Brewing" or 
+	defName="TreeSowing" or 
+	defName="PsychoidBrewing" or 
+	defName="DrugProduction" or 
+	defName="MedicineProduction" or
+	defName="BiofuelRefining" or 
+	defName="JumpPack"
+	]</xpath>
+  </Operation>
+</Patch>

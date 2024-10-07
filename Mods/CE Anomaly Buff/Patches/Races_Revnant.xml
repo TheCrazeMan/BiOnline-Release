@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== Rev ========== -->
+	
+ <!--	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Revenant"]/statBases</xpath>
+		<value>
+			<ArmorRating_Sharp>500</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Revenant"]/statBases</xpath>
+		<value>
+			<ArmorRating_Blunt>10000</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Revenant"]/statBases</xpath>
+		<value>
+			<ArmorRating_Heat>10</ArmorRating_Heat>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Revenant"]/statBases</xpath>
+		<value>
+			<ArmorRating_Electric>10</ArmorRating_Electric>
+			<EMPResistance>0.95</EMPResistance>
+		</value>
+	</Operation> -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Revenant"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>10000</Durability>
+				<Regenerates>false</Regenerates>
+				<RegenInterval>2500</RegenInterval>
+				<RegenValue>5000</RegenValue>
+				<Repairable>false</Repairable>
+				<CanOverHeal>true</CanOverHeal>
+				<MaxOverHeal>50</MaxOverHeal>
+				<MinArmorPct>0</MinArmorPct>
+				<MinArmorValueSharp>0</MinArmorValueSharp>
+				<MinArmorValueBlunt>0</MinArmorValueBlunt>
+				<MinArmorValueHeat>0</MinArmorValueHeat>
+				<MinArmorValueElectric>0</MinArmorValueElectric>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

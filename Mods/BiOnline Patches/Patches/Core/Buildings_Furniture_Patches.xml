@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Подключение капельниц к мед кровати-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+		<value>
+			<li>DripBlood</li>
+			<li>DripNutrition</li>
+			<li>DripPainkiller</li>
+			<li>DripAntibiotics</li>
+		</value>
+	</Operation>
+	<!--Изменение скокрости выроботки иммунитета и шанса успеха операции-->
+	<!--Медецинская кровать-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HospitalBed"]/statBases</xpath>
+		<value>
+			<statBases>
+				<MaxHitPoints>150</MaxHitPoints>
+				<WorkToBuild>2800</WorkToBuild>
+				<Mass>35</Mass>
+				<Flammability>1.0</Flammability>
+				<BedRestEffectiveness>0.95</BedRestEffectiveness>
+				<Comfort>0.80</Comfort>
+				<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+				<MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>	
+				<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+				<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
+			</statBases>
+		</value>
+	</Operation>
+	<!--Обычные кровати-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/statBases</xpath>
+		<value>
+			<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.4</SurgerySuccessChanceFactor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[@Name="SansComfortBedBase"]/stuffCategories</xpath>
+		<value>
+		  <stuffCategories>
+			<li>Fabric</li>
+		  </stuffCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Bed"]</xpath>
+		<value>
+		  <costList>
+			<WoodLog>35</WoodLog>
+		  </costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="DoubleBed"]</xpath>
+		<value>
+		  <costList>
+			<WoodLog>70</WoodLog>
+		  </costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="RoyalBed"]/costList</xpath>
+		<value>
+		  <WoodLog>70</WoodLog>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Crib"]</xpath>
+		<value>
+		  <costList>
+		    <WoodLog>15</WoodLog>		
+		  </costList>
+		</value>
+	</Operation>	
+	<!--Спальное место-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[@Name="SleepingSpotBase"]/statBases</xpath>
+		<value>
+			<statBases>
+			  <WorkToBuild>0</WorkToBuild>
+			  <Comfort>0.4</Comfort>
+			  <MedicalTendQualityOffset>0.80</MedicalTendQualityOffset>	
+			  <SurgerySuccessChanceFactor>0.15</SurgerySuccessChanceFactor>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Bed"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Build/Furniture/VanillaBeds/Single/BedSingle</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DoubleBed"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Build/Furniture/VanillaBeds/Double/BedDouble</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="RoyalBed"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Build/Furniture/VanillaBeds/Royal/RoyalBed</texPath>
+		</value>
+	</Operation>	
+	<!--Спальные мешки-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Bedroll"]/statBases/ImmunityGainSpeedFactor</xpath>
+		<value>
+			<ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Bedroll"]/statBases/BedRestEffectiveness</xpath>
+		<value>
+			<SurgerySuccessChanceFactor>0.2</SurgerySuccessChanceFactor>
+			<BedRestEffectiveness>0.85</BedRestEffectiveness>
+		</value>
+	</Operation>
+</Patch>

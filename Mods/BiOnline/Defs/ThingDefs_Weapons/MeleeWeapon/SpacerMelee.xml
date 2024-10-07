@@ -1,0 +1,428 @@
+<Defs>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>MeleeWeapon_PMCPlasmaSword</defName>
+		<label>Vrangr sword</label>
+		<description>Vrangr sword is the best creation of PMC Catharsis in field of melee combat. That two handle plasma long sword may be a little worse than the Empire ones, but it's mass produced and all his drawbacks can be covered by skilled user.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Spacer/PlasmaSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<meleeHitSound>MeleeHit_BladelinkPlasmaSword</meleeHitSound>
+		<uiIconScale>1</uiIconScale>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>PMC_Melee</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>		
+		<statBases>
+			<MarketValue>3200</MarketValue>
+			<Mass>1.85</Mass>
+			<Bulk>7.5</Bulk>
+			<MeleeCounterParryBonus>1.4</MeleeCounterParryBonus>
+		</statBases>
+		<smeltable>False</smeltable>
+		<equippedStatOffsets>
+			<MeleeCritChance>1</MeleeCritChance>
+			<MeleeParryChance>0.75</MeleeParryChance>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>3</power>
+				<chanceFactor>0.1</chanceFactor>
+				<cooldownTime>1.44</cooldownTime>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>44</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>7</amount>
+						<chance>0.3</chance>
+					</li>
+				</extraMeleeDamages>
+				<cooldownTime>1.1</cooldownTime>
+				<armorPenetrationSharp>26.56</armorPenetrationSharp>
+				<armorPenetrationBlunt>5.141</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>26</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>5</amount>
+						<chance>0.2</chance>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>1</cooldownTime>
+				<armorPenetrationSharp>33.2</armorPenetrationSharp>
+				<armorPenetrationBlunt>3.05</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.20,1.20</DrawSize>
+				<DrawOffset>0.2,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>MeleeWeapon_PMCPlasmaGlaive</defName>
+		<label>Aram glaive</label>
+		<description>Aram glaive is a commisioned plasma weapon. Catharsis gives it to the best melee fighters. It may not perform best in assault scenarios, but it's obviously the best choice for those, who prefer defensive style of combat.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Spacer/PlasmaSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<meleeHitSound>MeleeHit_BladelinkPlasmaSword</meleeHitSound>
+		<uiIconScale>1</uiIconScale>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>PMC_Melee</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>		
+		<statBases>
+			<MarketValue>3200</MarketValue>
+			<Mass>2.5</Mass>
+			<Bulk>13.5</Bulk>
+			<MeleeCounterParryBonus>1.8</MeleeCounterParryBonus>
+		</statBases>
+		<smeltable>False</smeltable>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.85</MeleeCritChance>
+			<MeleeParryChance>1.65</MeleeParryChance>
+			<MeleeDodgeChance>1.25</MeleeDodgeChance>
+		</equippedStatOffsets>
+ 		<equippedAngleOffset>-55</equippedAngleOffset>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<chanceFactor>0.3</chanceFactor>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetrationBlunt>29.05</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>56</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>9</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>1.19</cooldownTime>
+				<armorPenetrationSharp>23.24</armorPenetrationSharp>
+				<armorPenetrationBlunt>3.25</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>7</amount>
+						<chance>0.4</chance>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>1.4</cooldownTime>
+				<chanceFactor>1.15</chanceFactor>
+				<armorPenetrationSharp>48.14</armorPenetrationSharp>
+				<armorPenetrationBlunt>4.84</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.20,1.20</DrawSize>
+				<DrawOffset>0.3,0.2</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>MeleeWeapon_PMCPlasmaHammer</defName>
+		<label>Sharur hammer</label>
+		<description>That plasma hammer is kind of an experiment, because who even would need a plasma hammer? Well, Catharsis PMC had a need, so they made a bunch of these.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Spacer/PlasmaHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<meleeHitSound>MeleeHit_BladelinkPlasmaSword</meleeHitSound>
+		<uiIconScale>1</uiIconScale>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>PMC_Melee</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>		
+		<statBases>
+			<MarketValue>3200</MarketValue>
+			<Mass>5.85</Mass>
+			<Bulk>10.5</Bulk>
+			<MeleeCounterParryBonus>0.65</MeleeCounterParryBonus>
+		</statBases>
+		<smeltable>False</smeltable>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.95</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-55</equippedAngleOffset>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>3</power>
+				<chanceFactor>0.1</chanceFactor>
+				<cooldownTime>1.44</cooldownTime>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>9</amount>
+						<chance>0.7</chance>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>2</cooldownTime>
+				<armorPenetrationSharp>8</armorPenetrationSharp>
+				<armorPenetrationBlunt>180</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>7</amount>
+						<chance>0.3</chance>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>2.12</cooldownTime>
+				<armorPenetrationSharp>30.14</armorPenetrationSharp>
+				<armorPenetrationBlunt>54.84</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>			
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.35,1.35</DrawSize>
+				<DrawOffset>0.2,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>MeleeWeapon_PMCPlasmaDagger</defName>
+		<label>Chentu dagger</label>
+		<description>Little plasma dagger made as a last chance weapon for Catharsis fighters. It's quite dangerous, so don't think that you have already won a battle if your opponent switched to melee.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Spacer/PlasmaDagger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<meleeHitSound>MeleeHit_BladelinkPlasmaSword</meleeHitSound>
+		<uiIconScale>1</uiIconScale>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>PMC_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<statBases>
+			<MarketValue>2200</MarketValue>
+			<Mass>0.6</Mass>
+			<Bulk>1.2</Bulk>
+			<MeleeCounterParryBonus>0.25</MeleeCounterParryBonus>
+		</statBases>
+		<smeltable>False</smeltable>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.5</MeleeCritChance>
+			<MeleeParryChance>0.2</MeleeParryChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>3</power>
+				<chanceFactor>0.1</chanceFactor>
+				<cooldownTime>1.44</cooldownTime>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>23</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>5</amount>
+						<chance>0.2</chance>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>0.9</cooldownTime>
+				<armorPenetrationSharp>11.62</armorPenetrationSharp>
+				<armorPenetrationBlunt>2.656</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>4</amount>
+						<chance>0.1</chance>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>1</cooldownTime>
+				<armorPenetrationSharp>15</armorPenetrationSharp>
+				<armorPenetrationBlunt>1.245</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.20,1.20</DrawSize>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

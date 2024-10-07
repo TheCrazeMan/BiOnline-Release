@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--ЧВК-->
+	<!--Y-0-->
+	<!--Запрос штурмового отряд I-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>AssaultTeamRequestI</defName>
+		<label>Assault team request I</label>
+		<description>Calling in 4 manned PMC fighters</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(0,1)</uiPosition>
+		<cooldownDays>30</cooldownDays>
+		<acceptGoodwillCost>15</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>20</resetCooldownGoodwillCost>
+		<minGoodwill>20</minGoodwill>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>4</pawnCount>
+			<pawnKindDef>PMC_RequestedTrooper_I</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос военного челнока-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallMilitaryShuttle</defName>
+		<label>Call military shuttle</label>
+		<description>Requesting a military shuttle for your own use. The shuttle can carry a large number of people, animals and cargo.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(0,3)</uiPosition>
+		<cooldownDays>40</cooldownDays>
+		<acceptGoodwillCost>10</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>20</resetCooldownGoodwillCost>
+		<minGoodwill>20</minGoodwill>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallShuttle"></worker>
+	</BiOnline.Factions.FactionPermitDef>
+<!-- 	Запрос первой помощи -->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallAidRequest</defName>
+		<label>Call aid request</label>
+		<description>Requesting delivery of a first aid kit. It includes 5 medicines and bandages.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(0,5)</uiPosition>
+		<cooldownDays>30</cooldownDays>
+		<acceptGoodwillCost>5</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>20</resetCooldownGoodwillCost>
+		<minGoodwill>20</minGoodwill>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<MedicineIndustrial>5</MedicineIndustrial>
+				<Bandages>5</Bandages>
+			</itemsToDrop>
+			<targetingRange>20</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос миномётного набора-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>MortarSet</defName>
+		<label>Mortar set</label>
+		<description>Requesting delivery of a mortar and 12 shells.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(0,7)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>10</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>30</resetCooldownGoodwillCost>
+		<minGoodwill>20</minGoodwill>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<Turret_Mortar>1</Turret_Mortar>
+				<Shell_Incendiary>6</Shell_Incendiary>
+				<Shell_HighExplosive>6</Shell_HighExplosive>
+			</itemsToDrop>
+			<targetingRange>39.9</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос припасов-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallSupplies</defName>
+		<label>Call supplies</label>
+		<description>Request delivery of 20 dry rations.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(0,8)</uiPosition>
+		<cooldownDays>30</cooldownDays>
+		<acceptGoodwillCost>5</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>20</resetCooldownGoodwillCost>
+		<minGoodwill>20</minGoodwill>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<MealSurvivalPack>20</MealSurvivalPack>
+			</itemsToDrop>
+			<targetingRange>39.9</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Y-1-->
+	<!--Запрос гренадёров-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallGrenadiers</defName>
+		<label>Call grenadiers</label>
+		<description>Calling 2 armed grenadiers.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(1,0)</uiPosition>
+		<cooldownDays>40</cooldownDays>
+		<acceptGoodwillCost>20</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>25</resetCooldownGoodwillCost>
+		<minGoodwill>40</minGoodwill>
+		<prerequisite>AssaultTeamRequestI</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>2</pawnCount>
+			<pawnKindDef>PMC_RequestedGrenadier</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос штурмового отряда II-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>AssaultTeamRequestII</defName>
+		<label>Assault team request II</label>
+		<description>Calling 6 manned PMC fighters.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(1,1)</uiPosition>
+		<cooldownDays>50</cooldownDays>
+		<acceptGoodwillCost>30</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>30</resetCooldownGoodwillCost>
+		<minGoodwill>40</minGoodwill>
+		<prerequisite>AssaultTeamRequestI</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>6</pawnCount>
+			<pawnKindDef>PMC_RequestedTrooper_II</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос эми отряда-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallTeamEMI</defName>
+		<label>Call Team EMI</label>
+		<description>Calling 2 armed fighters with an EMP.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(1,2)</uiPosition>
+		<cooldownDays>40</cooldownDays>
+		<acceptGoodwillCost>20</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>25</resetCooldownGoodwillCost>
+		<minGoodwill>40</minGoodwill>
+		<prerequisite>AssaultTeamRequestI</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>2</pawnCount>
+			<pawnKindDef>PMC_RequestedEMP_I</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос воздушной бомбардировки-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>BiOCallOrbitalSalvo</defName>
+		<label>Call orbital salvo </label>
+		<description>Requesting a series of strikes on an area around specified coordinates from a drone.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(1,3)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>20</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>40</resetCooldownGoodwillCost>
+		<minGoodwill>40</minGoodwill>
+<!-- 		<prerequisite>CallMilitaryShuttle</prerequisite> -->
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<OrbitalTargeterBombardment>1</OrbitalTargeterBombardment>
+			</itemsToDrop>
+			<targetingRange>39.9</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос парамедиков-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallParamedics</defName>
+		<label>Call paramedics</label>
+		<description>Call two paramedics.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(1,4)</uiPosition>
+		<cooldownDays>40</cooldownDays>
+		<acceptGoodwillCost>20</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>40</resetCooldownGoodwillCost>
+		<minGoodwill>40</minGoodwill>
+		<prerequisite>CallAidRequest</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallLaborers">
+			<aidDurationDays>2</aidDurationDays>
+			<pawnCount>3</pawnCount>
+			<pawnKindDef>PMC_RequestedMedic</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос медикаментов-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallMedication</defName>
+		<label>Call medication</label>
+		<description>Request delivery of 10 medications and a hemostatic.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(1,5)</uiPosition>
+		<cooldownDays>40</cooldownDays>
+		<acceptGoodwillCost>20</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>30</resetCooldownGoodwillCost>
+		<minGoodwill>40</minGoodwill>
+		<prerequisite>CallAidRequest</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<MedicineIndustrial>10</MedicineIndustrial>
+				<!-- <Hemostatic>10</Hemostatic> -->
+			</itemsToDrop>
+			<targetingRange>39.9</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос наркотиков-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallDrug</defName>
+		<label>Call drug</label>
+		<description>Request delivery of 5 flakes of Yayo and 15 cigarrete.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(1,6)</uiPosition>
+		<cooldownDays>40</cooldownDays>
+		<acceptGoodwillCost>20</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>30</resetCooldownGoodwillCost>
+		<minGoodwill>40</minGoodwill>
+		<prerequisite>CallAidRequest</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<Yayo>5</Yayo>
+				<Cigarrete>15</Cigarrete>
+			</itemsToDrop>
+			<targetingRange>39.9</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Y-2-->
+	<!--Запрос бронебойного отряда-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallArmorPiercingTeam</defName>
+		<label>Call armor-piercing Team</label>
+		<description>Summon 2 fighters with armor-piercing weapons.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(2,0)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>30</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>40</resetCooldownGoodwillCost>
+		<minGoodwill>60</minGoodwill>
+		<prerequisite>CallGrenadiers</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>2</pawnCount>
+			<pawnKindDef>PMC_RequestedArmorPiercier</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос отряда механойдов-->
+<!-- 	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallMechanoidTeam</defName>
+		<label>Call mechanoid Team</label>
+		<description>Summon 2 Scyther and 1 Lancer</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(2,2)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>30</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>40</resetCooldownGoodwillCost>
+		<minGoodwill>60</minGoodwill>
+		<prerequisite>AssaultTeamRequestII</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>2</pawnCount>
+			<pawnKindDef>Mech_Scyther</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef> -->
+	<!--Запрос силового луча-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallOrbitalPowerBeam</defName>
+		<label>Call orbital power beam</label>
+		<description>Request a force beam strike on an area around specified coordinates from a satellite.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(2,3)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>30</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>40</resetCooldownGoodwillCost>
+		<minGoodwill>60</minGoodwill>
+		<prerequisite>BiOCallOrbitalSalvo</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<Steel>250</Steel>
+			</itemsToDrop>
+			<targetingRange>39.9</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Запрос боевыйх стимуляторов-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallCombatStimulants</defName>
+		<label>Call combat stimulants</label>
+		<description>Request delivery of "Deflexitol", "Pyroform", "Detox", "Trasylol" in quantities of three.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(2,6)</uiPosition>
+		<cooldownDays>40</cooldownDays>
+		<acceptGoodwillCost>30</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>30</resetCooldownGoodwillCost>
+		<minGoodwill>60</minGoodwill>
+		<prerequisite>CallDrug</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_DropResources">
+			<itemsToDrop>
+				<NB_DefleXitol>4</NB_DefleXitol>
+				<NB_PyroForm>4</NB_PyroForm>
+				<!-- <Detox>4</Detox> -->
+				<NB_Trasylol_500k>4</NB_Trasylol_500k>
+			</itemsToDrop>
+			<targetingRange>39.9</targetingRange>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>
+	<!--Y-3-->
+	<!--Запрос элитного отряда-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallEliteTeam</defName>
+		<label>Call elite team</label>
+		<description>Calling four elite equipped fighters. They're armed with everything you could possibly need.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(3,1)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>40</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>60</resetCooldownGoodwillCost>
+		<minGoodwill>85</minGoodwill>
+		<prerequisite>AssaultTeamRequestII</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>5</pawnCount>
+			<pawnKindDef>PMC_RequestedElite_Assaulter</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>	
+	<!--Y-4-->
+	<!--Запрос Trigger-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallTrigger</defName>
+		<label>Call Trigger</label>
+		<description>A request from the elite "Trigger" sniper team.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(4,0)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>40</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>80</resetCooldownGoodwillCost>
+		<minGoodwill>85</minGoodwill>
+		<prerequisite>CallEliteTeam</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>1</pawnCount>
+			<pawnKindDef>PMC_Boss_Trigger</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>	
+	<!--Запрос IronClaw-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallIronClaw</defName>
+		<label>Call ironclaw</label>
+		<description>A request from the elite "Ironclaw" heavy team.</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(4,1)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>40</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>80</resetCooldownGoodwillCost>
+		<minGoodwill>85</minGoodwill>
+		<prerequisite>CallEliteTeam</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>1</pawnCount>
+			<pawnKindDef>PMC_Boss_IronClaw</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>	
+	<!--Запрос Maverick-->
+	<BiOnline.Factions.FactionPermitDef>
+		<defName>CallNomad</defName>
+		<label>Call Nomad</label>
+		<description>A request from the elite "Nomad" assault team</description>
+		<factionDef>PMC</factionDef>
+		<uiPosition>(4,2)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+		<acceptGoodwillCost>40</acceptGoodwillCost>
+		<resetCooldownGoodwillCost>80</resetCooldownGoodwillCost>
+		<minGoodwill>85</minGoodwill>
+		<prerequisite>CallEliteTeam</prerequisite>
+		<worker Class="BiOnline.Factions.BiFactionPermitWorker_CallAid">
+			<pawnCount>1</pawnCount>
+			<pawnKindDef>PMC_Boss_Nomad</pawnKindDef>
+		</worker>
+	</BiOnline.Factions.FactionPermitDef>	
+</Defs>

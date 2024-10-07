@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Удаление бионики-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="InstallBionicBladder" or defName="InstallHygieneEnhancer"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="BionicBladder" or defName="HygieneEnhancer"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="HygieneEnhancer" or defName="BionicBladder"]</xpath>
+	</Operation>
+</Patch>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Консоль связи-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RadioStation</defName>
+		<label>Radio station</label>
+		<description>The radio station allows communication with planetary factions.</description>
+		<thingClass>BiOnline.Things.Building_CommsBuilding</thingClass>
+		<graphicData>
+			<texPath>Things/Build/Misc/RadioStation/RadioStation</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.8,1.8)</drawSize>
+			<drawOffset>0, 0, 0.35</drawOffset>
+			<damageData>
+				<rect>(0,0,3,1.8)</rect>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(1, 1, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Build/Misc/RadioStation/RadioStation_south</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>ElectronicsI</li>
+		</researchPrerequisites>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Copper>60</Copper>
+		</costList>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<uiOrder>2100</uiOrder>
+		<comps Inherit="false">
+			<!-- Компонент с настройками -->
+			<li Class="BiOnline.Things.CompProperties_CommsBuilding">
+				<factionDefs>
+					<li>PMC</li>
+				</factionDefs>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	<!--База капельниц-->
+	<ThingDef Abstract="True"
+	          Name="Drip_Base"
+	          ParentName="BuildingBase">
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<offset>(0,0,-0.3)</offset>
+				<volume>(0.3, 0.3, 0.4)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0.078125,0.46875,0.859375,0.53125)</rectN>
+				<rectS>(0.078125,0.46875,0.859375,0.53125)</rectS>
+				<rectE>(0.125,0.46875,0.625,0.296875)</rectE>
+				<rectW>(0.25,0.46875,0.625,0.296875)</rectW>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.2</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+					<SurgerySuccessChanceFactor>0.10</SurgerySuccessChanceFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+			</li>
+		</comps>
+		<designationHotKey>Misc5</designationHotKey>
+		<placeWorkers>
+			<li>BiOnline.Things.PlaceWorker_Drip</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+	</ThingDef>
+	<!--Капельница с кровью-->
+	<ThingDef ParentName="Drip_Base">
+		<defName>DripBlood</defName>
+		<label>Drip (Blood)</label>
+		<thingClass>BiOnline.Things.Drip_Blood</thingClass>
+		<graphicData>
+			<texPath>Things/Build/Misc/DripBlood</texPath>
+		</graphicData>
+		<researchPrerequisites>
+			<li>MedicineIII</li>
+		</researchPrerequisites>
+		<description>Cuts the rate at which a pawn bleeds out by 75%. Also provides a 5% and 10% boost in medical tend quality and surgery success chance when placed adjacent to a hospital bed. Can buy you valuable time whilst preparing for treatment.</description>
+		<costList>
+			<Steel>150</Steel>
+			<Silver>5</Silver>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>15.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>HemogenPack</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+		</comps>
+	</ThingDef>
+	<!--Капельница с парентеральным питанием-->
+	<ThingDef ParentName="Drip_Base">
+		<defName>DripNutrition</defName>
+		<label>Drip (Nutrition)</label>
+		<thingClass>BiOnline.Things.Drip_Nutrition</thingClass>
+		<graphicData>
+			<texPath>Things/Build/Misc/DripNutrition</texPath>
+		</graphicData>
+		<researchPrerequisites>
+			<li>MedicineIII</li>
+		</researchPrerequisites>
+		<description>Provides nutrition to an immobile patient. Also provides a 5% and 10% boost in medical tend quality and surgery success chance when placed adjacent to a hospital bed.</description>
+		<costList>
+			<Steel>100</Steel>
+			<Silver>5</Silver>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<specialFiltersToDisallow>
+						<li>AllowPlantFood</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+						<li>Meat_Megaspider</li>
+					</disallowedThingDefs>
+				</filter>
+			</defaultStorageSettings>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>150.0</fuelCapacity>
+				<fuelFilter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+						<li>Meat_Megaspider</li>
+					</disallowedThingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+		</comps>
+	</ThingDef>
+	<!--Капельница с обезболивающим-->
+	<ThingDef ParentName="Drip_Base">
+		<defName>DripPainkiller</defName>
+		<label>Drip (Painkiller)</label>
+		<thingClass>BiOnline.Things.Drip_Painkiller</thingClass>
+		<graphicData>
+			<texPath>Things/Build/Misc/DripPainkiller</texPath>
+		</graphicData>
+		<researchPrerequisites>
+			<li>MedicineIII</li>
+		</researchPrerequisites>
+		<description>Reduces the amount of pain a colonist experiences by 95%. Also provides a 5% and 10% boost in medical tend quality and surgery success chance when placed adjacent to a hospital bed.</description>
+		<costList>
+			<Steel>150</Steel>
+			<Silver>5</Silver>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>15.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Yayo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+		</comps>
+	</ThingDef>
+	<!--Капельница с антибиотиками-->
+	<ThingDef ParentName="Drip_Base">
+		<defName>DripAntibiotics</defName>
+		<label>IV Drip (Antibiotic)</label>
+		<thingClass>BiOnline.Things.Drip_Antibiotic</thingClass>
+		<graphicData>
+			<texPath>Things/Build/Misc/DripAntibiotics</texPath>
+		</graphicData>
+		<researchPrerequisites>
+			<li>MedicineIII</li>
+		</researchPrerequisites>
+		<description>Improves a colonist's blood filtration stat thereby reducing the time it takes to develop immuninty against an illness. Also provides a 5% and 10% boost in medical tend quality and surgery success chance when placed adjacent to a hospital bed.</description>
+		<costList>
+			<Steel>150</Steel>
+			<Silver>5</Silver>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>15.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Penoxycyline</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TentBlueprint</defName>
+		<label>Tent blueprint</label>
+		<description>Tent blueprint</description>
+		<thingClass>BiOnline.Things.Blueprint_PlaceTent</thingClass>
+		<graphicData>
+			<texPath>Things/Build/Misc/TentBlueprint</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Blueprint</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<seeThroughFog>true</seeThroughFog>
+		<drawerType>MapMeshOnly</drawerType>
+		<size>(1,1)</size>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TentBuilding</defName>
+		<label>Tent building</label>
+		<description>Tent management</description>
+		<thingClass>BiOnline.Things.Building_TentBuilding</thingClass>
+		<graphicData>
+			<texPath>Things/Build/Misc/TentBlueprint</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Blueprint</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<seeThroughFog>true</seeThroughFog>
+		<drawerType>MapMeshOnly</drawerType>
+		<size>(1,1)</size>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+</Defs>

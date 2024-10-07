@@ -1,0 +1,12 @@
+<Patch>
+
+	<!-- Специалист может быть только 1! -->
+
+<!-- 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/preceptClass</xpath>
+		<value>
+			<preceptClass>Precept_RoleSingle</preceptClass>
+		</value>
+	</Operation> -->
+
+</Patch>

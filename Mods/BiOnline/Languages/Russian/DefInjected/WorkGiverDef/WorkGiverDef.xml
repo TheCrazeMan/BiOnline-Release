@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<FillResearchTable.label>Переносить ресурсы для исследования</FillResearchTable.label>
+	<FillResearchTable.verb>Переносить</FillResearchTable.verb>
+	<FillResearchTable.gerund>Переносить в</FillResearchTable.gerund>
+	
+	<AdditemsToLevelableBuildings.label>Переносить ресурсы в здание</AdditemsToLevelableBuildings.label>
+	<AdditemsToLevelableBuildings.verb>Переносить</AdditemsToLevelableBuildings.verb>
+	<AdditemsToLevelableBuildings.gerund>Переносить в</AdditemsToLevelableBuildings.gerund>
+	
+	<Write.label>Писать</Write.label>
+	<Write.verb>Писать</Write.verb>
+	<Write.gerund>Написать</Write.gerund>
+
+	<Medicine_Crafting.label>Работать на медицинском станке</Medicine_Crafting.label>
+	<Medicine_Crafting.verb>Работать</Medicine_Crafting.verb>
+	<Medicine_Crafting.gerund>Работает на</Medicine_Crafting.gerund>
+	
+	<RefillWateredBuilding.label>Наполнить водой строение</RefillWateredBuilding.label>
+	<RefillWateredBuilding.verb>Наполняет</RefillWateredBuilding.verb>
+	<RefillWateredBuilding.gerund>Наполнить</RefillWateredBuilding.gerund>
+	
+	<DoBillsExtended.label>выполнять задания на рабочем месте</DoBillsExtended.label>
+	<DoBillsExtended.gerund>работать на</DoBillsExtended.gerund>
+	<DoBillsExtended.verb>работать на</DoBillsExtended.verb>
+	
+	<DoBillsExtendedCooking.label>выполнять задания на рабочем месте</DoBillsExtendedCooking.label>
+	<DoBillsExtendedCooking.gerund>готовить на</DoBillsExtendedCooking.gerund>
+	<DoBillsExtendedCooking.verb>готовить на</DoBillsExtendedCooking.verb>
+	
+	<Fishing.label>Ловить рыбу на пирсе</Fishing.label>
+	<Fishing.gerund>Ловить на</Fishing.gerund>
+	<Fishing.verb>Ловить на</Fishing.verb>
+	
+	<Digging.label>Добывать породу</Digging.label>
+	<Digging.gerund>Добывать</Digging.gerund>
+	<Digging.verb>Добывать</Digging.verb>
+	
+	<ExploreTheSoily.label>Исследовать почву</ExploreTheSoily.label>
+	<ExploreTheSoily.gerund>Исследовать почву</ExploreTheSoily.gerund>
+	<ExploreTheSoily.verb>Исследовать почву</ExploreTheSoily.verb>
+	
+	<DoBillSeismicScanner.label>Копать в шахте</DoBillSeismicScanner.label>
+	<DoBillSeismicScanner.gerund>Копать в шахте</DoBillSeismicScanner.gerund>
+	<DoBillSeismicScanner.verb>Копать в шахте</DoBillSeismicScanner.verb>
+	
+</LanguageData>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Grower_Elixir</defName>
+    <label>Grower Elixir</label>
+    <description>The potion of plant growing consumed inside accelerates fine motor skills and vigilance of the consumer. This allows you to work much faster and harvest most of the crop without spoiling it.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Grower_Elixir</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>53</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>GrowerElixir</hediffDef>
+          <severity>0.5</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ToxicBuildup</hediffDef>
+          <severity>0.3</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Potions</researchPrerequisite>
+      <recipeUsers>
+		<li>Brewery</li>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <RawPotatoes>10</RawPotatoes>
+      <TM_RawBroots>20</TM_RawBroots>
+      <Ethanol>1</Ethanol>
+    </costList>
+    <comps>
+	   <li Class="CompProperties_Drug">
+		<listOrder>1000</listOrder>
+		<overdoseSeverityOffset>0</overdoseSeverityOffset>
+	   </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>GrowerElixir</defName>
+    <label>grower elixir</label>
+    <hediffClass>Hediff_High</hediffClass>
+    <labelNoun>a grower elixir</labelNoun>
+    <description>Grower elixir effect</description>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PlantWorkSpeed>0.40</PlantWorkSpeed>
+          <PlantHarvestYield>0.15</PlantHarvestYield>
+          <DrugHarvestYield>0.15</DrugHarvestYield>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

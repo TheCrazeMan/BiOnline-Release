@@ -1,0 +1,35 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>OnlineCity</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!--Бафф характеристик -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ScenarioDef[defName="OC_Imperial_beginning"]/scenario/parts</xpath>
+                    <value>
+							<li Class="BiOnline.Scenarios.ScenPart_FactionReputationLimiter">
+								<def>FactionReputationLimiter</def>
+								<reputation>
+									<PMC>-100~80</PMC>
+								</reputation>
+							</li>	
+
+							<li Class="BiOnline.Scenarios.ScenPart_ForcedFactionGoodwill">
+								<factionDef>Empire</factionDef>
+								<affectStartingGoodwill>True</affectStartingGoodwill>
+								<startingGoodwillRange>50~50</startingGoodwillRange>
+								<affectNaturalGoodwill>True</affectNaturalGoodwill>
+								<naturalGoodwillRange>-100~100</naturalGoodwillRange>
+								<def>ForcedFactionGoodwill</def>
+							</li>							
+                    </value>
+                </li>
+            </operations>
+        </match>
+		
+	</Operation>
+</Patch>

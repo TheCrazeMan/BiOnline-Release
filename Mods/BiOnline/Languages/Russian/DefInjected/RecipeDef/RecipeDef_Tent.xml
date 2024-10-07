@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Make_TentA.label>Изготовить Палатку (1 человек)</Make_TentA.label>
+	<Make_TentA.description>Изготовить Палатку (1 человек)</Make_TentA.description>
+	<Make_TentA.jobString>Изготавливает Палатку (1 человек)</Make_TentA.jobString>
+	
+	<Make_TentB.label>Изготовить Палатку (2 человека)</Make_TentB.label>
+	<Make_TentB.description>Изготовить Палатку (2 человека)</Make_TentB.description>
+	<Make_TentB.jobString>Изготавливает Палатку (2 человека)</Make_TentB.jobString>
+
+	<Make_TentC.label>Изготовить Палатку (3 человека)</Make_TentC.label>
+	<Make_TentC.description>Изготовить Палатку (3 человека)</Make_TentC.description>
+	<Make_TentC.jobString>Изготовить Палатку (3 человека)</Make_TentC.jobString>
+
+	<Make_TentD.label>Изготовить Палатку с котлом (4 человека)</Make_TentD.label>
+	<Make_TentD.description>Изготовить Палатку с котлом (4 человека)</Make_TentD.description>
+	<Make_TentD.jobString>Изготовить Палатку с котлом (4 человека)</Make_TentD.jobString>
+
+</LanguageData>

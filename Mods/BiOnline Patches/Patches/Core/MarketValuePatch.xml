@@ -1,0 +1,47 @@
+<Patch>
+
+ 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="LeatherBase"]/statBases</xpath>
+		<value>
+			<SellPriceFactor>0.50</SellPriceFactor>	  
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Leather_Human"]/stuffProps</xpath>
+		<value>
+		  <statFactors>
+			<SellPriceFactor>0.10</SellPriceFactor>	  
+		  </statFactors>
+		</value>
+	</Operation>
+
+ 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Leather_Human"]/statBases</xpath>
+		<value>
+			<SellPriceFactor>0.10</SellPriceFactor>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="ApparelNoQualityBase" or @Name="BodyPartNaturalBase"]/statBases</xpath>
+		<value>
+			<SellPriceFactor>0.50</SellPriceFactor>	  
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="WoolBase"]/stuffProps/statFactors</xpath>
+		<value>
+			<SellPriceFactor>1.75</SellPriceFactor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DevilstrandCloth" or defName="Synthread" or defName="Hyperweave" or defName="Leather_Thrumbo" or defName="ArmoredCloth"]/stuffProps/statFactors</xpath>
+		<value>
+			<SellPriceFactor>2</SellPriceFactor>	  
+		</value>
+	</Operation>
+
+</Patch>

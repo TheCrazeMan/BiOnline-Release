@@ -1,0 +1,492 @@
+<Defs>
+
+	<ThingDef Abstract="True" ParentName="BedWithQualityBase" Name="Bed_Neolit"> <!-- Needs to re-reference parent -->
+		<designationCategory>Furniture</designationCategory>
+		<statBases>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
+		</statBases>
+	</ThingDef>
+
+
+	<!--Соломенная кровать-->
+	<ThingDef ParentName="Bed_Neolit">
+		<defName>StrawBed</defName>
+		<label>Straw bed</label>
+		<description>A simple and quick to make wicker bed, padded with straw for added comfort.</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/StrawBed/StrawBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Dresser</li>
+					<li>EndTable</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>650</WorkToBuild>
+			<Mass>12</Mass>
+			<BedRestEffectiveness>0.80</BedRestEffectiveness>
+			<Comfort>0.50</Comfort>
+			<ImmunityGainSpeedFactor>0.85</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.2</SurgerySuccessChanceFactor>
+		</statBases>
+
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+			<Hay>20</Hay>
+		</costList>
+		<building>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiIconScale>0.90</uiIconScale>
+		<designatorDropdown>Furniture_SingleBed</designatorDropdown>
+	</ThingDef>
+	
+	
+	<!--Двойная соломенная кровать-->
+	<ThingDef ParentName="Bed_Neolit">
+		<defName>StrawBedDouble</defName>
+		<label>Double straw bed</label>
+		<description>A simple and quick to make wicker bed, padded with straw for added comfort.</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/StrawBedDouble/BedStrawDouble</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Dresser</li>
+					<li>EndTable</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>1200</WorkToBuild>
+			<Mass>24</Mass>
+			<BedRestEffectiveness>0.80</BedRestEffectiveness>
+			<Comfort>0.50</Comfort>
+			<ImmunityGainSpeedFactor>0.85</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.2</SurgerySuccessChanceFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+		<costList>
+			<Hay>40</Hay>
+		</costList>
+		<building>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiIconScale>0.90</uiIconScale>
+		<designatorDropdown>Furniture_DoubleBed</designatorDropdown>
+	</ThingDef>
+	
+	
+	<!--Кожаная кровать-->
+	<ThingDef ParentName="Bed_Neolit">
+		<defName>FurBed</defName>
+		<label>Fur bed</label>
+		<description>How many guinea pigs did you kill in order to do this?</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/MedievalBed/MedievalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Dresser</li>
+					<li>EndTable</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>650</WorkToBuild>
+			<Mass>15</Mass>
+			<BedRestEffectiveness>0.95</BedRestEffectiveness>
+			<Comfort>0.70</Comfort>
+			<ImmunityGainSpeedFactor>0.90</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.3</SurgerySuccessChanceFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<WoodLog>45</WoodLog>
+		</costList>
+		<researchPrerequisites>
+			<li>FurnitureII</li>
+		</researchPrerequisites>
+		<building>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiIconScale>0.90</uiIconScale>
+		<designatorDropdown>Furniture_SingleBed</designatorDropdown>
+	</ThingDef>
+	
+	
+	
+	<!--Двойная кожаная кровать-->
+	<ThingDef ParentName="Bed_Neolit">
+		<defName>DoubleFurBed</defName>
+		<label>Double fur bed</label>
+		<description>A double bed made of animal skins. More comfortable than straw.</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/MedievalBedDouble/MedievalBedDouble</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Dresser</li>
+					<li>EndTable</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>1200</WorkToBuild>
+			<Mass>25</Mass>
+			<BedRestEffectiveness>0.95</BedRestEffectiveness>
+			<Comfort>0.70</Comfort>
+			<ImmunityGainSpeedFactor>0.90</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.3</SurgerySuccessChanceFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<WoodLog>85</WoodLog>
+		</costList>
+		<researchPrerequisites>
+			<li>FurnitureII</li>
+		</researchPrerequisites>
+		<building>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiIconScale>0.90</uiIconScale>
+		<designatorDropdown>Furniture_DoubleBed</designatorDropdown>
+	</ThingDef>
+	
+	<!--Кровать из лечебного корня-->
+	<ThingDef ParentName="Bed_Neolit">
+		<defName>HealingRootBed</defName>
+		<label>Herbal bed</label>
+		<description>It may be sacrilege to call a wooden frame stuffed with medicinal herbs a bed, but at least it greatly promotes the healing of wounds.</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/HealingRootBed/HealingRootBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Dresser</li>
+					<li>EndTable</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>650</WorkToBuild>
+			<Mass>25</Mass>
+			<BedRestEffectiveness>0.80</BedRestEffectiveness>
+			<Comfort>0.6</Comfort>
+			<ImmunityGainSpeedFactor>1.20</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.60</SurgerySuccessChanceFactor>
+		</statBases>
+
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<RawHealroot>50</RawHealroot>
+			<TM_RawShrooms>25</TM_RawShrooms>
+			<TM_RawRedPetals>25</TM_RawRedPetals>
+		</costList>
+		<building>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<researchPrerequisites>
+			<li>TribeBorn</li>
+		</researchPrerequisites>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiIconScale>0.90</uiIconScale>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>TentA</defName>
+		<label>Tent (1 people)</label>
+		<description>Single tent. Great for overnight stays</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/TentFolded/TentFolded</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_Tent">
+				<prefabDef>Tent_OnePeople</prefabDef>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>5</Mass>
+		</statBases>
+
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<designationHotKey>Misc2</designationHotKey>
+		<thingCategories>
+		  <li>BuildingsFurniture</li>
+		</thingCategories>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>TentB</defName>
+		<label>Tent (2 people)</label>
+		<description>Double tent. Great for overnight stays</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/TentFolded/TentFolded</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_Tent">
+				<prefabDef>Tent_TwoPeople</prefabDef>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>7.5</Mass>
+		</statBases>
+
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<designationHotKey>Misc2</designationHotKey>
+		<thingCategories>
+		  <li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>TentC</defName>
+		<label>Tent (3 people)</label>
+		<description>Three-person tent. Great for overnight stays</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/TentFolded/TentFolded</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_Tent">
+				<prefabDef>Tent_ThreePeople</prefabDef>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>10</Mass>
+		</statBases>
+
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<designationHotKey>Misc2</designationHotKey>
+		<thingCategories>
+		  <li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>TentD</defName>
+		<label>Tent (4 people)</label>
+		<description>Four-person tent with a fire pit. Great for overnight stays</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/TentFolded/TentFolded</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_Tent">
+				<prefabDef>Tent_FourPeople</prefabDef>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>15</Mass>
+		</statBases>
+
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<designationHotKey>Misc2</designationHotKey>
+		<thingCategories>
+		  <li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>TentModern</defName>
+		<label>Tent modern (1 people)</label>
+		<description>One-person tent with a fire pit. Great for overnight stays</description>
+		<graphicData>
+			<texPath>Things/Build/Furniture/TentFolded/TentFolded</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_Tent">
+				<prefabDef>TentModern</prefabDef>
+			</li>
+		</comps>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>8</Mass>
+		</statBases>
+
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<designationHotKey>Misc2</designationHotKey>
+		<thingCategories>
+		  <li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+	
+	
+</Defs>

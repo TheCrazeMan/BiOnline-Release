@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Plants/Plants_Cultivated_Farm.xml-->
+<Plant_Sulfur_Poppy.label>Сернистый мак</Plant_Sulfur_Poppy.label>
+<Plant_Sulfur_Poppy.description>Разновидность мака, которая смогла приспособиться к условиям пещеры. Солнечный свет для него губителен, а резкий и едкий запах напоминает серу.</Plant_Sulfur_Poppy.description>
+<Plant_Broots.label>Дикие белые грибы</Plant_Broots.label>.
+<Plant_Broots.description>Мелкие корневищные волокнистые грибы, растут в дикой природе, их относительно трудно выращивать специально, племенные люди умеют использовать их для приготовления специальных лечебных напитков.</Plant_Broots.description>
+<Plant_RedPetals.label>Дикие красные лепестки</Plant_RedPetals.label>
+<Plant_RedPetals.description>Мелкие сетчатые растения, на которых растет небольшое количество блестящих красных лепестков с шелковистой поверхностью, племенные люди знают, как использовать их для приготовления специальных лечебных напитков.</Plant_RedPetals.description>
+<Plant_Shrooms.label>Дикие грибы</Plant_Shrooms.label>.
+<Plant_Shrooms.description>Маленькие грибы, которые выглядят как обычные, собирают племена, которые, похоже, умеют готовить из них лечебные напитки.\n\nНе употреблять в сыром виде, так как они очень ядовиты.</Plant_Shrooms.description>
+<Plant_DarkBerries.label>Дикие темные ягоды</Plant_DarkBerries.label>
+<Plant_DarkBerries.description>Компактный, похожий на мох кустарник с мелкими черными плодами. Темные ягоды имеют приторно-соленый вкус, который надолго задерживается во рту и лишает человека возможности ощущать вкусовые ощущения, а также вреден для организма, так как может вызвать желудочные боли.\n\nНесмотря на это, племенные люди, похоже, ценят их, так как существуют мифы, что в больших количествах они могут даже вылечить астму или сердечные заболевания.</Plant_DarkBerries.description>
+<Plant_Carrot.label>Морковь</Plant_Carrot.label>
+<Plant_Carrot.description>Кустистые, короткие стебли, корень которых состоит из ярко-оранжевого клубня. Они являются полезными, если не сказать вкусными, закусками сами по себе, а также хорошим дополнением к любому блюду в вареном, тушеном или соленом виде.</Plant_Carrot.description>.
+<Plant_Beet.label>Свекла</Plant_Beet.label>
+<Plant_Beet.description>Короткие стебли, сладкий корень которых используется для производства сахара.</Plant_Beet.description>
+<Plant_Wheat.label>Пшеница</Plant_Wheat.label>
+<Plant_Wheat.description>Основное растение практически для всех культур. Может использоваться для получения муки.</Plant_Wheat.description>
+<Plant_Grape.label>Виноград</Plant_Grape.label>
+<Plant_Grape.description>Лиана среднего размера, дающая при сборе виноград - важный ингредиент для производства вина, который также приятен на вкус в сыром виде. Требует много времени для первоначального роста, но может быть собрана многократно за одну жизнь.</Plant_Grape.description>
+<Plant_Tomato.label>Томат</Plant_Tomato.label>.
+<Plant_Tomato.description>Толстая лиственная зеленая лиана, дающая множество крупных луковичных красных плодов. Вопрос о том, является ли он фруктом или овощем, является предметом жарких споров, однако известно, что помидоры, которые он создает, сочные и вкусные.</Plant_Tomato.description>
+<Plant_BlackPepper.label>Чёрный перец</Plant_BlackPepper.label>
+<Plant_BlackPepper.description>Вьющаяся лиана с сердцевидными листьями, известная тем, что дает небольшие круглые плоды, которые собирают ради их ароматных семян. Эти семена, высушенные и размолотые, придают характерный острый вкус самым разным блюдам. Для созревания лозы требуется время, и после укоренения она может продолжать давать перчинки в течение многих лет.</Plant_BlackPepper.description>
+<Plant_Tea.label>Чайный куст</Plant_Tea.label>.
+<Plant_Tea.description>Чайный куст. Его выращивание занимает довольно много времени, но урожай можно собирать несколько раз. Напомните мне, который сейчас час и не пора ли выпить чашечку чая?</Plant_Tea.description>
+<Plant_Soy.label>Соя</Plant_Soy.label>
+<Plant_Soy.description>Бобовое растение с крепким, хорошо разветвленным стеблем. Даёт бобы сои которые содержат большое количество белка</Plant_Soy.description>
+<Plant_Lavender.label>Лаванда</Plant_Lavender.label>
+<Plant_Lavender.description>Про лаванду наслышан каждый житель даже самого окраинного и затхлого мира. Любое место становится престижным, стоит только появиться этим фиолетовым цветам.</Plant_Lavender.description>
+<Plant_ParodiaCactus.label>Пародия</Plant_ParodiaCactus.label>
+<Plant_ParodiaCactus.description>Очаровательный кактус "Пародия" это маленький шаровидный кактус, радующих глаз. Можно встретить только около оазисов.</Plant_ParodiaCactus.description>
+</LanguageData>

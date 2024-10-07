@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Хладнокаменный охладитель -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Bio_Cold_Stone_cooler</defName>
+		<label>Cold Stone cooler</label>
+		<description>A device capable of maintaining a minus room in small rooms.  The principle of operation is based on the destruction of the cold stone.</description>
+		<category>Building</category>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsTemperature</li>
+		</thingCategories>
+		<graphicData>
+		  <texPath>Things/Build/Cold_Stone_cooler/Cold_Stone_cooler</texPath>		  		  
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawRotated>false</drawRotated>
+		  <allowFlip>false</allowFlip>
+		  <drawSize>(1,1)</drawSize>
+		  <shadowData>
+			<volume>(0.9,0.3,0.9)</volume>
+		  </shadowData>
+		  <damageData>
+			<rect>(0.2,0,0.6,0.1)</rect>
+		  </damageData>	  
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.40</fillPercent>
+		<statBases>
+		  <MaxHitPoints>160</MaxHitPoints>
+		  <WorkToBuild>300</WorkToBuild>
+		  <Flammability>0</Flammability>
+		  <MarketValue>300</MarketValue>
+		  <Mass>10</Mass>
+		</statBases>
+		<selectable>true</selectable>
+		<stuffCategories>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>		
+		<costList>
+		  <BIO_Cold_Stone>50</BIO_Cold_Stone>
+		</costList>
+		<building>
+		  <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+		  <li>PlaceWorker_CoolerSimple</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+		  <li Class="CompProperties_HeatPusher">
+			<compClass>CompHeatPusherPowered</compClass>
+			<heatPerSecond>-11</heatPerSecond>
+			<heatPushMinTemperature>-5</heatPushMinTemperature>
+		  </li>
+		  <li Class="CompProperties_Refuelable">
+			<fuelConsumptionRate>1.0</fuelConsumptionRate>
+			<fuelCapacity>60.0</fuelCapacity>
+			<fuelFilter>
+			  <thingDefs>
+				<li>BIO_Cold_Stone</li>
+			  </thingDefs>
+			</fuelFilter>
+			<initialFuelPercent>1</initialFuelPercent>
+			<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+		  </li>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<designationHotKey>Misc4</designationHotKey>
+		<researchPrerequisites>
+		  <li>Cold_Stone_cooler</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

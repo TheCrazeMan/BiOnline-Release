@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--дриада-носильщик-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Carrier"]/statBases/MoveSpeed</xpath>
+			<value>
+				<MoveSpeed>5.0</MoveSpeed>
+			</value>
+	</Operation>
+
+	<!--дубокож-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Barkskin"]/statBases/MoveSpeed</xpath>
+			<value>
+				<MoveSpeed>4.0</MoveSpeed>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Barkskin"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>4.0</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Barkskin"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>6.0</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	
+	<!--Коготь-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Clawer"]/statBases</xpath>
+		<value>
+			<statBases>
+				<MoveSpeed>6.4</MoveSpeed>
+				<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+				<MeleeDodgeChance>0.5</MeleeDodgeChance>
+				<MeleeCritChance>0.25</MeleeCritChance>
+				<MeleeParryChance>0.30</MeleeParryChance>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Clawer"]/tools</xpath>
+		<value>
+			<tools Inherit="False">
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+						<li>Cut</li>
+					</capacities>
+					<power>18</power>
+					<cooldownTime>0.96</cooldownTime>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>20</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationBlunt>6</armorPenetrationBlunt>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+						<li>Cut</li>
+					</capacities>
+					<power>18</power>
+					<cooldownTime>0.96</cooldownTime>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>20</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationBlunt>6</armorPenetrationBlunt>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.56</cooldownTime>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>20</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>12</armorPenetrationSharp>
+					<armorPenetrationBlunt>18</armorPenetrationBlunt>
+					<chanceFactor>0.3</chanceFactor>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>3.2</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>1.225</armorPenetrationBlunt>
+					<chanceFactor>0.1</chanceFactor>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<!--Травник-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Medicinemaker"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Spawner">
+				<thingToSpawn>MedicineHerbal</thingToSpawn>
+				<spawnCount>8</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<!--Травник-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Medicinemaker"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Spawner">
+				<thingToSpawn>MedicineHerbal</thingToSpawn>
+				<spawnCount>8</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<!--Ягодник-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Dryad_Berrymaker"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Spawner">
+				<thingToSpawn>RawBerries</thingToSpawn>
+				<spawnCount>80</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</comps>
+		</value>
+	</Operation>
+</Patch>

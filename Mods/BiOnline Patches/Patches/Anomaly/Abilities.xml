@@ -1,0 +1,24 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="TransmuteSteel"]/comps/li/outcomeStuff</xpath>
+			<value>
+				<outcomeStuff>
+				  <li>Uranium</li>
+				  <li>Bioferrite</li>
+				  <li>Copper</li>
+				  <li>Lead</li>
+				  <li>Iron</li>
+				</outcomeStuff>
+			</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="UnnaturalHealing"]/cooldownTicksRange</xpath>
+			<value>
+				<cooldownTicksRange>900000</cooldownTicksRange>
+			</value>
+	</Operation>
+
+
+</Patch>

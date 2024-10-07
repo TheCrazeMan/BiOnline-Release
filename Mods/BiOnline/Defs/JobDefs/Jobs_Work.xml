@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<JobDef>
+		<defName>FillResearchBox</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_FillResearchBox</driverClass>
+		<reportString>fills the resource box</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>ClearsResearchBox</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_ClearsResearchBox</driverClass>
+		<reportString>clears the resource box</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>AddItemsToLevelableBuilding</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_AddItemsToLevelableBuilding</driverClass>
+		<reportString>fills the levelable building</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>RefillWateredBuilding</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_RefillWateredBuilding</driverClass>
+		<reportString>filling water</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>GotoBiCommBuilding</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_GotoBiCommBuilding</driverClass>
+		<reportString>going to {TargetA}</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>ExploreTheSoily</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_ExploreTheSoily</driverClass>
+		<reportString>Exploring soily</reportString>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DoMine</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_DoMine</driverClass>
+		<reportString>Digging</reportString>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>PackTent</defName>
+		<driverClass>BiOnline.AI.Jobs.JobDriver_PackTent</driverClass>
+		<reportString>packing tent</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+</Defs>

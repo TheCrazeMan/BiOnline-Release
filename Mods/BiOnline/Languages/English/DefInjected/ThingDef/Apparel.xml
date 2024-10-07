@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<Accessory_TraumaKit.label>Venis combat kit</Accessory_TraumaKit.label>
+	<Accessory_TraumaKit.description>Designed to increase the effectiveness of soldiers' armor, the Venis kit was widely used during corporate wars. A wide list of companies hold patents for the production of the kits, which is why there are many variations and modifications.</Accessory_TraumaKit.description>
+
+	<Accessory_RescueFrame.label>Star rescue kit</Accessory_RescueFrame.label>
+	<Accessory_RescueFrame.description>An array of medical supplies and an air filtration system designed for experienced medics. Increases the speed of wound care many times over, allowing you to maximize your survival rate.</Accessory_RescueFrame.description>
+	
+<!--<Accessory_SurvivalPack.label>Набор выживальщика "Егерь"</Accessory_SurvivalPack.label>
+	<Accessory_SurvivalPack.description>Предназначенный для коммерческого рынка, набор "Егерь" обладает всеми характеристиками, необход</Accessory_SurvivalPack.description> -->
+
+	<Accessory_MortarPack.label>Shumikha combat kit</Accessory_MortarPack.label>
+	<Accessory_MortarPack.description>Developed as equipment for special units during the mechanoid war, the Shumikha kit has gained widespread use on rimworlds due to its effectiveness. Even though it is costly to produce, the Shumikha continues to be used because of its superior firepower.</Accessory_MortarPack.description>
+
+	<Accessory_Forklift.label>Voskhod exoskeleton</Accessory_Forklift.label>
+	<Accessory_Forklift.description>Bio-integrated exoskeleton designed for laborers. Significantly increases the physical strength of the wearer.</Accessory_Forklift.description>
+	
+	<Accessory_CommandTower.label>Falcon commander's satchel.</Accessory_CommandTower.label>
+	<Accessory_CommandTower.description>A backpack equipped with a portable radio station. The frequencies affect the brain, increasing the wearer's psi abilities. Rare enough to attract interest among traders and open the way to new acquaintances.</Accessory_CommandTower.description>
+	
+	<!--Самохил-->
+	
+	<BiO_Armor_SelfRepair_Impreial.label>Self-repair armor</BiO_Armor_SelfRepair_Impreial.label>
+	<BiO_Armor_SelfRepair_Impreial.description>Heavy armor, manufactured using Imperial technology, with chlorophyte liners that quickly heal all damage. Expensive, forgotten and almost completely self-contained, this armor can withstand hits from a wide variety of calibers for long periods of time.</BiO_Armor_SelfRepair_Impreial.description>
+
+	<BiO_Helmet_SelfRepair_Imperial.label>Self-repair helmet</BiO_Helmet_SelfRepair_Imperial.label>
+	<BiO_Helmet_SelfRepair_Imperial.description>A technologically advanced helmet with a wide range of applications. This particular version is modified with chlorophyte inserts that allow for rapid recovery of damage sustained</BiO_Helmet_SelfRepair_Imperial.description>
+
+	<!--Броня из хлама-->
+	
+	<BiO_Armor_Light_Makeshift.label>Light makeshift vest</BiO_Armor_Light_Makeshift.label>
+	<BiO_Armor_Light_Makeshift.description>"I made you out of what I had" is the perfect phrase for this armor. This armor is made from scrap metal and should save you from a gunshot.</BiO_Armor_Light_Makeshift.description>
+
+	<BiO_Armor_Heavy_Makeshift.label>Heavy makeshift armor</BiO_Armor_Heavy_Makeshift.label>
+	<BiO_Armor_Heavy_Makeshift.description>A set of heavy armor, still assembled by hand. Might save you from a rifle shot.</BiO_Armor_Heavy_Makeshift.description>
+
+	<BiO_Armor_Light_Helmet_Makeshift.label>Light makeshift mask</BiO_Armor_Light_Helmet_Makeshift.label>
+	<BiO_Armor_Light_Helmet_Makeshift.description>A mask designed to protect the face, assembled from junk. Not the best you can find, however it can be used with helmets that do not cover the face.</BiO_Armor_Light_Helmet_Makeshift.description>
+
+	<BiO_Armor_Heavy_Helmet_Makeshift.label>Makeshift helmet</BiO_Armor_Heavy_Helmet_Makeshift.label>
+	<BiO_Armor_Heavy_Helmet_Makeshift.description>A helmet made from whatever was lying around. Heavy and uncomfortable, but protective.</BiO_Armor_Heavy_Helmet_Makeshift.description>
+	
+	<!-- Щитики -->
+
+	<AdvancedShield.label>Advanced shiel</AdvancedShield.label>
+	<AdvancedShield.description>An advanced shield designed to protect against large shrapnel and rifle calibers.</AdvancedShield.description>
+	
+	<IB_SpacerShield.label>Self-repair shield</IB_SpacerShield.label>
+	<IB_SpacerShield.description>A version of the ballistic shield long forgotten in the past. Contains a chlorophyte backing that allows for slow damage repair. Can withstand large calibers, lightweight materials make it easy to use.</IB_SpacerShield.description>
+	
+</LanguageData>

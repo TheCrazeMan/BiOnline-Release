@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="NECShipBase">
+		<defName>Shuttle_Player</defName>
+		<label>Shuttle</label>
+		<description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.
+
+Passenger cap: 3
+Space flight: Yes
+----------------------------
+Speed: Good
+Fuel capacity: 400L
+Fuel efficiency: Excellant
+----------------------------
+Cargo capacity: 3000kg</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/Shuttle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,3)</drawSize>
+			<color>(162,164,149)</color>
+			<shadowData>
+				<volume>(4.1, 1.0, 1.8)</volume>
+				<offset>(0, 0, -0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(5,3)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>2400</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>20</Mass>
+			<Beauty>15</Beauty>
+		</statBases>
+		<costList>
+			<HardenedGlass>450</HardenedGlass>
+			<Titanium>1000</Titanium>
+			<AlloysMithril>100</AlloysMithril>
+			<Gold>500</Gold>
+			<Silver>2000</Silver>
+			<spacecomponent>1</spacecomponent>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Transporter">
+				<restEffectiveness>1</restEffectiveness>
+				<massCapacity>3000</massCapacity>
+			</li>
+			<li Class="SRTS.CompProperties_LaunchableSRTS">
+				<travelSpeed>10</travelSpeed>
+				<fuelPerTile>2</fuelPerTile>
+				<minPassengers>1</minPassengers>
+				<maxPassengers>3</maxPassengers>
+				<shuttleBayLanding>true</shuttleBayLanding>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>400</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>400</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<initialFuelPercent>0.25</initialFuelPercent>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-500</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Research_RoyalShuttle</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiIconScale>1</uiIconScale>
+	</ThingDef>
+	<!--Боевой шаттл-->
+	<ThingDef ParentName="NECShipBase">
+		<defName>CombatShuttle_Player</defName>
+		<label>Combat Shuttle</label>
+		<description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.
+
+Passenger cap: 10
+Space flight: Yes
+----------------------------
+Speed: Good
+Fuel capacity: 250L
+Fuel efficiency: Excellant
+----------------------------
+Cargo capacity: 1500kg</description>
+		<graphicData>
+			<texPath>Things/Build/Misc/CombatShuttle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,3)</drawSize>
+			<color>(162,164,149)</color>
+			<shadowData>
+				<volume>(4.1, 1.0, 1.8)</volume>
+				<offset>(0, 0, -0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(5,3)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>2400</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>20</Mass>
+			<Beauty>15</Beauty>
+		</statBases>
+		<costList>
+			<HardenedGlass>450</HardenedGlass>
+			<Titanium>1000</Titanium>
+			<AlloysMithril>100</AlloysMithril>
+			<Gold>500</Gold>
+			<Silver>2000</Silver>
+			<CombatProcessor>1</CombatProcessor>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Transporter">
+				<restEffectiveness>1</restEffectiveness>
+				<massCapacity>1500</massCapacity>
+			</li>
+			<li Class="SRTS.CompProperties_LaunchableSRTS">
+				<travelSpeed>10</travelSpeed>
+				<fuelPerTile>3</fuelPerTile>
+				<minPassengers>1</minPassengers>
+				<maxPassengers>10</maxPassengers>
+				<shuttleBayLanding>true</shuttleBayLanding>
+			</li>
+			<li Class="SRTS.CompProperties_BombsAway">
+				<!-- include this comp if you want it to be able to carpet bomb, remove this comp if you dont. Be aware you must also add a bomber skydropper def set -->
+				<numberBombs>4</numberBombs>
+				<!-- num dropped per run -->
+				<precisionBombingNumBombs>4</precisionBombingNumBombs>
+				<!-- number of bombs dropped in precise drop -->
+				<radiusOfDrop>3</radiusOfDrop>
+				<!-- how many cells out from the center the bombs may drop -->
+				<speed>1</speed>
+				<!-- How quickly the ship flies over. Default 1 -->
+				<distanceBetweenDrops>3</distanceBetweenDrops>
+				<!-- Distance in cells from when each bomb is dropped -->
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>250</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>400</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<initialFuelPercent>0.25</initialFuelPercent>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-500</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>NakedBrutality</li>
+			<li>AdvancedFabrication</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiIconScale>1</uiIconScale>
+	</ThingDef>
+</Defs>

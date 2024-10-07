@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/DamageDefs/Damages_Crossbow.xml-->
+<LeadBullet.label>свинцовая пуля</LeadBullet.label>
+<LeadBullet.deathMessage>{0} был застрелен свинцовой пулей</LeadBullet.deathMessage>.
+<CrossbowBolt.label> арбалетный болт</CrossbowBolt.label>
+<CrossbowBolt.deathMessage>{0} был убит арбалетным болтом.</CrossbowBolt.deathMessage>
+
+
+</LanguageData>

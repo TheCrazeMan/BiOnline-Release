@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/BuildingTabCategoryDef/BuildingTabCategoryDef.xml-->
+<DrinksTab.label>Напитки</DrinksTab.label>
+<Seeds.label>Семена</Seeds.label>.
+<Pistols.label>Пистолеты</Pistols.label>
+<Shotguns.label>Дробовики</Shotguns.label>
+<Carbine.label>Карабин</Carbine.label>
+<Rifle.label>Винтовки</Rifle.label>
+<HighCaliber.label>Крупнокалиберное</HighCaliber.label>
+<FBAmmo.label>Патроны</FBAmmo.label>
+<WBExplosives.label>Взрывчатые вещества</WBExplosives.label>
+<Misc.label>Разное</Misc.label>
+<Serums.label>Сыворотки</Serums.label>
+<Drugs.label>Лекарства</Drugs.label>
+<Tier1.label>Уровень 1</Tier1.label>
+<Tier2.label>Уровень 2</Tier2.label>
+<Tier3.label>Уровень 3</Tier3.label>
+<Sweet.label>Сладости</Sweet.label>
+
+</LanguageData>

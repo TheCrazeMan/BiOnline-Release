@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.MapBlueprintDef>
+		<defName>MeteoriteFall</defName>
+		<label>Падение метеорита</label>
+		<description>Неподалёку что-то с грохотом упало, нужно скорее пойти посмотреть!</description>
+		<author>homeless</author>
+		<mapSize>(100, 1, 100)</mapSize>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<terrain>
+			<cellsCount>254</cellsCount>
+			<terrainDefDeflate>
+C87PzLEOHiVGiVFilBghBAA=
+</terrainDefDeflate>
+			<terrainCellsDeflate>
+DcNFTxBgAADQz5xxAUQBG+zCbuc/sBvF7p65KeicYmIRFubmRaeyKahY2ImIuenNeXF2gdi+t70uESH08rBHPGrVyBCqWd0a1jTa
+mc5ytnOc6zznu8Ai71vsA0t86CMf+8SnPjMxKoT2drCjnexsF7vaze72sKe97G26GWaaZbY73Okud7vHHPe6z/0e8KCHLLXM75b7
+w5/+8rd//Os/Q60QKljRSla2ilVNcrRjTHas4xzvBCc6yclOcarTnO4MC7zoJQu97BWves3r3vCmt7ztHe96zyLvW2yJjaNDiDfB
+Jja1mc1tYUtb2do2trWdiba3gx3tZJprXed6N7jRTaa72S1udZvbzTDTLLPN8Y1vfed7P/jRT372i1/9ZqllfrfcH/60X+0Q+jvA
+gQ5ysEMc6jCHO8KRjjLJ0Y4x2VxPeso88z3tGc9a4DnPe8GLXrLQmDohxBpnXetZ3wY2tJGNjTfBJi5zuSmmusKVrnK1a0zzpa98
+7Vs/2jcmhGMe94S55plvzdgQIow0ylrGGudCF7nYJS41xVQf+twX9okL4T8=
+</terrainCellsDeflate>
+		</terrain>
+		<buildings>
+			<cellsCount>1</cellsCount>
+			<positionsDeflate>
+MxFgYAAA
+</positionsDeflate>
+			<defsDeflate>
+C3B3jQ8oSk1LTAouSCzPAwA=
+</defsDeflate>
+			<things>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>PlayerColony</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_PrefabSpawnPoint">
+							<prefabDefs>
+								<li>Meteorite_ColdStone</li>
+								<li>Meteorite_Iron_Component</li>
+								<li>Meteorite_Jade</li>
+								<li>Meteorite_Lead</li>
+								<li>Meteorite_Silver_Gold</li>
+								<li>Meteorite_Uranium</li>
+							</prefabDefs>
+							<clearPrefabZone>True</clearPrefabZone>
+						</li>
+					</parts>
+				</li>
+			</things>
+		</buildings>
+		<items IsNull="True" />
+		<pawns IsNull="True" />
+		<roof IsNull="True" />
+		<areas />
+		<mapArea>
+			<zoneName>map</zoneName>
+			<cellsCount>254</cellsCount>
+			<positionsDeflate>
+DcNFTxBgAADQz5xxAUQBG+zCbuc/sBvF7p65KeicYmIRFubmRaeyKahY2ImIuenNeXF2gdi+t70uESH08rBHPGrVyBCqWd0a1jTa
+mc5ytnOc6zznu8Ai71vsA0t86CMf+8SnPjMxKoT2drCjnexsF7vaze72sKe97G26GWaaZbY73Okud7vHHPe6z/0e8KCHLLXM75b7
+w5/+8rd//Os/Q60QKljRSla2ilVNcrRjTHas4xzvBCc6yclOcarTnO4MC7zoJQu97BWves3r3vCmt7ztHe96zyLvW2yJjaNDiDfB
+Jja1mc1tYUtb2do2trWdiba3gx3tZJprXed6N7jRTaa72S1udZvbzTDTLLPN8Y1vfed7P/jRT372i1/9ZqllfrfcH/60X+0Q+jvA
+gQ5ysEMc6jCHO8KRjjLJ0Y4x2VxPeso88z3tGc9a4DnPe8GLXrLQmDohxBpnXetZ3wY2tJGNjTfBJi5zuSmmusKVrnK1a0zzpa98
+7Vs/2jcmhGMe94S55plvzdgQIow0ylrGGudCF7nYJS41xVQf+twX9okL4T8=
+</positionsDeflate>
+		</mapArea>
+		<forceFogArea IsNull="True" />
+		<forceUnfogArea IsNull="True" />
+		<variables>
+			<customVariables />
+		</variables>
+		<mapScripts />
+		<mapRules>
+			<fog>True</fog>
+		</mapRules>
+		<tags>
+			<li>MeteoriteFall</li>
+		</tags>		
+		<generationCommonality>1</generationCommonality>
+	</BiOnline.MapGenerator.MapBlueprintDef>
+</Defs>

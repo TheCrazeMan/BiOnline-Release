@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<IncidentDef>
+		<defName>Mim</defName>
+		<label>wanderer join</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<questScriptDef>MimJoins</questScriptDef>
+		<baseChance>0.4</baseChance>
+		<pawnKind>VillagerMim</pawnKind>
+		<populationEffect>IncreaseEasy</populationEffect>
+		<minRefireDays>100</minRefireDays>
+		<earliestDay>60</earliestDay>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>PMC_EMIField</defName>
+		<label>emp field</label>
+		<category>PMC</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>PMC_EMIField</gameCondition>
+		<letterLabel>emp field</letterLabel>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>0</baseChance>
+		<durationDays>1~1</durationDays>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>MortarStrike</defName>
+		<label>Mortar strike</label>
+		<category>PMC</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>MortarStrike</gameCondition>
+		<letterLabel>Mortar strike</letterLabel>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>0</baseChance>
+		<durationDays>99~99</durationDays>
+	</IncidentDef>
+</Defs>

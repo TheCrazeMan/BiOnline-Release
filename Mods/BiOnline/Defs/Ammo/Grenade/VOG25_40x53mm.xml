@@ -1,0 +1,160 @@
+<Defs>
+
+	<!-- Зажигательный для "Календулы" и подствола "Анархии -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="40x53mmVOG25GrenadeBase">
+    <defName>Ammo_40x53mmVOG25Grenade_Incendiary</defName>
+    <label>40x53mm VOG-25 grenade (Incendiary)</label>
+    <graphicData>
+      <texPath>Things/Ammo/FuelCell/Incendiary</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.78</MarketValue>
+    </statBases>
+    <ammoClass>IncendiaryFuel</ammoClass>
+	<detonateProjectile>Bullet_40x53mmVOG25Grenade_Incendiary</detonateProjectile>
+  </ThingDef>
+
+  <ThingDef ParentName="Base40x53mmVOG25GrenadeBullet">
+    <defName>Bullet_40x53mmVOG25Grenade_Incendiary</defName>
+    <label>40x536mm VOG-25 grenade (Incendiary)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>PrometheumFlame</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <explosionRadius>2</explosionRadius>
+      <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+  <RecipeDef ParentName="LauncherAmmoRecipeBase">
+    <defName>MakeAmmo_40x53mmVOG25Grenade_Incendiary</defName>
+    <label>make 40x53mm VOG-25 Incendiary grenades x100</label>
+    <description>Craft 100 40x53mm VOG-25 Incendiary grenades.</description>
+    <jobString>Making 40x53mm VOG-25 Incendiary grenades.</jobString>
+    <researchPrerequisite>NB_HeavyAmmo</researchPrerequisite>	
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gunpowder</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Prometheum</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+		<li>Gunpowder</li>
+        <li>Prometheum</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_40x53mmVOG25Grenade_Incendiary>100</Ammo_40x53mmVOG25Grenade_Incendiary>
+    </products>
+    <workAmount>10600</workAmount>       
+  </RecipeDef>
+
+	<!-- Снаряд с пожарной пеной -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="40x53mmVOG25GrenadeBase">
+    <defName>Ammo_40x53mmVOG25Grenade_Foam</defName>
+    <label>40x53mm VOG-25 grenade (Foam)</label>
+    <graphicData>
+      <texPath>Things/Ammo/FuelCell/Foam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.78</MarketValue>
+    </statBases>
+    <ammoClass>FoamFuel</ammoClass>
+	<detonateProjectile>Bullet_40x53mmVOG25Grenade_Foam</detonateProjectile>
+  </ThingDef>
+
+  <ThingDef ParentName="Base40x53mmVOG25GrenadeBullet">
+    <defName>Bullet_40x53mmVOG25Grenade_Foam</defName>
+    <label>40x536mm VOG-25 grenade (Foam)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Extinguish</damageDef>
+      <suppressionFactor>0.0</suppressionFactor>
+      <dangerFactor>0.0</dangerFactor>
+      <explosionRadius>3</explosionRadius>
+      <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
+  <RecipeDef ParentName="LauncherAmmoRecipeBase">
+    <defName>MakeAmmo_40x53mmVOG25Grenade_Foam</defName>
+    <label>make 40x53mm VOG-25 Foam grenades x100</label>
+    <description>Craft 100 40x53mm VOG-25 Foam grenades.</description>
+    <jobString>Making 40x53mm VOG-25 Foam grenades.</jobString>
+    <researchPrerequisite>NB_HeavyAmmo</researchPrerequisite>		
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gunpowder</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+		<li>Gunpowder</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_40x53mmVOG25Grenade_Foam>100</Ammo_40x53mmVOG25Grenade_Foam>
+    </products>
+    <workAmount>10600</workAmount>       
+  </RecipeDef>
+
+</Defs>

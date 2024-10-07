@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Alpha Props - Parks and Gardens</name>
+	<author>Sarg Bjornson</author>
+	<url/>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaPropsParksLogo</modIconPath>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>VanillaExpanded.VFEPropsandDecor</packageId>
+			<displayName>Vanilla Furniture Expanded - Props and Decoration</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaFurnitureExpanded-Props</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>VanillaExpanded.VFEPropsandDecor</li>
+	</loadAfter>
+	<packageId>sarg.alphapropsparks</packageId>
+	<description>Adds more than 150 new props for Vanilla Furniture Expanded - Props and Decorations, with the "Parks and Gardens" theme
+
+&lt;size=24&gt;Credits&lt;/size&gt;
+
+YMS, huge inspiration: http://yms.main.jp/dotartworld/index.html
+Some inspiration and designs from licensed Modern Exteriors resource by LimeZu: https://limezu.itch.io/modernexteriors 
+
+&lt;size=24&gt;Issues&lt;/size&gt;
+
+No issues known at the moment 
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+
+Oh you can bet I will add new things!
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+
+Full changelog on GitHub
+</description>
+</ModMetaData>

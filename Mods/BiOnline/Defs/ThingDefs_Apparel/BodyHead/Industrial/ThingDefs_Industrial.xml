@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--База индустриальной брони-->
+	<ThingDef Name="IndustrialApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Industrial</techLevel>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+			<EquipDelay>2</EquipDelay>
+			<Beauty>-3</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--База брони ЧВК и Бандитов-->
+	<ThingDef Name="PMCBanditsApparel" ParentName="IndustrialApparelBase" Abstract="True">
+		<tradeability>Sellable</tradeability>
+	<apparel>
+	  <tags>
+		<li>Bandits</li>
+        <li>PMC</li>
+      </tags>
+	</apparel>
+	</ThingDef>
+	
+	<!--Разгрузки-->
+	<ThingDef Name="PMCBanditsTacticalVest" ParentName="IndustrialApparelBase" Abstract="True">
+		<tradeability>Sellable</tradeability>
+		<thingCategories>
+			<li>Loadout</li>
+		</thingCategories>
+	<apparel>
+	  <tags>
+		<li>Bandits</li>
+        <li>PMC</li>
+      </tags>
+	</apparel>		
+	</ThingDef>
+	
+	<!--Броня бандитов-->
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Armor_SixBTwo</defName>
+		<label>6B2 Armor</label>
+		<description>Old army body armor, mainly designed to protect against pistol bullets and explosion fragments.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/6B2_Armor/6B2_Armor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/6B2_Armor/6B2_Armor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>Bandits</li>
+		  </tags>
+		</apparel>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>4.5</Mass>
+			<Bulk>2</Bulk>
+			<ArmorRating_Sharp>4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>BNTI_Gzhel-K_Armor</defName>
+		<label>BNTI Gzhel-K Armor</label>
+		<description>The Gzhel assault bulletproof vest is designed for assault units of the Ministry of Internal Affairs and other law enforcement agencies.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/BNTI_Gzhel-K_Armor/BNTI_Gzhel-K_Armor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/BNTI_Gzhel-K_Armor/BNTI_Gzhel-K_Armor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Dark</li>
+			</tags>
+		</apparel>
+		<statBases>
+			<MarketValue>1650</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8.9</Mass>
+			<Bulk>10</Bulk>
+			<ArmorRating_Sharp>15.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>53.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.80</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>BNTI_Kirasa-N_Armor</defName>
+		<label>BNTI Kirasa-N Armor</label>
+		<description>The Kirasa N body armor is designed for the army and police special forces. The bulletproof vest provides circular protection of the human torso.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/BNTI_Kirasa-N_Armor/BNTI_Kirasa-N_Armor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/BNTI_Kirasa-N_Armor/BNTI_Kirasa-N_Armor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>Bandits</li>
+		  </tags>
+		</apparel>
+		<statBases>
+			<MarketValue>416</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4.1</Mass>
+			<Bulk>6</Bulk>
+			<ArmorRating_Sharp>6.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>22</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>LBT_6094A_Slick_Plate_Carrier</defName>
+		<label>LBT 6094A Slick Plate Carrier</label>
+		<description>Simple plate carrier by LBT company. The most minimalistic design intended for use with chest rigs.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/LBT_6094A_Slick_Plate_Carrier/LBT_6094A_Slick_Plate_Carrier_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/LBT_6094A_Slick_Plate_Carrier/LBT_6094A_Slick_Plate_Carrier</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Dark</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>2015</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>8</Mass>
+			<Bulk>5</Bulk>
+			<ArmorRating_Sharp>21.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>69</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.80</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>PACA_Soft_Armor</defName>
+		<label>PACA Soft Armor</label>
+		<description>Light but durable and reliable body armor protecting only the vital areas.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/PACA_Soft_Armor/PACA_Soft_Armor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/PACA_Soft_Armor/PACA_Soft_Armor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>Bandits</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>296</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+			<Bulk>2</Bulk>
+			<ArmorRating_Sharp>4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+	</ThingDef>
+	<!--Шлема/Маски бандитов-->
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headwear_Balaclava</defName>
+		<label>Balaclava</label>
+		<description>"A balaclava, also known as a balaclava helmet or Bally or ski mask, is a form of cloth Headgear designed to expose only part of the face, usually the eyes and mouth."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava/Balaclava_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava/Balaclava</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<tags>
+				<li>Balaclava</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>88</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<Insulation_Cold>22</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headwear_Balaclava2_Mask</defName>
+		<label>Balaclava</label>
+		<description>"A balaclava, also known as a balaclava helmet or Bally or ski mask, is a form of cloth Headgear designed to expose only part of the face, usually the eyes and mouth."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava2_Mask/Balaclava2_Mask_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava2_Mask/Balaclava2_Mask</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<tags>
+				<li>Balaclava</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>88</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<Insulation_Cold>22</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headgear_Soft_Tank_Crew</defName>
+		<label>Soft Tank Crew</label>
+		<description>"Tank Headset is designed to provide two-way radiotelephone communication in objects with a high level of noise, to protect it from climatic factors and from impacts on structural elements of objects."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Soft_Tank_Crew/Soft_Tank_Crew_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Soft_Tank_Crew/Soft_Tank_Crew</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		  <tags Inherit="False">
+			<li>Bandits</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>274</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1.2</Mass>
+			<Bulk>1.8</Bulk>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>9.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+			<Insulation_Cold>0.50</Insulation_Cold>
+			<Insulation_Heat>0.02</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headwear_Baseball_Cap_Black</defName>
+		<label>Baseball Cap (Black)</label>
+		<description>"baseball cap."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Baseball_Cap_Black/Baseball_Cap_Black_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Baseball_Cap_Black/Baseball_Cap_Black</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		  <tags Inherit="False">
+			<li>Bandits</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<Insulation_Cold>2.2</Insulation_Cold>
+			<Insulation_Heat>10.8</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headwear_Beanie</defName>
+		<label>Beanie</label>
+		<description>"Warm knitted hat, traditionally made for skiers but worn by everyone."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Beanie/Beanie_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Beanie/Beanie</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		  <tags Inherit="False">
+			<li>Bandits</li>
+		  </tags>	
+		</apparel>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>88</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<Insulation_Cold>22</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+	<!--Броня ЧВК-->
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Zabralo_6B43-Sh_6A_Armor</defName>
+		<label>Zabralo_6B43-Sh_6A_Armor</label>
+		<description>The 6B43 bulletproof is designed for protection from light weapons bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/6B43_Zabralo-Sh_6A_Armor/6B43_Zabralo-Sh_6A_Armor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/6B43_Zabralo-Sh_6A_Armor/6B43_Zabralo-Sh_6A_Armor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>PMC</li>
+			<li>Olive</li>
+		  </tags>
+		</apparel>
+		<statBases>
+			<MarketValue>2025</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>15</Mass>
+			<Bulk>18</Bulk>
+			<ArmorRating_Sharp>21.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>69</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.80</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>FORT_Redut-T5_Body_Armor</defName>
+		<label>FORT Redut-T5 Body Armor</label>
+		<description>The FORT "Redut T5" armor vest is a reinforced version of Redut armor series, designed with account of the many yEars of experience in counter-terrorism operations in Russian Federation.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/FORT_Redut-T5_Body_Armor/FORT_Redut-T5_Body_Armor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/FORT_Redut-T5_Body_Armor/FORT_Redut-T5_Body_Armor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>PMC</li>
+			<li>Olive</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>13.5</Mass>
+			<Bulk>15</Bulk>
+			<ArmorRating_Sharp>15.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>53.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.80</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>IOTV_Gen4_ArmorFullProtection</defName>
+		<label>IOTV Gen4 Armor(Full Protection)</label>
+		<description>The Improved Outer Tactical Vest (IOTV) Gen IV is designed to permit maximum freedom of movement required to assume correct firing positions with the agility to execute and maneuver tasks. Optimal design characteristics ensure the best possible weight distribution of both the ballistic body armor system as well as additional load bearing equipment, thus providing enhanced comfort, wear duration, and mobility. Full protection kit.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/IOTV_Gen4_Armor(FullProtection)/IOTV_Gen4_Armor(FullProtection)_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/IOTV_Gen4_Armor(FullProtection)/IOTV_Gen4_Armor(FullProtection)</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>PMC</li>
+			<li>Tan</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>1918</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>8</Mass>
+			<Bulk>12</Bulk>
+			<ArmorRating_Sharp>15.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>53.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.80</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+	<!--Шлема/Маски бандитов-->
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headgear_Altyn_Helmet_Shield</defName>
+		<label>Altyn Helmet(Face Shield)</label>
+		<description>"Altyn" has undergone actual combat testing in Imperium and Separatist territory and is in service with Catharsis.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Altyn_Helmet_Shield/Altyn_Helmet_Shield_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Altyn_Helmet_Shield/Altyn_Helmet_Shield</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		  <tags Inherit="False">
+			<li>PMC</li>
+			<li>Olive</li>
+		  </tags>
+		</apparel>
+		<statBases>
+			<MarketValue>597</MarketValue>
+			<MaxHitPoints>110</MaxHitPoints>
+			<Mass>3.1</Mass>
+			<Bulk>2</Bulk>
+			<ArmorRating_Sharp>15.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>53.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<Insulation_Heat>0.02</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headgear_Vulkan-5_Heavy_Helmet_Shield</defName>
+		<label>Vulkan-5 heavy Helmet(Visor)</label>
+		<description>The Vulkan-5 heavy helmet with a high level of protection is designed to be used in conjunction with all-round armor.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Vulkan-5_Heavy_Helmet_Shield/Vulkan-5_Heavy_Helmet_Shield_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Vulkan-5_Heavy_Helmet_Shield/Vulkan-5_Heavy_Helmet_Shield</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		  <tags Inherit="False">
+			<li>PMC</li>
+			<li>Dark</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>635</MarketValue>
+			<MaxHitPoints>115</MaxHitPoints>
+			<Mass>3.6</Mass>
+			<Bulk>2.1</Bulk>
+			<ArmorRating_Sharp>21.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>69</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+			<Insulation_Cold>0.50</Insulation_Cold>
+			<Insulation_Heat>0.02</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.596</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.776</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>				
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headgear_ZSh-1-2M_Helmet_Shield</defName>
+		<label>ZSh-1-2M Helmet(Visor)</label>
+		<description>It consists of a strong alloy, coated on the inside with fabric that prevents the defense from penetrating and absorbs the dynamic effects of the bullet or shrapnel.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/ZSh-1-2M_Helmet_Shield/ZSh-1-2M_Helmet_Shield_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/ZSh-1-2M_Helmet_Shield/ZSh-1-2M_Helmet_Shield</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		  <tags Inherit="False">
+			<li>PMC</li>
+			<li>Olive</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>390</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>3.7</Mass>
+			<Bulk>2.3</Bulk>
+			<ArmorRating_Sharp>12.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+			<Insulation_Cold>0.50</Insulation_Cold>
+			<Insulation_Heat>0.02</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.832</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.673</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>				
+				</stats>
+			</li>
+		</modExtensions>	
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headwear_Balaclava5_Mask</defName>
+		<label>Balaclava</label>
+		<description>"A balaclava, also known as a balaclava helmet or Bally or ski mask, is a form of cloth Headgear designed to expose only part of the face, usually the eyes and mouth."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava5_Mask/Balaclava5_Mask_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava5_Mask/Balaclava5_Mask</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<tags>
+				<li>Balaclava</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>88</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<Insulation_Cold>22</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Headwear_Balaclava7_Mask</defName>
+		<label>Balaclava</label>
+		<description>"A balaclava, also known as a balaclava helmet or Bally or ski mask, is a form of cloth Headgear designed to expose only part of the face, usually the eyes and mouth."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava7_Mask/Balaclava7_Mask_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/Balaclava7_Mask/Balaclava7_Mask</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<tags>
+				<li>Balaclava</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>88</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<Insulation_Cold>22</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+	<!--Разгрузки бандитов-->
+	<ThingDef ParentName="PMCBanditsTacticalVest">
+		<defName>Direct_Action_Compact</defName>
+		<label>Direct Action Thunderstorm</label>
+		<description>A fixed direct Action from the Catharsis faction, containing all the basic necessary sub-bags.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Direct_Action_Compact/Direct_Action_Compact_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Direct_Action_Compact/Direct_Action_Compact</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Dark</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>95</MaxHitPoints>
+			<Mass>0.62</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<EquipDelay>0.50</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>30</CarryBulk>
+			<ReloadSpeed>0.1</ReloadSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsTacticalVest">
+		<defName>Spiritus_Systems</defName>
+		<label>Delta</label>
+		<description>"Ultra-compact and lightweight chest rig for additional mobility and comfort".</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Spiritus_Systems/Spiritus_Systems_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Spiritus_Systems/Spiritus_Systems</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Dark</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.70</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<EquipDelay>0.50</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>30</CarryBulk>
+			<ReloadSpeed>0.1</ReloadSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsTacticalVest">
+		<defName>Triton_M43-A</defName>
+		<label>Triton M43-A Chest Harness</label>
+		<description>"Designed for comfort and quick access this harness puts a lot of additional magazines at your fingertips".</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Triton_M43-A/Triton_M43-A_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Triton_M43-A/Triton_M43-A</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Dark</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>280</MarketValue>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>1.3</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<EquipDelay>0.50</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>30</CarryBulk>
+			<ReloadSpeed>0.1</ReloadSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsTacticalVest">
+		<defName>UMTBS_6sh112_Rig</defName>
+		<label>UMTBS 6sh112 Scout-Sniper</label>
+		<description>"Universal Modular transport-combat system (UMTBS) "Scout-sniper" is official equipment of the Russian Federation's armed forces".</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/UMTBS_6sh112/UMTBS_6sh112_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/UMTBS_6sh112/UMTBS_6sh112</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Olive</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>203</MarketValue>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>1.7</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<EquipDelay>0.50</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>30</CarryBulk>
+			<ReloadSpeed>0.1</ReloadSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	<!--Разгрузки ЧВК-->
+	<ThingDef ParentName="PMCBanditsTacticalVest">
+		<defName>Velocity_Systems</defName>
+		<label>Multi-Purpose Patrol Vest</label>
+		<description>"Multi-Purpose Patrol Vest is designed for those patrolling situations where armor is not needed. Light rig with a lot of pouches".</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Velocity_Systems/Velocity_Systems_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Velocity_Systems/Velocity_Systems</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Dark</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>462</MarketValue>
+			<MaxHitPoints>110</MaxHitPoints>
+			<Mass>1.70</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<EquipDelay>0.50</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>40</CarryBulk>
+			<ReloadSpeed>0.2</ReloadSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsTacticalVest">
+		<defName>Wartech_TV-109_Rig</defName>
+		<label>Wartech gear rig (TV-109, TV-106)</label>
+		<description>"The heavy suspension system TV-109 is designed for attaching to the belt TV-106, or similar, in order to relieve some weight on the shoulders. The shoulders are reinforced with foam and have MOLLE straps, for transferring the belt complete with this system into a full-featured ALICE system".</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Wartech_TV-109/Wartech_TV-109_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Wartech_TV-109/Wartech_TV-109</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Olive</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>162</MarketValue>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Mass>1.8</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<EquipDelay>0.50</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>40</CarryBulk>
+			<ReloadSpeed>0.2</ReloadSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	<ThingDef ParentName="PMCBanditsTacticalVest">
+		<defName>Wartech_TV-110_rig</defName>
+		<label>Wartech TV-110 Plate Carrier</label>
+		<description>Plate carrier with armor plates made of armored steel (class 4) with chest and back protection only. And is equipped with set of pouches.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Wartech_TV-110/Wartech_TV-110_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/ChestRigs/Industrial/Wartech_TV-110/Wartech_TV-110</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Tan</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>577</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>10.3</Mass>
+			<Bulk>5.5</Bulk>
+			<ArmorRating_Sharp>12.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<Insulation_Cold>0.10</Insulation_Cold>
+			<Insulation_Heat>0.15</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>36</CarryBulk>
+			<ReloadSpeed>0.12</ReloadSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<!-- Костюм куста -->
+
+	<ThingDef ParentName="IndustrialApparelBase">
+		<defName>Apparel_GhillieSuit</defName>
+		<label>Ghillie suit</label>
+		<description>Camoflauge suit that can be used to merge with terrain</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/GSuit/GSuit_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/GSuit/GSuit</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Arms</li>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Ghillie</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>577</MarketValue>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Mass>2.3</Mass>
+			<Bulk>12</Bulk>
+			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<Insulation_Cold>0.10</Insulation_Cold>
+			<Insulation_Heat>0.15</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="IndustrialApparelBase">
+		<defName>Headwear_GhillieHood</defName>
+		<label>Ghillie hood</label>
+		<description>Part of the ghillie suit. Makes you look like a bush.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/GhillieHood/GhilHood_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/GhillieHood/GhilHood</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OverheadExtra</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<tags>
+				<li>Ghillie</li>
+			</tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>88</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Bulk>4</Bulk>
+			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<Insulation_Cold>22</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- Для мусорщиков -->
+
+	<ThingDef ParentName="IndustrialApparelBase">
+		<defName>Headwear_TrasherHelmet</defName>
+		<label>Trasher helmet</label>
+		<description>A skull-looking headgear of the Trashers.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/TrasherHelmet/TrasherHelmet_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Industrial/TrasherHelmet/TrasherHelmet</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OverheadExtra</li>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<tags>
+				<li>Trashers</li>
+			</tags>	
+		</apparel>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Bulk>4</Bulk>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>9.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SmokeSensitivity>-0.6</SmokeSensitivity>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>		
+		</equippedStatOffsets>
+		<thingCategories>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Apparel_TrasherSuit_Light</defName>
+		<label>Light trasher suit</label>
+		<description>Light but durable and reliable body armor protecting made by Trashers. Also comes with more heat protection</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/TrasherLightSuit/Dusk_Mesh_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+		  <li>Alloys_NonConstruct</li>
+		</stuffCategories>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/TrasherLightSuit/Dusk_Mesh</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>			
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Arms</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>Trashers</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>320</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+			<Bulk>2</Bulk>
+			<ArmorRating_Sharp>4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+							<li>Leg</li>
+							<li>Shoulder</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.816</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+							<li>Leg</li>
+							<li>Shoulder</li>
+						</parts>
+					</li>				
+				</stats>
+			</li>
+		</modExtensions>		
+	</ThingDef>
+
+	<ThingDef ParentName="PMCBanditsApparel">
+		<defName>Apparel_TrasherSuit_Heavy</defName>
+		<label>Heavy trasher suit</label>
+		<description>Heavier version of previous generation of Trasher armor, provides with better armor.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/TrasherHeavySuit/Dusk_Reactive_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+		  <li>Alloys_NonConstruct</li>
+		</stuffCategories>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Industrial/TrasherHeavySuit/Dusk_Reactive</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>			
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Arms</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+		  <tags Inherit="False">
+			<li>Trashers</li>
+		  </tags>			
+		</apparel>
+		<statBases>
+			<MarketValue>520</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<Bulk>2</Bulk>
+			<ArmorRating_Sharp>12.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>16</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.3125</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+							<li>Leg</li>
+							<li>Shoulder</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.333</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+							<li>Leg</li>
+							<li>Shoulder</li>
+						</parts>
+					</li>				
+				</stats>
+			</li>
+		</modExtensions>		
+	</ThingDef>
+
+</Defs>

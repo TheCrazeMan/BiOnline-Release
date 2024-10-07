@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<Clay.label>Глина</Clay.label>
+	<Clay.description>Обычный глиняный шарик. Может быть использован для изготовления керамики.</Clay.description>
+	
+	<CrushedStone.label>Щебень</CrushedStone.label>
+	<CrushedStone.description>Камень, но дробленый. Нашел свое применение во многих сферах.</CrushedStone.description>
+	
+	<Sand.label>Песок</Sand.label>
+	<Sand.description>Куча песка.</Sand.description>
+	
+	<CoffeeBeans.label>Кофейные бобы</CoffeeBeans.label>
+	<CoffeeBeans.description>Куча кофейных зерен.</CoffeeBeans.description>
+	
+</LanguageData>

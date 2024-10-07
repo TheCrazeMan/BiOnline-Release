@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Iron_Skin_Elixir</defName>
+    <label>Iron Skin Elixir</label>
+    <description>After taking the potion, the skin begins to crease and harden, and movement becomes difficult.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Iron_Skin_Elixir</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>53</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>IronSkinElixir</hediffDef>
+          <severity>0.5</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ToxicBuildup</hediffDef>
+          <severity>0.5</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Potions</researchPrerequisite>
+      <recipeUsers>
+		<li>Brewery</li>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <TM_RawDarkBerries>20</TM_RawDarkBerries>
+      <Iron>5</Iron>
+      <TM_RawBroots>5</TM_RawBroots>
+      <Ethanol>1</Ethanol>
+    </costList>
+    <comps>
+	   <li Class="CompProperties_Drug">
+		<listOrder>1000</listOrder>
+		<overdoseSeverityOffset>0</overdoseSeverityOffset>
+	   </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>IronSkinElixir</defName>
+    <label>ironskin elixir</label>
+    <hediffClass>Hediff_High</hediffClass>
+    <labelNoun>a ironskin elixir</labelNoun>
+    <description>IronSkin elixir effect</description>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ArmorRating_Sharp>7</ArmorRating_Sharp>
+          <ArmorRating_Blunt>10</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+        </statOffsets>
+        <painFactor>0</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

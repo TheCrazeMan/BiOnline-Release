@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SYR] Processor Framework</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps</xpath>
+				<value>
+					<comps>
+					
+						<li Class = "ProcessorFramework.CompProperties_Processor">
+							<capacity>25</capacity>
+							<independentProcesses>false</independentProcesses>
+							<parallelProcesses>false</parallelProcesses>
+							<dropIngredients>false</dropIngredients>
+							<showProductIcon>true</showProductIcon>
+							<barOffset>(0.0, 0.25)</barOffset>
+							<barScale>(1.0, 1.0)</barScale>
+							<colorCoded>false</colorCoded>
+							<processes>
+								<li>Beer</li>
+								<li>FermentationRawWort</li>
+								<li>FermentationWortWine</li>
+							</processes>
+						</li>
+						<li Class = "CompProperties_Forbiddable"/>
+						
+					
+					</comps>
+				</value>
+			  </li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

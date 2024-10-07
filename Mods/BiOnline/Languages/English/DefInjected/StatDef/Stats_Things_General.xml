@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Nutrients.label>Nutrients count</Nutrients.label>
+	<Nutrients.description>How much food will refill your nutrients</Nutrients.description>
+
+	<NutrientsLimit.label>Nutrients limit</NutrientsLimit.label>
+	<NutrientsLimit.description>What's the limit of the food to refill</NutrientsLimit.description>
+
+</LanguageData>

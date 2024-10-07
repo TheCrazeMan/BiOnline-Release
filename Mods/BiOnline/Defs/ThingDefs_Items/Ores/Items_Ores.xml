@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<Defs>
+
+
+		<!--Сера-->
+		<ThingDef ParentName="ResourceBase">
+			<defName>BiO_Sulfur</defName>
+			<label>Sulfur</label>
+			<description>Very fine yellow powder.  When adding coal, gunpowder will be obtained.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Sulfur/Sulfur</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<soundInteract>Standard_Drop</soundInteract>
+			<soundDrop>Standard_Drop</soundDrop>
+			<stackLimit>75</stackLimit>
+			<deepCommonality>0.8</deepCommonality>
+			<deepCountPerPortion>30</deepCountPerPortion>
+			<deepLumpSizeRange>4~8</deepLumpSizeRange>			
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<tradeability>Sellable</tradeability>
+			<statBases>
+			  <OreGridCommonality>1</OreGridCommonality>
+			  <MaxHitPoints>70</MaxHitPoints>
+			  <MarketValue>2.6</MarketValue>
+			  <Mass>0.2</Mass>
+			  <Flammability>1</Flammability>
+			  <DeteriorationRate>0</DeteriorationRate>
+			</statBases>
+			<intricate>false</intricate>
+			<thingCategories>
+			  <li>Miscellaneous</li>
+			</thingCategories>
+		</ThingDef> 
+
+
+		<!-- Хладокамень -->
+		<ThingDef ParentName="ResourceBase">
+			<defName>BIO_Cold_Stone</defName>
+			<label>Cold Stone</label>
+			<description>The mineral is blue. It looks very attractive, very cold to the touch.</description>	
+			<graphicData>
+				<texPath>Things/Item/Resource/Cold_Stone</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<statBases>
+			  <MarketValue>1.6</MarketValue>
+			  <Mass>0.2</Mass>
+			</statBases>
+			<soundDrop>ChunkRock_Drop</soundDrop>
+			<thingCategories>
+			  <li>Miscellaneous</li>
+			</thingCategories>
+		</ThingDef>
+
+
+		<!-- Железо -->
+		
+		<ThingDef ParentName="ResourceBase">
+			<defName>BIO_IronOre</defName>
+			<label>iron ore</label>
+			<description>Rough chunk of metal, that can't be used right now, should be processed to become a nice shiny ingot.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/IronOre</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<statBases>
+			  <MarketValue>0.7</MarketValue>
+			  <Mass>0.5</Mass>
+			  <Bulk>0.2</Bulk>
+			</statBases>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<thingCategories>
+			  <li>DefaultMetals</li>
+			</thingCategories>
+			<deepCommonality>5</deepCommonality>
+			<deepCountPerPortion>45</deepCountPerPortion>
+			<deepLumpSizeRange>20~30</deepLumpSizeRange>
+			<burnableByRecipe>false</burnableByRecipe>
+		</ThingDef>		
+		
+		<ThingDef ParentName="ResourceBase">
+			<defName>Iron</defName>
+			<label>iron</label>
+			<description>A primary metal used for crafting all sorts of items, widely used among medieval civilizations.\n\nCombining this metal with some chemicals allows the creation of steel, a much stronger material.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Iron</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<statBases>
+			  <MarketValue>1.4</MarketValue>
+			  <Mass>0.5</Mass>
+			  <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			  <StuffPower_Armor_Blunt>1.3</StuffPower_Armor_Blunt>
+			  <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat>
+			  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			  <SharpDamageMultiplier>0.9</SharpDamageMultiplier>
+			  <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+			</statBases>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<thingCategories>
+			  <li>RefinedDefaultMetals</li>
+			</thingCategories>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>true</smeltable>
+			<stuffProps>
+			  <categories>
+				<li>Metallic</li>
+			  </categories>
+			  <appearance>Metal</appearance>
+			  <commonality>1.00</commonality>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <color>(200, 183, 183)</color>
+			  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			  <statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0.42</Flammability>
+			  </statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		</ThingDef>
+
+
+		<!-- Каменный уголь -->
+		<ThingDef ParentName="ResourceBase">
+			<defName>BIO_Coal</defName>
+			<label>coal</label>
+			<description>A combustible black rock. Coal is mostly carbon with variable amounts of other elements. Generally used as fuel or as an ingredient in alloy like steel.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Coal</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>ChunkRock_Drop</soundInteract>
+			<soundDrop>ChunkRock_Drop</soundDrop>
+			<useHitPoints>true</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<stackLimit>75</stackLimit>
+			<statBases>
+		      <OreGridCommonality>1</OreGridCommonality>
+			  <MaxHitPoints>80</MaxHitPoints>
+			  <Flammability>0.8</Flammability>
+			  <MarketValue>1</MarketValue>
+			  <Mass>0.28</Mass>
+			</statBases>
+			<thingCategories>
+			  <li>Miscellaneous</li>
+			</thingCategories>
+			<deepCommonality>5</deepCommonality>
+			<deepCountPerPortion>50</deepCountPerPortion>
+			<deepLumpSizeRange>20~30</deepLumpSizeRange>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>false</smeltable>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		</ThingDef>
+  
+  
+		<!--Медь-->
+		<ThingDef ParentName="ResourceBase">
+			<defName>CopperOre</defName>
+			<label>Copper ore</label>
+			<description>As an iron, copper also should be processed to become somehow useful.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/CopperOre</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Silver_Drop</soundInteract>
+			<soundDrop>Silver_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<statBases>
+			  <MarketValue>0.7</MarketValue>
+			  <Mass>0.35</Mass>
+			</statBases>
+			<thingCategories>
+			  <li>DefaultMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<smallVolume>false</smallVolume>
+			<deepCommonality>2</deepCommonality>
+			<deepCountPerPortion>90</deepCountPerPortion>
+			<deepLumpSizeRange>10~20</deepLumpSizeRange>
+			<burnableByRecipe>false</burnableByRecipe>
+		</ThingDef>		
+		
+		<ThingDef ParentName="ResourceBase">
+			<defName>Copper</defName>
+			<label>Copper</label>
+			<description>An orangish-brown colored metal which is a great conductor of electricity.\n\nThis metal is not very strong, but it is a critical ingredient in the production of electrical devices and components which makes it highly valued by traders.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Copper</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Silver_Drop</soundInteract>
+			<soundDrop>Silver_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<statBases>
+			  <MarketValue>2</MarketValue>
+			  <Mass>0.575</Mass>
+			  <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			  <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			  <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+			  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			</statBases>
+			<thingCategories>
+			  <li>RefinedDefaultMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<smallVolume>false</smallVolume>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>true</smeltable>
+			<stuffProps>
+			  <categories>
+				<li>Metallic</li>
+			  </categories>
+			  <appearance>Metal</appearance>
+			  <color>(175, 73, 27)</color>
+			  <commonality>0</commonality>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			  <statOffsets>
+				<Beauty>0</Beauty>
+			  </statOffsets>
+			  <statFactors>
+				<MaxHitPoints>0.75</MaxHitPoints>
+				<Flammability>0.4</Flammability>
+				<MeleeArmorPenetration>0.8</MeleeArmorPenetration>
+				<Beauty>1.2</Beauty>
+				<WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+			  </statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		</ThingDef>
+  
+
+		<!--Свинец-->
+		
+		<ThingDef ParentName="ResourceBase">
+			<defName>LeadOre</defName>
+			<label>Lead ore</label>
+			<description>Chunk of a soft, but really heavy metal. Can be easily turned into a lot of useful things.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/LeadOre</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<statBases>
+			  <MarketValue>0.75</MarketValue>
+			  <Mass>0.9</Mass>
+			</statBases>
+			<thingCategories>
+			  <li>DefaultMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<deepCommonality>3.8</deepCommonality>
+			<deepCountPerPortion>35</deepCountPerPortion>
+			<deepLumpSizeRange>20~25</deepLumpSizeRange>
+			<burnableByRecipe>false</burnableByRecipe>
+		</ThingDef>		
+		
+		<ThingDef ParentName="ResourceBase">
+			<defName>Lead</defName>
+			<label>Lead</label>
+			<description>A soft, heavy metal which isn't very useful for making weapons or structures due to its low strength and heaviness. However, it is widely used in the production and maintenance of turret barrels and, in some cases, crafting equipment which can protect against toxins.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Lead</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<statBases>
+			  <MarketValue>0.8</MarketValue>
+			  <Mass>0.7175</Mass>
+			  <StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+			  <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+			  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			</statBases>
+			<thingCategories>
+			  <li>RefinedDefaultMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>true</smeltable>
+			<stuffProps>
+			  <categories>
+				<li>Metallic</li>
+			  </categories>
+			  <appearance>Metal</appearance>
+			  <commonality>0</commonality>
+			  <color>(126,136,148)</color>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			  <statFactors>
+				<MaxHitPoints>0.6</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<MeleeArmorPenetration>0.6</MeleeArmorPenetration>
+				<Beauty>0.5</Beauty>
+				<WorkToMake>0.5</WorkToMake>
+				<WorkToBuild>0.5</WorkToBuild>		
+			  </statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		</ThingDef>
+	
+		<!--Титан-->
+		<ThingDef ParentName="ResourceBase">
+			<defName>Titanium_ore</defName>
+			<label>Titanium ore</label>
+			<description>titanium is a light transition metal of silver-white color. It has high corrosion resistance.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Titan_ore</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<tradeability>Sellable</tradeability>
+			<statBases>
+			  <MarketValue>1.7</MarketValue>
+			  <Mass>0.4</Mass>
+			  <StuffPower_Armor_Sharp>0.32</StuffPower_Armor_Sharp>
+			  <StuffPower_Armor_Blunt>0.16</StuffPower_Armor_Blunt>
+			  <StuffPower_Armor_Heat>0.16</StuffPower_Armor_Heat>
+			  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			  <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+			  <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+			</statBases>
+			<thingCategories>
+			  <li>DefaultMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<deepCommonality>1.8</deepCommonality>
+			<deepCountPerPortion>20</deepCountPerPortion>
+			<deepLumpSizeRange>4~12</deepLumpSizeRange>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>true</smeltable>
+			<stuffProps>
+			  <appearance>Metal</appearance>
+			  <commonality>0</commonality>
+			  <color>(126,136,148)</color>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			  <statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Flammability>0.1</Flammability>
+				<Beauty>1</Beauty>
+				<WorkToMake>0.8</WorkToMake>
+				<WorkToBuild>0.8</WorkToBuild>
+			  </statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		</ThingDef>
+
+
+		<!--Керамит-->
+		<ThingDef ParentName="ResourceBase">
+			<defName>Ceramite</defName>
+			<label>Ceramite</label>
+			<description>Ceramite is an impact—resistant material based on ceramics. It is not known exactly how it appeared, one of the theories is that these are the fossilized remains of beetles' vital activity.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Ceramite</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<tradeability>None</tradeability>
+			<statBases>
+			  <MarketValue>3.6</MarketValue>
+			  <Mass>1.1</Mass>
+			  <StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+			  <StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+			  <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+			  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			  <SharpDamageMultiplier>1.6</SharpDamageMultiplier>
+			  <BluntDamageMultiplier>0.2</BluntDamageMultiplier>
+			</statBases>
+			<thingCategories>
+			  <li>BiomeMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>true</smeltable>
+			<stuffProps>
+			  <appearance>Metal</appearance>
+			  <commonality>0</commonality>
+			  <color>(126,136,148)</color>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			  <statFactors>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<Beauty>1</Beauty>
+				<WorkToMake>1.5</WorkToMake>
+				<WorkToBuild>2.0</WorkToBuild>
+				  <ImmunityGainSpeedFactor>0.25</ImmunityGainSpeedFactor>
+				  <MedicalTendQualityOffset>0.6</MedicalTendQualityOffset>
+				  <JoyGainFactor>0.5</JoyGainFactor>
+			  </statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		</ThingDef>
+
+
+		<!--Хлорофит-->
+		<ThingDef ParentName="ResourceBase">
+			<defName>Chlorophyte</defName>
+			<label>Chlorophytee</label>
+			<description>The hard ore found in the jungle is used to make high-quality furniture and can be used to repair things.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Chlorophyte</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<tradeability>None</tradeability>
+			<statBases>
+			  <MarketValue>3.6</MarketValue>
+			  <Mass>0.1</Mass>
+			  <StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+			  <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			  <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat>
+			  <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+			  <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+			  <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+			  <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+			</statBases>
+			<thingCategories>
+			  <li>BiomeMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>true</smeltable>
+			<stuffProps>
+			  <appearance>Metal</appearance>
+			  <commonality>0</commonality>
+			  <color>(126,136,148)</color>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			  <statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>2</Flammability>
+				<Beauty>3</Beauty>
+				<WorkToMake>2</WorkToMake>
+				<WorkToBuild>4</WorkToBuild>
+				  <ImmunityGainSpeedFactor>1.4</ImmunityGainSpeedFactor>
+				  <MedicalTendQualityOffset>1.6</MedicalTendQualityOffset>
+				  <JoyGainFactor>3</JoyGainFactor>
+			  </statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		</ThingDef>
+
+
+		<!--Мифрил-->
+		<ThingDef ParentName="ResourceBase">
+			<defName>Mithril</defName>
+			<label>mithril</label>
+			<description>Mithril is lightweight and durable four times stronger than iron, moreover, it is much lighter than its material, which has high malleability and does not fade over the years, but requires very high temperatures for processing.</description>
+			<graphicData>
+			  <texPath>Things/Item/Resource/Mithril</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<soundInteract>Metal_Drop</soundInteract>
+			<soundDrop>Metal_Drop</soundDrop>
+			<useHitPoints>false</useHitPoints>
+			<healthAffectsPrice>false</healthAffectsPrice>
+			<tradeability>None</tradeability>
+			<statBases>
+			  <MarketValue>3.6</MarketValue>
+			  <Mass>0.55</Mass>
+			  <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+			  <StuffPower_Armor_Blunt>2</StuffPower_Armor_Blunt>
+			  <StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
+			  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			  <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+			  <SharpDamageMultiplier>1.4</SharpDamageMultiplier>
+			  <BluntDamageMultiplier>1.6</BluntDamageMultiplier>
+			</statBases>
+			<thingCategories>
+			  <li>BiomeMetals</li>
+			</thingCategories>
+			<stackLimit>75</stackLimit>
+			<burnableByRecipe>false</burnableByRecipe>
+			<smeltable>true</smeltable>
+			<stuffProps>
+			  <appearance>Metal</appearance>
+			  <commonality>0</commonality>
+			  <color>(126,136,148)</color>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			  <statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+				<Flammability>1</Flammability>
+				<Beauty>1</Beauty>
+				<WorkToMake>4</WorkToMake>
+				<WorkToBuild>5</WorkToBuild>
+				<ImmunityGainSpeedFactor>0.25</ImmunityGainSpeedFactor>
+				<MedicalTendQualityOffset>0.6</MedicalTendQualityOffset>
+				<JoyGainFactor>0.5</JoyGainFactor>
+			  </statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		</ThingDef>
+  
+</Defs>

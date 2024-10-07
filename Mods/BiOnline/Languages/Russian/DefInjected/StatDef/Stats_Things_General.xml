@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Nutrients.label>Восполнение баланса</Nutrients.label>
+	<Nutrients.description>Какое количество баланса БЖУ восполняет еда при употреблении.</Nutrients.description>
+
+	<NutrientsLimit.label>Лимит восполнения баланса</NutrientsLimit.label>
+	<NutrientsLimit.description>Какое максимальное количество БЖУ может восполнить еда.</NutrientsLimit.description>
+	
+	<BleedRate.label>Скорость кровотечения</BleedRate.label>
+	<BleedRate.description>Множитель скорости кровотечения.</BleedRate.description>
+	
+	<OreGridCommonality.label>Частота подземных залежей</OreGridCommonality.label>
+	<OreGridCommonality.description>Отражает, как часто руда встречается в залежах под землей.</OreGridCommonality.description>
+	
+</LanguageData>

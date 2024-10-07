@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef>
+    <defName>Make_RefiningStub</defName>
+    <label>RefiningStub</label>
+    <description>bah</description>
+    <recipeUsers>
+      <li>ResourceConsole</li>
+    </recipeUsers>
+    <jobString></jobString>
+    <effectWorking></effectWorking>
+    <soundWorking></soundWorking>
+    <workAmount>1000</workAmount>
+    <workSpeedStat></workSpeedStat>
+    <ingredients>
+    </ingredients>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <products>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Make_Napalm</defName>
+    <label>make Napalm</label>
+    <description>Make a batch of napalm by mixing chemfuel and synthylene. (Machining Table)</description>
+    <jobString>Mixing napalm.</jobString>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Napalm>50</Napalm>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>Chemical_Production</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

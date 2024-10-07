@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!--Неолит-->
+
+<BiO_MeleeWeaponNeolithic_Hammer.label>Каменный молоток</BiO_MeleeWeaponNeolithic_Hammer.label>
+<BiO_MeleeWeaponNeolithic_Hammer.description>Грубый каменный молоток. Лучше, чем ничего.</BiO_MeleeWeaponNeolithic_Hammer.description>
+
+<BiO_MeleeWeaponNeolithic_Axe.label>Каменный топор</BiO_MeleeWeaponNeolithic_Axe.label>
+<BiO_MeleeWeaponNeolithic_Axe.description>Грубый каменный топор. Лучше, чем ничего.</BiO_MeleeWeaponNeolithic_Axe.description>
+
+<BiO_MeleeWeaponNeolithic_Pickaxe.label>Каменная кирка</BiO_MeleeWeaponNeolithic_Pickaxe.label>
+<BiO_MeleeWeaponNeolithic_Pickaxe.description>Грубая каменная кирка. Лучше, чем ничего.</BiO_MeleeWeaponNeolithic_Pickaxe.description>
+
+<!--Средневековье-->
+
+<BiO_MeleeWeaponMedieval_Hammer.label>Молоток</BiO_MeleeWeaponMedieval_Hammer.label>
+<BiO_MeleeWeaponMedieval_Hammer.description>Хорошо сделанный инструмент. Идеально лежит в руке и ускоряет работу.</BiO_MeleeWeaponMedieval_Hammer.description>
+
+<BiO_MeleeWeaponMedieval_Axe.label>Топор</BiO_MeleeWeaponMedieval_Axe.label>
+<BiO_MeleeWeaponMedieval_Axe.description>Хорошо сделанный инструмент. Идеально лежит в руке и ускоряет работу.</BiO_MeleeWeaponMedieval_Axe.description>
+
+<BiO_MeleeWeaponMedieval_Pickaxe.label>Кирка</BiO_MeleeWeaponMedieval_Pickaxe.label>
+<BiO_MeleeWeaponMedieval_Pickaxe.description>Хорошо сделанный инструмент. Идеально лежит в руке и ускоряет работу.</BiO_MeleeWeaponMedieval_Pickaxe.description>
+
+<!--Индастриал-->
+
+<BiO_IndustrialChainsaw.label>Бензопила</BiO_IndustrialChainsaw.label>
+<BiO_IndustrialChainsaw.description>Механическая пила, оснащенная набором титановых зубьев, прикрепленных к вращающейся цепи. Первоначально предназначенный для вырубки деревьев, но, как и многие инструменты в бегах, он может стать разрушительным оружием при использовании против мясистых противников.</BiO_IndustrialChainsaw.description>
+
+<PowerTool_IndustrialJackHammer.label>Отбойный молот</PowerTool_IndustrialJackHammer.label>
+<PowerTool_IndustrialJackHammer.description>Мощный молот быстро поражает цель. Этот механический инструмент используется для разрушения твердых пород.</PowerTool_IndustrialJackHammer.description>
+
+<PowerTool_IndustrialDrill.label>Шуруповёрт</PowerTool_IndustrialDrill.label>
+<PowerTool_IndustrialDrill.description>Электрический шуруповёрт для сборки устройств. Повышает скорость работы.</PowerTool_IndustrialDrill.description>
+
+</LanguageData>

@@ -1,0 +1,222 @@
+<Defs>
+
+	<!-- Вышибала у дверей -->
+
+  <PawnKindDef>
+    <defName>Thug</defName>
+    <label>thug</label>
+    <race>Human</race>
+    <defaultFactionType>Pirate</defaultFactionType>
+    <combatPower>55</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <isFighter>true</isFighter>
+    <chemicalAddictionChance>0.1</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Outlander</li>
+          <li>Outsider</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>500~1500</weaponMoney>
+	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>ShortShots</li>
+    </weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+      <li>Apparel_Jacket</li>
+      <li>Apparel_FlakVest</li>
+    </apparelRequired>
+    <apparelColor>(58,58,58)</apparelColor>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <favoriteColor>(58,58,58)</favoriteColor>
+    <initialWillRange>2~10</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <humanPregnancyChance>0</humanPregnancyChance>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>10~16</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>	  
+    </skills>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.75</Neanderthal>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.3</Hussar>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.1</Yttakin>
+		<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+		<Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+      </xenotypeChances>
+    </xenotypeSet>	
+  </PawnKindDef>
+
+	<!-- Культисты-анонисты -->
+
+  <PawnKindDef ParentName="RoyalBase">
+    <defName>Cultist</defName>
+    <label>cultist</label>
+    <factionHostileOnDeath>true</factionHostileOnDeath>
+	<defaultFactionType Inherit="False">AncientsHostile</defaultFactionType>
+	<itemQuality>Good</itemQuality>
+    <combatPower>50</combatPower>
+    <weaponMoney>99999</weaponMoney>
+    <apparelRequired>
+      <li>Apparel_HatHood</li>
+      <li>Apparel_Pants</li>
+      <li>Apparel_RobeRoyal</li>
+      <li>Apparel_CollarShirt</li>
+    </apparelRequired>
+    <techHediffsMoney>1000~4000</techHediffsMoney>
+    <apparelColor>(182,99,37)</apparelColor>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+      </xenotypeChances>
+    </xenotypeSet>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <weaponTags Inherit="False">
+      <li>SacDagger</li>
+    </weaponTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <minGenerationAge>50</minGenerationAge>
+    <techHediffsMaxAmount>3</techHediffsMaxAmount>
+    <initialWillRange>6~8</initialWillRange>
+    <initialResistanceRange>30~46</initialResistanceRange>
+    <humanPregnancyChance>0</humanPregnancyChance>
+  </PawnKindDef>
+
+	<!-- Бандиты -->
+
+  <PawnKindDef Name="BanditBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>Pirate</defaultFactionType>
+    <maxGenerationAge>80</maxGenerationAge>
+    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.1</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0.08</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <invNutrition>1</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <weaponMoney>150~355</weaponMoney>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+	<gearHealthRange>0.4~1.1</gearHealthRange>
+    <apparelMoney>350~1250</apparelMoney>
+    <techHediffsChance>0.05</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+	<techHediffsMaxAmount>1</techHediffsMaxAmount>
+	<techHediffsTags>
+	  <li>Poor</li>
+	  <li>Simple</li>
+	  <li>ImplantEmpireCommon</li>	  
+	</techHediffsTags>
+	<weaponTags>
+	  <li>Gun</li>
+	</weaponTags>
+	<apparelTags>
+	  <li>IndustrialBasic</li>
+	  <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+	  <li>Bandits</li>
+	</apparelTags>
+    <biocodeWeaponChance>0</biocodeWeaponChance>
+	<preventIdeo>true</preventIdeo>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>TM_AdvancedMedicine</thingDef>
+          <countRange>2</countRange>
+        </li>		
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>7~12</initialResistanceRange>	
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BanditBase">
+	<defName>Bandit_Scav</defName>
+	<label>Bandit</label>
+	<combatPower>35</combatPower>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>120</min>
+						<max>400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm_Melee</li>
+					</weaponTags>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef>
+	<defName>WasterDrugDealer</defName>
+	<label>drug dealer</label>
+	<race>Human</race>
+	<combatPower>30</combatPower>
+	<isFighter>True</isFighter>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+		  <li>Pirate</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+	<apparelMoney>500~700</apparelMoney>
+	<weaponMoney>200~350</weaponMoney>
+	<weaponTags>
+	  <li>CE_Sidearm</li>
+	</weaponTags>	
+	<apparelTags>
+	  <li>IndustrialBasic</li>
+	  <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+	</apparelTags>
+    <initialWillRange>2~3</initialWillRange>
+    <initialResistanceRange>4.5~9</initialResistanceRange>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">1</Waster>
+      </xenotypeChances>
+    </xenotypeSet>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>	
+  </PawnKindDef>
+
+</Defs>

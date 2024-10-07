@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<Mim.label>пополнение</Mim.label>
+	
+	<PMC_EMIField.label>ЭМИ-поле</PMC_EMIField.label>
+	<PMC_EMIField.letterLabel>ЭМИ-поле</PMC_EMIField.letterLabel>
+	
+	<MortarStrike.label>Минометный обстрел</MortarStrike.label>
+	<MortarStrike.letterLabel>Минометный обстрел</MortarStrike.letterLabel>
+</LanguageData>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>PlayerMedieval</defName>
+		<label>Medieval</label>
+		<description>Medieval</description>
+		<isPlayer>true</isPlayer>
+		<categoryTag>Medieval</categoryTag>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<basicMemberKind>Colonist</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+		  <li>Corunan</li>
+		</allowedCultures>
+		<disallowedMemes>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		</disallowedPrecepts>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/Castle</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+		  <li>Medieval</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>Medieval</li>
+		  <li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Cloth</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+		  <li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_BombardShot</defName>
+		<label>Bombard Shot</label>
+		<ammoTypes>
+			<RoundShot>Bullet_RoundShot</RoundShot>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BlunderbussShotBase" ParentName="AmmoBase" Abstract="True">
+		<description>A paper cartridge sealed with wax containing several round projectiles and black powder, fired by early, smoothbore blunderbusses.</description>
+		<statBases>
+			<Mass>0.12</Mass>
+			<Bulk>0.21</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_PreIndustrialAmmo</li>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoBlunderbussShot</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<stackLimit>25</stackLimit>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BlunderbussShotBase">
+		<defName>RoundShot</defName>
+		<label>blunderbuss shot</label>
+		<graphicData>
+			<texPath>Things/Ammo/Bombard</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.48</MarketValue>
+		</statBases>
+		<ammoClass>MusketBall</ammoClass>
+	</ThingDef>
+	<!-- Projectile --> 
+	<ThingDef Name="BlunderbussShotBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bombarda_shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BlunderbussShotBullet">
+		<defName>Bullet_RoundShot</defName>
+		<label>blunderbuss pellet</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>43</speed>
+			<damageAmountBase>28</damageAmountBase>
+			<armorPenetrationSharp>4.8</armorPenetrationSharp>
+			<armorPenetrationBlunt>32.00</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<!--Recipe-->
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeRoundShot</defName>
+		<label>make round shot x4</label>
+		<description>Craft 4 round shots.</description>
+		<jobString>Making round shot shots.</jobString>
+		<researchPrerequisite>Flintlock_firearms</researchPrerequisite>
+		<workAmount>2400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gunpowder</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Paper</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>			
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+			<thingDefs>
+				<li>Gunpowder</li>
+				<li>Paper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RoundShot>4</RoundShot>
+		</products>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Misc</buildingTabCategoryDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+</Defs>

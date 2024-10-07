@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DesignationDef>
+		<defName>PrefabCell</defName>
+		<texturePath>UI/Designators/PrefabCell</texturePath>
+		<targetType>Cell</targetType>
+	</DesignationDef>
+	
+	<DesignationDef>
+		<defName>ExploreTheSoil</defName>
+		<texturePath>UI/Designators/PrefabCell</texturePath> <!-- TODO -->
+		<targetType>Cell</targetType>
+	</DesignationDef>
+	
+	<DesignationDef>
+		<defName>PackTent</defName>
+		<texturePath>UI/Designators/PrefabCell</texturePath> <!-- TODO -->
+		<targetType>Thing</targetType>
+	</DesignationDef>
+
+
+</Defs>

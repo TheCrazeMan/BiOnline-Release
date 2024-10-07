@@ -1,0 +1,60 @@
+<Patch>
+
+	<!-- Замена стали в бетоне на цемент -->
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/TerrainDef[defName="Concrete"]/costList</xpath>
+		<value>
+			<costList>
+				<Cementum>1</Cementum>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/TerrainDef[defName="PavedTile"]/costList</xpath>
+		<value>
+			<costList>
+				<Cementum>2</Cementum>
+			</costList>
+		</value>
+	</Operation>
+
+	<!-- Добавление TerrainAffordances -->
+
+<!-- 	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/TerrainDef[defName="Sand" or defName="SoftSand"]/affordances</xpath>
+		<value>
+			<li>TerrainSand</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/TerrainDef[defName="Gravel"]/affordances</xpath>
+		<value>
+			<li>TerrainGravel</li>
+		</value>
+	</Operation> -->
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/TerrainDef[@Name="WaterChestDeepBase" or @Name="WaterShallowBase"]/affordances</xpath>
+		<value>
+			<li>TerrainWater</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/TerrainDef[@Name="WaterChestDeepBase" or @Name="WaterShallowBase"]/affordances</xpath>
+		<value>
+			<li>TerrainWater</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/TerrainDef[defName="SoilRich" or defName="MarshyTerrain" or defName="MossyTerrain" or defName="Soil"]/affordances</xpath>
+		<value>
+			<li>TerrainDirt</li>
+		</value>
+	</Operation>
+
+</Patch>

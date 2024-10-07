@@ -1,0 +1,215 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FactionDef[defName="Empire"]</xpath>
+				<value>
+				
+				  <FactionDef ParentName="FactionBase">
+					<defName>Empire</defName>
+					<label>shattered empire</label>
+					<categoryTag>Empire</categoryTag>
+					<description>An ultratech refugee society from the planet Sophiamunda. Their culture is based on a code of honor, a strict class system, and enforced social stasis.\n\nThese are the survivors of a great calamity that tore apart Sophian society. They fled to the rimworld using the remnants of their fleet. Despite losing so much, their ships and technology still make them powerful.\n\nThey will refuse to trade with anyone who lacks the appropriate royal title.</description>
+					<pawnSingular>imperial</pawnSingular>
+					<pawnsPlural>imperials</pawnsPlural>
+					<settlementGenerationWeight>1</settlementGenerationWeight>
+					<requiredCountAtGameStart>1</requiredCountAtGameStart>
+					<maxCountAtGameStart>1</maxCountAtGameStart>
+					<canSiege>true</canSiege>
+					<canStageAttacks>true</canStageAttacks>
+					<leaderTitle>high stellarch</leaderTitle>
+					<royalFavorLabel>honor</royalFavorLabel>
+					<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+					<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+					<factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+					<factionNameMaker>NamerFactionEmpire</factionNameMaker>
+					<settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
+					<allowedCultures><li>Sophian</li></allowedCultures>
+					<modExtensions>
+						<li Class="BiOnline.Factions.FactionDefModExtension">
+							
+							<listCommsIconPath>World/Objects/Avatar/EmpireX128</listCommsIconPath>
+							<commsIconPath>World/Objects/Avatar/EmpireX256</commsIconPath>
+							<smallCommsIconPath>World/WorldObjects/Expanding/Empire</smallCommsIconPath>
+						
+							<!-- Опции в разделе "Связь" -->
+							<factionInteractionOptions>
+								<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_Gift</li>
+								<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_StoryQuest</li>
+							</factionInteractionOptions>
+							
+							<factionStoryQuests>
+								<li>
+									<questScriptDef>StoryQuest_1_OutlanderCivil</questScriptDef>
+								</li>
+							</factionStoryQuests>
+							
+							<!-- сколько стоит вернуть привилегии. Если не указано, по дефолту будет 40 -->
+							<returnPermitsGoodwillCost>20</returnPermitsGoodwillCost>
+						</li>
+					</modExtensions>
+					<requiredMemes>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+					</requiredMemes>
+					<allowedMemes>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+					</allowedMemes>
+					<disallowedPrecepts>
+					  <li>Slavery_Classic</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Abhorrent</li>
+					  <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Horrible</li>
+					</disallowedPrecepts>
+					<structureMemeWeights>
+					  <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+					</structureMemeWeights>
+					<xenotypeSet>
+					  <xenotypeChances>
+						<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.05</Neanderthal>
+						<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.15</Hussar>
+						<Genie MayRequire="Ludeon.RimWorld.Biotech">0.10</Genie>
+					  </xenotypeChances>
+					</xenotypeSet>
+					<permanentEnemyToEveryoneExcept>
+					  <li>OutlanderCivil</li>
+					  <li>TribeCivil</li>
+					  <li>PlayerTribe</li>
+					  <li>PlayerColony</li>
+					  <li>Ancients</li>
+					</permanentEnemyToEveryoneExcept>
+					<techLevel>Ultra</techLevel>
+					<backstoryFilters>
+					  <li>
+						<categories>
+						  <li>ImperialCommon</li>
+						</categories>
+					  </li>
+					</backstoryFilters>
+					<apparelStuffFilter>
+					  <stuffCategoriesToAllow>
+						<li>Metallic</li>
+						<li>Fabric</li>
+					  </stuffCategoriesToAllow>
+					  <disallowedThingDefs>
+						<li>DevilstrandCloth</li>
+					  </disallowedThingDefs>
+					</apparelStuffFilter>
+					<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+					<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+					<colorSpectrum>
+					  <li>(0.85, 0.85, 0.75)</li>
+					</colorSpectrum>
+					<fixedLeaderKinds>
+					  <li>Empire_Royal_Stellarch</li>
+					</fixedLeaderKinds>
+					<royalTitleTags>
+					  <li>EmpireTitle</li>
+					</royalTitleTags>
+					<baseTraderKinds>
+					  <li>Base_Empire_Standard</li>
+					</baseTraderKinds>
+					<caravanTraderKinds>
+					  <li>Empire_Caravan_TraderGeneral</li>
+					</caravanTraderKinds>
+					<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+					<royalTitleInheritanceRelations>
+					  <li>Child</li>
+					  <li>Grandchild</li>
+					  <li>GreatGrandchild</li>
+					  <li>NephewOrNiece</li>
+					  <li>Spouse</li>
+					  <li>Sibling</li>
+					  <li>HalfSibling</li>
+					  <li>Cousin</li>
+					  <li>Parent</li>
+					  <li>UncleOrAunt</li>
+					</royalTitleInheritanceRelations>
+					<raidCommonalityFromPointsCurve>
+					  <points>
+						<li>(0, 1)</li> <!--Constant 1 at all points levels-->
+					  </points>
+					</raidCommonalityFromPointsCurve>
+					<raidLootMaker>EmpireRaidLootMaker</raidLootMaker>
+					<maxPawnCostPerTotalPointsCurve>
+					  <points>
+						<li>(500, 100)</li> <!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
+						<li>(1000, 150)</li>
+						<li>(2000, 250)</li>
+						<li>(2001, 10000)</li>
+					  </points>
+					</maxPawnCostPerTotalPointsCurve>
+					<pawnGroupMakers>
+					  <!-- Traders -->
+					  <li>
+						<kindDef>Trader</kindDef>
+						<traders>
+						  <Empire_Common_Trader>1</Empire_Common_Trader>
+						</traders>
+						<carriers>
+						  <Muffalo>6</Muffalo>
+						  <Dromedary>5</Dromedary>
+						  <Alpaca>2</Alpaca>
+						  <Elephant>1</Elephant>
+						</carriers>
+						<guards>
+						  <Villager>3</Villager>
+						  <Empire_Fighter_Trooper>10</Empire_Fighter_Trooper>
+						  <Empire_Fighter_Cataphract>1.5</Empire_Fighter_Cataphract>
+						  <Empire_Fighter_Janissary>7</Empire_Fighter_Janissary>
+						  <Empire_Fighter_Champion>10</Empire_Fighter_Champion>
+						</guards>
+					  </li>
+					  <li>
+						<!-- Normal fights -->
+						<kindDef>Combat</kindDef>
+						<commonality>100</commonality>
+						<options>
+						  <Empire_Fighter_Trooper>5</Empire_Fighter_Trooper>
+						  <Empire_Fighter_Janissary>3.5</Empire_Fighter_Janissary>
+						  <Empire_Fighter_Cataphract>2</Empire_Fighter_Cataphract>
+						  <Empire_Fighter_Champion>4</Empire_Fighter_Champion>
+						</options>
+					  </li>
+					  <li>
+						<!-- breach fights -->
+						<kindDef>Combat</kindDef>
+						<commonality>10</commonality>
+						<options>
+						  <Empire_Fighter_Grenadier>2</Empire_Fighter_Grenadier>
+						  <Empire_Fighter_Trooper>5</Empire_Fighter_Trooper>
+						  <Empire_Fighter_Janissary>3.5</Empire_Fighter_Janissary>
+						  <Empire_Fighter_Cataphract>2</Empire_Fighter_Cataphract>
+						  <Empire_Fighter_Champion>4</Empire_Fighter_Champion>
+						</options>
+					  </li>
+					  <li>
+						<!-- Base defense, mainly ranged with melee mix-ins -->
+						<kindDef>Settlement</kindDef>
+						<options>
+						  <Empire_Fighter_Trooper>5</Empire_Fighter_Trooper>
+						  <Empire_Fighter_Janissary>3.5</Empire_Fighter_Janissary>
+						  <Empire_Fighter_Cataphract>2</Empire_Fighter_Cataphract>
+						  <Empire_Fighter_Champion>4</Empire_Fighter_Champion>
+					  </options>
+					  </li>
+					</pawnGroupMakers>
+					<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+					<configurationListOrderPriority>70</configurationListOrderPriority>
+					<disallowedRaidAgeRestrictions>
+					  <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+					</disallowedRaidAgeRestrictions>
+				  </FactionDef>
+  
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

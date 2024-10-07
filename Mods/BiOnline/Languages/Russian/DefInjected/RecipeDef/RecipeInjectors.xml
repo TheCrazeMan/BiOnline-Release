@@ -1,0 +1,39 @@
+<LanguageData>
+
+	<Make_DefleXitolx5.label>Создать Дефлексотор х5</Make_DefleXitolx5.label>
+	<Make_DefleXitolx5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_DefleXitolx5.description>
+	<Make_DefleXitolx5.jobString>Синтезирует Дефлексотор</Make_DefleXitolx5.jobString>
+
+	<Make_PyroFormx5.label>Создать Пироформ х5</Make_PyroFormx5.label>
+	<Make_PyroFormx5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_PyroFormx5.description>
+	<Make_PyroFormx5.jobString>Синтезирует Пироформ</Make_PyroFormx5.jobString>
+
+	<Make_MulEx5.label>Создать Мулл-И х5</Make_MulEx5.label>
+	<Make_MulEx5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_MulEx5.description>
+	<Make_MulEx5.jobString>Синтезирует Мулл-И</Make_MulEx5.jobString>
+
+	<Make_Trasylol_500kx5.label>Создать Трасилол 500тыс x5</Make_Trasylol_500kx5.label>
+	<Make_Trasylol_500kx5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_Trasylol_500kx5.description>
+	<Make_Trasylol_500kx5.jobString>Синтезирует Трасилол 500тыс</Make_Trasylol_500kx5.jobString>
+
+	<Make_Regenostasx5.label>Создать Регеностаз х5</Make_Regenostasx5.label>
+	<Make_Regenostasx5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_Regenostasx5.description>
+	<Make_Regenostasx5.jobString>Синтезирует Регеностаз</Make_Regenostasx5.jobString>
+
+	<Make_Dofax5.label>Создать Дофа х5</Make_Dofax5.label>
+	<Make_Dofax5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_Dofax5.description>
+	<Make_Dofax5.jobString>Синтезирует Дофу</Make_Dofax5.jobString>
+
+	<Make_Flexitolx5.label>Создать Флекситол х5</Make_Flexitolx5.label>
+	<Make_Flexitolx5.description>Синтез военных препаратов, конечно, дело непростое. Однако флекситол может осилить даже ребёнок. Флекситол - твой лучший друг, скажи ему spasibo.</Make_Flexitolx5.description>
+	<Make_Flexitolx5.jobString>Флексит у стола</Make_Flexitolx5.jobString>
+
+	<Make_DetoXx5.label>Создать ДеТокс х5</Make_DetoXx5.label>
+	<Make_DetoXx5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_DetoXx5.description>
+	<Make_DetoXx5.jobString>Синтезирует ДеТокс</Make_DetoXx5.jobString>
+	
+	<Make_PsyBlockerx5.label>Создать ПсиБлок х5</Make_PsyBlockerx5.label>
+	<Make_PsyBlockerx5.description>Синтез военного препарата - непростое дело. Немного того, немного сего, и у вас получается шприц с прекрасной жидкостью. Лучше колите его не глядя.</Make_PsyBlockerx5.description>
+	<Make_PsyBlockerx5.jobString>Синтезирует ПсиБлок</Make_PsyBlockerx5.jobString>
+	
+</LanguageData>

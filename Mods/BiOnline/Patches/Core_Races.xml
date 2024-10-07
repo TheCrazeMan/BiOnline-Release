@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="BasePawn"]/comps</xpath>
+				<value>
+					<li Class="BiOnline.Things.Pawns.CompProperties_BiOnlinePawn">
+						<infectChance>0.05</infectChance>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

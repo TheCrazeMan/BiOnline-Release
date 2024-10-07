@@ -1,0 +1,13 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/MainButtonDef[defName="Research"]/tabWindowClass</xpath>
+				<value>
+					<tabWindowClass>BiOnline.Researches.MainTabWindow_BiResearch</tabWindowClass>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>

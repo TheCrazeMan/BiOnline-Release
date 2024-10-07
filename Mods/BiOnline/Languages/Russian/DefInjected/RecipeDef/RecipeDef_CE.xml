@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!-- Recipes 44Magnum -->
+
+	<MakeAmmo_44Magnum_FMJ.label>сделать пачку патронов .44 Magnum (ОП) (500 шт.)</MakeAmmo_44Magnum_FMJ.label>
+	<MakeAmmo_44Magnum_FMJ.description>Сделать 500 патронов .44 Magnum (ОП).</MakeAmmo_44Magnum_FMJ.description>
+	<MakeAmmo_44Magnum_FMJ.jobString>Делает патрон .44 Magnum (ОП).</MakeAmmo_44Magnum_FMJ.jobString>
+
+	<MakeAmmo_44Magnum_AP.label>сделать пачку патронов .44 Magnum (БП) (500 шт.)</MakeAmmo_44Magnum_AP.label>
+	<MakeAmmo_44Magnum_AP.description>Сделать 500 патронов .44 Magnum (БП).</MakeAmmo_44Magnum_AP.description>
+	<MakeAmmo_44Magnum_AP.jobString>Делает патрон .44 Magnum (БП).</MakeAmmo_44Magnum_AP.jobString>
+
+	<MakeAmmo_44Magnum_HP.label>сделать пачку патронов .44 Magnum (ЭП) (500 шт.)</MakeAmmo_44Magnum_HP.label>
+	<MakeAmmo_44Magnum_HP.description>Сделать 500 патронов .44 Magnum (ЭП).</MakeAmmo_44Magnum_HP.description>
+	<MakeAmmo_44Magnum_HP.jobString>Делает патрон .44 Magnum (ЭП).</MakeAmmo_44Magnum_HP.jobString>
+
+	<!-- Recipes 45ACP -->
+
+	<MakeAmmo_45ACP_FMJ.label>сделать пачку патронов .45 ACP (ОП) (500 шт.)</MakeAmmo_45ACP_FMJ.label>
+	<MakeAmmo_45ACP_FMJ.description>Сделать 500 патронов .45 ACP (ОП).</MakeAmmo_45ACP_FMJ.description>
+	<MakeAmmo_45ACP_FMJ.jobString>Делает патрон .45 ACP (ОП).</MakeAmmo_45ACP_FMJ.jobString>
+
+	<MakeAmmo_45ACP_AP.label>сделать пачку патронов .45 ACP (БП) (500 шт.)</MakeAmmo_45ACP_AP.label>
+	<MakeAmmo_45ACP_AP.description>Сделать 500 патронов .45 ACP (БП).</MakeAmmo_45ACP_AP.description>
+	<MakeAmmo_45ACP_AP.jobString>Делает патрон .45 ACP (БП).</MakeAmmo_45ACP_AP.jobString>
+
+	<MakeAmmo_45ACP_HP.label>сделать пачку патронов .45 ACP (ЭП) (500 шт.)</MakeAmmo_45ACP_HP.label>
+	<MakeAmmo_45ACP_HP.description>Сделать 500 патронов .45 ACP (ЭП).</MakeAmmo_45ACP_HP.description>
+	<MakeAmmo_45ACP_HP.jobString>Делает патрон .45 ACP (ЭП).</MakeAmmo_45ACP_HP.jobString>
+
+	<!-- Recipes 545x39 -->
+
+	<MakeAmmo_545x39mmSoviet_FMJ.label>сделать пачку патронов 5,45x39 мм (ОП) (500 шт.)</MakeAmmo_545x39mmSoviet_FMJ.label>
+	<MakeAmmo_545x39mmSoviet_FMJ.description>Сделать 500 патронов 5,45x39 мм (ОП).</MakeAmmo_545x39mmSoviet_FMJ.description>
+	<MakeAmmo_545x39mmSoviet_FMJ.jobString>Делает патроны 5,45x39 мм (ОП).</MakeAmmo_545x39mmSoviet_FMJ.jobString>
+
+	<MakeAmmo_545x39mmSoviet_AP.label>сделать пачку патронов 5,45x39 мм (БП) (500 шт.)</MakeAmmo_545x39mmSoviet_AP.label>
+	<MakeAmmo_545x39mmSoviet_AP.description>Сделать 500 патронов 5,45x39 мм (БП).</MakeAmmo_545x39mmSoviet_AP.description>
+	<MakeAmmo_545x39mmSoviet_AP.jobString>Делает патроны 5,45x39 мм  (БП).</MakeAmmo_545x39mmSoviet_AP.jobString>
+
+	<MakeAmmo_545x39mmSoviet_HP.label>сделать пачку патронов 5,45x39 мм (ЭП) (500 шт.)</MakeAmmo_545x39mmSoviet_HP.label>
+	<MakeAmmo_545x39mmSoviet_HP.description>Сделать 500 патронов 5,45x39 мм (ЭП).</MakeAmmo_545x39mmSoviet_HP.description>
+	<MakeAmmo_545x39mmSoviet_HP.jobString>Делает патроны 5,45x39 мм (ЭП).</MakeAmmo_545x39mmSoviet_HP.jobString>
+
+	<MakeAmmo_545x39mmSoviet_Incendiary.label>сделать пачку патронов 5,45x39 мм (БЗ) (500 шт.)</MakeAmmo_545x39mmSoviet_Incendiary.label>
+	<MakeAmmo_545x39mmSoviet_Incendiary.description>Сделать 500 патронов 5,45x39 мм (БЗ).</MakeAmmo_545x39mmSoviet_Incendiary.description>
+	<MakeAmmo_545x39mmSoviet_Incendiary.jobString>Делает патроны 5,45x39 мм (БЗ).</MakeAmmo_545x39mmSoviet_Incendiary.jobString>
+
+	<MakeAmmo_545x39mmSoviet_HE.label>сделать пачку патронов 5,45x39 мм (ОФ) (500 шт.)</MakeAmmo_545x39mmSoviet_HE.label>
+	<MakeAmmo_545x39mmSoviet_HE.description>Сделать 500 патронов 5,45x39 мм (ОФ).</MakeAmmo_545x39mmSoviet_HE.description>
+	<MakeAmmo_545x39mmSoviet_HE.jobString>Делает патроны 5,45x39 мм (ОФ).</MakeAmmo_545x39mmSoviet_HE.jobString>
+
+	<MakeAmmo_545x39mmSoviet_Sabot.label>сделать пачку патронов 5,45x39 мм (БОПС) (500 шт.)</MakeAmmo_545x39mmSoviet_Sabot.label>
+	<MakeAmmo_545x39mmSoviet_Sabot.description>Сделать 500 патронов 5,45x39 мм (БОПС).</MakeAmmo_545x39mmSoviet_Sabot.description>
+	<MakeAmmo_545x39mmSoviet_Sabot.jobString>Делает патроны 5,45x39 мм (БОПС).</MakeAmmo_545x39mmSoviet_Sabot.jobString>
+
+	<!-- Recipes 556x45 -->
+
+	<MakeAmmo_556x45mmNATO_FMJ.label>сделать пачку патронов 5,56x45 мм (ОП) (500 шт.)</MakeAmmo_556x45mmNATO_FMJ.label>
+	<MakeAmmo_556x45mmNATO_FMJ.description>Сделать 500 патронов 5,56x45 мм (ОП).</MakeAmmo_556x45mmNATO_FMJ.description>
+	<MakeAmmo_556x45mmNATO_FMJ.jobString>Делает патрон 5,56x45 мм (ОП).</MakeAmmo_556x45mmNATO_FMJ.jobString>
+
+	<MakeAmmo_556x45mmNATO_AP.label>сделать пачку патронов 5,56x45 мм (БП) (500 шт.)</MakeAmmo_556x45mmNATO_AP.label>
+	<MakeAmmo_556x45mmNATO_AP.description>Сделать 500 патронов 5,56x45 мм (БП).</MakeAmmo_556x45mmNATO_AP.description>
+	<MakeAmmo_556x45mmNATO_AP.jobString>Делает патрон 5,56x45 мм (БП).</MakeAmmo_556x45mmNATO_AP.jobString>
+
+	<MakeAmmo_556x45mmNATO_HP.label>сделать пачку патронов 5,56x45 мм (ЭП) (500 шт.)</MakeAmmo_556x45mmNATO_HP.label>
+	<MakeAmmo_556x45mmNATO_HP.description>Сделать 500 патронов 5,56x45 мм (ЭП).</MakeAmmo_556x45mmNATO_HP.description>
+	<MakeAmmo_556x45mmNATO_HP.jobString>Делает патрон 5,56x45 мм (ЭП).</MakeAmmo_556x45mmNATO_HP.jobString>
+
+	<MakeAmmo_556x45mmNATO_Incendiary.label>сделать пачку патронов 5,56x45 мм (БЗ) (500 шт.)</MakeAmmo_556x45mmNATO_Incendiary.label>
+	<MakeAmmo_556x45mmNATO_Incendiary.description>Сделать 500 патронов 5,56x45 мм (БЗ).</MakeAmmo_556x45mmNATO_Incendiary.description>
+	<MakeAmmo_556x45mmNATO_Incendiary.jobString>Делает патроны 5,56x45 мм (БЗ).</MakeAmmo_556x45mmNATO_Incendiary.jobString>
+
+	<MakeAmmo_556x45mmNATO_HE.label>сделать пачку патронов 5,56x45 мм (ОФ) (500 шт.)</MakeAmmo_556x45mmNATO_HE.label>
+	<MakeAmmo_556x45mmNATO_HE.description>Сделать 500 патронов 5,56x45 мм (ОФ).</MakeAmmo_556x45mmNATO_HE.description>
+	<MakeAmmo_556x45mmNATO_HE.jobString>Делает патроны 5,56x45 мм (ОФ).</MakeAmmo_556x45mmNATO_HE.jobString>
+
+	<MakeAmmo_556x45mmNATO_Sabot.label>сделать пачку патронов 5,56x45 мм (БОПС) (500 шт.)</MakeAmmo_556x45mmNATO_Sabot.label>
+	<MakeAmmo_556x45mmNATO_Sabot.description>Сделать 500 патронов 5,56x45 мм (БОПС).</MakeAmmo_556x45mmNATO_Sabot.description>
+	<MakeAmmo_556x45mmNATO_Sabot.jobString>Делает патроны 5,56x45 мм (БОПС).</MakeAmmo_556x45mmNATO_Sabot.jobString>
+
+	<!-- Recipes 762x39 -->
+
+	<MakeAmmo_762x39mmSoviet_FMJ.label>сделать пачку патронов 7,62x39 мм (ОП) (500 шт.)</MakeAmmo_762x39mmSoviet_FMJ.label>
+	<MakeAmmo_762x39mmSoviet_FMJ.description>Сделать 500 патронов 7,62x39 мм (ОП).</MakeAmmo_762x39mmSoviet_FMJ.description>
+	<MakeAmmo_762x39mmSoviet_FMJ.jobString>Делает патроны 7,62x39 мм (ОП).</MakeAmmo_762x39mmSoviet_FMJ.jobString>
+
+	<MakeAmmo_762x39mmSoviet_AP.label>сделать пачку патронов 7,62x39 мм (БП) (500 шт.)</MakeAmmo_762x39mmSoviet_AP.label>
+	<MakeAmmo_762x39mmSoviet_AP.description>Сделать 500 патронов 7,62x39 мм (БП).</MakeAmmo_762x39mmSoviet_AP.description>
+	<MakeAmmo_762x39mmSoviet_AP.jobString>Делает патроны 7,62x39 мм (БП).</MakeAmmo_762x39mmSoviet_AP.jobString>
+
+	<MakeAmmo_762x39mmSoviet_HP.label>сделать пачку патронов 7,62x39 мм (ЭП) (500 шт.)</MakeAmmo_762x39mmSoviet_HP.label>
+	<MakeAmmo_762x39mmSoviet_HP.description>Сделать 500 патронов 7,62x39 мм (ЭП).</MakeAmmo_762x39mmSoviet_HP.description>
+	<MakeAmmo_762x39mmSoviet_HP.jobString>Делает патроны 7,62x39 мм (ЭП).</MakeAmmo_762x39mmSoviet_HP.jobString>
+
+	<MakeAmmo_762x39mmSoviet_Incendiary.label>сделать пачку патронов 7,62x39 мм (БЗ) (500 шт.)</MakeAmmo_762x39mmSoviet_Incendiary.label>
+	<MakeAmmo_762x39mmSoviet_Incendiary.description>Сделать 500 патронов 7,62x39 мм (БЗ).</MakeAmmo_762x39mmSoviet_Incendiary.description>
+	<MakeAmmo_762x39mmSoviet_Incendiary.jobString>Делает патроны 7,62x39 мм (БЗ).</MakeAmmo_762x39mmSoviet_Incendiary.jobString>
+
+	<MakeAmmo_762x39mmSoviet_HE.label>сделать пачку патронов 7,62x39 мм (ОФ) (500 шт.)</MakeAmmo_762x39mmSoviet_HE.label>
+	<MakeAmmo_762x39mmSoviet_HE.description>Сделать 500 патронов 7,62x39 мм (ОФ).</MakeAmmo_762x39mmSoviet_HE.description>
+	<MakeAmmo_762x39mmSoviet_HE.jobString>Делает патроны 7,62x39 мм (ОФ).</MakeAmmo_762x39mmSoviet_HE.jobString>
+
+	<MakeAmmo_762x39mmSoviet_Sabot.label>сделать пачку патронов 7,62x39 мм (БОПС) (500 шт.)</MakeAmmo_762x39mmSoviet_Sabot.label>
+	<MakeAmmo_762x39mmSoviet_Sabot.description>Сделать 500 патронов 7,62x39 мм (БОПС).</MakeAmmo_762x39mmSoviet_Sabot.description>
+	<MakeAmmo_762x39mmSoviet_Sabot.jobString>Делает патроны 7,62x39 мм (БОПС).</MakeAmmo_762x39mmSoviet_Sabot.jobString>
+
+	<!-- Recipes 762x51 -->
+
+	<MakeAmmo_762x51mmNATO_FMJ.label>сделать пачку патронов 7,62x51 мм (ОП) (500 шт.)</MakeAmmo_762x51mmNATO_FMJ.label>
+	<MakeAmmo_762x51mmNATO_FMJ.description>Сделать 500 патронов 7,62x51 мм (ОП).</MakeAmmo_762x51mmNATO_FMJ.description>
+	<MakeAmmo_762x51mmNATO_FMJ.jobString>Делает патроны 7,62x51 мм (ОП).</MakeAmmo_762x51mmNATO_FMJ.jobString>
+
+	<MakeAmmo_762x51mmNATO_AP.label>сделать пачку патронов 7,62x51 мм (БП) (500 шт.)</MakeAmmo_762x51mmNATO_AP.label>
+	<MakeAmmo_762x51mmNATO_AP.description>Сделать 500 патронов 7,62x51 мм (БП).</MakeAmmo_762x51mmNATO_AP.description>
+	<MakeAmmo_762x51mmNATO_AP.jobString>Делает патроны 7,62x51 мм (БП).</MakeAmmo_762x51mmNATO_AP.jobString>
+
+	<MakeAmmo_762x51mmNATO_HP.label>сделать пачку патронов 7,62x51 мм (ЭП) (500 шт.)</MakeAmmo_762x51mmNATO_HP.label>
+	<MakeAmmo_762x51mmNATO_HP.description>Сделать 500 патронов 7,62x51 мм (ЭП).</MakeAmmo_762x51mmNATO_HP.description>
+	<MakeAmmo_762x51mmNATO_HP.jobString>Делает патроны 7,62x51 мм (ЭП).</MakeAmmo_762x51mmNATO_HP.jobString>
+
+	<MakeAmmo_762x51mmNATO_Incendiary.label>сделать пачку патронов 7,62x51 мм (БЗ) (500 шт.)</MakeAmmo_762x51mmNATO_Incendiary.label>
+	<MakeAmmo_762x51mmNATO_Incendiary.description>Сделать 500 патронов 7,62x51 мм (БЗ).</MakeAmmo_762x51mmNATO_Incendiary.description>
+	<MakeAmmo_762x51mmNATO_Incendiary.jobString>Делает патроны 7,62x51 мм (БЗ).</MakeAmmo_762x51mmNATO_Incendiary.jobString>
+
+	<MakeAmmo_762x51mmNATO_HE.label>сделать пачку патронов 7,62x51 мм (ОФ) (500 шт.)</MakeAmmo_762x51mmNATO_HE.label>
+	<MakeAmmo_762x51mmNATO_HE.description>Сделать 500 патронов 7,62x51 мм (ОФ).</MakeAmmo_762x51mmNATO_HE.description>
+	<MakeAmmo_762x51mmNATO_HE.jobString>Делает патроны 7,62x51 мм (ОФ).</MakeAmmo_762x51mmNATO_HE.jobString>
+
+	<MakeAmmo_762x51mmNATO_Sabot.label>сделать пачку патронов 7,62x51 мм (БОПС) (500 шт.)</MakeAmmo_762x51mmNATO_Sabot.label>
+	<MakeAmmo_762x51mmNATO_Sabot.description>Сделать 500 патронов 7,62x51 мм (БОПС).</MakeAmmo_762x51mmNATO_Sabot.description>
+	<MakeAmmo_762x51mmNATO_Sabot.jobString>Делает патроны 7,62x51 мм (БОПС).</MakeAmmo_762x51mmNATO_Sabot.jobString>
+
+	<!-- Recipes 762x54 -->
+
+	<MakeAmmo_762x54mmR_FMJ.label>сделать пачку патронов 7,62x54 мм R (ОП) (500 шт.)</MakeAmmo_762x54mmR_FMJ.label>
+	<MakeAmmo_762x54mmR_FMJ.description>Сделать 500 патронов 7,62x54 мм R (ОП).</MakeAmmo_762x54mmR_FMJ.description>
+	<MakeAmmo_762x54mmR_FMJ.jobString>Делает патроны 7,62x54 мм R (ОП).</MakeAmmo_762x54mmR_FMJ.jobString>
+
+	<MakeAmmo_762x54mmR_AP.label>сделать пачку патронов 7,62x54 мм R (БП) (500 шт.)</MakeAmmo_762x54mmR_AP.label>
+	<MakeAmmo_762x54mmR_AP.description>Сделать 500 патронов 7,62x54 мм R (БП).</MakeAmmo_762x54mmR_AP.description>
+	<MakeAmmo_762x54mmR_AP.jobString>Делает патроны 7,62x54 мм R (БП).</MakeAmmo_762x54mmR_AP.jobString>
+
+	<MakeAmmo_762x54mmR_HP.label>сделать пачку патронов 7,62x54 мм R (ЭП) (500 шт.)</MakeAmmo_762x54mmR_HP.label>
+	<MakeAmmo_762x54mmR_HP.description>Сделать 500 патронов 7,62x54 мм R (ЭП).</MakeAmmo_762x54mmR_HP.description>
+	<MakeAmmo_762x54mmR_HP.jobString>Делает патроны 7,62x54 мм R (ЭП).</MakeAmmo_762x54mmR_HP.jobString>
+
+	<MakeAmmo_762x54mmR_Incendiary.label>сделать пачку патронов 7,62x54 мм R (БЗ) (500 шт.)</MakeAmmo_762x54mmR_Incendiary.label>
+	<MakeAmmo_762x54mmR_Incendiary.description>Сделать 500 патронов 7,62x54 мм R (БЗ).</MakeAmmo_762x54mmR_Incendiary.description>
+	<MakeAmmo_762x54mmR_Incendiary.jobString>Делает патроны 7,62x54 мм R (БЗ).</MakeAmmo_762x54mmR_Incendiary.jobString>
+
+	<MakeAmmo_762x54mmR_HE.label>сделать пачку патронов 7,62x54 мм R (ОФ) (500 шт.)</MakeAmmo_762x54mmR_HE.label>
+	<MakeAmmo_762x54mmR_HE.description>Сделать 500 патронов 7,62x54 мм R (ОФ).</MakeAmmo_762x54mmR_HE.description>
+	<MakeAmmo_762x54mmR_HE.jobString>Делает патроны 7,62x54 мм R (ОФ).</MakeAmmo_762x54mmR_HE.jobString>
+
+	<MakeAmmo_762x54mmR_Sabot.label>сделать пачку патронов 7,62x54 мм R (БОПС) (500 шт.)</MakeAmmo_762x54mmR_Sabot.label>
+	<MakeAmmo_762x54mmR_Sabot.description>Сделать 500 патронов 7,62x54 мм R (БОПС).</MakeAmmo_762x54mmR_Sabot.description>
+	<MakeAmmo_762x54mmR_Sabot.jobString>Делает патроны 7,62x54 мм R (БОПС).</MakeAmmo_762x54mmR_Sabot.jobString>
+
+	<!-- Recipes 303 -->
+
+	<MakeAmmo_303British_FMJ.label>сделать пачку патронов .303 British (ОП) (500 шт.)</MakeAmmo_303British_FMJ.label>
+	<MakeAmmo_303British_FMJ.description>Сделать 500 патронов .303 British (ОП).</MakeAmmo_303British_FMJ.description>
+	<MakeAmmo_303British_FMJ.jobString>Делает патрон .303 British (ОП).</MakeAmmo_303British_FMJ.jobString>
+
+	<MakeAmmo_303British_AP.label>сделать пачку патронов .303 British (БП) (500 шт.)</MakeAmmo_303British_AP.label>
+	<MakeAmmo_303British_AP.description>Сделать 500 патронов .303 British (БП).</MakeAmmo_303British_AP.description>
+	<MakeAmmo_303British_AP.jobString>Делает патрон .303 British (БП).</MakeAmmo_303British_AP.jobString>
+
+	<MakeAmmo_303British_HP.label>сделать пачку патронов .303 British (ЭП) (500 шт.)</MakeAmmo_303British_HP.label>
+	<MakeAmmo_303British_HP.description>Сделать 500 патронов .303 British (ЭП).</MakeAmmo_303British_HP.description>
+	<MakeAmmo_303British_HP.jobString>Делает патрон .303 British (ЭП).</MakeAmmo_303British_HP.jobString>
+
+	<MakeAmmo_303British_Incendiary.label>сделать пачку патронов .303 British (БЗ) (500 шт.)</MakeAmmo_303British_Incendiary.label>
+	<MakeAmmo_303British_Incendiary.description>Сделать 500 патронов .303 British (БЗ).</MakeAmmo_303British_Incendiary.description>
+	<MakeAmmo_303British_Incendiary.jobString>Делает патроны .303 British (БЗ).</MakeAmmo_303British_Incendiary.jobString>
+
+	<MakeAmmo_303British_HE.label>сделать пачку патронов .303 British (ОФ) (500 шт.)</MakeAmmo_303British_HE.label>
+	<MakeAmmo_303British_HE.description>Сделать 500 патронов .303 British (ОФ).</MakeAmmo_303British_HE.description>
+	<MakeAmmo_303British_HE.jobString>Делает патроны .303 British (ОФ).</MakeAmmo_303British_HE.jobString>
+
+	<MakeAmmo_303British_Sabot.label>сделать пачку патронов .303 British (БОПС) (500 шт.)</MakeAmmo_303British_Sabot.label>
+	<MakeAmmo_303British_Sabot.description>Сделать 500 патронов .303 British (БОПС).</MakeAmmo_303British_Sabot.description>
+	<MakeAmmo_303British_Sabot.jobString>Делает патроны .303 British (БОПС).</MakeAmmo_303British_Sabot.jobString>
+
+	<!-- Recipes 145x114 -->
+
+	<MakeAmmo_145x114mm_FMJ.label>сделать пачку патронов 14,5x114 мм (ОП) (200 шт.)</MakeAmmo_145x114mm_FMJ.label>
+	<MakeAmmo_145x114mm_FMJ.description>Сделать 200 патронов 14,5x114 мм (ОП).</MakeAmmo_145x114mm_FMJ.description>
+	<MakeAmmo_145x114mm_FMJ.jobString>Делает патрон 14,5x114 мм (ОП).</MakeAmmo_145x114mm_FMJ.jobString>
+
+	<MakeAmmo_145x114mm_Incendiary.label>сделать пачку патронов 14,5x114 мм (БЗ) (200 шт.)</MakeAmmo_145x114mm_Incendiary.label>
+	<MakeAmmo_145x114mm_Incendiary.description>Сделать 200 патронов 14,5x114 мм (БЗ).</MakeAmmo_145x114mm_Incendiary.description>
+	<MakeAmmo_145x114mm_Incendiary.jobString>Делает патрон 14,5x114 мм (БЗ).</MakeAmmo_145x114mm_Incendiary.jobString>
+
+	<MakeAmmo_145x114mm_HE.label>сделать пачку патронов 14,5x114 мм (ОФ) (200 шт.)</MakeAmmo_145x114mm_HE.label>
+	<MakeAmmo_145x114mm_HE.description>Сделать 200 патронов 14,5x114 мм (ОФ).</MakeAmmo_145x114mm_HE.description>
+	<MakeAmmo_145x114mm_HE.jobString>Делает патрон 14,5x114 мм (ОФ).</MakeAmmo_145x114mm_HE.jobString>
+
+	<MakeAmmo_145x114mm_Sabot.label>сделать пачку патронов 14,5x114 мм (БОПС) (200 шт.)</MakeAmmo_145x114mm_Sabot.label>
+	<MakeAmmo_145x114mm_Sabot.description>Сделать 200 патронов 14,5x114 мм (БОПС).</MakeAmmo_145x114mm_Sabot.description>
+	<MakeAmmo_145x114mm_Sabot.jobString>Делает патроны 14,5x114 мм (БОПС).</MakeAmmo_145x114mm_Sabot.jobString>
+
+	<!-- Recipes 20x102 -->
+
+	<MakeAmmo_20x102mmNATO_AP.label>сделать пачку патронов 20x102 мм (БП) (200 шт.)</MakeAmmo_20x102mmNATO_AP.label>
+    <MakeAmmo_20x102mmNATO_AP.description>Сделать 200 патронов 20x102 мм (БП).</MakeAmmo_20x102mmNATO_AP.description>
+	<MakeAmmo_20x102mmNATO_AP.jobString>Делает патроны 20x102 мм (БП).</MakeAmmo_20x102mmNATO_AP.jobString>
+
+	<MakeAmmo_20x102mmNATO_Incendiary.label>сделать пачку патронов 20x102 мм (БЗ) (200 шт.)</MakeAmmo_20x102mmNATO_Incendiary.label>
+	<MakeAmmo_20x102mmNATO_Incendiary.description>Сделать 200 патронов 20x102 мм (БЗ).</MakeAmmo_20x102mmNATO_Incendiary.description>
+	<MakeAmmo_20x102mmNATO_Incendiary.jobString>Делает патроны 20x102 мм (БЗ).</MakeAmmo_20x102mmNATO_Incendiary.jobString>
+
+	<MakeAmmo_20x102mmNATO_HE.label>сделать пачку патронов 20x102 мм (ОФ) (200 шт.)</MakeAmmo_20x102mmNATO_HE.label>
+	<MakeAmmo_20x102mmNATO_HE.description>Сделать 200 патронов 20x102 мм (ОФ).</MakeAmmo_20x102mmNATO_HE.description>
+	<MakeAmmo_20x102mmNATO_HE.jobString>Делает патроны 20x102 мм (ОФ).</MakeAmmo_20x102mmNATO_HE.jobString>
+
+	<MakeAmmo_20x102mmNATO_Sabot.label>сделать пачку патронов 20x102 мм (БОПС) (200 шт.)</MakeAmmo_20x102mmNATO_Sabot.label>
+	<MakeAmmo_20x102mmNATO_Sabot.description>Сделать 200 патронов 20x102 мм (БОПС).</MakeAmmo_20x102mmNATO_Sabot.description>
+	<MakeAmmo_20x102mmNATO_Sabot.jobString>Делает патроны 20x102 мм (БОПС).</MakeAmmo_20x102mmNATO_Sabot.jobString>
+
+	<!-- Recipes 40x311 -->
+
+	<MakeAmmo_40x311mmR_AP.label>сделать пачку патронов 40х311 мм (БП) (50 шт.)</MakeAmmo_40x311mmR_AP.label>
+	<MakeAmmo_40x311mmR_AP.description>Сделать 50 патронов 40х311 мм (БП).</MakeAmmo_40x311mmR_AP.description>
+	<MakeAmmo_40x311mmR_AP.jobString>Делает патроны 40х311 мм (БП).</MakeAmmo_40x311mmR_AP.jobString>
+
+	<MakeAmmo_40x311mmR_Incendiary.label>сделать пачку патронов 40х311 мм (БЗ) (50 шт.)</MakeAmmo_40x311mmR_Incendiary.label>
+	<MakeAmmo_40x311mmR_Incendiary.description>Сделать 50 патронов 40х311 мм (БЗ).</MakeAmmo_40x311mmR_Incendiary.description>
+	<MakeAmmo_40x311mmR_Incendiary.jobString>Делает патроны 40х311 мм (БЗ).</MakeAmmo_40x311mmR_Incendiary.jobString>
+
+	<MakeAmmo_40x311mmR_HE.label>сделать пачку патронов 40х311 мм (ОФ) (50 шт.)</MakeAmmo_40x311mmR_HE.label>
+	<MakeAmmo_40x311mmR_HE.description>Сделать 50 патронов 40х311 мм (ОФ).</MakeAmmo_40x311mmR_HE.description>
+	<MakeAmmo_40x311mmR_HE.jobString>Делает патроны 40х311 мм (ОФ).</MakeAmmo_40x311mmR_HE.jobString>
+
+	<MakeAmmo_40x311mmR_Sabot.label>сделать пачку патронов 40х311 мм (БОПС) (50 шт.)</MakeAmmo_40x311mmR_Sabot.label>
+	<MakeAmmo_40x311mmR_Sabot.description>Сделать 50 патронов 40х311 мм (БОПС).</MakeAmmo_40x311mmR_Sabot.description>
+	<MakeAmmo_40x311mmR_Sabot.jobString>Делает патроны 40х311 мм (БОПС).</MakeAmmo_40x311mmR_Sabot.jobString>
+
+	<!-- Recipes .50 -->
+
+	<MakeAmmo_50BMG_FMJ.label>сделать пачку патронов .50 BMG (ОП) (200 шт.)</MakeAmmo_50BMG_FMJ.label>
+	<MakeAmmo_50BMG_FMJ.description>Сделать 200 патронов .50 BMG (ОП).</MakeAmmo_50BMG_FMJ.description>
+	<MakeAmmo_50BMG_FMJ.jobString>Делает патрон .50 BMG (ОП).</MakeAmmo_50BMG_FMJ.jobString>
+
+	<MakeAmmo_50BMG_AP.label>сделать пачку патронов .50 BMG (БП) (200 шт.)</MakeAmmo_50BMG_AP.label>
+	<MakeAmmo_50BMG_AP.description>Сделать 200 патронов .50 BMG (БП).</MakeAmmo_50BMG_AP.description>
+	<MakeAmmo_50BMG_AP.jobString>Делает патрон .50 BMG (БП).</MakeAmmo_50BMG_AP.jobString>
+
+	<MakeAmmo_50BMG_Incendiary.label>сделать пачку патронов .50 BMG (БЗ) (200 шт.)</MakeAmmo_50BMG_Incendiary.label>
+	<MakeAmmo_50BMG_Incendiary.description>Сделать 200 патронов .50 BMG (БЗ).</MakeAmmo_50BMG_Incendiary.description>
+	<MakeAmmo_50BMG_Incendiary.jobString>Делает патрон .50 BMG (БЗ).</MakeAmmo_50BMG_Incendiary.jobString>
+
+	<MakeAmmo_50BMG_HE.label>сделать пачку патронов .50 BMG (ОФ) (200 шт.)</MakeAmmo_50BMG_HE.label>
+	<MakeAmmo_50BMG_HE.description>Сделать 200 патронов .50 BMG (ОФ).</MakeAmmo_50BMG_HE.description>
+	<MakeAmmo_50BMG_HE.jobString>Делает патрон .50 BMG (ОФ).</MakeAmmo_50BMG_HE.jobString>
+
+	<MakeAmmo_50BMG_Sabot.label>сделать пачку патронов .50 BMG (БОПС) (200 шт.)</MakeAmmo_50BMG_Sabot.label>
+	<MakeAmmo_50BMG_Sabot.description>Сделать 200 патронов .50 BMG (БОПС).</MakeAmmo_50BMG_Sabot.description>
+	<MakeAmmo_50BMG_Sabot.jobString>Делает патрон .50 BMG (БОПС).</MakeAmmo_50BMG_Sabot.jobString>
+
+	<!-- Recipes 12х70 -->
+
+	<MakeAmmo_12Gauge_Buck.label>сделать пачку патронов 12 калибра (картечь) (200 шт.)</MakeAmmo_12Gauge_Buck.label>
+	<MakeAmmo_12Gauge_Buck.description>Сделать 200 патронов 12 калибра (картечь).</MakeAmmo_12Gauge_Buck.description>
+	<MakeAmmo_12Gauge_Buck.jobString>Делает патроны 12 калибра (картечь).</MakeAmmo_12Gauge_Buck.jobString>
+
+	<MakeAmmo_12Gauge_Slug.label>сделать пачку патронов 12 калибра (пуля) (200 шт.)</MakeAmmo_12Gauge_Slug.label>
+	<MakeAmmo_12Gauge_Slug.description>Сделать 200 патронов 12 калибра (пуля).</MakeAmmo_12Gauge_Slug.description>
+	<MakeAmmo_12Gauge_Slug.jobString>Делает патроны 12 калибра (пуля).</MakeAmmo_12Gauge_Slug.jobString>
+
+	<MakeAmmo_12Gauge_Beanbag.label>сделать пачку патронов 12 калибра (бинбэнг) (200 шт.)</MakeAmmo_12Gauge_Beanbag.label>
+	<MakeAmmo_12Gauge_Beanbag.description>Сделать 200 патронов 12 калибра (бинбэнг).</MakeAmmo_12Gauge_Beanbag.description>
+	<MakeAmmo_12Gauge_Beanbag.jobString>Делает патроны 12 калибра (бинбэнг).</MakeAmmo_12Gauge_Beanbag.jobString>
+
+	<MakeAmmo_12Gauge_ElectroSlug.label>сделать пачку патронов 12 калибра (ЭМИ) (200 шт.)</MakeAmmo_12Gauge_ElectroSlug.label>
+	<MakeAmmo_12Gauge_ElectroSlug.description>Сделать 200 патронов 12 калибра (ЭМИ).</MakeAmmo_12Gauge_ElectroSlug.description>
+	<MakeAmmo_12Gauge_ElectroSlug.jobString>Делает патроны 12 калибра (ЭМИ).</MakeAmmo_12Gauge_ElectroSlug.jobString>
+	
+	<MakeAmmo_12Gauge_Flechette.label>сделать пачку патронов 12 калибра (флешетта) (200 шт.)</MakeAmmo_12Gauge_Flechette.label>
+	<MakeAmmo_12Gauge_Flechette.description>Сделать 200 патронов 12 калибра (флешетта).</MakeAmmo_12Gauge_Flechette.description>
+	<MakeAmmo_12Gauge_Flechette.jobString>Делает патроны 12 калибра (флешетта).</MakeAmmo_12Gauge_Flechette.jobString>
+
+	<MakeAmmo_12Gauge_SlugAP.label>сделать пачку патронов 12 калибра (БП) (200 шт.)</MakeAmmo_12Gauge_SlugAP.label>
+	<MakeAmmo_12Gauge_SlugAP.description>Сделать 200 патронов 12 калибра (БП).</MakeAmmo_12Gauge_SlugAP.description>
+	<MakeAmmo_12Gauge_SlugAP.jobString>Делает патроны 12 калибра (БП).</MakeAmmo_12Gauge_SlugAP.jobString>
+
+	<!-- Recipes 410 -->
+
+	<MakeAmmo_410Bore_Buck.label>сделать пачку патронов .410 калибра (картечь) (200 шт.)</MakeAmmo_410Bore_Buck.label>
+	<MakeAmmo_410Bore_Buck.description>Сделать 200 патронов .410 калибра (картечь).</MakeAmmo_410Bore_Buck.description>
+	<MakeAmmo_410Bore_Buck.jobString>Делает патрон .410 калибра (картечь).</MakeAmmo_410Bore_Buck.jobString>
+
+	<MakeAmmo_410Bore_Slug.label>сделать пачку патронов .410 калибра (пуля) (200 шт.)</MakeAmmo_410Bore_Slug.label>
+	<MakeAmmo_410Bore_Slug.description>Сделать 200 патронов .410 калибра (пуля).</MakeAmmo_410Bore_Slug.description>
+	<MakeAmmo_410Bore_Slug.jobString>Делает патрон .410 калибра (пуля).</MakeAmmo_410Bore_Slug.jobString>
+
+	<MakeAmmo_410Bore_Beanbag.label>сделать пачку патронов .410 калибра (бинбэнг) (200 шт.)</MakeAmmo_410Bore_Beanbag.label>
+	<MakeAmmo_410Bore_Beanbag.description>Сделать 200 патронов .410 калибра (бинбэнг).</MakeAmmo_410Bore_Beanbag.description>
+	<MakeAmmo_410Bore_Beanbag.jobString>Делает патрон .410 калибра (бинбэнг).</MakeAmmo_410Bore_Beanbag.jobString>
+
+	<MakeAmmo_410Bore_ElectroSlug.label>сделать пачку патронов .410 калибра (ЭМИ) (200 шт.)</MakeAmmo_410Bore_ElectroSlug.label>
+	<MakeAmmo_410Bore_ElectroSlug.description>Сделать 200 патронов .410 калибра (ЭМИ).</MakeAmmo_410Bore_ElectroSlug.description>
+	<MakeAmmo_410Bore_ElectroSlug.jobString>Делает патрон .410 калибра (ЭМИ).</MakeAmmo_410Bore_ElectroSlug.jobString>
+
+	<!-- Recipes 12Gauge(shotgun)  -->
+
+	<MakeAmmo_12GaugeCharged.label>сделать пачку энергопатронов 12 калибра (200 шт.)</MakeAmmo_12GaugeCharged.label>
+	<MakeAmmo_12GaugeCharged.description>Сделать 200 энергопатронов 12 калибра.</MakeAmmo_12GaugeCharged.description>
+	<MakeAmmo_12GaugeCharged.jobString>Делает энергопатроны 12 калибра.</MakeAmmo_12GaugeCharged.jobString>
+
+	<MakeAmmo_12GaugeCharged_Slug.label>сделать пачку энергопатронов 12 калибра (Пуля) (200 шт.)</MakeAmmo_12GaugeCharged_Slug.label>
+	<MakeAmmo_12GaugeCharged_Slug.description>Сделать 200 энергопатронов 12 калибра (Пуля).</MakeAmmo_12GaugeCharged_Slug.description>
+	<MakeAmmo_12GaugeCharged_Slug.jobString>Делает энергопатроны 12 калибра (Пуля).</MakeAmmo_12GaugeCharged_Slug.jobString>
+
+	<MakeAmmo_12GaugeCharged_Ion.label>сделать пачку энергопатронов 12 калибра (Ионная пуля) (200 шт.)</MakeAmmo_12GaugeCharged_Ion.label>
+	<MakeAmmo_12GaugeCharged_Ion.description>Сделать 200 энергопатронов 12 калибра (Ионная пуля).</MakeAmmo_12GaugeCharged_Ion.description>
+	<MakeAmmo_12GaugeCharged_Ion.jobString>Делает энергопатроны 12 калибра (Ионная пуля).</MakeAmmo_12GaugeCharged_Ion.jobString>
+
+	<!-- Recipes 12x72 -->
+
+	<MakeAmmo_12x72mmCharged.label>сделать пачку энергопатронов 12x72 мм (200 шт.)</MakeAmmo_12x72mmCharged.label>
+	<MakeAmmo_12x72mmCharged.description>Сделать 200 энергопатронов 12x72 мм.</MakeAmmo_12x72mmCharged.description>
+	<MakeAmmo_12x72mmCharged.jobString>Делает энергопатроны 12x72 мм.</MakeAmmo_12x72mmCharged.jobString>
+
+	<MakeAmmo_12x72mmCharged_AP.label>сделать пачку энергопатронов 12x72 мм (концен.) (200 шт.)</MakeAmmo_12x72mmCharged_AP.label>
+	<MakeAmmo_12x72mmCharged_AP.description>Сделать 200 энергопатронов 12x72 мм (концен.).</MakeAmmo_12x72mmCharged_AP.description>
+	<MakeAmmo_12x72mmCharged_AP.jobString>Делает энергопатроны 12x72 мм (концен.).</MakeAmmo_12x72mmCharged_AP.jobString>
+
+	<MakeAmmo_12x72mmCharged_Ion.label>сделать пачку энергопатронов 12x72 мм (ионный) (200 шт.)</MakeAmmo_12x72mmCharged_Ion.label>
+	<MakeAmmo_12x72mmCharged_Ion.description>Сделать 200 энергопатронов 12x72 мм (ионный).</MakeAmmo_12x72mmCharged_Ion.description>
+	<MakeAmmo_12x72mmCharged_Ion.jobString>Делает энергопатроны 12x72 мм (ионный).</MakeAmmo_12x72mmCharged_Ion.jobString>
+
+	<!-- Recipes 6х18 -->
+
+	<MakeAmmo_6x18mmCharged.label>сделать пачку энергопатронов 6х18 мм (500 шт.)</MakeAmmo_6x18mmCharged.label>
+	<MakeAmmo_6x18mmCharged.description>Сделать 500 энергопатронов 6х18 мм.</MakeAmmo_6x18mmCharged.description>
+	<MakeAmmo_6x18mmCharged.jobString>Делает энергопатроны 6х18 мм.</MakeAmmo_6x18mmCharged.jobString>
+
+	<MakeAmmo_6x18mmCharged_AP.label>сделать пачку энергопатронов 6х18 мм (концен.) (500 шт.)</MakeAmmo_6x18mmCharged_AP.label>
+	<MakeAmmo_6x18mmCharged_AP.description>Сделать 500 энергопатронов 6х18 мм (концен.).</MakeAmmo_6x18mmCharged_AP.description>
+	<MakeAmmo_6x18mmCharged_AP.jobString>Делает энергопатроны 6х18 мм (концен.).</MakeAmmo_6x18mmCharged_AP.jobString>
+
+	<MakeAmmo_6x18mmCharged_Ion.label>сделать пачку энергопатронов 6х18 мм (ионный) (500 шт.)</MakeAmmo_6x18mmCharged_Ion.label>
+	<MakeAmmo_6x18mmCharged_Ion.description>Сделать 500 энергопатронов 6х18 мм (ионный).</MakeAmmo_6x18mmCharged_Ion.description>
+	<MakeAmmo_6x18mmCharged_Ion.jobString>Делает энергопатроны  6х18 мм (ионный).</MakeAmmo_6x18mmCharged_Ion.jobString>
+
+	<!-- Recipes 6х24 -->
+
+	<MakeAmmo_6x24mmCharged.label>сделать пачку энергопатронов 6х24 мм (500 шт.)</MakeAmmo_6x24mmCharged.label>
+	<MakeAmmo_6x24mmCharged.description>Сделать 500 энергопатронов 6х24 мм.</MakeAmmo_6x24mmCharged.description>
+	<MakeAmmo_6x24mmCharged.jobString>Делает энергопатроны 6х24 мм.</MakeAmmo_6x24mmCharged.jobString>
+
+	<MakeAmmo_6x24mmCharged_AP.label>сделать пачку энергопатронов 6x24 мм (концен.) (500 шт.)</MakeAmmo_6x24mmCharged_AP.label>
+	<MakeAmmo_6x24mmCharged_AP.description>Сделать 500 энергопатронов 6x24 мм (концен.).</MakeAmmo_6x24mmCharged_AP.description>
+	<MakeAmmo_6x24mmCharged_AP.jobString>Делает энергопатроны 6x24 мм (концен.).</MakeAmmo_6x24mmCharged_AP.jobString>
+
+	<MakeAmmo_6x24mmCharged_Ion.label>сделать пачку энергопатронов 6x24 мм (ионный) (500 шт.)</MakeAmmo_6x24mmCharged_Ion.label>
+	<MakeAmmo_6x24mmCharged_Ion.description>Сделать 500 энергопатронов 6x24 мм (ионный).</MakeAmmo_6x24mmCharged_Ion.description>
+	<MakeAmmo_6x24mmCharged_Ion.jobString>Делает энергопатроны 6x24 мм (ионный).</MakeAmmo_6x24mmCharged_Ion.jobString>
+
+	<!-- Recipes 8х35 -->
+
+	<MakeAmmo_8x35mmCharged.label>сделать пачку энергопатронов 8x35 мм (500 шт.)</MakeAmmo_8x35mmCharged.label>
+	<MakeAmmo_8x35mmCharged.description>Сделать 500 энергопатронов 8x35 мм.</MakeAmmo_8x35mmCharged.description>
+	<MakeAmmo_8x35mmCharged.jobString>Делает энергопатроны 8x35 мм.</MakeAmmo_8x35mmCharged.jobString>
+
+	<MakeAmmo_8x35mmCharged_AP.label>сделать пачку энергопатронов 8x35 мм (концен.) (500 шт.)</MakeAmmo_8x35mmCharged_AP.label>
+	<MakeAmmo_8x35mmCharged_AP.description>Сделать 500 энергопатронов 8x35 мм (концен.).</MakeAmmo_8x35mmCharged_AP.description>
+	<MakeAmmo_8x35mmCharged_AP.jobString>Делает энергопатроны 8x35 мм (концен.).</MakeAmmo_8x35mmCharged_AP.jobString>
+
+	<MakeAmmo_8x35mmCharged_Ion.label>сделать пачку энергопатронов 8x35 мм (ионный) (500 шт.)</MakeAmmo_8x35mmCharged_Ion.label>
+	<MakeAmmo_8x35mmCharged_Ion.description>Сделать 500 энергопатронов 8x35 мм (ионный).</MakeAmmo_8x35mmCharged_Ion.description>
+	<MakeAmmo_8x35mmCharged_Ion.jobString>Делает энергопатроны  8x35 мм (ионный).</MakeAmmo_8x35mmCharged_Ion.jobString>
+
+	<!-- Recipes 8х50 -->
+
+	<MakeAmmo_8x50mmCharged.label>сделать пачку энергопатронов 8x50 мм (500 шт.)</MakeAmmo_8x50mmCharged.label>
+	<MakeAmmo_8x50mmCharged.description>Сделать 500 энергопатронов 8x50 мм.</MakeAmmo_8x50mmCharged.description>
+	<MakeAmmo_8x50mmCharged.jobString>Делает энергопатроны 8x50 мм.</MakeAmmo_8x50mmCharged.jobString>
+
+	<MakeAmmo_8x50mmCharged_AP.label>сделать пачку энергопатронов 8x50 мм (концен.) (500 шт.)</MakeAmmo_8x50mmCharged_AP.label>
+	<MakeAmmo_8x50mmCharged_AP.description>Сделать 500 энергопатронов 8x50 мм (концен.).</MakeAmmo_8x50mmCharged_AP.description>
+	<MakeAmmo_8x50mmCharged_AP.jobString>Делает энергопатроны 8x50 мм (концен.).</MakeAmmo_8x50mmCharged_AP.jobString>
+
+	<MakeAmmo_8x50mmCharged_Ion.label>сделать пачку энергопатронов 8x50 мм (ионный) (500 шт.)</MakeAmmo_8x50mmCharged_Ion.label>
+	<MakeAmmo_8x50mmCharged_Ion.description>Сделать 500 энергопатронов 8x50 мм (ионный).</MakeAmmo_8x50mmCharged_Ion.description>
+	<MakeAmmo_8x50mmCharged_Ion.jobString>Делает энергопатроны  8x50 мм (ионный).</MakeAmmo_8x50mmCharged_Ion.jobString>
+
+	<!-- Recipes 12x64 -->
+
+	<MakeAmmo_12x64mmCharged.label>сделать пачку энергопатронов 12x64 мм (200 шт.)</MakeAmmo_12x64mmCharged.label>
+	<MakeAmmo_12x64mmCharged.description>Сделать 200 энергопатронов 12x64 мм.</MakeAmmo_12x64mmCharged.description>
+	<MakeAmmo_12x64mmCharged.jobString>Делает энергопатроны 12x64 мм.</MakeAmmo_12x64mmCharged.jobString>
+
+	<!-- Recipes 5x35 -->
+
+	<MakeAmmo_5x35mmCharged.label>сделать пачку энергопатронов 5x35 мм (500 шт.)</MakeAmmo_5x35mmCharged.label>
+	<MakeAmmo_5x35mmCharged.description>Сделать 500 энергопатронов 5x35 мм.</MakeAmmo_5x35mmCharged.description>
+	<MakeAmmo_5x35mmCharged.jobString>Делает энергопатроны 5x35 мм.</MakeAmmo_5x35mmCharged.jobString>
+
+	<!-- Recipes 6x22 -->
+
+	<MakeAmmo_6x22mmCharged.label>сделать пачку энергопатронов 6x22 мм (500 шт.)</MakeAmmo_6x22mmCharged.label>
+	<MakeAmmo_6x22mmCharged.description>Сделать 500 энергопатронов 6x22 мм.</MakeAmmo_6x22mmCharged.description>
+	<MakeAmmo_6x22mmCharged.jobString>Делает энергопатроны 6x22 мм.</MakeAmmo_6x22mmCharged.jobString>
+
+	<!-- Recipes 66m -->
+	
+	
+
+	<!-- Recipes 80x256 -->
+	
+	
+
+	<!-- Recipes 30x64 -->
+
+	<MakeAmmo_30x64mmFuel_Incendiary.label>сделать капсулы 30x64 мм (зажигательный) (50 шт.)</MakeAmmo_30x64mmFuel_Incendiary.label>
+	<MakeAmmo_30x64mmFuel_Incendiary.description>Сделать 50 капсул с огнесмесью 30x64 мм (зажигательный).</MakeAmmo_30x64mmFuel_Incendiary.description>
+	<MakeAmmo_30x64mmFuel_Incendiary.jobString>Делает капсулы с огнесмесью (зажигательный).</MakeAmmo_30x64mmFuel_Incendiary.jobString>
+
+	<MakeAmmo_30x64mmFuel_Thermobaric.label>сделать капсулы 30x64 мм (термобарический) (50 шт.)</MakeAmmo_30x64mmFuel_Thermobaric.label>
+	<MakeAmmo_30x64mmFuel_Thermobaric.description>Сделать 50 капсул с огнесмесью 30x64 мм (термобарический).</MakeAmmo_30x64mmFuel_Thermobaric.description>
+	<MakeAmmo_30x64mmFuel_Thermobaric.jobString>Делает капсулы с огнесмесью (термобарический).</MakeAmmo_30x64mmFuel_Thermobaric.jobString>
+
+	<MakeAmmo_30x64mmFuel_Foam.label>сделать капсулы 30x64 мм (пена) (50 шт.)</MakeAmmo_30x64mmFuel_Foam.label>
+	<MakeAmmo_30x64mmFuel_Foam.description>Сделать 50 капсул 30x64 мм с огнетушащим составом (пена).</MakeAmmo_30x64mmFuel_Foam.description>
+	<MakeAmmo_30x64mmFuel_Foam.jobString>Делает капсулы (пена).</MakeAmmo_30x64mmFuel_Foam.jobString>
+
+	<!-- Recipes 30x29 -->
+
+	<MakeAmmo_30x29mmGrenade_HE.label>сделать гранаты 30x29 мм (ОФ) (100 шт.)</MakeAmmo_30x29mmGrenade_HE.label>
+	<MakeAmmo_30x29mmGrenade_HE.description>Сделать 100 гранат 30x29 мм (ОФ).</MakeAmmo_30x29mmGrenade_HE.description>
+	<MakeAmmo_30x29mmGrenade_HE.jobString>Делает гранаты 30x29 мм (ОФ).</MakeAmmo_30x29mmGrenade_HE.jobString>
+
+	<MakeAmmo_30x29mmGrenade_HE_TFuzed.label>сделать гранаты 30x29 мм (ВВ) (100 шт.)</MakeAmmo_30x29mmGrenade_HE_TFuzed.label>
+	<MakeAmmo_30x29mmGrenade_HE_TFuzed.description>Сделать 100 гранат 30x29 мм (ВВ).</MakeAmmo_30x29mmGrenade_HE_TFuzed.description>
+	<MakeAmmo_30x29mmGrenade_HE_TFuzed.jobString>Делает гранаты 30x29 мм (ВВ).</MakeAmmo_30x29mmGrenade_HE_TFuzed.jobString>
+
+	<MakeAmmo_30x29mmGrenade_EMP.label>сделать гранаты 30x29 мм (ЭМИ) (100 шт.)</MakeAmmo_30x29mmGrenade_EMP.label>
+	<MakeAmmo_30x29mmGrenade_EMP.description>Сделать 100 гранат 30x29 мм (ЭМИ).</MakeAmmo_30x29mmGrenade_EMP.description>
+	<MakeAmmo_30x29mmGrenade_EMP.jobString>Делает гранаты 30x29 мм (ЭМИ).</MakeAmmo_30x29mmGrenade_EMP.jobString>
+
+	<MakeAmmo_30x29mmGrenade_Smoke.label>сделать гранаты 30x29 мм (дым) (100 шт.)</MakeAmmo_30x29mmGrenade_Smoke.label>
+	<MakeAmmo_30x29mmGrenade_Smoke.description>Сделать 100 гранат 30x29 мм (дым).</MakeAmmo_30x29mmGrenade_Smoke.description>
+	<MakeAmmo_30x29mmGrenade_Smoke.jobString>Делает гранаты 30x29 мм (дым).</MakeAmmo_30x29mmGrenade_Smoke.jobString>
+
+	<!-- Recipes 40x46 -->
+
+	<MakeAmmo_40x46mmGrenade_HE.label>сделать гранаты 40x46 мм (ОФ) (100 шт.)</MakeAmmo_40x46mmGrenade_HE.label>
+	<MakeAmmo_40x46mmGrenade_HE.description>Сделать 100 гранат 40x46 мм (ОФ).</MakeAmmo_40x46mmGrenade_HE.description>
+	<MakeAmmo_40x46mmGrenade_HE.jobString>Делает гранаты 40x46 мм (ОФ).</MakeAmmo_40x46mmGrenade_HE.jobString>
+
+	<MakeAmmo_40x46mmGrenade_HE_TFuzed.label>сделать гранаты 40x46 мм (ВВ) (100 шт.)</MakeAmmo_40x46mmGrenade_HE_TFuzed.label>
+	<MakeAmmo_40x46mmGrenade_HE_TFuzed.description>Сделать 100 гранат 40x46 мм (ВВ).</MakeAmmo_40x46mmGrenade_HE_TFuzed.description>
+	<MakeAmmo_40x46mmGrenade_HE_TFuzed.jobString>Делает гранаты 40x46 мм (ВВ).</MakeAmmo_40x46mmGrenade_HE_TFuzed.jobString>
+
+	<MakeAmmo_40x46mmGrenade_HEDP.label>сделать гранаты 40x46 мм (ФОНД) (100 шт.)</MakeAmmo_40x46mmGrenade_HEDP.label>
+	<MakeAmmo_40x46mmGrenade_HEDP.description>Сделать 100 гранат 40x46 мм (ФОНД).</MakeAmmo_40x46mmGrenade_HEDP.description>
+	<MakeAmmo_40x46mmGrenade_HEDP.jobString>Делает гранаты 40x46 мм (ФОНД).</MakeAmmo_40x46mmGrenade_HEDP.jobString>
+
+	<MakeAmmo_40x46mmGrenade_EMP.label>сделать гранаты 40x46 мм (ЭМИ) (100 шт.)</MakeAmmo_40x46mmGrenade_EMP.label>
+	<MakeAmmo_40x46mmGrenade_EMP.description>Сделать 100 гранат 40x46 мм (ЭМИ).</MakeAmmo_40x46mmGrenade_EMP.description>
+	<MakeAmmo_40x46mmGrenade_EMP.jobString>Делает гранаты 40x46 мм (ЭМИ).</MakeAmmo_40x46mmGrenade_EMP.jobString>
+
+	<MakeAmmo_40x46mmGrenade_Smoke.label>сделать гранаты 40x46 мм (дым) (100 шт.)</MakeAmmo_40x46mmGrenade_Smoke.label>
+	<MakeAmmo_40x46mmGrenade_Smoke.description>Сделать 100 гранат 40x46 мм (дым).</MakeAmmo_40x46mmGrenade_Smoke.description>
+	<MakeAmmo_40x46mmGrenade_Smoke.jobString>Делает гранаты 40x46 мм (дым).</MakeAmmo_40x46mmGrenade_Smoke.jobString>
+
+	<MakeAmmo_40x46mmGrenade_Tox.label>сделать гранаты 40x46 мм (токсин) (100 шт.)</MakeAmmo_40x46mmGrenade_Tox.label>
+	<MakeAmmo_40x46mmGrenade_Tox.description>Сделать 100 гранат 40x46 мм (токсин).</MakeAmmo_40x46mmGrenade_Tox.description>
+	<MakeAmmo_40x46mmGrenade_Tox.jobString>Делает гранаты 40x46 мм (токсин).</MakeAmmo_40x46mmGrenade_Tox.jobString>
+
+	<!-- Recipes ConcussionGrenade -->
+
+	<MakeConcussionGrenade.label>сделать ручные гранаты (контузионные) (10 шт.)</MakeConcussionGrenade.label>
+	<MakeConcussionGrenade.description>Сделать контузионные гранаты (10 шт.).</MakeConcussionGrenade.description>
+	<MakeConcussionGrenade.jobString>Делает контузионные гранаты.</MakeConcussionGrenade.jobString>
+
+	<!-- Recipes FragGrenade -->
+	
+	<MakeFragGrenade.label>сделать ручные гранаты (ОФ) (10 шт.)</MakeFragGrenade.label>
+	<MakeFragGrenade.description>Сделать осколочные гранаты (10 шт.).</MakeFragGrenade.description>
+	<MakeFragGrenade.jobString>Делает осколочные гранаты.</MakeFragGrenade.jobString>
+
+	<!-- Recipes MolotovCocktail -->
+
+	<MakeMolotovCocktail.label>сделать коктейли молотова (10 шт.)</MakeMolotovCocktail.label>
+	<MakeMolotovCocktail.description>Сделать коктейли молотова (10 шт.).</MakeMolotovCocktail.description>
+	<MakeMolotovCocktail.jobString>Делает коктейли молотова.</MakeMolotovCocktail.jobString>
+
+	<!-- Recipes EMPGrenade -->
+
+	<MakeEMPGrenade.label>сделать ручные гранаты (ЭМИ) (10 шт.)</MakeEMPGrenade.label>
+	<MakeEMPGrenade.description>Сделать (ЭМИ) гранаты (10 шт.).</MakeEMPGrenade.description>
+	<MakeEMPGrenade.jobString>Делает (ЭМИ) гранаты.</MakeEMPGrenade.jobString>
+
+	<!-- Recipes FlashbangGrenade -->
+
+	<MakeFlashbangGrenade.label>сделать ручные гранаты (светошумовые) (10 шт.)</MakeFlashbangGrenade.label>
+	<MakeFlashbangGrenade.description>Сделать светошумовые гранаты (10 шт.).</MakeFlashbangGrenade.description>
+	<MakeFlashbangGrenade.jobString>Делает светошумовые гранаты.</MakeFlashbangGrenade.jobString>
+
+	<!-- Recipes StickBomb -->
+
+	<MakeStickBomb.label>сделать палки с бомбой (10 шт.)</MakeStickBomb.label>
+	<MakeStickBomb.description>Сделать палки с бомбой (10 шт.).</MakeStickBomb.description>
+	<MakeStickBomb.jobString>Делает палки с бомбой.</MakeStickBomb.jobString>
+
+	<!-- Recipes SmokeGrenade -->
+
+	<MakeSmokeGrenade.label>сделать ручные гранаты (дымовые) (10 шт.)</MakeSmokeGrenade.label>
+	<MakeSmokeGrenade.description>Сделать дымовые гранаты (10 шт.).</MakeSmokeGrenade.description>
+	<MakeSmokeGrenade.jobString>Делает дымовые гранаты.</MakeSmokeGrenade.jobString>
+
+	<!-- Recipes FirefoamGrenade -->
+
+	<MakeFirefoamGrenade.label>сделать ручные гранаты (пена) (10 шт.)</MakeFirefoamGrenade.label>
+	<MakeFirefoamGrenade.description>Сделать противопожарные гранаты (10 шт.).</MakeFirefoamGrenade.description>
+	<MakeFirefoamGrenade.jobString>Делает противопожарные гранаты.</MakeFirefoamGrenade.jobString>
+
+	<!-- Recipes ToxGrenade -->
+
+	<MakeToxGrenade.label>сделать ручные гранаты (токсин) (10 шт.)</MakeToxGrenade.label>
+	<MakeToxGrenade.description>Сделать токсические гранаты (10 шт.).</MakeToxGrenade.description>
+	<MakeToxGrenade.jobString>Делает токсические гранаты.</MakeToxGrenade.jobString>
+
+	<!-- Recipes DisposableRocketLauncher (M72 LAW) -->
+
+
+
+	<!-- Recipes 50mm -->
+
+
+
+	<!-- Recipes RPG7 -->
+
+
+
+	<!-- Recipes 105mm -->
+
+
+
+	<!-- Recipes 81mm -->
+
+	<MakeShell_Toxic.label> миномётные боеприпасы 81 mm (токсин) (5 шт.)</MakeShell_Toxic.label>
+	<MakeShell_Toxic.description>Сделать 5 боеприпасов к миномёту калибра 81 mm (токсин).</MakeShell_Toxic.description>
+	<MakeShell_Toxic.jobString>Делает боеприпасы 81 mm (токсин).</MakeShell_Toxic.jobString>
+
+
+	
+	<!-- Recipes 90mm -->
+	
+	<!-- Recipes MusketBall -->
+	<MakeAmmo_BlunderbussShot.label>сделать патрон к мушкетону (100 шт.)</MakeAmmo_BlunderbussShot.label>
+	<MakeAmmo_BlunderbussShot.description>Сделать 500 патронов к мушкетону.</MakeAmmo_BlunderbussShot.description>
+	<MakeAmmo_BlunderbussShot.jobString>Делает патроны к мушкетону.</MakeAmmo_BlunderbussShot.jobString>
+	
+	<!--Болт для балисты-->
+	<MakeAmmo_BallistaBolt.label>Сделать болты для балисты х5</MakeAmmo_BallistaBolt.label>
+	<MakeAmmo_BallistaBolt.description>Сделать болты.</MakeAmmo_BallistaBolt.description>
+	<MakeAmmo_BallistaBolt.jobString>Создаёт болты для балисты х5</MakeAmmo_BallistaBolt.jobString>
+	
+	<!--бронебойный болт для балисты-->
+	<MakeAmmo_BallistaBoltExpansive.label>Сделать бронебойный болты для балисты х5</MakeAmmo_BallistaBoltExpansive.label>
+	<MakeAmmo_BallistaBoltExpansive.description>Сделать бронебойный болты.</MakeAmmo_BallistaBoltExpansive.description>
+	<MakeAmmo_BallistaBoltExpansive.jobString>Создаёт бронебойный болты для балисты х5</MakeAmmo_BallistaBoltExpansive.jobString>
+	
+	<!--Взрвыной болт для балисты-->
+	<MakeAmmo_BallistaBoltExplosive.label>Сделать взрывные болты для болисты х5</MakeAmmo_BallistaBoltExplosive.label>
+	<MakeAmmo_BallistaBoltExplosive.description>Сделать взрывные болты.</MakeAmmo_BallistaBoltExplosive.description>
+	<MakeAmmo_BallistaBoltExplosive.jobString>Создаёт взрывные болты для балисты х5</MakeAmmo_BallistaBoltExplosive.jobString>
+	
+	<!--Самодельные боеприпасы-->
+	<MakeAmmo_MakeshiftGauge_Buck.label>Сделать самодельные патроны для дробовика (дробь) х200</MakeAmmo_MakeshiftGauge_Buck.label>
+	<MakeAmmo_MakeshiftGauge_Buck.description>Создать патроны</MakeAmmo_MakeshiftGauge_Buck.description>
+	<MakeAmmo_MakeshiftGauge_Buck.jobString>Создаёт самодельные патроны</MakeAmmo_MakeshiftGauge_Buck.jobString>
+	
+	<MakeAmmo_MakeshiftGauge_Slug.label>Сделать самодельные патроны для дробовика (пуля) х200</MakeAmmo_MakeshiftGauge_Slug.label>
+	<MakeAmmo_MakeshiftGauge_Slug.description>Создать патроны</MakeAmmo_MakeshiftGauge_Slug.description>
+	<MakeAmmo_MakeshiftGauge_Slug.jobString>Создаёт самодельные патроны</MakeAmmo_MakeshiftGauge_Slug.jobString>
+	
+	<MakeAmmo_MakeshiftKarov.label>Сделать самодельные патроны для пистолета-пулемёта х200</MakeAmmo_MakeshiftKarov.label>
+	<MakeAmmo_MakeshiftKarov.description>Создать патроны</MakeAmmo_MakeshiftKarov.description>
+	<MakeAmmo_MakeshiftKarov.jobString>Создаёт самодельные патроны</MakeAmmo_MakeshiftKarov.jobString>
+	
+	<MakeAmmo_MakeshiftMagnum.label>Сделать самодельные патроны для пистолета х200</MakeAmmo_MakeshiftMagnum.label>
+	<MakeAmmo_MakeshiftMagnum.description>Создать патроны</MakeAmmo_MakeshiftMagnum.description>
+	<MakeAmmo_MakeshiftMagnum.jobString>Создаёт самодельные патроны</MakeAmmo_MakeshiftMagnum.jobString>
+	
+	<MakeAmmo_MakeshiftSoviet.label>Сделать самодельные патроны для автомата х200</MakeAmmo_MakeshiftSoviet.label>
+	<MakeAmmo_MakeshiftSoviet.description>Создать патроны</MakeAmmo_MakeshiftSoviet.description>
+	<MakeAmmo_MakeshiftSoviet.jobString>Создаёт самодельные патроны</MakeAmmo_MakeshiftSoviet.jobString>
+	
+	<MakeAmmo_MakeshiftSniper.label>Сделать самодельные патроны для винтовки х200</MakeAmmo_MakeshiftSniper.label>
+	<MakeAmmo_MakeshiftSniper.description>Создать патроны</MakeAmmo_MakeshiftSniper.description>
+	<MakeAmmo_MakeshiftSniper.jobString>Создаёт самодельные патроны</MakeAmmo_MakeshiftSniper.jobString>
+	
+	<!-- Зажигательный и пенный снаряды -->
+	
+	<MakeAmmo_40x53mmVOG25Grenade_Incendiary.label>Гранаты 40x53mm ВОГ-25 (Зажигательный) х100</MakeAmmo_40x53mmVOG25Grenade_Incendiary.label>
+	<MakeAmmo_40x53mmVOG25Grenade_Incendiary.description>Создать гранаты</MakeAmmo_40x53mmVOG25Grenade_Incendiary.description>
+	<MakeAmmo_40x53mmVOG25Grenade_Incendiary.jobString>Создаёт гранаты</MakeAmmo_40x53mmVOG25Grenade_Incendiary.jobString>
+	
+	<MakeAmmo_40x53mmVOG25Grenade_Foam.label>Гранаты 40x53mm ВОГ-25 (Пена) x100</MakeAmmo_40x53mmVOG25Grenade_Foam.label>
+	<MakeAmmo_40x53mmVOG25Grenade_Foam.description>Создать гранаты</MakeAmmo_40x53mmVOG25Grenade_Foam.description>
+	<MakeAmmo_40x53mmVOG25Grenade_Foam.jobString>Создаёт гранаты</MakeAmmo_40x53mmVOG25Grenade_Foam.jobString>
+	
+	<MakeAmmo_40x53mmVOG25Grenade_HE_TFuzed.label>Гранаты 40x53mm ВОГ-25 (ВВ) x100</MakeAmmo_40x53mmVOG25Grenade_HE_TFuzed.label>
+	<MakeAmmo_40x53mmVOG25Grenade_HE_TFuzed.description>Создать гранаты</MakeAmmo_40x53mmVOG25Grenade_HE_TFuzed.description>
+	<MakeAmmo_40x53mmVOG25Grenade_HE_TFuzed.jobString>Создаёт гранаты</MakeAmmo_40x53mmVOG25Grenade_HE_TFuzed.jobString>
+	
+	<MakeRoundShot.label>Сделать патроны для бомбарды х4</MakeRoundShot.label>
+	<MakeRoundShot.description>Сделать патроны для бомбарды</MakeRoundShot.description>
+	<MakeRoundShot.jobString>Делает патроны</MakeRoundShot.jobString>
+	
+</LanguageData>

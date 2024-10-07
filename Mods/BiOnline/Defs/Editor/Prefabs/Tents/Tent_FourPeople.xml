@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.BuildingPrefabDef>
+		<defName>Tent_FourPeople</defName>
+		<label>Палатка (4 чел)</label>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<prefabRect>
+			<cellsCount>59</cellsCount>
+			<prefabSize>(9, 7)</prefabSize>
+			<centerPosition>(17, 0, 23)</centerPosition>
+			<cellsDeflate>
+DcMFCgJAAACws7G7u7sV+//fcoOlQwgVu87cm7Fqz7kHs9bsu/BozroDl57M23DoyrMFm45ce7Foy7Ebr5ZsO3HrzbIdp+68G/Fh
+1KcxX8Z9m/Bj0q8pf/4B
+</cellsDeflate>
+		</prefabRect>
+		<terrain IsNull="True" />
+		<buildings>
+			<cellsCount>33</cellsCount>
+			<positionsDeflate>
+DcM7EkNQAADA5z8oIko6lD5FkkkI97+W3Zn9hhB+7h7+Pb1cffu0c3T2Y2Np6+RiZWRsYmpmbmHv5svah4M3
+</positionsDeflate>
+			<defsDeflate>
+C0nNKwlPzMmxDhkxDMe8zNzEHLecxAJrp9SUonygEC7aLbMoNSCzBAA=
+</defsDeflate>
+			<things>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+			</things>
+		</buildings>
+		<items IsNull="True" />
+		<roof>
+			<cellsCount>59</cellsCount>
+			<roofDefDeflate>
+C8rPT3POzysuKSpNLklNsQ4a5Y/yR/mDlQ8A
+</roofDefDeflate>
+			<roofCellsDeflate>
+DcMFCgJAAACws7G7u7sV+//fcoNFQghRY8ZNmDRl2oxZc+YtWLRk2YpVa9Zt2LRl245de/YdOHTk2IlTZ85duHTl2o1bd+49ePTk
+2YtXb959+PTl249ff/4B
+</roofCellsDeflate>
+		</roof>
+		<pawns IsNull="True" />
+		<commonality>1</commonality>
+	</BiOnline.MapGenerator.BuildingPrefabDef>
+</Defs>

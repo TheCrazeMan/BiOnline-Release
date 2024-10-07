@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--Хитин для жуков-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="BaseInsect"]/race</xpath>
+			<value>
+				<leatherDef>Chitin</leatherDef>
+			</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Megascarab" or defName="Spelopede" or defName="Megaspider"]/statBases/LeatherAmount</xpath>
+			<value>
+				<LeatherAmount>40</LeatherAmount>
+			</value>
+	</Operation>
+
+</Patch>

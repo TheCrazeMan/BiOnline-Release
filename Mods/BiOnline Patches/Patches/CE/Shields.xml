@@ -1,0 +1,18 @@
+<Patch>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="ShieldBase"]/apparel</xpath>
+					<value>
+						<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+					</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]</xpath>
+					<value>
+						<costList>
+							<HardenedGlass>25</HardenedGlass>
+						</costList>
+					</value>
+			</Operation>
+
+</Patch>

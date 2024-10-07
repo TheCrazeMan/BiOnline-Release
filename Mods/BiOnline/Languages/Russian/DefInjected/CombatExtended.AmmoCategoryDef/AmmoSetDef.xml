@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<AmmoSet_BlunderbussShot.label>Патрон для мушкетона</AmmoSet_BlunderbussShot.label>
+	
+	<AmmoSet_MakeshiftGauge.label>Самодельный патрон для дробовика</AmmoSet_MakeshiftGauge.label>
+	
+	<AmmoSet_MakeshiftMagnum.label>Самодельный патрон для пистолета</AmmoSet_MakeshiftMagnum.label>
+	
+	<AmmoSet_MakeshiftSoviet.label>Самодельный патрон для автомата</AmmoSet_MakeshiftSoviet.label>
+	
+	<AmmoSet_MakeshiftKarov.label>Самодельный патрон для пистолета-пулемёта</AmmoSet_MakeshiftKarov.label>
+	
+	<AmmoSet_MakeshiftSniper.label>Самодельный патрон для винтовки</AmmoSet_MakeshiftSniper.label>
+
+	<AmmoSet_BallistaBolt.label>Болты баллисты</AmmoSet_BallistaBolt.label>
+	
+	<AmmoSet_BeeSwarmBallistaBolt.label>Болты баллисты</AmmoSet_BeeSwarmBallistaBolt.label>
+	
+	<AmmoSet_TrebuchetBalls.label>Снаряды требушета</AmmoSet_TrebuchetBalls.label>
+</LanguageData>

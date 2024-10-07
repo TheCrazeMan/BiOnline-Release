@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef ParentName="PsycastBaseSkip">
+    <defName>TeleportFree</defName>
+    <label>Teleport</label>
+    <description>Teleport the target to a desired position not too far from his starting point.</description>
+    <level>0</level>
+    <iconPath>UI/Abilities/Skip</iconPath>
+    <writeCombatLog>False</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <statBases>
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+    </statBases>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <warmupTime>0.25</warmupTime>
+      <range>5</range>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityTeleport">
+        <compClass>CompAbilityEffect_Teleport</compClass>
+        <destination>Selected</destination>
+        <requiresLineOfSight>False</requiresLineOfSight>
+        <range>5</range>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

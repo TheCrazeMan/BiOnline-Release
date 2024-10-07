@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>FillResearchTable</defName>
+		<label>haul resources for research</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_FillResearchTable</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>50</priorityInType>
+		<verb>haul</verb>
+		<gerund>hauling</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>AdditemsToLevelableBuildings</defName>
+		<label>haul resources for levelable building</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_AdditemsToLevelableBuildings</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>50</priorityInType>
+		<verb>haul</verb>
+		<gerund>hauling</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>Writing_Books</defName>
+		<label>Write</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Research</workType>
+		<priorityInType>50</priorityInType>
+		<fixedBillGiverDefs>
+			<li>BiO_writingDesk</li>
+		</fixedBillGiverDefs>
+		<verb>Write</verb>
+		<gerund>Writing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>Medicine_Crafting</defName>
+		<label>work at medicine bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<workTags>
+		  <li>Intellectual</li>
+		</workTags>		
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>MedicalBench</li>
+		</fixedBillGiverDefs>
+		<verb>Craft at</verb>
+		<gerund>Crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>Grindstone_Milling</defName>
+		<label>mill at grindstone</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<workTags>
+		  <li>Cooking</li>
+		</workTags>		
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Grindstone</li>
+		</fixedBillGiverDefs>
+		<verb>Mill at</verb>
+		<gerund>Milling at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>Fishing</defName>
+		<label>Fishing</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Hunting</workType>
+		<workTags>
+		  <li>Hunting</li>
+		</workTags>		
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Pierce</li>
+		</fixedBillGiverDefs>
+		<verb>Fishing</verb>
+		<gerund>Fishing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsExtended</defName>
+		<label>make things</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_DoBillExtended</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Loom</li>
+			<li>Advanced_Smelter</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DoBillsExtendedCooking</defName>
+		<label>make things</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_DoBillExtended</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>Campfire</li>
+			<li>FirePit</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>Cooking at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>RefillWateredBuilding</defName>
+		<label>refill water</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_RefillWateredBuilding</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>400</priorityInType>
+		<verb>refill</verb>
+		<gerund>refilling</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<WorkGiverDef Abstract="true" Name="CollectBase">
+		<workType>Mining</workType>
+		<priorityInType>20</priorityInType>
+		<verb>collect</verb>
+		<gerund>collecting</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	<WorkGiverDef ParentName="CollectBase">
+		<defName>ExploreTheSoily</defName>
+		<label>Explore the soily</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_ExploreTheSoily</giverClass>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DoBillSeismicScanner</defName>
+		<label>Dig in the mine</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_DoMine</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>100</priorityInType>
+		<verb>Dig in the mine</verb>
+		<gerund>Digging at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DeliverResourcesToTents</defName>
+		<label>deliver resources to tents</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_ConstructDeliverResourcesToTents</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>9</priorityInType>
+		<verb>deliver to</verb>
+		<gerund>delivering to</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<nonColonistsCanDo>true</nonColonistsCanDo>
+		<prioritizeSustains>true</prioritizeSustains>
+		<equivalenceGroup>AssistInConstruction</equivalenceGroup>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>PackTent</defName>
+		<label>pack tent</label>
+		<giverClass>BiOnline.AI.WorkGivers.WorkGiver_PackTent</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>9</priorityInType>
+		<verb>deliver to</verb>
+		<gerund>delivering to</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<nonColonistsCanDo>true</nonColonistsCanDo>
+		<prioritizeSustains>true</prioritizeSustains>
+		<equivalenceGroup>AssistInConstruction</equivalenceGroup>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>Digging</defName>
+		<label>mine</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+		  <li>DiggingSpotClay</li>
+		</fixedBillGiverDefs>
+		<verb>mine</verb>
+		<gerund>mining</gerund>
+		<tagToGive>Fieldwork</tagToGive>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+</Defs>

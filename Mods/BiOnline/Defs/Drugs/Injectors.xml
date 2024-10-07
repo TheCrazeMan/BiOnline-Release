@@ -1,0 +1,1090 @@
+<Defs>
+
+	<!-- База для инъекторов -->
+
+	<ThingDef Name="BaseDrugInjector" Abstract="True">
+	<thingClass>ThingWithComps</thingClass>
+	<category>Item</category>
+	<drawerType>MapMeshOnly</drawerType>
+		<graphicData>
+		  <texPath>Things/Item/Drug/Injector</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		   <drawSize>0.8</drawSize>
+		</graphicData>	
+	<techLevel>Ultra</techLevel>
+	<tradeability>Sellable</tradeability>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+	<useHitPoints>true</useHitPoints>
+    <stackLimit>75</stackLimit>
+		<statBases>
+			<SellPriceFactor>0.25</SellPriceFactor>
+		    <MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-4</Beauty>
+			<WorkToMake>800</WorkToMake>
+			<MarketValue>175</MarketValue>
+			<Mass>0.01</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<ingestible>
+		  <preferability>NeverForNutrition</preferability>
+		  <drugCategory>Medical</drugCategory>
+		  <foodType>Processed, Fluid</foodType>
+		  <baseIngestTicks>20</baseIngestTicks>
+		  <ingestSound>Ingest_Inject</ingestSound>
+		  <ingestHoldOffsetStanding>
+			<northDefault>
+			  <offset>(0.18,0,0)</offset>
+			</northDefault>
+		  </ingestHoldOffsetStanding>
+		  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		  <ingestCommandString>Inject {0}</ingestCommandString>
+		  <ingestReportString>Injecting {0}.</ingestReportString>
+		  <useEatingSpeedStat>false</useEatingSpeedStat>
+		  <chairSearchRadius>0</chairSearchRadius>
+		</ingestible>
+		 <comps>
+		  <li Class="CompProperties_Drug">
+		   <listOrder>100</listOrder>
+		  </li>
+		  <li Class="CompProperties_Forbiddable" />
+		</comps>
+    <thingCategories>
+      <li>Drugs</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>	
+    <pathCost>14</pathCost>
+    <burnableByRecipe>true</burnableByRecipe>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+    <orderedTakeGroup>Drug</orderedTakeGroup>	
+	</ThingDef>
+
+	<!-- "Дефлексотор" -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>NB_DefleXitol</defName>
+		<label>DefleXitol</label>
+		<description>Sterile injector of DefleXitol</description>
+		<graphicData>
+		  <color>(119,0,0)</color>
+		</graphicData>
+		<descriptionHyperlinks>
+			<HediffDef>DefleXitol_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DefleXitol_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+  <HediffDef>
+    <defName>DefleXitol_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>DefleXitol effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-8</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+        <statOffsets>
+			<IncomingDamageFactor>-0.4</IncomingDamageFactor>
+        </statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef>
+    <defName>Make_DefleXitolx5</defName>
+    <label>Make Deflexitol x5</label>
+    <description>Make Deflexitol x5</description>
+    <researchPrerequisite>Injectors</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Yayo</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Iron_Skin_Elixir</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>Yayo</li>
+		<li>Iron_Skin_Elixir</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NB_DefleXitol>5</NB_DefleXitol>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<!-- Пироформ -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>NB_PyroForm</defName>
+		<label>PyroForm</label>
+		<description>Sterile injector of PyroForm</description>
+		<descriptionHyperlinks>
+			<HediffDef>PyroForm_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <color>(177,145,18)</color>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PyroForm_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <HediffDef>
+    <defName>PyroForm_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>PyroForm effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-8</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+        <statFactors>
+			<Flammability>0</Flammability>
+        </statFactors>
+		<statOffsets>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+		</statOffsets>		
+      </li>	  
+    </stages>
+  </HediffDef>
+
+  <RecipeDef>
+    <defName>Make_PyroFormx5</defName>
+    <label>Make PyroForm x5</label>
+    <description>Make PyroForm x5</description>
+    <researchPrerequisite>Injectors</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>TM_RawRedPetals</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>		  
+      <li>
+        <filter>
+          <thingDefs>
+			<li>BIO_Cold_Stone</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoJuice</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>TM_RawRedPetals</li>
+		<li>BIO_Cold_Stone</li>
+		<li>GoJuice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NB_PyroForm>5</NB_PyroForm>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<!-- Мулл-И -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>NB_MulE</defName>
+		<label>MulE</label>
+		<description>Sterile injector of MulE</description>
+		<descriptionHyperlinks>
+			<HediffDef>MulE_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <color>(64,64,64)</color>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>MulE_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <HediffDef>
+    <defName>MulE_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>MulE effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+        <statFactors>
+			<IncomingDamageFactor>1.35</IncomingDamageFactor>
+        </statFactors>
+		<statOffsets>
+			<ForagedNutritionPerDay>1</ForagedNutritionPerDay>
+			<MoveSpeed>0.15</MoveSpeed>
+			<SocialImpact>0.2</SocialImpact>
+			<CarryWeight>80</CarryWeight>
+			<CarryingCapacity>40</CarryingCapacity>
+			<CarryBulk>15</CarryBulk>			
+		</statOffsets>
+      </li>	  
+    </stages>
+  </HediffDef>
+
+  <RecipeDef>
+    <defName>Make_MulEx5</defName>
+    <label>Make MulE x5</label>
+    <description>Make MulE x5</description>
+    <researchPrerequisite>Injectors</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>TM_RawDarkBerries</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Lead</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoJuice</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>TM_RawDarkBerries</li>
+		<li>Lead</li>
+		<li>GoJuice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NB_MulE>5</NB_MulE>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<!-- Trasylol 500k -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>NB_Trasylol_500k</defName>
+		<label>Trasylol 500k</label>
+		<description>Sterile injector of HemoStasol</description>
+		<descriptionHyperlinks>
+			<HediffDef>Trasylol_500k_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <color>(97,24,112)</color>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Trasylol_500k_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <HediffDef>
+    <defName>Trasylol_500k_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Trasylol 500k effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-6</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+        <totalBleedFactor>0.05</totalBleedFactor>
+		<painFactor>0.1</painFactor>
+      </li>	  
+    </stages>
+  </HediffDef>
+
+  <RecipeDef>
+    <defName>Make_Trasylol_500kx5</defName>
+    <label>Make Trasylol 500k x5</label>
+    <description>Make Trasylol 500k x5</description>
+    <researchPrerequisite>Injectors</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>TM_CurativeTea</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoJuice</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>TM_CurativeTea</li>
+		<li>GoJuice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NB_Trasylol_500k>5</NB_Trasylol_500k>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<!-- Регеностаз -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>NB_Regenostas</defName>
+		<label>Regenostas</label>
+		<description>Sterile injector of HemoStasol</description>
+		<descriptionHyperlinks>
+			<HediffDef>Regenostas_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <color>(38,127,0)</color>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Regenostas_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <HediffDef>
+    <defName>Regenostas_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Regenostas effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-4</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+		<statFactors>
+		  <InjuryHealingFactor>16</InjuryHealingFactor>
+		</statFactors>
+		<statOffsets>
+			<ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+		</statOffsets>
+		<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>		
+      </li>	  
+    </stages>
+  </HediffDef>
+
+  <RecipeDef>
+    <defName>Make_Regenostasx5</defName>
+    <label>Make Regenostas x5</label>
+    <description>Make Regenostas x5</description>
+    <researchPrerequisite>Injectors</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Plant_Broots</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>		  
+      <li>
+        <filter>
+          <thingDefs>
+			<li>TM_CurativeTea</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Healing_Elixir</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>Plant_Broots</li>
+		<li>TM_CurativeTea</li>
+		<li>Healing_Elixir</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NB_Regenostas>5</NB_Regenostas>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<!-- Доооооооофа -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>NB_Dofa</defName>
+		<label>Dofa</label>
+		<description>Sterile injector of HemoStasol</description>
+		<descriptionHyperlinks>
+			<HediffDef>Dofa_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <color>(127,51,0)</color>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Dofa_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <HediffDef>
+    <defName>Dofa_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Regenostas effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+		<statOffsets>
+			<ButcheryFleshEfficiency>0.15</ButcheryFleshEfficiency>
+			<MiningYield>0.15</MiningYield>
+			<TrainAnimalChance>0.15</TrainAnimalChance>
+            <PlantHarvestYield>0.15</PlantHarvestYield>
+			<TradePriceImprovement>0.1</TradePriceImprovement>
+			<MedicalTendQuality>0.1</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+			<ResearchSpeed>0.15</ResearchSpeed>
+		</statOffsets>
+		<capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.05</offset>
+          </li>		  
+        </capMods>		
+      </li>	  
+    </stages>
+  </HediffDef>
+
+  <RecipeDef>
+    <defName>Make_Dofax5</defName>
+    <label>Make Dofa x5</label>
+    <description>Make Dofa x5</description>
+    <researchPrerequisite>Injectors</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Healing_Elixir</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>		  
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Miner_Elixir</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grower_Elixir</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>Healing_Elixir</li>
+		<li>Miner_Elixir</li>
+		<li>Grower_Elixir</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NB_Dofa>5</NB_Dofa>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>
+  </RecipeDef>
+
+	<!-- Флекситол -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>NB_Flexitol</defName>
+		<label>Flexitol</label>
+		<description>Sterile injector of HemoStasol</description>
+		<descriptionHyperlinks>
+			<HediffDef>Flexitol_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <color>(28,87,130)</color>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Flexitol_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <HediffDef>
+    <defName>Flexitol_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Regenostas effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+		<statOffsets>
+			<GlobalLearningFactor>2.5</GlobalLearningFactor>
+		</statOffsets>
+		<capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>  
+        </capMods>		
+      </li>	  
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Flexitol_Effect_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Flexitol_Effect</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Effect on flexitol</label>
+        <description>Effect on flexitol</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+	 </stages>
+  </ThoughtDef> 
+
+  <RecipeDef>
+    <defName>Make_Flexitolx5</defName>
+    <label>Make Flexitol x5</label>
+    <description>Make Flexitol x5</description>
+    <researchPrerequisite>Injectors</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>TM_HallucinationTea</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>		  
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Soma</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GoJuice</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>TM_HallucinationTea</li>
+		<li>Soma</li>
+		<li>GoJuice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NB_Flexitol>5</NB_Flexitol>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<!-- Детокс -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>DetoX</defName>
+		<label>DetoX</label>
+		<description>Sterile injector of DetoX</description>
+		<graphicData>
+		  <color>(17,121,98)</color>
+		</graphicData>
+		<ingestible>
+		  <outcomeDoers>
+			<li Class="BiOnline.Hediffs.IngestionOutcomeDoer_AdjustSeverity">
+			  <hediffDef>ToxicBuildup</hediffDef>
+			  <severity>-0.33</severity>
+			</li>
+			<li Class="BiOnline.Hediffs.IngestionOutcomeDoer_AdjustSeverity">
+			  <hediffDef>DrugOverdose</hediffDef>
+			  <severity>-0.33</severity>
+			</li>			
+		  </outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <RecipeDef>
+    <defName>Make_DetoXx5</defName>
+    <label>Make DetoX x5</label>
+    <description>Make DetoX x5</description>
+    <researchPrerequisite>MedicineIII</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Plant_Broots</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Ethanol</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>	  
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>Plant_Broots</li>
+		<li>Ethanol</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DetoX>5</DetoX>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<!-- Псиблокатор -->
+
+	<ThingDef ParentName="BaseDrugInjector">
+		<defName>PsyBlocker</defName>
+		<label>PsyBlocker</label>
+		<description>Sterile injector of HemoStasol</description>
+		<descriptionHyperlinks>
+			<HediffDef>PsyBlocker_Effect</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <color>(155,155,155)</color>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsyBlocker_Effect</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>		
+	</ThingDef>
+
+  <HediffDef>
+    <defName>PsyBlocker_Effect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Regenostas effect</label>
+    <description>This pawn is under the effect of the DefleXitol injector. It will have lesser damage from all sources.</description>
+    <defaultLabelColor>(255,188,188)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>	
+    <stages>
+      <li>
+		<statFactors>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+		</statFactors>
+      </li>	  
+    </stages>
+  </HediffDef>
+
+  <RecipeDef>
+    <defName>Make_PsyBlockerx5</defName>
+    <label>Make PsyBlocker x5</label>
+    <description>Make PsyBlocker x5</description>
+    <researchPrerequisite>MedicineIII</researchPrerequisite>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<skillRequirements>
+		<Medicine>7</Medicine>
+	</skillRequirements>	
+    <recipeUsers>
+      <li>DrugLab</li>
+	  <li>MedicalBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Bioferrite</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Ethanol</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>	  
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+		<li>Bioferrite</li>
+		<li>Ethanol</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <PsyBlocker>5</PsyBlocker>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Drugs</buildingTabCategoryDef>
+		</li>
+	</modExtensions>
+  </RecipeDef>
+
+</Defs>

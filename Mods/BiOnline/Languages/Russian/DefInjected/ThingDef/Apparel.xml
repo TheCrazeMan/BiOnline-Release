@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Пси вещи-->
+	<Apparel_Coronet_PSY.label>Коронетка (Пси)</Apparel_Coronet_PSY.label>
+	<Apparel_Coronet_PSY.description>Искусно украшенная коронета из металла.</Apparel_Coronet_PSY.description>
+	
+	<Apparel_Crown_PSY.label>Корона (Пси)</Apparel_Crown_PSY.label>
+	<Apparel_Crown_PSY.description>Искусно украшенная корона из металла.</Apparel_Crown_PSY.description>
+	
+	<Apparel_RobeRoyal_PSY.label>Роскошная мантия (Пси)</Apparel_RobeRoyal_PSY.label>
+	<Apparel_RobeRoyal_PSY.description>Длинная, струящаяся мантия, расшитая сложными декоративными узорами.</Apparel_RobeRoyal_PSY.description>
+	
+	<Apparel_PsyfocusRobe_PSY.label>Мантия из эльтекса (Пси)</Apparel_PsyfocusRobe_PSY.label>
+	<Apparel_PsyfocusRobe_PSY.description>В эту длинную мантию вшиты особые материалы, поддерживающие пси-концентрацию владельца. Они усиливают психическую чувствительность и рассеивают нейроперегрев.</Apparel_PsyfocusRobe_PSY.description>
+
+    <!--Аксессуары-->
+	
+	<Footwear_PlateBoots.label>Латные ботинки</Footwear_PlateBoots.label>
+	<Footwear_PlateBoots.description>Пара простых латных ботинок. Ввиду своего веса слегка замедляют носителя.</Footwear_PlateBoots.description>
+
+	<Footwear_MarineBoots.label>Ботинки пехотной брони</Footwear_MarineBoots.label>
+	<Footwear_MarineBoots.description>Пара продвинутых ботинок, укреплённых пласталевыми панелями и сервоприводами</Footwear_MarineBoots.description>
+
+	<Handwear_PlateGloves.label>Латные перчатки</Handwear_PlateGloves.label>
+	<Handwear_PlateGloves.description>Пара простых латных перчаток. Из-за толщины материала, уменьшают скорость работы носителя.</Handwear_PlateGloves.description>
+
+	<Handwear_MarineGloves.label>Перчатки пехотной брони</Handwear_MarineGloves.label>
+	<Handwear_MarineGloves.description>Пара продвинутых перчаток, оснащённые уменьшителями отдачи.</Handwear_MarineGloves.description>
+
+	<Accessory_MedicBag.label>Медицинская сумка</Accessory_MedicBag.label>
+	<Accessory_MedicBag.description>Поясная сумка с медикаментами.</Accessory_MedicBag.description>
+	
+	<Accessory_ToolBelt.label>Сумка с инструментами</Accessory_ToolBelt.label>
+	<Accessory_ToolBelt.description>Поясная сумка с инструментами.</Accessory_ToolBelt.description>
+	
+	<Accessory_TraumaKit.label>Боевой набор "Вениса"</Accessory_TraumaKit.label>
+	<Accessory_TraumaKit.description>Предназначенный для повышения эффективности бронирования солдат, набор "Вениса" широко использовался во время корпоративных войн. Патентами на производство наборов владеет широкий список компаний, из-за чего существует множество его разновидностей и модификаций.</Accessory_TraumaKit.description>
+
+	<Accessory_RescueFrame.label>Спас-набор "Звёздочка"</Accessory_RescueFrame.label>
+	<Accessory_RescueFrame.description>Набор из целого перечня медикаментов и системы фильтрации воздуха, предназначенный для опытных медиков. В разы повышает скорость обработки ран, позволяя многократно увеличить выживаемость.</Accessory_RescueFrame.description>
+	
+	<Accessory_MortarPack.label>Боевой набор "Шумиха"</Accessory_MortarPack.label>
+	<Accessory_MortarPack.description>Разработанный как оборудование для спец.подразделений во время войны с механоидами, набор "Шумиха" получил повсеместное использование на окраинных мирах из-за своей эффективности. Даже несмотря на затратность производства, "Шумиху" продолжают использовать из-за её превосходных огневых показателей.</Accessory_MortarPack.description>
+
+	<Accessory_Forklift.label>Экзоскелет "Восход"</Accessory_Forklift.label>
+	<Accessory_Forklift.description>Био-интегрируемый экзоскелет, предназначенный для разнорабочих. Значительно повышает физическую силу носителя.</Accessory_Forklift.description>
+	
+	<Accessory_CommandTower.label>Командирский ранец "Сокол"</Accessory_CommandTower.label>
+	<Accessory_CommandTower.description>Ранец, оснащённый переносной радиостанцией. Частоты воздействуют на мозг, повышая пси-способности владельца. Довольно редкий экземпляр, вызывает интерес среди торговцев и открывает новые знакомства.</Accessory_CommandTower.description>
+	
+	<!--Самохил-->
+	
+	<BiO_Armor_SelfRepair_Impreial.label>Имперская само-восстанавливающаяся броня</BiO_Armor_SelfRepair_Impreial.label>
+	<BiO_Armor_SelfRepair_Impreial.description>Тяжёлая броня, содержащая нанитов, быстро восстанавливающих все повреждённые части.</BiO_Armor_SelfRepair_Impreial.description>
+
+	<BiO_Helmet_SelfRepair_Imperial.label>Шлем само-восстанавливающейся брони</BiO_Helmet_SelfRepair_Imperial.label>
+	<BiO_Helmet_SelfRepair_Imperial.description>Шлем тяжёлой брони, содержащий нанитов, быстро восстанавливающих все повреждённые части.</BiO_Helmet_SelfRepair_Imperial.description>
+
+	<!--Броня из хлама-->
+	
+	<BiO_Armor_Light_Makeshift.label>Лёгкая броня из хлама</BiO_Armor_Light_Makeshift.label>
+	<BiO_Armor_Light_Makeshift.description>"Я тебя слепила из того, что было" - идеально подходящая фраза для этой брони. Собрана на коленке из металлолома, должна спасти от выстрела из пистолета.</BiO_Armor_Light_Makeshift.description>
+
+	<BiO_Armor_Heavy_Makeshift.label>Тяжёлая броня из хлама</BiO_Armor_Heavy_Makeshift.label>
+	<BiO_Armor_Heavy_Makeshift.description>Комплект тяжёлой брони, всё так же собранной на коленке. Возможно спасёт от выстрела из винтовки.</BiO_Armor_Heavy_Makeshift.description>
+
+	<BiO_Armor_Light_Helmet_Makeshift.label>Лёгкая маска из хлама</BiO_Armor_Light_Helmet_Makeshift.label>
+	<BiO_Armor_Light_Helmet_Makeshift.description>Маска, предназначенная для защиты лица, собранная из хлама. Не лучшее, что можно найти, однако она может быть использована вместе со шлемами, не закрывающими лицо.</BiO_Armor_Light_Helmet_Makeshift.description>
+
+	<BiO_Armor_Heavy_Helmet_Makeshift.label>Шлем из хлама</BiO_Armor_Heavy_Helmet_Makeshift.label>
+	<BiO_Armor_Heavy_Helmet_Makeshift.description>Шлем, слепленный из того, что валялось под ногами. Тяжёлый и неудобный, но защищающий.</BiO_Armor_Heavy_Helmet_Makeshift.description>
+	
+	<!--Средневековая броня-->
+	
+	<Apparel_Cloak.label>Плащ</Apparel_Cloak.label>
+	<Apparel_Cloak.description>Простой плащ, предназначенный для укрытия вашего тела в жару. Остерегайтесь больших скоплений людей в таких одеждах, особенно, если у них есть капюшоны.</Apparel_Cloak.description>
+	
+	<Apparel_CloakHood.label>Капюшон плаща</Apparel_CloakHood.label>
+	<Apparel_CloakHood.description>Небольшой капюшон, идеально подходящий к плащу.</Apparel_CloakHood.description>
+	
+	<Apparel_Gambeson.label>Гамбезон</Apparel_Gambeson.label>
+	<Apparel_Gambeson.description>Защитный жилет. Слегка согревает.</Apparel_Gambeson.description>
+	
+	<Apparel_QuiltedVest.label>Стёганый жилет</Apparel_QuiltedVest.label>
+	<Apparel_QuiltedVest.description>Стёганый жилет, который может быть одет под броню для дополнительной защиты.</Apparel_QuiltedVest.description>
+	
+	<Apparel_LightPlateArmor.label>Лёгкий пластинчатый доспех</Apparel_LightPlateArmor.label>
+	<Apparel_LightPlateArmor.description>Идущие внахлёст твёрдые пластины обеспечивают защиту груди и плеч.</Apparel_LightPlateArmor.description>
+	
+	<Apparel_PlateShoulderpads.label>Наплечники</Apparel_PlateShoulderpads.label>
+	<Apparel_PlateShoulderpads.description>Пара простых наплечников.</Apparel_PlateShoulderpads.description>
+	
+	<Apparel_Chestplate.label>Нагрудник</Apparel_Chestplate.label>
+	<Apparel_Chestplate.description>Ограничивает в движении, но предоставляет защиту от многих типов повреждений.</Apparel_Chestplate.description>
+	
+	<Apparel_Chainmail.label>Кольчуга</Apparel_Chainmail.label>
+	<Apparel_Chainmail.description>Состоит из маленьких колец, соединённых вместе. Довольно тяжёлая, из-за чего ограничивает носителя в движении.</Apparel_Chainmail.description>
+
+	<Apparel_PlateHelmet.label>Пластинчатый шлем</Apparel_PlateHelmet.label>
+	<Apparel_PlateHelmet.description>Шлем, предоставляющий удовлетворительную защиту от режущих атак.</Apparel_PlateHelmet.description>
+	
+	<!--Племенная броня-->
+	
+	<Apparel_WoodenArmor.label>Деревянная броня</Apparel_WoodenArmor.label>
+	<Apparel_WoodenArmor.description>Жилет, сделанный из досок и брёвен. Может помочь от стрел, однако почти бесполезен против огнестрела.</Apparel_WoodenArmor.description>
+
+	<Headgear_StoneWarMask.label>Маска войны</Headgear_StoneWarMask.label>
+	<Headgear_StoneWarMask.description>Скрывает лицо носителя, придавая ему уверенности на поле боя. Вы бы вряд ли хотели носить её повсеместно.</Headgear_StoneWarMask.description>
+	
+	<Apparel_ChitinArmor.label>Хитиновая броня</Apparel_ChitinArmor.label>
+	<Apparel_ChitinArmor.description>Броня, сделанная из мёртвых насекомых. Обеспечивает отличную за свою цену защиту.</Apparel_ChitinArmor.description>
+	
+	<Headgear_ChitinMask.label>Хитиновая маска</Headgear_ChitinMask.label>
+	<Headgear_ChitinMask.description>Маска из хитина, предназначенная чтобы хоть немного, но помочь вам не получить по голове.</Headgear_ChitinMask.description>
+	
+	<!--Космостарс-->
+	
+	<Headgear_TrooperHelmet.label>Патрульный шлем</Headgear_TrooperHelmet.label>
+	<Headgear_TrooperHelmet.description>Высокотехнологичный лёгкий защитный шлем, оснащённый пласталевой панелью.</Headgear_TrooperHelmet.description>
+	
+	<Apparel_TrooperArmor.label>Патрульная броня</Apparel_TrooperArmor.label>
+	<Apparel_TrooperArmor.description>Комплект лёгкой силовой брони. Ввиду своей толщины, может быть одета даже под верхнюю одежду.</Apparel_TrooperArmor.description>
+	
+	<Headgear_HeavyMarineHelmet.label>Шлем прорывной брони</Headgear_HeavyMarineHelmet.label>
+	<Headgear_HeavyMarineHelmet.description>Тяжёлый, технологичный, защитный - это три вещи, которые вам необходимо знать об этом шлеме.</Headgear_HeavyMarineHelmet.description>
+	
+	<Apparel_HeavyMarineArmor.label>Прорывная броня</Apparel_HeavyMarineArmor.label>
+	<Apparel_HeavyMarineArmor.description>Тяжёлый комплект силовых доспехов, оснащённых сервоприводами и генераторами энергетического щита.</Apparel_HeavyMarineArmor.description>
+	
+	<Apparel_PMC_EliteCombat.label>Броня "Аргус"</Apparel_PMC_EliteCombat.label>
+	<Apparel_PMC_EliteCombat.description>Созданная "Катарсисом" для своих лучших солдат, эта броня предоставляет как достаточный уровень защиты, так и отличную манёвренность на поле боя.</Apparel_PMC_EliteCombat.description>
+	
+	<Headgear_PMC_EliteCombat.label>Шлем "Аргус"</Headgear_PMC_EliteCombat.label>
+	<Headgear_PMC_EliteCombat.description>Данный шлем снаряжён массой умных датчиков и прочих полезностей, позволяющих стрелять гораздо точнее.</Headgear_PMC_EliteCombat.description>
+	
+	<Apparel_PMC_EliteHeavy.label>Броня "Балор"</Apparel_PMC_EliteHeavy.label>
+	<Apparel_PMC_EliteHeavy.description>Сверхтяжёлый комплект брони, предоставляемый ЧВК "Катарсис" их лучшим бойцам. Для ношения подобного чаще всего необходимы аугментации, которые, впрочем, "Катарсис" тоже предоставляет.</Apparel_PMC_EliteHeavy.description>
+	
+	<Headgear_PMC_EliteHeavy.label>Шлем "Балор"</Headgear_PMC_EliteHeavy.label>
+	<Headgear_PMC_EliteHeavy.description>Тяжёлый шлем под стать остальному комплекту снаряжения. Защитит голову не только от осколков, но и в принципе от большинства огнестрельного оружия.</Headgear_PMC_EliteHeavy.description>
+	
+	<Apparel_PMC_EliteSniper.label>Броня "Орион"</Apparel_PMC_EliteSniper.label>
+	<Apparel_PMC_EliteSniper.description>Спроектированная так, чтобы предоставлять максимальную мобильность, Орион не может похвастаться высокими показателями защиты, однако броня значительно повышает скорость передвижения и общую манёвренность бойца.</Apparel_PMC_EliteSniper.description>
+	
+	<Headgear_PMC_EliteSniper.label>Шлем "Орион"</Headgear_PMC_EliteSniper.label>
+	<Headgear_PMC_EliteSniper.description>Несмотря на монокуляр, данный шлем имеет целый спектр приборов: датчики погоды, измеритель скорости ветра и даже собственный ИИ-помощник. Всё это позволяет достичь огромной точности на больших расстояниях.</Headgear_PMC_EliteSniper.description>
+	
+	<Apparel_PMC_EliteMelee.label>Броня "Аякс"</Apparel_PMC_EliteMelee.label>
+	<Apparel_PMC_EliteMelee.description>Не самый лёгкий комплект силовых доспехов, предназначенный для наиболее быстрого сближения с противником. Укомплектован уймой сервоприводов, ускоряющих носителя по сравнению с обычным человеком в два раза.</Apparel_PMC_EliteMelee.description>
+	
+	<Headgear_PMC_EliteMelee.label>Шлем "Аякс"</Headgear_PMC_EliteMelee.label>
+	<Headgear_PMC_EliteMelee.description>Шлем от комплекта брони "Аякс". Нужен в первую очередь для того, чтобы вам не настучали по шапке.</Headgear_PMC_EliteMelee.description>
+	
+	<Apparel_PMC_Trigger.label>Броня Курка</Apparel_PMC_Trigger.label>
+	<Apparel_PMC_Trigger.description>Именной комплект силовой брони, принадлежащий одному из боссов ЧВК - Курку.</Apparel_PMC_Trigger.description>
+	
+	<Headgear_PMC_Trigger.label>Шлем Курка</Headgear_PMC_Trigger.label>
+	<Headgear_PMC_Trigger.description>Уникальный шлем Курка, помогающий орудовать любым оружием так, будто вы владеете им всю жизнь.</Headgear_PMC_Trigger.description>
+	
+	<Apparel_NomadCoat.label>Плащ Nomad</Apparel_NomadCoat.label>
+	<Apparel_NomadCoat.description>Укреплённый плащ с разгрузочной системой, принадлежащий одному из боссов ЧВК - Nomad.</Apparel_NomadCoat.description>
+	
+	<Apparel_PMC_IronClaw.label>Силовой доспех IronClaw</Apparel_PMC_IronClaw.label>
+	<Apparel_PMC_IronClaw.description>Единственный в своём роде, силовой доспех, принадлежащий одному из боссов ЧВК - IronClaw ознаменовал собой новую веху в портативных защитных технологиях.</Apparel_PMC_IronClaw.description>
+	
+	<Headgear_PMC_IronClaw.label>Шлем доспеха IronClaw</Headgear_PMC_IronClaw.label>
+	<Headgear_PMC_IronClaw.description>Даже если бы шлем помогал IronClaw наводить оружие на цель лучше, он бы в этом не нуждался. Именно поэтому большее внимание было уделено не ИИ-помощникам или чему-то такому, а дополнительному бронированию черепушки.</Headgear_PMC_IronClaw.description>
+	
+	<!-- Щитики -->
+	
+	<Wooden_Shield.label>Деревянный щит</Wooden_Shield.label>
+	<Wooden_Shield.description>Деревянный щит сзади обтянутый кожей.</Wooden_Shield.description>
+	
+	<Triangle_Shield.label>Треугольный щит</Triangle_Shield.label>
+	<Triangle_Shield.description>Тяжёлый металлический щит.</Triangle_Shield.description>
+
+	<MedievalShield.label>Средневековый щит</MedievalShield.label>
+	<MedievalShield.description>Деревянный щит, обитый железом, отлично подойдёт для того, чтобы поймать пару-тройку арбалетных болтов.</MedievalShield.description>
+	
+	<AdvancedShield.label>Продвинутый щит</AdvancedShield.label>
+	<AdvancedShield.description>Продвинутый щит, предназначенный для защиты от крупных осколков и винтовочных калибров.</AdvancedShield.description>
+	
+	<IB_SpacerShield.label>Само-восстанавливающийся щит</IB_SpacerShield.label>
+	<IB_SpacerShield.description>Баллистический щит, содержащий нанитов, быстро восстанавливающих любые повреждения.</IB_SpacerShield.description>
+	
+	<Apparel_AdvancedShieldBelt.label>Продвинутый пояс-щит</Apparel_AdvancedShieldBelt.label>
+	<Apparel_AdvancedShieldBelt.description>Продвинутый пояс-щит, во всём опережающий своего младшего собрата.</Apparel_AdvancedShieldBelt.description>
+	
+	<!--Индустриальная-->
+ 	<Armor_SixBTwo.label>Бронежилет 6Б2 (Флора)</Armor_SixBTwo.label>
+	<Armor_SixBTwo.description>Старый армейский бронежилет, предназначенный в основном для защиты от пистолетных пуль и осколков взрывов.</Armor_SixBTwo.description>
+	
+	<BNTI_Gzhel-K_Armor.label>Бронежилет БНТИ "Гжель-К"</BNTI_Gzhel-K_Armor.label>
+	<BNTI_Gzhel-K_Armor.description>Штурмовой бронежилет БНТИ "Гжель-К"</BNTI_Gzhel-K_Armor.description>
+	
+	<BNTI_Kirasa-N_Armor.label>Бронежилет БНТИ "Кираса-N"</BNTI_Kirasa-N_Armor.label>
+	<BNTI_Kirasa-N_Armor.description>Бронежилет "Кираса-N" предназначен для армейских спецподразделений. Пуленепробиваемый жилет обеспечивает круговую защиту торса человека.</BNTI_Kirasa-N_Armor.description>
+	
+	<LBT_6094A_Slick_Plate_Carrier.label>Бронежилет "LBT-6094A Слик"</LBT_6094A_Slick_Plate_Carrier.label>
+	<LBT_6094A_Slick_Plate_Carrier.description>Простой держатель для пластин от фракции "Катарсис". Самый минималистичный дизайн, предназначенный для использования с нагрудным снаряжением.</LBT_6094A_Slick_Plate_Carrier.description>
+	
+	<PACA_Soft_Armor.label>Бронежилет "РАСА"</PACA_Soft_Armor.label>
+	<PACA_Soft_Armor.description>Легкий, но прочный и надежный бронежилет, защищающий только жизненно важные зоны.</PACA_Soft_Armor.description>
+	
+	<Headwear_Balaclava.label>Балаклава</Headwear_Balaclava.label>
+	<Headwear_Balaclava.description>Тканевый головной убор, предназначенного для обнажения только части лица, обычно глаз и рта.</Headwear_Balaclava.description>
+	
+	<Headwear_Balaclava2_Mask.label>Балаклава</Headwear_Balaclava2_Mask.label>
+	<Headwear_Balaclava2_Mask.description>Тканевый головной убор, предназначенного для обнажения только части лица, обычно глаз и рта.</Headwear_Balaclava2_Mask.description>
+	
+	<Headgear_Soft_Tank_Crew.label>Шлемофон</Headgear_Soft_Tank_Crew.label>
+	<Headgear_Soft_Tank_Crew.description>"Танковая гарнитура предназначена для обеспечения двусторонней радиотелефонной связи на объектах с повышенным уровнем шума, для защиты ее от климатических факторов и от воздействий на конструктивные элементы объектов."</Headgear_Soft_Tank_Crew.description>
+	
+	<Headwear_Baseball_Cap_Black.label>Бейсболка</Headwear_Baseball_Cap_Black.label>
+	<Headwear_Baseball_Cap_Black.description>Бейсболка</Headwear_Baseball_Cap_Black.description>
+	
+	<Headwear_Beanie.label>Шапка "Бини"</Headwear_Beanie.label>
+	<Headwear_Beanie.description>Теплая вязаная шапка</Headwear_Beanie.description>
+	
+	<Zabralo_6B43-Sh_6A_Armor.label>Бронежилет 6Б43 "Забрало-Ш"</Zabralo_6B43-Sh_6A_Armor.label>
+	<Zabralo_6B43-Sh_6A_Armor.description>Бронежилет 6Б43 предназначен для защиты от пуль легкого оружия - в том числе БП и ПП, осколков гранат, мин и оружия ближнего боя, а также для снижения риска послепроникающих эффектов в боевой обстановке.</Zabralo_6B43-Sh_6A_Armor.description>
+	
+	<FORT_Redut-T5_Body_Armor.label>Бронежилет ФОРТ "Редут-Т5"</FORT_Redut-T5_Body_Armor.label>
+	<FORT_Redut-T5_Body_Armor.description>Бронежилет ФОРТ "Редут-Т5" - это усиленная версия бронежилета серии "Редут", разработанная с учетом многолетнего опыта.</FORT_Redut-T5_Body_Armor.description>
+	
+	<IOTV_Gen4_ArmorFullProtection.label>Бронежилет IOTV Gen4 (Полная Защита)</IOTV_Gen4_ArmorFullProtection.label>
+	<IOTV_Gen4_ArmorFullProtection.description>Улучшенный внешний тактический жилет (IOTV) Gen IV разработан для обеспечения максимальной свободы движений, необходимой для принятия правильных огневых позиций и маневренности при выполнении задач. Оптимальные конструктивные характеристики обеспечивают наилучшее распределение веса как баллистической системы бронежилета, так и дополнительного несущего оборудования, что обеспечивает повышенный комфорт, продолжительность ношения и мобильность. Полный комплект защиты.</IOTV_Gen4_ArmorFullProtection.description>
+	
+	<Headgear_Altyn_Helmet_Shield.label>Бронешлем "Алтын"</Headgear_Altyn_Helmet_Shield.label>
+	<Headgear_Altyn_Helmet_Shield.description>"Алтын" прошел реальные боевые испытания на территории Империума и Сепаратистов состоит на вооружении Катарсиса.</Headgear_Altyn_Helmet_Shield.description>
+	
+	<Headgear_Vulkan-5_Heavy_Helmet_Shield.label>Бронешлем ЛШЗ-5 "Вулкан-5"</Headgear_Vulkan-5_Heavy_Helmet_Shield.label>
+	<Headgear_Vulkan-5_Heavy_Helmet_Shield.description>Тяжелый шлем с высоким уровнем защиты "Вулкан-5" предназначен для использования в комплекте с круговой бронёй.</Headgear_Vulkan-5_Heavy_Helmet_Shield.description>
+	
+	<Headgear_ZSh-1-2M_Helmet_Shield.label>Бронешлем ЗШ-1-2М </Headgear_ZSh-1-2M_Helmet_Shield.label>
+	<Headgear_ZSh-1-2M_Helmet_Shield.description>Состоит из прочного сплава, покрытого изнутри тканями, которые не дает пробить защиту и впитывает в себя динамическое воздействие пули или осколков.</Headgear_ZSh-1-2M_Helmet_Shield.description>
+	
+	<Headwear_Balaclava5_Mask.label>Балаклава</Headwear_Balaclava5_Mask.label>
+	<Headwear_Balaclava5_Mask.description>Тканевый головной убор, предназначенного для обнажения только части лица, обычно глаз и рта.</Headwear_Balaclava5_Mask.description>
+	
+	<Headwear_Balaclava7_Mask.label>Балаклава</Headwear_Balaclava7_Mask.label>
+	<Headwear_Balaclava7_Mask.description>Тканевый головной убор, предназначенного для обнажения только части лица, обычно глаз и рта.</Headwear_Balaclava7_Mask.description>
+	
+	<Direct_Action_Compact.label>Разгрузка "Гроза"</Direct_Action_Compact.label>
+	<Direct_Action_Compact.description>Фиксированная разгрузочная система от фракции "Катарсис", содержащая все базовые необходимые подсумки.</Direct_Action_Compact.description>
+	
+	<Spiritus_Systems.label>Разгрузка "Дельта"</Spiritus_Systems.label>
+	<Spiritus_Systems.description>Ультракомпактный и легкий нагрудный ремень для дополнительной мобильности и комфорта.</Spiritus_Systems.description>
+	
+	<Triton_M43-A.label>Разгрузка "Тритон"</Triton_M43-A.label>
+	<Triton_M43-A.description>"Эта разгрузка, созданный для удобства и быстрого доступа, позволяет разместить под рукой множество дополнительных рожков".</Triton_M43-A.description>
+	
+	<UMTBS_6sh112_Rig.label>Разгрузка "УМТБС 6ш112"</UMTBS_6sh112_Rig.label>
+	<UMTBS_6sh112_Rig.description>Универсальная модульная транспортно-боевая система (УМТБС) "Разведчик-снайпер" является штатной техникой Вооруженных Сил Катарсис.</UMTBS_6sh112_Rig.description>
+	
+	<Velocity_Systems.label>Разгрузка "Катарсис"</Velocity_Systems.label>
+	<Velocity_Systems.description>Разработан для боевых ситуаций при патрулировании, где нет необходимости в бронежилете. Легкий жилет, с большим количеством подсумков. Производство "Катарсис".</Velocity_Systems.description>
+	
+	<Wartech_TV-109_Rig.label>Разгрузка "TV-109"</Wartech_TV-109_Rig.label>
+	<Wartech_TV-109_Rig.description>Тяжелая подвесная система TV-109 предназначена для крепления на пояс TV-106 или аналогичный, с целью разгрузить часть веса на плечи. Плечи усилены пенкой и имеют стропы MOLLE для перевода пояса в комплекте с этой системой в полноценную РПС. Производство "Катарсис".</Wartech_TV-109_Rig.description>
+	
+	<Wartech_TV-110_rig.label>Разгрузка с бронепластинами "TV-110"</Wartech_TV-110_rig.label>
+	<Wartech_TV-110_rig.description>Разгрузочный жилет для бронепластин TV-110, содержащий массу различных подсумков. Производство "Катарсис".</Wartech_TV-110_rig.description>
+	
+	<Apparel_GhillieSuit.label>Маскхалат</Apparel_GhillieSuit.label>
+	<Apparel_GhillieSuit.description>Предоставляет отличную маскировку в условиях лесистой местности. Не слишком поможет в пустыне.</Apparel_GhillieSuit.description>
+	
+	<Headwear_GhillieHood.label>Капюшон маскхалата</Headwear_GhillieHood.label>
+	<Headwear_GhillieHood.description>Капюшон, идущий в комплекте с маскхалатом. Может быть надет как отдельно от шлема, так и поверх него.</Headwear_GhillieHood.description>
+	
+	<Headwear_TrasherHelmet.label>Шлем хламовника</Headwear_TrasherHelmet.label>
+	<Headwear_TrasherHelmet.description>Шлем, который, кажется, въелся в кожу каждого хламовника. Никто ещё не видел, чтобы они снимали его. Даже не спрашивайте, как они едят.</Headwear_TrasherHelmet.description>
+	
+	<Apparel_TrasherSuit_Light.label>Лёгкий костюм хламовника</Apparel_TrasherSuit_Light.label>
+	<Apparel_TrasherSuit_Light.description>Лёгкий вариант защитного костюма, созданного хламовниками. Предоставляет дополнительную защиту от жары.</Apparel_TrasherSuit_Light.description>
+	
+	<Apparel_TrasherSuit_Heavy.label>Тяжёлый костюм хламовника</Apparel_TrasherSuit_Heavy.label>
+	<Apparel_TrasherSuit_Heavy.description>Утяжелённая версия хламовничьего костюма, рассчитанная на сдерживание винтовочных попаданий.</Apparel_TrasherSuit_Heavy.description>
+	
+	<Apparel_IsoSuit.label>Изолирующий костюм</Apparel_IsoSuit.label>
+	<Apparel_IsoSuit.description>Изолирующий костюм, предназначенный в первую очередь для людей, работающий с высоким напряжением. Может спасти вас в случае, если то был всё же не ноль.</Apparel_IsoSuit.description>
+	
+</LanguageData>

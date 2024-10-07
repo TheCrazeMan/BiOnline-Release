@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.BuildingPrefabDef>
+		<defName>TentModern</defName>
+		<label>Современная палатка</label>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<prefabRect>
+			<cellsCount>51</cellsCount>
+			<prefabSize>(9, 7)</prefabSize>
+			<centerPosition>(101, 0, 118)</centerPosition>
+			<cellsDeflate>
+DcNXEsFQAADAN9qHEkb0EL0kDIIP7f7nyu7M9kMIiTtj5+4duPDg0NSjI5eeHLsyc+La3Kkbz87cerFiy5tvq7a9+7Fmx8KvdSMf
+/mzY9enfpld7viwB
+</cellsDeflate>
+		</prefabRect>
+		<terrain IsNull="True" />
+		<buildings>
+			<cellsCount>31</cellsCount>
+			<positionsDeflate>
+DcPNCkRgAADAL5YDB6KUnxt7IhIH7L7/c5mpyUMIkbGZtZVfVzcvH29//j1s7Z09LSxNTF2c7Bz9uDvY+AI=
+</positionsDeflate>
+			<defsDeflate>
+88xLKS0uKcpMzAlJzSsJT8zJsfYcFRpBQo55mbmJOW45iQXWTqkpRflwISDP2i2zKDUgswQA
+</defsDeflate>
+			<things>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Leather_Lizard</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Synthread</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+			</things>
+		</buildings>
+		<items IsNull="True" />
+		<roof>
+			<cellsCount>51</cellsCount>
+			<roofDefDeflate>
+C8rPT3POzysuKSpNLklNsQ4a5Y/yR/m4+AA=
+</roofDefDeflate>
+			<roofCellsDeflate>
+DcNXEsFQAADAN9qHEkb0EL0kDIIP7f7nyu7MVkIIVWvWbdi0ZduOkV179o0dOHTk2IlTZybOXZi6dOXajVt37j149GRm7tmLV2/e
+LXz49OXbj19//i0B
+</roofCellsDeflate>
+		</roof>
+		<pawns IsNull="True" />
+		<commonality>1</commonality>
+	</BiOnline.MapGenerator.BuildingPrefabDef>
+</Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SandyMassCarried>Mass carried</SandyMassCarried>
+  <SandyMassValue> {0} / {1} kg</SandyMassValue>
+  <Sandy_ViewList>Show list</Sandy_ViewList>
+  <Sandy_Head>Head Overhead</Sandy_Head>
+  <Sandy_TorsoMiddle>Torso Middle</Sandy_TorsoMiddle>
+  <Sandy_TorsoOnSkin>Torso OnSkin</Sandy_TorsoOnSkin>
+  <Sandy_TorsoShell>Torso Shell</Sandy_TorsoShell>
+  <Sandy_Belt>Belt</Sandy_Belt>
+  <Sandy_Pants>Legs OnSkin</Sandy_Pants>
+  <Sandy_PrimaryEquipment>Primary Equipment</Sandy_PrimaryEquipment>
+  <Sandy_SecondaryEquipment>Dual Wield Off-hand</Sandy_SecondaryEquipment>
+  <Sandy_ShieldLeft>Shield (Left)</Sandy_ShieldLeft>
+  <Sandy_ShieldRight>Shield (Right)</Sandy_ShieldRight>
+  <Sandy_VWE_Apparel_Exoframe>Exoframe (VWE)</Sandy_VWE_Apparel_Exoframe>
+  <Sandy_Inventory_Height>Gear Tab - Height</Sandy_Inventory_Height>
+  <Sandy_RPG_Style_Inventory_Title>RPG Style Inventory - CE</Sandy_RPG_Style_Inventory_Title>
+</LanguageData>

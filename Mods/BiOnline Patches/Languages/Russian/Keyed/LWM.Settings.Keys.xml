@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings -->
+<LanguageData>
+  <LWMDSignoredDueTo>This setting is ignored due to mod {0}</LWMDSignoredDueTo>
+
+  <!--Who can haul TO storage-->
+  <LWMDShaulToStorageExplanation>Who Can Use Storage:\nBy default, only Humans (or human-like aliens) have the intelligence required to put things INTO storage: stacking carefully, organizing shelves, manipulating latches, etc.\nANYONE may take FROM storage.</LWMDShaulToStorageExplanation>
+  <LWMDSrobotsCanUse>Robots can always haul to Deep Storage? (some robots supported)</LWMDSrobotsCanUse>
+  <LWMDSrobotsCanUseDesc>Allow Robots to haul to Deep Storage.  Robots from "Misc. Robots" are supported; support for Project RimFactory - Drones is coming.</LWMDSrobotsCanUseDesc>
+  <LWM_DS_IntTitle>Позволить всем созданиям пользоваться хранилищами</LWM_DS_IntTitle>
+  <LWM_DS_IntDesc>Эта опция может позволить вашим животным / роботам / любым другим механизмам и созданиям пользоваться хранилищем. \nБольшинство инопланетных рас "Человекоподобные" или лучше. Большинство животных являются «Животными». Ванильные механоиды - это «Пользователи инструментов» Роботы из различных модов? Ваше предположение так же хорошо, как и мое. \n Обратите внимание, что ЛЮБОЙ может пользоваться хранилищами</LWM_DS_IntDesc>
+  <LWM_DS_Int_Animal>Животные (животные и некоторые роботы)</LWM_DS_Int_Animal>
+  <LWM_DS_Int_ToolUser>Пользователи инструментов (механоиды и некоторые роботы)</LWM_DS_Int_ToolUser>
+  <LWM_DS_Int_Humanlike>Человекоподобные (люди, пришельцы, стандартные) (LWM * одобренные)</LWM_DS_Int_Humanlike>
+
+  <!--How long does storing take?-->
+  <LWMDSstoringDelaySettings>Настройки хранения и задержки</LWMDSstoringDelaySettings>
+  <LWMDSstoringDelayExplanation>By default, putting things into Deep Storage takes some time (oraganizing). The time required can be a complicated calculation, sometimes including how many kinds of things are in storage and how many things are being put into storage. Using some mods breaks that calculation.</LWMDSstoringDelayExplanation>
+  <LWMDSstoringTakesTimeLabel>Задержка во время использования хранилища</LWMDSstoringTakesTimeLabel>
+  <LWMDSstoringTakesTimeDesc>Отключение этого элемента не задумывалось автором мода. Но эй, это твоя игра! Делай как хочешь</LWMDSstoringTakesTimeDesc>
+  <LWMDSstoringGlobalScale>Глобальное время использования хранилища: {0}% \nВы можете отрегулировать, сколько времени потребуется существам для складывания предметов (возможно, вы думаете, что это занимает слишком много времени). Вы можете отрегулировать этот параметр и он будет применяться ко всем видам хранилищ.</LWMDSstoringGlobalScale>
+  <LWMDSstoringTimeConsidersStackSize>Использовать стандартную величину стаков?</LWMDSstoringTimeConsidersStackSize>
+  <LWMDSstoringTimeConsidersStackSizeDesc>Если включенно (по умолчанию), то складывать можно максимум по 75 чего-либо в хранилища. Вы, вероятно, захотите отключить это, если используете мод, который меняет размеры стаков.</LWMDSstoringTimeConsidersStackSizeDesc>
+
+  <LWM_DS_defaultStoragePriority>В хранилищах по умолчанию приоритет:</LWM_DS_defaultStoragePriority>
+
+  <LWM_DS_userInterface>User Interface</LWM_DS_userInterface>
+  <LWM_DS_useEjectButton>Show "Eject" (Drop) button</LWM_DS_useEjectButton>
+  <LWM_DS_useEjectButtonDesc>Show the Eject button in the Contents tab.  Changing this setting takes effect immediately.</LWM_DS_useEjectButtonDesc>
+  <LWM_DS_useDSRightClick>Use Deep Storage custom Right Click</LWM_DS_useDSRightClick>
+  <LWM_DS_useDSRightClickDesc>The custom Deep Storage right-click interface SHOULD work, and should make things easier to use - especially in weapons lockers with mods such as Dual Wielding.  Disable this to use Vanilla's logic in case something breaks, but it may make some tasks more difficult (e.g., loading caravans).  Note: disabling this can break some game mechanics.\n\nRequires restart to take effect.</LWM_DS_useDSRightClickDesc>
+  <!-- Architect menu settings -->
+  <LWM_DS_Storage_ArchitectMenuSettings>Будет отображаться во вкладке:</LWM_DS_Storage_ArchitectMenuSettings>
+  <LWM_DS_Storage_ArchitectMenuAlwaysShowCategory>Всегда показывать отдельную вкладку от мода Deep Storage?</LWM_DS_Storage_ArchitectMenuAlwaysShowCategory>
+  <LWM_DS_Storage_ArchitectMenuAlwaysShowDesc>Место по умолчанию для всех элементов мода Deep Storage находится в категории «Хранение» во вкладке Проекты. Если вы отключите опцию, выбрав другую категорию для элементов, то категория «Хранилище» исчезнет. Отметьте это, если хотите, чтобы категория всегда была видна, даже если в ней нет эллементов мода Deep Storage.</LWM_DS_Storage_ArchitectMenuAlwaysShowDesc>
+  <LWM_DS_Storage_ArchitectMenuMoveALL>Перемещать ли ванильные элементы меню?</LWM_DS_Storage_ArchitectMenuMoveALL>
+  <LWM_DS_Storage_ArchitectMenuMoveALLDesc>Отметьте это, чтобы перемещать такие вещи, как ванильные полки или хранилища других модов, в «Хранение». «Производственные» складские помещения (например, бункеры) не перемещаются. ТРЕБУЕТСЯ ПЕРЕЗАГРУЗИТЬ ИГРУ, ЧТОБЫ ИЗМЕНЕНИЯ ВСТУПИЛИ В СИЛУ ПОЛНОСТЬЮ! Если снять этот флажок, элементы будут отображаться в разделе «Мебель» до перезагрузки.</LWM_DS_Storage_ArchitectMenuMoveALLDesc>
+  <!-- more settings -->
+
+  <LWMDSoverCapacityCheck>Check for storage being Over Capacity</LWMDSoverCapacityCheck>
+  <LWMDSoverCapacityCheckDesc>If more than one thing ends up in a stockpile, pawns need to know to clean it up.  Turning this off prevents that.\n\nTurn this OFF to allow some other storage mods to function:\n  RimFactory</LWMDSoverCapacityCheckDesc>
+  <!-- Per DSU Settings -->
+  <LWMDSperDSUSettings>EXPERIMENTAL: Change Storage Settings for each type of Unit: Caution</LWMDSperDSUSettings>
+  <LWMDSperDSUturnOn>TURN ON USER-MODIFIED BUILDING SETTINGS:</LWMDSperDSUturnOn>
+
+  <LWMDSperDSUturnOnDesc>This lets you edit the properties of each Deep Storage building!  Don't break anything, okay? TURNING THIS OFF WILL RESET ALL SETTINGS TO DEFAULT.</LWMDSperDSUturnOnDesc>
+  <LWMDSperDSUWarning>Note: No settings will be saved unless you turn on this feature above!</LWMDSperDSUWarning>
+  <LWMDSpDSUlabel>Label</LWMDSpDSUlabel>
+  <LWMDSpDSUshowContents>Show contents for this type of building</LWMDSpDSUshowContents>
+  <LWMDSpDSUoverlay>What kind of count overlay (little white numbers) to use</LWMDSpDSUoverlay>
+  <LWMDSpDSUstoragePriority>Default Storage Priority for this building</LWMDSpDSUstoragePriority>
+  <LWMDSpDSUchangeFilterQ>Change what Items are allowed in this building?</LWMDSpDSUchangeFilterQ>
+  <LWMDSpDSUchangeFilterQDesc>If you are NOT using a custom list of items here, you should uncheck this.</LWMDSpDSUchangeFilterQDesc>
+  <LWM_DS_Default>(default: {0})</LWM_DS_Default>
+  <LWM.ResetAllToDefault>Reset ALL to default</LWM.ResetAllToDefault>
+
+</LanguageData>

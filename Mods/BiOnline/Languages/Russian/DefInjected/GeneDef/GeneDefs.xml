@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<!--Безразличие к комфорту-->
+	<IndifferenceComfort.label>Безразличие к комфорту</IndifferenceComfort.label>
+	<IndifferenceComfort.description>Ген полностью устраняет потребность в комфорте. Вам просто все равно, спите вы сегодня в роскоши или в стоге сена.</IndifferenceComfort.description>
+	<IndifferenceComfort.symbolPack.prefixSymbols.0.symbol>комфорт</IndifferenceComfort.symbolPack.prefixSymbols.0.symbol>
+	<!--Солнечная Активизация-->
+	<SolarActivation.label>Солнечная сила</SolarActivation.label>
+	<SolarActivation.labelShortAdj>УФ-Активизация</SolarActivation.labelShortAdj>
+	<SolarActivation.description>Под воздействием солнечного света, физические и умственные способности значительно возрастают. При дневном свете носитель становится быстрее, сильнее и выносливее. Этот ген делает носителя особенно эффективным в светлое время суток, превращая солнце в мощный источник энергии.</SolarActivation.description>
+	<SolarActivation.symbolPack.prefixSymbols.0.symbol>свет</SolarActivation.symbolPack.prefixSymbols.0.symbol>
+	<SolarActivation.symbolPack.prefixSymbols.1.symbol>открытый</SolarActivation.symbolPack.prefixSymbols.1.symbol>
+	<SolarActivation.symbolPack.prefixSymbols.2.symbol>над</SolarActivation.symbolPack.prefixSymbols.2.symbol>
+	<SolarActivation.symbolPack.prefixSymbols.3.symbol>поле</SolarActivation.symbolPack.prefixSymbols.3.symbol>
+	<SolarActivation.symbolPack.prefixSymbols.4.symbol>небо</SolarActivation.symbolPack.prefixSymbols.4.symbol>
+	<SolarActivation.symbolPack.prefixSymbols.5.symbol>яркий</SolarActivation.symbolPack.prefixSymbols.5.symbol>
+	<SolarActivation.symbolPack.prefixSymbols.6.symbol>день</SolarActivation.symbolPack.prefixSymbols.6.symbol>
+	<!--Гнилостный запах-->
+	<PutridSmell.label>Гнилостный запах</PutridSmell.label>
+	<PutridSmell.description>Носитель данного гена источает омерзительный запах. </PutridSmell.description>
+	<!--Водная сила-->
+	<RainPower.label>Водная сила</RainPower.label>
+	<RainPower.description>Под воздействием дождя физические и умственные способности значительно возрастают. При дожде носитель становится быстрее, сильнее и выносливее. Этот ген делает носителя особенно эффективным в дождливую погоду, превращая осадки в мощный источник энергии.</RainPower.description>
+	<RainPower.symbolPack.prefixSymbols.0.symbol>Тёмный</RainPower.symbolPack.prefixSymbols.0.symbol>
+	<RainPower.symbolPack.prefixSymbols.1.symbol>Дождливый</RainPower.symbolPack.prefixSymbols.1.symbol>
+	<RainPower.symbolPack.prefixSymbols.2.symbol>Влажный</RainPower.symbolPack.prefixSymbols.2.symbol>
+	<RainPower.symbolPack.prefixSymbols.3.symbol>Пасмурный</RainPower.symbolPack.prefixSymbols.3.symbol>
+	<!--Ластовидные конечности-->
+	<FlipperLimbs.label>Ластовидные конечности</FlipperLimbs.label>
+	<FlipperLimbs.description>У носителей этого гена конечности напоминают гусиные лапы. Это снижает их способность манипулировать предметами.</FlipperLimbs.description>
+	<FlipperLimbs.symbolPack.prefixSymbols.0.symbol>Болото</FlipperLimbs.symbolPack.prefixSymbols.0.symbol>
+	<FlipperLimbs.symbolPack.prefixSymbols.1.symbol>Топь</FlipperLimbs.symbolPack.prefixSymbols.1.symbol>
+	<FlipperLimbs.symbolPack.prefixSymbols.2.symbol>Трясина</FlipperLimbs.symbolPack.prefixSymbols.2.symbol>
+	<FlipperLimbs.symbolPack.suffixSymbols.0.symbol>Болото</FlipperLimbs.symbolPack.suffixSymbols.0.symbol>
+	<FlipperLimbs.symbolPack.suffixSymbols.1.symbol>Трясина</FlipperLimbs.symbolPack.suffixSymbols.1.symbol>
+	<FlipperLimbs.symbolPack.wholeNameSymbols.2.symbol>Кикимор</FlipperLimbs.symbolPack.wholeNameSymbols.2.symbol>
+	<!--Жировой мешок-->
+	<FatSac.label>Жировой мешок</FatSac.label>
+	<FatSac.description>У носителей этого гена между горлом, челюстью и ключицами образуется большой мешок лишнего жира</FatSac.description>
+	<!--Усы-->
+	<Nose_Kikimor.label>Усы</Nose_Kikimor.label>
+	<Nose_Kikimor.description>У носителей этого гена на верхней губе вырастают мясистые отростки, похожие на усы.</Nose_Kikimor.description>
+</LanguageData>

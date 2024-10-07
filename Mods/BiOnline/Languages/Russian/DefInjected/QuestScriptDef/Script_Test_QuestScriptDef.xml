@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<StoryQuest_1_OutlanderCivil.label>First story quest</StoryQuest_1_OutlanderCivil.label>
+	
+	<StoryQuest_1_OutlanderCivil.description>My first story quest</StoryQuest_1_OutlanderCivil.description>
+
+	<StoryQuest_1_OutlanderCivil.questNameRules.rulesStrings>
+		<li>questName->[verb] [place]</li>
+		<li>verb->Unique</li>
+		<li>verb->Interesting</li>
+		<li>verb->Fortunate</li>
+		<li>verb->Uncommon</li>
+		<li>place->Shack</li>
+		<li>place->Place</li>
+		<li>place->Site</li>
+		<li>place->Goodies</li>
+		<li>place->Supplies</li>
+	</StoryQuest_1_OutlanderCivil.questNameRules.rulesStrings>
+
+	<StoryQuest_1_OutlanderCivil.questDescriptionRules.rulesStrings>
+		<li>questDescription(askerIsNull==true)->We've intercepted messages about some interesting place with valuable items not far from [map_definite].</li>
+	</StoryQuest_1_OutlanderCivil.questDescriptionRules.rulesStrings>
+	
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/Ammo/Medieval/Ballista.xml-->
+<BallistaBolt.label>болт баллисты</BallistaBolt.label>
+<BallistaBolt.description>болт баллисты</BallistaBolt.description>.
+<BallistaBoltExplosive.label>Взрывной болт баллисты</BallistaBoltExplosive.label>
+<BallistaBoltExplosive.description>Взрывная стрела, наполненная металлическими обломками</BallistaBoltExplosive.description>.
+<BallistaBoltExpansive.label>Экспансивный болт баллисты</BallistaBoltExpansive.label>
+<BallistaBoltExpansive.description>Экспансивный болт, имеет хорошее бронепробитие</BallistaBoltExpansive.description>
+
+</LanguageData>

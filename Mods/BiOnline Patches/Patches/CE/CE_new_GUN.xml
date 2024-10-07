@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended Guns</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="CE_Gun_Crossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Tension_forceI</researchPrerequisite>
+				</value>
+			  </li>
+			  
+			  <li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_CrossbowBolt_Stone" or defName="MakeAmmo_CrossbowBolt_Steel" or defName="MakeAmmo_CrossbowBolt_Plasteel" or defName="MakeAmmo_CrossbowBolt_Venom" or defName="MakeAmmo_CrossbowBolt_Flame"]</xpath>
+				<value>
+					<researchPrerequisite>Tension_forceI</researchPrerequisite>
+				</value>
+			  </li>
+			  
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_CrossbowBolt_Venom"]</xpath>
+				<value>
+					<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+						<defName>MakeAmmo_CrossbowBolt_Venom</defName>
+						<label>make venom crossbow bolts x10</label>
+						<description>Craft 10 venom crossbow bolts.</description>
+						<jobString>Making venom crossbow bolts.</jobString>
+						<researchPrerequisite>Tension_forceI</researchPrerequisite>
+						<workAmount>1300</workAmount>
+						<ingredients>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>WoodLog</li>
+							  </thingDefs>
+							</filter>
+							<count>2</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>2</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>TM_RawShrooms</li>
+							  </thingDefs>
+							</filter>
+							<count>2</count>
+						  </li>
+						</ingredients>
+						<fixedIngredientFilter>
+						  <thingDefs>
+							<li>WoodLog</li>
+							<li>Steel</li>
+							<li>TM_RawShrooms</li>
+						  </thingDefs>
+						</fixedIngredientFilter>
+						<products>
+						  <Ammo_CrossbowBolt_Venom>10</Ammo_CrossbowBolt_Venom>
+						</products>
+					</RecipeDef>
+				</value>
+			  </li>
+			  
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="CE_Gun_FlintlockPistol" or defName="CE_Gun_FlintlockMusket" or defName="CE_Gun_FlintlockBlunderbuss"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Flintlock_firearms</researchPrerequisite>
+				</value>
+			  </li>
+			  
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="CE_Gun_Crossbow"]/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Flintlock_firearms</researchPrerequisite>
+				</value>
+			  </li>
+			  
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

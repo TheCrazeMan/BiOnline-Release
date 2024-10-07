@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="SeedExtractionBench" or defName="SeedExtractionSpot" or defName="RawStrawberries" or defName="Seed_Strawberry"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Seed_Cocoa"]</xpath>
+		
+		<value>
+			
+			<ThingDef ParentName="SeedBase">
+				<defName>Seed_Cocoa</defName>
+				<label>cocoa seeds</label>
+				<graphicData>
+					<texPath>Seeds/Cocoa</texPath>
+				</graphicData>
+				<descriptionHyperlinks>
+					<ThingDef>Plant_TreeCocoa</ThingDef>
+				</descriptionHyperlinks>
+				<modExtensions>
+					<li Class="SeedsPleaseLite.Seed">
+						<harvestOverride>CocoaBeans</harvestOverride>
+						<sources>
+							<li>Plant_TreeCocoa</li>
+						</sources>
+						<priority>20</priority>
+					</li>
+				</modExtensions>
+			</ThingDef>
+		
+		</value>
+		
+	</Operation>
+	
+</Patch>
+	

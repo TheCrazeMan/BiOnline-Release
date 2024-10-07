@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<Copperb.label>CopperB</Copperb.label>
+	<Copperb.description>Непонятно, что это такое и кем оно было создано. Но выражение его лица заставит вас грустить.</Copperb.description>
+
+	<Alligator.label>аллигатор</Alligator.label>
+	<Alligator.description>Аллигатор — это крупный рептилия, обитающий в пресноводных водно-болотных угодьях. Они являются хищниками на вершине пищевой цепи и питаются рыбой, земноводными, рептилиями, птицами и млекопитающими. Как и другие крокодилы, здоровые аллигаторы могут продолжать расти на протяжении всей своей жизни.</Alligator.description>
+
+	<Badger.label>барсук</Badger.label>
+	<Badger.description>Барсуки — это небольшие ночные млекопитающие с плоскими клинообразными телами, широкими лапами с длинными когтями и грубой шерстью. Барсуки обладают сильными конечностями и острыми когтями, которые помогают им рыть норы и находить пищу под землей. Они всеядны, и их рацион в основном состоит из дождевых червей, насекомых, личинок и мелких животных, таких как ежи и кролики.</Badger.description>
+
+	<Badger.tools.0.label>левая лапа</Badger.tools.0.label>
+	<Badger.tools.1.label>правая лапа</Badger.tools.1.label>
+	<Badger.tools.3.label>голова</Badger.tools.3.label>
+
+	<BlackBear.label>барибал</BlackBear.label>
+	<BlackBear.description>Млекопитающее среднего размера, приспособленное к холодному климату. Толстый слой жира и шерсти медведей согревает их зимой.\n\nХотя их обычный рацион состоит из рыбы, ягод, меда и падали, черный медведь способен использовать свою массивную силу и смертельные когти, чтобы убить живую добычу. Они удивительно быстры для таких массивных существ.</BlackBear.description>
+
+	<Camel.label>верблюд</Camel.label>
+	<Camel.description>Крупное наземное млекопитающее, приспособленное к засушливым условиям. Одомашненные с древних времен, их шерсть и кожа обладают исключительными теплоизоляционными свойствами в условиях пустыни, а их молоко весьма питательно. Верблюд может использоваться как вьючное животное, но два горба делают его чрезвычайно неудобным для верховой езды.\n\nБлагодаря запасу воды в своих крупных горбах и возвращению влаги из дыхания при выдохе, он может обходиться без питья в течение нескольких недель.</Camel.description>
+
+	<Camel.tools.0.label>левое копыто</Camel.tools.0.label>
+	<Camel.tools.1.label>правое копыто</Camel.tools.1.label>
+	<Camel.tools.3.label>голова</Camel.tools.3.label>
+
+	<CatBritishShorthair.label>британская короткошерстная кошка</CatBritishShorthair.label>
+	<CatBritishShorthair.description>Породистая версия обычной британской кошки с характерно коренастым телом, густой шерстью и очень широкой мордой. Несмотря на свой мощный вид из-за большой груди и массивных лап, эти кошки абсолютно безвредны. https://goo.su/ep67Rs</CatBritishShorthair.description>
+
+	<CatBritishShorthair.tools.0.label>левый коготь</CatBritishShorthair.tools.0.label>
+	<CatBritishShorthair.tools.1.label>правый коготь</CatBritishShorthair.tools.1.label>
+	<CatBritishShorthair.tools.3.label>голова</CatBritishShorthair.tools.3.label>
+
+	<Hedgehog.label>ёж</Hedgehog.label>
+	<Hedgehog.description>Ежи — это небольшие млекопитающие с конической мордой, короткими ногами и телом, покрытым иглами, похожими на иглы дикобраза. В случае опасности ёж сворачивается в клубок, так что иглы покрывают всю его открытую поверхность тела и защищают его от хищников.</Hedgehog.description>
+
+	<Hedgehog.tools.0.label>левый коготь</Hedgehog.tools.0.label>
+	<Hedgehog.tools.1.label>правый коготь</Hedgehog.tools.1.label>
+	<Hedgehog.tools.3.label>голова</Hedgehog.tools.3.label>
+
+	<Crocodile.label>крокодил</Crocodile.label>
+	<Crocodile.description>Крупное полуводное рептилия, чаще всего встречающаяся на берегах рек. Его хищные инстинкты в сочетании с чрезвычайно мощной челюстью позволяют ему справляться с гораздо более крупной добычей. Старые крокодилы могут вырастать до чудовищных размеров.</Crocodile.description>
+
+	<Giraffe.label>жираф</Giraffe.label>
+	<Giraffe.description>Жираф — одно из самых высоких млекопитающих в галактике, использующее свою длинную шею, чтобы дотянуться до листьев и веток, недоступных для более мелких травоядных.</Giraffe.description>
+
+	<Giraffe.tools.0.label>левое копыто</Giraffe.tools.0.label>
+	<Giraffe.tools.1.label>правое копыто</Giraffe.tools.1.label>
+	<Giraffe.tools.3.label>голова</Giraffe.tools.3.label>
+
+	<Gorilla.label>горилла</Gorilla.label>
+	<Gorilla.description>Эти обитающие на земле травоядные обезьяны являются крупнейшими из ныне живущих приматов и ближайшими живыми родственниками человека после шимпанзе и бонобо. Как и у всех человекообразных обезьян, руки гориллы длиннее её ног. Гориллы обычно удивительно робки, хотя могут проявлять агрессию, колотя себя в грудь и бросаясь на противника, если их социальная группа находится под угрозой.</Gorilla.description>
+
+	<Gorilla.tools.0.label>левый кулак</Gorilla.tools.0.label>
+	<Gorilla.tools.1.label>правый кулак</Gorilla.tools.1.label>
+	<Gorilla.tools.3.label>голова</Gorilla.tools.3.label>
+
+	<Gorilla.race.meatLabel>мясо примата</Gorilla.race.meatLabel>
+
+	<DesertTortoise.label>пустынная черепаха</DesertTortoise.label>
+	<DesertTortoise.description>Эта сильно бронированная рептилия, обитающая в пустыне, известна своей медлительностью и чрезвычайно прочным, плоским куполообразным панцирем, который делает её трудной для убийства. Несмотря на свой небольшой размер, пустынные черепахи являются отличными боевыми животными и относительно легко приручаются.</DesertTortoise.description>
+
+	<DesertTortoise.tools.0.label>клюв</DesertTortoise.tools.0.label>
+	<DesertTortoise.tools.1.label>голова</DesertTortoise.tools.1.label>
+
+	<Hippopotamus.label>бегемот</Hippopotamus.label>
+	<Hippopotamus.description>Массивное полуводное копытное млекопитающее с толстой кожей и очень мощной челюстью.\n\nЧрезвычайно трудно приручить, эти чудовищные существа часто нападают при неудачных попытках.</Hippopotamus.description>
+	<Hippopotamus.tools.1.label>левая нога</Hippopotamus.tools.1.label>
+	<Hippopotamus.tools.2.label>правая нога</Hippopotamus.tools.2.label>
+	<Hippopotamus.tools.3.label>голова</Hippopotamus.tools.3.label>
+
+	<Hyena.label>гиена</Hyena.label>
+	<Hyena.description>Крупное плотоядное, напоминающее собаку, чаще всего встречающееся в кустарниковых и пустынных районах. Гиены часто фигурируют в племенных легендах, а их смех может наводить страх во время длинных ночей в пустыне.</Hyena.description>
+	<Hyena.tools.0.label>левый коготь</Hyena.tools.0.label>
+	<Hyena.tools.1.label>правый коготь</Hyena.tools.1.label>
+	<Hyena.tools.3.label>голова</Hyena.tools.3.label>
+
+	<Jaguar.label>ягуар</Jaguar.label>
+	<Jaguar.description>Крупный представитель семейства кошачьих и единственный существующий представитель рода Panthera, обитающий в Америке на старой Земле. Эта пятнистая кошка напоминает леопарда, но обычно больше и крепче. Ягуар любит плавать и в основном ведет одиночный, оппортунистический образ жизни, охотясь из засады на вершине пищевой цепи.</Jaguar.description>
+
+	<Kangaroo.label>кенгуру</Kangaroo.label>
+	<Kangaroo.description>Кенгуру — крупное сумчатое размером с человека с сильными ногами и мощными руками. Племенные охотники предпочитают кенгуру из-за его нежного мяса и жаростойкой кожи. Кенгуру становятся мощными противниками в ближнем бою и легко обучаются, превращаясь в суперсолдат.</Kangaroo.description>
+	<Kangaroo.tools.3.label>голова</Kangaroo.tools.3.label>
+
+	<Koala.label>коала</Koala.label>
+	<Koala.description>Коалы легко узнаваемы по коренастому телу и большой круглой голове с пушистыми ушами. Они обычно обитают в засушливых и умеренных лесах, но их редко можно встретить в тропических районах. Коалы, любимцы королевских семей, являются отличными домашними животными благодаря их нежности.</Koala.description>
+	<Koala.tools.0.label>левый коготь</Koala.tools.0.label>
+	<Koala.tools.1.label>правый коготь</Koala.tools.1.label>
+	<Koala.tools.3.label>голова</Koala.tools.3.label>
+
+	<Lemur.label>лемур</Lemur.label>
+	<Lemur.description>Маленький примат, лемуры ведут древесный и обычно ночной образ жизни. У них заостренная морда, большие глаза и длинный хвост. Несмотря на то, что они являются социальными существами, традиционно их считают менее умными, чем другие приматы, поскольку они не используют инструменты в дикой природе.</Lemur.description>
+	<Lemur.tools.0.label>левый кулак</Lemur.tools.0.label>
+	<Lemur.tools.1.label>правый кулак</Lemur.tools.1.label>
+	<Lemur.tools.3.label>голова</Lemur.tools.3.label>
+
+	<Lion.label>лев</Lion.label>
+	<Lion.description>Царь животного мира, лев — это мускулистая кошка с глубокой грудью, короткой головой и заметной гривой. Будучи самой крупной из кошачьих, львы являются отличными боевыми животными, несмотря на свою дикую природу.</Lion.description>
+	<Lion.tools.0.label>левый коготь</Lion.tools.0.label>
+	<Lion.tools.1.label>правый коготь</Lion.tools.1.label>
+	<Lion.tools.3.label>голова</Lion.tools.3.label>
+
+	<Megascorpion.label>мегаскорпион</Megascorpion.label>
+	<Megascorpion.description>Гигантский генетически модифицированный скорпион. Изначально созданный как идеальное оружие для убийств, он редко возвращается в свою естественную среду обитания — пустыню. Очень мощный яд в его жале помогает ему справляться даже с гораздо более крупной добычей. Как социальное существо, он не может размножаться в одиночку.</Megascorpion.description>
+	<Megascorpion.tools.0.label>жало</Megascorpion.tools.0.label>
+	<Megascorpion.tools.1.label>мандибулы</Megascorpion.tools.1.label>
+	<Megascorpion.tools.2.label>голова</Megascorpion.tools.2.label>
+
+	<Moose.label>лось</Moose.label>
+	<Moose.description>Крупнейший и самый тяжелый представитель семейства оленевых, хорошо адаптированный к жизни в холодном климате. Легко опознается по размеру рогов и длинным тонким ногам. Не может нести грузы, но прирученные лоси могут давать молоко. В отличие от большинства других видов оленей, лоси не образуют стада и ведут одиночный образ жизни. Хотя они обычно медлительны и малоподвижны, лоси могут становиться агрессивными и двигаться быстро, если их разозлить или напугать.</Moose.description>
+	<Moose.tools.0.label>левое копыто</Moose.tools.0.label>
+	<Moose.tools.1.label>правое копыто</Moose.tools.1.label>
+	<Moose.tools.3.label>голова</Moose.tools.3.label>
+
+	<Pallas_cat.label>манул</Pallas_cat.label>
+	<Pallas_cat.description>Коренастая кошка размером с обычную домашнюю кошку, но гораздо более дикая. Адаптированный к прятанию в каменных расщелинах в родных степях, манул стал популярным как уничтожитель вредителей в различных укромных уголках космических кораблей.</Pallas_cat.description>
+	<Pallas_cat.tools.0.label>левый коготь</Pallas_cat.tools.0.label>
+	<Pallas_cat.tools.1.label>правый коготь</Pallas_cat.tools.1.label>
+	<Pallas_cat.tools.3.label>голова</Pallas_cat.tools.3.label>
+
+	<Pug.label>мопс</Pug.label>
+	<Pug.description>Маленькая собака с физически отличительными чертами: морщинистая, короткомордая мордочка и закрученный хвост. Мопсы известны своей чрезвычайной общительностью и дружелюбностью, однако из-за многолетних генетических изменений у них очень короткая продолжительность жизни. Какую бы жизнь они ни проживали, они всегда будут радовать окружающих.</Pug.description>
+	<Pug.tools.0.label>левый коготь</Pug.tools.0.label>
+	<Pug.tools.1.label>правый коготь</Pug.tools.1.label>
+	<Pug.tools.2.label>милые маленькие зубки</Pug.tools.2.label>
+	<Pug.tools.3.label>голова</Pug.tools.3.label>
+
+	<Seal.label>тюлень</Seal.label>
+	<Seal.description>Среднего размера полуводное млекопитающее, которое выходит на берег только для того, чтобы поесть, спариться и спастись от хищников. Будучи агрессивным охотником, тюлени способны справляться с гораздо более крупной добычей и известны каннибализмом в случае нехватки пищи.</Seal.description>
+	<Seal.tools.0.label>левый передний ласт</Seal.tools.0.label>
+	<Seal.tools.1.label>правый передний ласт</Seal.tools.1.label>
+	<Seal.tools.3.label>голова</Seal.tools.3.label>
+	<Seal.race.meatLabel>мясо ластоногого</Seal.race.meatLabel>
+
+	<Tiger.label>тигр</Tiger.label>
+	<Tiger.description>Тигр — крупнейший вид среди больших кошек. Его легко узнать по темным вертикальным полосам на рыжевато-оранжевой шерсти с более светлым низом. Он является хищником на вершине пищевой цепи, территориален и, как правило, одиночка. В дикой природе тигры в основном питаются крупными и средними млекопитающими.</Tiger.description>
+	<Tiger.tools.0.label>левый коготь</Tiger.tools.0.label>
+	<Tiger.tools.1.label>правый коготь</Tiger.tools.1.label>
+	<Tiger.tools.3.label>голова</Tiger.tools.3.label>
+
+	<Walrus.label>морж</Walrus.label>
+	<Walrus.description>Крупное морское животное, встречающееся только в арктических регионах планеты, морж имеет выдающиеся клыки, которые являются ценным предметом роскоши по всей планете.</Walrus.description>
+	<Walrus.tools.1.label>голова</Walrus.tools.1.label>
+	<WalrusTusk.label>бивень моржа</WalrusTusk.label>
+	<WalrusTusk.description>Моржовый бивень. Он довольно ценен, но неудобен в качестве оружия ближнего боя.</WalrusTusk.description>
+	<WalrusTusk.tools.0.label>острие</WalrusTusk.tools.0.label>
+	<WalrusTusk.tools.1.label>основание</WalrusTusk.tools.1.label>
+
+	<Wildebeest.label>гну</Wildebeest.label>
+	<Wildebeest.description>Также называемый гну, этот дикий бык получил свое название благодаря угрожающим рогам, заостренной бороде и большой голове. Эти животные известны своими миграциями и размером своих стад.\n\nИз-за своей дикости он дает молоко гораздо медленнее, чем обычная корова.</Wildebeest.description>
+	<Wildebeest.tools.1.label>голова</Wildebeest.tools.1.label>
+	<Wildebeest.tools.2.label>левое копыто</Wildebeest.tools.2.label>
+	<Wildebeest.tools.3.label>правое копыто</Wildebeest.tools.3.label>
+
+	<Zebra.label>зебра</Zebra.label>
+	<Zebra.description>Представитель семейства лошадиных, обитающий в засушливых и пустынных районах. Хотя она и не имеет таких размеров, как лошадь, благодаря годам эволюции она стала одним из самых быстрых копытных животных.</Zebra.description>
+	<Zebra.tools.0.label>голова</Zebra.tools.0.label>
+	<Zebra.tools.1.label>левое копыто</Zebra.tools.1.label>
+	<Zebra.tools.2.label>правое копыто</Zebra.tools.2.label>
+
+</LanguageData>

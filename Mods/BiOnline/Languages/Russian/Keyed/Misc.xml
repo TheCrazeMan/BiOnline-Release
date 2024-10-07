@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<BiOnline.Settings.BiOnlineMod>BiOnline</BiOnline.Settings.BiOnlineMod>
+	<BiOnline.Settings.ShowStartInformation>Показывать всплывающую подсказку</BiOnline.Settings.ShowStartInformation>
+	
+	<BiOnline_StartingMessage>
+Добро пожаловать на сервер BiOnline.  
+	
+Моды нашего сервера нацелены на разнообразие ванильной игры, без имбалансных и некрасивых модификаций.
+На данный момент у нас переработаны:
+	
+Боевая система, взятая из мода Combat Extended
+	
+Генерация руд, включающая в себя разделение по биомам
+Керамит -> (Пустыня и Полупустыня)
+Мифрил -> (Ледник, Тундра)
+Хлорофит -> (Тропики, обычное и тропическое болото)
+	
+Кроме того, у некоторых сценариев есть кастомный контент, недоступных на остальных. Например, начиная за Племя (Lost Tribe) появится возможность варить зелья и передвигаться с большей скоростью по глобальной карте.
+	
+Общайтесь и следите за развитием сервера в Discord:(https://discord.gg/RRCWT8M)
+Поддержать разработку модов денюжкой можно на Boosty: (https://boosty.to/bionline)
+Wiki по сборке сервера (Ещё в разработке) (https://bionline-wiki.ru)
+	
+Удачи, Игрок!
+	</BiOnline_StartingMessage>
+	<BiOnline_StartingMessageHide>Больше не показывать</BiOnline_StartingMessageHide>
+	
+	<Dialog_InputPassword.Label>Требуется пароль администратора</Dialog_InputPassword.Label>
+	<Dialog_InputPassword.Password>Пароль</Dialog_InputPassword.Password>
+	<Dialog_InputPassword.Accept>Вход</Dialog_InputPassword.Accept>
+	<Dialog_InputPassword.Decline>Закрыть</Dialog_InputPassword.Decline>
+	<Dialog_InputPassword.InccoretPassword>Некорректный пароль</Dialog_InputPassword.InccoretPassword>
+	
+	<Requirement_Things_Item>\n- {0}: {1} из {2} шт.</Requirement_Things_Item>
+	<Requirement_Things_Category>\n- Предмет категории {0}: {1} из {2} шт.</Requirement_Things_Category>
+	<Requirement_ResearchTreeHeader>\nТребования к исследованию:</Requirement_ResearchTreeHeader>
+	<Requirement_Things>\n- {0} в количестве {1} шт.</Requirement_Things>
+	<Requirement_Things_Category_Req>\n- Любой предмет категории {0} в количестве {1} шт.</Requirement_Things_Category_Req>
+	<ResourceBox_GetInspectString>\nСодержащиеся ресурсы:</ResourceBox_GetInspectString>
+	
+	<DefModExtension_XenoTypeDef.Disabled>Запрещен выбор данного ксенотипа в редакторе.</DefModExtension_XenoTypeDef.Disabled>
+	
+	<CompModularBuilding.ModuleSlotInfo>Место для расширения\nПодходящие строения: {0}</CompModularBuilding.ModuleSlotInfo>
+	<CompModularBuilding.ModulesListLabel>Доступные модули</CompModularBuilding.ModulesListLabel>
+	<CompModularBuilding.ModulesListDesc>Список доступных модулей</CompModularBuilding.ModulesListDesc>
+	<CompModularBuilding.WrongRotation>\n\n(установлено, неверный поворот)</CompModularBuilding.WrongRotation>
+	<Bill_DoInterface_Tip>Отсутствует пристройка: {0}</Bill_DoInterface_Tip>
+	<RecipeDefRequiredFacility.AnyOf>\nЛюбой из {0}</RecipeDefRequiredFacility.AnyOf>
+	<RecipeDefRequiredFacility.All>{0}</RecipeDefRequiredFacility.All>
+	<RecipeDefRequiredModule>{0}</RecipeDefRequiredModule>
+	<WaterBill_Unavaliable>требуется {0}л воды</WaterBill_Unavaliable>
+	<CompWorkTableWithWater.CanManualFill>Наполнять вручную</CompWorkTableWithWater.CanManualFill>
+	<CompWorkTableWithWater.CanManualFill.Desc>Разрешает или запрещает заполнять устройство водой вручную.</CompWorkTableWithWater.CanManualFill.Desc>
+	
+	<VisitMapParentReportString>Направляется к {0}</VisitMapParentReportString>
+	<AttackMapParent>Атаковать {0}</AttackMapParent>
+	<VisitMapParent>Посетить {0}</VisitMapParent>
+	<Building_CommsBuilding.OpenComms>Начать общение</Building_CommsBuilding.OpenComms>
+	
+	<CommsBuilding_Window.InfoLabel>Информация</CommsBuilding_Window.InfoLabel>
+	<CommsBuilding_Window.FactionStatusLabel>
+Репутация: {0}
+Статус: {1}
+Тех.уровень: {2}	
+	</CommsBuilding_Window.FactionStatusLabel>
+	<FactionRelationKindFriendLower>друзья</FactionRelationKindFriendLower>
+	<LetterLabelRelationsChange_FriendFromNeutral>Нейтралы стали друзьями: {0}</LetterLabelRelationsChange_FriendFromNeutral>
+	<FactionRelationKindFriend>Друзья</FactionRelationKindFriend>
+	
+	<CommsBuilding_Window.FactionStatus.Goodwill>Репутация: {0}</CommsBuilding_Window.FactionStatus.Goodwill>
+	<CommsBuilding_Window.FactionStatus.Relation>Статус: {0}</CommsBuilding_Window.FactionStatus.Relation>
+	<CommsBuilding_Window.FactionStatus.TechLevel>Тех.уровень: {0}</CommsBuilding_Window.FactionStatus.TechLevel>
+	<CommsBuilding_Window.CommsTab>Связь</CommsBuilding_Window.CommsTab>
+	<CommsBuilding_Window.ServiceTab>Привилегии</CommsBuilding_Window.ServiceTab>
+	<CommsBuilding_Window.OrdersTab>Заказы</CommsBuilding_Window.OrdersTab>
+	
+	<FactionInteractionOption_Gift>Отправить подарок</FactionInteractionOption_Gift>
+	<FactionInteractionOption_Insult>Оскорбить</FactionInteractionOption_Insult>
+	<FactionInteractionOption_UnknownPlace>Неизвестное место</FactionInteractionOption_UnknownPlace>
+	<FactionInteractionOption_StoryQuest>Сюжетное задание</FactionInteractionOption_StoryQuest>
+	<FactionInteractionOption_CaravanRequest>Заказать караван</FactionInteractionOption_CaravanRequest>
+	<FactionInteractionOption_OrbitalTraderRequest>Заказать орбитального торговца</FactionInteractionOption_OrbitalTraderRequest>
+	<CommsBuilding_Window.GoodWillRequired>Требуется {0} репутации</CommsBuilding_Window.GoodWillRequired>
+	
+	<FactionInteractionOption_Gift.NoOrbitalTradeBeacon>Нет ни одного работающего маяка.</FactionInteractionOption_Gift.NoOrbitalTradeBeacon>
+	<FactionInteractionOption_Gift.NoEnoughSilver>Требуется {0} серебра.</FactionInteractionOption_Gift.NoEnoughSilver>
+	
+	<CommsBuilding_Window.OnCooldown>Ожидание: {0} дней</CommsBuilding_Window.OnCooldown>
+	
+	<FactionInteractionOption_UnknownPlace.Info>Запросить координаты неизвестного места</FactionInteractionOption_UnknownPlace.Info>
+	<FactionInteractionOption_UnknownPlace.RequiredTitle>Требуется:</FactionInteractionOption_UnknownPlace.RequiredTitle>
+	<FactionInteractionOption_UnknownPlace.RequiredInfo>Серебро: {0}
+Репутация: {1}</FactionInteractionOption_UnknownPlace.RequiredInfo>
+	<FactionInteractionOption_UnknownPlace.Accept>Отправить сообщение</FactionInteractionOption_UnknownPlace.Accept>
+	<FactionInteractionOption_CaravanRequest.RequestTitle>Караван вызван</FactionInteractionOption_CaravanRequest.RequestTitle>
+	<FactionInteractionOption_CaravanRequest.RequestDesc>Вы вызвали торговый караван {0}. Он прибудет через {1} дней.</FactionInteractionOption_CaravanRequest.RequestDesc>
+	
+	<FactionInteractionOption_StoryQuest.Info>{0}
+	
+{1}</FactionInteractionOption_StoryQuest.Info>
+	<FactionInteractionOption_StoryQuest.Accept>Принять задание</FactionInteractionOption_StoryQuest.Accept>
+	<CommsBuilding_Window.Service.Cooldown>Ожидание: {0} дней</CommsBuilding_Window.Service.Cooldown>
+	<CommsBuilding_Window.Service.Info>Требуется репутация для принятия привелегии: {0}
+	
+Требуется репутация для использования до окончания времени ожидания: {1}</CommsBuilding_Window.Service.Info>
+	<CommsBuilding_Window.Service.CallPermit>Применить привилегию</CommsBuilding_Window.Service.CallPermit>
+	<CommsBuilding_Window.Service.GetPermit>Получить привилегию</CommsBuilding_Window.Service.GetPermit>
+	<CommsBuilding_Window.Service.ReturnPermits>Вернуть все привилегии</CommsBuilding_Window.Service.ReturnPermits>
+	
+	<FactionPermitDef.AlreadyHasPermit>У вас уже имеется данная привилегия.</FactionPermitDef.AlreadyHasPermit>
+	<FactionPermitDef.NotEnoughGoodwill>Требуется {0} репутации.</FactionPermitDef.NotEnoughGoodwill>
+	<FactionPermitDef.AddedNewPermit>Привилегия {0} получена.</FactionPermitDef.AddedNewPermit>
+	<FactionPermitDef.OnCooldown>Подождите еще {0} чтобы использовать привилегию.</FactionPermitDef.OnCooldown>
+	<FactionPermitDef.PermitsReturned>Вы вернули все привилегии.</FactionPermitDef.PermitsReturned>
+	
+	<FleaMarketItem.Buy>Заказать</FleaMarketItem.Buy>
+	<FleaMarket.NotAvailable>Недоступно для покупки.</FleaMarket.NotAvailable>
+	<FleaMarket.SuccessBuyLetterTitle>Доставка!</FleaMarket.SuccessBuyLetterTitle>
+	<FleaMarket.SuccessBuyLetterDesc>Доставка предмета: {0}</FleaMarket.SuccessBuyLetterDesc>
+	<FleaMarket.NoOrbitalTradeBeacon>Отсутствуют рабочие маяки.</FleaMarket.NoOrbitalTradeBeacon>
+	<FleaMarket.NoEnoughtCurrency>Недостаточно {0} для покупки. Требуется: {1}.</FleaMarket.NoEnoughtCurrency>
+	<FleaMarket.NoEnoughtThingDef>Недостаточно {0} для продажи.</FleaMarket.NoEnoughtThingDef>
+	
+	<ScenPart_FactionReputationLimiter>Ограничение репутации</ScenPart_FactionReputationLimiter>
+	
+	<ScenPart_FactionReputationLimiter.Summary>Ограничение репутации: \n{0}</ScenPart_FactionReputationLimiter.Summary>
+	<ScenPart_FactionReputationLimiter.Faction>- {0}: {1}</ScenPart_FactionReputationLimiter.Faction>
+	
+	<!---->
+	<CompGridWatcher.All>Все</CompGridWatcher.All>
+	<CompGridWatcher.ChangeOreSelected>Показать: {0}</CompGridWatcher.ChangeOreSelected>
+	<CompGridWatcher.ChangeOreSelectedDesc>Выбор руды для отображения.</CompGridWatcher.ChangeOreSelectedDesc>
+	<PlaySettings.ShowOreGridOverlay>Отображение подземных ресурсов</PlaySettings.ShowOreGridOverlay>
+	<Building_Mine.Progress>Прогресс раскопок: {0}</Building_Mine.Progress>
+	
+	<Building_Mine.SelectedOreDef>Добывать: {0}</Building_Mine.SelectedOreDef>
+	<Building_Mine.SelectedOreDefDesc>Шахта будет добывать только эту руду.</Building_Mine.SelectedOreDefDesc>
+	<Building_Mine.All>Все</Building_Mine.All>
+	<!---->
+	<Designator_ExploreTheSoil_Label>Исследовать почву</Designator_ExploreTheSoil_Label>
+	<Designator_ExploreTheSoil_Desc>Исследовать почву для поиска ресурсов под землей.</Designator_ExploreTheSoil_Desc>
+	<!---->
+	
+	<CompTent.Spawn.Label>Установить {0}</CompTent.Spawn.Label>
+	<CompTent.Spawn.Desc>Устанавливает {0} в указанное место</CompTent.Spawn.Desc>
+	<CompTent.CannotPlace>Невозможно установить палатку</CompTent.CannotPlace>
+	<Building_TentBuilding.PackTent.Label>Собрать палатку</Building_TentBuilding.PackTent.Label>
+	<Building_TentBuilding.PackTent.Desc>Собрать палатку</Building_TentBuilding.PackTent.Desc>
+	
+	<CommsBuilding_Window.FleaMarketItem.InfoLabel>Количество: {0}\n\nРепутация: {1}</CommsBuilding_Window.FleaMarketItem.InfoLabel>
+	
+	<Ability_AcidBombing.AcidLevelIsLow>Слишком голоден для использования способности</Ability_AcidBombing.AcidLevelIsLow>
+	
+	<BiOnlineForcedHediff.Label>Cостояние здоровья</BiOnlineForcedHediff.Label>
+	
+	<Hediff_ModuleCatharsis.Message>{0} дистанционно отключен для {1}.</Hediff_ModuleCatharsis.Message>
+	
+</LanguageData>

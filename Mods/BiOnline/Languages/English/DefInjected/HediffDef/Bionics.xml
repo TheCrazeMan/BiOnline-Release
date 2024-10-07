@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<CyberBionicsArm.label>Advanced cybernetic arm</CyberBionicsArm.label>
+	<CyberBionicsArm.labelNoun>Advanced cybernetic arm</CyberBionicsArm.labelNoun>
+	<CyberBionicsArm.description>An installed advanced cybernetic arm. Be careful with that, it can cause cyberpsychosis.</CyberBionicsArm.description>
+	
+	<CyberBionicsLeg.label>Advanced cybernetic leg</CyberBionicsLeg.label>
+	<CyberBionicsLeg.labelNoun>Advanced cybernetic leg</CyberBionicsLeg.labelNoun>
+	<CyberBionicsLeg.description>An installed advanced cybernetic leg. Be careful with that, it can cause cyberpsychosis.</CyberBionicsLeg.description>
+	
+</LanguageData>

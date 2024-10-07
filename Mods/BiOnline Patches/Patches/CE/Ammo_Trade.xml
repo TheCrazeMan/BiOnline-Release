@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="12GaugeChargedBase" or @Name="12x72mmChargedBase" or @Name="6x18mmChargedBase" or @Name="6x24mmChargedBase" or @Name="8x35mmChargedBase" or @Name="8x50mmChargedBase"]/tradeTags</xpath>
+		<value>
+
+			<tradeTags>
+			  <li>CE_AutoEnableCrafting_FabricationBench</li>
+			</tradeTags>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="12x64mmChargedBase" or @Name="5x35mmChargedBase" or @Name="6x22mmChargedBase"]/tradeTags</xpath>
+		<value>
+
+			<tradeTags>
+			  <li MayRequire="Ludeon.RimWorld.Biotech">CE_AutoEnableCrafting_FabricationBench</li>
+			</tradeTags>
+
+		</value>
+	</Operation>	
+</Patch>

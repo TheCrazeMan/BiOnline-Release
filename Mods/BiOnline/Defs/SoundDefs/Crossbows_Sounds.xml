@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<SoundDef>
+    <defName>Cr_Crossbows</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Cr_Shot_Crossbow</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20.70111</min>        
+          <max>47.30627</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9976015</min>
+          <max>1.1769372</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

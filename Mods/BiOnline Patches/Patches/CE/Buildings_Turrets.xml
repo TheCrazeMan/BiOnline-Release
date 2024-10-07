@@ -1,0 +1,17 @@
+<Patch>
+<!-- 
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Turret_KPV"]/costList</xpath>
+			<value>
+					<AlloysCeramite>10</AlloysCeramite>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Turret_M240B"]/costList</xpath>
+			<value>
+					<AlloysCeramite>8</AlloysCeramite>
+			</value>
+		</Operation>
+ -->
+</Patch>

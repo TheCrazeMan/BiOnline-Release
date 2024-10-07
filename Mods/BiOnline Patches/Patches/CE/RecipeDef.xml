@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[
+					defName="MakeAmmo_MortarGrenade" or 
+					defName="MakeAmmo_MiniCannonBall_Round" or
+					defName="MakeAmmo_MiniCannonBall_Grape" or
+					defName="MakeAmmo_CannonBall_Round" or
+					defName="MakeAmmo_CannonBall_Bursting" or
+					defName="MakeAmmo_CannonBall_Incendiary" or 
+					defName="MakeAmmo_CannonBall_Grape"]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

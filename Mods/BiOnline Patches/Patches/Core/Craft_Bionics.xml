@@ -1,0 +1,60 @@
+<Patch>
+
+	<!-- Бафф архотека -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ArchotechLeg" or defName="ArchotechArm" or defName="ArchotechEye"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>2</partEfficiency>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechLeg" or defName="ArchotechArm" or defName="ArchotechEye"]/thingSetMakerTags</xpath>
+		<value>
+			<thingSetMakerTags>
+				<li>RewardStandardMidFreq</li>			
+			</thingSetMakerTags>
+		</value>
+	</Operation>
+
+	<!-- Перенос бионики на медицинский станок -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="BodyPartBionicBase" or defName="DetoxifierLung" or defName="DetoxifierKidney"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>MedicalBench</li>		
+			</recipeUsers>
+		</value>
+	</Operation>
+
+	<!-- Обычные протезы -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SimpleProstheticLeg" or defName="SimpleProstheticArm"]/costList</xpath> <!-- Ручки-ножки -->
+		<value>
+			<costList>
+			  <Ceramics>25</Ceramics>
+			  <Steel>15</Steel>
+			  <ComponentIndustrial>4</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+
+
+	<!-- Замена стоимости крафта бионических протезов -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BionicEye"]/costList</xpath> <!-- Глазюки -->
+		<value>
+			<costList>
+			  <Glass>5</Glass>
+			  <Plasteel>15</Plasteel>
+			  <ComponentSpacer>4</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>	
+	
+	
+</Patch>

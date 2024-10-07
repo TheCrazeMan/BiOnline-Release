@@ -1,0 +1,25 @@
+<LanguageData>
+<!--Defs/ThingDefs_Races/Races_Animal_Insect.xml-->
+<AmmoSet_EquiteOnly.label>Токсичные иглы Эквита</AmmoSet_EquiteOnly.label>
+
+<!--Defs/Ammo/Medieval/Ballista.xml-->
+<AmmoSet_BallistaBolt.label>болты для баллисты</AmmoSet_BallistaBolt.label>
+<AmmoSet_BeeSwarmBallistaBolt.label>болты для баллисты</AmmoSet_BeeSwarmBallistaBolt.label>
+
+<AmmoSet_MakeshiftGauge.label>Самодельный дробовой патрон</AmmoSet_MakeshiftGauge.label>
+<AmmoSet_MakeshiftKarov.label>Самодельный пистолетный патрон</AmmoSet_MakeshiftKarov.label>
+<AmmoSet_MakeshiftMagnum.label>Самодельный патрон для магнума</AmmoSet_MakeshiftMagnum.label>
+<AmmoSet_MakeshiftSoviet.label>Самодельный патрон для автомата</AmmoSet_MakeshiftSoviet.label>
+<AmmoSet_MakeshiftSniper.label>Самодельный патрон для винтовки</AmmoSet_MakeshiftSniper.label>
+
+<AmmoSet_BombardShot.label>Патрон бомбарды</AmmoSet_BombardShot.label>
+
+<AmmoSet_PlasmaCell_Shotgun.label>Плазменная ячейка</AmmoSet_PlasmaCell_Shotgun.label>
+<AmmoSet_PlasmaCell_Sniper.label>Плазменная ячейка</AmmoSet_PlasmaCell_Sniper.label>
+<AmmoSet_PlasmaCell_Mini.label>Плазменная ячейка</AmmoSet_PlasmaCell_Mini.label>
+
+<AmmoSet_PMC_Bolter.label>Патрон болтера</AmmoSet_PMC_Bolter.label>
+<AmmoSet_PMC_Heavy.label>Патрон тяжёлого болтера</AmmoSet_PMC_Heavy.label>
+<AmmoSet_PMC_Sniper.label>Патрон снайп-болтера</AmmoSet_PMC_Sniper.label>
+
+</LanguageData>

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--Переплавка-->
+	<ProcessorFramework.ProcessDef Name="SmeltingOre" Abstract="True">
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>false</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color>
+		<customLabel></customLabel>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SmeltingOre">
+		<defName>SmeltingGlass</defName>
+		<thingDef>Glass</thingDef>
+		<efficiency>1</efficiency>		
+		<processDays>0.8</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mixed_glass_package</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SmeltingOre">
+		<defName>SmeltingCeramics</defName>
+		<thingDef>Ceramics</thingDef>
+		<efficiency>1</efficiency>
+		<processDays>0.8</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mixed_Ceramics_package</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SmeltingOre">
+		<defName>SmeltingBricks</defName>
+		<thingDef>Brick</thingDef>
+		<efficiency>1</efficiency>
+		<processDays>0.6</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RawBrick</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SmeltingOre">
+		<defName>SmeltingOre_Iron</defName>
+		<thingDef>Iron</thingDef>
+		<processDays>0.7</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>BIO_IronOre</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SmeltingOre">
+		<defName>SmeltingOre_Copper</defName>
+		<thingDef>Copper</thingDef>
+		<processDays>0.7</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>CopperOre</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SmeltingOre">
+		<defName>SmeltingOre_Lead</defName>
+		<thingDef>Lead</thingDef>
+		<processDays>0.7</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>LeadOre</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="SmeltingOre">
+		<defName>SmeltingOre_Steel</defName>
+		<thingDef>Steel</thingDef>
+		<processDays>0.8</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mixed_steel_package</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+
+	
+	<!--Кувшин ферментации-->
+
+	<ProcessorFramework.ProcessDef Name="FermentationJug" Abstract="True">
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color>
+		<customLabel></customLabel>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_Berry_braga</defName>
+		<thingDef>Berry_braga</thingDef>
+		<processDays>3</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_Berry_braga</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_Soma</defName>
+		<thingDef>Soma</thingDef>
+		<processDays>3</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_Soma</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_RAW_FluTea</defName>
+		<thingDef>TM_FluTea</thingDef>
+		<processDays>4</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_FluTea</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_RAW_ImmunityTea</defName>
+		<thingDef>TM_ImmunityTea</thingDef>
+		<processDays>4</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_ImmunityTea</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_RAW_CurativeTea</defName>
+		<thingDef>TM_CurativeTea</thingDef>
+		<processDays>4</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_CurativeTea</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_RAW_DigestiveTea</defName>
+		<thingDef>TM_DigestiveTea</thingDef>
+		<processDays>4</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_DigestiveTea</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_RAW_HallucinationTea</defName>
+		<thingDef>TM_HallucinationTea</thingDef>
+		<processDays>4</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_HallucinationTea</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_RAW_InsanityTea</defName>
+		<thingDef>TM_InsanityTea</thingDef>
+		<processDays>4</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_InsanityTea</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>Fermentation_RAW_HungerTea</defName>
+		<thingDef>TM_HungerTea</thingDef>
+		<processDays>4</processDays>
+		<temperatureSafe>-1.0~38.0</temperatureSafe>
+		<temperatureIdeal>20~32.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RAW_HungerTea</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="FermentationJug">
+		<defName>FermentationYeasts</defName>
+		<thingDef>Yeasts</thingDef>
+		<capacityFactor>0.5</capacityFactor>
+		<efficiency>0.2</efficiency>		
+		<processDays>1</processDays>
+		<temperatureSafe>27.0~40.0</temperatureSafe>
+		<temperatureIdeal>30~34.0</temperatureIdeal>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Molasses</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>	
+	
+	<!--Сушилка для маса-->
+	<ProcessorFramework.ProcessDef Name="DryingRack" Abstract="True">
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~34.0</temperatureSafe>
+		<temperatureIdeal>14~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>4.5</ruinedPerDegreePerHour>
+		<speedBelowSafe>0</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.0</rainFactor>
+		<snowFactor>1.0~0.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color>
+		<customLabel></customLabel>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="DryingRack">
+		<defName>DryingRack_RAW_Dried_meat</defName>
+		<thingDef>Dried_meat</thingDef>
+		<processDays>4</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Dried_meat_RAW</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DryingRack">
+		<defName>DryingRack_MedicineHerbal</defName>
+		<thingDef>MedicineHerbal</thingDef>
+		<processDays>4</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RawHealroot</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	
+	<!--Бочка ферментации-->
+	<ProcessorFramework.ProcessDef Name="FermentationBarrel" Abstract="True">
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>5.0~40.0</temperatureSafe>
+		<temperatureIdeal>18.0~30.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>0~0</sunFactor>
+		<rainFactor>0~0</rainFactor>
+		<snowFactor>0~0</snowFactor>
+		<windFactor>0~0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>0.0</powerUseFactor>
+		<fuelUseFactor>0.0</fuelUseFactor>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color>
+	</ProcessorFramework.ProcessDef>	
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationBarrel">
+		<defName>FermentationRawWort</defName>
+		<thingDef>RawBraga</thingDef>
+		<processDays>8</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RawWort</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FermentationBarrel">
+		<defName>FermentationWortWine</defName>
+		<thingDef>Wine</thingDef>
+		<processDays>10</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>WortWine</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<!-- Кодировщик сывороток-->
+
+	<ProcessorFramework.ProcessDef Name="SerumCoder" Abstract="True">
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>false</usesTemperature>
+		<temperatureSafe>0.0~23.0</temperatureSafe>
+		<temperatureIdeal>5.0~17.0</temperatureIdeal>	
+		<ruinedPerDegreePerHour>4.5</ruinedPerDegreePerHour>
+		<speedBelowSafe>0</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color>
+		<customLabel></customLabel>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_HealingSerum</defName>
+		<thingDef>MechSerumHealer</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>MechSerumHealer_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_RessurectorSerum</defName>
+		<thingDef>MechSerumResurrector</thingDef>
+		<processDays>60</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>MechSerumResurrector_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Shooting_Uncoded</defName>
+		<thingDef>Neurotrainer_Shooting</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Shooting_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Melee_Uncoded</defName>
+		<thingDef>Neurotrainer_Melee</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Melee_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Construction_Uncoded</defName>
+		<thingDef>Neurotrainer_Construction</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Construction_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Mining_Uncoded</defName>
+		<thingDef>Neurotrainer_Mining</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Mining_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Cooking_Uncoded</defName>
+		<thingDef>Neurotrainer_Cooking</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Cooking_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Plants_Uncoded</defName>
+		<thingDef>Neurotrainer_Plants</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Plants_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Animals_Uncoded</defName>
+		<thingDef>Neurotrainer_Animals</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Animals_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Crafting_Uncoded</defName>
+		<thingDef>Neurotrainer_Crafting</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Crafting_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Artistic_Uncoded</defName>
+		<thingDef>Neurotrainer_Artistic</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Artistic_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Medicine_Uncoded</defName>
+		<thingDef>Neurotrainer_Medicine</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Medicine_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Social_Uncoded</defName>
+		<thingDef>Neurotrainer_Social</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Social_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="SerumCoder">
+		<defName>SerumCoder_Neurotrainer_Intellectual_Uncoded</defName>
+		<thingDef>Neurotrainer_Intellectual</thingDef>
+		<processDays>15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Neurotrainer_Intellectual_Uncoded</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<!--Ловушки для рыбы-->
+	
+	<ProcessorFramework.ProcessDef Name="FishTrap" Abstract="True">
+		<capacityFactor>20</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>false</usesTemperature>
+		<temperatureSafe>0.0~23.0</temperatureSafe>
+		<temperatureIdeal>5.0~17.0</temperatureIdeal>	
+		<ruinedPerDegreePerHour>4.5</ruinedPerDegreePerHour>
+		<speedBelowSafe>0</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.0</rainFactor>
+		<snowFactor>1.0~0.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>0.0</powerUseFactor>
+		<fuelUseFactor>0.0</fuelUseFactor>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color>
+		<customLabel></customLabel>
+<!-- 		<bonusOutputs>
+			<Fish>30,2</Fish>
+			<Fish>60,1</Fish>
+		</bonusOutputs> -->
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="FishTrap">
+		<defName>FishTrap</defName>
+		<thingDef>Fish</thingDef>
+		<processDays>0.5</processDays>
+		<efficiency>0.2</efficiency>	
+		<ingredientFilter>
+			<thingDefs>
+				<li>RawCorn</li>
+				<li>RawWheat</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef Name="ElectricalBuildings" Abstract="True">
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>false</usesTemperature>
+		<temperatureSafe>0.0~23.0</temperatureSafe>
+		<temperatureIdeal>5.0~17.0</temperatureIdeal>	
+		<ruinedPerDegreePerHour>4.5</ruinedPerDegreePerHour>
+		<speedBelowSafe>0</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<color>(255, 255, 255)</color>
+		<customLabel></customLabel>
+	</ProcessorFramework.ProcessDef>
+	<!--Дробилка-->
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>CrushingChunkinCrushedStone</defName>
+		<thingDef>CrushedStone</thingDef>
+		<efficiency>0,075</efficiency>		
+		<processDays>0.15</processDays>
+		<ingredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>CrushingChunkinSand</defName>
+		<thingDef>Sand</thingDef>
+		<efficiency>0,075</efficiency>		
+		<processDays>0.3</processDays>
+		<ingredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>CrushingCrushedStone</defName>
+		<thingDef>Sand</thingDef>
+		<efficiency>1</efficiency>		
+		<processDays>0.15</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>CrushedStone</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>CrushingFlour</defName>
+		<thingDef>Flour</thingDef>
+		<bonusOutputs>
+			<Hay>100,50</Hay>
+		</bonusOutputs>
+		<capacityFactor>0.01</capacityFactor>
+		<efficiency>0.06</efficiency>		
+		<processDays>0.20</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RawWheat</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	<!--Прялка-->
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>RecipeCloth</defName>
+		<thingDef>Cloth</thingDef>
+		<efficiency>1</efficiency>		
+		<processDays>0.6</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+			</thingDefs>
+		</ingredientFilter>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>RecipeHyperweave</defName>
+		<thingDef>Hyperweave</thingDef>
+		<efficiency>1</efficiency>		
+		<processDays>1.2</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>HyperweaveKit</li>
+			</thingDefs>
+		</ingredientFilter>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>RecipeSynthread</defName>
+		<thingDef>Synthread</thingDef>
+		<efficiency>1</efficiency>		
+		<processDays>1</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>SynthreadKit</li>
+			</thingDefs>
+		</ingredientFilter>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="ElectricalBuildings">
+		<defName>RecipeArmoredCloth</defName>
+		<thingDef>ArmoredCloth</thingDef>
+		<efficiency>1</efficiency>		
+		<processDays>1</processDays>
+		<ingredientFilter>
+			<thingDefs>
+				<li>ArmoredClothKit</li>
+			</thingDefs>
+		</ingredientFilter>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+	</ProcessorFramework.ProcessDef>	
+</Defs>

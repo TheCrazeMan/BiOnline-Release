@@ -1,0 +1,1339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- Копать глину/песок/щебень -->
+	
+	<RecipeDef>
+		<defName>DigSand</defName>
+		<label>Dig sand x250</label>
+		<description>Dig some sand from the land</description>
+		<jobString>Digging sand</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Designate_Mine</soundWorking>
+		<workAmount>8500</workAmount>
+		<products>
+			<Sand>250</Sand>
+		</products>
+		<researchPrerequisite>Exploring_the_world</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>DigSandMineshaft</defName>
+		<label>Dig sand x125</label>
+		<description>Dig some sand from the land</description>
+		<jobString>Digging sand</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Designate_Mine</soundWorking>
+		<workAmount>10000</workAmount>
+		<products>
+			<Sand>125</Sand>
+		</products>
+		<researchPrerequisite>Exploring_the_world</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DigCrushedStone</defName>
+		<label>Dig gravel x250</label>
+		<description>Dig some crushed stone from the gravel</description>
+		<jobString>Digging gravel</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Designate_Mine</soundWorking>
+		<workAmount>8500</workAmount>
+		<products>
+			<CrushedStone>250</CrushedStone>
+		</products>
+		<researchPrerequisite>Exploring_the_world</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>DigCrushedStoneMineshaft</defName>
+		<label>Dig gravel x125</label>
+		<description>Dig some crushed stone from the gravel</description>
+		<jobString>Digging gravel</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Designate_Mine</soundWorking>
+		<workAmount>10000</workAmount>
+		<products>
+			<CrushedStone>125</CrushedStone>
+		</products>
+		<researchPrerequisite>Exploring_the_world</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DigClay</defName>
+		<label>Dig clay x250</label>
+		<description>Dig some clay from the bottom of the river</description>
+		<jobString>Digging clay</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Designate_Mine</soundWorking>
+		<workAmount>8500</workAmount>
+		<products>
+			<Clay>250</Clay>
+		</products>	
+		<researchPrerequisite>Exploring_the_world</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- Скалируемые рецепты с модулями -->
+
+  <RecipeDef>
+    <defName>Tier_1Melt_iron_x25</defName> 	<!-- Железо без модулей -->
+    <label>Melt iron x25</label>
+    <description>Smelting of iron</description>
+    <jobString>Smelting iron.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BIO_IronOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Iron>25</Iron>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Tier1_Melt_iron_x75</defName> 	<!-- Железо без модулей -->
+    <label>Melt iron x75</label>
+    <description>Smelting of iron</description>
+    <jobString>Smelting iron.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>2100</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BIO_IronOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Iron>75</Iron>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier2_Melt_iron_x25</defName> 	<!-- Железо с механической обработкой/рудопромывкой -->
+    <label>Melt iron x30</label>
+    <description>Smelting of iron</description>
+    <jobString>Smelting iron.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>2750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BIO_IronOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Iron>35</Iron>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier2</buildingTabCategoryDef>
+		</li>
+	</modExtensions>
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier2_Melt_Iron_x105</defName> 	<!-- Железо с механической обработкой/рудопромывкой -->
+    <label>Melt iron x105</label>
+    <description>Smelting of iron</description>
+    <jobString>Smelting iron.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>4100</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <abstractIngredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>WaterForBill</li>
+                </thingDefs>
+            </filter>
+            <count>75</count>
+        </li>
+    </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BIO_IronOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Iron>105</Iron>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier2</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Melt_iron_x25</defName> 	<!-- Железо с himicheskoi obrabotkoi -->
+    <label>Melt iron x50</label>
+    <description>Smelting of iron</description>
+    <jobString>Smelting iron.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SulfuricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>	  
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BIO_IronOre</li>
+		<li>SulfuricAcid</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Iron>50</Iron>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Melt_iron_x150</defName> 	<!-- Железо с himicheskoi obrabotkoi -->
+    <label>Melt iron x150</label>
+    <description>Smelting of iron</description>
+    <jobString>Smelting iron.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>6750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_IronOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SulfuricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>	  
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>90</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BIO_IronOre</li>
+		<li>SulfuricAcid</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Iron>150</Iron>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Tier_1Melt_copper_x25</defName> 	<!-- Медь без модулей -->
+    <label>Melt copper x25</label>
+    <description>Smelting of copper</description>
+    <jobString>Smelting copper.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CopperOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CopperOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Copper>25</Copper>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Tier1_Melt_copper_x75</defName> 	<!-- Медь без модулей -->
+    <label>Melt copper x75</label>
+    <description>Smelting of copper</description>
+    <jobString>Smelting copper.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>2100</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CopperOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CopperOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Copper>75</Copper>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier2_Melt_copper_x25</defName> 	<!-- Медь с механической обработкой/рудопромывкой -->
+    <label>Melt copper x35</label>
+    <description>Smelting of copper</description>
+    <jobString>Smelting copper.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CopperOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CopperOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Copper>35</Copper>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier2</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier2_Melt_copper_x75</defName> 	<!-- Медь с механической обработкой/рудопромывкой -->
+    <label>Melt copper x105</label>
+    <description>Smelting of copper</description>
+    <jobString>Smelting copper.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>3100</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CopperOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <abstractIngredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>WaterForBill</li>
+                </thingDefs>
+            </filter>
+            <count>75</count>
+        </li>
+    </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CopperOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Copper>105</Copper>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier2</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Melt_copper_x25</defName> 	<!-- Медь с himicheskoi obrabotkoi -->
+    <label>Melt copper x50</label>
+    <description>Smelting of copper</description>
+    <jobString>Smelting copper.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>3750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CopperOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SulfuricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>	  
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CopperOre</li>
+		<li>SulfuricAcid</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Copper>50</Copper>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Melt_copper_x150</defName> 	<!-- Медь с himicheskoi obrabotkoi -->
+    <label>Melt copper x150</label>
+    <description>Smelting of copper</description>
+    <jobString>Smelting copper.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>6750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CopperOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SulfuricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>	  
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>90</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CopperOre</li>
+		<li>SulfuricAcid</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Copper>150</Copper>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Tier_1Melt_Lead_x25</defName> 	<!-- Свинец без модулей -->
+    <label>Melt Lead x25</label>
+    <description>Smelting of Lead</description>
+    <jobString>Smelting Lead.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LeadOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Lead>25</Lead>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Tier1_Melt_Lead_x75</defName> 	<!-- Свинец без модулей -->
+    <label>Melt Lead x75</label>
+    <description>Smelting of Lead</description>
+    <jobString>Smelting Lead.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>2100</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LeadOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Lead>75</Lead>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier2_Melt_Lead_x25</defName> 	<!-- Свинец с механической обработкой/рудопромывкой -->
+    <label>Melt Lead x35</label>
+    <description>Smelting of Lead</description>
+    <jobString>Smelting Lead.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LeadOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Lead>35</Lead>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier2</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier2_Melt_Lead_x75</defName> 	<!-- Свинец с механической обработкой/рудопромывкой -->
+    <label>Melt Lead x105</label>
+    <description>Smelting of Lead</description>
+    <jobString>Smelting Lead.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>3100</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <abstractIngredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>WaterForBill</li>
+                </thingDefs>
+            </filter>
+            <count>75</count>
+        </li>
+    </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LeadOre</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Lead>105</Lead>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier2</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Melt_Lead_x25</defName> 	<!-- Свинец с himicheskoi obrabotkoi -->
+    <label>Melt Lead x50</label>
+    <description>Smelting of Lead</description>
+    <jobString>Smelting Lead.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>2750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadOre</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SulfuricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>	  
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LeadOre</li>
+		<li>SulfuricAcid</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Lead>50</Lead>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Melt_Lead_x150</defName> 	<!-- Свинец с himicheskoi obrabotkoi -->
+    <label>Melt Lead x150</label>
+    <description>Smelting of Lead</description>
+    <jobString>Smelting Lead.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>6750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadOre</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SulfuricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>	  
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>90</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LeadOre</li>
+		<li>SulfuricAcid</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Lead>150</Lead>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Titanium_Makex25</defName> <!-- Титан с хим.обработкой -->
+    <label>Melt Titanium х25</label>
+    <description>Burn wood in order to obtain charcoal, it is not so good as mineral coal, but still a good replacement.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Making Charcoal.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>2700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Titanium_ore</li>
+                </thingDefs>
+            </filter>
+            <count>25</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>SulfuricAcid</li>
+                </thingDefs>
+            </filter>
+            <count>5</count>
+        </li>		
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Titanium_ore</li>
+		<li>SulfuricAcid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Titanium>25</Titanium>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+  <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Tier3_Titanium_Makex75</defName> <!-- Титан с хим.обработкой -->
+    <label>Melt Titanium х75</label>
+    <description>Burn wood in order to obtain charcoal, it is not so good as mineral coal, but still a good replacement.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Making Charcoal.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>7000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Titanium_ore</li>
+                </thingDefs>
+            </filter>
+            <count>75</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>SulfuricAcid</li>
+                </thingDefs>
+            </filter>
+            <count>15</count>
+        </li>		
+    </ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>90</count>
+            </li>
+        </abstractIngredients>	
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Titanium_ore</li>
+		<li>SulfuricAcid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Titanium>75</Titanium>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>MechanicalProcessingModule</li>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+	<RecipeDef>
+		<defName>Tier1_steel_Makex25</defName>
+		<label>Melt steel x25</label>
+		<description>Melting and chemical processing of plasteel.</description> <!-- Сталь просто -->
+		<researchPrerequisite>Metal_processingII</researchPrerequisite>
+		<jobString>Making Plasteel.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>2700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>Advanced_Smelter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Iron</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BIO_Coal</li>
+						<li>BIO_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Iron</li>
+				<li>BIO_Coal</li>
+				<li>BIO_Coal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>25</Steel>
+		</products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>		
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Tier1_steel_Makex75</defName>
+		<label>Melt steel x75</label>
+		<description>Melting and chemical processing of plasteel.</description> <!-- Сталь просто -->
+		<researchPrerequisite>Metal_processingII</researchPrerequisite>
+		<jobString>Making Plasteel.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>4700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>Advanced_Smelter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Iron</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BIO_Coal</li>
+						<li>BIO_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Iron</li>
+				<li>BIO_Coal</li>
+				<li>BIO_Coal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>75</Steel>
+		</products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<buildingTabCategoryDef>Tier1</buildingTabCategoryDef>
+		</li>
+	</modExtensions>		
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Tier3_Plasteel_Makex25</defName>
+		<label>Melt Plasteel x25</label>
+		<description>Melting and chemical processing of plasteel.</description> <!-- Пласталь с хим.обработкой -->
+		<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+		<jobString>Making Plasteel.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>4700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>Advanced_Smelter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Titanium</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Polymers</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Titanium</li>
+				<li>Polymers</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>25</Plasteel>
+		</products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>		
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Tier3_Plasteel_Makex75</defName>
+		<label>Melt Plasteel x75</label>
+		<description>Melting and chemical processing of plasteel.</description> <!-- Пласталь с хим.обработкой -->
+		<researchPrerequisite>Metal_processingIII</researchPrerequisite>
+		<jobString>Making Plasteel.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>12700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>Advanced_Smelter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Titanium</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Polymers</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Titanium</li>
+				<li>Polymers</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>75</Plasteel>
+		</products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>ChemicalProcessingModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>		
+	</RecipeDef>
+	
+</Defs>

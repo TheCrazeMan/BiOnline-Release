@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingCategoryDefs/ThingCategories.xml-->
+<Baking.label>Выпечка</Baking.label>
+<Exquisite_meat.label>Первосортное мясо</Exquisite_meat.label>
+<Vegetables.label>Овощи</Vegetables.label>
+<Exquisite_Vegetables.label>Вкусные овощи</Exquisite_Vegetables.label>
+<VegetablesFruitsOthers.label>Прочие овощи и фрукты</VegetablesFruitsOthers.label>
+<Resources.label>Ресурсы</Resources.label>
+<RawMetals.label>Руды</RawMetals.label>
+<DefaultMetals.label>Обычные руды</DefaultMetals.label>
+<BiomeMetals.label>Биомные руды</BiomeMetals.label>
+<RefinedMetals.label>Слитки</RefinedMetals.label>
+<RefinedDefaultMetals.label>Обычные металлы</RefinedDefaultMetals.label>
+<RefinedBiomeMetals.label>Биомные металлы</RefinedBiomeMetals.label>
+<Miscellaneous.label>Прочее</Miscellaneous.label>
+<TM_MedicalHerbs.label>медицинские травы</TM_MedicalHerbs.label>
+<BiO_Components.label>Компоненты</BiO_Components.label>
+<BiO_Special_Plants.label>Специальные растения</BiO_Special_Plants.label>
+<BootsAndGloves.label>Перчатки и обувь</BootsAndGloves.label>
+
+</LanguageData>

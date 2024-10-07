@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!-- ========================== CopperB ================================= -->
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Copperb</defName>
+    <label>CopperB</label>
+    <description>It is not clear what it is and by whom it was created. But the expression on his face makes me sad.</description>
+    <statBases>
+      <MoveSpeed>4.5</MoveSpeed>
+      <MarketValue>375</MarketValue>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>100</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.10</ArmorRating_Heat>
+	  <MeatAmount>0</MeatAmount>
+		<LeatherAmount>0</LeatherAmount>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Copper</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>11</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+    <uiIconScale>1.35</uiIconScale>
+    <tools>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>2.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <body>QuadrupedAnimalWithHooves</body>
+      <baseBodySize>2.1</baseBodySize>
+      <baseHealthScale>2.18</baseHealthScale>
+      <baseHungerRate>0.85</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Bluefur</leatherDef>
+      <gestationPeriodDays>32</gestationPeriodDays>
+      <wildness>0.6</wildness>
+      <trainability>Advanced</trainability>
+      <packAnimal>false</packAnimal>
+      <lifeExpectancy>150</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>15.0</minAge>
+          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+          <soundDeath>Pawn_Copperb_Death</soundDeath>
+          <soundCall>Pawn_Muffalo_Call</soundCall>
+          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+	  <wildBiomes>
+			<!-- warmArid -->
+			<AridShrubland>0.0</AridShrubland>
+			<Desert>0.0</Desert>
+			<ExtremeDesert>0.0</ExtremeDesert>
+			<!-- temprate -->
+			<TemperateForest>0.00</TemperateForest>
+			<TemperateSwamp>0.00</TemperateSwamp>
+			<!-- cold -->
+			<BorealForest>0.00</BorealForest>
+			<Tundra>0.00</Tundra>
+			<ColdBog>0.00</ColdBog>
+			<IceSheet>0.00</IceSheet>
+			<SeaIce>0.00</SeaIce>
+			<!-- warm -->
+			<TropicalRainforest>0.0</TropicalRainforest>
+			<TropicalSwamp>0.0</TropicalSwamp>
+		</wildBiomes>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+	<tradeability>None</tradeability>
+	<butcherProducts>
+      <Copper>42</Copper>
+    </butcherProducts>
+  </ThingDef>
+  <PawnKindDef Name="Copperb" ParentName="AnimalKindBase">
+    <defName>Copperb</defName>
+    <label>CopperB</label>
+    <race>Copperb</race>
+    <combatPower>125</combatPower>
+    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <wildGroupSize>1~4</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Copperb/Copperb</texPath>
+		  <color>1,1,1</color>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Copperb/Dessicated_Copperb</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

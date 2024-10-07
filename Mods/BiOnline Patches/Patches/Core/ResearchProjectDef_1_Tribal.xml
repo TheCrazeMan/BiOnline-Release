@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+
+            <operations>          
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Cocoa"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+							<defName>Cocoa</defName>
+							<label>cocoa</label>
+							<description>Sow cocoa trees to create your own delicious chocolate. Eating chocolate fulfills the need for recreation, and it's valuable on the market too.</description>
+							<baseCost>600</baseCost>
+							<techLevel>Neolithic</techLevel>
+							<researchViewX>1.00</researchViewX>
+							<researchViewY>0.00</researchViewY>
+							<prerequisites>
+							  <li>AgricultureI</li>
+							</prerequisites>
+							<tab>Tribal</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+							<defName>Stonecutting</defName>
+							<label>stonecutting</label>
+							<description>Cut rock chunks into stone blocks for use in construction. Build beautiful stone tile floors or ugly concrete walkways.</description>
+							<baseCost>400</baseCost>
+							<techLevel>Neolithic</techLevel>
+							<tags>
+							  <li>TribalStart</li>
+							  <li>ClassicStart</li>
+							  <li>Medieval</li>
+							</tags>
+							<researchViewX>0.00</researchViewX>
+							<researchViewY>8</researchViewY>
+							<tab>Tribal</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+							<defName>PassiveCooler</defName>
+							<label>Well</label>
+							<description>Technology opens up wells and various structures to cover water and hygiene needs.</description>
+							<baseCost>400</baseCost>
+							<techLevel>Neolithic</techLevel>
+							<tags>
+							  <li>TribalStart</li>
+							  <li>ClassicStart</li>
+							  <li>Medieval</li>
+							</tags>
+							<researchViewX>0.00</researchViewX>
+							<researchViewY>3.5</researchViewY>
+							<tab>Tribal</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName ="ComplexFurniture"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+							<defName>ComplexFurniture</defName>
+							<label>complex furniture</label>
+							<description>Build complex furniture like beds, end tables, dining chairs, armchairs, dressers, tool cabinets, billiard tables, and poker tables, vents, sarcophagi, and more.</description>
+							<baseCost>400</baseCost>
+							<techLevel>Neolithic</techLevel>
+							<researchViewX>0</researchViewX>
+							<researchViewY>6.5</researchViewY>
+							<tags>
+							  <li>TribalStart</li>
+							  <li>ClassicStart</li>
+							  <li>Medieval</li>
+							</tags>
+							<tab>Tribal</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li>			
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,4096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.MapBlueprintDef>
+		<defName>LongRangeCamp64x64</defName>
+		<label>Исследовательский лагерь 64х64</label>
+		<description>Богатая на компоненты карта на которой может заспавниться 1-4 сканер минералов дальнего действия, 6-9 солнечных панелей и 7-12 аккумуляторов. Содержит среднюю (?) угрозу в виде 2-3 кровавых туш, 3-4 гулей, 1-го высшего раба и 1-2 простых рабов и до четырёх маленьких турелей если сильно не повезёт.</description>
+		<author>0w0sh</author>
+		<mapSize>(64, 1, 64)</mapSize>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<terrain>
+			<cellsCount>1701</cellsCount>
+			<terrainDefDeflate>
+7VnJboMwEP2wnJpWuUWKlEo902C1URBUhPb7K/WQhczusTEVF8tGgM28N28W9t2xWe2XYRmWoZDhuWsPfRjCat13p9A+nb8+q2YY
+rS43XSaCN++qn1C/HptwM6M22TTVx3no2rCt+nfiqev1qY0EfSE0E1pN+rqYWTkMi7Tp/VO3RjycQv1y7Adk+neXbc95mdv7WxDA
+Hkh8b2ncq31m5GH+ieURxymG72OMy0AhExxCAuLW8tC/8Ts1cTrxkJZ6qDNwEcHlbIhjgse4DjQBaGA196Z2Sy5H9A3s9GANM6jj
+4BhqILGuckOJaaioKIhNgzmvffRi5X43zwLsSoGfnxMXpN1cIi8H0yTOCIbIqWibaxBhScI5a7lwE07mpRLUalQnce0AjgAcPwHB
+oqFSyoPgI2LXyYSeiIOUnMqqD4FhgP2ED8gIFk9R6cHSpAdeb9USzusUBiL71EmSjQ1Cxia52HVJoqp2DrXT4HvloXPulTreC1Mi
+Ha7CcodOhChl1pJRczTNHbgx0IAjcq8plDddPZ5APWO2dOsDcwmZoozchqFqjDOZMxi0Xy6ebAIZVYBmSh4z9VHx08rTebntYogF
+psTEpWRELLLLYBMVN/HRtSykju2nQ2hKJgyIpshoiA2Cmm02pKHFHCpbBQmMpe60X1f8ffDSD4usZi0Q4Y6WL3UUf/3ADrWwO8kK
+kk+8krrEw+mFn6HOfzSVly1pkXLc9uviOrx1Xb1rqva0abquZxjpg6aQUlwMlPq9d+9Rix1aNtB9Rwid0XL93behhhDEbZOiMtGo
+pz0PmH7gIKPRYrDMGpZZ4fRrPBUAFgQO6DuQKykTJ2tnTe0Oc8Ag2iuMe6DX5kJjCTsLWYJHjbw4PQDeRDaoj+ER8z3zQMHdppMT
+vXi7q45mpt/037kMTsMv
+</terrainDefDeflate>
+			<terrainCellsDeflate>
+DdNVWxAIAkBRvw3HVmxCFFTs7sk3OwELkTBA7NaZ2XizuxBFVAS7e2brzQ5UwiRU7G4ndvc8nH9w76U/lClzmRyucJVr5JJHPgVc
+5wY3ucVt7lBIEcWUcJd73KeUBzzkEY95QsU/lilTicpUoSrVCKA6NahJLWpTh7oEEkQwIdQjlPo0IIxwGtKIxkTQhKY0ozkt6E0f
++tKP/gxgIIOIJIpoBjOEoQxjODGMIJaRxBFPAomMYjRjGEsSyYwjhfFMYCKLWMwSlrKM5axgJatYzRrWso5U1pPGBjaSziYy2MwW
+tpLJNrLIZjs72MkudrOHvexjP2c5x3kucJFLXCaHK1zlGrnkkU8B17nBTW5xmzsUUkQxJdzlHvcp5QEPecRjnvCUZzznBeX/VKZM
+BSpSicpUoSrVCKA6NahJLWpTh7oEEkQwIdQjlPo0IIxwGtKIxkTQhKY0ozktaEkrWtOGtrSjPT3pRW/60Jd+9GcAAxlEJFFEM5gh
+DGUYw4lhBLGMJI54EkhkFKMZw1iSSGYcKYxnAhOZxGSmMJVpTGcGM5nFbOawgIUsYjFLWMoylrOClaxiNWtYyzpSWU8aG9hIOpvI
+YDNb2Eom28gim+3sYCe72M0e9rKP/RzgIIc4zBGOcozjnOAkZzjLOc5zgYtc4jI5XOEq18glj3wKuM4NbnKL29yhkCKKKeEu97hP
+KQ94yCMe84SnPOM5L3jJK17zhre84z0f+MgnPvPFn8uUKUd5KlCRSlSmClWpRgDVqUFNalGbOtQlkCCCCaEeodSnAWGE05BGNCaC
+JjSlGc1pQUta0Zo2tKUd7elARzrRmS50pRvd6UFPetGbPvSlH/0ZwEAGEUkU0QxmCEMZxnBiGEEsI4kjngQSGcVoxjCWJJIZRwrj
+mcBEJjGZKUxlGtOZwUxmMZs5zOV75jGfBSxkEYtZwlKWsZwVrGQVq1nDWtaRynrS2MBG0tlEBpvZwlYy2UYW2WxnBzvZxW72sJd9
+7OcABznEYY5wlGMc5wQn+YmfOcVpznCWc5znAhe5xGVyuMJVrpFLHvkUcJ0b3OQWt7lDIUUUU8Jd7nGfUh7wkEc85glPecZzXvCS
+V7zmDW95x3s+8JFPfOYXfuU3fqdsWU9RjvJUoCKVqEwVqlKNAKpTg5rUojZ1qEsgQQQTQj1CqU8DwginIY1oTARNaEozmtOClrSi
+NW1oSzva04GOdKIzXehKN77kK77mG77lO7rTg570ojd96Es/+jOAgQwikiiiGcwQhjKM4cQwglhGEkc8CSQyitGMYSxJJDOOFMYz
+gYlMYjJTmMo0pjODmcxiNnOYy/f8wI/8hb/yN/7OPOazgIUsYjFLWMoylrOClaxiNWtYyzpSWU8aG9hIOpvIYDNb2Eom28gim+3s
+YCe72M0e9rKP/RzgIIc4zBGOcozjnOAkP/Ez/+Cf/It/8x9OcZoznOUc57nARS5xmRyucJVr5JJHPgVc5wY3ucVt7lBIEcWUcJd7
+3KeUBzzkEY95wlOe8ZwXvOQVr3nDW97xng985BOf+YVf+Y3f+S//o+wX/qQc5alARSpRmSpUpRoBVKcGNalFbepQl0CCCCaEeoRS
+nwaEEU5DGtGYCJrQlGY0pwUtaUVr2tCWdrSnAx3pRGe60JVufMlXfM03fMt3dKcHPelFb/rQl370ZwADGUQkUUQzmCEMZRjDiWEE
+sYwkjngSSGQUoxnDWJJIZhwpjGcCE5nEZKYwlWlMZwYzmcVs5jCX7/mBH/kLf+Vv/J15zGcBC1nEYpawlGUsZwUrWcVq1rCWdaSy
+njQ2sJF0NpHBZrawlUy2kUU229nBTnaxmz3sZR/7OcBBDnGYIxzlGMc5wUl+4mf+wT/5F//mP5ziNGc4yznOc4GLXOIyOVzhKtfI
+JY98CrjODW5yi9vcoZAiiinhLve4TykPeMgjHvOEpzzjOS94ySte84a3vOM9H/jIJz7zC7/yG7/zX/5H2XL+pBzlqUBFKlGZKlSl
+GgFUpwY1qUVt6lCXQIIIJoR6hFKfBoQRTkMa0ZgImtCUZjSnBS1pRWva0JZ2tKcDHelEZ7rQlW58yVd8zTd8y3d0pwc96UVv+tCX
+fvRnAAMZRCRRRDOYIQxlGMOJYQSxjCSOeBJIZBSjGcNYkkhmHCmMZwITmcRkpjCVaUxnBjOZxWzmMJfv+YEfmcd8FrCQRSxmCUtZ
+xnJWsJJVrGYNa1lHKutJYwMbSWcTGWxmC1vJZBtZZLOdHexkF7vZw172sZ8DHOQQhznCUY5xnBOc5Cd+5hSnOcNZznGeC1zkEpfJ
+4QpXuUYueeRTwHVucJNb3OYOhRRRTAl3ucd9SnnAQx7xmCc85RnPecFLXvGaN7zlHe/5wEc+8Zmy5T1GOcpTgYpUojJVqEo1AqhO
+DWpSi9rUoS6BBBFMCPUIpT4NCCOchjSiMRE0oSnNaE4LWtKK1rShLe1oTwc60onOdKEr3ehOD3rSi970oS/96M8ABjKISKKIZjBD
+GMowhhPDCGIZSRzxJJDIKEYzhrEkkcw4UhjPBCYyiclMYSrTmM4MZjKL2cxhLvOYzwIWsojFLGEpy1jOClayitWsYS3rSGU9aWxg
+I+lsIoPNbGErmWwji2y2s4Od7GI3e9jLPvZzgIMc4jBHOMoxjnOCU5zmDGc5x3kucJFLXCaHK1zlGrnkkU8B17nBTW5xmzsUUkQx
+JdzlHvcp5QEPecRjnvCUZzznBS95xWve8JZ3fFHBG5SnAhWpRGWqUJVqBFCdGtSkFrWpQ10CCSKYEOoRSn0aEEY4DWlEYyJoQlOa
+0ZwWtKQVrWlDW9rRng70oCe96E0f+tKP/gxgIIOIJIpoBjOEoQxjODGMIJaRxBFPAomMYjRjGEsSyYwjhfFMYCKTmMwUpjKN6Sxk
+EYtZwlKWsZwVrGQVq1nDWtaRynrS2MBG0tlEBpvZwlYy2UYW2WxnBzvZxW72sJd97OcABznEOc5zgYtc4jI5XOEq18glj3wKuM4N
+bnKL29yhkCKKKeEu97hPKQ94yCMe84SnPOM5L6hSUX9UI4Dq1KAmtahNHeoSSBDBhFCPUOrTgDDCaUgjGhNBE5rSjOa0oCWtGMgg
+IokimsEMYSjDGE4MI4hlJHHEk0AioxjNGMaSRDLjSGE8a1lHKutJYwMbSWcTGWxmC1vJZBtZZLOdHexkF/8H
+</terrainCellsDeflate>
+		</terrain>
+		<buildings>
+			<cellsCount>407</cellsCount>
+			<positionsDeflate>
+NdXtT5VlGADwZ9OgczSXrdRSSEtpES22crX+AROyjiPDhdDLlkUBouTmauujo1YsVFJwZIg4j4Gi0MuHPvtBs6ltIS9yEBE8zJG9
+8Km1+t07Tx9+u+7nuq/7eu5zn3ND5u4omiSTLzJsXJWIohuMGI+y0vgwo4xxjXEyTHCdSaYYSkbRVUYYZYxrjJNhSL/l6io5GIR6
+uWGxkA657ruiqGthFPXQZryUNuNt4iHa6eA1qqimhkIeJqXfYlI+zxd5UXSJy6GPuJlWKs1VcZAOhhhhuXUPURnOIexL7gFxGRW8
+wham9Sg2V8R2jlNLmizTFKt7V10Rj/EOtaTJMhv3OBHW+txp9UVilhKOOI9OrjPJKvMFVFPD67zJGh7hUdYypd9NejiiT4rNtLKP
+/SRI8on6hLqNnLefpPipeI/z2sTnXHT2L9HCz1xeEEVX2Md+DnCVbo5xk2lm6CGrR5qTvMesHsPyBeK4mKHQuMx+ynmRjfa1SXyZ
+A2Gf9lVmXxetX6L2kjVtjDDBUW5x0tzj6oaMVxnXqv/FeFaPPt7mhN5dYmcidz5veJ5wvkfp5hjH5XvltxvPhe9fXCT3ZThTPWe8
+Y6n+K8UMw0wxpvaC2KKmQm2FNQ+qy7BC/pb8r2r6zNXRy23q5RrYyS7qaKKEp/lTzQBNPOX5N/E0Oyj1fEfspzHwvIPT3nWKPs5w
+lgH6Y70M8hfP2NsHDHLHc6nYSH8sjEvjuduUGNfRSwNnvPd3+V3Gp8K7OcsAg6xnXs237Faznnn1DdSzM6yliefVLHNur8bKPC+R
+n/I9dvkevg7fF6vN7Ta3bpG7yhZz97KYFlJy99Nq3CYmxWZr8sVz4l49mq3fwF77yScRfmOUe98Gmn1v5733s3AHxJR4X/zbW0EN
+a+Pfe9rck+FvU17unt4I5xbusvdlSdvDnPiH3PfMq3mOj/hR7bN8p0f/wtw57OEHuX/Ef8W/7XOPdXM8oddbdLI1fE59L/ACefH9
+KbfmnLVl/LQgd2/+vxdrwl2h3rjR/IdqP87L3bUrYjVfmSsW39frsL7t4X9C/Pdphm/k68V2dYeSOVs9F4ir+Q8=
+</positionsDeflate>
+			<defsDeflate>
+7Vhtk6IwDP5Nd1/5tODLzg2MzMKdH51YInapLZOW9fz3F1zxDsfZ9e1WHfkATZ6nQtLGJCU0On8BnWMkNRKoRIBmwQsvhPeM+fc2
+BqVu4DZUYG0tpQTalkCondcjtJZNTmGq8Nvv78JLjAIaYu2QY+MvqMZmiZQspRPzdzkwOquk+zLletYGRlUL3Qw+OIe0Onhs//ox
+DDtG2bwzgEU5k4Ter0E/7k2etJAc4j5mZwNjsHOp8wgEDzvPf8EZybyJIdDZFHL7V7hKoJ+i1Jkh5BXc40MnXF1ohRxvmSB06AOR
+5OTdkY9KJigqkm6VVsRzDufqh6G6HNaTtlSw8kEXBxIp0kJqUK0M/qHjR/4p2rWpNTWWJSpO5LxCTppjSful0BhoCapAGhizs4nj
+Oe7uw/Mq4+ZuZ16d1UtjD0KTuSlLLnUB0H8OmXOwl8o6zPo6533ylRHFPppd2MA9FKBCnpty+b4lLDDE7eaocrjX1E/oDrvXFTzP
+6vv0+Y6xVlr5gVjuw1OqdvNQCJTjJ7lqKGFvJr+5VqMjTyPXQbCOqicis6y/GW2YARQ4JHhDL1YcBPG2vgdKvknw3hu3SSS13PRw
+pyHPMstQN+e8j7QYdQRUbG0fQZESYqd12sNoseEDC3VAB1wMGEjl5r7R27NdItYfUDHrGVEtuHQ0BOuNGBmVrX5qOTO0OBdqIjwe
+9icRlKPpKx9uvXAcTRKYoecbUwiwLGBWX38A
+</defsDeflate>
+			<things>
+				<li>
+					<hitPoints>40</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>80</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>120</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>80</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>94</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>54</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>64</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>175</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>165</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>135</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>165</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>165</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>175</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>175</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>175</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>165</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>175</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>165</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>175</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>175</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>185</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>51</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Glass</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>58</hitPoints>
+					<quality>Normal</quality>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>19</hitPoints>
+					<quality>Normal</quality>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>80</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>200</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>210</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>250</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>220</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>170</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>230</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>84</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>50</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>80</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>60</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>60</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>60</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>94</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>110</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>80</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>60</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>80</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>100</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>130</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>130</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>130</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>50</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>210</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>200</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>250</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>230</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>240</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>220</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>240</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>250</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>170</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>190</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>190</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>110</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>110</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>220</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>230</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.25</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.25</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.25</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.25</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>HoraxCult</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Safe</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>HoraxCult</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>60</hitPoints>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<quality>Normal</quality>
+					<factionDef>PlayerColony</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+			</things>
+		</buildings>
+		<items>
+			<cellsCount>732</cellsCount>
+			<positionsDeflate>
+hdP7dw90HMfx7+kidrHDTDNGschiFoU6p/qNzTCKGhrWjLW55H7pnH50GSYtO6ydDjIWmxDFL/qtcpvjMh1zbe6kSC5dVA/nfH7w
+Q+f0w+MfeL7e74OPRCJHqOcHjtPACU5zlnNc4jIxj0YisbSgJa1oTSJtSKIdybSnAx3pRAqd6UIqg8jmdXIYwSjeJpcx5JFPAeOZ
+QCFFFLOYJSyllA8po5wKKlnNGtZRxQaq+ZyN1FDLZvaxn0Mc5ghHOc4pGjkXXOUnfibqsUgkmlha0JJWJJJEWzrQkU6k8EzQOehC
+1+A5utGdNHqQzvNkMoAsBpLNEHIpYAJFQTETmcRkpjCVaUxnJotYThnlrKSCtVSxnhpq+YItbGM7O9jDXvZTx0HqOR40cCI4ySnO
+cJZGLnCN68HP3OAmt/iN29zhLvdo+ngk0ow4WtCSeFqRSCdSg26kkU5PXuBFetOHvmSQSRaDyWYIQ8lhBHnBeAqDdymimBnMZBaz
+mcNc5rOAEhZTSjkrqWQ91cFGNgU11LKZrXzFTnbxPXvYRx2HOMyRoJ5jNHCS05zlCr9yi7vc43f+4E+aNIlEnqApzYgmhliaE0c8
+rWlDMu15mp70CnrTl5d4lf5kkMmgYDDZDGM4OYwhn2ImM53ZzGUe7/MB81nIIkpYQinLKOdT1lBFNRvZxFZ2sIvd7GUfB2jgFKc5
+y49c5Q73afKELkQTQywJtCaJFJ6lGz1Ipyev0I8MBpDFIIbyJjnkBmPJYwJFzGAu8/iABZSwlFKW8zGrqWY7u/mGb/mO79lDHUeD
+eo7RwElOcYZGLnCJ69zgJrf4nT/5i/v8zT80aepmaEpUEEs8CSTShrZ0pivP0Y00etGHvrzMK7xGP/ozlGHk8Q75wTgKKGQSU3iP
+acxgFrOZwwIWspwyVrCKiqAyWEsV64MNbGUHX/E1O9nFt+wJ9rKfA9RxNDhDI+e5xGV+4Vduc5d7D/o1049mRBFNTBBL84fE0YKW
+xJMQtCEpSKY9HXiKFJ4lle6kkc7z9KQXL9CbPvTlJfrRn0wGMJjhjCSX0YwN8plAIcVMZgrvMZVpTGcm81nAQhZRwhJKWcaHLOcj
+yljBStYF1Q/ZGGyilq1s40u28x37OMBBDnGUen7gOA2c4yLXgp/4hRvcfLBPlH2IIpoYmhNPIkm0DZL/x9P/oSOdSKELXelOGj1I
+pxcZZJLFQAaTzRBe5w2G8SYjGPWQ0cGYYGyQTwHjeZciJjKZqSyihMUsZRkfUcYKVlLBJ1TyKWupYgPVfM4matjMFvaynwPUcYjD
+HKGeYzTQyHkucJHLXOEq14mL9g/Ek8CTJNGWdiTTnqdIoQupdOcNhvMWOYxgJG+Ty2jGkEc+4yhgPIUUUc4qKviE1azhM9axnmr+
+BQ==
+</positionsDeflate>
+			<defsDeflate>
+1VrJbtswEP2wnmQHbtFTEOduKBFrCaWsQAuK/H0FO4Up8s1GJofeSJvLcPhm5s1Qj76+zKfdMrXfHq/N59r772M9TR/9nRvH939t
+elgybaz7F+/QKtLUh/rSON8Nl4y50baGoWapbNPjPiuZ5cDBWMPpor+FwwndOyqkZfX4Ec9NbmrX2HEV86U+Py0v6zIKEDLYvk/b
+Loq2KFVBLKIWXvc+J+O2d+j83J6eul/eVX0/7Oupu5yn04/u3O5rXzL19vfzKk/70X4YO9fs/DA0Ctuh2pv7urYzpBL+DgT9OMWf
+bppdc1ix0W4Ohq7/Ju1t1HVGf++TG+/b5fL76OvzcXYOKc8q8k2k3dL5Zh0eAzxc36D7BQ4PTZbxcCqfTSDluoXupMzx74YFrpWz
+eZsdcmtItk7bNEQIPKZtjvXHEDTcFUsnywwKOidnAUFgZOHZ4nHHdpjPyyUwQWDvG4st0zM2YKQI270UBGRLoMJGofPOn6o4jQ1s
+wbP3w5yiQIdqykUq/WIWMf38AAixh+Na+F/1+uqmaRjfT8/D4HfOzxYPlMNBNAwvh1oZGHfaVrgirclaYz/SBwz6Aq/hXSMR8JX5
+muFksoIA5Mw+NdJPqpOYxYFQoLjzyBR03tfats2H1qkLdKmWwDxO63H5Yd8Ob2+uOc5L/6agwyXUpDTvKA+9RHYAD5WSVBo0SuVQ
+Vptd2ACFAxVBxVQrji73/6ENhdQiTWlIcGoBl0lBJf7Au1taBRzkgNhU8DJn73jHjRIZ9MVQ10Ef0vE8Gms8eZJlqgTOoJ4231mS
+ZWghQ/JOQXH5CWsM7rwzcQ6J7WJlWEWJLRYWE63cROXZc2QsQRfjXz6rUi7VrSVlMmf4ipoI/PHqPY69q0cCIYawzcYjQ2TWl5++
+yP0EqrEwBI41hQuTfvQ2CNMHw9PSstW/wXITNIhaxDl23hVgP0tqKxBWzpsJJIrZICq6oDSKi1tioSJRuwGwaYpTbRHMrFsCrZx3
+nIwaUEBxNiwuwTfmpaoKQqImximSC8LbqeB+2tnZ1YFE/ormVGniprQPA2yUNRfp/RY8pMn5Sj5jSWMB3o2xN6oepdaBqZtd9QaS
+kejAJQa91YNcTEX4JF7CGnQFXAPOG2hXraIq9CVzH7ksySMtHWIgMzx0ozsMdW93HMlDtZxqKaFUWsuScuOKd54S4VqWFQvva/ux
+c6/u/+/jgkCgJPpRPzFIRTVP+x5k/PTHVJ03QVBRQN8aEUcosIeyG6GKAmESIVQ4FI6cdkh5UT/H4BXfdv2sGxbekUOMuvCtaSF9
+WykXtiawYtTIKxFhjyk8wdkdMcfTdHNVlM/A2YSMMskaNAlRwbcGajPQ2aL5qwjiBSXngVl6TdG/P9s+Ds349PIv
+</defsDeflate>
+			<things>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<quality>Normal</quality>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.25</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<quality>Good</quality>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.25</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>90</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>87</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>92</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>73</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>63</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>60</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<stackCount>57</stackCount>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+			</things>
+		</items>
+		<pawns>
+			<cellsCount>10</cellsCount>
+			<positionsDeflate>
+U2BjYJgOxMuAWISdgUEBiKOAOIyDgSENiO8CcQwXAwMA
+</positionsDeflate>
+			<pawns>
+				<li>
+					<pawnKindDef>Gorehulk</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.66</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Ghoul</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.75</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Gorehulk</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.66</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Ghoul</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.75</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Horaxian_Highthrall</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Ghoul</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.75</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Ghoul</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.75</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Gorehulk</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.66</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Horaxian_Underthrall</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Horaxian_Underthrall</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>HoraxCult</defaultFaction>
+					<forceFaction>HoraxCult</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+			</pawns>
+		</pawns>
+		<roof>
+			<cellsCount>88</cellsCount>
+			<roofDefDeflate>
+C8rPT3POzysuKSpNLklNsQ4a5Y/yR/mj/FE+PfgA
+</roofDefDeflate>
+			<roofCellsDeflate>
+Dc+5QcJQAADQXylMoELNkeg+HOnDofuI2ichsA9XbS4cwle8AV71EEJNw/gxhAlTImJmzFmwJCFlxZoNWz7Z8cU3P2SUnDhz4cqN
+ipqGlo6nXgjPvDBgSETMjDkLliRk5BTsKTlw5JeKmoaWjjt/jPq+TJgSEfPKGykr1mzY8s4HGTkFe0oOHKlpaOn4Bw==
+</roofCellsDeflate>
+		</roof>
+		<areas />
+		<mapArea>
+			<zoneName>map</zoneName>
+			<cellsCount>1701</cellsCount>
+			<positionsDeflate>
+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
+</positionsDeflate>
+		</mapArea>
+		<forceFogArea IsNull="True" />
+		<forceUnfogArea IsNull="True" />
+		<variables>
+			<customVariables />
+		</variables>
+		<mapScripts>
+			<li>MapObjectDelete</li>
+		</mapScripts>
+		<mapRules>
+			<fog>True</fog>
+		</mapRules>
+		<tags>
+			<li>Farmland</li>
+		</tags>		
+		<generationCommonality>1</generationCommonality>
+	</BiOnline.MapGenerator.MapBlueprintDef>
+</Defs>

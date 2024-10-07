@@ -1,0 +1,286 @@
+<Defs>
+
+	<!-- Cluster grenade -->
+
+<!-- 	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_ClusterGrenade</defName>
+		<label>cluster grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/ClusterGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<explosionRadius>1.5</explosionRadius>
+				<damageDef>Bomb</damageDef>
+				<damageAmountBase>56</damageAmountBase>
+				<explosionDelay>60</explosionDelay>
+				<dropsCasings>true</dropsCasings>
+				<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
+				<casingFilthDefname>Filth_GrenadeAmmoCasings</casingFilthDefname>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<speed>12</speed>
+				<suppressionFactor>3.0</suppressionFactor>
+				<dangerFactor>2.0</dangerFactor>
+				<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+			</projectile>
+		<comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			<fragments>
+			  <Proj_ClusterGrenade_Secondary>12</Proj_ClusterGrenade_Secondary>
+			</fragments>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_ClusterGrenade_Secondary</defName>
+		<label>cluster grenade secondary</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/Frag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<explosionRadius>0.9</explosionRadius>
+				<damageDef>Bomb</damageDef>
+				<damageAmountBase>16</damageAmountBase>
+				<explosionDelay>5</explosionDelay>
+				<dropsCasings>false</dropsCasings>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<speed>5</speed>
+				<suppressionFactor>3.0</suppressionFactor>
+				<dangerFactor>2.0</dangerFactor>
+				<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+			</projectile>
+		<comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			<fragments>
+			  <Proj_ClusterGrenade_Tertiary>3</Proj_ClusterGrenade_Tertiary>
+			</fragments>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_ClusterGrenade_Tertiary</defName>
+		<label>cluster grenade tertiary</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/Frag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<explosionRadius>0.5</explosionRadius>
+				<damageDef>Bomb</damageDef>
+				<damageAmountBase>6</damageAmountBase>
+				<explosionDelay>5</explosionDelay>
+				<dropsCasings>false</dropsCasings>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<speed>3</speed>
+				<suppressionFactor>3.0</suppressionFactor>
+				<dangerFactor>2.0</dangerFactor>
+				<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+			</projectile>
+		<comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			<fragments>
+			  <Fragment_Small>5</Fragment_Small>
+			</fragments>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Weapon_ClusterGrenade</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>cluster grenade</label>
+		<description>High-tech hand grenade. Contains large volumes of compressed destructive plasma.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponRanged/Spacer/ClusterGrenade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<Mass>1.5</Mass>
+			<Bulk>4.72</Bulk>
+			<MarketValue>63.51</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+			<li>CE_GrenadeSpacer</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw grenade</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.0</range>
+				<warmupTime>1.6</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_ClusterGrenade</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_ClusterGrenade</detonateProjectile>
+	</ThingDef> -->
+
+	<!-- Plasma grenades -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile" Name="Proj_GrenadePlasma">
+		<defName>Proj_GrenadePlasma</defName>
+		<label>plasma grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/PlasmaGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>3.5</explosionRadius>
+			<damageDef>Plasma</damageDef>
+			<damageAmountBase>240</damageAmountBase>
+			<explosionDelay>60</explosionDelay>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<speed>8</speed>
+			<suppressionFactor>3.0</suppressionFactor>
+			<dangerFactor>2.0</dangerFactor>
+			<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment" Name="Weapon_GrenadePlasma">
+		<defName>Weapon_GrenadePlasma</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>plasma grenade</label>
+		<description>High-tech hand grenade. Contains large volumes of compressed destructive plasma.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponRanged/Spacer/PlasmaGrenade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<Mass>1.5</Mass>
+			<Bulk>4.72</Bulk>
+			<MarketValue>63.51</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+			<li>CE_GrenadeSpacer</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw grenade</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>10.0</range>
+				<warmupTime>1.6</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadePlasma</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_GrenadePlasma</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_GrenadePlasmaOvercharge</defName>
+		<label>overcharged plasma grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/OverchargedPlasmaGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>4.5</explosionRadius>
+			<damageDef>PlasmaOvercharge</damageDef>
+			<damageAmountBase>360</damageAmountBase>
+			<explosionDelay>60</explosionDelay>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<speed>8</speed>
+			<suppressionFactor>3.0</suppressionFactor>
+			<dangerFactor>2.0</dangerFactor>
+			<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Weapon_GrenadePlasmaOvercharge</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>overcharged plasma grenade</label>
+		<description>High-tech hand grenade. Contains large volumes of compressed destructive plasma.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponRanged/Spacer/PlasmaGrenadeOvercharge</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<Mass>1.5</Mass>
+			<Bulk>4.72</Bulk>
+			<MarketValue>99.51</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+			<li>CE_GrenadeSpacer</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw grenade</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>11.0</range>
+				<warmupTime>1.6</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadePlasmaOvercharge</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>12</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_GrenadePlasmaOvercharge</detonateProjectile>
+	</ThingDef>
+	
+
+</Defs>

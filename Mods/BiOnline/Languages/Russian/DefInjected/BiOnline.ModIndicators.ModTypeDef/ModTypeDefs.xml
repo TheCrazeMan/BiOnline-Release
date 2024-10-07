@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<Core.label>Ядро</Core.label>
+<Core.description>Основной контент игры.</Core.description>
+
+<DefaultRequired.label>Базовый мод - Необходим!</DefaultRequired.label>
+<DefaultRequired.description>Мод входит в сборку и является критически важным для игры.</DefaultRequired.description>
+
+<DefaultRequiredConfig.label>Базоый мод - Необходим! (возможна настройка конфигов)</DefaultRequiredConfig.label>
+<DefaultRequiredConfig.label>Мод входит в сборку и является критически важным для игры. Но вы можете настроить его конфиги под себя</DefaultRequiredConfig.label>
+
+<DefaultOptional.label>Базовый мод - Опциональный</DefaultOptional.label>
+<DefaultOptional.description>Мод включен в сборку по умолчанию, но является необязательным.</DefaultOptional.description>
+
+<Unknown.label>Неизвестный мод</Unknown.label>
+<Unknown.description>Совместимость этого мода неизвестна (опция по умолчанию, если не установлена).</Unknown.description>
+
+<WorkshopModFullyCompatible.label>Мод Workshop - полная совместимость</WorkshopModFullyCompatible.label>
+<WorkshopModFullyCompatible.description>Мод проверен на совместимость и полностью совместим со сборкой.</WorkshopModFullyCompatible.description>
+
+<WorkshopModCompatible.label>Мод Workshop - совместим</WorkshopModCompatible.label>
+<WorkshopModCompatible.description>Мод частично совместим.</WorkshopModCompatible.description>
+
+<WorkshopModIncompatible.label>Мод Workshop - несовместимый</WorkshopModIncompatible.label>
+<WorkshopModIncompatible.description>Мод был проверен на совместимость и гарантированно сломает вашу игру.</WorkshopModIncompatible.description>
+
+<EndMod.label>Конечный мод - ниже этих модов нет</EndMod.label>
+<EndMod.description>Только не ставьте другие моды ниже.</EndMod.description>
+
+</LanguageData>

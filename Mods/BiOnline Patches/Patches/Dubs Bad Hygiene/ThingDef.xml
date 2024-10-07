@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+ 	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="WaterTowerS" or defName="WindPump" or defName="sewagePipeStuff"]/stuffCategories</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="WaterTowerS" or defName="WindPump" or defName="sewagePipeStuff"]/costStuffCount</xpath>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="airPipe"]/costList</xpath>
+		<value>
+			<costList>
+				<Ceramics>2</Ceramics>
+			</costList>		
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DeepWaterWellInlet"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>100</Steel>
+				<Cementum>50</Cementum>
+				<ComponentIndustrial>5</ComponentIndustrial>
+			</costList>		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WaterTowerS"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>75</Steel>
+				<WoodLog>75</WoodLog>
+				<ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WaterTowerL"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>200</Steel>
+				<ComponentIndustrial>6</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WindPump"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>30</Steel>
+				<WoodLog>70</WoodLog>
+				<ComponentIndustrial>2</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ElectricPump"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>70</Steel>
+				<Copper>25</Copper>
+				<ComponentIndustrial>2</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PumpingStation"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>200</Steel>
+				<Copper>60</Copper>
+				<ComponentIndustrial>7</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SewageTreatment"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>400</Steel>
+				<ComponentIndustrial>8</ComponentIndustrial>
+				<Copper>50</Copper>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WaterTreatment"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>400</Steel>
+				<ComponentSpacer>2</ComponentSpacer>
+				<BIO_Coal>200</BIO_Coal>
+				<Copper>50</Copper>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HotWaterTank"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>75</Steel>
+				<Copper>25</Copper>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FireSprinkler"]/costList</xpath>
+		<value>
+			<costList>
+				  <Plasteel>40</Plasteel>
+				  <ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FireSprinkler"]/statBases</xpath>
+		<value>
+			<statBases>
+			  <Mass>2</Mass>
+			  <MaxHitPoints>250</MaxHitPoints>
+			  <WorkToBuild>500</WorkToBuild>
+			  <Flammability>1</Flammability>
+			</statBases>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sewagePipeStuff"]</xpath>
+		<value>
+			<costList>
+				  <Steel>5</Steel>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="plumbingValve"]/costList</xpath>
+		<value>
+			<costList>
+				  <Steel>20</Steel>
+				  <ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+</Patch>

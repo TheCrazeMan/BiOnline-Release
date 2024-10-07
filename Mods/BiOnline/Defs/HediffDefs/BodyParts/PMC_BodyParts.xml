@@ -1,0 +1,434 @@
+<Defs>
+
+	<ThingDef Name="BodyPartPMCBase" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(70,70,70)</color>
+		</graphicData>
+		<techHediffsTags>
+			<li>PMC</li>
+		</techHediffsTags>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<thingCategories>
+			<li>BodyPartsBionic</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>PMCSpine</defName>
+		<label>Catharsis spine</label>
+		<labelNoun>Catharsis spine</labelNoun>
+		<description>An installed Catharsis spine.</description>
+		<descriptionHyperlinks><ThingDef>PMCSpine</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>PMCSpine</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.35</MoveSpeed>
+					<MeleeDodgeChance>3.5</MeleeDodgeChance>
+					<MeleeHitChance>1.5</MeleeHitChance>
+					<MeleeParryChance>0.15</MeleeParryChance>
+					<MeleeCritChance>0.15</MeleeCritChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+ 
+	<ThingDef ParentName="BodyPartPMCBase">
+		<defName>PMCSpine</defName>
+		<label>Catharsis spine</label>
+		<description>Commisioned by Catharsis for it's own tasks, this advanced spine provides user with significant strength boost.</description>
+		<descriptionHyperlinks><RecipeDef>InstallPMCSpine</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallPMCSpine</defName>
+		<label>install Catharsis spine</label>
+		<description>Install a Catharsis spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PMCSpine</ThingDef>
+			<HediffDef>PMCSpine</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing Catharsis spine.</jobString>
+		<skillRequirements>
+			<Medicine>16</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PMCSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PMCSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PMCSpine</addsHediff>
+	</RecipeDef>
+	
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>RifRafChip</defName>
+		<label>rif-raf chip</label>
+		<labelNoun>a rif-raf</labelNoun>
+		<description>An installed rif-raf chip. A non-intelligent microcomputer controlled by a visual/tactile neural interface. It assists with memory and calculation, like a calculator and notepad embedded in the brain.</description>
+		<descriptionHyperlinks><ThingDef>RifRafChip</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>RifRafChip</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<RangedCooldownFactor>-0.25</RangedCooldownFactor>
+					<AimingDelayFactor>-0.75</AimingDelayFactor>
+					<ShootingAccuracyPawn>-3.5</ShootingAccuracyPawn>
+					<Suppressability>-0.25</Suppressability>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartPMCBase">
+		<defName>RifRafChip</defName>
+		<label>rif-raf chip</label>
+		<description>A non-intelligent microcomputer controlled by a visual/tactile neural interface. It assists with memory and calculation, like a calculator and notepad embedded in the brain.</description>
+		<descriptionHyperlinks><RecipeDef>InstallRifRafChip</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallRifRafChip</defName>
+		<label>install rif-raf chip</label>
+		<description>Install a rif-raf chip.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RifRafChip</ThingDef>
+			<HediffDef>RifRafChip</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing rif-raf chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RifRafChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RifRafChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RifRafChip</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>BerserkerChip</defName>
+		<label>berserker chip</label>
+		<labelNoun>a berserker</labelNoun>
+		<description>An installed rif-raf chip. A non-intelligent microcomputer controlled by a visual/tactile neural interface. It assists with memory and calculation, like a calculator and notepad embedded in the brain.</description>
+		<descriptionHyperlinks><ThingDef>BerserkerChip</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BerserkerChip</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeCooldownFactor>-0.25</MeleeCooldownFactor>
+					<MeleeDodgeChance>5.5</MeleeDodgeChance>
+					<MeleeHitChance>7.5</MeleeHitChance>
+					<MeleeParryChance>0.35</MeleeParryChance>
+					<MeleeCritChance>0.5</MeleeCritChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartPMCBase">
+		<defName>BerserkerChip</defName>
+		<label>berserker chip</label>
+		<description>A non-intelligent microcomputer controlled by a visual/tactile neural interface. It assists with memory and calculation, like a calculator and notepad embedded in the brain.</description>
+		<descriptionHyperlinks><RecipeDef>InstallRifRafChip</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallBerserkerChip</defName>
+		<label>install berserker chip</label>
+		<description>Install a berserker chip.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BerserkerChip</ThingDef>
+			<HediffDef>BerserkerChip</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing berserker chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BerserkerChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BerserkerChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BerserkerChip</addsHediff>
+	</RecipeDef>
+
+	<!--Модуль "Катарсис"-->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>ModuleCatharsis</defName>
+		<label>Module "Catharsis"</label>
+		<labelNoun>Module "Catharsis"</labelNoun>
+		<description>The Catharsis module is implanted in every PMC fighter. It replicates mechanites from food and maintains coherence between them. The mechanites significantly improve the functioning of the body in all respects.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RemoveModuleCatharsisDisconnected</RecipeDef>
+		</descriptionHyperlinks>
+		<initialSeverity>1</initialSeverity>
+		<priceImpact>false</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<allowMothballIfLowPriorityWorldPawn>false</allowMothballIfLowPriorityWorldPawn>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>Residual creation of mechanites</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>false</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.70</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!--Модуль "Катарсис" отключённый-->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>ModuleCatharsisDisconnected</defName>
+		<label>Module "Catharsis" disconnected</label>
+		<labelNoun>Module "Catharsis" disconnected</labelNoun>
+		<description>The Catharsis module is implanted in every PMC fighter. It replicates mechanites from food and maintains coherence between them. The mechanites significantly improve the functioning of the body in all respects.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RemoveModuleCatharsisDisconnected</RecipeDef>
+		</descriptionHyperlinks>
+		<lethalSeverity>3</lethalSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<priceImpact>false</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<allowMothballIfLowPriorityWorldPawn>false</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.015</severityPerDay>
+				<showHoursToRecover>false</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>Residual creation of mechanites</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>false</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.70</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>Mechanite creation is on hold</label>
+				<becomeVisible>true</becomeVisible>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.70</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>Low decoherence</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>2.5</minSeverity>
+				<label>Strong decoherence</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.6</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>Full decoherence</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>true</lifeThreatening>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>RemoveModuleCatharsisDisconnected</defName>
+		<label>Remove module catharsis disconnected</label>
+		<description>Remove module catharsis disconnected</description>
+		<descriptionHyperlinks>
+			<HediffDef>ModuleCatharsisDisconnected</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Remove module catharsis disconnected.</jobString>
+		<removesHediff>ModuleCatharsisDisconnected</removesHediff>
+		<successfullyRemovedHediffMessage>{0} successfully removes the Catharsis module {1}.</successfullyRemovedHediffMessage>
+		<researchPrerequisite>MedicineIII</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

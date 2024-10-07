@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatDef>
+		<defName>Nutrients</defName>
+		<label>Nutrients</label>
+		<description>How much does the food balance when consumed</description>
+		<category>BasicsNonPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<hideAtValue>0</hideAtValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<displayPriorityInCategory>3000</displayPriorityInCategory>
+		<forInformationOnly>true</forInformationOnly>
+	</StatDef>
+	
+	<StatDef>
+		<defName>NutrientsLimit</defName>
+		<label>Nutrients limit</label>
+		<description>What is the maximum amount of BJU food can replenish</description>
+		<category>BasicsNonPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<hideAtValue>0</hideAtValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<displayPriorityInCategory>3000</displayPriorityInCategory>
+		<forInformationOnly>true</forInformationOnly>
+	</StatDef>
+	
+	<StatDef>
+		<defName>OreGridCommonality</defName>
+		<label>Ore grid commonality</label>
+		<description>Reflects how often the ore is found in deposits underground.</description>
+		<category>BasicsNonPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<roundValue>true</roundValue>
+		<toStringStyle>FloatMaxTwo</toStringStyle>
+		<showNonAbstract>true</showNonAbstract>
+		<scenarioRandomizable>true</scenarioRandomizable>
+		<showOnPawns>false</showOnPawns>
+		<displayPriorityInCategory>99997</displayPriorityInCategory>
+		<forInformationOnly>true</forInformationOnly>
+		<hideAtValue>0</hideAtValue>
+	</StatDef>
+
+</Defs>

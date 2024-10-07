@@ -1,0 +1,4292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.MapBlueprintDef>
+		<defName>DevilstrandFarm32x32</defName>
+		<label>Ферма дьявлонитника 32х32</label>
+		<description>Болотная ферма дьявлонитника, подконтрольная Империи. Содержит много дьявлонитника, одежды высокого качества из него, золотую коронетку, а так же лишь 1 боеспособную пешку в лице пехотинца Империи.</description>
+		<author>0w0sh</author>
+		<mapSize>(32, 1, 32)</mapSize>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<terrain>
+			<cellsCount>1024</cellsCount>
+			<terrainDefDeflate>
+zZnNbsJADIQfjFsP7SmXti8QlQgiRSAlolLfvkKkaZb9G9vjwCEE0BLsb53Z8aZpx+n489mNY9ufds15moAPH+d+eO+/jqU3TXjh
+0qfgf9B4gnHLv75eTod2eBvb727YNZf97biOrby+jP3+0KVP0WgsLSBCIbYCKGtY/wFA0Eq40gzRSZZQ0+IhDIzBiUpPzo8UGMRO
+NVcw1ZJoZLGJgc0nRKpwFcPkUQdTMqULp4WVls89poo8baf8NEGLoBlRzacAVPLeNxQiDk1UNck1fF1LWhjznbquyuhq128iTrXV
+kKApqFLHAQO2ARGrGA7hbsuXXw1pnC+UKLSQZQCtU87MQrI01UkiiumUb36yPdKqJCpKVmSBk+nqw7f6hdShcg9YolwNN+paFJTd
+FZgp0N0lSRwpZkkhdny3LSoaqeI8CSaKWVS3SkinziFFQ0SwjT6lpMQkVyD/5iP/M4AG8K1sYa5WkEyoKfRIKl7w6xiiHA50L5Of
+v2JxX18M9VdFW4TVhVgJub16kEq2XxO0dveHKD/NHCjoGNJx7yormwjoNcUxZoKoNTdYkeuTIgiZjYuil/0bzd9QcXKtkhJCdj0U
+q8btdcPN8cesMlrfi7qUaLQZEx81q4dAy7cAVGWQN4NI4cusXk6fWiLq0EZ43wUM3fUH650po4yZT4vDMYSnnc+tqYyfqZ6LFp2Q
+dIna9HZ8YAEj+6eWRyi/
+</terrainDefDeflate>
+			<terrainCellsDeflate>
+FdbTEiAGAATBs23btm3btm07Odu2bdu2bdtO56E/YWo3QIAAAQISiMAEISjBCE4IQhKK0IQhLOEITwQiEonIRCEq0YhODGISi9jE
+IS7xiE8CEpKIxCQhKclITgpSkorUpCEt6UhPBjKSicxkISvZyE4OcpKL3OQhL/nITwEKUojCFKEoxShOCUpSitKUoSzlKE8FKlKJ
+ylShKtWoTg1qUova1KEu9ahPAxrSiMY0oSnNaE4LWtKK1rShLe1oTwc60onOdKEr3ehOD3rSi970oS/96M8ABjKIwQzhH/5lKMMY
+zghGMorRjGEs4xjPBCYyiclMYSrTmM4MZjKL2cxhLvOYzwIWsojFLGEpy1jOClayitWsYS3rWM8GNrKJzWxhK9vYzg52sovd7GEv
++9jPAQ5yiMMc4SjHOM4JTnKK05zhLOc4zwUuconLXOEq17jODW5yi9vc4S73uM8DHvKIxzzhKc94zgte8orXvOEt73jPBz7yic98
+4Svf+M4PfvKL3/zhL//HH5BABCYIQQlGcEIQklCEJgxhCUd4IhCRSEQmClGJRnRiEJNYxCYOcYlHfBKQkEQkJglJSUZyUpCSVKQm
+DWlJR3oykJFMZCYLWclGdnKQk1zkJg95yUd+ClCQQhSmCEUpRnFKUJJSlKYMZSlHeSpQkUpUpgpVqUZ1alCTWtSmDnWpR30a0JBG
+NKYJTWlGc1rQkla0pg1taUd7OtCRTnSmC13pRnd60JNe9KYPfelHfwYwkEEMZgj/8C9DGcZwRjCSUYxmDGMZx3gmMJFJTGYKU5nG
+dGYwk1nMZg5zmcd8FrCQRSxmCUtZxnJWsJJVrGYNa1nHejawkU1sZgtb2cZ2drCTXexmD3vZx34OcJBDHOYIRznGcU5wklOc5gxn
+Ocd5LnCRS1zmCle5xnVucJNb3OYOd7nHfR7wkEc85glPecZzXvCSV7zmDW95x3s+8JFPfOYLX/nGd37wk1/85g9/+X/4AxKIwAQh
+KMEITghCEorQhCEs4QhPBCISichEISrRiE4MYhKL2MQhLvGITwISkojEJCEpyUhOClKSitSkIS3pSE8GMpKJzGQhK9nITg5ykovc
+5CEv+chPAQpSiMIUoSjFKE4JSlKK0pShLOUoTwUqUonKVKEq1ahODWpSi9rUoS71qE8DGtKIxjShKc1oTgta0orWtKEt7WhPBzrS
+ic50oSvd6E4PetKL3vShL/3ozwAGMojBDOEf/mUowxjOCEYyitGMYSzjGM8EJjKJyUxhKtOYzgxmMovZzGEu85jPAhayiMUsYSnL
+WM4KVrKK1axhLetYzwY2sonNbGEr29jODnayi93sYS/72M8BDnKIwxzhKMc4zglOcorTnOEs5zjPBS5yictc4SrXuM4NbnKL29zh
+Lve4zwMe8ojHPOEpz3jOC17yite84S3veM8HPvKJz3zhK9/4zg9+8ovf/OEv/5/+gAQiMEEISjCCE4KQhCI0YQhLOMITgYhEIjJR
+iEo0ohODmMQiNnGISzzik4CEJCIxSUhKMpKTgpSkIjVpSEs60pOBjGQiM1nISjayk4Oc5CI3echLPvJTgIIUojBFKEoxilOCkpSi
+NGUoSznKU4GKVKIyVahKNapTg5rUojZ1qEs96tOAhjSiMU1oSjOa04KWtKI1bWhLO9rTgY50ojNd6Eo3utODnvSiN33oSz/6M4CB
+DGIwQ/iHfxnKMIYzgpGMYjRjGMs4xjOBiUxiMlOYyjSmM4OZzGI2c5jLPOazgIUsYjFLWMoylrOClaxiNWtYyzrWs4GNbGIzW9jK
+Nrazg53sYjd72Ms+9nOAgxziMEc4yjGOc4KTnOI0ZzjLOc5zgYtc4jJXuMo1rnODm9ziNne4yz3u84CHPOIxT3jKM57zgpe84jVv
+eMs73vOBj3ziM1/4yje+84Of/OI3f/jLfw==
+</terrainCellsDeflate>
+		</terrain>
+		<buildings>
+			<cellsCount>628</cellsCount>
+			<positionsDeflate>
+NdYJtE1VGADg++4TnrmBMlSmjIUSoslMylB6Mq0SMmR6z9igQoPIrEm1ipbK+MiQiISSZ8gQKiFDRIo0Zy3Vt7u7u9a3/v/ue88+
+w97736dHWiIxhlms4zDJZCJRniY0pwX5qcIcv29iLL3oyQky/FaAXPlmvqeS7+vF2XzCBvJqa0ozKtKLB+gZ2v3eLC11zKlEIvED
+heSFKUIt39uRRTZTaU4vniEflalERZrSg56MYjQ79XOWC53vXXEaSxhMMW21aMc+389RSt6AVfKVvMwMXtC2nBd5iRE8xG72cJgj
+HCU9PZHIwwXkJR8/aP+RwvIi1KAmbWlHFtlMZbPrzsMI580K163tkFgstIf+Q1/y03zGNrayhfksIIdFLGQ7i5nCZAZRk7YUpUh4
+7hSkMAXIID9VaEkLetOHsTzLHOYyj3FMYiIDGUBfbqMVrWlDDa7mGqpTjao0oQJuNeH2EuVpTHfupyHdaEQ5yuLx/PeZLnmeoQwL
+Y8WLvMQK3ucr/qKkzuvTkRu4jD+1f8GXvMcylrOUz9nFz1zkv9dxLXeSzVSWsJRlTGcagxlCe+7ibp5nKMPJZBj1uIe6XEoJfneu
+P9jLb+xhN7/yCxf7zyUU53pqc8iDO8xHrGMmsxjNKLrRiPtpSFnS0lMPvBxJytODxjShAt3ZwHqOcJSP+ZZjfMJs3uIpetKUq6hI
+Mx7gaZ6hF82pRGWqkEF+qlKAghTiaq7hdqpRndtoRUta0Js+9GUczzKWd3ibjRznOz5lEyeYw1xyORnWHOPpx3M8SH9a04ZBDGQy
+U1jMTs6yg584w3YWkcMAJjGRCSxgHvP5PtQEtnKKHznNNj5jYbgfY72Vlsa3MXPlTWhIlbTUQmkujqa6vA8TQv0Uk2IHsQ4r9bWK
+r9nPAT7kXh7ndRpwEzfTiRmUogw3UjpaQ2e6spqOMX7An851pXiQv1hBB86HeS7eEnLq8yVr2Rfmkls5xlD5sNCf/AAHWcut3McT
+vMEtlKI0Zbic+nTiFR5hFfv4gK/ZH+3wXHLFXc5zhbyevDjDORfOpa00/8jvFTPFEqEWc541PEpXOtOF12jAyHAMD0d/p6XWdPu4
+9kMd2R5rbkaspclY20LNCvUkzPlyce6G9TwqzpEzcS6FeR7W1JG4ZmY6pj9F5Zn8kp6qbSN5NdQwfWeKZ8RssXXYq+UzyZtI1cfa
+sSb1iXtHtVirc2JNDjU3LZ63elynk+KcfjCutyfTU/UlXO+GeP25ca7nxDW0I87zsB5DPQk1rV58NoNj7cuM9TjU6VDrxsd9ZXLc
+mzLifhTWf6ghoU6FGhVq3ltxXYf1FGrO/rC/i7/TTd5Ff61C/XT8ELGfeEcY33D9idSGskU+hjsoqWmJWIeHk6n9Ouzx4zlF2/hO
+Ed5N6qal3kN+DeMb3y/uDOPhPxuTqXH6Jswt8QlWyx8Tr2BvMjX3t4snk6l3h6ywpnkzkRrDi+TH/ZYv+n/u/Qs=
+</positionsDeflate>
+			<defsDeflate>
+7ZpLj9owEIB/U3vNiSSEVQVqRKLmiIwzJFMcT2o7bPn3tSFleRTYakMlVF9GzBfH43mAhkkKJkRQDCdi6pYCYiIV7EQCksNVOSVq
+ghcmy5yhIIWyCi2vg2kxW0SCTG3JYs74+g8kM0Sil71pa8+tS9hSIX9hTQsq+JaM03gRA2ciYWvIDEOlH0ZzUrx2p5la63ec9/Lf
+y11+drn5yKd97vdlNichwp6ESHNYoQS1nUGJXRMypUAcamWDQhtly90TTzzxxBNPPPHEE0888cQTTzzxxJOByShdZN2yAVVBOaXK
+6QUzoKYotqMTbXzQ5gDlcIrbOxna0ntcH3KkezxKmwimtVuQWzO6ZQqk6c3bM6aCSZOSyX509oo7dQycFDO4gRlKnLPVSoBGFoTW
+j1ixFqwErUEFYzcPtibPpqmn2t5SQVSCjGrQ5kF5u0ji6EZKryX4nhYf8jbwQDoiJW1EBx3w0/F+N2rBOpgr6qq6QFMngl7BnsfR
+eacN8rDjazC3KuNiln8fHAc1PNGis4C/NzXJI+vK1f5bLHdF/+nnZ36z8GMbI1lFtU1vkNUgVlnjbr58QHLxXbwV68PizJCElJna
+I4/+Y5SgsL9aqCAh1njmmWee/TUbSY62F+qfA39QywmF65j22gy5ole2gd+gqOFt7RcwY1mhhFvHSrEFfV9x/RqU++1CQba16C9M
+kJ2ZzWpqW9eeMGXOnOgbdhS2E8wVwPODaNu6fyxPRS6cmLFWwFPqV171yThqTRfv4qSTsbv36/I7cHOq/QI=
+</defsDeflate>
+			<things>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>Glass</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>Glass</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>Empire</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>Empire</factionDef>
+					<rotation>1</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_FoodMeals</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>Empire</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Drinks</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+			</things>
+		</buildings>
+		<items>
+			<cellsCount>320</cellsCount>
+			<positionsDeflate>
+ddPZaw8AAMDxHyNJOTdKpGUeJsQ2UYwHyQO5JueOIiUZtUmOZQ+uB8c0lGPIsbnvbZZhMzsJO1zlmjDjQTNnfpTPw+9hDzx8/oJv
+346BQKAHPRnAIAYzghhiGcloJjCRyUxhJgnMYj4LSG5jMamkkc5KMljfxkY2kc0ujnCMXPK4xGXyKaCQUm5Rxm0qqKSKamqopY56
+GnjEY57wlFc08po3NPGeZj7wkRY+08oXvvODnwT5TYd2gUAnOtOF7vSgF+FE0Js+9CWSaIYwlGEMZwQxxBLHSEYxmrHEM4mpTGM6
+M0hgNnOYyzySSGEhS1hGKitYxWrWsJZ1ZJDJVnaQxU72k8NBDnGY4/+Q+w95IRco5gY3KaGM8pCK/6j8j/s8oJZnPOcFL2mkhSC/
++UNYe13oSjf60Z8BRDKQKKIZxhjGEs84xjOFqcxnAYkkkUwKi1hKKstZyzo2sJktbGM7O8hiJ3vZx34OkMMRjnKcXPI4wUlOhZzm
+DGc5x3kucJFLFHKVIq5xnZuUUMotyrhNORVUUU0Nd7jLPWqp4wkvecVb3tHEe5r5yCda+EwrX/nGd34RpHuYP+hJr5BwIogihlji
+SCCRJNJIJ5NsdrGbPVwhnwIKKaKYehp4yCNa+co3fhLkLw==
+</positionsDeflate>
+			<defsDeflate>
+rVfbbqMwEP0wnjaJttWqlSJI+4qmYVisOBjZplX+filE4PXdbt7sYTxz5j4cKfSyPgGlTxyEKI7zfcfh+kFRFL8JlV19IFzev7yy
+lWnfsQt+kh5NLlXWxrbcTxxxN4lnzBQ5Hw1pG7p9N/aXisLfSiJS/apzq1gUoRV8NaOQtWDjUBzF7dwRiSeE4tcwAEdav6OQJbsB
+XSlVNz0sx7aluNL2MKBLhZe8AVxFMc56lOt9B4KcZ50r6Ti93B4cJvzILc5eA2d+Us+6j0L3WDnWlIj1i54oBpvnRQlfh+lEheTQ
+N0WF2NQqYeEv4TuCgkDALLuJdiS+CnGXUQ6S2CDkvHEj1aPiKFG9qGNB2YOekrG+AFi7VVLV5Dg3t+rswJVjDhjNNnfFWvAaQQ21
+7iDiR+a9MVgCuuyZ+4DYO128KHtltLm99aRl/Lp28D9wvigdX7ve+/s2HygFvgyEeJkeIZGCnSTrNIst7re+JT0RHTZ3GEmqrZbb
+5nPJPvD/KT5PbPtAVSauR80OueLfZ5Av0BAUKuXEBoeK5eZzmmNq5VT9nOvaUIxoSEp9M3q7Io9dzNIa3yxNgbanTHYmwegmuZ0g
+oR/G1n92UIJODBmjG6D35ExjUwZVCKJnOAe3cxeyCBYve+rK+4M88YYkxa/6BIv3e8RwT7M3RfRjaiZlxzQ6p7X1xS4fhqJYY1P6
+kLok+fIlboPKKaC8n8Dg/Ay7LLjRhn8eo3LW7uKX8Uxa5GS82rPEtxBuUqxPI+P9ffwH
+</defsDeflate>
+			<things>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<stackCount>6</stackCount>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<stackCount>4</stackCount>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Masterwork</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<quality>Normal</quality>
+					<stuffDef>Gold</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Excellent</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Excellent</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Excellent</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<stackCount>48</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>21~53</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<stackCount>11</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>6~14</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Excellent</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Excellent</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Excellent</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Excellent</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Good</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>7~14</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>19~49</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<stackCount>23</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>23~45</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<stackCount>56</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>40~74</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<stackCount>47</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>37~75</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<stackCount>8</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>4~12</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<stackCount>47</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>25~62</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<quality>Poor</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<stuffDef>DevilstrandCloth</stuffDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomQuality">
+							<qualityChances>
+								<li />
+								<li>
+									<qualityCategory>Poor</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Normal</qualityCategory>
+									<chance>2</chance>
+								</li>
+								<li>
+									<qualityCategory>Good</qualityCategory>
+									<chance>1</chance>
+								</li>
+								<li>
+									<qualityCategory>Excellent</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Masterwork</qualityCategory>
+								</li>
+								<li>
+									<qualityCategory>Legendary</qualityCategory>
+								</li>
+							</qualityChances>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<stackCount>5</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>3~5</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<stackCount>23</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>13~61</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<stackCount>34</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>13~54</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+			</things>
+		</items>
+		<pawns>
+			<cellsCount>3</cellsCount>
+			<positionsDeflate>
+q2VgYHjKyMBQzczAAAA=
+</positionsDeflate>
+			<pawns>
+				<li>
+					<pawnKindDef>Empire_Royal_NobleWimp</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>Empire</defaultFaction>
+					<forceFaction>Empire</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(29, 0, 4)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>FarmerKikimor</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>Empire</defaultFaction>
+					<forceFaction>Empire</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(6, 0, 15)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<defaultFaction>Empire</defaultFaction>
+					<forceFaction>Empire</forceFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(15, 0, 16)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+			</pawns>
+		</pawns>
+		<roof>
+			<cellsCount>122</cellsCount>
+			<roofDefDeflate>
+C8rPT3POzysuKSpNLklNsQ4a5Y/yR/mj/FH+KH+UP9B8AA==
+</roofDefDeflate>
+			<roofCellsDeflate>
+DdDXMYMBAADgn2gzKC/6CiLhQZsh1YOygzR36gzSnG4FaU63A3GnG8P38C3w9QdBMMAgQ0wRZpoIUWaYJUacBElSpFkmQ5YceQps
+UqREmQpVDqlRp0GTFte0eWOlIwhWWWOdLbbZYZc99jnimBNOOeOcCy654ZY77nngkSeeeeeDT7745odf/ujsDIIQXXTTQy99DDPC
+KGOMM8Ekc8yzwCJLhENeiRAlRpwESVKk2SBDlhx5ChxQpESZClWuqFGnQZMWL7zS5h8=
+</roofCellsDeflate>
+		</roof>
+		<areas />
+		<mapArea>
+			<zoneName>map</zoneName>
+			<cellsCount>1024</cellsCount>
+			<positionsDeflate>
+FdbTEiAGAATBs23btm3btm07Odu2bdu2bdtO56E/YWo3QIAAAQISiMAEISjBCE4IQhKK0IQhLOEITwQiEonIRCEq0YhODGISi9jE
+IS7xiE8CEpKIxCQhKclITgpSkorUpCEt6UhPBjKSicxkISvZyE4OcpKL3OQhL/nITwEKUojCFKEoxShOCUpSitKUoSzlKE8FKlKJ
+ylShKtWoTg1qUova1KEu9ahPAxrSiMY0oSnNaE4LWtKK1rShLe1oTwc60onOdKEr3ehOD3rSi970oS/96M8ABjKIwQzhH/5lKMMY
+zghGMorRjGEs4xjPBCYyiclMYSrTmM4MZjKL2cxhLvOYzwIWsojFLGEpy1jOClayitWsYS3rWM8GNrKJzWxhK9vYzg52sovd7GEv
++9jPAQ5yiMMc4SjHOM4JTnKK05zhLOc4zwUuconLXOEq17jODW5yi9vc4S73uM8DHvKIxzzhKc94zgte8orXvOEt73jPBz7yic98
+4Svf+M4PfvKL3/zhL//HH5BABCYIQQlGcEIQklCEJgxhCUd4IhCRSEQmClGJRnRiEJNYxCYOcYlHfBKQkEQkJglJSUZyUpCSVKQm
+DWlJR3oykJFMZCYLWclGdnKQk1zkJg95yUd+ClCQQhSmCEUpRnFKUJJSlKYMZSlHeSpQkUpUpgpVqUZ1alCTWtSmDnWpR30a0JBG
+NKYJTWlGc1rQkla0pg1taUd7OtCRTnSmC13pRnd60JNe9KYPfelHfwYwkEEMZgj/8C9DGcZwRjCSUYxmDGMZx3gmMJFJTGYKU5nG
+dGYwk1nMZg5zmcd8FrCQRSxmCUtZxnJWsJJVrGYNa1nHejawkU1sZgtb2cZ2drCTXexmD3vZx34OcJBDHOYIRznGcU5wklOc5gxn
+Ocd5LnCRS1zmCle5xnVucJNb3OYOd7nHfR7wkEc85glPecZzXvCSV7zmDW95x3s+8JFPfOYLX/nGd37wk1/85g9/+X/4AxKIwAQh
+KMEITghCEorQhCEs4QhPBCISichEISrRiE4MYhKL2MQhLvGITwISkojEJCEpyUhOClKSitSkIS3pSE8GMpKJzGQhK9nITg5ykovc
+5CEv+chPAQpSiMIUoSjFKE4JSlKK0pShLOUoTwUqUonKVKEq1ahODWpSi9rUoS71qE8DGtKIxjShKc1oTgta0orWtKEt7WhPBzrS
+ic50oSvd6E4PetKL3vShL/3ozwAGMojBDOEf/mUowxjOCEYyitGMYSzjGM8EJjKJyUxhKtOYzgxmMovZzGEu85jPAhayiMUsYSnL
+WM4KVrKK1axhLetYzwY2sonNbGEr29jODnayi93sYS/72M8BDnKIwxzhKMc4zglOcorTnOEs5zjPBS5yictc4SrXuM4NbnKL29zh
+Lve4zwMe8ojHPOEpz3jOC17yite84S3veM8HPvKJz3zhK9/4zg9+8ovf/OEv/5/+gAQiMEEISjCCE4KQhCI0YQhLOMITgYhEIjJR
+iEo0ohODmMQiNnGISzzik4CEJCIxSUhKMpKTgpSkIjVpSEs60pOBjGQiM1nISjayk4Oc5CI3echLPvJTgIIUojBFKEoxilOCkpSi
+NGUoSznKU4GKVKIyVahKNapTg5rUojZ1qEs96tOAhjSiMU1oSjOa04KWtKI1bWhLO9rTgY50ojNd6Eo3utODnvSiN33oSz/6M4CB
+DGIwQ/iHfxnKMIYzgpGMYjRjGMs4xjOBiUxiMlOYyjSmM4OZzGI2c5jLPOazgIUsYjFLWMoylrOClaxiNWtYyzrWs4GNbGIzW9jK
+Nrazg53sYjd72Ms+9nOAgxziMEc4yjGOc4KTnOI0ZzjLOc5zgYtc4jJXuMo1rnODm9ziNne4yz3u84CHPOIxT3jKM57zgpe84jVv
+eMs73vOBj3ziM1/4yje+84Of/OI3f/jLfw==
+</positionsDeflate>
+		</mapArea>
+		<forceFogArea IsNull="True" />
+		<forceUnfogArea IsNull="True" />
+		<variables>
+			<customVariables />
+		</variables>
+		<mapScripts>
+			<li>MapObjectDelete</li>
+		</mapScripts>
+		<mapRules>
+			<fog>True</fog>
+		</mapRules>
+		<tags>
+			<li>Farmland</li>
+		</tags>		
+		<generationCommonality>1</generationCommonality>
+	</BiOnline.MapGenerator.MapBlueprintDef>
+</Defs>

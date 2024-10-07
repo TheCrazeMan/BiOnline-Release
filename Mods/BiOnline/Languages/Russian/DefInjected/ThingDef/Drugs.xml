@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Iron_Skin_Elixir.label>Зелье Железной кожи</Iron_Skin_Elixir.label>
+  <Iron_Skin_Elixir.description>После приема зелья, кожа начинает покрываться морщинами и твердеет, а движения  затрудняется.</Iron_Skin_Elixir.description>
+  <Iron_Skin_Elixir.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</Iron_Skin_Elixir.ingestible.ingestCommandString>
+  <Iron_Skin_Elixir.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</Iron_Skin_Elixir.ingestible.ingestReportString>
+
+  <Berserker_Elixir.label>Зелье Берсерка</Berserker_Elixir.label>
+  <Berserker_Elixir.description>Экстракт из множества токсичных ингредиентов. Употребление  внутрь даёт невероятный эффект, улучшая большинство боевых характеристик человека. P.S ОСТОРОЖНО!!! Зелье имеет огромную токсичность.</Berserker_Elixir.description>
+  <Berserker_Elixir.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</Berserker_Elixir.ingestible.ingestCommandString>
+  <Berserker_Elixir.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</Berserker_Elixir.ingestible.ingestReportString>
+  
+  <Healing_Elixir.label>Зелье Исцеления</Healing_Elixir.label>
+  <Healing_Elixir.description>Зелье Исцеления. Очень хорошо подходит для снятия боли и способствует быстрому заживлению  ран.</Healing_Elixir.description>
+  <Healing_Elixir.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</Healing_Elixir.ingestible.ingestCommandString>
+  <Healing_Elixir.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</Healing_Elixir.ingestible.ingestReportString>
+  
+  <Grower_Elixir.label>Зелье Раcтениевода</Grower_Elixir.label>
+  <Grower_Elixir.description>Зелье растениеводства употребленное внутрь ускоряет мелкую моторику и зоркость  потребителя. Это позволяет работать куда быстрее и собирать большую часть урожая без его порчи.</Grower_Elixir.description>
+  <Grower_Elixir.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</Grower_Elixir.ingestible.ingestCommandString>
+  <Grower_Elixir.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</Grower_Elixir.ingestible.ingestReportString>
+  
+  <Miner_Elixir.label>Зелье Шахтёра</Miner_Elixir.label>
+  <Miner_Elixir.description>Зелье шахтёра употребленное внутрь  даёт прилив сил и точность работы потребителю, это улучшает качество горных работ а также ускоряет их.</Miner_Elixir.description>
+  <Miner_Elixir.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</Miner_Elixir.ingestible.ingestCommandString>
+  <Miner_Elixir.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</Miner_Elixir.ingestible.ingestReportString>
+  
+  <ImmunoBlockerslow.label>Слабый имунноблокатор</ImmunoBlockerslow.label>
+  <ImmunoBlockerslow.description>Позволяет незначительно снизить отторжение органов и киберпсихоз.</ImmunoBlockerslow.description>
+  <ImmunoBlockerslow.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</ImmunoBlockerslow.ingestible.ingestCommandString>
+  <ImmunoBlockerslow.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</ImmunoBlockerslow.ingestible.ingestReportString>
+  
+  <ImmunoBlockersStrong.label>Сильный имунноблокатор</ImmunoBlockersStrong.label>
+  <ImmunoBlockersStrong.description>Позволяет значительно снизить отторжение органов и киберпсихоз.</ImmunoBlockersStrong.description>
+  <ImmunoBlockersStrong.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</ImmunoBlockersStrong.ingestible.ingestCommandString>
+  <ImmunoBlockersStrong.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</ImmunoBlockersStrong.ingestible.ingestReportString>
+</LanguageData>

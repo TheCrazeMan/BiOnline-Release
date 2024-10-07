@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Shuttle_Player_Incoming.label>Шаттл(прибывающий)</Shuttle_Player_Incoming.label>
+  <Shuttle_Player_Leaving.label>Шаттл(уходящий)</Shuttle_Player_Leaving.label>
+  <Shuttle_Player_Active.label>Шаттл(действующий)</Shuttle_Player_Active.label>
+  
+  <CombatShuttle_Player_Incoming.label>Шаттл(прибывающий)</CombatShuttle_Player_Incoming.label>
+  <CombatShuttle_Player_Leaving.label>Шаттл(уходящий)</CombatShuttle_Player_Leaving.label>
+  <CombatShuttle_Player_Active.label>Шаттл(действующи�я�)</CombatShuttle_Player_Active.label>
+  <CombatShuttle_Active.label>Шаттл(действующий)</CombatShuttle_Active.label>
+</LanguageData>

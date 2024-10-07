@@ -1,0 +1,36 @@
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[5]</xpath> <!-- Удаление компонентов из сканера -->
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[4]</xpath> <!-- Удаление пластали из сканера -->
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[3]</xpath> <!-- Удаление стали из сканера -->
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/totalValueRange</xpath> <!-- Снижение колва руды в жиле (высчитывается по стоимости) -->
+			<value>
+				<totalValueRange><min>1850</min><max>2500</max></totalValueRange>
+			</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath> <!-- Добавление модовых руд -->
+			<value>
+				<li>MineableCopperOre</li>
+				<li>MineableLeadOre</li>
+				<li>BIO_MineableCoal</li>
+				<li>BIO_MineableIron</li>
+				<li>BIO_Mineable_Cold_Stone</li>
+				<li>BIO_Mineable_Sulfur</li>
+				<li>BIO_Mineable_Salt</li>
+				<li>BIO_Mineable_Saltpeter</li>
+			</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/RecipeDef/Recipe_Items_Resource.xml-->
+<Make_Neutroaminex10.label>Создать нейтроамин х10</Make_Neutroaminex10.label>
+<Make_Neutroaminex10.description>Создание нейтроамина из различных компонентов.</Make_Neutroaminex10.description>
+
+<Make_Neutroaminex40.label>Создать нейтроамин х40</Make_Neutroaminex40.label>
+<Make_Neutroaminex40.description>Создание нейтроамина из различных компонентов.</Make_Neutroaminex40.description>
+
+<Make_Paperx25.label>Сделать бумагу х25</Make_Paperx25.label>
+<Make_Paperx25.description>Создать листы бумаги из дерева</Make_Paperx25.description>
+
+<Make_Paperx75.label>Сделать бумагу х75</Make_Paperx75.label>
+<Make_Paperx75.description>Создать листы бумаги из дерева</Make_Paperx75.description>
+
+<ClothX25.label>Ткать ткань x25</ClothX25.label>
+<ClothX25.description>Ткать хлопковую ткань</ClothX25.description>
+<ClothX25.jobString>Создаёт ткань</ClothX25.jobString>
+
+<ClothX75.label>Изготовление ткани x75</ClothX75.label>
+<ClothX75.description>Ткать хлопковую ткань</ClothX75.description>
+<ClothX75.jobString>Создаёт ткань</ClothX75.jobString>
+
+<DVSClothX25.label>Ткать дьявлоткань x25</DVSClothX25.label>
+<DVSClothX25.description>Ткать дьявлоткань</DVSClothX25.description>
+<DVSClothX25.jobString>Создаёт ткань</DVSClothX25.jobString>
+
+<DVSClothX75.label>Ткать дьявлоткань x75</DVSClothX75.label>
+<DVSClothX75.description>Ткать дьявлоткань</DVSClothX75.description>
+<DVSClothX75.jobString>Создаёт ткань</DVSClothX75.jobString>
+
+<MakeCrushedStoneFromChunks.label>Изготовление щебня из кусков камня</MakeCrushedStoneFromChunks.label>
+<MakeCrushedStoneFromChunks.description>Раздробить куски камня на щебень</MakeCrushedStoneFromChunks.description>
+
+<MakeSandFromStone.label>Производство песка из щебня</MakeSandFromStone.label>
+<MakeSandFromStone.description>Дробить щебень на песок</MakeSandFromStone.description>
+
+<MakeRawBricksX25.label>Изготовление кирпича из глины x25</MakeRawBricksX25.label>
+<MakeRawBricksX25.description>Формирование глины в кирпичи</MakeRawBricksX25.description>
+
+<MakeRawBricksX75.label>Изготовление кирпича из глины x75</MakeRawBricksX75.label>
+<MakeRawBricksX75.description>Формирование глины в кирпичи</MakeRawBricksX75.description>
+
+<CementumX25.label>Создать цемент x25</CementumX25.label>
+<CementumX25.description>Сделать цемент из щебня и песка</CementumX25.description>
+<CementumX25.jobString>Создаёт цемент</CementumX25.jobString>
+
+<CementumX75.label>Создать цемент x75</CementumX75.label>
+<CementumX75.description>Сделать цемент из щебня и песка</CementumX75.description>
+<CementumX75.jobString>Создаёт цемент</CementumX75.jobString>
+
+<BricksX25.label>Обжечь кирпич x25</BricksX25.label>
+<BricksX25.description>Обжиг кирпичей, чтобы потом их можно было использовать</BricksX25.description>
+<BricksX25.jobString>Обжигает кирпичи</BricksX25.jobString>
+
+<BricksX75.label>Обжечь кирпич x75</BricksX75.label>
+<BricksX75.description>Обжиг кирпичей, чтобы потом их можно было использовать</BricksX75.description>
+<BricksX75.jobString>Обжигает кирпичи</BricksX75.jobString>
+
+<GlassX5.label>Выплавить стекло x5</GlassX5.label>
+<GlassX5.description>Переплавить песок в стекло</GlassX5.description>
+<GlassX5.jobString>Выплавляет стекло</GlassX5.jobString>
+
+<GlassX25.label>Выплавить стекло x25</GlassX25.label>
+<GlassX25.description>Переплавить песок в стекло</GlassX25.description>
+<GlassX25.jobString>Выплавляет стекло</GlassX25.jobString>
+
+<CeramicsX5.label>Обжиг керамики x5</CeramicsX5.label>
+<CeramicsX5.description>Обжиг керамики из глины</CeramicsX5.description>
+<CeramicsX5.jobString>Обжигает керамику</CeramicsX5.jobString>
+
+<CeramicsX25.label>Обжиг керамики x25</CeramicsX25.label>
+<CeramicsX25.description>Обжиг керамики из глины</CeramicsX25.description>
+<CeramicsX25.jobString>Обжигает керамику</CeramicsX25.jobString>
+
+<MakeHardenedGlassx15.label>Создать бронестекло х15</MakeHardenedGlassx15.label>
+<MakeHardenedGlassx15.description>Создать бронестекло путём нанесения новых слоёв стекла друг на друга</MakeHardenedGlassx15.description>
+
+<MakeHardenedGlassx45.label>Создать бронестекло х45</MakeHardenedGlassx45.label>
+<MakeHardenedGlassx45.description>Создать бронестекло путём нанесения новых слоёв стекла друг на друга</MakeHardenedGlassx45.description>
+
+<MakePolymersx15.label>Создать полимеры х15</MakePolymersx15.label>
+<MakePolymersx15.description>Создать полимеры из химии</MakePolymersx15.description>
+
+<MakePolymersx45.label>Создать полимеры х45</MakePolymersx45.label>
+<MakePolymersx45.description>Создать полимеры из химии</MakePolymersx45.description>
+
+<MakeSulfuricAcidx5.label>Создать серную кислоту х5</MakeSulfuricAcidx5.label>
+<MakeSulfuricAcidx5.description>Создать серную кислоту из химии</MakeSulfuricAcidx5.description>
+
+<MakeSulfuricAcidx25.label>Создать серную кислоту х25</MakeSulfuricAcidx25.label>
+<MakeSulfuricAcidx25.description>Создать серную кислоту из химии</MakeSulfuricAcidx25.description>
+
+</LanguageData>

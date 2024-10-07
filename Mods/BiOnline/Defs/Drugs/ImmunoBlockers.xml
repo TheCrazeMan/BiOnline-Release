@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>ImmunoBlockerslow</defName>
+		<label>Immuno blockers</label>
+		<description>Weak immunoblocker, allows a slight relief of cyberpsychosis</description>
+		<graphicData>
+		  <texPath>Things/Item/Drug/ImmunoBlockerslow/ImmunoBlockerslow</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.4</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <WorkToMake>400</WorkToMake>
+		  <MarketValue>30</MarketValue>
+		  <Mass>0.05</Mass>
+		  <DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+		  <foodType>Fluid, Processed</foodType>
+		  <joyKind>Chemical</joyKind>
+		  <joy>0.40</joy>
+		  <baseIngestTicks>210</baseIngestTicks>
+		  <nurseable>true</nurseable>
+		  <drugCategory>Social</drugCategory>
+		  <ingestSound>Ingest_Drink</ingestSound>
+		  <ingestHoldOffsetStanding>
+			<northDefault>
+			  <offset>(0.18,0,0)</offset>
+			</northDefault>
+		  </ingestHoldOffsetStanding>
+		  <ingestHoldUsesTable>false</ingestHoldUsesTable>
+		  <ingestCommandString>Drink {0}</ingestCommandString>
+		  <ingestReportString>Drinking {0}.</ingestReportString>
+		  <outcomeDoers>
+			<li Class="BiOnline.Hediffs.IngestionOutcomeDoer_AdjustSeverity">
+			  <hediffDef>Cyberpsychosis</hediffDef>
+			  <severity>-0.25</severity>
+			</li>
+		  </outcomeDoers>
+		</ingestible>
+		<tradeability>Sellable</tradeability>
+		<costList>
+			<TM_RawShrooms>5</TM_RawShrooms>
+			<Neutroamine>10</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>RE_ImmunoBlockers</researchPrerequisite>
+			<bulkRecipeCount>4</bulkRecipeCount>
+		  <recipeUsers>
+			<li>MedicalBench</li>
+		  </recipeUsers>
+		  <soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<comps>
+		  <li Class="CompProperties_Drug">
+			<listOrder>1000</listOrder>
+			<overdoseSeverityOffset>0</overdoseSeverityOffset>
+		  </li>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>6</daysToRotStart>
+			<rotDestroys>false</rotDestroys>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>ImmunoBlockersStrong</defName>
+		<label>Strong immuno blockers </label>
+		<description>Strong immunoblocker, allows some relief from cyberpsychosis</description>
+		<graphicData>
+		  <texPath>Things/Item/Drug/ImmunoBlockersStrong/ImmunoBlockersStrong</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.4</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <WorkToMake>800</WorkToMake>
+		  <MarketValue>60</MarketValue>
+		  <Mass>0.05</Mass>
+		  <DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+		  <foodType>Fluid, Processed</foodType>
+		  <joyKind>Chemical</joyKind>
+		  <joy>0.40</joy>
+		  <baseIngestTicks>210</baseIngestTicks>
+		  <nurseable>true</nurseable>
+		  <drugCategory>Social</drugCategory>
+		  <ingestSound>Ingest_Drink</ingestSound>
+		  <ingestHoldOffsetStanding>
+			<northDefault>
+			  <offset>(0.18,0,0)</offset>
+			</northDefault>
+		  </ingestHoldOffsetStanding>
+		  <ingestHoldUsesTable>false</ingestHoldUsesTable>
+		  <ingestCommandString>Drink {0}</ingestCommandString>
+		  <ingestReportString>Drinking {0}.</ingestReportString>
+		  <outcomeDoers>
+			<li Class="BiOnline.Hediffs.IngestionOutcomeDoer_AdjustSeverity">
+			  <hediffDef>Cyberpsychosis</hediffDef>
+			  <severity>-2.00</severity>
+			</li>
+		  </outcomeDoers>
+		</ingestible>
+		<tradeability>Sellable</tradeability>
+		<costList>
+			<Chlorophyte>3</Chlorophyte>
+			<BiO_AnimaGrass>5</BiO_AnimaGrass>
+			<Neutroamine>15</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>RE_ImmunoBlockers</researchPrerequisite>
+			<bulkRecipeCount>4</bulkRecipeCount>
+		  <recipeUsers>
+			<li>MedicalBench</li>
+		  </recipeUsers>
+		  <soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<comps>
+		  <li Class="CompProperties_Drug">
+			<listOrder>1000</listOrder>
+			<overdoseSeverityOffset>0</overdoseSeverityOffset>
+		  </li>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>6</daysToRotStart>
+			<rotDestroys>false</rotDestroys>
+		  </li>
+		</comps>
+	</ThingDef>
+
+</Defs>

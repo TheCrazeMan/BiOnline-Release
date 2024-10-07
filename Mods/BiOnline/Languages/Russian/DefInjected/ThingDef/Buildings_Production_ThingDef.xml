@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Buildings/Buildings_Production.xml-->
+<FirePit.label>Котёл</FirePit.label>
+<FirePit.description>Костёр с котелком. Позволяет греть воду и делать напитки.</FirePit.description>
+
+<EfficiencyModule.label>Модуль эффективности</EfficiencyModule.label>
+<EfficiencyModule.description>Огромная индукционная катушка, встроенная в металический корпус. Позволяет достигать высоких температур ещё быстрее, открывая доступ к таким сплавам как пласталь.</EfficiencyModule.description>
+
+<BiomeOresModule.label>Модуль биомных руд</BiomeOresModule.label>
+<BiomeOresModule.description>Модуль для плавильни, предназначенный для обработки биомных руд, таких как мифрил, хлорофит и керамит. Необходим, если вы собираетесь использовать их.</BiomeOresModule.description>
+
+<MechanicalProcessingModule.label>Модуль механической обработки</MechanicalProcessingModule.label>
+<MechanicalProcessingModule.description>Большая машина для дробления и промывки руды. Позволяет извлекать на 40% больше полезных материалов из руды. Требует для работы много воды.</MechanicalProcessingModule.description>
+
+<ChemicalProcessingModule.label>Модуль химической обработки</ChemicalProcessingModule.label>
+<ChemicalProcessingModule.description>Модуль химической обработки позволяет извлекать ещё больше полезных материалов из руды, достигая эффективности в 200%.</ChemicalProcessingModule.description>
+
+<PreservationModule.label>Модуль консервации</PreservationModule.label>
+<PreservationModule.description>Необходим для закручивания консерв. Имеет множество мелких гаджетов: термометр, датчик давления, закаточную машинку и прочее-прочее-прочее.</PreservationModule.description>
+
+<Grindstone.label>Жёрнов</Grindstone.label>
+<Grindstone.description>Стол с камнем для перемолки целого ряда различных предметов</Grindstone.description>
+
+<Loom.label>Ткацкий станок</Loom.label>
+<Loom.description>Большой станок для создания тканей</Loom.description>
+
+<FishTrap.label>Ловушка для рыбы</FishTrap.label>
+<FishTrap.description>В качестве приманки в ловушку помещается немного корма, после чего рыба заплывает внутрь и уже не может выплыть, и её можно спокойно достать.</FishTrap.description>
+
+<Pierce.label>Пирс</Pierce.label>
+<Pierce.description>Пирс для ловли рыбы.</Pierce.description>
+
+<Mine.label>Шахта</Mine.label>
+<Mine.description>Шахта для добычи ресурсов.</Mine.description>
+
+<MicrobialLab.label>Микробная лаборатория</MicrobialLab.label>
+<MicrobialLab.description>Микробная лаборатория позволяет создавать различные препараты.</MicrobialLab.description>
+
+<Crusher.label>Дробитель</Crusher.label>
+<Crusher.description>Дробитель способен измельчать камни в песок или щебень.</Crusher.description>
+
+<ElectricLoom.label>Электрический ткацкий станок</ElectricLoom.label>
+<ElectricLoom.description>Электрический ткацкий станок с автоматической обработкой сырья. Вам достаточно загрузить в него сырьё, выбрать тип обработки и ожидать. Через несколько часов вас будут ждать идеальные рулоны ткани.</ElectricLoom.description>
+
+<TribalBench.label>Примитивный верстак</TribalBench.label>
+<TribalBench.description>Технологии тут не блещут, но на поленце с сеном стругать дубину куда удобнее, чем на голой земле.</TribalBench.description>
+
+<DiggingSpotSand.label>Место для рытья песка</DiggingSpotSand.label>
+
+<DiggingSpotGravel.label>Место для рытья щебня</DiggingSpotGravel.label>
+
+<DiggingSpotClay.label>Место для рытья глины</DiggingSpotClay.label>
+
+</LanguageData>

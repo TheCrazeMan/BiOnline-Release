@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="MeleeWeaponMedieval" ParentName="BaseWeapon">
+		<techLevel>Medieval</techLevel>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		  </recipeUsers>
+		  <researchPrerequisite>Tools</researchPrerequisite>
+		  <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		  <skillRequirements>
+			<Crafting>6</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+
+	<ThingDef ParentName="MeleeWeaponMedieval">
+		<defName>BiO_MeleeWeaponMedieval_Hammer</defName>
+		<label>Hammer</label>
+		<description>A well-made tool. It fits perfectly in the hand and speeds up the work.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Medieval/Hammer</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<statBases>
+		  <Mass>1.25</Mass>
+		  <WorkToMake>15000</WorkToMake>
+		</statBases>	
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Alloys_NonConstruct</li>
+		</stuffCategories>		
+		<equippedStatOffsets>
+		  <ConstructionSpeed>0.40</ConstructionSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>bit</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+			</li>	
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1</cooldownTime>
+				<armorPenetrationBlunt>3.1</armorPenetrationBlunt>
+			</li>	
+			
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="MeleeWeaponMedieval">
+		<defName>BiO_MeleeWeaponMedieval_Axe</defName>
+		<label>Axe</label>
+		<description>A well-made tool. It fits perfectly in the hand and speeds up the work.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Medieval/Axe</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <Mass>1.75</Mass>
+		  <WorkToMake>15000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>		
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Alloys_NonConstruct</li>
+		</stuffCategories>		
+		<equippedStatOffsets>
+		  <PlantWorkSpeed>0.40</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>blade</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>2.4</armorPenetrationBlunt>
+				<armorPenetrationSharp>1</armorPenetrationSharp>
+			</li>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+				<armorPenetrationSharp>1</armorPenetrationSharp>
+			</li>
+			
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>
+
+
+	<ThingDef ParentName="MeleeWeaponMedieval">
+		<defName>BiO_MeleeWeaponMedieval_Pickaxe</defName>
+		<label>Pickaxe</label>
+		<description>A well-made tool. It fits perfectly in the hand and speeds up the work.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Medieval/pickaxe</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <Mass>1.5</Mass>
+		  <WorkToMake>15000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Alloys_NonConstruct</li>
+		</stuffCategories>		
+		<equippedStatOffsets>
+		  <MiningSpeed>0.40</MiningSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>bit</label>
+				<capacities>
+				  <li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+			</li>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1</cooldownTime>
+				<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+				<armorPenetrationSharp>2.2</armorPenetrationSharp>
+			</li>
+			
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>		
+</Defs>

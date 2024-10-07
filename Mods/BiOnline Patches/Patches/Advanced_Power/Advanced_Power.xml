@@ -1,0 +1,35 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sd] Advanced Powergeneration (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="sd_adv_powergen_research_adv_geo" or defName="sd_adv_powergen_research_nuclear_power" or defName="sd_adv_powergen_research_adv_wind_turbine" or defName="sd_adv_powergen_research_adv_solar"]</xpath>
+                </li> 
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[
+					defName="sd_adv_powergen_adv_wind_turbine" or 
+					defName="sd_adv_powergen_adv_solar_generator" or 
+					defName="sd_adv_powergen_WatermillGenerator" or 
+					defName="sd_adv_powergen_adv_geothermal_generator"]/researchPrerequisites/li</xpath>
+					<value>
+					  <li>Electricity_generationIII</li>
+					</value>	
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="sd_adv_powergen_nuclear_power_plant"]/researchPrerequisites/li</xpath>
+					<value>
+					  <li>Uranium_decay</li>
+					</value>	
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedBeet</defName>
+		<label>Seed beet</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Beet</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Beet</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedBeet/SeedBeet</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedBlackPepper</defName>
+		<label>Seed black pepper</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_BlackPepper</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_BlackPepper</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedBlackPepper/SeedBlackPepper</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedBroots</defName>
+		<label>Seed broots</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Broots</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Broots</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedBroots/SeedBroots</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedCarrot</defName>
+		<label>Seed carrot</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Carrot</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Carrot</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedCarrot/SeedCarrot</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedDarkBerryBush</defName>
+		<label>Seed dark berry</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_DarkBerries</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_DarkBerries</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedDarkBerryBush/SeedDarkBerryBush</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedGrape</defName>
+		<label>Seed grape</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Grape</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Grape</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedGrape/SeedGrape</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedRedPetals</defName>
+		<label>Seed red petals</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_RedPetals</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_RedPetals</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedRedPetals/SeedRedPetals</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedShrooms</defName>
+		<label>Seed shrooms</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Shrooms</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Shrooms</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedShrooms/SeedShrooms</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedSulfurPoppy</defName>
+		<label>Seed sulfur poppy</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Sulfur_Poppy</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Sulfur_Poppy</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedSulfurPoppy/SeedSulfurPoppy</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedTea</defName>
+		<label>Seed Tea</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Tea</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Tea</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedTea/SeedTea</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedTomato</defName>
+		<label>Seed tomato</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Tomato</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Tomato</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedTomato/SeedTomato</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedWheat</defName>
+		<label>Seed wheat</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Wheat</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Wheat</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedWheat/SeedWheat</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>SeedSoy</defName>
+		<label>Seed Soy</label>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_Soy</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Plant_Soy</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Seeds/SeedSoy/SeedSoy</texPath>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>
+
+

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<PrefabGenerator_DefName>ДефНейм (уникально!)</PrefabGenerator_DefName>
+	<PrefabGenerator_Name>Название</PrefabGenerator_Name>
+	<PrefabGenerator_Create>Создать</PrefabGenerator_Create>
+	<PrefabGenerator_DefNameEmpty>Пустое дефнейм</PrefabGenerator_DefNameEmpty>
+	<PrefabGenerator_NameEmpty>Пустое имя</PrefabGenerator_NameEmpty>
+	<PrefabGenerator_Created>Префаб создан</PrefabGenerator_Created>
+	<Designator_CreatePrefab_NoSelectedCells>Нет выделенных ячеек</Designator_CreatePrefab_NoSelectedCells>
+	<PrefabDrawHandler_SomeCannotBeRotated>{0} не может быть повернут</PrefabDrawHandler_SomeCannotBeRotated>
+
+	
+</LanguageData>

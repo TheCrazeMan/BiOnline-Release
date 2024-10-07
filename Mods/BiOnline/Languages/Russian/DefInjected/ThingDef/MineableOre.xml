@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MineableCopperOre.label>Медная руда</MineableCopperOre.label>
+  <MineableCopperOre.description>Залежи медной руды</MineableCopperOre.description>
+
+  <MineableLeadOre.label>Свинцовая руда</MineableLeadOre.label>
+  <MineableLeadOre.description>Залежи свинцовой руды</MineableLeadOre.description>
+
+  <MineableTitaniumOre.label>Титановая руда</MineableTitaniumOre.label>
+  <MineableTitaniumOre.description>Залежи титановой руды</MineableTitaniumOre.description>
+
+  <MineableCeramiteOre.label>Керамитовая руда</MineableCeramiteOre.label>
+  <MineableCeramiteOre.description>Залежи керамитовой руды</MineableCeramiteOre.description>
+
+  <MineableChlorophyteOre.label>Хлорофитовые вкрапление</MineableChlorophyteOre.label>
+  <MineableChlorophyteOre.description>Хлорофитовые вкрапление в камне</MineableChlorophyteOre.description>
+
+  <MineableMithrilOre.label>Мифриловая руда</MineableMithrilOre.label>
+  <MineableMithrilOre.description>Залежи мифриловой руды</MineableMithrilOre.description>
+  
+  <BIO_Mineable_Cold_Stone.label>Хладокамень</BIO_Mineable_Cold_Stone.label>
+  <BIO_Mineable_Cold_Stone.description>залежь хладокамня</BIO_Mineable_Cold_Stone.description>
+  
+  <BIO_MineableIron.label>Железная руда</BIO_MineableIron.label>
+  <BIO_MineableIron.description>Залежи железной руды</BIO_MineableIron.description>
+  
+  <BIO_MineableCoal.label>Каменный уголь</BIO_MineableCoal.label>
+  <BIO_MineableCoal.description>Залежи каменного угля</BIO_MineableCoal.description>
+  
+  <BIO_Mineable_Sulfur.label>Каменная сера</BIO_Mineable_Sulfur.label>
+  <BIO_Mineable_Sulfur.description>Залежи каменной серы</BIO_Mineable_Sulfur.description>
+</LanguageData>

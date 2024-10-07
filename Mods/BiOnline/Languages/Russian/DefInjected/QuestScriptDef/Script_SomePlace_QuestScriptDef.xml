@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<RandomPlace.questNameRules.rulesStrings>
+		<li>questName->[verb] [place]</li>
+		<li>verb->Unique</li>
+		<li>verb->Interesting</li>
+		<li>verb->Fortunate</li>
+		<li>verb->Uncommon</li>
+		<li>place->Shack</li>
+		<li>place->Place</li>
+		<li>place->Site</li>
+		<li>place->Goodies</li>
+		<li>place->Supplies</li>
+	</RandomPlace.questNameRules.rulesStrings>
+
+	<RandomPlace.questDescriptionRules.rulesStrings>
+		<li>questDescription(askerIsNull==true)->We've intercepted messages about some interesting place with valuable items not far from [map_definite].</li>
+	</RandomPlace.questDescriptionRules.rulesStrings>
+	
+	<RandomPlace.LetterLabelQuestExpired.slateRef>Quest expired: [resolvedQuestName]</RandomPlace.LetterLabelQuestExpired.slateRef>
+
+	<RandomPlace.LetterTextQuestExpired.slateRef>Intercepted communications indicate the item stash has been claimed by others. The quest [resolvedQuestName] has expired.</RandomPlace.LetterTextQuestExpired.slateRef>
+	
+	<MeteoriteFall.questNameRules.rulesStrings>
+		<li>questName->[verb] [place]</li>
+		<li>verb->Падение</li>
+		<li>place->метеорита</li>
+		<li>place->обломков метеорита</li>
+	</MeteoriteFall.questNameRules.rulesStrings>
+	
+	<MeteoriteFall.questDescriptionRules.rulesStrings>
+		<li>questDescription(askerIsNull==true)->В небе вспыхнул яркий светящийся объект, затем его разорвался на несколько частей и он грохотом упал на землю. [map_definite].</li>
+	</MeteoriteFall.questDescriptionRules.rulesStrings>
+	
+	<MeteoriteFall.LetterLabelQuestExpired.slateRef>Время задания истекло: [resolvedQuestName]</MeteoriteFall.LetterLabelQuestExpired.slateRef>
+
+	<MeteoriteFall.LetterTextQuestExpired.slateRef>Метеорит [resolvedQuestName] больше не отображается на нашем сканере. Должно быть, его добыл кто-то другой. Время, отведённое для задания [resolvedQuestName], истекло.</MeteoriteFall.LetterTextQuestExpired.slateRef>
+	
+</LanguageData>

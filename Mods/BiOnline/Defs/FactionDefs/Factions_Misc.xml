@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Сепаратисты-->
+	<!-- 	<FactionDef ParentName="FactionBase">
+		<defName>Separatists</defName>
+		<label>Separatists</label>
+		<description>Northern Wolves are militant separatists from the planet Sophiamund. Disgruntled, oppressed slaves from the north were at odds with the dictatorship of the crown. A rebellion led by Airo, a former general out of favor, broke out in Tirkvan, the industrial and scientific center of Sophiamunda. Slaves, soldiers, and some of the intelligentsia sided with them, all of whom considered each other equal by birthright. The Great Battle split society into those who had sworn an oath and those who had renounced the crown, ready to fight for freedom to the last fighter. The catastrophe on Sophiamund could not stop the fires of revolution, and like wolves smelling fear, they began to stalk the Imperium on their heels. Their enemy is the friend of the crown, their friend is the enemy of the Imperium. Death is not the limit, the limit is unfreedom.</description>
+		<pawnSingular>Separatist</pawnSingular>
+		<pawnsPlural>Separatists</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Northern wolves</fixedName>
+		<factionIconPath>World/Objects/Expanding/Separatists</factionIconPath>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>true</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Spacer</techLevel>
+		<permanentEnemy>false</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1000</configurationListOrderPriority>
+		<modExtensions>
+			<li Class="BiOnline.Factions.FactionDefModExtension">
+				<listCommsIconPath>World/Objects/Avatar/SeparatistsX128</listCommsIconPath>
+				<commsIconPath>World/Objects/Avatar/SeparatistsX256</commsIconPath>
+				<smallCommsIconPath>World/Objects/Expanding/Separatists</smallCommsIconPath>
+				<factionInteractionOptions>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_Gift</li>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_CaravanRequest</li>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_StoryQuest</li>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_UnknownPlace</li>
+				</factionInteractionOptions>
+				<factionStoryQuests>
+					<li>
+						<questScriptDef>StoryQuest_1_OutlanderCivil</questScriptDef>
+					</li>
+				</factionStoryQuests>
+				<returnPermitsGoodwillCost>20</returnPermitsGoodwillCost>
+			</li>
+		</modExtensions>
+	</FactionDef> -->
+	<!--ОТУ-->
+	<!-- 	<FactionDef ParentName="FactionBase">
+		<defName>Corp</defName>
+		<label>Corp</label>
+		<description>United Trading Hub (UTH) is an alliance of merchants who have pooled their outlets and capital to create a unified and secure path of communication between their own industries and customers. The orbital station has become home to nimble businessmen from the planet, and the Star Council, an assembly of the richest houses, decides on prices and supplies. The corporation has little interest in the joys and woes of the planet's inhabitants, especially when warehouses are full of artifacts and terminals are notified of the amounts received. They are only interested in ethics and politics as a source of income. The moral code of the corporation says: there are no relationships except for profitable ones, there are no benefits except for the ringing and shine of silver, so yesterday's enemy today can become a potential partner, the main thing is a good offer. You will find the right approach to them and you will stay in a win-win situation (they, of course, in a bigger one).</description>
+		<pawnSingular>Corporat</pawnSingular>
+		<pawnsPlural>Corporates</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>United Trading Hub</fixedName>
+		<factionIconPath>World/Objects/Expanding/Corp</factionIconPath>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>true</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Spacer</techLevel>
+		<permanentEnemy>false</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1000</configurationListOrderPriority>
+		<modExtensions>
+			<li Class="BiOnline.Factions.FactionDefModExtension">
+				<listCommsIconPath>World/Objects/Avatar/CorpX128</listCommsIconPath>
+				<commsIconPath>World/Objects/Avatar/CorpX256</commsIconPath>
+				<smallCommsIconPath>World/Objects/Expanding/Corp</smallCommsIconPath>
+				<factionInteractionOptions>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_UnknownPlace</li>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_OrbitalTraderRequest</li>
+				</factionInteractionOptions>
+				<returnPermitsGoodwillCost>20</returnPermitsGoodwillCost>
+			</li>
+		</modExtensions>
+	</FactionDef> -->
+	<!--ЧВК-->
+	<FactionDef ParentName="FactionBase">
+		<defName>PMC</defName>
+		<label>PMC</label>
+		<description>"Catharsis" is a collection of professional fighters and assassins who have banded together to become monopolists in their "profession" on the planet. Like the OTU they value silver first and foremost. They are often glimpsed in news and rumors related to the dirtiest deeds of the Corporatists, though the Corporatists strenuously deny any connection to the mercenaries. Professional assassins and ex-military men founded Catharsis to do what they do best - bring death. Not for free, of course. What distinguishes them from ordinary psychopaths and mercenaries is their professional ethics and their extensive network of informants. They will perform any task for a sufficient amount of silver. Various authorities form alliances around them within the association, but they will never step into their sphere of influence or sabotage an already signed contract of a fellow fighter. "Catharsis use advanced combat equipment, whose suppliers are carefully kept secret, as well as implants and genes for greater lethality. Did I mention they like money?</description>
+		<pawnSingular>PMC</pawnSingular>
+		<pawnsPlural>PMC</pawnsPlural>
+		<fixedName>Catharsis</fixedName>
+		<factionIconPath>World/Objects/Expanding/PMC</factionIconPath>
+		<leaderTitle>prime councilor</leaderTitle>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.15</Hussar>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<humanlikeFaction>true</humanlikeFaction>
+		<hidden>false</hidden>
+		<autoFlee>true</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Spacer</techLevel>
+		<permanentEnemy>false</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1000</configurationListOrderPriority>
+		<modExtensions>
+			<li Class="BiOnline.Factions.FactionDefModExtension">
+				<listCommsIconPath>World/Objects/Avatar/PMCX128</listCommsIconPath>
+				<commsIconPath>World/Objects/Avatar/PMCX256</commsIconPath>
+				<smallCommsIconPath>World/Objects/Expanding/PMC</smallCommsIconPath>
+				<!-- Опции в разделе "Связь" -->
+				<factionInteractionOptions>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_UnknownPlace</li>
+					<!-- <li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_OrbitalTraderRequest</li> -->
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_Gift</li>
+					<!-- <li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_Insult</li> -->
+				</factionInteractionOptions>
+				<!-- сколько стоит вернуть привилегии. Если не указано, по дефолту будет 40 -->
+				<returnPermitsGoodwillCost>20</returnPermitsGoodwillCost>
+			</li>
+		</modExtensions>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(700, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(2500, 250)</li>
+			<li>(5000, 400)</li>
+			<li>(10000, 10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+		  <li>
+			<!-- Normal fights, standard mix -->
+			<kindDef>Combat</kindDef>
+			<options>
+			  <Villager>5</Villager>
+			  <Town_Guard>10</Town_Guard>
+			  <Grenadier_Destructive>1.5</Grenadier_Destructive>
+			  <Mercenary_Slasher>7</Mercenary_Slasher>
+			  <Mercenary_Gunner>10</Mercenary_Gunner>
+			  <Mercenary_Elite>10</Mercenary_Elite>
+			  <Town_Councilman>10</Town_Councilman>
+			</options>
+		  </li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!--ЧВК для рейдов-->
+	<FactionDef ParentName="FactionBase">
+		<defName>PMCRough</defName>
+		<label>PMC</label>
+		<description>"Catharsis" is a collection of professional fighters and assassins who have banded together to become monopolists in their "profession" on the planet. Like the OTU they value silver first and foremost. They are often glimpsed in news and rumors related to the dirtiest deeds of the Corporatists, though the Corporatists strenuously deny any connection to the mercenaries. Professional assassins and ex-military men founded Catharsis to do what they do best - bring death. Not for free, of course. What distinguishes them from ordinary psychopaths and mercenaries is their professional ethics and their extensive network of informants. They will perform any task for a sufficient amount of silver. Various authorities form alliances around them within the association, but they will never step into their sphere of influence or sabotage an already signed contract of a fellow fighter. "Catharsis use advanced combat equipment, whose suppliers are carefully kept secret, as well as implants and genes for greater lethality. Did I mention they like money?</description>
+		<pawnSingular>PMC</pawnSingular>
+		<pawnsPlural>PMC</pawnsPlural>
+		<fixedName>Catharsis</fixedName>
+		<factionIconPath>World/Objects/Expanding/PMC</factionIconPath>
+		<humanlikeFaction>true</humanlikeFaction>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<permanentEnemy>true</permanentEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Spacer</techLevel>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-40~75</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1000</configurationListOrderPriority>
+		<modExtensions>
+			<li Class="BiOnline.Factions.FactionDefModExtension">
+				<raidSettings>
+					<minMapWealth>300000</minMapWealth>
+					<raidModifiers>
+						<li>
+							<chanceByWealthCurve>
+								<points>
+									<li>(300000, 0.3)</li>
+									<li>(1000000, 1)</li>
+								</points>
+							</chanceByWealthCurve>
+							<incidentDef>PMC_EMIField</incidentDef>
+						</li>
+						<li>
+							<chanceByWealthCurve>
+								<points>
+									<li>(300000, 0.3)</li>
+									<li>(1000000, 1)</li>
+								</points>
+							</chanceByWealthCurve>
+							<incidentDef>MortarStrike</incidentDef>
+						</li>
+					</raidModifiers>
+				</raidSettings>
+			</li>
+		</modExtensions>
+		<raidCommonalityFromPointsCurve>
+		  <points>
+			<li>(300,  0)</li>
+			<li>(700,  1)</li>
+			<li>(1400, 1.4)</li>
+			<li>(2800, 1.8)</li>
+			<li>(4000, 2.0)</li>
+			<li>(6000, 2.6)</li>
+			<li>(8000, 4.0)</li>
+		  </points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootValueFromPointsCurve>
+		  <points>
+			<li>(35,     8)</li>
+			<li>(100,   60)</li>
+			<li>(1000, 250)</li>
+			<li>(2000, 400)</li>
+			<li>(4000, 500)</li>
+		  </points>
+		</raidLootValueFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(400,200)</li>
+			<li>(900,300)</li>
+			<li>(100000,10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>	
+		<pawnGroupMakers>
+			<li>
+				<!-- Элитный отряд с ёба-гренадёром -->
+				<!-- Мясо -->
+				<kindDef>Combat</kindDef>
+				<commonality>12</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>
+				<options>
+					<PMC_RequestedTrooper_I>10</PMC_RequestedTrooper_I>
+				</options>
+			</li>
+			<li>
+				<!-- Мясо -->
+				<kindDef>Combat</kindDef>
+				<commonality>8</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>
+				<options>
+					<PMC_RequestedTrooper_I>10</PMC_RequestedTrooper_I>
+					<PMC_RequestedTrooper_II>6</PMC_RequestedTrooper_II>
+					<PMC_RequestedSniper>3</PMC_RequestedSniper>
+					<PMC_RequestedArmorPiercier>1.5</PMC_RequestedArmorPiercier>
+					<PMC_RequestedGrenadier>1.5</PMC_RequestedGrenadier>
+					<PMC_RequestedElite_Assaulter>0.5</PMC_RequestedElite_Assaulter>
+				</options>
+			</li>
+			<li>
+				<!-- Гренадёры -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>
+				<options>
+					<PMC_RequestedTrooper_II>10</PMC_RequestedTrooper_II>
+					<PMC_RequestedArmorPiercier>5</PMC_RequestedArmorPiercier>
+					<PMC_RequestedGrenadier>5</PMC_RequestedGrenadier>
+				</options>
+			</li>
+			<li>
+				<!-- Элитный отряд -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>				
+				<options>
+					<PMC_RequestedTrooper_II>10</PMC_RequestedTrooper_II>
+					<PMC_RequestedElite_Melee>5</PMC_RequestedElite_Melee>
+					<PMC_RequestedElite_Assaulter>5</PMC_RequestedElite_Assaulter>
+					<PMC_RequestedElite_Heavy>5</PMC_RequestedElite_Heavy>
+					<PMC_RequestedElite_Sniper>5</PMC_RequestedElite_Sniper>
+				</options>
+			</li>
+			<li>
+				<!-- Отряд-солянка -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>				
+				<options>
+					<PMC_RequestedTrooper_II>10</PMC_RequestedTrooper_II>
+					<PMC_RequestedElite_Melee>5</PMC_RequestedElite_Melee>
+					<PMC_RequestedElite_Assaulter>5</PMC_RequestedElite_Assaulter>
+					<PMC_RequestedElite_Heavy>5</PMC_RequestedElite_Heavy>
+					<PMC_RequestedElite_Sniper>5</PMC_RequestedElite_Sniper>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+					<Mech_CentipedeBlaster>3</Mech_CentipedeBlaster>
+					<Mech_CentipedeGunner>1</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>1</Mech_CentipedeBurner>					
+				</options>
+			</li>			
+			<li>
+				<!-- ЭМИ-отряд -->
+				<kindDef>Combat</kindDef>
+				<commonality>8</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>				
+				<options>
+					<PMC_RequestedElite_Melee>3</PMC_RequestedElite_Melee>
+					<PMC_RequestedTrooper_II>10</PMC_RequestedTrooper_II>
+					<PMC_RequestedEMP_I>5</PMC_RequestedEMP_I>
+					<PMC_RequestedEMP_II>5</PMC_RequestedEMP_II>
+					<PMC_RequestedElite_Assaulter>3</PMC_RequestedElite_Assaulter>
+					<PMC_RequestedElite_Heavy>3</PMC_RequestedElite_Heavy>
+					<PMC_RequestedElite_Sniper>3</PMC_RequestedElite_Sniper>					
+					<PMC_RequestedArmorPiercier>1.5</PMC_RequestedArmorPiercier>
+				</options>
+			</li>
+			<li>
+				<!-- Отряд с Курком -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>
+				<options>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+					<PMC_Boss_Trigger>100</PMC_Boss_Trigger>
+					<PMC_RequestedElite_Melee>6</PMC_RequestedElite_Melee>
+					<PMC_RequestedElite_Assaulter>10</PMC_RequestedElite_Assaulter>
+					<PMC_RequestedElite_Heavy>6</PMC_RequestedElite_Heavy>
+					<PMC_RequestedElite_Sniper>6</PMC_RequestedElite_Sniper>
+					<PMC_RequestedTrooper_II>4</PMC_RequestedTrooper_II>
+					<PMC_RequestedGrenadier>1</PMC_RequestedGrenadier>
+				</options>
+			</li>
+			<li>
+				<!-- Отряд с Nomad -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>				
+				<options>
+					<PMC_Boss_Nomad>100</PMC_Boss_Nomad>
+					<PMC_RequestedElite_Melee>2</PMC_RequestedElite_Melee>
+					<PMC_RequestedElite_Assaulter>6</PMC_RequestedElite_Assaulter>
+					<PMC_RequestedElite_Sniper>10</PMC_RequestedElite_Sniper>
+					<PMC_RequestedSniper>4</PMC_RequestedSniper>
+					<Mech_Lancer>2</Mech_Lancer>
+					<Mech_Pikeman>2</Mech_Pikeman>
+					<PMC_RequestedTrooper_II>2</PMC_RequestedTrooper_II>
+				</options>
+			</li>
+			<li>
+				<!-- Отряд с IronClaw -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+				</disallowedStrategies>				
+				<options>
+					<PMC_Boss_IronClaw>100</PMC_Boss_IronClaw>
+					<PMC_RequestedElite_Melee>5</PMC_RequestedElite_Melee>
+					<PMC_RequestedElite_Heavy>10</PMC_RequestedElite_Heavy>
+					<PMC_RequestedElite_Assaulter>6</PMC_RequestedElite_Assaulter>
+					<PMC_RequestedElite_Sniper>2</PMC_RequestedElite_Sniper>
+					<PMC_RequestedTrooper_II>2</PMC_RequestedTrooper_II>
+					<PMC_RequestedArmorPiercier>1.5</PMC_RequestedArmorPiercier>
+					<Mech_Diabolus>1</Mech_Diabolus>
+				</options>
+			</li>			
+		</pawnGroupMakers>		
+	</FactionDef>
+	<!--Чёрный альянс-->
+	<!-- 	<FactionDef ParentName="FactionBase">
+		<defName>BlackAlliance</defName>
+		<label>Tribe</label>
+		<description>Black Alliance are the current inhabitants of this planet. A society at the dawn of human civilization, but with technology beyond comprehension. Led by an ancient and unknowable intelligence trapped in the depths of the planet, the tribes grow like mold, like parasites, eating away at the flesh of the planet and spreading its will. It is impossible to know if it exists on the physical level of this world, if it was a forerunner of the current indigenous population, or if it is a failed experiment. However, tribes under his influence grow and flourish, and in each of them, new and old, spikes appear, broadcasting his words, cutting across the body of the Monolith. No matter how long the tribes exist, their culture remains on a primitive level with its inherent orders: sacrifices in his honor, cruelty and polygamy. It may be to His advantage to carry out His plan, but everyone should remember: He does not affect morality, He is morality.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Black Alliance</fixedName>
+		<factionIconPath>World/Objects/Expanding/Archotech</factionIconPath>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>true</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Spacer</techLevel>
+		<permanentEnemy>false</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1000</configurationListOrderPriority>
+		<modExtensions>
+			<li Class="BiOnline.Factions.FactionDefModExtension">
+				<listCommsIconPath>World/Objects/Avatar/ArchotechX128</listCommsIconPath>
+				<commsIconPath>World/Objects/Avatar/ArchotechX256</commsIconPath>
+				<smallCommsIconPath>World/Objects/Expanding/Archotech</smallCommsIconPath>
+				<factionInteractionOptions>
+					<li>BiOnline.Factions.InteractionOptions.FactionInteractionOption_StoryQuest</li>
+				</factionInteractionOptions>
+				<factionStoryQuests>
+					<li>
+						<questScriptDef>StoryQuest_1_OutlanderCivil</questScriptDef>
+					</li>
+				</factionStoryQuests>
+				<returnPermitsGoodwillCost>20</returnPermitsGoodwillCost>
+			</li>
+		</modExtensions>
+	</FactionDef> -->
+	<!--Медивел фракция-->
+	<FactionDef Name="PirateBandBase" ParentName="FactionBase">
+		<defName>FreeKingdom</defName>
+		<label>Free kingdom</label>
+		<fixedName>Briton</fixedName>
+		<description>The Free Kingdom is a warlike faction that recognizes no authority and does not tolerate interference in its affairs. They live by their own laws and rules, and are not ready to compromise. They will not accept gifts and will not seek to improve relations with anyone. They believe that only strength and independence can provide them with freedom and security.</description>
+		<pawnSingular>Footman</pawnSingular>
+		<pawnsPlural>Footmans</pawnsPlural>
+		<hidden>true</hidden>
+		<listOrderPriority>100</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>King</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/Castle</factionIconPath>
+		<factionNameMaker>NamerFactionPirate</factionNameMaker>
+		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+		<colorSpectrum>
+			<li>(0.78, 0, 0.27)</li>
+			<li>(1, 0.74, 0.83)</li>
+		</colorSpectrum>
+		<permanentEnemy>true</permanentEnemy>
+		<techLevel>Medieval</techLevel>
+		<allowedCultures>
+			<li>Sophian</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+		</allowedMemes>
+		<structureMemeWeights>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+		</structureMemeWeights>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.05</Neanderthal>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.15</Hussar>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.10</Genie>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>ImperialCommon</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidLootMaker>FreeKingdomLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Солянка -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Medieval_Warrior>10</Medieval_Warrior>
+					<Medieval_ShieldWarrior>6</Medieval_ShieldWarrior>
+					<Medieval_Archer>3</Medieval_Archer>
+					<Medieval_CrossbowmanLight>3</Medieval_CrossbowmanLight>
+					<Medieval_Musketeers>1.5</Medieval_Musketeers>
+					<Medieval_Grenadier>1.5</Medieval_Grenadier>
+					<Medieval_WarriorTwoHandled>0.5</Medieval_WarriorTwoHandled>
+				</options>
+			</li>
+			<li>
+				<!-- Только мили -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Medieval_WarriorTwoHandled>10</Medieval_WarriorTwoHandled>
+					<Medieval_ShieldWarrior>10</Medieval_ShieldWarrior>
+				</options>
+			</li>
+			<li>
+				<!-- Мушкетёры и мили -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Medieval_Musketeers>20</Medieval_Musketeers>
+					<Medieval_WarriorTwoHandled>10</Medieval_WarriorTwoHandled>
+					<Medieval_Grenadier>2</Medieval_Grenadier>
+				</options>
+			</li>
+			<li>
+				<!-- Гренадёры -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Medieval_WarriorTwoHandled>10</Medieval_WarriorTwoHandled>
+					<Medieval_Grenadier>5</Medieval_Grenadier>
+					<Medieval_Musketeers>5</Medieval_Musketeers>
+				</options>
+			</li>
+			<li>
+				<!-- Тяжёлые бойцы -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Medieval_WarriorTwoHandled>10</Medieval_WarriorTwoHandled>
+					<Medieval_Bombardier>5</Medieval_Bombardier>
+					<Medieval_CrossbowmanHeavy>5</Medieval_CrossbowmanHeavy>
+					<Medieval_Grenadier>1.5</Medieval_Grenadier>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+	</FactionDef>
+	<ThingSetMakerDef>
+		<defName>FreeKingdomLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>TM_AdvancedMedicine</li>
+						<li>MedicineHerbal</li>
+						<li>Dried_meat</li>
+						<li>SmokeleafJoint</li>
+						<li>Iron_Skin_Elixir</li>
+						<li>Berserker_Elixir</li>
+						<li>Healing_Elixir</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+
+            <operations>          
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
+                    <value>
+                    
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>BIO_Coal</thingDef>
+							<countRange>200~800</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>400~800</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>400~800</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>200~400</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Copper</thingDef>
+							<countRange>400~800</countRange>
+						</li>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+                    <value>
+                    
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>BIO_Coal</thingDef>
+							<countRange>200~400</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>100~200</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>70~180</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>70~140</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Copper</thingDef>
+							<countRange>100~200</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Iron</thingDef>
+							<countRange>70~150</countRange>
+						</li>						
+
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TraderKindDef[defName="Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+                    <value>
+                    
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>BIO_Coal</thingDef>
+							<countRange>200~400</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>BIO_Cold_Stone</thingDef>
+							<countRange>20~80</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>30~110</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Lead</thingDef>
+							<countRange>20~70</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Copper</thingDef>
+							<countRange>70~150</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>Iron</thingDef>
+							<countRange>70~150</countRange>
+						</li>						
+
+                    </value>
+                </li> 
+				
+            </operations>
+        </match>
+    </Operation>
+</Patch>

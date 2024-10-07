@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<FirePit.label>Котёл</FirePit.label>
+<FirePit.description>Костёр с котелком. Позволяет греть воду и делать напитки.</FirePit.description>
+
+<RadioStation.label>Радиостанция</RadioStation.label>
+<RadioStation.description>Радиостанция позволяет общаться с планетарными фракциями.</RadioStation.description>
+
+<DripBlood.label>Капельница (переливание крови)</DripBlood.label>
+<DripBlood.description>Снижает скорость истечения крови у пешки на 75%. Также повышает на 5 и 10 % качество лечения и шанс успеха операции, если поместить его рядом с больничной койкой. Позволяет выиграть драгоценное время при подготовке к лечению.</DripBlood.description>
+
+<DripNutrition.label>Капельница (парентеральное питание)</DripNutrition.label>
+<DripNutrition.description>Обеспечивает питанием обездвиженного пациента. Также на 5 и 10 % повышает качество медицинской помощи и шанс успеха операции, если поместить его рядом с больничной койкой.</DripNutrition.description>
+
+<DripPainkiller.label>Капельница (обезболивающие)</DripPainkiller.label>
+<DripPainkiller.description>Уменьшает боль, которую испытывает колонист, на 95%. Также на 5 и 10 % повышает качество медицинской помощи и шанс успеха операции, если поместить его рядом с больничной койкой.</DripPainkiller.description>
+
+<DripAntibiotics.label>Капельница (антибиотики)</DripAntibiotics.label>
+<DripAntibiotics.description>Улучшает показатели фильтрации крови колониста, тем самым сокращая время выработки иммунитета против болезни. Также повышает на 5 и 10 % качество медицинской помощи и шанс успешной операции, если поместить его рядом с больничной койкой.</DripAntibiotics.description>
+
+<TentBlueprint.label>Проект палатки</TentBlueprint.label>
+<TentBlueprint.description>Проект палатки</TentBlueprint.description>
+
+<TentBuilding.label>Палатка</TentBuilding.label>
+<TentBuilding.description>Управление палаткой</TentBuilding.description>
+
+</LanguageData>

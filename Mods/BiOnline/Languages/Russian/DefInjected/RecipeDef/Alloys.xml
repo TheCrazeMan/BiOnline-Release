@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<Plasteel_Make.label>Выплавить пласталь</Plasteel_Make.label>
+	<Plasteel_Make.description>Плавка и химическая обработка пластали.</Plasteel_Make.description>
+	<Plasteel_Make.jobString>Выплавляет пласталь</Plasteel_Make.jobString>
+
+    <Titanium_Makex25.label>Выплавить Очищенный Титан x25</Titanium_Makex25.label>
+    <Titanium_Makex25.description>Переплавленный чистый титан представляет собой легкий переходный металл серебристо-белого цвета. Он обладает высокой коррозионной стойкостью. Используйте в производстве оружия и многого другого.</Titanium_Makex25.description>
+	<Titanium_Makex25.jobString>Выплавляет титан</Titanium_Makex25.jobString>
+
+    <Titanium_Makex5.label>Выплавить Очищенный Титан x5</Titanium_Makex5.label>
+    <Titanium_Makex5.description>Переплавленный чистый титан представляет собой легкий переходный металл серебристо-белого цвета. Он обладает высокой коррозионной стойкостью. Используйте в производстве оружия и многого другого.</Titanium_Makex5.description>
+	<Titanium_Makex5.jobString>Выплавляет очищенный титан</Titanium_Makex5.jobString>
+
+	<AlloysChlorophyte_Makex25.label>Выплавить слиток хлорофита х25</AlloysChlorophyte_Makex25.label>
+	<AlloysChlorophyte_Makex25.description>Выплаление чистых слитков хлорофита.</AlloysChlorophyte_Makex25.description>
+	<AlloysChlorophyte_Makex25.jobString>Выплавляет слиток хлорофита</AlloysChlorophyte_Makex25.jobString>
+	
+	<AlloysChlorophyte_Makex5.label>Выплавить слиток хлорофита х5</AlloysChlorophyte_Makex5.label>
+	<AlloysChlorophyte_Makex5.description>Выплаление чистых слитков хлорофита.</AlloysChlorophyte_Makex5.description>
+	<AlloysChlorophyte_Makex5.jobString>Выплавляет слиток хлорофита</AlloysChlorophyte_Makex5.jobString>
+	
+	<AlloysMithril_Makex25.label>Выплавить слиток мифрила х25</AlloysMithril_Makex25.label>
+	<AlloysMithril_Makex25.description>Выплаление чистых слитков мифрила.</AlloysMithril_Makex25.description>
+	<AlloysMithril_Makex25.jobString>Выплавляет слиток мифрила</AlloysMithril_Makex25.jobString>
+	
+	<AlloysMithril_Makex5.label>Выплавить слиток мифрила х5</AlloysMithril_Makex5.label>
+	<AlloysMithril_Makex5.description>Выплаление чистых слитков мифрила.</AlloysMithril_Makex5.description>
+	<AlloysMithril_Makex5.jobString>Выплавляет слитков мифрила</AlloysMithril_Makex5.jobString>
+	
+	<AlloysCeramite_Makex25.label>Выплавить слиток керамита х25</AlloysCeramite_Makex25.label>
+	<AlloysCeramite_Makex25.description>Выплаление чистых слитков керамита.</AlloysCeramite_Makex25.description>
+	<AlloysCeramite_Makex25.jobString>Выплавляет слиток керамита</AlloysCeramite_Makex25.jobString>
+
+	<AlloysCeramite_Makex5.label>Выплавить слиток керамита х5</AlloysCeramite_Makex5.label>
+	<AlloysCeramite_Makex5.description>Выплаление чистых слитков керамита.</AlloysCeramite_Makex5.description>
+	<AlloysCeramite_Makex5.jobString>Выплавляет слиток керамита</AlloysCeramite_Makex5.jobString>
+
+	<Melt_steel_BIO_Coal_x5.label>Выплавить сталь х5</Melt_steel_BIO_Coal_x5.label>
+	<Melt_steel_BIO_Coal_x5.description>Выплавление стали из железа с добавление углерода</Melt_steel_BIO_Coal_x5.description>
+	<Melt_steel_BIO_Coal_x5>Выплавляет сталь</Melt_steel_BIO_Coal_x5>
+	
+	<Melt_steel_BIO_Coal_x25.label>Выплавить сталь х25</Melt_steel_BIO_Coal_x25.label>
+	<Melt_steel_BIO_Coal_x25.description>Выплавление стали из железа с добавление углерода</Melt_steel_BIO_Coal_x25.description>
+	<Melt_steel_BIO_Coal_x25.jobString>Выплавляет сталь</Melt_steel_BIO_Coal_x25.jobString>
+
+	<Melt_steel_Coal_x100.label>Выплавить сталь х100</Melt_steel_Coal_x100.label>
+	<Melt_steel_Coal_x100.description>Выплавление стали из железа с добавление углерода</Melt_steel_Coal_x100.description>
+	<Melt_steel_Coal_x100.jobString>Выплавляет сталь</Melt_steel_Coal_x100.jobString>
+	
+	<Make_Mixed_glass_packagex50.label>Создать стеклянную смесь х50</Make_Mixed_glass_packagex50.label>
+	<Make_Mixed_glass_packagex50.description>Создать пакет с готовой смесью для плавления стекла.</Make_Mixed_glass_packagex50.description>
+	<Make_Mixed_glass_packagex50.jobString>Создаёт стеклянную смесь</Make_Mixed_glass_packagex50.jobString>
+	
+	<Make_PolymersMixed_glass_packagex50.label>Создать стеклянную смесь полимерами х50</Make_PolymersMixed_glass_packagex50.label>
+	<Make_PolymersMixed_glass_packagex50.description>Создать пакет с готовой смесью для плавления стекла.</Make_PolymersMixed_glass_packagex50.description>
+	<Make_PolymersMixed_glass_packagex50.jobString>Создаёт стеклянную смесь</Make_PolymersMixed_glass_packagex50.jobString>
+	
+	<Make_Mixed_Ceramics_packagex50.label>Создать керамическую смесь х50</Make_Mixed_Ceramics_packagex50.label>
+	<Make_Mixed_Ceramics_packagex50.description>Создать пакет с готовой смесью для плавления керамики.</Make_Mixed_Ceramics_packagex50.description>
+	<Make_Mixed_Ceramics_packagex50.jobString>Создаёт керамическую смесь</Make_Mixed_Ceramics_packagex50.jobString>
+	
+	<Make_PolymersMixed_Ceramics_packagex50.label>Создать керамическую смесь полимерами х50</Make_PolymersMixed_Ceramics_packagex50.label>
+	<Make_PolymersMixed_Ceramics_packagex50.description>Создать пакет с готовой смесью для плавления керамики.</Make_PolymersMixed_Ceramics_packagex50.description>
+	<Make_PolymersMixed_Ceramics_packagex50.jobString>Создаёт керамическую смесь</Make_PolymersMixed_Ceramics_packagex50.jobString>
+	
+</LanguageData>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--Обычное блюда-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealSimple"]/statBases</xpath>
+			<value>				
+				<Nutrients>0.25</Nutrients>
+				<NutrientsLimit>0.50</NutrientsLimit>	
+			</value>
+	</Operation>
+	
+	<!--Вкусное блюдо-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealFine"]</xpath>
+			<value>		
+				<statBases>
+					<MarketValue>20</MarketValue>
+					<WorkToMake>450</WorkToMake>
+					<Nutrition>0.9</Nutrition>
+					<Nutrients>0.375</Nutrients>
+					<NutrientsLimit>0.75</NutrientsLimit>	
+				</statBases>
+			</value>
+	</Operation>
+	
+	<!--Вкусное блюдо веган-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealFine_Veg"]</xpath>
+			<value>				
+				<statBases>
+					<MarketValue>20</MarketValue>
+					<WorkToMake>450</WorkToMake>
+					<Nutrition>0.9</Nutrition>
+					<Nutrients>0.25</Nutrients>
+					<NutrientsLimit>0.50</NutrientsLimit>
+				</statBases>
+			</value>
+	</Operation>
+	
+	<!--Вкусное блюдо мясное-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealFine_Meat"]</xpath>
+			<value>				
+				<statBases>
+					<MarketValue>20</MarketValue>
+					<WorkToMake>450</WorkToMake>
+					<Nutrition>0.9</Nutrition>
+					<Nutrients>0.25</Nutrients>
+					<NutrientsLimit>0.50</NutrientsLimit>	
+				</statBases>
+			</value>
+	</Operation>
+	
+		<!--Шикарное блюдо-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealLavish"]</xpath>
+			<value>				
+				<statBases>
+					<MarketValue>40</MarketValue>
+					<WorkToMake>800</WorkToMake>
+					<Nutrition>1</Nutrition>
+					<Nutrients>0.50</Nutrients>
+					<NutrientsLimit>1</NutrientsLimit>	
+				</statBases>
+			</value>
+	</Operation>	
+	
+	<!--Шикарное блюдо веган-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealLavish_Veg"]</xpath>
+			<value>				
+				<statBases>
+					<MarketValue>20</MarketValue>
+					<WorkToMake>450</WorkToMake>
+					<Nutrition>0.9</Nutrition>
+					<Nutrients>0.375</Nutrients>
+					<NutrientsLimit>0.75</NutrientsLimit>	
+				</statBases>
+			</value>
+	</Operation>
+
+	<!--Шикарное блюдо мясное-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealLavish_Meat"]</xpath>
+			<value>				
+				<statBases>
+					<MarketValue>20</MarketValue>
+					<WorkToMake>450</WorkToMake>
+					<Nutrition>0.9</Nutrition>
+					<Nutrients>0.375</Nutrients>
+					<NutrientsLimit>0.75</NutrientsLimit>	
+				</statBases>
+			</value>
+	</Operation>
+
+	<!--Детская еда-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BabyFood"]/statBases</xpath>
+			<value>		
+				<Nutrients>0.05</Nutrients>
+				<NutrientsLimit>0.50</NutrientsLimit>	
+			</value>
+	</Operation>
+
+	<!--Пеммикан-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Pemmican"]/statBases</xpath>
+			<value>		
+				<Nutrients>0.05</Nutrients>
+				<NutrientsLimit>0.50</NutrientsLimit>	
+			</value>
+	</Operation>
+
+	<!--Сух паёк-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealSurvivalPack"]/statBases</xpath>
+			<value>		
+				<Nutrients>0.10</Nutrients>
+				<NutrientsLimit>0.75</NutrientsLimit>	
+			</value>
+	</Operation>
+
+	<!--Питательная паста-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealNutrientPaste"]/statBases</xpath>
+			<value>		
+				<Nutrients>0.20</Nutrients>
+				<NutrientsLimit>0.50</NutrientsLimit>	
+			</value>
+	</Operation>		
+
+
+</Patch>

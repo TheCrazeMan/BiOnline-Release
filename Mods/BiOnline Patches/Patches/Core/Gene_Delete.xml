@@ -1,0 +1,166 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/GeneDef[defName="ArchiteMetabolism" or defName="Deathless" or defName="Ageless" or defName="TotalHealing" or defName="DiseaseFree" or defName="PerfectImmunity" or defName="XenogermReimplanter" or defName="RobustDigestion" or defName="PsychicBonding" or defName="Hemogenic" or defName="HemogenDrain" or defName="Deathrest" or defName="Coagulate" or defName="Bloodfeeder" or defName="LongjumpLegs" or defName="PiercingSpine" or defName="Superclotting" or defName="WoundHealing_SuperFast" or defName="Immunity_SuperStrong" or defName="Mood_Sanguine" or defName="KillThirst" or defName="ViolenceDisabled" or defName="MeleeDamage_Strong" or defName="MeleeDamage_Weak" or defName="Neversleep" or defName="Robust" or defName="Learning_Fast"]</xpath>
+		<value> 
+
+			<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_GeneDef">
+			<showInEditor>false</showInEditor>
+			</li>
+			</modExtensions>
+
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneTemplateDef[defName="AptitudeTerrible" or defName="AptitudePoor" or defName="AptitudeStrong" or defName="AptitudeRemarkable"]</xpath>
+		<value>
+
+			<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_GeneTemplateDef">
+			<showInEditor>false</showInEditor>
+			</li>
+			</modExtensions>
+
+		</value>
+	</Operation>
+	
+	
+	<!-- Move speed -->
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="MoveSpeed_Slow"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>2</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="MoveSpeed_Quick"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>-2</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="MoveSpeed_VeryQuick"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>-4</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="PsychicAbility_Extreme"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>-4</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="Hands_Pig"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>+2</biostatMet>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="ElongatedFingers"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>-2</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="PollutionRush"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>-2</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="Immunity_Weak"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>+1</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="Mood_Depressive"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>4</biostatMet>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="Mood_Pessimist"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>2</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="Mood_Optimist"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>-2</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/GeneDef[defName="Libido_Low"]</xpath>
+		<value>
+
+			<biostatMet>1</biostatMet>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/GeneDef[defName="Libido_High"]</xpath>
+		<value>
+
+			<biostatMet>-1</biostatMet>
+		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/GeneDef[defName="Sterile"]/biostatMet</xpath>
+		<value>
+
+			<biostatMet>2</biostatMet>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/GeneDef[defName="Fertile"]</xpath>
+		<value>
+
+			<biostatMet>-1</biostatMet>
+		
+		</value>
+	</Operation>
+</Patch> 
+

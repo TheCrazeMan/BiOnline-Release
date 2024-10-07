@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== Tough/Tri Spike ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Spike_Toughspike"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageAmountBase>10</damageAmountBase>
+				<armorPenetrationSharp>25</armorPenetrationSharp>
+				<armorPenetrationBlunt>8.2</armorPenetrationBlunt>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== Finger Spike ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Spike_Fingerspike"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageAmountBase>7</damageAmountBase>
+				<armorPenetrationSharp>18</armorPenetrationSharp>
+				<armorPenetrationBlunt>4.22</armorPenetrationBlunt>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== Devourer Leap ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="ConsumeLeap_Devourer"]/verbProperties/range</xpath>
+		<value>
+			<range>18</range>
+		</value>
+	</Operation>
+
+	<!-- ========== Heatspikes ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Bullet_Heatspike"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>EnergyBolt</damageDef>
+				<damageAmountBase>18</damageAmountBase>
+				<speed>54</speed>
+				<bulletChanceToStartFire>1</bulletChanceToStartFire>
+				<armorPenetrationSharp>40</armorPenetrationSharp>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== Fleshmelter Bolt ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="FleshmelterBolt"]/verbProperties/range</xpath>
+		<value>
+			<range>75</range>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="WarpedObelisk"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>45000</MaxHitPoints>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Fleshmass"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>120</MaxHitPoints>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="Fleshmass"]</xpath>
+		<value>
+			<damageMultipliers>
+				<li>
+					<damageDef>Bomb_Secondary</damageDef>
+					<multiplier>0.2</multiplier>
+				</li>
+				<li>
+					<damageDef>Flame_Secondary</damageDef>
+					<multiplier>0.2</multiplier>
+				</li>
+			</damageMultipliers>
+		</value>
+	</Operation>
+
+</Patch>

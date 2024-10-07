@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef Name="AProps_FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+		</affordances>
+		<tags>
+			<li>Floor</li>
+		</tags>
+		<isPaintable>true</isPaintable>
+		<fertility>0</fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
+		<pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
+		<designationCategory>Floors</designationCategory>
+		<edgeType>FadeRough</edgeType>
+	</TerrainDef>
+	<TerrainDef Abstract="True" Name="AProps_ShallowWaterBase">
+		<layerable>true</layerable>
+		<fertility>0</fertility>
+		<holdSnow>false</holdSnow>
+		<isPaintable>true</isPaintable>
+		<takeSplashes>true</takeSplashes>
+		<extinguishesFire>true</extinguishesFire>
+		<extraDeteriorationFactor>2</extraDeteriorationFactor>
+		<traversedThought>SoakingWet</traversedThought>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<tags>
+			<li>AP_Water</li>
+		</tags>
+		<tools>
+			<li>
+				<label>water</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>WaterInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
+	<TerrainDef ParentName="AProps_FloorBase">
+		<defName>AP_Lawn</defName>
+		<label>lawn</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>A lawn floor, purely aesthetic.</description>
+		<texturePath>Terrain/Surfaces/AP_Lawn</texturePath>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationHotKey>Misc5</designationHotKey>
+	</TerrainDef>
+	<TerrainDef ParentName="AProps_FloorBase">
+		<defName>AP_CheckeredLawn</defName>
+		<label>checkered lawn</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>A checkered lawn floor, purely aesthetic.</description>
+		<texturePath>Terrain/Surfaces/AP_CheckeredLawn</texturePath>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationHotKey>Misc5</designationHotKey>
+	</TerrainDef>
+	<TerrainDef ParentName="AProps_FloorBase">
+		<defName>AP_CircularLawn</defName>
+		<label>circular lawn</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>A circular pattern lawn floor, purely aesthetic.</description>
+		<texturePath>Terrain/Surfaces/AP_CircularLawn</texturePath>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationHotKey>Misc5</designationHotKey>
+	</TerrainDef>
+	<TerrainDef ParentName="AProps_ShallowWaterBase">
+		<defName>AP_Pool</defName>
+		<label>natural pool water</label>
+		<edgeType>Water</edgeType>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Very shallow water that doesn't impede movement. Used to create decorative pools and fountains.</description>
+		<texturePath>Terrain/Surfaces/AP_Puddle</texturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationHotKey>Misc5</designationHotKey>
+		<designationCategory>Floors</designationCategory>
+	</TerrainDef>
+	<TerrainDef ParentName="AProps_FloorBase">
+		<defName>AP_PoolBorderTiles</defName>
+		<label>pool border</label>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Pool border tiles that can be tinted different colours. Used to create decorative pools and fountains. Purely aesthetic.</description>
+		<texturePath>Terrain/Surfaces/AP_PoolBorderTiles</texturePath>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationHotKey>Misc5</designationHotKey>
+	</TerrainDef>
+	<TerrainDef ParentName="AProps_FloorBase">
+		<defName>AP_ZenSand</defName>
+		<label>zen sand</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Sand decorated with raked patterns. Purely aesthetic.</description>
+		<texturePath>Terrain/Surfaces/AP_ZenSand</texturePath>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationHotKey>Misc5</designationHotKey>
+	</TerrainDef>
+</Defs>

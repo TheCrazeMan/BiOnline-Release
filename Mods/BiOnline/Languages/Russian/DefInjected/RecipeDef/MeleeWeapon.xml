@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!--Имперское оружие-->
+<Craft_MeleeWeapon_MonoSword.label>Создать Мономеч</Craft_MeleeWeapon_MonoSword.label>
+<Craft_MeleeWeapon_MonoSword.description>Для ковки данного оружия используются лучшие технологии и материалы</Craft_MeleeWeapon_MonoSword.description>
+<Craft_MeleeWeapon_MonoSword.jobString>Создаёт Мономеч</Craft_MeleeWeapon_MonoSword.jobString>
+
+<Craft_MeleeWeapon_Zeushammer.label>Создать Электромолот</Craft_MeleeWeapon_Zeushammer.label>
+<Craft_MeleeWeapon_Zeushammer.description>Для ковки данного оружия используются лучшие технологии и материалы</Craft_MeleeWeapon_Zeushammer.description>
+<Craft_MeleeWeapon_Zeushammer.jobString>Создаёт Электромолот</Craft_MeleeWeapon_Zeushammer.jobString>
+
+<Craft_MeleeWeapon_PlasmaSword.label>Создать Плазменный меч</Craft_MeleeWeapon_PlasmaSword.label>
+<Craft_MeleeWeapon_PlasmaSword.description>Для ковки данного оружия используются лучшие технологии и материалы</Craft_MeleeWeapon_PlasmaSword.description>
+<Craft_MeleeWeapon_PlasmaSword.jobString>Создаёт Плазменный меч</Craft_MeleeWeapon_PlasmaSword.jobString>
+
+<Craft_MeleeWeapon_MonoSwordBladeLink.label>Создать Синхромономеч</Craft_MeleeWeapon_MonoSwordBladeLink.label>
+<Craft_MeleeWeapon_MonoSwordBladeLink.description>Для ковки данного оружия используются лучшие технологии и материалы</Craft_MeleeWeapon_MonoSwordBladeLink.description>
+<Craft_MeleeWeapon_MonoSwordBladeLink.jobString>Создаёт Синхромономеч</Craft_MeleeWeapon_MonoSwordBladeLink.jobString>
+
+<Craft_MeleeWeapon_ZeushammerBladeLink.label>Создать Синхроэектромолот</Craft_MeleeWeapon_ZeushammerBladeLink.label>
+<Craft_MeleeWeapon_ZeushammerBladeLink.description>Для ковки данного оружия используются лучшие технологии и материалы</Craft_MeleeWeapon_ZeushammerBladeLink.description>
+<Craft_MeleeWeapon_ZeushammerBladeLink.jobString>Создаёт Синхроэектромолот</Craft_MeleeWeapon_ZeushammerBladeLink.jobString>
+
+<Craft_MeleeWeapon_PlasmaSwordBladeLink.label>Создать Плазменный синхро меч</Craft_MeleeWeapon_PlasmaSwordBladeLink.label>
+<Craft_MeleeWeapon_PlasmaSwordBladeLink.description>Для ковки данного оружия используются лучшие технологии и материалы</Craft_MeleeWeapon_PlasmaSwordBladeLink.description>
+<Craft_MeleeWeapon_PlasmaSwordBladeLink.jobString>Создаёт Плазменный синхро меч</Craft_MeleeWeapon_PlasmaSwordBladeLink.jobString>
+
+</LanguageData>

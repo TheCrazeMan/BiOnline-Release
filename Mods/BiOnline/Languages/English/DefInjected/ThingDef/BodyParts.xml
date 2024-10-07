@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<CyberBionicsArm.label>Advanced cybernetic arm</CyberBionicsArm.label>
+	<CyberBionicsArm.description>A super-tech implant used in a program to create super-soldiers and blah blah blah. This thing is very dangerous to your psyche, so be careful with this line, or you'll be on pills for the rest of your life. Or die in a fit of cyber-psychosis.</CyberBionicsArm.description>
+	
+	<CyberBionicsLeg.label>Advanced cybernetic leg</CyberBionicsLeg.label>
+	<CyberBionicsLeg.description>This one is a leg. Same origin, but it also allows user to made a really long jumps without any trouble. And yes, this one is also causes cyber-psychosis.</CyberBionicsLeg.description>
+	
+</LanguageData>

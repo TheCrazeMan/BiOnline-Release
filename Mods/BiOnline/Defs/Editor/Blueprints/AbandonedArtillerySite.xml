@@ -1,0 +1,2216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.MapBlueprintDef>
+		<defName>AbandonedArtillerySite_WIP</defName>
+		<label>Заброшенные артиллерийские установки</label>
+		<description>Заброшенные артиллерийские установки содержащие небольшое количество военного лута, снаряды, артиллерийские установки, а так же небольшую угрозу в виде 3-4 милиторов 0-1 жнеца и 0-1 улана.</description>
+		<author>0w0sh</author>
+		<mapSize>(64, 1, 64)</mapSize>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<terrain>
+			<cellsCount>1195</cellsCount>
+			<terrainDefDeflate>
+7VjRrsIgDP0wn9TENxMT/QFUcl0kw7DlJvfvfbvLNtq1pQxn9tLAnHDOoZzCzr5ym/NnhKNvmr+LDcFUdeTJXJ05WX4JJ33G5bMx
+lU55oF04mV97v1TObva+vgXboo1ZCSI4OtTswSKED878NK2v7dGEqxv3wRe7sTJq8T/7LvinrbfN62FcS1ouzuhDbv3ZYOb4/zSW
+jpXFOJzuPQCm4lz4r1gPFpuDk0UFEgYHBgOV7Ui5ZBzplUWMyYmBA/ZzqnaLSz55GgotJDHhyFVCWx5QreShMHfGDgaZGabkDUqg
+PORcW4JwRClPikpZz7wg31iEKtM5oFUvqXJgfjHrJmNb+ZR5U2sgrlTqiuV3WsqtYdzQyjOU1vS0er6grO8YOvtMJXM/bpGmFROJ
+cTBSV3BX7g+asrXp11O8RUwITVcS7yxF6SMLjsGKLFdqxdBOYZW7ovTzD+FjVBavZYViNQp0bWnVzwF5OIe2Gn1J6Os/yK9FnHgh
+1mi9XCKzNaxhDWvQD28=
+</terrainDefDeflate>
+			<terrainCellsDeflate>
+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
+</terrainCellsDeflate>
+		</terrain>
+		<buildings>
+			<cellsCount>183</cellsCount>
+			<positionsDeflate>
+NdLLTpNBFADg2UARVhgihBBDMdy8/byKhII7Q6sJtCI+CwltgAIbjEq5BJ4EdMFNqUiBCEmLb+A3aVx8mXNmzsyZv51qWwjZByHk
+eMIAfRylQsgYh9tDyHMqLqo9Md8tnqJX3hNrrZ/EGpZZYYRZRpnjBS8psGtPg7r9OzTYJrFWpsSlfFpNwpZ40VyRfrLkeMtj0rxj
+OvZuDWGNC9ap8osyq2SY5BHd9LDIVUsI19wwLB/hjme+t8AmFfkoNTV5ed3d/rhbWjwY7xPPFX/l2NoZFZ7Kz6yl1d5Qkc+o/93h
+O6mxwSc+M0GGSYqUWKLTnkPnLTDON+cs8IpODvVYcbcyP6lywTkf9R3jXt0u85EzE+6d+5c99vlgbo68fe8psMU2O9RpkOg3zy3n
+lJxfiN8oHjJ2UWNZr5K5nLHXvb/whtd63RmH4ptKNd/U/99yKtbb+0O+6i635hL5c/NZvZcYFz+05yDV/N+/x/ehdrCj+Ub/AQ==
+</positionsDeflate>
+			<defsDeflate>
+7ZZRb4IwEMc/mE9SccsyIxEzH8kBF7xZe81RYvDTj82ZTAOCkzkfeGr7+1+v7bX5g/KjsTjSGqWMnnlHbo8yCsGkMWR5Tedt6geT
+aGwSQuOUgMN2xMYBmSpvR5wIOvRAhK4Swy1oXbP+ZzDqdjYjTQ6kbDyVYl1szbG5UKQH6fy+rj2k+CPxTgV4OPERH8e/7aD3h93J
+xy74Q+9SXTRmoMAYNkshy2mTWmttF+d2NciubLXGDmgBe5YVCQ54wAMe8F1xiEkh5MplUfmX60cLyGI+UrW/1KdJ1mwtmUyBnKVY
+FLnD9AXRnvknyA70BmXKXLvqYT/RjKX6onwHTEm7tccG887gFSTDCSagw3Ibsx43cK+BqwY+aeD+KHjyoxnYefyOibtidMgXsNUg
+S8Hj9c5h82N0m9wSfNvsFtkrxGD6BU7O/QE=
+</defsDeflate>
+			<things>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts />
+				</li>
+				<li>
+					<hitPoints>230</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>190</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>310</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>350</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>170</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>170</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>94</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>WoodLog</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>220</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>250</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>230</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>250</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>260</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>250</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>150</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>240</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>240</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>170</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>170</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>160</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>270</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>140</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>230</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>230</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>220</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>290</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>280</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>180</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>150</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Cloth</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>190</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>60</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>80</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>140</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>140</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>20</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>10</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>90</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>40</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>130</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>220</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>100</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>110</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Ammo_WeaponsBetter</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Ammo_AltWeaponsBetter</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Ammo_AltWeaponsBetter</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_AltWeaponsBetter</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_WeaponsBetter</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+					</parts>
+				</li>
+			</things>
+		</buildings>
+		<items>
+			<cellsCount>433</cellsCount>
+			<positionsDeflate>
+TdFpU9QFAAfgfdFpNWkZZBissGKrwCDa12jkmIIhFhFalkMZrM8BhCW3slzCkHj1NToANeSIlWEFxJUgP0BPM/8Xvnje/46+N0Kh
+foYZ4SZJllnhKWm22WGXf8h+MxQ6xnFyCVNAhFN8QzUxGmgkToIOOvmZ64xwgyRjjDPBJFPcYp4FFnnII/4KLPGEZVZJkWaLbQ44
+/FYo9DGfkMWn5JDLyUAhUU5zhmIuUE4lVVQH6gL1NNBEM61cpYfrgQEGGWKYEUZJMsEMv3Cbe/zOIk9YYZU11kmzzXNekOEle+xz
++O1Q6COOkkUOYSJEKaGUCqqo5Vti1NNAnGYStNBOF938SC8DDDHCTUZJMsYMs9znD1ZJsckWO+ySYY8P35GbIxzlGLnkEeYEBZzk
+C6KUUU5doIlmErTSRjuXuUInP9BFLz/RRz8DDJJkjAkmmWKaGe5wn9/4kwUWWWKNTdLssMsLMoF9PnhXT45wnDAnyCdCIWcoooRS
+znKer6igmhpiXKKRpkCcBC20cZlOuuimh16uMcgwo4wzyRSzzAXu8oAFFllimfVAiqdssMkztl6zQ4aX7LHPAa/+3+GQn8niMz4n
+LxAmP1AQiFDIKaKcDhRRTAllfMkFKqjka6qpoZY6YtRzkUs08h1xErTR/pordNBND71co4+BwA3GmWKaWW4zxx3u8SvzLPCQRzxm
+KbDMCqussU6KDTZJs8U2z9klwz7Z79mRHPIpIEIRpZRxjnIqqaKaGmqJUc9FGojTQisd9DPIEMMkmeIW08wyx10eMM8Kf5NigwP+
+5RXZ78tKHlGKKeEsZZzjPHXU00ScZlq4yvckmeE/
+</positionsDeflate>
+			<defsDeflate>
+rVlNk5swDP1L7aGnnho23XSmnclsemecxQ2eGjtjoF+/vjTZLQbb0jNwwxjb0pP0JJmjFqYrH51o2/fH2/Oub+vXRyeas5ZtfPhV
+aO0vRJ5nW9ynTo1oa1mdur65Ut/Nj+XXUSLO5zy9yc9ADYg1a4SMnf5R6a4un/rzMLPrla6UuWRIEV1+EqY6i8v9bcYIsBEi03RT
+QsH5BtK53wnsxvFKjXmzJfSAtWJFV9+0/NA0thDtsKotD+pSF0JHT3gQ7vtOW1vFT8wQwwsRUnvPCL7Uj04aUcnPojfPtXSe/EvU
+iruDd/R/I/zbsXz75l3THOxP1f2R7lRLrcvD/mWrQhhjjS8PSBeM2HP8g+C4ifHJPEtTKTEIvoljUlIHWhDxAvHQxLI+gnTIQMBF
+HTW0Ff2eBjOLnSjwQuBefGzQaP/rqm2rfkgYvDhcRPxAVuIzxE0hzqeg9LXK/LhX44xW1PZ6nZo6HRwRv4jG/1RQgmdYTEdmfRg+
+lVpZk6APzinTHM3AhjEGi7ufamhizU1H/iofkbTHjXk4NOiIM2G3jMr2FjtsakIqCajoC7MQgCNAifd9D1JoZ23H2JFKilBB8arZ
+JDoXV1tg75GVMKIvUx7jpfJFGY+tkOZkkJPrxzFbELGZht5n/+WYzeEpc0yoL5FwE8RNOOKcZHkHR+uuBTX+en9kqT+ZNMDKIIUD
+TCioecIcEmF60MgEJVOey4ZADAJfytG5+Loxp+OFWSc76rlgBe5JWHaFy6hC227+Llkpb9EPL+hCSI/P7ApTgPGMs6o/CWsqqFpL
+aZVx8YGPIPrc5qh1fXUQFLxW8VSORSLgGok7GOQSbfmlIyVXLKwxyUnega4Z4X1WaZjR5IHmyc7Oy/tjvtUgpohbpGhRgtYB6TIH
+6NA3Q2FR3wz9wchp6KLbbvOHBvwVQqiXJwd2x7BGgGDVXw==
+</defsDeflate>
+			<things>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>94</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>62</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>59</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>92</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>3~9</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>3~9</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>53</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>12~22</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>54</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>77</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>3~9</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>80</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<stackCount>4</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>1~6</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>62</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>3~7</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<stackCount>13</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>5~14</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<stackCount>3</stackCount>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>3~7</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>76</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>92</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>52</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>3~7</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>1~4</countRange>
+						</li>
+					</parts>
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_RandomCount">
+							<countRange>5~11</countRange>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>70</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>96</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>80</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>56</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+				<li IsNull="True" />
+			</things>
+		</items>
+		<pawns>
+			<cellsCount>6</cellsCount>
+			<positionsDeflate>
+k2FnYEgC4lQOBobrQLyQk4HhHhADAA==
+</positionsDeflate>
+			<pawns>
+				<li>
+					<pawnKindDef>Mech_Militor</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>AncientsHostile</forceFaction>
+					<defaultFaction>AncientsHostile</defaultFaction>				
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>					
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Mech_Scyther</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>AncientsHostile</forceFaction>
+					<defaultFaction>AncientsHostile</defaultFaction>				
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.5</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>						
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Mech_Militor</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>AncientsHostile</forceFaction>
+					<defaultFaction>AncientsHostile</defaultFaction>				
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>					
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Mech_Lancer</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>AncientsHostile</forceFaction>
+					<defaultFaction>AncientsHostile</defaultFaction>				
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.66</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>						
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Mech_Militor</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>AncientsHostile</forceFaction>
+					<defaultFaction>AncientsHostile</defaultFaction>				
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>					
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>Mech_Militor</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>AncientsHostile</forceFaction>
+					<defaultFaction>AncientsHostile</defaultFaction>				
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnChance">
+							<spawnChance>0.66</spawnChance>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(32, 0, 32)</defendPoint>
+							</lord>
+						</li>						
+					</parts>
+				</li>
+			</pawns>
+		</pawns>
+		<roof>
+			<cellsCount>24</cellsCount>
+			<roofDefDeflate>
+C8rPT3POzysuKSpNLklNsQ4a5dOTDwA=
+</roofDefDeflate>
+			<roofCellsDeflate>
+DcPZEUAwFADA94cGSBQmaMxRGIlq7M5s7SKan6mPyM4WVzd3D08vbx9fq81xiJhMZheLPw==
+</roofCellsDeflate>
+		</roof>
+		<areas />
+		<mapArea>
+			<zoneName>map</zoneName>
+			<cellsCount>1195</cellsCount>
+			<positionsDeflate>
+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
+</positionsDeflate>
+		</mapArea>
+		<forceFogArea IsNull="True" />
+		<forceUnfogArea IsNull="True" />
+		<variables>
+			<customVariables />
+		</variables>
+		<mapScripts>
+			<li>MapObjectDelete</li>
+		</mapScripts>
+		<mapRules>
+			<fog>True</fog>
+		</mapRules>
+		<tags>
+			<li>Farmland</li>
+		</tags>			
+		<generationCommonality>1</generationCommonality>
+	</BiOnline.MapGenerator.MapBlueprintDef>
+</Defs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <VillagerMim.label>villager</VillagerMim.label>
+  <VillagerMim.labelFemale>villager</VillagerMim.labelFemale>
+  <VillagerMim.labelMale>villager</VillagerMim.labelMale>
+  <VillagerMim.labelPlural>villagers</VillagerMim.labelPlural>
+  
+  <Mim.label>Mime</Mim.label>
+  <Mim.labelFemale>Mime</Mim.labelFemale>
+  <Mim.labelMale>Mime</Mim.labelMale>
+  <Mim.labelPlural>Mime</Mim.labelPlural>
+  
+</LanguageData>

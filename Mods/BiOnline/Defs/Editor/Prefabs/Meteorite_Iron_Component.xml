@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.BuildingPrefabDef>
+		<defName>Meteorite_Iron_Component</defName>
+		<label>Метеорит (железо/компоненты)</label>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<prefabRect>
+			<cellsCount>262</cellsCount>
+			<prefabSize>(28, 24)</prefabSize>
+			<centerPosition>(38, 0, 38)</centerPosition>
+			<cellsDeflate>
+FdNJUI9xGAfwfyH7Oo6WFkuhHA1aSIUTM2a00UK6OVhK0iLjZhAVle1mzKCVsl6RpOzLGVkixIEZMz7v4TPP7/c833fe3/u+8+4M
+D4WWkUkW2eSQSySJRJFENMnEkEIJpdQSSxoFxJFOIcNhodAId0Kh0Gt+Mc1+Ceso4iB39d/wm+n28axnBzW81Z+hJlDMTDawUT+e
+BIo5xHlu8ZKfTJFbRAYX7G/zihGm6i1mLduDs+id5QbPqeEcN3nBDyYHWbWaM3RTRDqFVNJEBtuoopm1pFFABbHkk0oEZdTTxiM+
+Mtq9Ikkki73UcoUH7JdpoJ0+PjFGP4oksinhBFfp4T2n5Dp4zOfg/nrRJJNDKSdp4SGnZTrp5wtj9WJIIZd91NFKL9dkBhhinP08
+VrGFMuppY5AnMl8Zbz2f1WwNno0G2uljAgtIJY/y4Dno4JvrF6pryOdAcGY6eWY2zETrfr5bT1JjSaOAChqDczNAHOkUUkkT14Oz
+BtX1XTwlj3IO0Bh8b/MqmumimjN0MxS8U5kW6mill0FGmc1lJZns4TiXuc89PsiFq3NYwWZ2cyz4RmY9hFnPZjmzOMoujvCXfzKX
+OOzfXKpeJItNZu+I0P+j/gc=
+</cellsDeflate>
+		</prefabRect>
+		<terrain>
+			<cellsCount>262</cellsCount>
+			<terrainDefDeflate>
+cy9KzMssSY0Pyi9Nz/BILc+zdscQCc7PzCFemHYiYAspsJXGDsbnvMEShHQPONLijG4WDfLERf3kgs9EekTPYCkDhnDE0zKFD5aY
+pVFSJjdY6RG3dFNIyyKAjARKkZbBUuTQ1/300EppTqCR/kFZZI1kEXo0punRMBrJIlQvTwA=
+</terrainDefDeflate>
+			<terrainCellsDeflate>
+DdFHbw4AAADQr0btGUertVq0joIOqoMTiUQX3XpzMFq6S9wE1T2Mm0jQPcwr2qKtzRk1SlEOJBLv8H7BCw4EAmFEEMkG4ogngUSS
+2E0KGWSSRTY55JJHPscpopgSSimjnAoqOcFJqqmhljrqaaCRJppp4QIXucRlrnCVVtpop4NOuuimh176uMktbnOHu9yjnwEGecRj
+njDEMCM85RnPecFLXvGaN7zlA6N85BOf+cIYX/nGON/5wU8m+MVv/hEUFAhMYjJTmEow05jODGYyi9nMYS7zmM8CFrKIxSxhKctY
+TgihrGAlq1jNGsIIZy3rWE8EkWxiM1uIIpoYYtnKNuLYTjwJJJLEDnayiz3sJZkUUkkjnX3sJ4NMssgmh1zyOEA+hzjMEY5SQCHH
+OE4RxZRQShnlVFDJCU5zhrOco4rzVFNDLXXU00AjTTTTwjWuc4NW2ming0666KaHXvq4zwMe0s8AgzxmiGFGeMd7RhljnAn+8Jfg
+ST4JIZQVhBHORqKIJoZY4kkgmRRSSSOdLLI5SAGFnKKK/w==
+</terrainCellsDeflate>
+		</terrain>
+		<buildings>
+			<cellsCount>239</cellsCount>
+			<positionsDeflate>
+FdNJbE5hFAbgvzVLjLE0dDDUVEsxtDW0yopEQge0pbqzMLRac20lVKs1sxMJOik1blFUNTGvUbNQFiQSz1k8Oee8/5d77/fd+w9N
+SiS+JBKJr3ymh16Gyb+pHUzRD2cROaTxRF6sTuOqvp1ulpqLyGIg1ZyUHydFX8MHfSenaGKh7Jk6Qj3GHn2pelq9QSOV5gYm8cPc
+R1KsV1to4Iq5hba4Bnv5KX/OAcq5SQ3VlFDGMutO0EQyo3gkf08za8zzORp7pSN+p4tmJtBv3SZ1HzN5af4d99VvZjQPeUcfrXTT
+Tg9P45y4HvumlnIqWMFsxnDONWvjfKini3nyI1ziAa9kdzjP7Xgu8jlIRZy9Nb3x3rnGa9ldxuozeRNnQh65LCGD8X7bxmG2cp97
+rE32DskimxTSKKCIYnJIp5BKqqgjj+lkkMt311vJOFa5ZyaDucg/Dsn/ssXaufTrS9WSOPt4VrWAQnbEs7GA7dRxmYkMiO/D+o3s
+5wxnecEtfjHSmlnks5wZPJa30hbftHk3u2ikip3Uk816NrCOxUxlMukMYRAfY39qKp/iPxHfgjoncvtKpYzV8guyAv7o3/If
+</positionsDeflate>
+			<defsDeflate>
+cy9KzMssSbV2H6VH6VF6lB6lByXtm5mXmpiUk+qcn1uQn5eaV1LsmZdSWlxSlJmYMyo5KjkqSQ1JJ0//eJgCz6L8PCIEYJzgktRU
+sgwYFaC9AAA=
+</defsDeflate>
+			<things>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>PlayerColony</factionDef>
+					<parts IsNull="True" />
+				</li>
+			</things>
+		</buildings>
+		<items IsNull="True" />
+		<roof IsNull="True" />
+		<pawns IsNull="True" />
+		<commonality>1</commonality>
+	</BiOnline.MapGenerator.BuildingPrefabDef>
+</Defs>

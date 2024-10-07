@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--Титаниум-->
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Titanium</defName>
+		<label>titanium</label>
+		<description>Remelted pure titanium is a light transition metal of silver-white color. It has high corrosion resistance. Use in the production of weapons and much more.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Titanium</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MarketValue>7.8</MarketValue>
+		  <Mass>0.28</Mass>
+		  <StuffPower_Armor_Sharp>1.75</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>2.5</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+		  <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+		  <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+		  <li>RefinedDefaultMetals</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+		  <categories>
+			<li>Metallic</li>
+			<li>Alloys_NonConstruct</li>
+			<li>AlloysStrongMetals</li>
+		  </categories>
+		  <appearance>Metal</appearance>
+		  <commonality>0</commonality>
+		  <constructEffect>ConstructMetal</constructEffect>
+		  <color>(165,190,210)</color>
+		  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+		  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+		  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		  <statFactors>
+			<Mass>0.75</Mass>
+			<MaxHitPoints>2.2</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToMake>2</WorkToMake>
+			<WorkToBuild>2</WorkToBuild>
+			<WorkTableWorkSpeedFactor>1.25</WorkTableWorkSpeedFactor>
+		  </statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+  
+
+	<!--Керамит сплав-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>AlloysCeramite</defName>
+		<label>ceramite Alloys</label>
+		<description>Ceramite is an impact—resistant material based on ceramics. It is not known exactly how it appeared, one of the theories is that these are the fossilized remains of beetles' vital activity.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AlloysCeramite</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MarketValue>12</MarketValue>
+		  <Mass>2</Mass>
+		  <StuffPower_Armor_Sharp>3</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>4</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+		  <SharpDamageMultiplier>2.6</SharpDamageMultiplier>
+		  <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+		  <li>RefinedBiomeMetals</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+		  <categories>
+			<li>AlloysStrongMetals</li>
+			<li>Metallic</li>
+			<li>Alloys_NonConstruct</li>
+		  </categories>
+		  <appearance>Metal</appearance>
+		  <commonality>0</commonality>
+		  <color>(191,128,77)</color>
+		  <constructEffect>ConstructMetal</constructEffect>
+		  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+		  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+		  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		  <statFactors>
+			<Mass>1.5</Mass>
+			<MaxHitPoints>2.2</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+			<MeleePenetrationFactor>1.75</MeleePenetrationFactor>
+			<WorkToMake>1.5</WorkToMake>
+			<WorkToBuild>2.0</WorkToBuild>
+			<ImmunityGainSpeedFactor>0.25</ImmunityGainSpeedFactor>
+			<MedicalTendQualityOffset>0.6</MedicalTendQualityOffset>
+			<JoyGainFactor>0.5</JoyGainFactor>
+			<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+		  </statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	</ThingDef>
+
+
+	<!--Мифрил сплав-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>AlloysMithril</defName>
+		<label>mithril Alloys</label>
+		<description>Mithril is lightweight and durable four times stronger than iron, moreover, it is much lighter than its material, which has high malleability and does not fade over the years, but requires very high temperatures for processing.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AlloysMithril</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MarketValue>12</MarketValue>
+		  <Mass>1.6</Mass>
+		  <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>1.5</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+		</statBases>
+		<thingCategories>
+		  <li>RefinedBiomeMetals</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+		  <categories>
+			<li>AlloysStrongMetals</li>
+			<li>Metallic</li>
+			<li>Alloys_NonConstruct</li>
+		  </categories>
+		  <appearance>Metal</appearance>
+		  <commonality>0</commonality>
+		  <color>(34,164,179)</color>
+		  <constructEffect>ConstructMetal</constructEffect>
+		  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+		  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+		  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		  <statFactors>
+			<Mass>0.2</Mass>
+			<MaxHitPoints>1.2</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToMake>2.8</WorkToMake>
+			<WorkToBuild>3.5</WorkToBuild>
+		  <ImmunityGainSpeedFactor>0.25</ImmunityGainSpeedFactor>
+		  <MedicalTendQualityOffset>0.6</MedicalTendQualityOffset>
+		  <JoyGainFactor>0.5</JoyGainFactor>
+		  <WorkTableWorkSpeedFactor>2.2</WorkTableWorkSpeedFactor>
+		  </statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
+
+
+	<!--Хлорофит сплав-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>AlloysChlorophyte</defName>
+		<label>chlorophytee Alloys</label>
+		<description>The hard ore found in the jungle is used to make high-quality furniture and can be used to repair things.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AlloysChlorophyte</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MarketValue>12</MarketValue>
+		  <Mass>0.6</Mass>
+		  <StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+		  <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+		  <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+		</statBases>	
+		<thingCategories>
+		  <li>RefinedBiomeMetals</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+		  <categories>
+			<li>Metallic</li>
+			<li>Alloys_NonConstruct</li>
+		  </categories>
+		  <appearance>Metal</appearance>
+		  <commonality>0</commonality>
+		  <color>(36,128,36)</color>
+		  <constructEffect>ConstructMetal</constructEffect>
+		  <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+		  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+		  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		  <statOffsets>
+		    <Beauty>32</Beauty>
+		  </statOffsets>			  
+		  <statFactors>
+			<Mass>0.5</Mass>
+			<MaxHitPoints>0.5</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Beauty>3.33</Beauty>
+			<WorkToMake>0.8</WorkToMake>
+			<WorkToBuild>0.8</WorkToBuild>
+			<ImmunityGainSpeedFactor>1.4</ImmunityGainSpeedFactor>
+			<MedicalTendQualityOffset>1.6</MedicalTendQualityOffset>
+			<JoyGainFactor>3</JoyGainFactor>
+		  </statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
+
+
+
+</Defs>

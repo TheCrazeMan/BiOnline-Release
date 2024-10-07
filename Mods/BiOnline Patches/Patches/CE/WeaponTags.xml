@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_FlintlockBlunderbuss" or defName="CE_Gun_FlintlockMusket"]/weaponTags</xpath>
+					<value>
+						<li>Flintlock</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_MilkorMGL"]/weaponTags</xpath>
+					<value>
+						<li>GrenadeLauncher</li>
+						<li>Destructive</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_RPGSeven" or defName="CE_GrenadeLauncher"]/weaponTags</xpath>
+					<value>
+						<li>Destructive</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_DisposableRocketLauncher" or defName="CE_Gun_RPGSeven"]/weaponTags</xpath>
+					<value>
+						<li>AntiTank</li>
+					</value>
+				</li>				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

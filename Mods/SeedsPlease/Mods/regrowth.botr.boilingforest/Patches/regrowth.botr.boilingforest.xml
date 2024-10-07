@@ -1,0 +1,10 @@
+<Patch>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RG_Plant_Edaku"]/plant/harvestedThingDef</xpath>
+        <value>
+            <harvestedThingDef>EdakuFungus</harvestedThingDef>
+        </value>
+    </Operation>
+
+</Patch>

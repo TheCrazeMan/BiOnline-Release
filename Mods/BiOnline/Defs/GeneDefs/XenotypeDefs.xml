@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Кадавр-->
+	<XenotypeDef>
+		<defName>Kadavr</defName>
+		<label>Kadavr</label>
+		<description>Intelligent humanoid creatures that live in the harsh conditions of deserts and semi-deserts. These creatures have evolved to survive in the hottest and most inhospitable parts of the planet, developing unique adaptations and qualities that set them apart from other sentient species. They have pale, almost translucent skin that helps them reflect intense sunlight and avoid overheating. Their bodies are covered in scars, wounds and severe damage that make them look ugly in the eyes of other races, but they have highly developed musculature and low sensitivity to pain, making them very dangerous when encountered.</description>
+		<descriptionShort>Intelligent humanoid creatures that live in the harsh conditions of deserts and semi-deserts. These creatures have evolved to survive in the hottest and most inhospitable parts of the planet, developing unique adaptations and qualities that set them apart from other sentient species.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Kadavr</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>NamerPersonDirtmole_Male</nameMaker>
+		<nameMakerFemale>NamerPersonDirtmole_Female</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_XenoTypeDef">
+				<disableInEditor>true</disableInEditor>
+			</li>
+		</modExtensions>
+		<genes>
+			<li>Hair_BaldOnly</li>
+			<li>Skin_LightGray</li>
+			<li>VoiceRoar</li>
+			<li>IndifferenceComfort</li>
+			<li>SolarActivation</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>KillThirst</li>
+			<li>Delicate</li>
+			<li>RobustDigestion</li>
+			<li>WoundHealing_Slow</li>
+			<li>Beauty_VeryUgly</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>Neversleep</li>
+			<li>Learning_Slow</li>
+			<li>AptitudeRemarkable_Melee</li>
+		</genes>
+	</XenotypeDef>
+	<!--Кикимор-->
+	<XenotypeDef>
+		<defName>Kikimor</defName>
+		<label>Kikimor</label>
+		<description>Kikimora belong to the cadaur xenotype, in fact, they are relatives of desert dwellers living in swamps. However, unlike them, they are nocturnal and hide in water bodies during the day, as their webbed flipper-like limbs allow them to move efficiently enough on water. Stumpy and slow, they have learned to hunt from ambush, waiting and swallowing the victim whole. The presence of kikimors in a body of water is easily detected by their horrible putrid odor, which cannot be confused with anything else.</description>
+		<descriptionShort>Swamp creatures that exude a horrible odor and prefer humid hot climates.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Kikimor</iconPath>
+		<inheritable>true</inheritable>
+		<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_XenoTypeDef">
+				<disableInEditor>true</disableInEditor>
+			</li>
+		</modExtensions>
+		<genes>
+			<li>FlipperLimbs</li>
+			<li>RainPower</li>
+			<li>PutridSmell</li>
+			<li>Nose_Kikimor</li>
+			<li>FatSac</li>
+			<li>MoveSpeed_Slow</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Hair_BaldOnly</li>
+			<li>Head_Gaunt</li>
+			<li>Body_Fat</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Immunity_Strong</li>
+			<li>Beauty_Ugly</li>
+			<li>FacialRidges</li>
+			<li>AptitudePoor_Shooting</li>
+			<li>AptitudeRemarkable_Social</li>
+			<li>Skin_Green</li>
+			<li>Skin_DeepYellow</li>
+			<li>Skin_PaleYellow</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

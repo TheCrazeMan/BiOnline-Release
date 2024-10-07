@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VFEProps.HiddenDesignatorsDef>
+		<defName>AProps_HiddenDesignators_Royalty</defName>
+		<hiddenDesignators>			
+			
+			<li>AP_Hedge_Anima</li>
+			
+			
+		</hiddenDesignators>							
+	</VFEProps.HiddenDesignatorsDef>
+
+
+
+
+
+</Defs>

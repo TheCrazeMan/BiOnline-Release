@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--Корона/Коронета-->
+	<AbilityDef ParentName="WordOfBase">
+		<defName>WordOfSerenity_PSY</defName>
+		<label>word of serenity</label>
+		<description>Use calming words and psychic suggestion to end a mental break on a person or animal. The target will fall into a short psychic sleep. The psyfocus cost depends on the intensity of the target's mental break.</description>
+		<level>0</level>
+		<iconPath>UI/Abilities/WordOfSerenity</iconPath>
+		<hotKey>Misc12</hotKey>
+		<statBases>
+		  <Ability_PsyfocusCost>0.3</Ability_PsyfocusCost> <!-- Minimum cost -->
+		  <Ability_Duration>246</Ability_Duration>
+		</statBases>
+		<verbProperties>
+		  <warmupTime>2</warmupTime>
+		  <targetParams>
+			<canTargetAnimals>False</canTargetAnimals>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityStopMentalState">
+			<exceptions><li>Jailbreaker</li></exceptions>
+			<psyfocusCostForMinor>0.2</psyfocusCostForMinor>
+			<psyfocusCostForMajor>0.3</psyfocusCostForMajor>
+			<psyfocusCostForExtreme>0.5</psyfocusCostForExtreme>
+		  </li>
+		  <li Class="CompProperties_AbilitySocialInteraction">
+			<interactionDef>WordOfSerenity</interactionDef>
+			<canApplyToMentallyBroken>True</canApplyToMentallyBroken>
+			<canApplyToAsleep>true</canApplyToAsleep>
+			<canApplyToUnconscious>true</canApplyToUnconscious>
+		  </li>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>PsychicComa</hediffDef>
+			<durationMultiplier>PsychicSensitivity</durationMultiplier>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<!-- Роскошная мантия -->
+	<AbilityDef ParentName="WordOfBase">
+		<defName>WordOfTrust_PSY</defName>
+		<label>word of trust</label>
+		<description>Speak to the prisoner while using psychic suggestion to reduce their resistance to recruitment. This can only reduce a prisoner's resistance, but cannot recruit them.</description>
+		<level>0</level>
+		<iconPath>UI/Abilities/WordOfTrust</iconPath>
+		<hotKey>Misc12</hotKey>
+		<statBases>
+		  <Ability_PsyfocusCost>0.3</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+		  <warmupTime>2</warmupTime>
+		  <targetParams>
+			<onlyTargetPrisonersOfColony>True</onlyTargetPrisonersOfColony>
+			<neverTargetIncapacitated>True</neverTargetIncapacitated>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityOffsetPrisonerResistance">
+			<offset>-12</offset>
+			<psychic>True</psychic>
+		  </li>
+		  <li Class="CompProperties_AbilitySocialInteraction">
+			<interactionDef>WordOfTrust</interactionDef>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<!--Молот-->
+	<AbilityDef ParentName="PsycastBase">
+		<defName>Stun_PSY</defName>
+		<label>stun</label>
+		<description>Momentarily disrupt motor function in the target's brain, preventing any movement.</description>
+		<level>0</level>
+		<iconPath>UI/Abilities/Stun</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc3</hotKey>
+		<statBases>
+		  <Ability_EntropyGain>12</Ability_EntropyGain>
+		  <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
+		  <Ability_Duration>3</Ability_Duration>
+		</statBases>
+		<verbProperties>
+		  <warmupTime>2</warmupTime>
+		  <range>24.9</range>
+		  <targetParams>
+			<canTargetAnimals>True</canTargetAnimals>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class = "CompProperties_AbilityEffectWithDuration">
+			<compClass>CompAbilityEffect_Stun</compClass>
+			<durationMultiplier>PsychicSensitivity</durationMultiplier>
+			<psychic>True</psychic>
+			<goodwillImpact>-15</goodwillImpact>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<!-- Меч -->
+	<AbilityDef ParentName="PsycastBase">
+		<defName>Focus_PSY</defName>
+		<label>focus</label>
+		<description>Psychically focus the target's mind, boosting their sight, hearing and moving capacities.</description>
+		<level>0</level>
+		<iconPath>UI/Abilities/Focus</iconPath>
+		<hotKey>Misc11</hotKey>
+		<statBases>
+		  <Ability_EntropyGain>15</Ability_EntropyGain>
+		  <Ability_PsyfocusCost>0.03</Ability_PsyfocusCost>
+		  <Ability_Duration>60</Ability_Duration>
+		</statBases>
+		<verbProperties>
+		  <warmupTime>2</warmupTime>
+		  <range>27.9</range>
+		  <targetParams>
+			<canTargetSelf>True</canTargetSelf>
+			<canTargetAnimals>True</canTargetAnimals>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class = "CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>PsychicFocus</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<psychic>True</psychic>
+			<durationMultiplier>PsychicSensitivity</durationMultiplier>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<!-- Копьё -->
+	<AbilityDef ParentName="PsycastBase">
+		<defName>BlindingPulse_PSY</defName>
+		<label>blinding pulse</label>
+		<description>Induce noise in the visual centers of the brain, obscuring vision of everyone near the target point.</description>
+		<level>0</level>
+		<iconPath>UI/Abilities/BlindingPulse</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc5</hotKey>
+		<statBases>
+		  <Ability_EntropyGain>20</Ability_EntropyGain>
+		  <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
+		  <Ability_Duration>30</Ability_Duration>
+		  <Ability_EffectRadius>3.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+		  <warmupTime>2</warmupTime>
+		  <range>24.9</range>
+		  <targetParams>
+			<canTargetSelf>True</canTargetSelf>
+			<canTargetAnimals>True</canTargetAnimals>
+			<canTargetLocations>True</canTargetLocations>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class = "CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>PsychicBlindness</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<psychic>True</psychic>
+			<goodwillImpact>-15</goodwillImpact>
+			<applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		  </li>
+		</comps>
+	</AbilityDef>
+</Defs>

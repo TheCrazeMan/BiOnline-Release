@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<FillResearchBox.reportString>заполняет стол исследователя</FillResearchBox.reportString>
+	<ClearsResearchBox.reportString>очищает стол исследователя</ClearsResearchBox.reportString>
+	<RefillWateredBuilding.reportString>наполняет водой</RefillWateredBuilding.reportString>
+	<AddItemsToLevelableBuilding.reportString>заполняет строение</AddItemsToLevelableBuilding.reportString>
+	<GotoBiCommBuilding.reportString>идет к {TargetA}</GotoBiCommBuilding.reportString>
+	<ExploreTheSoily.reportString>исследует почву</ExploreTheSoily.reportString>
+	<DoMine.reportString>копает в шахте</DoMine.reportString>
+	
+</LanguageData>

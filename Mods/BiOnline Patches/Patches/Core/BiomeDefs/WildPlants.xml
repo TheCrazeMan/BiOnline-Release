@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Умеренный лес-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.03</Plant_Broots>
+			<Plant_RedPetals>0.04</Plant_RedPetals>
+			<Plant_Shrooms>0.05</Plant_Shrooms>
+			<Plant_DarkBerries>0.05</Plant_DarkBerries>
+			<Plant_Hops>0.05</Plant_Hops>
+			<Plant_Tomato>0.05</Plant_Tomato>
+			<Plant_Wheat>0.05</Plant_Wheat>
+		</value>
+	</Operation>
+	<!--Болото-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.08</Plant_Broots>
+			<Plant_RedPetals>0.08</Plant_RedPetals>
+			<Plant_Shrooms>0.06</Plant_Shrooms>
+			<Plant_DarkBerries>0.05</Plant_DarkBerries>
+			<Plant_Devilstrand>0.05</Plant_Devilstrand>
+		</value>
+	</Operation>
+	<!--Кустарниковая степь-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.05</Plant_Broots>
+			<Plant_RedPetals>0.02</Plant_RedPetals>
+			<Plant_Shrooms>0.04</Plant_Shrooms>
+			<Plant_DarkBerries>0.04</Plant_DarkBerries>
+			<Plant_Cotton>0.05</Plant_Cotton>
+			<Plant_Beet>0.05</Plant_Beet>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_BlackPepper>0.05</Plant_BlackPepper>
+			<Plant_Corn>0.05</Plant_Corn>
+			<Plant_Potato>0.05</Plant_Potato>
+		</value>
+	</Operation>
+	<!--Тайга-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.01</Plant_Broots>
+			<Plant_RedPetals>0.03</Plant_RedPetals>
+			<Plant_Shrooms>0.06</Plant_Shrooms>
+			<Plant_DarkBerries>0.07</Plant_DarkBerries>
+			<Plant_Beet>0.05</Plant_Beet>
+			<Plant_Potato>0.05</Plant_Potato>
+			<Plant_Carrot>0.05</Plant_Carrot>
+		</value>
+	</Operation>
+	<!--Топь-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.06</Plant_Broots>
+			<Plant_RedPetals>0.04</Plant_RedPetals>
+			<Plant_Shrooms>0.05</Plant_Shrooms>
+			<Plant_DarkBerries>0.04</Plant_DarkBerries>
+			<Plant_Devilstrand>0.05</Plant_Devilstrand>
+		</value>
+	</Operation>	
+	<!--Тундра-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.005</Plant_Broots>
+			<Plant_RedPetals>0.002</Plant_RedPetals>
+			<Plant_Shrooms>0.01</Plant_Shrooms>
+			<Plant_DarkBerries>0.03</Plant_DarkBerries>
+			<Plant_Beet>0.05</Plant_Beet>
+			<Plant_Potato>0.05</Plant_Potato>
+			<Plant_Carrot>0.05</Plant_Carrot>		
+		</value>
+	</Operation>	
+	<!--Полупустыня-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.03</Plant_Broots>
+			<Plant_RedPetals>0.008</Plant_RedPetals>
+			<Plant_Shrooms>0.02</Plant_Shrooms>
+			<Plant_DarkBerries>0.01</Plant_DarkBerries>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_BlackPepper>0.05</Plant_BlackPepper>
+			<Plant_Smokeleaf>0.05</Plant_Smokeleaf>
+		</value>
+	</Operation>
+	<!--Пустыня-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
+		<value>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_Smokeleaf>0.05</Plant_Smokeleaf>
+		</value>
+	</Operation>
+	<!--Тропический лес-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.08</Plant_Broots>
+			<Plant_RedPetals>0.1</Plant_RedPetals>
+			<Plant_Shrooms>0.09</Plant_Shrooms>
+			<Plant_DarkBerries>0.08</Plant_DarkBerries>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_BlackPepper>0.05</Plant_BlackPepper>
+			<Plant_Psychoid>0.05</Plant_Psychoid>
+			<Plant_Corn>0.05</Plant_Corn>
+			<Plant_Tea>0.05</Plant_Tea>
+			<Plant_Soy>0.05</Plant_Soy>
+			<Plant_Rice>0.05</Plant_Rice>
+			<Plant_TreeCocoa>0.05</Plant_TreeCocoa>
+		</value>
+	</Operation>
+	<!--Тропическое болото-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+		<value>
+			<Plant_Broots>0.1</Plant_Broots>
+			<Plant_RedPetals>0.12</Plant_RedPetals>
+			<Plant_Shrooms>0.08</Plant_Shrooms>
+			<Plant_DarkBerries>0.07</Plant_DarkBerries>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_Psychoid>0.05</Plant_Psychoid>
+			<Plant_Tea>0.05</Plant_Tea>
+			<Plant_Soy>0.05</Plant_Soy>
+			<Plant_Rice>0.05</Plant_Rice>
+		</value>
+	</Operation>	
+</Patch>

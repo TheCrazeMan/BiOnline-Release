@@ -1,0 +1,13 @@
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+	<xpath>Defs/RecipeDef[
+	defName="ProcessRawHealrootBulk" or 
+	defName="ProcessRawCocoa" or 
+	defName="ProcessRawHealroot" or
+	defName="ProcessRawDevilstrand" or 
+	defName="ProcessRawCotton"]
+	</xpath>
+	</Operation>
+
+</Patch>

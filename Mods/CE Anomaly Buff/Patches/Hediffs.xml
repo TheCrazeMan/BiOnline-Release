@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== Shambler ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Shambler"]/stages/li/statFactors/IncomingDamageFactor</xpath>
+		<value>
+			<IncomingDamageFactor>0.3</IncomingDamageFactor>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="Shambler"]/stages/li</xpath>
+		<value>
+        <damageFactors>
+          <Flame>4</Flame>
+          <Burn>4</Burn>
+		  <PrometheumFlame>4</PrometheumFlame>
+		  <BioferriteFlame>5</BioferriteFlame>
+		  <Flame_Secondary>3</Flame_Secondary>
+		  <Thermobaric>2</Thermobaric>
+		  <Bomb>2</Bomb>
+		  <BombSuper>2</BombSuper>
+		  <Bomb_Secondary>2</Bomb_Secondary>
+        </damageFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="Shambler"]/comps</xpath>
+		<value>
+		  <li Class="HediffCompProperties_ReactOnDamage">
+			<damageDefIncoming>EMP</damageDefIncoming>
+			<createHediff>T_EMPArchiteSurge</createHediff>
+		  </li>
+		</value>
+	</Operation>
+	
+	<!-- ========== Ghoul ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="Ghoul"]/stages/li/statFactors</xpath>
+		<value>
+			<IncomingDamageFactor>0.25</IncomingDamageFactor>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="Ghoul"]/stages/li</xpath>
+		<value>
+        <damageFactors>
+          <Flame>5</Flame>
+          <Burn>5</Burn>
+		  <PrometheumFlame>5</PrometheumFlame>
+		  <BioferriteFlame>6</BioferriteFlame>
+		  <Flame_Secondary>2.5</Flame_Secondary>
+		  <Thermobaric>2.5</Thermobaric>
+		  <Bomb>2.5</Bomb>
+		  <BombSuper>2.5</BombSuper>
+		  <Bomb_Secondary>2.5</Bomb_Secondary>
+        </damageFactors>
+		</value>
+	</Operation>
+	
+	<!-- ========== Awoken Corpse ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="AwokenCorpse"]/stages/*/statFactors</xpath>
+		<value>
+			<Suppressability>0</Suppressability>
+			<SmokeSensitivity>0</SmokeSensitivity>
+		</value>
+	</Operation>
+	
+	<!-- ========== Noctol ========== -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="LightExposure"]/stages/li[label="initial"]</xpath>
+		<value>
+		<statFactors>
+			<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>10</ArmorRating_Blunt>
+        </statFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="LightExposure"]/stages/li[label="moderate"]/statFactors</xpath>
+		<value>
+			<ArmorRating_Sharp>2.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>5</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="LightExposure"]/stages/li[label="serious"]/statFactors</xpath>
+		<value>
+			<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.BuildingPrefabDef>
+		<defName>Lab_HighmateCages</defName>
+		<label>Клетки ангелов (лаба)</label>
+		<mapDefsSaveType>ByDefName</mapDefsSaveType>
+		<prefabRect>
+			<cellsCount>80</cellsCount>
+			<prefabSize>(10, 8)</prefabSize>
+			<centerPosition>(38, 0, 45)</centerPosition>
+			<cellsDeflate>
+DcOHNkIBAADQR6Uh0VAIRdNKVkMlTZT4/7/p3nNuEARBwpyXNn126NId9z225I0vjvxy16R5y9766offhjyw4JV3vjn2x7ApT7z2
+3o6frox46KkVH+w6ce2eR55ZtWXPqb9GTVu05qN9Z26MmfHcum3fnftn3KwXNnxy4MJ/tw==
+</cellsDeflate>
+		</prefabRect>
+		<terrain>
+			<cellsCount>80</cellsCount>
+			<terrainDefDeflate>
+Cy5JLcrMSQ0BYuvgUfYoe5Q9lNgA
+</terrainDefDeflate>
+			<terrainCellsDeflate>
+DcOHNkIBAADQR6Uh0VAIRdNKVkMlTZT4/7/p3nNuEATBjruGDBtxz6gx4ybcN+mBKQ89Mm3GrDmPzVvwxFPPLHruhZeWLHvltRWr
+1qzbsOmNt95574MtH2375LMvvvpmx649+747cOjID8d+OnHqzLkLl3757Y8r1/668c9/tw==
+</terrainCellsDeflate>
+		</terrain>
+		<buildings>
+			<cellsCount>29</cellsCount>
+			<positionsDeflate>
+LcvLCkBQAEXRm5gpZWamlB+QmUdeSeT/P8cq99QanfYZQrh4WHnZGZkZ2DgouGnp6MO/hJKJlJqchSZ2GVX8Pw==
+</positionsDeflate>
+			<defsDeflate>
+jY69DsIwDIQfLFv/QIKKSEF0rExqqFHqRG4q4O1JRTt0gsXyfeezrgHnVPN7VMgWN/NSlbpoDxRtj2wmuYHFcgjxvThnoeCwoDE4
+WNmijBVEXph5zi80MLo16V9kGxgjZiCSsEGZhtx3KKrGjiy4LFXo1d6PgeKsuk0pE1IXyT1HIE6hLz16vud+GIC7ZI3eoSqIKcEe
+SDa7dsBR+9hm6RBI6V3Z1hBO1wfa+L/6AA==
+</defsDeflate>
+			<things>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Brick</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Plasteel</stuffDef>
+					<rotation>3</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<factionDef>AncientsHostile</factionDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<rotation>2</rotation>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Steel</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<quality>Normal</quality>
+					<factionDef>AncientsHostile</factionDef>
+					<stuffDef>Ceramics</stuffDef>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Organs</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Organs</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Organs</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<factionDef>AncientsHostile</factionDef>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_SpawnThingSetMaker">
+							<thingSetMakerDef>ItemPools_Organs</thingSetMakerDef>
+							<thingSetMakerParamsExposable>
+								<filter IsNull="True" />
+							</thingSetMakerParamsExposable>
+						</li>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_MapObject">
+							<tags>
+								<li>Loot</li>
+							</tags>
+						</li>
+					</parts>
+				</li>
+			</things>
+		</buildings>
+		<items>
+			<cellsCount>11</cellsCount>
+			<positionsDeflate>
+Y2VgYGADYk4glgRiaSBWBmJrKLaDYlcgBgA=
+</positionsDeflate>
+			<defsDeflate>
+c8vMKcmIdynKTE1xysnPT7F2o4JAQE5iXkl8SFFqqlN+XnFiJlRFWH5uZgmpbAA=
+</defsDeflate>
+			<things>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li IsNull="True" />
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+				<li>
+					<hitPoints>-1</hitPoints>
+					<parts IsNull="True" />
+				</li>
+			</things>
+		</items>
+		<roof>
+			<cellsCount>72</cellsCount>
+			<roofDefDeflate>
+C8rPT3POzysuKSpNLklNsQ4a5Y/yR/mjfPrwAQ==
+</roofDefDeflate>
+			<roofCellsDeflate>
+DcOHSkIBAADA586RZu40R86GWys1QpEkCvH//8Y7uCAIgpBhI0aNGTfhjUlTps14a9acd+a9t2DRkmUrVq35YN2GjzZt2bbjk117
+9h04dOSzL7765tiJU2fOXbh05dp3P/x049adX3679+DRH0/++ue/Zy9eAQ==
+</roofCellsDeflate>
+		</roof>
+		<pawns>
+			<cellsCount>4</cellsCount>
+			<positionsDeflate>
+c2NgYPAAYl8g9gdiAA==
+</positionsDeflate>
+			<pawns>
+				<li>
+					<pawnKindDef>CapturedHighmate</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>Ancients</forceFaction>
+					<defaultFaction>Ancients</defaultFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(38, 0, 52)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>CapturedHighmate</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>Ancients</forceFaction>
+					<defaultFaction>Ancients</defaultFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(40, 0, 52)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>CapturedHighmate</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>Ancients</forceFaction>
+					<defaultFaction>Ancients</defaultFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(45, 0, 52)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<pawnKindDef>CapturedHighmate</pawnKindDef>
+					<spawnCount>1</spawnCount>
+					<forceFaction>Ancients</forceFaction>
+					<defaultFaction>Ancients</defaultFaction>
+					<parts>
+						<li Class="BiOnline.MapGenerator.ThingGenParts.ThingGenPart_Lord">
+							<lord Class="BiOnline.MapGenerator.ThingGenParts.GenPartLord_DefendPoint">
+								<defendPoint>(47, 0, 52)</defendPoint>
+							</lord>
+						</li>
+					</parts>
+				</li>
+			</pawns>
+		</pawns>
+		<commonality>1</commonality>
+	</BiOnline.MapGenerator.BuildingPrefabDef>
+</Defs>

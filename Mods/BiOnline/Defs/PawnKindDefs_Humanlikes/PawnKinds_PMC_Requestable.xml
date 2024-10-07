@@ -1,0 +1,1252 @@
+<Defs>
+
+	<!-- База для заказных парней -->
+
+  <PawnKindDef Name="PMCRequestableFighterBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>PMC</defaultFactionType>
+	<acceptArrestChanceFactor>0</acceptArrestChanceFactor>
+    <maxGenerationAge>55</maxGenerationAge>
+    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.1</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0.45</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <invNutrition>1.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <weaponMoney>1750~2920</weaponMoney>
+    <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+	<nakedChance>0</nakedChance>
+    <apparelMoney>5000~7500</apparelMoney>
+    <techHediffsChance>0.33</techHediffsChance>
+    <techHediffsMoney>1200~2000</techHediffsMoney>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+    <apparelTags>
+	  <li>BeltDefensePop</li>
+    </apparelTags>	
+	<techHediffsTags>
+	  <li>Advanced</li>
+	</techHediffsTags>	
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>
+    <biocodeWeaponChance>1</biocodeWeaponChance>
+	<preventIdeo>true</preventIdeo>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <inventoryOptions>
+      <skipChance>0.85</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>TM_AdvancedMedicine</thingDef>
+          <countRange>2</countRange>
+        </li>		
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	<modExtensions>
+		<li Class="BiOnline.Things.PawnKindDefModExtension">
+			<forcedHeddifs>
+				<li>ModuleCatharsis</li>
+			</forcedHeddifs>
+			<biocodeApparelChance>1</biocodeApparelChance>
+		</li>
+	</modExtensions>
+  </PawnKindDef>
+
+	<!-- Заказные штурмовики первого и второго уровней -->
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedTrooper_I</defName>
+	<combatPower>55</combatPower>
+	<label>trooper</label>
+	<weaponTags>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SniperRifle</li>
+	  <li>SpacerGun</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+ 	  <li>Dark</li>
+    </apparelTags>	
+	<initialWillRange>10~13</initialWillRange>
+	<initialResistanceRange>15~38</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.35</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~10</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>2400</min>
+						<max>2400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>PMC_Sidearm</li>
+					</weaponTags>
+				</forcedSidearm>
+				<sidearms>
+					<li>
+						<generateChance>0.1</generateChance>
+						<sidearmMoney>
+							<min>10</min>
+							<max>100</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_FlareLauncher</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>0.1</generateChance>
+						<sidearmMoney>
+							<min>10</min>
+							<max>100</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeSmoke</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(67, 81, 101))</only> <!-- blue subtle -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(38, 59, 90)</only> <!-- marine -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(70, 70, 70)</only> <!-- slate -->
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase" Name="PMC_RequestedTrooper_II">
+	<defName>PMC_RequestedTrooper_II</defName>
+	<combatPower>85</combatPower>
+	<label>soldier</label>
+	<weaponTags>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+ 	  <li>Olive</li>
+	  <li>Tan</li>
+    </apparelTags>	
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>2920~3550</weaponMoney>
+	<apparelAllowHeadgearChance>0.99</apparelAllowHeadgearChance>	
+	<initialWillRange>17~23</initialWillRange>
+	<initialResistanceRange>25~48</initialResistanceRange>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.55</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.4</generateChance>
+						<sidearmMoney>
+							<min>2200</min>
+							<max>3100</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>PMC_Sidearm</li>
+						</weaponTags>						
+					</li>
+					<li>
+						<generateChance>0.2</generateChance>
+						<sidearmMoney>
+							<min>10</min>
+							<max>100</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_GrenadeFrag</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>0.2</generateChance>
+						<sidearmMoney>
+							<min>10</min>
+							<max>100</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+			<li Class="BiOnline.Things.PawnKindDefModExtension">
+				<forcedHeddifs>
+					<li>ModuleCatharsis</li>
+				</forcedHeddifs>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(104, 120, 119)</only> <!-- drab dark blue -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(119, 145, 121)</only> <!-- drab light green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(106, 120, 104)</only> <!-- drab dark green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(140, 140, 119)</only> <!-- tan -->
+            </li>
+			<li>
+			  <weight>0.2</weight>
+			  <only>(255,192,203)</only>
+			</li>			
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+	<!-- Снайпер пососун -->
+
+  <PawnKindDef ParentName="PMC_RequestedTrooper_II">
+	<defName>PMC_RequestedSniper</defName>
+	<label>sniper</label>
+	<combatPower>100</combatPower>
+	<weaponTags Inherit="False">
+	  <li>SniperRifle</li>
+	</weaponTags>
+    <apparelRequired>
+      <li>Apparel_GhillieSuit</li>
+      <li>Headwear_GhillieHood</li>
+    </apparelRequired>	
+  </PawnKindDef>
+
+	<!-- Гренадёр дефолтыч -->
+
+  <PawnKindDef ParentName="PMC_RequestedTrooper_II">
+	<defName>PMC_RequestedGrenadier</defName>
+	<label>grenadier</label>
+	<combatPower>110</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>	
+	<weaponTags Inherit="False">
+	  <li>Destructive</li>
+	</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>2200</min>
+						<max>2500</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>PMC_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>3</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>	
+  </PawnKindDef>
+
+	<!-- Гренадёр пробивун -->
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedArmorPiercier</defName>
+	<label>ap soldier</label>
+	<combatPower>140</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>	
+	<weaponTags Inherit="False">
+	  <li>AntiTank</li>
+	</weaponTags>
+	<apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>IndustrialMilitaryAdvanced</li>
+	  <li>Balaclava</li>
+	  <li>Tan</li>
+	</apparelTags>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>2920~3550</weaponMoney>
+	<apparelAllowHeadgearChance>0.99</apparelAllowHeadgearChance>	
+	<initialWillRange>17~23</initialWillRange>
+	<initialResistanceRange>25~48</initialResistanceRange>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.55</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~12</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>	
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<forcedAmmoCategory>RocketHEAT</forcedAmmoCategory>
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>1400</min>
+						<max>2100</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_SMG</li>
+					</weaponTags>
+					<magazineCount>
+						<min>4</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(163,140,108)</only> <!-- tan -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(222,193,150)</only> <!-- brandy -->
+            </li>			
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+	<!-- ЭМИ-отряд -->
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedEMP_I</defName>	<!-- Этот с гранатами и энергопушкой на ЭМИ патронах -->
+	<combatPower>115</combatPower>
+	<label>emp soldier</label>
+	<weaponTags>
+	  <li>SpacerGun</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_PowerArmor</li>
+	  <li>Apparel_IsoSuit</li>
+	  <li>CE_Apparel_TacVest</li>
+    </apparelRequired>
+	<apparelColor>(70, 70, 70)</apparelColor>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>2920~3550</weaponMoney>
+	<apparelAllowHeadgearChance>0.99</apparelAllowHeadgearChance>	
+	<initialWillRange>17~23</initialWillRange>
+	<initialResistanceRange>25~48</initialResistanceRange>
+    <techHediffsChance>0.2</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.35</Hussar>
+		<Genie MayRequire="Ludeon.RimWorld.Biotech">0.2</Genie>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~14</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<forcedAmmoCategory>Ionized</forcedAmmoCategory>
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>140</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>GrenadeEMP</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>4</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <color>(163, 131, 49)</color>
+      </li> 
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedEMP_II</defName>	<!-- Этот с гранатомётом -->
+	<combatPower>115</combatPower>
+	<label>emp soldier</label>
+	<weaponTags>
+	  <li>GrenadeLauncher</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_PowerArmor</li>
+	  <li>Apparel_IsoSuit</li>
+	  <li>CE_Apparel_TacVest</li>
+    </apparelRequired>
+	<apparelColor>(70, 70, 70)</apparelColor>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>2920~3550</weaponMoney>
+	<apparelAllowHeadgearChance>0.99</apparelAllowHeadgearChance>	
+	<initialWillRange>17~23</initialWillRange>
+	<initialResistanceRange>25~48</initialResistanceRange>
+    <techHediffsChance>0.2</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.35</Hussar>
+		<Genie MayRequire="Ludeon.RimWorld.Biotech">0.2</Genie>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~14</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<forcedAmmoCategory>GrenadeEMP</forcedAmmoCategory>
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>8</max>
+				</primaryMagazineCount>
+ 				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>2</max>
+					</magazineCount>					
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <color>(118, 49, 57)</color>
+      </li>
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+	<!-- Парапарапам (медики) -->
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedMedic</defName>	<!-- Медичек -->
+	<label>paramedic</label>
+	<combatPower>50</combatPower>
+	<isFighter>false</isFighter>
+	<weaponTags>
+	  <li>CE_Sidearm</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Bandits</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_LabCoat</li>
+      <li>Accessory_MedicBag</li>
+	  <li>Apparel_Beret</li>
+    </apparelRequired>
+	<apparelColor>(166, 166, 166)</apparelColor>
+    <combatEnhancingDrugsChance>0.12</combatEnhancingDrugsChance>	
+    <itemQuality>Good</itemQuality>
+    <inventoryOptions Inherit="False">
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>5~8</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineUltratech</thingDef>
+          <countRange>2~3</countRange>
+        </li>
+      </subOptionsChooseOne>
+	  <subOptionsTakeAll>
+<!--        <li>
+         <thingDef>Hemostatic</thingDef>
+         <countRange>5~8</countRange>
+       </li> -->
+       <li>
+         <thingDef>Bandages</thingDef>
+         <countRange>5~8</countRange>
+       </li>	   
+	  </subOptionsTakeAll>
+    </inventoryOptions>	
+    <weaponMoney>2920~3550</weaponMoney>
+	<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>	
+	<initialWillRange>4~8</initialWillRange>
+	<initialResistanceRange>10~12</initialResistanceRange>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.2</Highmate>
+		<Genie MayRequire="Ludeon.RimWorld.Biotech">0.2</Genie>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Medicine</skill>
+        <range>7~12</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>4</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <color>(126, 164, 204)</color>
+      </li> 
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+	<!-- Ылитычи -->
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedElite_Melee</defName> <!-- Милишник -->
+	<label>elite slaughter</label>
+	<combatPower>185</combatPower>
+	<destroyGearOnDrop>True</destroyGearOnDrop>
+	<weaponTags>
+	  <li>PMC_Melee</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+	<techHediffsTags>
+	  <li>PMC</li>
+	</techHediffsTags>
+    <techHediffsRequired>
+      <li>BerserkerChip</li>
+	  <li>PMCSpine</li>
+    </techHediffsRequired>	
+    <apparelRequired>
+      <li>Apparel_PMC_EliteMelee</li>
+      <li>Headgear_PMC_EliteMelee</li>
+	  <li>Apparel_AdvancedShieldBelt</li>
+    </apparelRequired>	
+    <itemQuality>Excellent</itemQuality>
+    <weaponMoney>6000~9800</weaponMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>	
+	<initialWillRange>23~27</initialWillRange>
+	<initialResistanceRange>32~65</initialResistanceRange>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.55</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~14</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+    </disallowedTraits>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(104, 120, 119)</only> <!-- drab dark blue -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(119, 145, 121)</only> <!-- drab light green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(106, 120, 104)</only> <!-- drab dark green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(140, 140, 119)</only> <!-- tan -->
+            </li>
+			<li>
+			  <weight>0.2</weight>
+			  <only>(255,192,203)</only>
+			</li>			
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedElite_Assaulter</defName> <!-- Штурмовик -->
+	<label>elite assaulter</label>
+	<combatPower>150</combatPower>
+	<destroyGearOnDrop>True</destroyGearOnDrop>
+	<weaponTags>
+	  <li>PMC_ShortShots</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+	<techHediffsTags>
+	  <li>PMC</li>
+	</techHediffsTags>	
+    <apparelRequired>
+      <li>Apparel_PMC_EliteCombat</li>
+      <li>Headgear_PMC_EliteCombat</li>
+    </apparelRequired>	
+    <itemQuality>Excellent</itemQuality>
+    <weaponMoney>6000~9800</weaponMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>	
+	<initialWillRange>23~27</initialWillRange>
+	<initialResistanceRange>32~65</initialResistanceRange>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.55</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~14</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<sidearms>
+				  <li>
+					<generateChance>0.3</generateChance>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_GrenadeSpacer</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>2</max>
+					</magazineCount>
+		  		  </li>
+				  <li>
+					<generateChance>0.65</generateChance>
+					<sidearmMoney>
+						<min>3200</min>
+						<max>6000</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>PMC_Sidearm</li>
+					</weaponTags>
+		  		  </li>
+				</sidearms>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(104, 120, 119)</only> <!-- drab dark blue -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(119, 145, 121)</only> <!-- drab light green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(106, 120, 104)</only> <!-- drab dark green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(140, 140, 119)</only> <!-- tan -->
+            </li>
+			<li>
+			  <weight>0.2</weight>
+			  <only>(255,192,203)</only>
+			</li>			
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedElite_Heavy</defName> <!-- Тяжик -->
+	<label>elite heavy soldier</label>
+	<combatPower>200</combatPower>
+	<destroyGearOnDrop>True</destroyGearOnDrop>
+	<weaponTags>
+	  <li>PMC_Heavy</li>
+	</weaponTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PMC_EliteHeavy</li>
+      <li>Headgear_PMC_EliteHeavy</li>
+    </apparelRequired>	
+    <itemQuality>Excellent</itemQuality>
+    <weaponMoney>6000~9800</weaponMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>	
+	<initialWillRange>23~27</initialWillRange>
+	<initialResistanceRange>32~65</initialResistanceRange>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>6000~8000</techHediffsMoney>
+	<techHediffsTags>
+	  <li>PMC</li>
+	</techHediffsTags>	
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+	  <li>PMCSpine</li>
+    </techHediffsRequired>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.55</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+				<sidearms>
+				  <li>
+					<generateChance>0.5</generateChance>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_GrenadeSpacer</li>
+					</weaponTags>
+					<magazineCount>
+						<min>0</min>
+						<max>1</max>
+					</magazineCount>
+		  		  </li>
+				</sidearms>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(104, 120, 119)</only> <!-- drab dark blue -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(119, 145, 121)</only> <!-- drab light green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(106, 120, 104)</only> <!-- drab dark green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(140, 140, 119)</only> <!-- tan -->
+            </li>
+			<li>
+			  <weight>0.2</weight>
+			  <only>(255,192,203)</only>
+			</li>			
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_RequestedElite_Sniper</defName> <!-- Снайперюга -->
+	<label>elite sniper</label>
+	<combatPower>185</combatPower>
+	<destroyGearOnDrop>True</destroyGearOnDrop>
+	<weaponTags>
+	  <li>PMC_Sniper</li>
+	</weaponTags>
+	<techHediffsTags>
+	  <li>PMC</li>
+	</techHediffsTags>	
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PMC_EliteSniper</li>
+      <li>Headgear_PMC_EliteSniper</li>
+	  <li>Apparel_Duster</li>
+	  <li>Apparel_HatHood</li>
+    </apparelRequired>	
+    <itemQuality>Excellent</itemQuality>
+    <weaponMoney>6000~9800</weaponMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>	
+	<initialWillRange>23~27</initialWillRange>
+	<initialResistanceRange>32~65</initialResistanceRange>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>	
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.55</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>15~18</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_SMG</li>
+					</weaponTags>
+					<magazineCount>
+						<min>3</min>
+						<max>4</max>
+					</magazineCount>				
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(119, 145, 121)</only> <!-- drab light green -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(106, 120, 104)</only> <!-- drab dark green -->
+            </li>
+			<li>
+			  <weight>0.2</weight>
+			  <only>(255,192,203)</only>
+			</li>			
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+	<!-- Боссы -->
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_Boss_Trigger</defName> <!-- Курок -->
+<!-- 	<nameMaker Inherit="False">TriggerName</nameMaker> -->
+	<label>Trigger</label>
+	<combatPower>250</combatPower>
+	<maxPerGroup>1</maxPerGroup>
+	<maxApparelQuality>Legendary</maxApparelQuality>
+	<forceWeaponQuality>Legendary</forceWeaponQuality>
+	<destroyGearOnDrop>True</destroyGearOnDrop>
+	<isBoss>True</isBoss>
+	<weaponTags>
+	  <li>PMC_Trigger</li>
+	</weaponTags>
+	<techHediffsTags>
+	  <li>PMC</li>
+	</techHediffsTags>	
+    <apparelTags>
+      <li>IndustrialBasic</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PMC_Trigger</li>
+      <li>Headgear_PMC_Trigger</li>
+    </apparelRequired>
+    <itemQuality>Legendary</itemQuality>
+    <weaponMoney>9999~9999</weaponMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>	
+	<initialWillRange>23~27</initialWillRange>
+	<initialResistanceRange>32~65</initialResistanceRange>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>7000~9000</techHediffsMoney>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+	  <li>PMCSpine</li>
+    </techHediffsRequired>	
+	<techHediffsMaxAmount>8</techHediffsMaxAmount>	
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>16~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_GrenadeSpacer</li>
+					</weaponTags>
+					<magazineCount>
+						<min>0</min>
+						<max>2</max>
+					</magazineCount>				
+				</forcedSidearm>
+			</li>
+		</modExtensions>	
+  </PawnKindDef>
+
+
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_Boss_Nomad</defName> <!-- Nomad -->
+<!-- 	<nameMaker Inherit="False">NomadName</nameMaker> -->
+	<label>Nomad</label>
+	<combatPower>250</combatPower>
+	<maxPerGroup>1</maxPerGroup>
+	<maxApparelQuality>Legendary</maxApparelQuality>
+	<forceWeaponQuality>Legendary</forceWeaponQuality>
+	<destroyGearOnDrop>True</destroyGearOnDrop>
+	<isBoss>True</isBoss>
+	<weaponTags>
+	  <li>PMC_Nomad</li>
+	</weaponTags>
+	<techHediffsTags>
+	  <li>PMC</li>
+	</techHediffsTags>	
+    <apparelTags>
+      <li>IndustrialBasic</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_NomadCoat</li>
+      <li>Apparel_PMC_EliteSniper</li>
+      <li>Headgear_PMC_EliteSniper</li>
+	  <li>Apparel_HatHood</li>
+    </apparelRequired>
+    <itemQuality>Legendary</itemQuality>
+    <weaponMoney>9999~9999</weaponMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>	
+	<initialWillRange>23~27</initialWillRange>
+	<initialResistanceRange>32~65</initialResistanceRange>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>7000~9000</techHediffsMoney>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+	  <li>PMCSpine</li>
+    </techHediffsRequired>	
+	<techHediffsMaxAmount>8</techHediffsMaxAmount>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">1</Waster>
+      </xenotypeChances>
+    </xenotypeSet>	
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>18~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>3000</min>
+						<max>4200</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_SMG</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>2</max>
+					</magazineCount>				
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <apparelLayer>OverheadExtra</apparelLayer>
+        <color>(70,70,70)</color>
+      </li> 
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+
+
+  <PawnKindDef ParentName="PMCRequestableFighterBase">
+	<defName>PMC_Boss_IronClaw</defName> <!-- IronClaw -->
+<!-- 	<nameMaker Inherit="False">IronClawName</nameMaker> -->
+	<label>IronClaw</label>
+	<combatPower>250</combatPower>
+	<maxPerGroup>1</maxPerGroup>
+	<maxApparelQuality>Legendary</maxApparelQuality>
+	<forceWeaponQuality>Legendary</forceWeaponQuality>
+	<destroyGearOnDrop>True</destroyGearOnDrop>
+	<isBoss>True</isBoss>
+	<weaponTags>
+	  <li>PMC_IronClaw</li>
+	</weaponTags>
+	<techHediffsTags>
+	  <li>PMC</li>
+	</techHediffsTags>	
+    <apparelTags>
+      <li>IndustrialBasic</li>
+	  <li>Balaclava</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PMC_IronClaw</li>
+      <li>Headgear_PMC_IronClaw</li>
+    </apparelRequired>
+    <itemQuality>Legendary</itemQuality>
+    <weaponMoney>9999~9999</weaponMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>	
+	<initialWillRange>23~27</initialWillRange>
+	<initialResistanceRange>32~65</initialResistanceRange>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>7000~9000</techHediffsMoney>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+	  <li>PMCSpine</li>
+    </techHediffsRequired>	
+	<techHediffsMaxAmount>8</techHediffsMaxAmount>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">1</Neanderthal>
+      </xenotypeChances>
+    </xenotypeSet>		
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+	  <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+			  <weight>10</weight>
+              <only>(163,140,108)</only> <!-- tan -->
+            </li>
+            <li>
+			  <weight>10</weight>
+              <only>(222,193,150)</only> <!-- brandy -->
+            </li>			
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>		
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_WaterSprout</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5000</priority>
+		<prop>AP_WaterSprout_Object</prop>
+		
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_WaterSproutLarge</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5001</priority>
+		<prop>AP_WaterSprout_Large_Object</prop>
+		
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_WaterSproutLateral</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5002</priority>
+		<prop>AP_WaterSproutLateral_Object</prop>
+		
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_WaterSproutLateralInverted</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5003</priority>
+		<prop>AP_WaterSproutLateralInverted_Object</prop>
+		
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_SmallWaterSproutAnimated</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5004</priority>
+		<prop>AP_SmallWaterSproutAnimated_Object</prop>
+		
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_SmallWaterSproutAnimatedInverted</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5005</priority>
+		<prop>AP_SmallWaterSproutAnimatedInverted_Object</prop>
+		
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_TallWaterSprout</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5006</priority>
+		<prop>AP_TallWaterSprout_Object</prop>
+		
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="VFE_EffecterPropBase">
+		<defName>AP_Prop_Effecter_TallWaterSproutInverted</defName>
+		<category>VFE_PropCategory_Effecters</category>		
+		<priority>5007</priority>
+		<prop>AP_TallWaterSproutInverted_Object</prop>
+		
+	</VFEProps.PropDef>
+	
+	
+</Defs>

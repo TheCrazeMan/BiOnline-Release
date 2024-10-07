@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiOnline.MapGenerator.MapScriptDef>
+		<defName>MapObjectDelete</defName>
+		<label>MapObject with loot delete</label>
+		<startPartId>10</startPartId>
+		<parts>
+			<li Class="BiOnline.MapGenerator.Scripts.MapScriptPartProperties_FindMapObjects">
+				<nextPartId>14</nextPartId>
+				<debugData>
+					<x>0.2652593</x>
+					<y>0.3099996</y>
+				</debugData>
+				<id>10</id>
+				<tags>Loot</tags>
+				<storeAs>LootPos</storeAs>
+			</li>
+			<li Class="BiOnline.MapGenerator.Scripts.MapScriptPartProperties_RemoveMapObjects">
+				<debugData>
+					<x>2.419577</x>
+					<y>0.4400008</y>
+				</debugData>
+				<id>14</id>
+				<tags>Loot</tags>
+			</li>
+		</parts>
+	</BiOnline.MapGenerator.MapScriptDef>
+</Defs>

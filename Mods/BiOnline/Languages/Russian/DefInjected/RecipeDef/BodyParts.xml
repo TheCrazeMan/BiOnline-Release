@@ -1,0 +1,35 @@
+<LanguageData>
+
+<InstallCyberBionicsArm.label>Установить кибер-руку</InstallCyberBionicsArm.label>
+<InstallCyberBionicsArm.description>Отдать приказ об установке кибер-руки</InstallCyberBionicsArm.description>
+<InstallCyberBionicsArm.jobString>Устанавливает кибер-руку</InstallCyberBionicsArm.jobString>
+
+<InstallCyberBionicsLeg.label>Установить кибер-ногу</InstallCyberBionicsLeg.label>
+<InstallCyberBionicsLeg.description>Отдать приказ об установке кибер-ноги</InstallCyberBionicsLeg.description>
+
+<InstallCyberBionicsKidney.label>Установить кибер-почку</InstallCyberBionicsKidney.label>
+<InstallCyberBionicsKidney.description>Отдать приказ об установке кибер-почки</InstallCyberBionicsKidney.description>
+
+<InstallCyberBionicsChip.label>Установить кибер-чип</InstallCyberBionicsChip.label>
+<InstallCyberBionicsChip.description>Отдать приказ об установке кибер-чипа</InstallCyberBionicsChip.description>
+
+<InstallCyberBionicsSpine.label>Установить кибер-позвоночник</InstallCyberBionicsSpine.label>
+<InstallCyberBionicsSpine.description>Отдать приказ об установке кибер-позвоночника</InstallCyberBionicsSpine.description>
+
+<InstallPMCSpine.label>Установить позвоночник "Катарсиса"</InstallPMCSpine.label>
+<InstallPMCSpine.description>Отдать приказ об установке позвоночника Катарсиса</InstallPMCSpine.description>
+<InstallPMCSpine.jobString>Устанавливает позвоночник "Катарсиса"</InstallPMCSpine.jobString>
+
+<InstallRifRafChip.label>Установить чип "Риф-Раф"</InstallRifRafChip.label>
+<InstallRifRafChip.description>Отдать приказ об установке чипа "Риф-Раф"</InstallRifRafChip.description>
+<InstallRifRafChip.jobString>Устанавливает чип "Риф-Раф"</InstallRifRafChip.jobString>
+
+<RemoveModuleCatharsisDisconnected.label>Удалить модуль "Катарсис" повреждённый</RemoveModuleCatharsisDisconnected.label>
+<RemoveModuleCatharsisDisconnected.description>Отдать приказ об удаление модуля "Катарсис" повреждённый</RemoveModuleCatharsisDisconnected.description>
+<RemoveModuleCatharsisDisconnected.jobString>Удаляет модуль "Катарсис" повреждённый</RemoveModuleCatharsisDisconnected.jobString>
+<RemoveModuleCatharsisDisconnected.successfullyRemovedHediffMessage>{0} успешно удаляет модуль "Катарсис" {1}.</RemoveModuleCatharsisDisconnected.successfullyRemovedHediffMessage>
+
+<InstallBerserkerChip.label>Установить чип Берсерка</InstallBerserkerChip.label>
+<InstallBerserkerChip.description>Отдать приказ об установке чипа Берсерка.</InstallBerserkerChip.description>
+
+</LanguageData>

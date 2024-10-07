@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="Tribal_Penitent" or defName="Tribal_Archer" or defName="Tribal_Warrior" or defName="Tribal_Hunter" or defName="Tribal_Trader"]</xpath>
+        <value>
+		  <apparelDisallowTags>
+		    <li>BiO_Armor_Light_Makeshift</li>
+		    <li>BiO_Armor_Heavy_Makeshift</li>
+		    <li>BiO_Armor_Light_Helmet_Makeshift</li>
+		    <li>BiO_Armor_Heavy_Helmet_Makeshift</li>
+		  </apparelDisallowTags>
+         </value>
+    </Operation>
+	
+	
+	
+</Patch>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Архо конечности-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="InstallArchotechEye" or defName="InstallArchotechArm" or defName="InstallArchotechLeg"]</xpath>
+		<value>
+			<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+			<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+			<skillRequirements>
+				<Medicine>0</Medicine>
+			</skillRequirements>
+		</value>
+	</Operation>
+	<!--Деревянные конечности-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="InstallPegLeg" or defName="InstallWoodenHand" or defName="InstallWoodenFoot"]</xpath>
+		<value>
+			<skillRequirements>
+				<Medicine>0</Medicine>
+			</skillRequirements>
+		</value>
+	</Operation>
+	<!--Зубной протез-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallDenture"]/skillRequirements/Medicine</xpath>
+		<value>
+			<Medicine>4</Medicine>
+		</value>
+	</Operation>
+	<!--Репродуктивная система и простые протезы-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[
+		@Name="FertilitySurgery" and not(defName="ExtractOvum") or 
+		defName="InstallSimpleProstheticLeg" or 
+		defName="InstallSimpleProstheticArm" or
+		defName="InstallSimpleProstheticHeart" or 
+		defName="InstallCochlearImplant" or
+		defName="InstallPowerClaw" or
+		defName="InstallDrillArm" or
+		defName="InstallFieldHand" or
+		defName="InstallHandTalon" or
+		defName="RemoveHandTalon" or
+		defName="InstallElbowBlade" or
+		defName="RemoveElbowBlade" or
+		defName="InstallKneeSpike" or
+		defName="RemoveKneeSpike" or
+		defName="InstallVenomFangs" or
+		defName="RemoveVenomFangs" or
+		defName="InstallVenomTalon" or
+		defName="RemoveVenomTalon" or
+		defName="InstallAestheticNose" or
+		defName="RemoveAestheticNose"]
+		</xpath>
+		<value>
+			<skillRequirements>
+				<Medicine>8</Medicine>
+			</skillRequirements>
+		</value>
+	</Operation>
+	<!--Бионические конечности-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[
+		defName="ExtractOvum" or
+		defName="InstallBionicEye" or 
+		defName="InstallBionicArm" or 
+		defName="InstallBionicLeg" or 
+		defName="InstallBionicSpine" or 
+		defName="InstallBionicHeart" or 
+		defName="InstallBionicStomach" or 
+		defName="InstallDeathAcidifier" or 
+		defName="InstallBionicEar" or 
+		defName="InstallBionicTongue"]
+		</xpath>
+		<value>
+			<skillRequirements>
+				<Medicine>12</Medicine>
+			</skillRequirements>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[
+		defName="InstallNaturalHeart" or
+		defName="InstallNaturalLung" or
+		defName="InstallNaturalKidney" or
+		defName="InstallNaturalLiver"]/skillRequirements/Medicine
+		</xpath>
+		<value>
+			<Medicine>12</Medicine>
+		</value>
+	</Operation>
+	<!--Мозговые и спейсер импланты-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[
+		defName="InstallJoywire" or
+		defName="InstallPainstopper" or
+		defName="RemovePainstopper" or
+		defName="InstallMindscrew" or
+		defName="InstallPsychicSensitizer" or 
+		defName="InstallPsychicHarmonizer" or 
+		defName="InstallPsychicReader" or 
+		defName="InstallNeurocalculator" or 
+		defName="RemoveNeurocalculator" or
+		defName="InstallLearningAssistant" or 
+		defName="RemoveLearningAssistant" or
+		defName="InstallGastroAnalyzer" or 
+		defName="RemoveGastroAnalyzer" or
+		defName="InstallImmunoenhancer" or 
+		defName="RemoveImmunoenhancer" or
+		defName="InstallHealingEnhancer" or 
+		defName="RemoveHealingEnhancer" or 
+		defName="InstallToughskinGland" or 
+		defName="RemoveToughskinGland" or 
+		defName="InstallCoagulator" or
+		defName="RemoveCoagulator" or
+		defName="InstallArmorskinGland" or
+		defName="RemoveArmorskinGland" or
+		defName="InstallStoneskinGland" or
+		defName="RemoveStoneskinGland" or
+		defName="InstallAestheticShaper" or
+		defName="RemoveAestheticShaper" or
+		defName="InstallLoveEnhancer" or
+		defName="RemoveLoveEnhancer" or
+		defName="InstallDetoxifierStomach" or
+		defName="InstallReprocessorStomach" or
+		defName="InstallNuclearStomach" or
+		defName="InstallCircadianAssistant" or
+		defName="RemoveCircadianAssistant" or
+		defName="InstallCircadianHalfCycler" or
+		defName="RemoveCircadianHalfCycler" or	
+		defName="InstallDetoxifierLung" or
+		defName="InstallDetoxifierKidney" or
+		defName="InstallBionicBladder" or
+		defName="InstallHygieneEnhancer"]
+		</xpath>
+		<value>
+			<skillRequirements>
+				<Medicine>16</Medicine>
+			</skillRequirements>
+		</value>
+	</Operation>
+	<!--Бионический позвоночник-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="BionicSpine"]</xpath>
+		<value>
+			<stages>
+				<li>
+					<statOffsets>
+						<CarryWeight>30</CarryWeight>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+	<!--Агро рука-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallFieldHand" or defName="InstallDrillArm"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<appliedOnFixedBodyParts>
+				<li>Arm</li>
+			</appliedOnFixedBodyParts>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Items/Items_Food/Items_Food.xml-->
+<PrimitiveMeal.label>Примитивная еда</PrimitiveMeal.label>
+<PrimitiveMeal.description>Ужасная готовая пища. В ней содержится минимальное количество белков, жиров и углеводов. Единственный ее плюс - она прошла термическую обработку.</PrimitiveMeal.description>
+
+<BakedPotatoes.label>Печёный картофель</BakedPotatoes.label>
+<BakedPotatoes.description>Печёный картофель.</BakedPotatoes.description>
+
+<Dried_meat_RAW.label>Сырое сушеное мясо</Dried_meat_RAW.label>
+<Dried_meat_RAW.description>Сырое сушеное мясо. Требует дополнительной ферментации</Dried_meat_RAW.description>
+
+<Exquisite_meat.label>Изысканное мясо</Exquisite_meat.label>
+<Exquisite_meat.description>Сырое сушеное мясо. Требует дополнительной ферментации</Exquisite_meat.description>
+
+<Exquisite_meat_bird.label>Изысканное мясо птицы</Exquisite_meat_bird.label>
+<Exquisite_meat_bird.description>Сырое сушеное мясо. Требует дополнительной ферментации</Exquisite_meat_bird.description>
+
+<Dried_meat.label>Сушеное мясо</Dried_meat.label>
+<Dried_meat.description>Сушеное мясо для сохранения и продления срока хранения.</Dried_meat.description>
+
+<Fried_meat.label>Жареное мясо</Fried_meat.label>
+<Fried_meat.description>Грубо обжаренный кусок мяса. Очень жесткий и невкусный</Fried_meat.description>
+
+<SmallCan.label>Маленькая консерва</SmallCan.label>
+<SmallCan.description>Маленькая консерва с не очень вкусной, но все же питательной пищей.</SmallCan.description>
+
+<BigCan.label>Большая консерва</BigCan.label>
+<BigCan.description>Большая консерва с хорошей и вкусной едой.</BigCan.description>
+
+<Toffee.label>Ирис</Toffee.label>
+<Toffee.description>Ирис - сладкое кондитерское изделие, приготовленное путем карамелизации сахара с маслом, часто с добавлением орехов или ароматизаторов. Он обладает насыщенным маслянистым вкусом, но не отличается особой питательностью из-за высокого содержания сахара и жира.</Toffee.description>
+
+<Caramel.label>Карамель</Caramel.label>
+<Caramel.description>В основном растопленный сахар. Не рекомендуется употреблять в сыром виде.</Caramel.description>
+
+<BlackBread.label>Черный хлеб</BlackBread.label>
+<BlackBread.description>Черный хлеб - плотный, темного цвета хлеб из цельнозерновой ржаной или другой темной муки. Он известен своим насыщенным вкусом и более высоким содержанием клетчатки по сравнению с белым хлебом.</BlackBread.description>
+
+<WhiteBread.label>Белый хлеб</WhiteBread.label>
+<WhiteBread.description>Белый хлеб - это хлеб светлого цвета из рафинированной пшеничной муки. Он имеет мягкую, пушистую текстуру и мягкий, нейтральный вкус. Несмотря на недостаток клетчатки в цельнозерновом хлебе, белый хлеб пользуется популярностью благодаря своей универсальности и привлекательной текстуре.</WhiteBread.description>
+<WhiteBread.tools.1.label>хлеб</WhiteBread.tools.1.label>
+
+<Fish.label>Рыба</Fish.label>
+<Fish.description>Сырая рыба, не выпотрошенная. Перед употреблением ее стоит очистить</Fish.description>
+
+<Tofu.label>Тофу</Tofu.label>
+<Tofu.description>Тофу, также называемый соевым творогом, - это пищевой продукт из соевых бобов, богатый белком. Он может заменить обычное мясо</Tofu.description>
+
+<Fish_RAW.label>Рыбное филе</Fish_RAW.label>
+<Fish_RAW.description>Рыбное филе, заменяет мясо</Fish_RAW.description>
+
+</LanguageData>

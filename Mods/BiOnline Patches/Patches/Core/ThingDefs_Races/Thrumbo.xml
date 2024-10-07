@@ -1,0 +1,11 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Thrumbo"]/race/gestationPeriodDays</xpath>
+			<value>
+				<gestationPeriodDays>15</gestationPeriodDays>
+				<packAnimal>false</packAnimal>
+			</value>
+	</Operation>
+
+</Patch>

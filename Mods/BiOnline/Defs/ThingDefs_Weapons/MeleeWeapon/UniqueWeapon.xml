@@ -1,0 +1,255 @@
+<Defs>
+
+  <ThingDef Abstract="True" Name="MeleeWeaponUnique" ParentName="BaseWeapon">
+    <techLevel>Animal</techLevel>
+	<tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>2</Mass>
+	  <Bulk>4</Bulk>
+	  <MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>	  
+    </statBases>
+    <comps>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUnique">
+    <defName>MeleeWeapon_SacDagger</defName>
+    <label>Sacrificial dagger</label>
+    <description>An old rusty dagger used to perform dark rituals and ocult stuff, maybe it's not so simple as it can look.</description>
+    <equippedAngleOffset>60</equippedAngleOffset>
+	<modExtensions>
+	<li Class="CombatExtended.GunDrawExtension">
+		<DrawSize>1.20,1.20</DrawSize>
+		<DrawOffset>-0.08,0.3</DrawOffset>
+	</li>		
+	</modExtensions>
+    <relicChance>0</relicChance>
+    <smeltable>false</smeltable>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>SacDagger</li>
+	</weaponTags>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponMelee/Unique/SacDagger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<tools>
+	<li Class="CombatExtended.ToolCE">
+	  <label>handle</label>
+		<capacities>
+			<li>Poke</li>
+		</capacities>
+		<power>2</power>
+		<chanceFactor>0.1</chanceFactor>
+		<cooldownTime>0.36</cooldownTime>
+		<armorPenetrationBlunt>0.605</armorPenetrationBlunt>
+		<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+	</li>
+	<li Class="CombatExtended.ToolCE">
+	  <label>edge</label>
+		<capacities>
+			<li>Cut</li>
+		</capacities>
+		<power>17</power>
+		<cooldownTime>0.54</cooldownTime>
+		<armorPenetrationBlunt>5.485</armorPenetrationBlunt>
+		<armorPenetrationSharp>7.78</armorPenetrationSharp>
+		<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+	</li>
+	<li Class="CombatExtended.ToolCE">
+	  <label>point</label>
+	    <capacities>
+			<li>Stab</li>
+		</capacities>
+		<power>10</power>
+		<cooldownTime>0.55</cooldownTime>
+		<armorPenetrationBlunt>1.173</armorPenetrationBlunt>
+		<armorPenetrationSharp>12.24</armorPenetrationSharp>
+	</li>
+	</tools>
+	<equippedStatOffsets>
+		<MeleeCritChance>1.10</MeleeCritChance>
+		<MeleeParryChance>0.50</MeleeParryChance>
+		<MeleeDodgeChance>0.37</MeleeDodgeChance>
+	</equippedStatOffsets>
+  </ThingDef>
+
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>Frostmourne</defName>
+		<label>Frostmourne</label>
+		<description>A fearsome, rune-inscribed two-handed longsword, it possessed the power to shatter and imprison the souls of its victims and could remake the living into mindless undead.</description>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+		<equippedAngleOffset>200</equippedAngleOffset>
+		<relicChance>0</relicChance>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<weaponTags>
+			<li>Frostmourne</li>
+		</weaponTags>
+		<graphicData>
+		<texPath>Things/Equipment/WeaponMelee/Unique/Frostmourne</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>2.40,2.40</DrawSize>
+			<DrawOffset>-0.35,-0.1</DrawOffset>
+		  </li>
+		</modExtensions>
+		<techLevel>Archotech</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>	
+		  <MarketValue>2000</MarketValue>
+		  <Mass>15</Mass>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>26</power>
+				<chanceFactor>0.1</chanceFactor>
+				<cooldownTime>1.36</cooldownTime>
+				<armorPenetrationBlunt>60</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>100</power>
+				<cooldownTime>0.54</cooldownTime>
+				<armorPenetrationBlunt>80.0</armorPenetrationBlunt>
+				<armorPenetrationSharp>80.0</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>38</power>
+				<cooldownTime>0.65</cooldownTime>
+				<armorPenetrationBlunt>100</armorPenetrationBlunt>
+				<armorPenetrationSharp>100</armorPenetrationSharp>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="BaseWeapon">
+		<defName>FrostmourneII</defName>
+		<label>Frostmourne</label>
+		<description>A fearsome, rune-inscribed two-handed longsword, it possessed the power to shatter and imprison the souls of its victims and could remake the living into mindless undead.</description>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+		<equippedAngleOffset>200</equippedAngleOffset>
+		<relicChance>0</relicChance>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<weaponTags>
+			<li>FrostmourneII</li>
+		</weaponTags>
+		<graphicData>
+		<texPath>Things/Equipment/WeaponMelee/Unique/Frostmourne</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>2.40,2.40</DrawSize>
+			<DrawOffset>-0.35,-0.1</DrawOffset>
+		  </li>
+		</modExtensions>
+		<techLevel>Archotech</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>	
+		  <MarketValue>2000</MarketValue>
+		  <Mass>15</Mass>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>2</power>
+					<chanceFactor>0.1</chanceFactor>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>edge</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>52</power>
+					<cooldownTime>0.83</cooldownTime>
+					<armorPenetrationBlunt>36</armorPenetrationBlunt>
+					<armorPenetrationSharp>36</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>36</power>
+					<cooldownTime>0.94</cooldownTime>
+					<armorPenetrationBlunt>1</armorPenetrationBlunt>
+					<armorPenetrationSharp>42</armorPenetrationSharp>
+				</li>
+			</tools>
+	</ThingDef>
+	
+	
+	
+</Defs>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<AssaultTeamRequestI.label>Запрос штурмового отряда I</AssaultTeamRequestI.label>
+	<AssaultTeamRequestI.description>Вызов 4 укомплектованных бойцов ЧВК</AssaultTeamRequestI.description>
+	
+	<CallMilitaryShuttle.label>Запрос челнока</CallMilitaryShuttle.label>
+	<CallMilitaryShuttle.description>Запрос челнока для собственных нужд.</CallMilitaryShuttle.description>
+	
+	<CallAidRequest.label>Запрос первой помощи</CallAidRequest.label>
+	<CallAidRequest.description>Запрос доставки набора первой помощи. Он включает в себя 5 медикаментов и бинтов.</CallAidRequest.description>
+	
+	<MortarSet.label>Запрос миномётного набора</MortarSet.label>
+	<MortarSet.description>Запрос доставки миномёта и 12 снарядов.</MortarSet.description>
+	
+	<CallSupplies.label>Запрос припасов</CallSupplies.label>
+	<CallSupplies.description>Запрос доставки 20 сухих пайков.</CallSupplies.description>
+	
+	<CallGrenadiers.label>Запрос гренадёров</CallGrenadiers.label>
+	<CallGrenadiers.description>Вызов 2 вооружённых гренадёров.</CallGrenadiers.description>
+	
+	<AssaultTeamRequestII.label>Запрос штурмового отряда II</AssaultTeamRequestII.label>
+	<AssaultTeamRequestII.description>Вызов 6 укомплектованных бойцов ЧВК.</AssaultTeamRequestII.description>
+	
+	<CallTeamEMI.label>Запрос ЭМИ отряда</CallTeamEMI.label>
+	<CallTeamEMI.description>Вызов 2 вооружённых бойцов с ЭМИ.</CallTeamEMI.description>
+	
+	<BiOCallOrbitalSalvo.label>Запрос воздушной бомбардировки</BiOCallOrbitalSalvo.label>
+	<BiOCallOrbitalSalvo.description>Запрос серии ударов по области вокруг указанных координат с беспилотника.</BiOCallOrbitalSalvo.description>
+	
+	<CallParamedics.label>Запрос парамедиков</CallParamedics.label>
+	<CallParamedics.description>Вызов 2 парамедиков.</CallParamedics.description>
+	
+	<CallMedication.label>Запрос медикаментов</CallMedication.label>
+	<CallMedication.description>Запрос доставки 10 медикаментов и гемостатика.</CallMedication.description>
+	
+	<CallDrug.label>Запрос наркотиков</CallDrug.label>
+	<CallDrug.description>Запрос доставки 5 хлопьев психина и 15 сигарет.</CallDrug.description>
+	
+	<CallArmorPiercingTeam.label>Запрос бронебойного отряда</CallArmorPiercingTeam.label>
+	<CallArmorPiercingTeam.description>Вызов 2 бойцов с бронебойным оружием.</CallArmorPiercingTeam.description>
+	
+	<CallMechanoidTeam.label>Запрос отряда механойдов</CallMechanoidTeam.label>
+	<CallMechanoidTeam.description>Вызов 2 жнецов и 1 улана</CallMechanoidTeam.description>
+	
+	<CallOrbitalPowerBeam.label>Запрос силового луча</CallOrbitalPowerBeam.label>
+	<CallOrbitalPowerBeam.description>Запрос удара силового луча по области вокруг указанных координат со спутника.</CallOrbitalPowerBeam.description>
+	
+	<CallCombatStimulants.label>Запрос боевых стимуляторов</CallCombatStimulants.label>
+	<CallCombatStimulants.description>Запрос доставки "Дефлекс", "Пироформ", "Детокс", "Тарсилол" в количестве трёх штук.</CallCombatStimulants.description>
+	
+	<CallEliteTeam.label>Запрос элитного отряда</CallEliteTeam.label>
+	<CallEliteTeam.description>Вызов 4 элитных укоплектованных бойцов. Они вооружены всем что может понадобиться.</CallEliteTeam.description>
+	
+	<CallTrigger.label>Вызов бойца "Курок"</CallTrigger.label>
+	<CallTrigger.description>Запрос элитного снайперского отряда "Курок".</CallTrigger.description>
+	
+	<CallIronClaw.label>Вызов бойца "IronClaw"</CallIronClaw.label>
+	<CallIronClaw.description>Запрос элитного тяжёлого отряда "IronClaw".</CallIronClaw.description>
+	
+	<CallNomad.label>Вызов бойца "Nomad"</CallNomad.label>
+	<CallNomad.description>Запрос элитного штурмового отряда "Nomad".</CallNomad.description>
+	
+</LanguageData>

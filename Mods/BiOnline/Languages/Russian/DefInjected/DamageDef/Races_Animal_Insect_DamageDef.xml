@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Races/Races_Animal_Insect.xml-->
+<BulletVeryToxic.label>Токсичная игла</BulletVeryToxic.label>
+<BulletVeryToxic.deathMessage>{0} был убит.</BulletVeryToxic.deathMessage>
+<BluntStun.deathMessage>{0} был забит до смерти.</BluntStun.deathMessage>
+
+</LanguageData>

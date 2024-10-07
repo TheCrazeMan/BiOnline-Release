@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Псикасты-->
+	<WordOfSerenity_PSY.label>Word of serenity</WordOfSerenity_PSY.label>
+	<WordOfSerenity_PSY.description>Use calming words and psyhic suggestion to end a mental break on a person or animal. The target will fall into a short psyhic sleep. The psyfocus cost depends on the intensity of the target's mental break.</WordOfSerenity_PSY.description>
+	
+	<WordOfTrust_PSY.label>Word of trust</WordOfTrust_PSY.label>
+	<WordOfTrust_PSY.description>Speak to the prisoner while using psyhic suggestion to reduce their resistance to recruitment. This can only reduce a prisoner's resistance, but cannot recruit them.</WordOfTrust_PSY.description>
+	
+	<Stun_PSY.label>Stun</Stun_PSY.label>
+	<Stun_PSY.description>Momentarily disrupt motor function in the target's brain, preventing any movement.</Stun_PSY.description>
+	
+	<Focus_PSY.label>Focus</Focus_PSY.label>
+	<Focus_PSY.description>Psychically focus the target's mind, boosting their sight, hearing and moving capacities.</Focus_PSY.description>
+	
+	<BlindingPulse_PSY.label>Blinding pulse</BlindingPulse_PSY.label>
+	<BlindingPulse_PSY.description>Induce noise in the visual centers of the brain, obscuring vision of everyone near the target point.</BlindingPulse_PSY.description>
+	
+	<!-- Способности кибер-имплантов -->
+	
+	<LongjumpFoot.label>Long jump</LongjumpFoot.label>
+	<LongjumpFoot.description>Allows to jump over 10 meters. But kinda unstable, so be accurate with it.</LongjumpFoot.description>
+	
+</LanguageData>

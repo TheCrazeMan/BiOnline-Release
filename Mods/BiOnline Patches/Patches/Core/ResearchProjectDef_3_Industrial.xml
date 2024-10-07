@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+
+            <operations>          
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Machining"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Machining</defName>
+						<label>machining</label>
+						<description>Build machining tables to craft guns, grenades, flak armor, and to shred dead mechanoids for resources.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Electricity</li>
+						  <li>Smithing</li>
+						</prerequisites>
+						<researchViewX>1.00</researchViewX>
+						<researchViewY>4.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="SmokepopBelt"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>SmokepopBelt</defName>
+						<label>smokepop packs</label>
+						<description>Build smokepop packs which allow the wearer to deploy a defensive smokescreen.</description>
+						<baseCost>600</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Machining</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>ComplexClothing</li>
+						</hiddenPrerequisites>
+						<researchViewX>2.00</researchViewX>
+						<researchViewY>6.45</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Prosthetics</defName>
+						<label>prosthetics</label>
+						<description>Build inexpensive prosthetic body parts to replace lost limbs. Requires a skilled doctor to attach.</description>
+						<baseCost>800</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Machining</li>
+						  <li>MedicineII</li>
+						</prerequisites>
+						<researchViewX>2.00</researchViewX>
+						<researchViewY>7.50</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Gunsmithing</defName>
+						<label>gunsmithing</label>
+						<description>Craft simple manually-operated guns like revolvers, pump shotguns, bolt-action rifles, and incendiary launchers.</description>
+						<baseCost>800</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Machining</li>
+						</prerequisites>
+						<researchViewX>2.00</researchViewX>
+						<researchViewY>5.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="FlakArmor"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>FlakArmor</defName>
+						<label>flak armor</label>
+						<description>Craft clothing with metal armor sewn in to resist bullets and explosions. This weighty armor slows movement slightly.</description>
+						<baseCost>1200</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Machining</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>PlateArmor</li>
+						</hiddenPrerequisites>
+						<researchViewX>2.00</researchViewX>
+						<researchViewY>6.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Mortars</defName>
+						<label>mortars</label>
+						<description>Build mortars which can lob shells long distances - even over walls.</description>
+						<baseCost>2000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Gunsmithing</li>
+						</prerequisites>
+						<hideWhen>
+						  <mortarsDisabled>true</mortarsDisabled>
+						</hideWhen>
+						<researchViewX>3.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
+                    <value>
+					
+					  <ResearchProjectDef>
+						<defName>BlowbackOperation</defName>
+						<label>blowback operation</label>
+						<description>Craft low-power blowback-operated guns like autopistols and machine pistols.</description>
+						<baseCost>600</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Gunsmithing</li>
+						</prerequisites>
+						<researchViewX>3.00</researchViewX>
+						<researchViewY>5.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>GasOperation</defName>
+						<label>gas operation</label>
+						<description>Craft high-power guns like chain shotguns, LMGs, and heavy SMGs.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>BlowbackOperation</li>
+						</prerequisites>
+						<researchViewX>4.00</researchViewX>
+						<researchViewY>5.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>			
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>GunTurrets</defName>
+						<label>gun turrets</label>
+						<description>Produce simple automated gun turrets.</description>
+						<baseCost>600</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>BlowbackOperation</li>
+						</prerequisites>
+						<hideWhen>
+						  <turretsDisabled>true</turretsDisabled>
+						</hideWhen>
+						<researchViewX>4.00</researchViewX>
+						<researchViewY>4.5</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>ToxGas</defName>
+						<label>tox gas</label>
+						<description>Produce weapons that utilize caustic tox gas.</description>
+						<techLevel>Industrial</techLevel>
+						<baseCost>600</baseCost>
+						<prerequisites>
+						  <li>Machining</li>
+						</prerequisites>
+						<researchViewX>2.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+                    <value>
+                    
+					   <ResearchProjectDef>
+						<defName>MicroelectronicsBasics</defName>
+						<label>microelectronics</label>
+						<description>Work with complex microelectronics. This unlocks the hi-tech research bench and comms console.</description>
+						<baseCost>3000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Electricity</li>
+						  <li>Batteries</li>
+						  <li>Polymers</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+							<li>ElectronicsII</li>
+							<li>Prosthetics</li>
+							<li>Machining</li>
+						</hiddenPrerequisites>
+						<researchViewX>9.00</researchViewX>
+						<researchViewY>4.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>		
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DeepDrilling"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>DeepDrilling</defName>
+						<label>deep drilling</label>
+						<description>Build deep drills for extracting resources from underground. You'll need a ground-penetrating scanner to find the resources.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>GroundPenetratingScanner</li>
+						</prerequisites>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>3.50</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="GroundPenetratingScanner"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>GroundPenetratingScanner</defName>
+						<label>ground-penetrating scanner</label>
+						<description>Build ground-penetrating scanners that can detect drillable resources under the surface. Requires an advanced component to construct.</description>
+						<baseCost>2000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Plumbing</li>
+						  <li>Fabrication</li>
+						</prerequisites>
+						<researchViewX>4.00</researchViewX>
+						<researchViewY>3.50</researchViewY>
+						<tab>Industrial</tab>
+						<modExtensions>
+							<li Class="BiOnline.Researches.ResearchDefModExtension">
+								<thingRequirements>
+									<li>
+										<thingDef>BIO_IronOre</thingDef>
+										<count>20</count>
+									</li>
+									<li>
+										<thingDef>LeadOre</thingDef>
+										<count>20</count>
+									</li>	
+									<li>
+										<thingDef>CopperOre</thingDef>
+										<count>20</count>
+									</li>
+									<li>
+										<thingDef>BIO_Coal</thingDef>
+										<count>20</count>
+									</li>										
+								</thingRequirements>
+							</li>
+						</modExtensions>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="TransportPod"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>TransportPod</defName>
+						<label>transport pod</label>
+						<description>Construct launchable transport pods that you can use to send people and supplies long distances across the planet's surface. Can be used for raiding, travel, sending gifts, and more.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>MicroelectronicsBasics</li>
+						  <li>ElectronicsIII</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>Machining</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>11.00</researchViewX>
+						<researchViewY>3.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="LongRangeMineralScanner"]</xpath>
+                    <value>
+                    
+					   <ResearchProjectDef>
+						<defName>LongRangeMineralScanner</defName>
+						<label>long-range mineral scanner</label>
+						<description>Construct long-range mineral scanners your researchers can use to detect precious minerals across the planet. Can be tuned to find a specific mineral. Requires advanced components to construct.</description>
+						<baseCost>10000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>Uranium_decay</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>7.00</researchViewX>
+						<researchViewY>3.50</researchViewY>
+						<tab>space</tab>
+						<modExtensions>
+							<li Class="BiOnline.Researches.ResearchDefModExtension">
+								<thingRequirements>
+									<li>
+										<thingDef>CopperOre</thingDef>
+										<count>200</count>
+									</li>
+									<li>
+										<thingDef>BIO_IronOre</thingDef>
+										<count>200</count>
+									</li>
+									<li>
+										<thingDef>LeadOre</thingDef>
+										<count>200</count>
+									</li>
+								</thingRequirements>
+							</li>
+						</modExtensions>
+					  </ResearchProjectDef>				
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ShieldBelt"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>ShieldBelt</defName>
+						<label>shields</label>
+						<description>Build wearable shield gear. Shields use momentum-repulsion technology to prevent projectiles from traversing the field boundary.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>MicroelectronicsBasics</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>ComplexClothing</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>10.00</researchViewX>
+						<researchViewY>6.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
+                    <value>
+                    
+					 <ResearchProjectDef>
+						<defName>PrecisionRifling</defName>
+						<label>precision rifling</label>
+						<description>Craft precisely-machined guns like assault rifles and sniper rifles.</description>
+						<baseCost>1400</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>GasOperation</li>
+						  <li>MicroelectronicsBasics</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					   <researchViewX>10.00</researchViewX>
+					   <researchViewY>5.00</researchViewY>
+					   <tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>HeavyTurrets</defName>
+						<label>autocannon turret</label>
+						<description>Produce the heavy autocannon turret.</description>
+						<baseCost>1600</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>GunTurrets</li>
+						  <li>CE_TurretHeavyWeapons</li>
+						  <li>MicroelectronicsBasics</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<hideWhen>
+						  <turretsDisabled>true</turretsDisabled>
+						</hideWhen>
+						<researchViewX>10.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>MultibarrelWeapons</defName>
+						<label>multibarrel weapons</label>
+						<description>Assemble miniguns.</description>
+						<baseCost>2600</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>PrecisionRifling</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>11.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Biosculpting</defName>
+						<label>biosculpting</label>
+						<description>Construct biosculpter pods which can perform various biological alterations to colonists. These are especially important to believers in transhumanism.</description>
+						<baseCost>1500</baseCost>
+						<techLevel>Industrial</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<prerequisites>
+						  <li>MedicineIII</li>
+						</prerequisites>
+						<researchViewX>11.00</researchViewX>
+						<researchViewY>7.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>			
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>NeuralSupercharger</defName>
+						<label>neural supercharger</label>
+						<description>Construct neural supercharger devices. Neural superchargers improve consciousness and learning rate, but they also increase hunger and the effect must be refreshed daily. Transhumanists often hold neural supercharging as an important practice.</description>
+						<baseCost>1500</baseCost>
+						<techLevel>Industrial</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<prerequisites>
+						  <li>MedicineIII</li>
+						</prerequisites>
+						<researchViewX>11.0</researchViewX>
+						<researchViewY>7.50</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Batteries</defName>
+						<label>battery</label>
+						<description>Build batteries for storing electricity.</description>
+						<baseCost>1200</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Chemical_Production</li>
+						</prerequisites>
+						<researchViewX>7.0</researchViewX>
+						<researchViewY>2.0</researchViewY>
+						<tab>Industrial</tab>
+						<modExtensions>
+							<li Class="BiOnline.Researches.ResearchDefModExtension">
+								<thingRequirements>
+									<li>
+										<thingDef>Lead</thingDef>
+										<count>100</count>
+									</li>
+									<li>
+										<thingDef>SulfuricAcid</thingDef>
+										<count>10</count>
+									</li>
+								</thingRequirements>				
+							</li>
+						</modExtensions>	
+					  </ResearchProjectDef>				
+
+                    </value>
+                </li>  				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="MechtechBase">
+						<defName>BasicMechtech</defName>
+						<label>basic mechtech</label>
+						<description>The technology needed for your mechanitor to create and control basic-tier mechanoids.</description>
+						<baseCost>200</baseCost>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>0.00</researchViewY>
+						<prerequisites>
+						  <li>ElectronicsII</li>
+						</prerequisites>
+						<heldByFactionCategoryTags Inherit="False" />
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="MechtechBase">
+						<defName>StandardMechtech</defName>
+						<label>standard mechtech</label>
+						<description>The technology needed for your mechanitor to create and control standard-tier mechanoids.\n\nYou can get signal chips by using a mechanitor to summon a diabolus threat.</description>
+						<baseCost>1000</baseCost>
+						<researchViewX>11.00</researchViewX>
+						<researchViewY>0.00</researchViewY>
+						<techprintMarketValue>1000</techprintMarketValue>
+						<prerequisites>
+							<li>BasicMechtech</li>
+							<li>ElectronicsIII</li>
+						</prerequisites>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+			
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_AdvancedAmmo</defName>
+						<label>advanced ammunition</label>
+						<description>Allows production of advanced ammunition for small arms and light weapons systems like armor-piercing incendiary, sabot, and high-explosive rounds.</description>
+						<baseCost>1200</baseCost>
+						<techLevel>Industrial</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>    
+						<prerequisites>
+						  <li>PrecisionRifling</li>
+						</prerequisites>
+						<researchViewX>11</researchViewX>
+						<researchViewY>5.15</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_SimpleNV"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_SimpleNV</defName>
+						<label>basic optoelectronics</label>
+						<description>Allows for the production of simple electro-optical devices, like night vision goggles.</description>
+						<baseCost>1200</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>FlakArmor</li>
+						</prerequisites>
+						<researchViewX>3.00</researchViewX>
+						<researchViewY>6.40</researchViewY>
+						<tab>Industrial</tab>
+						<modExtensions>
+							<li Class="BiOnline.Researches.ResearchDefModExtension">
+								<thingRequirements>
+									<li>
+										<thingDef>Glass</thingDef>
+										<count>100</count>
+									</li>
+									<li>
+										<thingDef>Lead</thingDef>
+										<count>50</count>
+									</li>
+								</thingRequirements>
+							</li>
+						</modExtensions>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedNV"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_AdvancedNV</defName>
+						<label>advanced optoelectronics</label>
+						<description>Allows for the production of more advanced and specialized electro-optical devices, including better night vision goggles.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>TrooperArmor</li>
+						  <li>MicroelectronicsBasics</li>
+						</prerequisites>
+						<researchViewX>10.00</researchViewX>
+						<researchViewY>6.40</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_Launchers</defName>
+						<label>simple launchers</label>
+						<description>Allows production of basic grenade and rocket launchers.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>GasOperation</li>
+						</prerequisites>
+						<researchViewX>6</researchViewX>
+						<researchViewY>5</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>				
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_TurretHeavyWeapons</defName>
+						<label>heavy weapons</label>
+						<description>Allows you to assemble high-caliber weapons, automatic grenade launchers and artillery.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>CE_Launchers</li>
+						</prerequisites>
+						<researchViewX>9</researchViewX>
+						<researchViewY>5</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Xenogermination"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Xenogermination</defName>
+						<label>xenogenetics</label>
+						<description>Create xenogerms which can be implanted in a person to genetically modify them. Extract genepacks from living people using a gene extractor so you can reimplant their genes into someone else.</description>
+						<techLevel>Industrial</techLevel>
+						<baseCost>1000</baseCost>
+						<researchViewX>2.00</researchViewX>
+						<researchViewY>8.00</researchViewY>
+						<tab>Industrial</tab>
+						<prerequisites>
+						  <li>MedicineII</li>
+						</prerequisites>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="GeneProcessor"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>GeneProcessor</defName>
+						<label>gene processor</label>
+						<description>Build gene processors, which allow a gene assembler to create xenogerms of higher genetic complexity.</description>
+						<techLevel>Industrial</techLevel>
+						<baseCost>1500</baseCost>
+						<researchViewX>10.00</researchViewX>
+						<researchViewY>8.00</researchViewY>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<prerequisites>
+						  <li>Xenogermination</li>
+						  <li>MicroelectronicsBasics</li>
+						</prerequisites>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>				
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="BaseBodyPartEmpire_TierA">
+						<defName>BrainWiring</defName>
+						<label>brain wiring</label>
+						<description>Craft brain implants that induce or prevent blunt sensations like joy or pain.</description>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<prerequisites>
+						  <li>SpecializedLimbs</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>Prosthetics</li>
+						</hiddenPrerequisites>
+						<researchViewX>13.00</researchViewX>
+						<researchViewY>7.00</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="BaseBodyPartEmpire_TierA">
+						<defName>SpecializedLimbs</defName>
+						<label>specialized limbs</label>
+						<description>Craft specialized bionic limbs built for specific purposes - both combat and labor.</description>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<hiddenPrerequisites>
+						  <li>Prosthetics</li>
+						  <li>MedicineIII</li>
+						</hiddenPrerequisites>
+						<researchViewX>12</researchViewX>
+						<researchViewY>7</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="BaseBodyPartEmpire_TierA">
+						<defName>CompactWeaponry</defName>
+						<label>compact weaponry</label>
+						<description>Craft compact, concealable bionic weapons which can be embedded in various body parts.</description>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<hiddenPrerequisites>
+						  <li>Prosthetics</li>
+						  <li>MedicineIII</li>
+						</hiddenPrerequisites>
+						<researchViewX>12</researchViewX>
+						<researchViewY>8</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>					
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef ParentName="BaseBodyPartEmpire_TierA">
+						<defName>VenomSynthesis</defName>
+						<label>poison synthesis</label>
+						<description>Craft bionics that synthesize venom from internal chemical reactors for use in toxifying attacks.</description>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<prerequisites>
+						  <li>CompactWeaponry</li>
+						</prerequisites>
+						<researchViewX>13</researchViewX>
+						<researchViewY>8</researchViewY>
+						<tab>Industrial</tab>
+						</ResearchProjectDef>				
+
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+						<defName>TubeTelevision</defName>
+						<label>tube television</label>
+						<description>Produce tube televisions for recreational watching.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>ElectronicsII</li>
+						</prerequisites>
+						<researchViewX>3</researchViewX>
+						<researchViewY>2</researchViewY>
+						<tab>Industrial</tab>
+						</ResearchProjectDef>		
+
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+						<defName>ColoredLights</defName>
+						<label>advanced lights</label>
+						<description>Change the color of standard electric lamps, and reduce their power consumption by half. This does not affect sun lamps.</description>
+						<baseCost>400</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>TubeTelevision</li>
+						</prerequisites>
+						<recalculatePower>true</recalculatePower>
+						<researchViewX>4</researchViewX>
+						<researchViewY>2</researchViewY>
+						<tab>Industrial</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+						<defName>FlatscreenTelevision</defName>
+						<label>flatscreen television</label>
+						<description>Produce high-resolution flatscreen televisions for greater enjoyment.</description>
+						<baseCost>2000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>MicroelectronicsBasics</li>
+							<li>ElectronicsIII</li>
+						</prerequisites>
+						<!-- <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding> -->
+						<researchViewX>11</researchViewX>
+						<researchViewY>1.70</researchViewY>
+						<tab>Industrial</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li>
+
+  
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+						<defName>Deathrest</defName>
+						<label>deathrest</label>
+						<description>Those with the deathrest gene must periodically undergo a special deathrest coma that lasts several days. This research project allows you to construct buildings which accelerate the deathrest coma and confer specific bonuses on the deathrester. Over time, you can build a grand deathrest temple.</description>
+						<techLevel>Industrial</techLevel>
+						<baseCost>1000</baseCost>
+						<prerequisites>
+						  <li>ElectronicsII</li>
+						</prerequisites>
+						<researchViewX>4</researchViewX>
+						<researchViewY>0</researchViewY>
+						<tab>Industrial</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li>
+			
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Fabrication"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Fabrication</defName>
+						<label>fabrication</label>
+						<description>Build fabrication benches, capable of high-tech projects ranging from component assembly to power armor construction.</description>
+						<baseCost>3000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Metal_processingII</li>
+						</prerequisites>
+						<researchViewX>3.00</researchViewX>
+						<researchViewY>4.0</researchViewY>
+						<discoveredLetterTitle>About: Getting advanced components</discoveredLetterTitle>
+						<discoveredLetterText>You now have the technology to build a fabrication bench - but it also requires some advanced components to get started. You can collect advanced components several ways:\n\n  -All outlander settlements sell advanced components. Send a caravan to buy some.\n  -Some visiting traders sell advanced components. Invite or wait for them.\n  -Some quests are rewarded with advanced components.</discoveredLetterText>
+						<tab>Industrial</tab>
+						<modExtensions>
+							<li Class="BiOnline.Researches.ResearchDefModExtension">
+								<thingRequirements>
+									<li>
+										<thingDef>ComponentIndustrial</thingDef>
+										<count>1</count>
+									</li>
+									<li>
+										<thingDef>Steel</thingDef>
+										<count>100</count>
+									</li>
+								</thingRequirements>
+							</li>
+						</modExtensions>	
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ReconArmor"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>ReconArmor</defName>
+						<label>recon armor</label>
+						<description>Craft recon armor, a light powered armor suit used by scout troops who need protection on the move. Note that these also require advanced components.</description>
+						<baseCost>6000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>CE_AdvancedNV</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>ComplexClothing</li>
+						</hiddenPrerequisites>
+						<researchViewX>11.00</researchViewX>
+						<researchViewY>6.4</researchViewY>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="SecurityDoor"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>SecurityDoor</defName>
+						<label>security door</label>
+						<description>Build a heavily reinforced door. It is slow to open and requires power, but is very strong. It's a good choice if you want to keep something dangerous out - or in.</description>
+						<baseCost>700</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>ElectronicsII</li>
+						</prerequisites>
+						<researchViewX>3.00</researchViewX>
+						<researchViewY>0.00</researchViewY>
+						<generalRules>
+						  <rulesStrings>
+							<li>subject->security door</li>
+
+							<li>subject_story->worked as a security drone in a sealed research facility</li>
+							<li>subject_story->engineered security devices for a stellar trader</li>
+							<li>subject_story->researched materials science for a mercenary firm</li>
+							<li>subject_story->worked in a Glitterworld zoo</li>
+
+							<li>subject_gerund->constructing security doors</li>
+						  </rulesStrings>
+						</generalRules>
+						<tab>Industrial</tab>
+					  </ResearchProjectDef>				
+
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="TurretPack"]</xpath>
+                    <value>
+                    
+						<ResearchProjectDef>
+							<defName>TurretPack</defName>
+							<label>turret pack</label>
+							<description>Build a wearable pack that allows the user to deploy a battery-powered turret.</description>
+							<baseCost>1400</baseCost>
+							<techLevel>Industrial</techLevel>
+							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+							<prerequisites>
+								<li>FlakArmor</li>
+								<li>Batteries</li>
+							</prerequisites>
+							<hiddenPrerequisites>
+								<li>GunTurrets</li>
+							</hiddenPrerequisites>  
+							<hideWhen>
+							<turretsDisabled>true</turretsDisabled>
+							</hideWhen>
+						    <researchViewX>8.00</researchViewX>
+						    <researchViewY>6.00</researchViewY>
+							<generalRules>
+								<rulesStrings>
+									<li>subject->deployable turrets</li>
+
+									<li>subject_story->defended a feralworld castle from assault</li>
+									<li>subject_story->manned a tailgun on an Imperial dropship</li>
+									<li>subject_story->researched deployable military technology</li>
+									<li>subject_story->fought in the trench battles of the [worldname] War</li>
+
+									<li>subject_gerund->crafting deployable gun turrets</li>
+								</rulesStrings>
+							</generalRules>
+							<tab>Industrial</tab>
+						</ResearchProjectDef>
+
+                    </value>
+                </li> 
+				
+            </operations>
+        </match>
+    </Operation>
+</Patch>

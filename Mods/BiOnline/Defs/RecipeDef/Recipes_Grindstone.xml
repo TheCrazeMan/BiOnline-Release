@@ -1,0 +1,214 @@
+<Defs>
+
+	<!-- Мука из пшеницы -->
+
+   <RecipeDef>
+    <defName>WheatFlour_x25</defName>
+    <label>Mill flour from wheat x25</label>
+    <description>Mill wheat to the flour.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling wheat</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Grindstone</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawWheat</li>
+          </thingDefs>
+        </filter>
+        <count>500</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawWheat</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Flour>25</Flour>
+	  <Hay>50</Hay>
+    </products>
+  </RecipeDef>
+
+   <RecipeDef>
+    <defName>WheatFlour_x100</defName>
+    <label>Mill flour from wheat x100</label>
+    <description>Mill wheat to the flour.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling wheat</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Grindstone</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawWheat</li>
+          </thingDefs>
+        </filter>
+        <count>2000</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawWheat</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Flour>100</Flour>
+	  <Hay>200</Hay>
+    </products>
+  </RecipeDef>
+
+	<!-- Мука из кукурузы и риса -->
+
+   <RecipeDef>
+    <defName>Flour_x25</defName>
+    <label>Mill flour x25</label>
+    <description>Mill something to the flour.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Grindstone</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawRice</li>
+			<li>RawCorn</li>
+          </thingDefs>
+        </filter>
+        <count>750</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawRice</li>
+		<li>RawCorn</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Flour>25</Flour>
+    </products>
+  </RecipeDef>
+
+   <RecipeDef>
+    <defName>Flour_x100</defName>
+    <label>Mill flour x100</label>
+    <description>Mill something to the flour.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>2100</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Grindstone</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawRice</li>
+			<li>RawCorn</li>
+          </thingDefs>
+        </filter>
+        <count>3000</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawRice</li>
+		<li>RawCorn</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Flour>100</Flour>
+    </products>
+  </RecipeDef>
+
+
+	<!-- Сахар и меласса из свёклы -->
+
+   <RecipeDef>
+    <defName>Sugar_x25</defName>
+    <label>Make sugar x25</label>
+    <description>Mill beet to the sugar.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling beet</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Grindstone</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBeet</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawBeet</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Sugar>25</Sugar>
+    </products>
+  </RecipeDef>
+
+   <RecipeDef>
+    <defName>Sugar_x100</defName>
+    <label>Make sugar x100</label>
+    <description>Mill beet to the sugar.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling beet</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Grindstone</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBeet</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawBeet</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Sugar>100</Sugar>
+    </products>
+  </RecipeDef>
+  
+</Defs>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+ 	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="SewageSludgeComposting" or defName="LogBoilers" or defName="GeothermalHeating" or defName="Saunas" or defName="ModernFixtures" or defName="ElectricPumps" or defName="AdvancedShowers" or defName="AdvancedToilets" or defName="HotTubs" or defName="LargeWaterPumps" or defName="DeepWells" or defName="WashingMachines" or defName="WaterFiltration" or defName="HygieneBionics" or defName="SepticTanks" or defName="SewageTreatment" or defName="SwimmingPools" or defName="Irrigation" or defName="FireSuppression"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="WashingMachine"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/SoundDef[defName="washingmachine"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/JoyGiverDef[defName="WatchWashingMachine"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WaterTreatment"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">ToxFiltration</li>
+				<li MayRequire="dbhlitemode">Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LogBoiler"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Metal_processingI</li>
+			</researchPrerequisites>
+
+		</value>
+
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FireSprinkler"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Polymers</li>
+			</researchPrerequisites>
+
+		</value>
+
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WaterButt"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">PassiveCooler</li>
+			</researchPrerequisites>
+			
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WashBucket" or defName="PrimitiveWell" or defName="PitLatrine" or defName="BurnPit"]</xpath>
+		
+		<value>
+		
+			<researchPrerequisites>
+			  <li>PassiveCooler</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DBHSwimmingPool" or defName="HotTub" or defName="DBHSaunaHeaterElec" ]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">FurnitureIII</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"or defName="SewageTreatment"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Chemical_Production</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SewageSepticTank"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GeothermHeater"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Machining</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="AdvTerletBase"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Smart_Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WaterWellInlet"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Metal_processingI</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HotWaterTank" or defName="ElectricBoiler"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="IrrigationSprinkler"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WaterTowerL"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DeepWaterWellInlet" or defName="PumpingStation"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">DeepDrilling</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ShowerAdvStuff" or @Name="AdvTerletBase"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Smart_Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BiosolidsComposter"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">AgricultureII</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DBHSaunaSeating" or defName="DBHSaunaHeaterLog"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">FurnitureII</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WindPump" or defName="WaterTowerS" or defName="SewageOutlet" or defName="sewagePipeStuff"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Metal_processingI</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ElectricPump"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Machining</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Fountain" or defName="KitchenSink" or @Name="DubsDirtyTerletBase" or @Name="DubsDirtyShowerBase"]/researchPrerequisites</xpath>
+		
+		<value>
+
+			<researchPrerequisites>
+				<li MayRequire="dbhlitemode">Plumbing</li>
+			</researchPrerequisites>
+
+		</value>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MultiSplitAirCon"]</xpath>
+		
+		<value>
+
+			<ResearchProjectDef DBHLite="true">
+				<defName>MultiSplitAirCon</defName>
+				<label>multi-split air conditioning</label>
+				<tab>Industrial</tab>
+				<description>Build multi-split air conditioning systems with outdoor units piped to indoor units and freezers.</description>
+				<baseCost>700</baseCost>
+				<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>CentralHeating</li>
+				</prerequisites>
+				<researchViewX>5</researchViewX>
+				<researchViewY>2.75</researchViewY>
+			</ResearchProjectDef>	
+			
+		</value>
+		
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="CentralHeating"]</xpath>
+		
+		<value>
+
+			<ResearchProjectDef DBHLite="true">
+				<defName>CentralHeating</defName>
+				<label>central heating</label>
+				<tab>Industrial</tab>
+				<description>Build central heating systems with radiators, hot water tanks, boilers and thermostats.</description>
+				<baseCost>1000</baseCost>
+				<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>Plumbing</li>
+				</prerequisites>
+				<tags>
+					<li>ClassicStart</li>
+				</tags>
+				<researchViewX>4</researchViewX>
+				<researchViewY>2.75</researchViewY>
+			</ResearchProjectDef>		
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+		
+		<value>
+
+			<ResearchProjectDef>
+				<defName>Plumbing</defName>
+				<label>plumbing</label>
+				<tab>Industrial</tab>
+				<description>Use pipes, plumbing fixtures, storage tanks, windwells and other apparatuses to deliver and drain water and sewage.</description>
+				<baseCost>400</baseCost>
+				<techLevel>Medieval</techLevel>
+				<tags>
+					<li>ClassicStart</li>
+				</tags>
+				<prerequisites>
+					<li>FurnitureIII</li>
+				</prerequisites>
+				<researchViewX>3</researchViewX>
+				<researchViewY>3.5</researchViewY>
+				<modExtensions>
+					<li Class="BiOnline.Researches.ResearchDefModExtension">
+						<thingRequirements>
+							<li>
+								<thingDef>Ceramics</thingDef>
+								<count>100</count>
+							</li>
+						</thingRequirements>
+					</li>
+				</modExtensions>
+			</ResearchProjectDef>			
+
+		</value>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BasinStuff" or defName="Fountain" or defName="KitchenSink" or defName="ToiletStuff" or defName="ToiletAdvStuff" or defName="BathtubStuff" or defName="ShowerStuff" or defName="ShowerAdvStuff"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Ceramics</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="DrankCleanWater"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>1</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="DrankDirtyWater"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-4</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="DrankUrine"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-14</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="WashPrivacy"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-4</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="ToiletPrivacy"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-4</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="SoiledSelf"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-10</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HotShower" or defName="HeatedPool" or defName="HotBath" or defName="ColdBath" or defName="ColdShower" or defName="tookDump"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>2</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="openDefecation"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-4</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="UsedPrivateBathroom"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-6</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="UsedPrivateBathroom"]/stages/li[3]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>2</baseMoodEffect>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="UsedPrivateBathroom"]/stages/li[4]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>2</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="UsedPrivateBathroom"]/stages/li[5]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>3</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="UsedPrivateBathroom"]/stages/li[6]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>4</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="UsedPrivateBathroom"]/stages/li[7]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>5</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="UsedPrivateBathroom"]/stages/li[8]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>6</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HygieneLevel"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-8</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HygieneLevel"]/stages/li[2]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-4</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HygieneLevel"]/stages/li[3]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>2</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HygieneLevel"]/stages/li[4]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>4</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="BowelLevel"]/stages/li/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-8</baseMoodEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="BowelLevel"]/stages/li[2]/baseMoodEffect</xpath>
+		<value>
+			<baseMoodEffect>-4</baseMoodEffect>
+		</value>
+	</Operation>
+	
+</Patch>

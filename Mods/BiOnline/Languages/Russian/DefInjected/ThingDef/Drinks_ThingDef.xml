@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/Drugs/Drinks.xml-->
+
+<Wine.label>Вино</Wine.label>
+<Wine.description>Алкогольный напиток, получаемый путем полного или частичного сбраживания виноградного сусла.</Wine.description>
+<Wine.ingestible.ingestCommandString>Drink {0}</Wine.ingestible.ingestCommandString>
+<Wine.ingestible.ingestReportString>Питье {0}.</Wine.ingestible.ingestReportString>
+
+<WortWine.label>Винное сусло</WortWine.label>
+<WortWine.description>Свежевыжатый неосветленный сок плодов, преимущественно винограда. Это также молодое вино, которое еще не перебродило.</WortWine.description>
+
+<Ethanol.label>Этанол</Ethanol.label>
+<Ethanol.description>Этанол при нормальных условиях представляет собой бесцветную, легкоподвижную, летучую жидкость. Он образуется при дестилляции отвара.</Ethanol.description>
+<Ethanol.ingestible.ingestCommandString>Drink {0}</Ethanol.ingestible.ingestCommandString>
+<Ethanol.ingestible.ingestReportString>Питье {0}.</Ethanol.ingestible.ingestReportString>
+
+<Schnapps.label>Шнапс</Schnapps.label>
+<Schnapps.description>Крепкий алкогольный напиток, созданный из различных растительных ингредиентов.</Schnapps.description>
+<Schnapps.ingestible.ingestCommandString>Drink {0}</Schnapps.ingestible.ingestCommandString>
+<Schnapps.ingestible.ingestReportString>Питье {0}.</Schnapps.ingestible.ingestReportString>
+
+<RawWort.label>Cусло</RawWort.label>
+<RawWort.description>Сусло из фруктов после ферментации и дистилляции позволяет получить отличный шнапс или спирт.</RawWort.description>
+
+<RawBraga.label>Брага</RawBraga.label>
+<RawBraga.description>Ферментированный фруктовый отвар, дальнейшая дистилляция приведет к созданию спирта или шнапса.</RawBraga.description>
+
+<TeaDrink.label>Чай</TeaDrink.label>
+<TeaDrink.description>Получается путем заваривания чайного листа, который предварительно обрабатывается (сбор, сушка, ферментация).</TeaDrink.description>
+<TeaDrink.ingestible.ingestCommandString>Drink {0}</TeaDrink.ingestible.ingestCommandString>
+<TeaDrink.ingestible.ingestReportString>Питье {0}.</TeaDrink.ingestible.ingestReportString>
+
+<TeaDrinkSugar.label>Сладкий чай</TeaDrinkSugar.label>
+<TeaDrinkSugar.description>Получается при заваривании чайного листа, который предварительно обрабатывается (сбор, сушка, ферментация).</TeaDrinkSugar.description>
+<TeaDrinkSugar.ingestible.ingestCommandString>Drink {0}</TeaDrinkSugar.ingestible.ingestCommandString>
+<TeaDrinkSugar.ingestible.ingestReportString>Питье {0}.</TeaDrinkSugar.ingestible.ingestReportString>
+
+<Coffee.label>Кофе</Coffee.label>
+<Coffee.description>Получается путем заваривания кофейных бобов, который предварительно обрабатывается (сбор, сушка, ферментация).</Coffee.description>
+<Coffee.ingestible.ingestCommandString>Drink {0}</Coffee.ingestible.ingestCommandString>
+<Coffee.ingestible.ingestReportString>Питье {0}.</Coffee.ingestible.ingestReportString>
+
+<CoffeeSugar.label>Сладкий кофе</CoffeeSugar.label>
+<CoffeeSugar.description>Получается путем заваривания кофейных бобов, который предварительно обрабатывается (сбор, сушка, ферментация).</CoffeeSugar.description>
+<CoffeeSugar.ingestible.ingestCommandString>Drink {0}</CoffeeSugar.ingestible.ingestCommandString>
+<CoffeeSugar.ingestible.ingestReportString>Питье {0}.</CoffeeSugar.ingestible.ingestReportString>
+
+</LanguageData>

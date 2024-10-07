@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- To add a research tab, make a new ResearchTabDef here and then set the <tab> field of your research project to match it -->
+  
+
+  <ResearchTabDef>
+    <defName>Tribal</defName>
+    <label>Tribal technology</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>Medieval</defName>
+    <label>Medieval technology</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>Industrial</defName>
+    <label>Industrial technology</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>space</defName>
+    <label>Space technology</label>
+  </ResearchTabDef>
+  
+<!--   <ResearchTabDef>
+    <defName>StartResearch</defName>
+    <label>Start Research</label>
+  </ResearchTabDef>
+ -->
+</Defs>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+			defName="LargeFuelPowerplant" or 
+			defName="Autoclave" or
+			defName="SynthyleneRefiner" or
+			defName="SynthreadRefiner" or
+			defName="SynthamideRefiner" or
+			defName="HyperweaveRefiner" or
+			defName="NeutroamineRefiner" or
+			defName="CombatExtendedFsxRefiner"]
+		</xpath>
+		<value>
+		
+			<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		
+		</value>
+	</Operation>
+	
+	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName="Filth_NapalmTrail" or defName="NapalmBomb"]/researchPrerequisites/li
+		</xpath>
+		<value>
+			<li>Chemical_Production</li>
+		</value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/TerrainDef[@Name="RimefellerLinoBase"]/costList
+		</xpath>
+	</Operation>	
+	
+	
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/TerrainDef[
+			defName="Lino_TilesDiagonal" or
+			defName="Lino_TilesDiamond" or
+			defName="Lino_TactileTile" or
+			defName="Lino_SterileTile" or
+			defName="Lino_Red" or
+			defName="Lino_Green" or
+			defName="Lino_Blue" or
+			defName="Lino_White" or
+			defName="Lino_Dark" or
+			defName="Lino_Gold" or
+			defName="LinoTile_Red" or
+			defName="LinoTile_Green" or
+			defName="LinoTile_Blue" or
+			defName="LinoTile_White" or
+			defName="LinoTile_Dark" or
+			defName="LinoTile_Gold" or
+			defName="Lino_WoodPlankFloor" or
+			defName="Lino_Wood_ParquetHerring" or
+			defName="Lino_Wood_ParquetVersailles" or
+			defName="Wood_ParquetHerring" or
+			defName="Wood_ParquetVersailles" or
+			defName="Lino_MosaicRed" or
+			defName="Lino_MosaicGreen" or
+			defName="Lino_MosaicBlue" or
+			defName="Lino_MosaicCream" or
+			defName="Lino_MosaicDark" or
+			defName="Lino_MosaicGold" or
+			defName="Lino_PavementSandstone" or
+			defName="Lino_PavementGranite" or
+			defName="Lino_PavementLimestone" or
+			defName="Lino_PavementSlate" or
+			defName="Lino_PavementMarble" or
+			defName="Lino_HerringboneSandstone" or
+			defName="Lino_HerringboneGranite" or
+			defName="Lino_HerringboneLimestone" or
+			defName="Lino_HerringboneSlate" or
+			defName="Lino_HerringboneMarble" or
+			defName="Lino_TileSandstone" or
+			defName="Lino_TileGranite" or
+			defName="Lino_TileLimestone" or
+			defName="Lino_TileSlate" or
+			defName="Lino_TileMarble" or
+			defName="Lino_FlagstoneSandstone" or
+			defName="Lino_FlagstoneGranite" or
+			defName="Lino_FlagstoneLimestone" or
+			defName="Lino_FlagstoneSlate" or
+			defName="Lino_PavementGold" or
+			defName="Lino_FlagstoneMarble"]
+		</xpath>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ThingDef[
+			defName="LargeFuelPowerplant" or 
+			defName="CombatExtendedFsxRefiner" or 
+			defName="NeutroamineRefiner" or 
+			defName="HyperweaveRefiner" or 
+			defName="SynthamideRefiner" or 
+			defName="SynthreadRefiner" or 
+			defName="SynthyleneRefiner" or 
+			defName="Autoclave"
+			]/researchPrerequisites
+		</xpath>
+	</Operation>	
+	
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="FuelPowerplant"]/comps/li[2]/FuelRate</xpath>
+		<value>
+			<FuelRate>10</FuelRate>
+		</value>
+	</Operation>
+	
+</Patch>
+

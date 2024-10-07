@@ -1,0 +1,94 @@
+<Patch>
+
+  <Operation Class="PatchOperationRemove">    <!-- Combat -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[1]/options/CE_Tribal_Grenadier</xpath>
+  </Operation>
+  
+  <Operation Class="PatchOperationRemove">    <!-- Combat -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[1]/options/CE_Tribal_Gunner</xpath>
+  </Operation>  
+
+  <Operation Class="PatchOperationRemove">    <!-- Combat -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[2]/options/CE_Tribal_Grenadier</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Combat -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[2]/options/CE_Tribal_Gunner</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Breach -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[4]/options/CE_Tribal_Grenadier</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Breach -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[4]/options/CE_Tribal_Gunner</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Peaceful -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[5]/options/CE_Tribal_Grenadier</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Peaceful -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[5]/options/CE_Tribal_Gunner</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Trader -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/guards/CE_Tribal_Grenadier</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Trader -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/guards/CE_Tribal_Gunner</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Settlement -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[7]/options/CE_Tribal_Grenadier</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">    <!-- Settlement -->
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[7]/options/CE_Tribal_Gunner</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="CE_Gun_FlintlockPistol"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>Gun</li>
+				<li>SimpleGun</li>
+				<li>CE_AI_BROOM</li>
+				<li>CE_OneHandedWeapon</li>
+			</weaponTags>
+		</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="CE_Gun_FlintlockBlunderbuss"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>Gun</li>
+				<li>SimpleGun</li>
+				<li>CE_AI_BROOM</li>
+			</weaponTags>
+		</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="CE_Gun_FlintlockMusket"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>Gun</li>
+				<li>SimpleGun</li>
+				<li>CE_AI_AR</li>
+			</weaponTags>
+		</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]/weaponTags</xpath>
+    <value>
+		<weaponTags>
+		        <li>NeolithicRangedHeavy</li>
+		</weaponTags>
+    </value>
+  </Operation>
+
+</Patch>

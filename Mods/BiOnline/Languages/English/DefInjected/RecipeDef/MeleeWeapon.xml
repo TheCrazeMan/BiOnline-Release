@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!--Имперское оружие-->
+<Craft_MeleeWeapon_MonoSword.label>Create monosword</Craft_MeleeWeapon_MonoSword.label>
+<Craft_MeleeWeapon_MonoSword.description>To create a monosword, you need to use the best materials and all your forging knowledge</Craft_MeleeWeapon_MonoSword.description>
+<Craft_MeleeWeapon_MonoSword.jobString>Forging monosword</Craft_MeleeWeapon_MonoSword.jobString>
+
+<Craft_MeleeWeapon_Zeushammer.label>Create zeushammer</Craft_MeleeWeapon_Zeushammer.label>
+<Craft_MeleeWeapon_Zeushammer.description>To create a zeushammer, you need to use the best materials and all your forging knowledge</Craft_MeleeWeapon_Zeushammer.description>
+<Craft_MeleeWeapon_Zeushammer.jobString>Forging zeushammer</Craft_MeleeWeapon_Zeushammer.jobString>
+
+<Craft_MeleeWeapon_PlasmaSword.label>Create plasma sword</Craft_MeleeWeapon_PlasmaSword.label>
+<Craft_MeleeWeapon_PlasmaSword.description>To create a plasma sword, you need to use the best materials and all your forging knowledge</Craft_MeleeWeapon_PlasmaSword.description>
+<Craft_MeleeWeapon_PlasmaSword.jobString>Forging plasma sword</Craft_MeleeWeapon_PlasmaSword.jobString>
+
+<Craft_MeleeWeapon_MonoSwordBladeLink.label>Create monosword (bladelink)</Craft_MeleeWeapon_MonoSwordBladeLink.label>
+<Craft_MeleeWeapon_MonoSwordBladeLink.description>To create a monosword, you need to use the best materials and all your forging knowledge. To make it bladelink you need to sacrifice a living soul.</Craft_MeleeWeapon_MonoSwordBladeLink.description>
+<Craft_MeleeWeapon_MonoSwordBladeLink.jobString>Forging monosword (bladelink)</Craft_MeleeWeapon_MonoSwordBladeLink.jobString>
+
+<Craft_MeleeWeapon_ZeushammerBladeLink.label>Create zeushammer (bladelink)</Craft_MeleeWeapon_ZeushammerBladeLink.label>
+<Craft_MeleeWeapon_ZeushammerBladeLink.description>To create a zeushammer, you need to use the best materials and all your forging knowledge. To make it bladelink you need to sacrifice a living soul.</Craft_MeleeWeapon_ZeushammerBladeLink.description>
+<Craft_MeleeWeapon_ZeushammerBladeLink.jobString>Forging zeushammer</Craft_MeleeWeapon_ZeushammerBladeLink.jobString>
+
+<Craft_MeleeWeapon_PlasmaSwordBladeLink.label>Create plasma sword (bladelink)</Craft_MeleeWeapon_PlasmaSwordBladeLink.label>
+<Craft_MeleeWeapon_PlasmaSwordBladeLink.description>To create a plasma sword, you need to use the best materials and all your forging knowledge. To make it bladelink you need to sacrifice a living soul.</Craft_MeleeWeapon_PlasmaSwordBladeLink.description>
+<Craft_MeleeWeapon_PlasmaSwordBladeLink.jobString>Forging plasma sword</Craft_MeleeWeapon_PlasmaSwordBladeLink.jobString>
+
+</LanguageData>

@@ -1,0 +1,21 @@
+<Patch>
+
+		<!-- Добавление новых типов гранат в существующий AmmoSet -->
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_40x53mmVOG25Grenade"]/ammoTypes</xpath>
+			<value>
+				<Ammo_40x53mmVOG25Grenade_Incendiary>Bullet_40x53mmVOG25Grenade_Incendiary</Ammo_40x53mmVOG25Grenade_Incendiary>
+				<Ammo_40x53mmVOG25Grenade_Foam>Bullet_40x53mmVOG25Grenade_Foam</Ammo_40x53mmVOG25Grenade_Foam>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_12Gauge"]/ammoTypes</xpath>
+			<value>
+				<Ammo_12Gauge_Flechette>Bullet_12Gauge_Flechette</Ammo_12Gauge_Flechette>
+				<Ammo_12Gauge_SlugAP>Bullet_12Gauge_SlugAP</Ammo_12Gauge_SlugAP>
+			</value>
+		</Operation>
+
+</Patch>

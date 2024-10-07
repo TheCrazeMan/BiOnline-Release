@@ -1,0 +1,30 @@
+<Defs>
+
+<!--   <RulePackDef>
+    <defName>NomadName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Nomad</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>TriggerName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Trigger</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>IronClawName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->IronClaw</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef> -->
+
+</Defs>

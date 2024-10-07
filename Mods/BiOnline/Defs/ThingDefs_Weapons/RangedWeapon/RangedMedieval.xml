@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="BaseProjectileMedieval" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>bolt</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef Name="BaseWeaponRangedMedieval" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>Medieval</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <relicChance>1</relicChance>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_MakeBow</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeaponRangedMedieval">
+    <defName>Cr_Crossbow</defName>
+    <label>crossbow</label>
+    <description>A ranged weapon that uses a bow-like assembly mounted on a frame to launch projectiles called bolts or quarrels. Due to the user not needing to maintain tension by hand, crossbows are much more accurate than bows. The crossbow is much stronger than standard bows, being able to pierce through metal, however, they are slow to load and fire.\n\nCrossbows are silent shots, being able to shoot without spooking animals.</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Medieval/Crossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Recurve</soundInteract>
+    <costList>
+      <WoodLog>50</WoodLog>
+	  <Steel>45</Steel>
+	  <Cloth>5</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>2.57</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags Inherit="False">
+      <li>MedievalRangedDecent</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>Tension_forceI</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_CrossbowBolt_Steel</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>22</range>
+        <soundCast>Shot_CE_Crossbow</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+      </li>
+    </verbs>
+	<tools>
+		<li Class="CombatExtended.ToolCE">
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>1.6</cooldownTime>
+			<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+		</li>
+	</tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>5</reloadTime>
+        <ammoSet>AmmoSet_CrossbowBolt</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeaponRangedMedieval">
+    <defName>Cr_RepeatingCrossbow</defName>
+    <label>repeating crossbow</label>
+    <description>An ancient crossbow design made in ancient China, the repeating crossbow has a wooden magazine on top of the bow. Bolts are placed in, and the lever is pushed and pulled to repeatedly launch them. The crossbow was designed to fire by the hip, making it quite inaccurate. The repeating crossbow's bolts were too weak to pierce armor or fly far.\n\nCrossbows are silent shots, being able to shoot without spooking animals.</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Medieval/RepeatingCrossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Recurve</soundInteract>
+    <costList>
+      <WoodLog>75</WoodLog>
+	  <Steel>35</Steel>
+	  <Cloth>5</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.3</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags Inherit="False">
+      <li>MedievalRangedDecent</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>NeolithicRangedHeavy</li>	  
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>Tension_forceII</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_CrossbowBolt_Steel</defaultProjectile>
+        <warmupTime>1.78</warmupTime>
+        <range>25</range>
+		<burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_CE_Crossbow</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+      </li>
+    </verbs>
+	<tools>
+		<li Class="CombatExtended.ToolCE">
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>1.6</cooldownTime>
+			<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+		</li>
+	</tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>5</reloadTime>
+        <ammoSet>AmmoSet_CrossbowBolt</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseWeaponRangedMedieval">
+    <defName>Cr_BulletShootingCrossbow</defName>
+    <label>Hight crossbow</label>
+    <description>Also called a stone bow, the bullet-shooting crossbow is a special crossbow designed to sling stones and primitive bullets instead of bolts. The bow is specially designed with two different strings to act like a slingshot. Despite shooting bullets, the small ammunition was ineffective for combat and was mostly used for small game hunting. This type of bullet-shooting crossbow is the improved version made by the English designed to shoot lead bullets which were stronger and more accurate.\n\nCrossbows are silent shots, being able to shoot without spooking animals.</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Medieval/BulletShootingCrossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Recurve</soundInteract>
+    <costList>
+      <WoodLog>25</WoodLog>
+	  <Steel>45</Steel>
+	  <Cloth>10</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.68</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags Inherit="False">
+      <li>MedievalRangedDecent</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>NeolithicRangedHeavy</li>	 	  
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>Tension_forceII</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_CrossbowBolt_Steel</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>28</range>
+        <soundCast>Shot_CE_Crossbow</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+      </li>
+    </verbs>
+	<tools>
+		<li Class="CombatExtended.ToolCE">
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>1.6</cooldownTime>
+			<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+		</li>
+	</tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>5</reloadTime>
+        <ammoSet>AmmoSet_CrossbowBolt</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileMedieval">
+   <defName>Crossbow_Bolt</defName>
+   <label>crossbow bolt</label>
+   <graphicData>
+     <texPath>Things/Projectile/CrossbowBolt</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+   </graphicData>
+   <projectile>
+     <damageDef>CrossbowBolt</damageDef>
+     <damageAmountBase>25</damageAmountBase>
+     <stoppingPower>1.3</stoppingPower>
+	 <armorPenetrationBase>0.55</armorPenetrationBase>
+	 <speed>60</speed>
+	 </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileMedieval">
+   <defName>Crossbow_BoltRepeating</defName>
+   <label>crossbow bolt</label>
+   <graphicData>
+     <texPath>Things/Projectile/CrossbowBolt</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+   </graphicData>
+   <projectile>
+     <damageDef>CrossbowBolt</damageDef>
+     <damageAmountBase>8</damageAmountBase>
+     <stoppingPower>0.5</stoppingPower>
+	 <armorPenetrationBase>0.15</armorPenetrationBase>
+	 <speed>40</speed>
+	 </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileMedieval">
+   <defName>Crossbow_LeadBullet</defName>
+   <label>lead bullet</label>
+   <graphicData>
+     <texPath>Things/Projectile/Lead_Bullet</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+   </graphicData>
+   <projectile>
+     <damageDef>LeadBullet</damageDef>
+     <damageAmountBase>13</damageAmountBase>
+     <stoppingPower>0.7</stoppingPower>
+	 <armorPenetrationBase>0.20</armorPenetrationBase>
+	 <speed>60</speed>
+	 </projectile>
+  </ThingDef>
+
+	
+	<ThingDef ParentName="BaseWeaponRangedMedieval">
+		<defName>Gun_Bombarda</defName>
+		<label>Bombarda</label>
+		<description>A bombard is a gun used in the Middle Ages to besiege fortresses and cities. It was a large, single-shot cannon that fired stone or metal cannonballs.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponRanged/Medieval/Bombard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>25500</WorkToMake>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>5.0</ShotSpread>
+			<SwayFactor>1.35</SwayFactor>
+			<Bulk>8</Bulk>
+			<Mass>5.5</Mass>
+			<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>MedievalBombard</li>
+		</weaponTags>
+		<costList>
+			<Iron>80</Iron>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Flintlock_firearms</researchPrerequisite>
+		</recipeMaker>
+		<verbs>
+		  <li Class="CombatExtended.VerbPropertiesCE">
+			<recoilAmount>2.12</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_RoundShot</defaultProjectile>
+			<warmupTime>2.1</warmupTime>
+			<range>20</range>
+			<soundCast>Shot_CE_Musket</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>19</muzzleFlashScale>
+		  </li>
+		</verbs>
+		<comps>
+		  <li Class="CombatExtended.CompProperties_AmmoUser">
+			<magazineSize>1</magazineSize>
+			<reloadTime>7</reloadTime>
+			<ammoSet>AmmoSet_BombardShot</ammoSet>
+		  </li>
+		  <li Class="CombatExtended.CompProperties_FireModes">
+			<aiAimMode>Snapshot</aiAimMode>
+		  </li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.0,1.0</DrawSize>
+				<DrawOffset>0.0,0.0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

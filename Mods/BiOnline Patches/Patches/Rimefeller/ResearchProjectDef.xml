@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+		defName="OilWell" or 
+		defName="DeepOilWell" or 
+		defName="pipelineValve" or 
+		defName="ResourceConsole" or
+		defName="OilStorage" or
+		defName="OilPipeline"]/researchPrerequisites/li
+		</xpath>
+		<value>
+			<li>DeepDrilling</li>	
+		</value>
+	</Operation>
+		
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+		defName="FuelStorage" or
+		defName="FuelPowerplant" or
+		defName="CrudeCracker" or
+		defName="NapalmRefiner" or
+		defName="SparkGrid" or
+		defName="ChemfuelHopper" or
+		defName="RefineryLoadingBay" or
+		defName="ChemfuelSiphon"]/researchPrerequisites/li
+		</xpath>
+		<value>
+			<li>Chemical_Production</li>	
+		</value>
+	</Operation>
+
+
+</Patch>

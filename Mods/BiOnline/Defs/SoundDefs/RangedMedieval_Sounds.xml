@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>VWE_Shot_Musket</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<subSounds>
+		<li>
+		<grains>
+		  <li Class="AudioGrain_Clip">
+			<clipPath>Things/VWE_Shot_Musket</clipPath>
+		  </li>
+		</grains>      
+		<volumeRange>
+		  <min>100.70111</min>        
+		  <max>127.30627</max>
+		</volumeRange>      
+		<pitchRange>
+		  <min>0.80976015</min>        
+		  <max>1.2769372</max>
+		</pitchRange>
+		</li>
+		</subSounds>
+	</SoundDef>
+  
+	<SoundDef>
+		<defName>VWE_Shot_Crossbow</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<subSounds>
+		<li>
+		<grains>
+		  <li Class="AudioGrain_Clip">
+			<clipPath>Things/VWE_Shot_Crossbow</clipPath>
+		  </li>
+		</grains>      
+		<volumeRange>
+		  <min>90.70111</min>        
+		  <max>97.30627</max>
+		</volumeRange>      
+		<pitchRange>
+		  <min>1.0976015</min>        
+		  <max>1.0769372</max>
+		</pitchRange>
+		</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

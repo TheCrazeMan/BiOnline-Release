@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<VFEProps.PropDef ParentName="AP_WallPropBase">
+		<defName>AP_Prop_Walls_Gau</defName>
+		<category>AP_PropCategory_Walls</category>
+		<priority>3.6</priority>
+		<prop>AP_Hedge_Gau</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef>
+		<defName>AP_Prop_Park_GauMiniPods</defName>
+		<category>VFE_PropCategory_Park</category>
+		<priority>504</priority>
+		<prop>AP_GauMiniPods</prop>
+	</VFEProps.PropDef>
+</Defs>

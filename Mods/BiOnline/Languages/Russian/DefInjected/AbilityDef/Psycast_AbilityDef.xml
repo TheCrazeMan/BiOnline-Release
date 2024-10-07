@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/AbilityDef/Psycast.xml-->
+<WordOfSerenity_PSY.label>слово безмятежность</WordOfSerenity_PSY.label>
+<WordOfSerenity_PSY.description>Использует успокаивающие слова и психическое внушение для прекращения психического срыва на человеке или животном. Объект погружается в короткий психический сон. Затраты псифокуса зависят от интенсивности психического расстройства цели.</WordOfSerenity_PSY.description>
+<WordOfTrust_PSY.label>слово доверия</WordOfTrust_PSY.label>
+<WordOfTrust_PSY.description>Поговорите с заключенным, используя экстрасенсорное внушение, чтобы уменьшить его сопротивление вербовке. Это может только уменьшить сопротивление заключенного, но не может завербовать его.</WordOfTrust_PSY.description>
+<Stun_PSY.label>оглушение</Stun_PSY.label>
+<Stun_PSY.description>Мгновенно нарушает двигательную функцию мозга цели, предотвращая любое движение.</Stun_PSY.description>
+<Focus_PSY.label>фокус</Focus_PSY.label>
+<Focus_PSY.description>Психически фокусирует сознание цели, усиливая ее зрение, слух и способность к передвижению.</Focus_PSY.description>
+<BlindingPulse_PSY.label>ослепляющий импульс</BlindingPulse_PSY.label>
+<BlindingPulse_PSY.description>Индуцирует шум в зрительных центрах мозга, затуманивая зрение всех, кто находится вблизи целевой точки.</BlindingPulse_PSY.description>
+
+</LanguageData>

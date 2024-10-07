@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Ballista</defName>
+		<label>Ballista</label>
+		<description>The ballista is a powerful weapon, capable of firing large bolts over great distances. Effective in both siege and defense, the precise design intimidates enemies, but it must be reloaded after each shot.</description>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiIconPath>Things/Build/Ballista/TurretBallista_MenuIcon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Build/Ballista/TurretBallista_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.3, 2.3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(1.5,0.35,1.4)</volume>
+				<offset>(0,0,-0.05)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>25000</WorkToBuild>
+			<Mass>250</Mass>
+			<Bulk>250</Bulk>
+		</statBases>
+		<costList>
+			<WoodLog>200</WoodLog>
+			<Steel>100</Steel>
+		</costList>
+		<specialDisplayRadius>16</specialDisplayRadius>
+		<building>
+			<turretGunDef>DankPyon_Gun_BallistaTurret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>4</turretTopDrawSize>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<size>(3,3)</size>
+		<interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites>
+			<li>Tension_forceII</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+		<techLevel>Medieval</techLevel>
+		<!-- <designatorDropdown>MedievalSiegeWeapons</designatorDropdown> -->
+	</ThingDef>
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>DankPyon_Gun_BallistaTurret</defName>
+		<label>Ballista</label>
+		<description>An ancient military siege engine in a form of a crossbow mounted on a wooden construct.</description>
+		<graphicData>
+			<texPath>Things/Build/Ballista/TurretBallista_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<SightsEfficiency>2.3</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.14</SwayFactor>
+			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_BallistaBoltExplosive</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<minRange>12</minRange>
+				<range>75</range>
+				<burstShotCount/>
+				<soundCast>120mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>7.2</reloadTime>
+				<ammoSet>AmmoSet_BallistaBolt</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

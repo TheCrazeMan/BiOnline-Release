@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<Dried_meat.label>Вяленое мясо</Dried_meat.label>
+<Dried_meat.description>Вяленое мясо. Отлично подходит для долгих походов и путешествий.</Dried_meat.description>
+
+<Fried_meat.label>Жареное мясо</Fried_meat.label>
+<Fried_meat.description>Грубо обжаренный кусок мяса. Очень жёсткий и не имеет хорошего вкуса.</Fried_meat.description>
+
+<Sawdust_soup.label>Суп с опилками</Sawdust_soup.label>
+<Sawdust_soup.description>Водянистый суп с небольшим количеством ингредиентов. Для большей насыщенности используются опилки. Очень неприятный на вкус.</Sawdust_soup.description>
+
+<Dried_meat_RAW.label>Мясо для сушки</Dried_meat_RAW.label>
+<Dried_meat_RAW.description>Сырое мясо готовое для сушки.</Dried_meat_RAW.description>
+
+<Candy.label>Конфета</Candy.label>
+<Candy.description>Кондитерское изделие, изготовленное из карамели. Это замечательное лакомство при правильном и разумном употреблении может быть очень полезным для организма.</Candy.description>
+
+<SaltCandy.label>Солёная карамель</SaltCandy.label>
+<SaltCandy.description>Кондитерское изделие, изготовленное из карамели с добавлением соли. Это замечательное лакомство при правильном и разумном употреблении может быть очень полезным для организма.</SaltCandy.description>
+
+<ChocolateCandy.label>Шоколадная карамель</ChocolateCandy.label>
+<ChocolateCandy.description>Кондитерское изделие, изготовленное из шоколада. Это замечательное лакомство при правильном и разумном потреблении может принести большую пользу организму.</ChocolateCandy.description>
+
+<PumpkinLollipop.label>Лжетыква на палочке</PumpkinLollipop.label>
+<PumpkinLollipop.description>Кондитерское изделие, изготовленное из карамели. В качестве красителя в этот продукт добавляется морковный сок</PumpkinLollipop.description>
+
+<Marmalade.label>Мармелад</Marmalade.label>
+<Marmalade.description>Фруктово-ягодный мармелад вырабатывается из сырья, содержащего пектин в количестве, достаточном для образования желеобразной структуры.</Marmalade.description>
+
+<Licorice.label>Лакрица</Licorice.label>
+<Licorice.description>Солодка - кондитерское изделие, обычно ароматизированное и окрашенное в черный цвет экстрактом черных ягод.</Licorice.description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/PreceptDefs/Precepts_Sawdust_soup.xml-->
+<AteSawdustSoup.stages.0.label>Съеден суп с опилок</AteSawdustSoup.stages.0.label>
+<AteSawdustSoup.stages.0.description>Мне пришлось есть отвратительную, безвкусную пищу. Я знаю, что это помогает выжить, но никто не хочет глотать эту гадость.</AteSawdustSoup.stages.0.description>
+<TastyDrink.stages.0.label>Выпит вкусный напиток</TastyDrink.stages.0.label>
+<TastyDrink.stages.0.description>Вкусный горячий напиток. Я чувствую прилив сил, и мое настроение поднимается!</TastyDrink.stages.0.description>
+<AteTheCandy.stages.0.label>Съедены конфеты</AteTheCandy.stages.0.label>
+<AteTheCandy.stages.0.description>Эти конфеты невероятно вкусные! Кислые, сладкие ой, фу, тут ещё лакрица...</AteTheCandy.stages.0.description>
+<AteTheLicorice.stages.0.label>Съедена лакрица</AteTheLicorice.stages.0.label>
+<AteTheLicorice.stages.0.description>Фууу, это лакрица! Какая-же она мерзкая...</AteTheLicorice.stages.0.description>
+<PutridSmell.stages.0.label>Гнилостный запах</PutridSmell.stages.0.label>
+<PutridSmell.stages.0.description>Тут неимоверно воняет</PutridSmell.stages.0.description>
+
+
+</LanguageData>

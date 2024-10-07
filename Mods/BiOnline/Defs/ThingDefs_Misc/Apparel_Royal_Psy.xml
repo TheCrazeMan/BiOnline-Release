@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>Apparel_Crown_PSY</defName>
+		<label>crown</label>
+		<description>A crown of metal with an elaborate design.</description>
+		<descriptionHyperlinks><AbilityDef>WordOfSerenity_PSY</AbilityDef></descriptionHyperlinks>
+		<smeltable>false</smeltable>
+		<thingCategories>
+		  <li>HeadgearNoble</li>
+		</thingCategories>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/Crown/Crown</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <WorkToMake>12000</WorkToMake>
+		  <Mass>0.9</Mass>
+		  <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<equippedStatOffsets>
+		  <SocialImpact>0.2</SocialImpact>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Crown/Crown</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>Royal</li>
+			<li>RoyalTier6</li>
+		  </tags>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(231,196,70)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+		  <li>Clothing</li>
+		</tradeTags>
+		<comps>
+			<li Class="GiveThingsPsycasts.CompProperties_GiveThingsPsycasts">
+			<compClass>GiveThingsPsycasts.CompGiveThingsPsycasts</compClass>
+			<PsycastDefName>WordOfSerenity_PSY</PsycastDefName>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>Apparel_Coronet_PSY</defName>
+		<label>coronet</label>
+		<description>A small crown-like piece of headwear made of metal.</description>
+		<descriptionHyperlinks><AbilityDef>WordOfSerenity_PSY</AbilityDef></descriptionHyperlinks>
+		<smeltable>false</smeltable>
+		<thingCategories>
+		  <li>HeadgearNoble</li>
+		</thingCategories>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/Coronet/Coronet</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(0.8, 0.8)</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <WorkToMake>8000</WorkToMake>
+		  <Mass>0.7</Mass>
+		  <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<equippedStatOffsets>
+		  <SocialImpact>0.2</SocialImpact>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Coronet/Coronet</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>Royal</li>
+			<li>RoyalTier5</li>
+		  </tags>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(231,196,70)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+		  <li>Clothing</li>
+		</tradeTags>
+		<comps>
+			<li Class="GiveThingsPsycasts.CompProperties_GiveThingsPsycasts">
+			<compClass>GiveThingsPsycasts.CompGiveThingsPsycasts</compClass>
+			<PsycastDefName>WordOfSerenity_PSY</PsycastDefName>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="PsychicApparelBase">
+		<defName>Apparel_PsyfocusRobe_PSY</defName>
+		<description>A long robe embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate neural heat.</description>
+		<label>eltex robe</label>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/EltexRobe/EltexRobe</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+		  <li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+		  <MarketValue>600</MarketValue>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>0.5</Mass>
+		  <ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.04</ArmorRating_Heat>
+		  <Insulation_Cold>15</Insulation_Cold>
+		  <Insulation_Heat>1</Insulation_Heat>
+		  <EquipDelay>2</EquipDelay>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<equippedStatOffsets>
+		  <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+		  <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/EltexRobe/EltexRobe</wornGraphicPath>
+		  <layers>
+			<li>Shell</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+			  <only>(57,87,93)</only>
+			</li>
+			<li>
+			  <only>(51,27,49)</only>
+			</li>
+		  </options>
+		</colorGenerator>
+		<comps>
+			<li Class="GiveThingsPsycasts.CompProperties_GiveThingsPsycasts">
+			<compClass>GiveThingsPsycasts.CompGiveThingsPsycasts</compClass>
+			<PsycastDefName>WordOfTrust_PSY</PsycastDefName>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

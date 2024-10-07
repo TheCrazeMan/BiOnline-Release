@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<VisibleRaidPoints_RaidPointsUsed>Threat points used</VisibleRaidPoints_RaidPointsUsed>
+	<VisibleRaidPoints_ShowPointsInLetterLabel>Show points in letter label</VisibleRaidPoints_ShowPointsInLetterLabel>
+	<VisibleRaidPoints_ShowPointsInLetterText>Show points in letter text</VisibleRaidPoints_ShowPointsInLetterText>
+	<VisibleRaidPoints_ShowBreakdownInLetterText>Show points breakdown in letter text</VisibleRaidPoints_ShowBreakdownInLetterText>
+	<VisibleRaidPoints_IncidentWorkerTypes>Enabled event types</VisibleRaidPoints_IncidentWorkerTypes>
+	<VisibleRaidPoints_Modify>Modify</VisibleRaidPoints_Modify>
+	<VisibleRaidPoints_EnableAll>Enable all</VisibleRaidPoints_EnableAll>
+	<VisibleRaidPoints_DisableAll>Disable all</VisibleRaidPoints_DisableAll>
+	<VisibleRaidPoints_AggressiveAnimals>Manhunter pack</VisibleRaidPoints_AggressiveAnimals>
+	<VisibleRaidPoints_AmbushEnemyFaction>Caravan ambush (human)</VisibleRaidPoints_AmbushEnemyFaction>
+	<VisibleRaidPoints_AmbushManhunterPack>Caravan ambush (animals)</VisibleRaidPoints_AmbushManhunterPack>
+	<VisibleRaidPoints_AnimalInsanityMass>Mad animals</VisibleRaidPoints_AnimalInsanityMass>
+	<VisibleRaidPoints_AnomalyEndgame>Void awakening</VisibleRaidPoints_AnomalyEndgame>
+	<VisibleRaidPoints_CaravanDemand>Caravan demand</VisibleRaidPoints_CaravanDemand>
+	<VisibleRaidPoints_ChimeraAssault>Chimera assault</VisibleRaidPoints_ChimeraAssault>
+	<VisibleRaidPoints_CrashedShipPart>Psychic/defoliator ship</VisibleRaidPoints_CrashedShipPart>
+	<VisibleRaidPoints_CropBlight>Crop blight</VisibleRaidPoints_CropBlight>
+	<VisibleRaidPoints_DeepDrillInfestation>Too deep: Infestation</VisibleRaidPoints_DeepDrillInfestation>
+	<VisibleRaidPoints_DevourerAssault>Devourer assault</VisibleRaidPoints_DevourerAssault>
+	<VisibleRaidPoints_DevourerWaterAssault>Devourer water assault</VisibleRaidPoints_DevourerWaterAssault>
+	<VisibleRaidPoints_EntitySwarm>Entity swarm</VisibleRaidPoints_EntitySwarm>
+	<VisibleRaidPoints_FleshbeastAttack>Fleshbeast attack</VisibleRaidPoints_FleshbeastAttack>
+	<VisibleRaidPoints_FleshmassHeart>Fleshmass heart</VisibleRaidPoints_FleshmassHeart>
+	<VisibleRaidPoints_GhoulAttack>Ghoul attack</VisibleRaidPoints_GhoulAttack>
+	<VisibleRaidPoints_GiveQuest>Quest</VisibleRaidPoints_GiveQuest>
+	<VisibleRaidPoints_GorehulkAssault>Gorehulk assault</VisibleRaidPoints_GorehulkAssault>
+	<VisibleRaidPoints_HateChanters>Hate chanters</VisibleRaidPoints_HateChanters>
+	<VisibleRaidPoints_Infestation>Infestation</VisibleRaidPoints_Infestation>
+	<VisibleRaidPoints_InsectJelly>Insect jelly</VisibleRaidPoints_InsectJelly>
+	<VisibleRaidPoints_MechCluster>Mech cluster</VisibleRaidPoints_MechCluster>
+	<VisibleRaidPoints_NoctolAttack>Noctol attack</VisibleRaidPoints_NoctolAttack>
+	<VisibleRaidPoints_PitGateEmergence>Pit gate emergence</VisibleRaidPoints_PitGateEmergence>
+	<VisibleRaidPoints_PsychicDrone>Psychic drone</VisibleRaidPoints_PsychicDrone>
+	<VisibleRaidPoints_PsychicRitualSiege>Cultist psychic ritual</VisibleRaidPoints_PsychicRitualSiege>
+	<VisibleRaidPoints_RaidEnemy>Raid</VisibleRaidPoints_RaidEnemy>
+	<VisibleRaidPoints_RaidFriendly>Friendlies</VisibleRaidPoints_RaidFriendly>
+	<VisibleRaidPoints_ShamblerAssault>Shambler assault</VisibleRaidPoints_ShamblerAssault>
+	<VisibleRaidPoints_ShamblerSwarm>Shambler swarm</VisibleRaidPoints_ShamblerSwarm>
+	<VisibleRaidPoints_SightstealerArrival>Sightstealer arrival</VisibleRaidPoints_SightstealerArrival>
+	<VisibleRaidPoints_SightstealerSwarm>Distant shriek</VisibleRaidPoints_SightstealerSwarm>
+	<VisibleRaidPoints_TraderCaravanArrival>Trade caravan</VisibleRaidPoints_TraderCaravanArrival>
+	<VisibleRaidPoints_TravelerGroup>Travelers</VisibleRaidPoints_TravelerGroup>
+	<VisibleRaidPoints_VisitorGroup>Visitors</VisibleRaidPoints_VisitorGroup>
+	<VisibleRaidPoints_WastepackInfestation>Wastepack infestation</VisibleRaidPoints_WastepackInfestation>
+	<VisibleRaidPoints_PointsBreakdown>Threat Points Breakdown</VisibleRaidPoints_PointsBreakdown>
+	<VisibleRaidPoints_BreakdownInitialValueDesc>Initial value</VisibleRaidPoints_BreakdownInitialValueDesc>
+	<VisibleRaidPoints_BreakdownPlayerWealthForStorytellerDesc>Player wealth for storyteller</VisibleRaidPoints_BreakdownPlayerWealthForStorytellerDesc>
+	<VisibleRaidPoints_BreakdownPlayerWealthForStorytellerExpl>TotalWealth - (BuildingWealth / 2)</VisibleRaidPoints_BreakdownPlayerWealthForStorytellerExpl>
+	<VisibleRaidPoints_BreakdownPointsFromWealthDesc>Points from wealth</VisibleRaidPoints_BreakdownPointsFromWealthDesc>
+	<VisibleRaidPoints_BreakdownPointsPerPawnDesc>Points per pawn</VisibleRaidPoints_BreakdownPointsPerPawnDesc>
+	<VisibleRaidPoints_BreakdownPointsPerPawnExpl>based on wealth</VisibleRaidPoints_BreakdownPointsPerPawnExpl>
+	<VisibleRaidPoints_BreakdownPointsFromPawnsDesc>Total points from pawns</VisibleRaidPoints_BreakdownPointsFromPawnsDesc>
+	<VisibleRaidPoints_BreakdownTargetRandomFactorDesc>Caravan random factor</VisibleRaidPoints_BreakdownTargetRandomFactorDesc>
+	<VisibleRaidPoints_BreakdownAdaptationFactorDesc>Adaptation factor</VisibleRaidPoints_BreakdownAdaptationFactorDesc>
+	<VisibleRaidPoints_BreakdownThreatScaleDesc>Threat scale</VisibleRaidPoints_BreakdownThreatScaleDesc>
+	<VisibleRaidPoints_BreakdownGraceFactorDesc>Grace factor</VisibleRaidPoints_BreakdownGraceFactorDesc>
+	<VisibleRaidPoints_BreakdownGraceFactorExpl>based on age of colony</VisibleRaidPoints_BreakdownGraceFactorExpl>
+	<VisibleRaidPoints_BreakdownClampLowDesc>Force minimum 35 points</VisibleRaidPoints_BreakdownClampLowDesc>
+	<VisibleRaidPoints_BreakdownClampHighDesc>Force maximum {0} points</VisibleRaidPoints_BreakdownClampHighDesc>
+	<VisibleRaidPoints_BreakdownPreCalculatedPointsDesc>Pre-calculated points</VisibleRaidPoints_BreakdownPreCalculatedPointsDesc>
+	<VisibleRaidPoints_BreakdownTotal>Final result</VisibleRaidPoints_BreakdownTotal>
+	<VisibleRaidPoints_StorytellerRandomFactorDesc>Randy Random factor</VisibleRaidPoints_StorytellerRandomFactorDesc>
+	<VisibleRaidPoints_RaidArrivalModeFactorDesc>Raid arrival mode factor</VisibleRaidPoints_RaidArrivalModeFactorDesc>
+	<VisibleRaidPoints_RaidStrategyFactorDesc>Raid strategy factor</VisibleRaidPoints_RaidStrategyFactorDesc>
+	<VisibleRaidPoints_RaidAgeRestrictionFactorDesc>Raid age restriction factor</VisibleRaidPoints_RaidAgeRestrictionFactorDesc>
+	<VisibleRaidPoints_PollutionRaidFactorDesc>Pollution raid factor</VisibleRaidPoints_PollutionRaidFactorDesc>
+	<VisibleRaidPoints_AmbushManhunterFactorDesc>Caravan ambush (animals) factor</VisibleRaidPoints_AmbushManhunterFactorDesc>
+	<VisibleRaidPoints_CaravanDemandFactorDesc>Caravan demand random factor</VisibleRaidPoints_CaravanDemandFactorDesc>
+	<VisibleRaidPoints_CrashedShipPartFactorDesc>Crashed ship part factor</VisibleRaidPoints_CrashedShipPartFactorDesc>
+	<VisibleRaidPoints_DeepDrillInfestationFactorDesc>Deep drill infestation random factor</VisibleRaidPoints_DeepDrillInfestationFactorDesc>
+	<VisibleRaidPoints_InfestationFactorDesc>Infestation factor</VisibleRaidPoints_InfestationFactorDesc>
+	<VisibleRaidPoints_IntermediateTotalDesc>Intermediate total</VisibleRaidPoints_IntermediateTotalDesc>
+	<VisibleRaidPoints_AnimalInsanityMassCalcDesc>Animal mass insanity adjustment</VisibleRaidPoints_AnimalInsanityMassCalcDesc>
+	<VisibleRaidPoints_CrashedShipPartMinDesc>Crashed ship part minimum 300 points</VisibleRaidPoints_CrashedShipPartMinDesc>
+	<VisibleRaidPoints_DeepDrillInfestationMinDesc>Deep drill infestation minimum 200 points</VisibleRaidPoints_DeepDrillInfestationMinDesc>
+	<VisibleRaidPoints_DeepDrillInfestationMaxDesc>Deep drill infestation maximum 1000 points</VisibleRaidPoints_DeepDrillInfestationMaxDesc>
+	<VisibleRaidPoints_MechClusterMaxDesc>Mech cluster maximum 10000 points</VisibleRaidPoints_MechClusterMaxDesc>
+	<VisibleRaidPoints_SightstealerSwarmFactorDesc>Sightstealer swarm factor</VisibleRaidPoints_SightstealerSwarmFactorDesc>
+	<VisibleRaidPoints_GorehulkAssaultMinDesc>Gorehulk assault minimum {0} points</VisibleRaidPoints_GorehulkAssaultMinDesc>
+	<VisibleRaidPoints_GorehulkAssaultMinFactorDesc>Gorehulk assault minimum factor</VisibleRaidPoints_GorehulkAssaultMinFactorDesc>
+	<VisibleRaidPoints_EntitySwarmRandomFactorDesc>Entity swarm random factor</VisibleRaidPoints_EntitySwarmRandomFactorDesc>
+	<VisibleRaidPoints_EntitySwarmMinDesc>Entity swarm minimum {0} points</VisibleRaidPoints_EntitySwarmMinDesc>
+	<VisibleRaidPoints_FleshbeastAttackFactorDesc>Fleshbeast attack factor</VisibleRaidPoints_FleshbeastAttackFactorDesc>
+	<VisibleRaidPoints_NoctolithsDamagedFactorDesc>Noctoliths damaged factor</VisibleRaidPoints_NoctolithsDamagedFactorDesc>
+	<VisibleRaidPoints_DevourerAssaultMinDesc>Devourer assault minimum {0} points</VisibleRaidPoints_DevourerAssaultMinDesc>
+	<VisibleRaidPoints_DevourerAssaultMinFactorDesc>Devourer assault minimum factor</VisibleRaidPoints_DevourerAssaultMinFactorDesc>
+	<VisibleRaidPoints_DevourerWaterAssaultFactorDesc>Devourer water assault factor</VisibleRaidPoints_DevourerWaterAssaultFactorDesc>
+	<VisibleRaidPoints_ChimeraAssaultMinDesc>Chimera assault minimum {0} points</VisibleRaidPoints_ChimeraAssaultMinDesc>
+	<VisibleRaidPoints_ChimeraAssaultMinFactorDesc>Chimera assault minimum factor</VisibleRaidPoints_ChimeraAssaultMinFactorDesc>
+	<VisibleRaidPoints_HateChantersMinDesc>Hate chanters minimum {0} points</VisibleRaidPoints_HateChantersMinDesc>
+	<VisibleRaidPoints_HateChantersMinFactorDesc>Hate chanters minimum factor</VisibleRaidPoints_HateChantersMinFactorDesc>
+	<VisibleRaidPoints_RaidStrategyMinDesc>Raid strategy minimum {0} points</VisibleRaidPoints_RaidStrategyMinDesc>
+	<VisibleRaidPoints_FactionMinDesc>Faction minimum {0} points</VisibleRaidPoints_FactionMinDesc>
+	<VisibleRaidPoints_PsychicRitualQualityDesc>Psychic ritual quality</VisibleRaidPoints_PsychicRitualQualityDesc>
+	<VisibleRaidPoints_PsychicRitualQualityFactorDesc>Psychic ritual quality factor</VisibleRaidPoints_PsychicRitualQualityFactorDesc>
+	<VisibleRaidPoints_PsychicRitualSiegeThreatDesc>Psychic ritual siege threat</VisibleRaidPoints_PsychicRitualSiegeThreatDesc>
+	<VisibleRaidPoints_VoidAwakeningFactorDesc>Void awakening factor</VisibleRaidPoints_VoidAwakeningFactorDesc>
+</LanguageData>

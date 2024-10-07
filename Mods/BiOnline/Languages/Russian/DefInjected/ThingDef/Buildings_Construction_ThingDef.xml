@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Buildings/Buildings_Construction.xml-->
+<GlassWallTransparent.label>прозрачная стена</GlassWallTransparent.label>
+<GlassWallTransparent.description>Непроходимая стена, через которую проходит свет. Достаточно крепкая, чтобы поддерживать крышу</GlassWallTransparent.description>
+<ReinforcedWall.label>укреплённая стена</ReinforcedWall.label>
+<ReinforcedWall.description>Непроходимая стена. Достаточно крепкая, чтобы поддерживать крышу.</ReinforcedWall.description>
+<ReinforcedEmbrasure.label>укреплённая амбразура</ReinforcedEmbrasure.label>
+<ReinforcedEmbrasure.description>Непроходимая стена, через которую возможно вести огонь.</ReinforcedEmbrasure.description>
+<ChunkRockBarricade.label>Баррикада из каменных обломков</ChunkRockBarricade.label>
+<ChunkRockBarricade.description>Выложенные друг на друге каменные обломки. Строение не очень прочное и может быть легко разрушено</ChunkRockBarricade.description>
+<Palisade.label>Частокол</Palisade.label>
+<Palisade.description>Простой частокол. Строится дольше, чем другие стены, но зато более прочный.</Palisade.description>
+<Palisade_Corner.label>Частокол (угловой)</Palisade_Corner.label>
+<Palisade_Corner.description>Угловой частокол. Строится дольше, чем другие стены, но отличается большей прочностью.</Palisade_Corner.description>
+<Palisade_Embrasures.label>Частокол с амбразурой</Palisade_Embrasures.label>
+<Palisade_Embrasures.description>Защитное сооружение для частокола. Оставляет свободное пространство для стрельбы из дальнобойного оружия, сохраняя при этом хорошую прочность.</Palisade_Embrasures.description>
+<StoneFortifiedWall.label>Укреплённая каменная стена</StoneFortifiedWall.label>
+<StoneFortifiedWall.description>Укреплённая стена из каменных блоков. Для более лучшей прочности, между камнями наноситься слой глины.</StoneFortifiedWall.description>
+<StoneFortifiedEmbrasures.label>Укреплённая каменная амбразура</StoneFortifiedEmbrasures.label>
+<TentWall.label>Палаточная стена</TentWall.label>
+<TentWall.description>Палаточная стена.  Мало весит и очень хрупкая, отлично подойдёт что бы укрыться от непогоды</TentWall.description>
+<IndustrialTentWall.label>Стена современной палатки</IndustrialTentWall.label>
+<IndustrialTentWall.description>Часть современной палатки, весит мало, защитит вас разве что от комаров, но зато не так хорошо горит и немного даже отдаёт уютом.</IndustrialTentWall.description>
+<Spike.label>Колья</Spike.label>
+<Spike.description>Деревянные колья не пропустят ваших врагов</Spike.description>
+<DoubleDoor.label>Двойная дверь</DoubleDoor.label>
+<DoubleDoor.description>Как дверь, но в два раза больше!</DoubleDoor.description>
+<DoubleAutoDoor.label>Двойная автодверь</DoubleAutoDoor.label>
+<DoubleAutoDoor.description>Как двойная дверь, но теперь ещё и автоматическая.</DoubleAutoDoor.description>
+</LanguageData>

@@ -1,0 +1,29 @@
+<Defs>
+
+	<ScenPartDef>
+		<defName>FactionReputationLimiter</defName>
+		<label>Limit for faction relation</label>
+		<category>Fixed</category>
+		<scenPartClass>BiOnline.Scenarios.ScenPart_FactionReputationLimiter</scenPartClass>
+		<summaryPriority>1000</summaryPriority>
+	</ScenPartDef>
+
+	<ScenPartDef>
+		<defName>ForcedFactionGoodwill</defName>
+		<label>forced faction relations</label>
+		<scenPartClass>BiOnline.Scenarios.ScenPart_ForcedFactionGoodwill</scenPartClass>
+		<category>Misc</category>
+		<selectionWeight>1.0</selectionWeight>
+		<summaryPriority>340</summaryPriority>
+	</ScenPartDef>
+	
+	<ScenPartDef>
+		<defName>BiOnlineForcedHediff</defName>
+		<label>forced health condition</label>
+		<scenPartClass>BiOnline.Scenarios.ScenPart_BiOnlineForcedHediff</scenPartClass>
+		<category>PlayerPawnModifier</category>
+		<selectionWeight>1.0</selectionWeight>
+		<summaryPriority>459</summaryPriority>
+	</ScenPartDef>
+
+</Defs>

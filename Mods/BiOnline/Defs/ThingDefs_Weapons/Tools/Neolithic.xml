@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="MeleeWeaponNeolithic" ParentName="BaseWeapon">
+		<techLevel>Neolithic</techLevel>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TribalBench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		  <skillRequirements>
+			<Crafting>4</Crafting>
+		  </skillRequirements>
+			<researchPrerequisite>Neolithic_Tools</researchPrerequisite>
+		</recipeMaker>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+
+	<ThingDef ParentName="MeleeWeaponNeolithic">
+		<defName>BiO_MeleeWeaponNeolithic_Hammer</defName>
+		<label>Stone Hammer</label>
+		<description>A rough-looking stone Hammer. Better than nothing.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Neolithic/BiO_StoneHammer</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>2.5</Mass>
+		  <WorkToMake>5000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<stuffCategories>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>			
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<equippedStatOffsets>
+		  <ConstructionSpeed>0.20</ConstructionSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>bit</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+			</li>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>bit</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>0.2</armorPenetrationBlunt>
+			</li>		
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1</cooldownTime>
+				<armorPenetrationBlunt>2.1</armorPenetrationBlunt>
+			</li>	
+			
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="MeleeWeaponNeolithic">
+		<defName>BiO_MeleeWeaponNeolithic_Axe</defName>
+		<label>Stone Axe</label>
+		<description>A rough-looking stone Axe. Better than nothing.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Neolithic/BiO_StoneAxe</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>2.8</Mass>
+		  <WorkToMake>5000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<stuffCategories>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>			
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<equippedStatOffsets>
+		  <PlantWorkSpeed>0.20</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>blade</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.735</armorPenetrationSharp>
+			</li>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.82</armorPenetrationSharp>
+			</li>
+			
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>
+
+
+	<ThingDef ParentName="MeleeWeaponNeolithic">
+		<defName>BiO_MeleeWeaponNeolithic_Pickaxe</defName>
+		<label>Stone Pickaxe</label>
+		<description>A rough-looking stone pickaxe. Better than nothing.</description>
+		<graphicData>
+		  <texPath>Things/Equipment/WeaponMelee/Tools/Neolithic/BiO_pickaxe</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>2.5</Mass>
+		  <WorkToMake>5000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<stuffCategories>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>			
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<equippedStatOffsets>
+		  <MiningSpeed>0.20</MiningSpeed>
+		</equippedStatOffsets>
+		<tools>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>bit</label>
+				<capacities>
+				  <li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+			</li>
+		
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1</cooldownTime>
+				<armorPenetrationBlunt>2.1</armorPenetrationBlunt>
+			</li>
+			
+		</tools>
+		<weaponTags>
+		  <li>Tool</li>
+		</weaponTags>
+	</ThingDef>		
+</Defs>

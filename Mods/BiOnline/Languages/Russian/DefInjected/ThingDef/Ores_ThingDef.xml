@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ThingDefs_Items/Ores/Ores.xml-->
+<MineableLeadOre.label>Свинцовая руда</MineableLeadOre.label>
+<MineableLeadOre.description>Порода свинцовой руды.</MineableLeadOre.description>
+
+<MineableTitaniumOre.label>Титановая руда</MineableTitaniumOre.label>
+<MineableTitaniumOre.description>Порода титановой руды.</MineableTitaniumOre.description>
+
+<MineableCeramiteOre.label>Керамитовая руда</MineableCeramiteOre.label>
+<MineableCeramiteOre.description>Керамитовая рудная порода.</MineableCeramiteOre.description>
+
+<MineableChlorophyteOre.label>Хлорофитовая руда</MineableChlorophyteOre.label>
+<MineableChlorophyteOre.description>Порода хлорофитовой руды.</MineableChlorophyteOre.description>
+
+<MineableMithrilOre.label>Мифриловая руда</MineableMithrilOre.label>
+<MineableMithrilOre.description>Камень из мифриловой руды</MineableMithrilOre.description>
+
+<BIO_MineableCoal.label>Угольная руда</BIO_MineableCoal.label>
+<BIO_MineableCoal.description>Камень, содержащий кусочки угля.</BIO_MineableCoal.description>
+
+<BIO_MineableIron.label>Железная руда</BIO_MineableIron.label>
+<BIO_MineableIron.description>Камень, содержащий кусочки железа.</BIO_MineableIron.description>
+
+<BIO_Mineable_Cold_Stone.label>Хладокаменная руда</BIO_Mineable_Cold_Stone.label>
+<BIO_Mineable_Cold_Stone.description>Месторождение холодного камня.</BIO_Mineable_Cold_Stone.description>
+
+<BIO_Mineable_Sulfur.label>Каменная сера</BIO_Mineable_Sulfur.label>
+<BIO_Mineable_Sulfur.description>Каменная сера</BIO_Mineable_Sulfur.description>
+
+<BIO_Mineable_Salt.label>Каменная соль</BIO_Mineable_Salt.label>
+<BIO_Mineable_Salt.description>Каменная соль</BIO_Mineable_Salt.description>
+
+<BIO_Mineable_Saltpeter.label>Каменная селитра</BIO_Mineable_Saltpeter.label>
+<BIO_Mineable_Saltpeter.description>Каменная селитра</BIO_Mineable_Saltpeter.description>
+
+</LanguageData>

@@ -1,0 +1,35 @@
+<LanguageData>
+
+	<DefleXitol_Effect.label>Под действием Дефлексотора</DefleXitol_Effect.label>
+	<DefleXitol_Effect.description>Данное существо сейчас находится под действием Дефлексотора, а потому получает меньше урона ото всех входящих атак.</DefleXitol_Effect.description>
+	<DefleXitol_Effect.labelNoun>действие Дефлексотора</DefleXitol_Effect.labelNoun>
+
+	<PyroForm_Effect.label>Под действием Пироформа</PyroForm_Effect.label>
+	<PyroForm_Effect.description>Данное существо сейчас находится под действием Пироформа, а потому не может загореться и переносит крайне высокие температуры.</PyroForm_Effect.description>
+	<PyroForm_Effect.labelNoun>действие Пироформа</PyroForm_Effect.labelNoun>
+
+	<MulE_Effect.label>Под действием Мулл-И</MulE_Effect.label>
+	<MulE_Effect.description>Данное существо сейчас находится под действием Мулл-и, а потому может переносить большие грузы, однако получает больше урона ото всех входящих атак.</MulE_Effect.description>
+	<MulE_Effect.labelNoun>действие Мулл-И</MulE_Effect.labelNoun>
+
+	<Trasylol_500k_Effect.label>Под действием Трасилола 500тыс</Trasylol_500k_Effect.label>
+	<Trasylol_500k_Effect.description>Данное существо находится под действием Трасилола 500тыс, а потому почти не истекает кровью и не чувствует боли.</Trasylol_500k_Effect.description>
+	<Trasylol_500k_Effect.labelNoun>действие Трасилола 500тыс</Trasylol_500k_Effect.labelNoun>
+
+	<Regenostas_Effect.label>Под действием Регеностаза</Regenostas_Effect.label>
+	<Regenostas_Effect.description>Данное существо находится под действием Регеностаза, а потому не может передвигаться, однако получает огромный прирост к естественной регенерации.</Regenostas_Effect.description>
+	<Regenostas_Effect.labelNoun>действие Регеностаза</Regenostas_Effect.labelNoun>
+
+	<Dofa_Effect.label>Под действием Дофы</Dofa_Effect.label>
+	<Dofa_Effect.description>Данное существо находится под действием Дофы, а потому делает любую работу несколько эффективнее.</Dofa_Effect.description>
+	<Dofa_Effect.labelNoun>действие Дофы</Dofa_Effect.labelNoun>
+
+	<Flexitol_Effect.label>ПоД дЕйСтВиЕм ФлЕкСиТоЛа</Flexitol_Effect.label>
+	<Flexitol_Effect.description>Данное сущетсво находится в состоянии полного балдежа, а так же быстрее усваивает любую информацию.</Flexitol_Effect.description>
+	<Flexitol_Effect.labelNoun>действие Флекситола</Flexitol_Effect.labelNoun>
+
+	<PsyBlocker_Effect.label>Под действием ПсиБлока</PsyBlocker_Effect.label>
+	<PsyBlocker_Effect.description>Данное существо находится под действием ПсиБлока, а потому почти невосприимчиво к псионическому воздействию.</PsyBlocker_Effect.description>
+	<PsyBlocker_Effect.labelNoun>действие ПсиБлока</PsyBlocker_Effect.labelNoun>
+
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<WaterForBill.label>Вода</WaterForBill.label>
+	<WaterForBill.description>Чистая вода, которую можно использовать в кулинарии и промышленности.</WaterForBill.description>
+
+	<HeatForBill.label>Тепло</HeatForBill.label>
+	<HeatForBill.description>Требование тепла для производства рецепта.</HeatForBill.description>
+
+
+	<BiCoin.label>BiCoin</BiCoin.label>
+	<BiCoin.description>Физическая монета BiCoin'а. Ценится среди различных полулегальных торговцев и охотников за головами.</BiCoin.description>
+</LanguageData>

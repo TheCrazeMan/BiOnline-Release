@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MakeAmmo_MusketBall"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Lats</researchPrerequisite>
+				</value>
+			  </li>
+			  
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>FlakArmor</researchPrerequisite>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>

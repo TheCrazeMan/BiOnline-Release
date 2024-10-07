@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+            <operations>
+
+
+				<li Class="PatchOperationRemove">
+				<xpath>Defs/AbilityDef[defName="Neuroquake"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/AbilityDef[defName="Invisibility"]</xpath>
+				<value>
+				
+					<AbilityDef ParentName="PsycastBase">
+						<defName>Invisibility</defName>
+						<label>invisibility</label>
+						<description>Psychically manipulate the visual centers of everyone nearby, rendering them unable to perceive a particular individual for a short time.</description>
+						<level>5</level>
+						<iconPath>UI/Abilities/Invisibility</iconPath>
+						<writeCombatLog>True</writeCombatLog>
+						<hotKey>Misc12</hotKey>
+						<statBases>
+						  <Ability_EntropyGain>80</Ability_EntropyGain>
+						  <Ability_PsyfocusCost>0.30</Ability_PsyfocusCost>
+						  <Ability_Duration>5</Ability_Duration>
+						</statBases>
+						<verbProperties>
+						  <warmupTime>5</warmupTime>
+						  <range>10</range>
+						  <onlyManualCast>True</onlyManualCast>
+						  <targetParams>
+							<canTargetSelf>True</canTargetSelf>
+							<canTargetAnimals>True</canTargetAnimals>
+						  </targetParams>
+						</verbProperties>
+						<comps>
+						  <li Class = "CompProperties_AbilityGiveHediff">
+							<compClass>CompAbilityEffect_GiveHediff</compClass>
+							<hediffDef>PsychicInvisibility</hediffDef>
+							<psychic>True</psychic>
+						  </li>
+						  <li Class="CompProperties_AbilityFleckOnTarget">
+							<fleckDef>PsycastPsychicEffect</fleckDef>
+						  </li>
+						</comps>
+					</AbilityDef>
+				
+				</value>
+				</li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

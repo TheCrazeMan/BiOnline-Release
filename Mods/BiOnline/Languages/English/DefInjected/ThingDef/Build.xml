@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Advanced_Hydroponics.label>Advanced hydroponics (1х1)</Advanced_Hydroponics.label>
+	<Advanced_Hydroponics.description>Advanced hydroponics designed to grow almost any kind of plant. Each individual cell is equipped with a solar lamp.</Advanced_Hydroponics.description>
+
+	<MedicalBench.label>Medical bench</MedicalBench.label>
+	<MedicalBench.description>An improved version of the workbench designed for working with medical devices and bionic prostheses.</MedicalBench.description>
+
+	<SerumCoder.label>Serum coder</SerumCoder.label>
+	<SerumCoder.description>In simple words - a potion maker's cauldron, but for utopian worlds. It allows you to create serums, as well as neurotrainers. The pleasure is not cheap, and also takes quite a long time.</SerumCoder.description>
+	
+</LanguageData>

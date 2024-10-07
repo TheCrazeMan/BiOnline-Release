@@ -1,0 +1,12 @@
+<Patch>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Apparel_HatHood"]/apparel/layers</xpath>
+			<value>
+				<layers>
+				  <li>OverheadExtra</li>
+				</layers>
+			</value>
+		</Operation>
+
+</Patch>

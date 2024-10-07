@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Миномётный обстрел-->
+	<GameConditionDef>
+		<defName>MortarStrike</defName>
+		<conditionClass>BiOnline.Events.GameCondition_MortarStrike</conditionClass>
+		<label>Mortar strike</label>
+		<description>Enemy troops are firing mortars at you!</description>
+		<descriptionFuture>Enemy troops are firing mortars at you!</descriptionFuture>
+		<endMessage>It looks like the enemy is out of ammunition.</endMessage>
+		<letterText>Enemy troops are firing mortars at you!</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<natural>false</natural>
+		<modExtensions>
+			<li Class="BiOnline.Events.IncidentSettingsDefModExtension">
+				<props Class="BiOnline.Events.IncidentSettingsProps_MortarStrike">
+					<shellsByrWealthCurve>
+						<points>
+							<li>(300000, 30)</li>
+							<li>(1000000, 60)</li>
+						</points>
+					</shellsByrWealthCurve>
+					<infestationChance>0.05</infestationChance>
+					<shotTicksInterval>150~200</shotTicksInterval>
+					<priorityTargetsDefs>
+						<li>Turret_MiniTurret</li>
+						<li>Turret_Autocannon</li>
+						<li>Turret_Sniper</li>
+						<li>Turret_AGSThirty</li>
+						<li>Turret_M240B</li>
+						<li>Turret_KPV</li>
+						<li>Turret_Medium</li>
+						<li>Turret_Heavy</li>
+						<li>Turret_Blaster</li>
+						<li>Turret_Flak</li>
+						<li>Turret_Mortar</li>
+						<li>CE_Artillery_Howitzer</li>
+						<li>Turret_RocketswarmLauncher</li>
+						<li>Sandbags</li>
+						<li>Barricade</li>
+						<li>TrapSpike</li>
+						<li>CE_Embrasure</li>
+						<li>ReinforcedEmbrasure</li>
+						<li>SolarGenerator</li>
+					</priorityTargetsDefs>
+				</props>
+			</li>
+		</modExtensions>
+	</GameConditionDef>
+	<!--Эми поле-->
+	<GameConditionDef>
+		<defName>PMC_EMIField</defName>
+		<conditionClass>BiOnline.Events.GameCondition_BiOnline_DisableElectricity</conditionClass>
+		<label>EMI field</label>
+		<description>An electromagnetic interference dynamo is projecting an EM interference field, disabling electrical devices.</description>
+		<descriptionFuture>a distant EMI dynamo will blast [map_definite] with an EMI field, shutting down electrical devices for [gameConditionDuration_duration]</descriptionFuture>
+		<endMessage>The EMI field has disappeared.</endMessage>
+		<letterText>An EMI field has been generated. It is disabling electrical devices.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>false</canBePermanent>
+		<natural>false</natural>
+	</GameConditionDef>
+</Defs>

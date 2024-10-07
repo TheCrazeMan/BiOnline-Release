@@ -1,0 +1,581 @@
+<Defs>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_Cloak</defName>
+		<label>cloak</label>
+		<description>Long cloak that can help to deal with big temperatures.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/Cloak/Cloak_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+        <generateCommonality>0.2</generateCommonality>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.6</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		    <StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+		    <StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Bulk>2</Bulk>
+			<WornBulk>0.5</WornBulk>
+			<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/Cloak/Cloak</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+				<li>Trashers</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Apparel_CloakHood</defName>
+    <label>cloak hood</label>
+    <description>Nice little hood, that could help to keep your head warm.</description>
+	<generateCommonality>0.8</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>100</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Head/Medieval/CloakHood/Cloak_Hood_UI</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+	  <Bulk>0.35</Bulk>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Medieval/CloakHood/Cloak_Hood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+		<li>Trashers</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.54,0.15,1)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(0.9,0.6,0.18,1)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(0.9,0.42,0.23,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+    <!-- ##### Medieval ##### -->
+    <!-- +++++ Gambeson +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_Gambeson</defName>
+		<label>gambeson</label>
+		<description>A padded defensive jacket providing medium isolation from cold temperatures.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/Gambeson/Gambeson</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>3.6</Mass>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.21</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			<Bulk>2.5</Bulk>
+			<WornBulk>1</WornBulk>
+			<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+		</statBases>
+		<thingCategories Inherit='False'>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/Gambeson/Gambeson</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>MedievalFabricArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Quilted_protection</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+	</ThingDef>
+
+    <!-- +++++ Quilted Vest +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_QuiltedVest</defName>
+		<label>quilted vest</label>
+		<description>A quilted defensive vest to be worn under armour for extra protection.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/QuiltedVest/QuiltedVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>4500</WorkToMake>
+			<Mass>2.4</Mass>
+			<Bulk>1.5</Bulk>
+			<WornBulk>0.5</WornBulk>
+			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.105</ArmorRating_Blunt>
+			<StuffEffectMultiplierInsulation_Cold>0.12</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.21</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.8</EquipDelay>
+		</statBases>
+    <thingCategories Inherit='False'>
+      <li>ApparelArmor</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/QuiltedVest/QuiltedVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MedievalFabricArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Quilted_protection</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<costList>
+			<Cloth>30</Cloth>
+		</costList>		
+	</ThingDef>
+
+    <!-- +++++ Light Plate Armor +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_LightPlateArmor</defName>
+		<label>light plate armor</label>
+		<description>Overlapping solid plates of armor covering the chest and shoulders.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Medieval/LightPlateArmor/LightPlateArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>130</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>230</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Bulk>52.5</Bulk>
+			<WornBulk>6</WornBulk>
+			<Mass>8</Mass>
+			<StuffEffectMultiplierArmor>2.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.08</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>ApparelArmor</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Medieval/LightPlateArmor/LightPlateArmor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MedievalLightArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+    <!-- +++++ Plate Shoulderpads +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_PlateShoulderpads</defName>
+		<label>plate shoulderpads</label>
+		<description>A pair of simple metal shoulder plates.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Medieval/PlateShoulderpads/PlateShoulderpads</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Bulk>4.5</Bulk>
+			<WornBulk>1.5</WornBulk>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>ApparelArmor</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Medieval/PlateShoulderpads/PlateShoulderpads</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MedievalLightArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Lats</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+    <!-- +++++ Chestplate +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_Chestplate</defName>
+		<label>chestplate</label>
+		<description>A metal chest plate providing the wearer with a high protection against most damage but limiting the movement considerably.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Medieval/Chestplate/Chestplate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>90</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>14000</WorkToMake>
+			<Bulk>30</Bulk>
+			<WornBulk>4.5</WornBulk>
+			<Mass>4.5</Mass>
+			<StuffEffectMultiplierArmor>2.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.12</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.045</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>ApparelArmor</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Medieval/Chestplate/Chestplate</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MedievalLightArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+    <!-- +++++ Chainmail +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_Chainmail</defName>
+		<label>chainmail</label>
+		<description>A coat of armor made out of small metal rings linked together forming a mesh, separated from the body with cloth padding.\n\nBeing quite heavy, this piece of armor slows down the wearer.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/Chainmail/Chainmail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>10</Mass>
+			<Bulk>10</Bulk>
+			<WornBulk>5</WornBulk>
+			<StuffEffectMultiplierArmor>1.341</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>ApparelArmor</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/Medieval/Chainmail/Chainmail</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>MedievalLightArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+    <!-- +++++ Plate Helmet +++++ -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_PlateHelmet</defName>
+		<label>plate helmet</label>
+		<description>A plate helmet which gives moderate protection against sharp attacks.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Medieval/PlateHelmet/PlateHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.5</generateCommonality>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Alloys_NonConstruct</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>6800</WorkToMake>
+			<Bulk>5</Bulk>
+			<WornBulk>1</WornBulk>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>-0.1</AimingAccuracy>
+			<MeleeHitChance>-0.5</MeleeHitChance>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>Teeth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Medieval/PlateHelmet/PlateHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalLightArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

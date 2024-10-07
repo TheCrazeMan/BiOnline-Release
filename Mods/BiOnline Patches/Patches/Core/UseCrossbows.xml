@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[defName = "Scavenger"]/weaponTags</xpath>
+		<value>
+			<li>MedievalRangedDecent</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[defName = "Pirate"]/weaponTags</xpath>
+		<value>
+			<li>MedievalRangedDecent</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[defName = "Town_Guard"]/weaponTags</xpath>
+		<value>
+			<li>MedievalRangedDecent</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[@Name = "MercenaryGunnerBase"]/weaponTags</xpath>
+		<value>
+			<li>MedievalRangedDecent</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnKindDef[defName = "VFEM_Medieval_Bowman"]/weaponTags</xpath>
+			<value>
+				<li>MedievalRangedDecent</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

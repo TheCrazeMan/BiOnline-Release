@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SandyMassCarried>当前负重</SandyMassCarried>
+  <SandyMassValue> {0} / {1} kg</SandyMassValue>
+  <Sandy_ViewList>显示列表</Sandy_ViewList>
+  <Sandy_Head>头部</Sandy_Head>
+  <Sandy_TorsoMiddle>躯干（中层）</Sandy_TorsoMiddle>
+  <Sandy_TorsoOnSkin>躯干（贴身）</Sandy_TorsoOnSkin>
+  <Sandy_TorsoShell>躯干（外套）</Sandy_TorsoShell>
+  <Sandy_Belt>腰带</Sandy_Belt>
+  <Sandy_Pants>裤子</Sandy_Pants>
+  <Sandy_PrimaryEquipment>主装备</Sandy_PrimaryEquipment>
+  <Sandy_SecondaryEquipment>双持副装备</Sandy_SecondaryEquipment>
+  <Sandy_ShieldLeft>左手盾牌</Sandy_ShieldLeft>
+  <Sandy_ShieldRight>右手盾牌</Sandy_ShieldRight>
+  <Sandy_VWE_Apparel_Exoframe>外骨骼(VWE)</Sandy_VWE_Apparel_Exoframe>
+  <Sandy_Inventory_Height>窗口高度</Sandy_Inventory_Height>
+  <Sandy_RPG_Style_Inventory_Title>RPG风格装备栏（CE兼容）</Sandy_RPG_Style_Inventory_Title>
+</LanguageData>

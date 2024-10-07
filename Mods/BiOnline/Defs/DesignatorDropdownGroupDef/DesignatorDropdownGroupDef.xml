@@ -1,0 +1,339 @@
+<Defs>
+	<DesignatorDropdownGroupDef>
+		<defName>DiggingSpots</defName>
+		<label>digging spots</label>
+		<iconSource>Placed</iconSource>
+	</DesignatorDropdownGroupDef>
+	
+	<!--Строения-->
+	<DesignatorDropdownGroupDef>
+		<defName>Structure_Walls</defName>
+		<label>Walls</label>
+		<description>Walls</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Structure_Walls</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Structure_Doors</defName>
+		<label>Doors</label>
+		<description>Doors</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Structure_Doors</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Structure_DoubleDoors</defName>
+		<label>Double Doors</label>
+		<description>Double Doors</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Structure_DobleDoors</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Structure_Fence</defName>
+		<label>Fence</label>
+		<description>Fence</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Structure_Fence</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	<!--Производство-->
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Cooking</defName>
+		<label>Cooking</label>
+		<description>Cooking</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Cooking</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Medicine</defName>
+		<label>Medicine</label>
+		<description>Medicine</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Medicine</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Sewing</defName>
+		<label>Sewing</label>
+		<description>Sewing</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Sewing</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Workbench</defName>
+		<label>Workbench</label>
+		<description>Workbench</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Workbench</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Farming</defName>
+		<label>Farming</label>
+		<description>Farming</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Farming</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Chemistry</defName>
+		<label>Chemistry</label>
+		<description>Chemistry</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Chemistry</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Processing</defName>
+		<label>Processing</label>
+		<description>Processing</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Processing</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Smelters</defName>
+		<label>Smelters</label>
+		<description>Smelters</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Smelters</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Forge</defName>
+		<label>Forge</label>
+		<description>Forge</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Forge</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Mechanisms</defName>
+		<label>Mechanisms</label>
+		<description>Mechanisms</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Mechanisms</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Mining</defName>
+		<label>Mining</label>
+		<description>Mining</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_Mining</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Misc</defName>
+		<label>Misc</label>
+		<description>Misc</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Misc</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Art</defName>
+		<label>Art</label>
+		<description>Art</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Art</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Production_Research</defName>
+		<label>Research</label>
+		<description>Research</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Research</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	<!--Нефть-->
+	<DesignatorDropdownGroupDef>
+		<defName>Production_OilRefining</defName>
+		<label>Oil refining</label>
+		<description>Oil refining</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Production_OilRefining</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	<!--Мебель-->
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_SingleBed</defName>
+		<label>SingleBed</label>
+		<description>SingleBed</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/SingleBed</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_DoubleBed</defName>
+		<label>DoubleBed</label>
+		<description>DoubleBed</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/DoubleBed</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Lighting</defName>
+		<label>Lighting</label>
+		<description>Lighting</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Lighting</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Decorations</defName>
+		<label>Decorations</label>
+		<description>Decorations</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Decorations</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Animal</defName>
+		<label>Animal</label>
+		<description>Animal</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Animal</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Tables</defName>
+		<label>Tables</label>
+		<description>Tables</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Tables</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Chairs</defName>
+		<label>Chairs</label>
+		<description>Chairs</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Chairs</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Monuments</defName>
+		<label>Monuments</label>
+		<description>Monuments</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Monuments</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Music</defName>
+		<label>Music</label>
+		<description>Music</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Music</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture_Children</defName>
+		<label>Children</label>
+		<description>Children</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Children</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Furniture</defName>
+		<label>Furniture</label>
+		<description>Furniture</description>
+		<modExtensions>
+			<li Class="BiOnline.Designators.DefModExtension_DesignatorDropdownGroupDef">
+				<menuIcon>UI/Designators/Furniture</menuIcon>
+			</li>
+		</modExtensions>
+	</DesignatorDropdownGroupDef>
+	<!--Энергия-->
+</Defs>

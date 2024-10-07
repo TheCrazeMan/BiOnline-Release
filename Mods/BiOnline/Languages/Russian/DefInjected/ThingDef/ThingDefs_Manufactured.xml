@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<Bandages.label>Бинт</Bandages.label>
+	<Bandages.description>Полоса ткани используемая для перевязки ран, наложения повязок. За раз может устранить 2 раны, обновлять каждые 4 часа</Bandages.description>
+	
+	<Hemostatic.label>Гемостатик</Hemostatic.label>
+	<Hemostatic.description>Гемостатик обладает кровоостанавливающим эффектом при непосредственном контакте с поврежденными тканями организма. За раз устраняет 6 кровотечений, требует замены каждые 6 часов</Hemostatic.description>
+	
+	<Glass.label>Стекло</Glass.label>
+	<Glass.description>Твердое, хрупкое вещество, известное своей прозрачностью. Изготавливается путем сплавления песка с камнем и быстрого охлаждения.</Glass.description>
+	
+	<HardenedGlass.label>Бронестекло</HardenedGlass.label>
+	<HardenedGlass.description>Стекло, но бронированное. Находит применение во многих отраслях промышленности.</HardenedGlass.description>
+	
+	<RawBrick.label>Сырой кирпич</RawBrick.label>
+	<RawBrick.description>Сырой кирпич, который необходимо обжечь в печи, чтобы использовать в строительстве.</RawBrick.description>
+	
+	<Brick.label>Кирпич</Brick.label>
+	<Brick.description>Кирпич. Применяется в основном для возведения долговечных простых конструкций. В отличие от каменных блоков, кирпич может использоваться только для создания стен и колонн.</Brick.description>
+	
+	<Ceramics.label>Керамика</Ceramics.label>
+	<Ceramics.description>Кучка керамики. Может использоваться в гончарном деле и в оборонительных целях.</Ceramics.description>
+	
+	<Cementum.label>Цемент</Cementum.label>
+	<Cementum.description>Ведро цемента.</Cementum.description>
+	
+	<SulfuricAcid.label>Серная кислота</SulfuricAcid.label>
+	<SulfuricAcid.description>Бутылка с серной кислотой</SulfuricAcid.description>
+	
+	<Polymers.label>Полимеры</Polymers.label>
+	<Polymers.description>Куча полимеров</Polymers.description>
+	
+	<Salt.label>Соль</Salt.label>
+	<Salt.description>Куча соли</Salt.description>
+	
+	<Saltpeter.label>Селитра</Saltpeter.label>
+	<Saltpeter.description>Куча селитры</Saltpeter.description>
+
+	<Sugar.label>Сахар</Sugar.label>
+	<Sugar.description>Куча сахара</Sugar.description>
+
+	<Spice.label>Специи</Spice.label>
+	<Spice.description>Куча специй</Spice.description>
+	
+	<Flour.label>Мука</Flour.label>
+	<Flour.description>Мешок муки</Flour.description>
+	
+	<Molasses.label>Патока</Molasses.label>
+	<Molasses.description>Ведро патоки. Может использоваться для получения дрожжей в бродильном кувшине.</Molasses.description>
+	
+	<Yeasts.label>Дрожжи</Yeasts.label>
+	<Yeasts.description>Упаковка дрожжей</Yeasts.description>
+
+	<ArmoredCloth.label>Армированная ткань</ArmoredCloth.label>
+	<ArmoredCloth.description>Армированная ткань, созданная с применением хитина в конструкции. Обеспечивает среднюю защиту от внешнего воздействия. Не слишком подходит для холодных регионов, а так же весит несколько больше, чем обычная ткань.</ArmoredCloth.description>
+	
+	<SynthreadKit.label>Компоненты синткани</SynthreadKit.label>
+	<SynthreadKit.description>Набор компонентов для создания синткани</SynthreadKit.description>
+	
+	<HyperweaveKit.label>Компоненты гиперткани</HyperweaveKit.label>
+	<HyperweaveKit.description>Набор компонентов для создания гиперткани</HyperweaveKit.description>
+
+	<ArmoredClothKit.label>Компоненты армированной ткани</ArmoredClothKit.label>
+	<ArmoredClothKit.description>Набор компонентов для создания армированной ткани</ArmoredClothKit.description>
+
+</LanguageData>

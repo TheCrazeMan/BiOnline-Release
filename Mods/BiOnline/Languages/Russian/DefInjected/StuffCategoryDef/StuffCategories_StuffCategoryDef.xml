@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/StuffCategoriesDefs/StuffCategories.xml-->
+<AlloysStrongMetals.label>Прочные металлы</AlloysStrongMetals.label>
+<Alloys_NonConstruct.label>Обработанные металлы</Alloys_NonConstruct.label>
+<Gold_NonConstruct.label>Золотой</Gold_NonConstruct.label>
+<Glass.label>Стеклянный</Glass.label>
+<Brick.label>Кирпичный</Brick.label>
+<Ceramics.label>Керамический</Ceramics.label>
+<StoneChunks.label>каменные обломки</StoneChunks.label>
+</LanguageData>

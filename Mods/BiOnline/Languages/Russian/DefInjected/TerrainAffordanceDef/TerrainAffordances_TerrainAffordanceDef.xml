@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/Misc/TerrainAffordances.xml-->
+<TerrainSand.label>Песок</TerrainSand.label>
+<TerrainWater.label>Вода</TerrainWater.label>
+<TerrainGravel.label>Гравий</TerrainGravel.label>
+<TerrainDirt.label>Земля</TerrainDirt.label>
+
+</LanguageData>

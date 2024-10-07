@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Defs>
+  <!-- Средневековье -->
+  
+  <!--Древесный уголь х25-->
+  <RecipeDef>
+    <defName>BIO_MakeCharcoalx25</defName>
+    <label>make charcoal х25</label>
+    <description>Burn wood in order to obtain charcoal, it is not so good as mineral coal, but still a good replacement.</description>
+    <jobString>Making Charcoal.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingI</researchPrerequisite>
+    <recipeUsers>
+	  <li>BiO_Smelter</li>
+      <li>Campfire</li>
+	  <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BIO_Coal>25</BIO_Coal>
+    </products>
+  </RecipeDef>
+
+
+  <!--Древесный уголь х100-->
+  <RecipeDef>
+    <defName>BIO_MakeCharcoalx100</defName>
+    <label>make charcoal х100</label>
+    <description>Burn wood in order to obtain charcoal, it is not so good as mineral coal, but still a good replacement.</description>
+    <jobString>Making Charcoal.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingI</researchPrerequisite>
+    <recipeUsers>
+	  <li>Advanced_Smelter</li>
+	  <li>BiO_Smelter</li>
+      <li>Campfire</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BIO_Coal>100</BIO_Coal>
+    </products>
+  </RecipeDef>
+
+  <!--Стальная смесь x5-->
+  <RecipeDef>
+    <defName>Make_Mixed_steel_packagex5</defName>
+    <label>Make Mixed steel package x5</label>
+    <description>Package with ready-mix for steel melting.</description>
+    <jobString>Making Mixed steel package.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingI</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>	
+    <recipeUsers>
+	  <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Iron</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_Coal</li>
+			<li>BIO_Coal</li>			
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Iron</li>
+		<li>BIO_Coal</li>
+		<li>BIO_Coal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Mixed_steel_package>5</Mixed_steel_package>
+    </products>
+  </RecipeDef>
+
+  <!--Стальная смесь х25-->
+  <RecipeDef>
+    <defName>Make_Mixed_steel_packagex25</defName>
+    <label>Make Mixed steel package x25</label>
+    <description>Package with ready-mix for steel melting.</description>
+    <jobString>Making Mixed steel package.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingI</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+	  <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Iron</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_Coal</li>
+			<li>BIO_Coal</li>		
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Iron</li>
+		<li>BIO_Coal</li>		
+		<li>BIO_Coal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Mixed_steel_package>25</Mixed_steel_package>
+    </products>
+  </RecipeDef>
+  
+  
+  <!--Стальная смесь х100-->
+  <RecipeDef>
+    <defName>Make_Mixed_steel_packagex100</defName>
+    <label>Make Mixed steel package x100</label>
+    <description>Package with ready-mix for steel melting.</description>
+    <jobString>Making Mixed steel package.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<researchPrerequisite>Metal_processingI</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>	
+    <recipeUsers>
+	  <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Iron</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BIO_Coal</li>
+			<li>BIO_Coal</li>		
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Iron</li>
+		<li>BIO_Coal</li>		
+		<li>BIO_Coal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Mixed_steel_package>100</Mixed_steel_package>
+    </products>
+  </RecipeDef>
+
+   <!--Космические-->
+
+   <!--Керамит Х5-->
+   <RecipeDef>
+    <defName>AlloysCeramite_Makex5</defName>
+    <label>Melt Alloys Ceramite x5</label>
+    <description>Ceramite is an impact—resistant material based on ceramics. It is not known exactly how it appeared, one of the theories is that these are the fossilized remains of beetles' vital activity.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Remelts ceramite.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Ceramite</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Ceramite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AlloysCeramite>5</AlloysCeramite>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>BiomeOresModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+  
+     <!--Керамит Х25-->
+   <RecipeDef>
+    <defName>AlloysCeramite_Makex25</defName>
+    <label>Melt Alloys Ceramite x25</label>
+    <description>Ceramite is an impact—resistant material based on ceramics. It is not known exactly how it appeared, one of the theories is that these are the fossilized remains of beetles' vital activity.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Remelts ceramite.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>7500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Ceramite</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Ceramite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AlloysCeramite>25</AlloysCeramite>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>BiomeOresModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+   <!--Мифрил Х5-->
+   <RecipeDef>
+    <defName>AlloysMithril_Makex5</defName>
+    <label>Melt Alloys Mithril x5</label>
+    <description>Mithril is lightweight and durable four times stronger than iron, moreover, it is much lighter than its material, which has high malleability and does not fade over the years, but requires very high temperatures for processing.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Remelts Mithril.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mithril</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mithril</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AlloysMithril>5</AlloysMithril>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>BiomeOresModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+  
+     <!--Мифрил Х25-->
+   <RecipeDef>
+    <defName>AlloysMithril_Makex25</defName>
+    <label>Melt Alloys Mithril x25</label>
+    <description>Mithril is lightweight and durable four times stronger than iron, moreover, it is much lighter than its material, which has high malleability and does not fade over the years, but requires very high temperatures for processing.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Remelts Mithril.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>7500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mithril</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mithril</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AlloysMithril>25</AlloysMithril>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>BiomeOresModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+
+   <!--Хлорофит Х5-->
+   <RecipeDef>
+    <defName>AlloysChlorophyte_Makex5</defName>
+    <label>Melt Alloys Chlorophyte x5</label>
+    <description>The hard ore found in the jungle is used to make high-quality furniture and can be used to repair things.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Remelts Chlorophyte.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chlorophyte</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chlorophyte</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AlloysChlorophyte>5</AlloysChlorophyte>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>BiomeOresModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+  
+     <!--Хлорофит Х25-->
+   <RecipeDef>
+    <defName>AlloysChlorophyte_Makex25</defName>
+    <label>Melt Alloys Chlorophyte x25</label>
+    <description>The hard ore found in the jungle is used to make high-quality furniture and can be used to repair things.</description>
+    <researchPrerequisite>Metal_processingIII</researchPrerequisite>
+    <jobString>Remelts Chlorophyte.</jobString>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>7500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Advanced_Smelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chlorophyte</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chlorophyte</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AlloysChlorophyte>25</AlloysChlorophyte>
+    </products>
+	<modExtensions>
+		<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+			<requiredModules>
+				<li>BiomeOresModule</li>
+			</requiredModules>
+			<buildingTabCategoryDef>Tier3</buildingTabCategoryDef>
+		</li>
+	</modExtensions>	
+  </RecipeDef>
+  
+  
+	<RecipeDef>
+		<defName>Make_Mixed_glass_packagex50</defName>
+		<label>Make Mixed glass package x50</label>
+		<description>Package with ready-mix for glass melting.</description>
+		<jobString>Making Mixed glass package.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>750</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<researchPrerequisite>Metal_processingI</researchPrerequisite>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sand</li>
+			  </thingDefs>
+			</filter>
+			<count>75</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>25</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>BiO_Sulfur</li>
+			  </thingDefs>
+			</filter>
+			<count>25</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>BIO_Coal</li>
+				<li>BIO_Coal</li>		
+			  </thingDefs>
+			</filter>
+			<count>15</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Iron</li>
+			<li>BIO_Coal</li>		
+			<li>BIO_Coal</li>
+			<li>BiO_Sulfur</li>
+			<li>Salt</li>
+			<li>Sand</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <Mixed_glass_package>50</Mixed_glass_package>
+		</products>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>Make_PolymersMixed_glass_packagex50</defName>
+		<label>Make Mixed glass package with polymers x50</label>
+		<description>Package with ready-mix for glass melting.</description>
+		<jobString>Making Mixed glass package.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>750</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<researchPrerequisite>Polymers</researchPrerequisite>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sand</li>
+			  </thingDefs>
+			</filter>
+			<count>50</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Polymers</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Polymers</li>
+			<li>Salt</li>
+			<li>Sand</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <Mixed_glass_package>50</Mixed_glass_package>
+		</products>
+	</RecipeDef>
+	
+
+	<RecipeDef>
+		<defName>Make_Mixed_Ceramics_packagex50</defName>
+		<label>Make Mixed ceramics package x50</label>
+		<description>Package with ready-mix for ceramics melting.</description>
+		<jobString>Making Mixed ceramics package.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>750</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<researchPrerequisite>Metal_processingI</researchPrerequisite>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Clay</li>
+			  </thingDefs>
+			</filter>
+			<count>75</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Mixed_glass_package</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Clay</li>		
+			<li>Mixed_glass_package</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <Mixed_Ceramics_package>50</Mixed_Ceramics_package>
+		</products>
+	</RecipeDef>
+	
+	
+	
+	<RecipeDef>
+		<defName>Make_PolymersMixed_Ceramics_packagex50</defName>
+		<label>Make Mixed ceramics package with polymers x50</label>
+		<description>Package with ready-mix for ceramics melting.</description>
+		<jobString>Making Mixed ceramics package.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>750</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<researchPrerequisite>Polymers</researchPrerequisite>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Clay</li>
+			  </thingDefs>
+			</filter>
+			<count>50</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Mixed_glass_package</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Polymers</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Polymers</li>
+			<li>Mixed_glass_package</li>
+			<li>Clay</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <Mixed_Ceramics_package>50</Mixed_Ceramics_package>
+		</products>
+	</RecipeDef>
+  
+</Defs>  

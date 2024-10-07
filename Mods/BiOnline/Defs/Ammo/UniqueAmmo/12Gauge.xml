@@ -1,0 +1,204 @@
+<Defs>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBase">
+		<defName>Ammo_12Gauge_SlugAP</defName>
+		<label>12 gauge shell (AP)</label>
+		<description>Currently the most common smoothbore caliber, used for sport, training and recreational shooting.</description>
+		<generateAllowChance>0.1</generateAllowChance>
+		<graphicData>
+			<texPath>Things/Ammo/Shotgun/Shot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.55</MarketValue>
+		</statBases>		
+		<ammoClass>SlugAP</ammoClass>
+		<cookOffProjectile>Bullet_12Gauge_SlugAP</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBase">
+		<defName>Ammo_12Gauge_Flechette</defName>
+		<label>12 gauge shell (Flechette)</label>
+		<description>A cartridge filled with smooth dart arrows. It has tremendous armor penetration and inflicts tremendous damage.</description>
+		<generateAllowChance>0.1</generateAllowChance>
+		<graphicData>
+			<texPath>Things/Ammo/Shotgun/Beanbag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.048</Mass>
+			<MarketValue>0.4</MarketValue>
+		</statBases>		
+		<ammoClass>Flechette</ammoClass>
+		<cookOffProjectile>Bullet_12Gauge_Flechette</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base12GaugeBullet">
+		<defName>Bullet_12Gauge_Flechette</defName>
+		<label>flechette</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>100</speed>
+			<damageAmountBase>13</damageAmountBase>
+			<pelletCount>6</pelletCount>
+			<armorPenetrationSharp>6.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>8.52</armorPenetrationBlunt>
+			<casingMoteDefname>Fleck_ShotgunShell_White</casingMoteDefname>
+			<casingFilthDefname>Filth_ShotgunAmmoCasings_White</casingFilthDefname>			
+			<spreadMult>3.8</spreadMult>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base12GaugeBullet">
+		<defName>Bullet_12Gauge_SlugAP</defName>
+		<label>shotgun AP slug</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>120</speed>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<armorPenetrationBlunt>85.2</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_12Gauge_Flechette</defName>
+		<label>make 12 gauge (Flechette) shell x200</label>
+		<description>Craft 200 12 gauge (Flechette) shells.</description>
+		<jobString>Making 12 gauge (Flechette) shells.</jobString>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Lead</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Steel</li>
+							</thingDefs>
+						</filter>
+						<count>60</count>
+					</li>					
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Gunpowder</li>
+							</thingDefs>
+						</filter>
+						<count>320</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Paper</li>
+							</thingDefs>
+						</filter>
+						<count>20</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>ComponentIndustrial</li>
+							</thingDefs>
+						</filter>
+						<count>3</count>
+					</li>
+				</ingredients>
+				<fixedIngredientFilter>
+					<thingDefs>
+						<li>Lead</li>
+						<li>Steel</li>
+						<li>Gunpowder</li>
+						<li>Paper</li>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				<products>
+					<Ammo_12Gauge_Flechette>200</Ammo_12Gauge_Flechette>
+				</products>
+				<workAmount>5000</workAmount>
+			<modExtensions>
+				<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+					<buildingTabCategoryDef>Shotguns</buildingTabCategoryDef>
+				</li>
+			</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_12Gauge_SlugAP</defName>
+		<label>make 12 gauge (AP) shell x200</label>
+		<description>Craft 200 12 gauge (AP) shells.</description>
+		<jobString>Making 12 gauge (AP) shells.</jobString>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Steel</li>
+							</thingDefs>
+						</filter>
+						<count>40</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Ceramite</li>
+							</thingDefs>
+						</filter>
+						<count>10</count>
+					</li>					
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Gunpowder</li>
+							</thingDefs>
+						</filter>
+						<count>320</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Paper</li>
+							</thingDefs>
+						</filter>
+						<count>20</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>ComponentIndustrial</li>
+							</thingDefs>
+						</filter>
+						<count>2</count>
+					</li>
+				</ingredients>
+				<fixedIngredientFilter>
+					<thingDefs>
+						<li>Steel</li>
+						<li>Ceramite</li>
+						<li>Gunpowder</li>
+						<li>Paper</li>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				<products>
+					<Ammo_12Gauge_SlugAP>200</Ammo_12Gauge_SlugAP>
+				</products>
+				<workAmount>5000</workAmount>
+			<modExtensions>
+				<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+					<buildingTabCategoryDef>Shotguns</buildingTabCategoryDef>
+				</li>
+			</modExtensions>
+	</RecipeDef>
+
+</Defs>

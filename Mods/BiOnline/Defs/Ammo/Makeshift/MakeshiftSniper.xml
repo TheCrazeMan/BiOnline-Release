@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoMakeshiftSniper</defName>
+      <label>MakeshiftSniper</label>
+      <parent>AmmoRifles</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_MakeshiftSniper</defName>
+    <label>MakeshiftSniper</label>
+    <ammoTypes>
+      <Ammo_MakeshiftSniper>Bullet_MakeshiftSniper</Ammo_MakeshiftSniper>
+    </ammoTypes>
+		<similarTo>AmmoSet_RifleIntermediate</similarTo>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="MakeshiftSniperBase" ParentName="SmallAmmoBase" Abstract="True">
+    <description>Ancient makeshift rifle cartridge.</description>
+    <statBases>
+	  <Mass>0.023</Mass>
+	  <Bulk>0.1</Bulk>
+    </statBases>
+	<tradeTags>
+	  <li>CE_AutoEnableCrafting</li>
+	</tradeTags>
+    <thingCategories>
+      <li>AmmoMakeshiftSniper</li>
+    </thingCategories>
+    <stackLimit>5000</stackLimit>
+  </ThingDef>
+  
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="MakeshiftSniperBase">
+    <defName>Ammo_MakeshiftSniper</defName>
+    <label>MakeshiftSniper cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.12</MarketValue>
+    </statBases>
+    <ammoClass>FullMetalJacket</ammoClass>
+    <tradeTags>
+      <li>CE_AutoEnableCrafting_CraftingSpot</li>
+	  <li>CE_AutoEnableCrafting_TribalBench</li>
+    </tradeTags>
+    <cookOffProjectile>Bullet_MakeshiftSniper</cookOffProjectile>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="BaseMakeshiftSniperBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>168</speed>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMakeshiftSniperBullet">
+		<defName>Bullet_MakeshiftSniper</defName>
+		<label>Makeshift Sniper</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationSharp>13</armorPenetrationSharp>
+			<armorPenetrationBlunt>63.58</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+  
+	<!-- ==================== Recipes ========================== -->
+	
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_MakeshiftSniper</defName>
+    <label>Make MakeshiftSniper cartridge x200</label>
+    <description>Craft 200 MakeshiftSniper cartridges.</description>
+    <jobString>Making MakeshiftSniper cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_MakeshiftSniper>300</Ammo_MakeshiftSniper>
+    </products>
+    <workAmount>1200</workAmount>
+	<researchPrerequisite>NakedBrutality</researchPrerequisite>
+  </RecipeDef>
+	
+</Defs>

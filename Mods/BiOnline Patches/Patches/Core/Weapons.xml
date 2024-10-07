@@ -1,0 +1,365 @@
+<Patch>
+
+	<!-- Индустриальное оружие -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_SVD"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>20</Glass>
+			  <Steel>60</Steel>
+			  <ComponentIndustrial>4</ComponentIndustrial>
+			  <WoodLog>10</WoodLog>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_HecateTwo"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>30</Glass>
+			  <Steel>95</Steel>
+			  <ComponentIndustrial>6</ComponentIndustrial>
+			  <Polymers>15</Polymers>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_MilkorMGL"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>10</Glass>
+			  <Steel>40</Steel>
+			  <ComponentIndustrial>3</ComponentIndustrial>
+			  <Polymers>10</Polymers>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>25</Glass>
+			  <Steel>60</Steel>
+			  <ComponentIndustrial>5</ComponentIndustrial>
+			  <Polymers>15</Polymers>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>10</Glass>
+			  <Steel>125</Steel>
+			  <ComponentIndustrial>8</ComponentIndustrial>
+			  <FSX>5</FSX>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>65</Steel>
+				<Plasteel>30</Plasteel>
+				<ComponentIndustrial>7</ComponentIndustrial>
+				<Polymers>10</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>40</Steel>
+				<ComponentIndustrial>3</ComponentIndustrial>
+				<Polymers>10</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/costList</xpath>
+		<value>
+		
+			<costList>
+				<Steel>30</Steel>
+				<Polymers>10</Polymers>
+				<ComponentIndustrial>5</ComponentIndustrial>
+			</costList>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>50</Steel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+				<Polymers>10</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>60</Steel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+				<Polymers>15</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_Flamethrower"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>40</Steel>
+				<ComponentIndustrial>3</ComponentIndustrial>
+				<Polymers>10</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_MSixty"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>75</Steel>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<Polymers>15</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_MTwoFourNine"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>70</Steel>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<Polymers>15</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_USASTwelve"]/costList</xpath>
+		<value>
+
+			<costList>
+				<Steel>55</Steel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+				<Polymers>10</Polymers>
+			</costList>
+
+		</value>
+	</Operation>
+
+	<!-- Энерго-оружие -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>20</Glass>
+			  <Steel>45</Steel>
+			  <Plasteel>25</Plasteel>
+			  <AlloysMithril>12</AlloysMithril>
+			  <Polymers>10</Polymers>
+			  <ComponentSpacer>10</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_ChargePistol"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>10</Glass>
+			  <Steel>20</Steel>
+			  <Plasteel>20</Plasteel>
+			  <AlloysMithril>5</AlloysMithril>
+			  <Polymers>5</Polymers>
+			  <ComponentSpacer>8</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_ChargeShotgun"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>15</Glass>
+			  <Steel>50</Steel>
+			  <Plasteel>25</Plasteel>
+			  <AlloysMithril>10</AlloysMithril>
+			  <Polymers>10</Polymers>
+			  <ComponentSpacer>8</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_ChargeSMG"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>15</Glass>
+			  <Steel>30</Steel>
+			  <Plasteel>20</Plasteel>
+			  <AlloysMithril>8</AlloysMithril>
+			  <Polymers>10</Polymers>
+			  <ComponentSpacer>10</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_ChargeSniperRifle"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>25</Glass>
+			  <Steel>60</Steel>
+			  <Plasteel>30</Plasteel>
+			  <AlloysMithril>12</AlloysMithril>
+			  <Polymers>15</Polymers>
+			  <ComponentSpacer>10</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_ChargeLMG"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>15</Glass>
+			  <Steel>70</Steel>
+			  <Plasteel>35</Plasteel>
+			  <AlloysMithril>12</AlloysMithril>
+			  <Polymers>15</Polymers>
+			  <ComponentSpacer>11</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_ChargeAMR"]/costList</xpath>
+		<value>
+			<costList>
+			  <Glass>30</Glass>
+			  <Steel>80</Steel>
+			  <Plasteel>40</Plasteel>
+			  <AlloysMithril>15</AlloysMithril>
+			  <Polymers>20</Polymers>
+			  <ComponentSpacer>11</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_SigMCX"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>35</Steel>
+			  <Polymers>5</Polymers>
+			  <ComponentIndustrial>5</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Gun_AKMSU"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>40</Steel>
+			  <Polymers>5</Polymers>
+			  <ComponentIndustrial>5</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+		defName="MeleeWeapon_Gladius" or
+		defName="MeleeWeapon_Ikwa" or
+		defName="MeleeWeapon_Axe" or
+		defName="MeleeWeapon_BreachAxe" or
+		defName="MeleeWeapon_Mace"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>35</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+		defName="MeleeWeapon_Knife" or
+		defName="MeleeWeapon_Spear"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>15</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>50</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>60</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="MeleeWeapon_Gladius" or
+		defName="MeleeWeapon_Ikwa" or
+		defName="MeleeWeapon_Axe" or
+		defName="MeleeWeapon_Mace" or
+		defName="MeleeWeapon_LongSword"]</xpath>
+		<value>
+		  <costList>
+			<WoodLog>15</WoodLog>
+		  </costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_BreachAxe" or 
+		defName="MeleeWeapon_Spear" or 
+		defName="MeleeWeapon_Warhammer"]</xpath>
+		<value>
+		  <costList>
+			<WoodLog>60</WoodLog>
+		  </costList>
+		</value>
+	</Operation>
+	
+</Patch>

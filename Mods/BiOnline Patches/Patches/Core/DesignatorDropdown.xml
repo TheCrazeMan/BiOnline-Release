@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<!--Структуры-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="Wall" or defName="CE_Embrasure"]</xpath>
+				<value>
+					<designatorDropdown>Structure_Walls</designatorDropdown>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="Door" or defName="AnimalFlap" or defName="Autodoor"]</xpath>
+				<value>
+					<designatorDropdown>Structure_Doors</designatorDropdown>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="SecurityDoor" or defName="OrnateDoor"]</xpath>
+				<value>
+					<designatorDropdown>Structure_DoubleDoors</designatorDropdown>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="Fence" or defName="FenceGate"]</xpath>
+				<value>
+					<designatorDropdown>Structure_Fence</designatorDropdown>
+				</value>
+			</li>
+			<!--Производство-->
+			<!--Верстаки-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[
+				defName="AmmoBench" or 
+				defName="TableMending" or 
+				defName="FueledSmithy" or 
+				defName="ElectricSmithy" or 
+				defName="TableMachining" or 
+				defName="CraftingSpot" or
+				defName="FabricationBench"]</xpath>
+				<value>
+					<designatorDropdown>Production_Workbench</designatorDropdown>
+				</value>
+			</li>
+			<!--Обработка-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="TableStonecutter"]
+				</xpath>
+				<value>
+					<designatorDropdown>Production_Processing</designatorDropdown>
+				</value>
+			</li>
+			<!--Шитьё-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="HandTailoringBench" or defName="ElectricTailoringBench"]</xpath>
+				<value>
+					<designatorDropdown>Production_Sewing</designatorDropdown>
+				</value>
+			</li>
+			<!--Исследование-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="SimpleResearchBench" or defName="HiTechResearchBench"]</xpath>
+				<value>
+					<designatorDropdown>Production_Research</designatorDropdown>
+				</value>
+			</li>
+			<!--Творчество-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="TableSculpting"]</xpath>
+				<value>
+					<designatorDropdown>Production_Art</designatorDropdown>
+				</value>
+			</li>
+			<!--Медицина-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="DrugLab"]</xpath>
+				<value>
+					<designatorDropdown>Production_Medicine</designatorDropdown>
+				</value>
+			</li>
+			<!--Разное-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="ElectricCrematorium"]</xpath>
+				<value>
+					<designatorDropdown>Production_Misc</designatorDropdown>
+				</value>
+			</li>
+			<!--Фермерство-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="HydroponicsBasin"]</xpath>
+				<value>
+					<designatorDropdown>Production_Farming</designatorDropdown>
+				</value>
+			</li>
+			<!--Добыча-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="DeepDrill"]</xpath>
+				<value>
+					<designatorDropdown>Production_Mining</designatorDropdown>
+				</value>
+			</li>
+			<!--Кулинария-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[
+				defName="BarrelProcessor" or 
+				defName="TableButcher" or 
+				defName="NutrientPasteDispenser" or 
+				defName="Hopper" or
+				defName="ButcherSpot" or
+				defName="Brewery"]</xpath>
+				<value>
+					<designatorDropdown>Production_Cooking</designatorDropdown>
+				</value>
+			</li>
+			<!--Плавильни-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="ElectricSmelter"]</xpath>
+				<value>
+					<designatorDropdown>Production_Smelters</designatorDropdown>
+				</value>
+			</li>	
+			<!--Мебель-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="SleepingSpot" or defName="BabySleepingSpot" or defName="Bed" or defName="Crib" or defName="HospitalBed" or defName="HealingRootBedd" or defName="Bedroll"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_SingleBed</designatorDropdown>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="DoubleSleepingSpot" or defName="DoubleBed" or defName="RoyalBed" or defName="BedrollDouble"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_DoubleBed</designatorDropdown>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="AnimalSleepingSpot" or defName="AnimalBed" or defName="AnimalSleepingBox"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_Animal</designatorDropdown>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="TorchLamp" or defName="Brazier" or defName="DarklightBrazier" or defName="TorchWallLamp" or defName="WallLamp" or defName="DarktorchFungus" or defName="Darktorch" or defName="SunLamp" or defName="FloodLight" or defName="StandingLamp"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_Lighting</designatorDropdown>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="PlantPot" or defName="PlantPot_Bonsai"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_Decorations</designatorDropdown>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="Bookcase" or defName="BookcaseSmall" or defName="Drape"]</xpath>
+				<value>
+					<designatorDropdown>Furniture</designatorDropdown>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="ToyBox" or defName="BabyDecoration" or defName="Blackboard" or defName="SchoolDesk"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_Children</designatorDropdown>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="Table1x2c" or defName="Table2x2c" or defName="Table2x4c" or defName="Table3x3c"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_Tables</designatorDropdown>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="Stool" or defName="DiningChair" or defName="Armchair" or defName="Couch"]</xpath>
+				<value>
+					<designatorDropdown>Furniture_Chairs</designatorDropdown>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/ModularBuildingSchemeDefs/ModularBuildingSchemeDefs.xml-->
+<TableStoveElectricModular.parts.0.label>Модуль микробной лаборатории</TableStoveElectricModular.parts.0.label>
+<TableStoveElectricModular.parts.0.label>Модуль консервации</TableStoveElectricModular.parts.0.label>
+<ModularAdvancedSmelter.parts.0.label>Модуль эффективности</ModularAdvancedSmelter.parts.0.label>
+<ModularAdvancedSmelter.parts.1.label>Модуль биомных руд</ModularAdvancedSmelter.parts.1.label>
+<ModularAdvancedSmelter.parts.2.label>Модуль механической обработки</ModularAdvancedSmelter.parts.2.label>
+<ModularAdvancedSmelter.parts.3.label>Модуль химической обработки</ModularAdvancedSmelter.parts.3.label>.
+
+</LanguageData>

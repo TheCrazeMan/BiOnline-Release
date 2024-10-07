@@ -1,0 +1,19 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/thingClass</xpath>
+				<value>
+					<thingClass>BiOnline.Things.Building_BiResearchBench</thingClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/thingClass</xpath>
+				<value>
+					<thingClass>BiOnline.Things.Building_BiResearchBench</thingClass>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>

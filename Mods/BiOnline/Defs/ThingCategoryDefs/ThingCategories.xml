@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingCategoryDef>
+    <defName>Baking</defName>
+    <label>Bakery</label>
+    <parent>FoodRaw</parent>
+	<resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/BlackBread_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Exquisite_meat</defName>
+    <label>Exquisite meat</label>
+    <parent>FoodRaw</parent>
+	<resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/Exquisite_meat_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Vegetables</defName>	
+    <label>Vegetables</label>
+    <parent>PlantFoodRaw</parent>
+	<resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/Vegetables_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Exquisite_Vegetables</defName>
+    <label>Exquisite Vegetables</label>
+    <parent>PlantFoodRaw</parent>
+	<resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/Exquisite_Vegetables_icon</iconPath>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>VegetablesFruitsOthers</defName>
+    <label>Vegetables fruits others</label>
+    <parent>PlantFoodRaw</parent>
+	<resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/VegetablesFruitsOthers_icon</iconPath>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>Drinks</defName>
+    <label>Drinks</label>
+    <parent>Drugs</parent>
+	<resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>Things/Food/Drinks/Wine/wine_a</iconPath>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>Resources</defName>
+    <label>Resources</label>
+    <parent>ResourcesRaw</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>Things/Item/Resource/Lead/Lead_c</iconPath>
+  </ThingCategoryDef>
+  
+   <ThingCategoryDef>
+    <defName>RawMetals</defName>
+    <label>Raw metals</label>
+    <parent>Resources</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/RawMetals_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>DefaultMetals</defName>
+    <label>Default metals</label>
+    <parent>RawMetals</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/DefaultMetals_icon</iconPath>
+  </ThingCategoryDef>
+  
+   <ThingCategoryDef>
+    <defName>BiomeMetals</defName>
+    <label>Biome metals</label>
+    <parent>RawMetals</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/BiomeMetals_icon</iconPath>
+  </ThingCategoryDef>
+  
+   <ThingCategoryDef>
+    <defName>RefinedMetals</defName>
+    <label>Refined metals</label>
+    <parent>Resources</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/RefinedMetals_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>RefinedDefaultMetals</defName>
+    <label>Default metals</label>
+    <parent>RefinedMetals</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/RefinedDefaultMetals_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>RefinedBiomeMetals</defName>
+    <label>Biome metals</label>
+    <parent>RefinedMetals</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/RefinedBiomeMetals_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Miscellaneous</defName>
+    <label>Miscellaneous</label>
+    <parent>Resources</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/Miscellaneous_icon</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>TM_MedicalHerbs</defName>
+    <label>medical herbs</label>
+    <parent>PlantMatter</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+    <iconPath>Things/Plant/Raw/Broots_Raw</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BiO_Components</defName>
+    <label>Components</label>
+    <parent>Manufactured</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/CombatProcessor_icon</iconPath>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>Map_Components</defName>
+    <label>MapObjects</label>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>PlaceHolder</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BiO_Special_Plants</defName>
+    <label>Special Plants</label>
+    <parent>PlantMatter</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+    <iconPath>UI/ThingCategory/RedPetals_icon</iconPath>
+  </ThingCategoryDef>  
+
+  <ThingCategoryDef>
+      <defName>BootsAndGloves</defName>
+      <label>handwear and footwear</label>
+      <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+</Defs>

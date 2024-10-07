@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <IronSkinElixir.label>Iron skin elixir effect</IronSkinElixir.label>
+  <IronSkinElixir.description>Hardens skin, allowing to survive multiple attacks.</IronSkinElixir.description>
+  
+  <BerserkElixir.label>Berserk elixir effect</BerserkElixir.label>
+  <BerserkElixir.description>Boosts metabolism, increases speed and eyesight. Great for combat.</BerserkElixir.description>
+  
+  <HealingElixir.label>Healing elixir effect</HealingElixir.label>
+  <HealingElixir.description>Great for fighting infestations and diseases.</HealingElixir.description>
+  
+  <GrowerElixir.label>Grower elixir effect</GrowerElixir.label>
+  <GrowerElixir.description>Accelerates fine motor skills, which greatly speeds up the speed of harvesting.</GrowerElixir.description>
+  
+  <MinerElixir.label>Miner elixir effect</MinerElixir.label>
+  <MinerElixir.description>Increases the strength and accuracy of the work, this has a significant effect on the speed of mining operations.</MinerElixir.description>
+  
+</LanguageData>

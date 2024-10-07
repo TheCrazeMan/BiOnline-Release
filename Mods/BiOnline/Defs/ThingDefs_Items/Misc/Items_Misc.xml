@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>WaterForBill</defName>
+		<label>Water</label>
+		<description>Pure water that can be used in cooking and industry.</description>
+		<alwaysHaulable>false</alwaysHaulable>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>UI/Special/WaterIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>HeatForBill</defName>
+		<label>Heat</label>
+		<description>Heat requirement for recipe production.</description>
+		<alwaysHaulable>false</alwaysHaulable>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>UI/Special/HeatIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BiCoin</defName>
+		<label>BiCoin</label>
+		<generateCommonality>1.7</generateCommonality>
+		<description>Valuable physcial form of BiCoin. Found it's niche in different half-legal transactions.</description>
+		<alwaysHaulable>true</alwaysHaulable>
+		<stackLimit>20</stackLimit>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<graphicData>
+			<texPath>Things/Item/BiCoin/BiCoin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>		
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+		  <MarketValue>2000</MarketValue>
+		  <Beauty>1</Beauty>
+		  <Mass>0.005</Mass>
+		  <Bulk>0.05</Bulk>
+		</statBases>
+		<thingCategories>
+		  <li>ItemsMisc</li>
+		</thingCategories>
+		<thingSetMakerTags>
+		  <li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<tradeTags>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

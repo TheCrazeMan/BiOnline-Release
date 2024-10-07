@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/AbilityDef/CyberBionics.xml-->
+<LongjumpFoot.label>Длинный прыжок</LongjumpFoot.label>.
+<LongjumpFoot.description>Прыжок в отдаленное место с помощью сверхсильных ног, питающихся гемогеном.</LongjumpFoot.description>
+<LongjumpFoot.verbProperties.label>прыжок</LongjumpFoot.verbProperties.label>.
+<EMPWave.label>ЭМП-волна</EMPWave.label>
+<EMPWave.description>Концентрация энергии имплантата и ее резкое высвобождение приводят к мощному ЭМИ-удару</EMPWave.description>.
+<AdrenalineRush.label>Прилив адреналина</AdrenalineRush.label>
+<AdrenalineRush.description>Имплантат заставляет почки вырабатывать большое количество адреналина в течение короткого периода времени. Этот эффект аналогичен приему Go-juice без побочных эффектов.</AdrenalineRush.description>
+<AcceleratedRegeneration.label>Ускоренная регенерация</AcceleratedRegeneration.label>
+<AcceleratedRegeneration.description>Имплантат заставляет почки вырабатывать большое количество адреналина в течение короткого периода времени. Этот эффект аналогичен приему сока Go-juice без побочных эффектов.</AcceleratedRegeneration.description>
+<ElectroDischarge.label>Электроразряд</ElectroDischarge.label>
+<ElectroDischarge.description>Электроразряд</ElectroDischarge.description>
+<BrainOvercharge.label>Мозговое улучшение</BrainOvercharge.label>
+<BrainOvercharge.description>Ускоряет работу мозга в полтора раза. После организму потребуется долговременный отдых.</BrainOvercharge.description>
+</LanguageData>

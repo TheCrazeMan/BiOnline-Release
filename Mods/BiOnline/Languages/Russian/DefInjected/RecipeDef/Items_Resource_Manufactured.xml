@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+
+	<Make_MedicineIndustrial.label>изготовить медикаменты</Make_MedicineIndustrial.label>
+	<Make_MedicineIndustrial.description>Изготовить медикаменты.</Make_MedicineIndustrial.description>
+	<Make_MedicineIndustrial.jobString>Изготавливает медикаменты</Make_MedicineIndustrial.jobString>
+  
+  	<Make_MedicineIndustrialx4.label>изготовить медикаменты x4</Make_MedicineIndustrialx4.label>
+	<Make_MedicineIndustrialx4.description>Изготовить медикаменты х4.</Make_MedicineIndustrialx4.description>
+	<Make_MedicineIndustrialx4.jobString>Изготавливает медикаменты х4</Make_MedicineIndustrialx4.jobString>
+	
+	<MakeMedications.label>изготовить лекарства</MakeMedications.label>
+	<MakeMedications.description>Изготовить лекарства.</MakeMedications.description>
+	<MakeMedications.jobString>Изготавливает лекарства</MakeMedications.jobString>
+	
+	<MakeMedicationsX4.label>изготовить лекарства х4</MakeMedicationsX4.label>
+	<MakeMedicationsX4.description>Изготавливает лекарства х4.</MakeMedicationsX4.description>
+	<MakeMedicationsX4.jobString>Изготавливает лекарства х4</MakeMedicationsX4.jobString>
+	
+	<Make_Mechlink.label>Создать Мехлинк</Make_Mechlink.label>
+	<Make_Mechlink.description>Создать Мехлинк</Make_Mechlink.description>
+	<Make_Mechlink.jobString>Создаёт Мехлинк</Make_Mechlink.jobString>
+
+	<MakeEltex.label>Создать Эльтекс</MakeEltex.label>
+	<MakeEltex.description>Далеко не все люди владеют секретом создания Эльтекса.</MakeEltex.description>
+	<MakeEltex.jobString>Создаёт эльтекс</MakeEltex.jobString>
+	
+	<Make_Gunpowderx75.label>Сделать порох х75</Make_Gunpowderx75.label>
+	<Make_Gunpowderx75.description>Создание пороха из двух компонентов угля и серы.</Make_Gunpowderx75.description>
+	<Make_Gunpowderx75.jobString>Создаёт порох</Make_Gunpowderx75.jobString>
+
+	<Make_Gunpowderx500.label>Сделать порох х500</Make_Gunpowderx500.label>
+	<Make_Gunpowderx500.description>Создание пороха из двух компонентов угля и серы.</Make_Gunpowderx500.description>
+	<Make_Gunpowderx500.jobString>Создаёт порох</Make_Gunpowderx500.jobString>	
+	
+	<Make_Mixed_steel_packagex5.label>Сделать стальную смесь х5</Make_Mixed_steel_packagex5.label>
+	<Make_Mixed_steel_packagex5.description>Создать упаковку с cтальной смесью.</Make_Mixed_steel_packagex5.description>
+	<Make_Mixed_steel_packagex5.jobString>Создаёт упаковку с стальной смесью</Make_Mixed_steel_packagex5.jobString>
+	
+	<Make_Mixed_steel_packagex25.label>Сделать стальную смесь х25</Make_Mixed_steel_packagex25.label>
+	<Make_Mixed_steel_packagex25.description>Создать упаковку с cтальной смесью.</Make_Mixed_steel_packagex25.description>
+	<Make_Mixed_steel_packagex25.jobString>Создаёт упаковку с стальной смесью</Make_Mixed_steel_packagex25.jobString>
+	
+	<Make_Mixed_steel_packagex100.label>Сделать стальную смесь х100</Make_Mixed_steel_packagex100.label>
+	<Make_Mixed_steel_packagex100.description>Создать упаковку с cтальной смесью.</Make_Mixed_steel_packagex100.description>
+	<Make_Mixed_steel_packagex100.jobString>Создаёт упаковку с стальной смесью</Make_Mixed_steel_packagex100.jobString>
+
+	<BIO_MakeCharcoalx25.label>Сделать древесный уголь х25</BIO_MakeCharcoalx25.label>
+	<BIO_MakeCharcoalx25.description>Сожгите древесину, чтобы получить древесный уголь, он не так хорош, как минеральный уголь, но все же является хорошей заменой.</BIO_MakeCharcoalx25.description>
+	<BIO_MakeCharcoalx25.jobString>Создаёт древесный уголь</BIO_MakeCharcoalx25.jobString>
+	
+	<BIO_MakeCharcoalx100.label>Сделать древесный уголь х100</BIO_MakeCharcoalx100.label>
+	<BIO_MakeCharcoalx100.description>Сожгите древесину, чтобы получить древесный уголь, он не так хорош, как минеральный уголь, но все же является хорошей заменой.</BIO_MakeCharcoalx100.description>
+	<BIO_MakeCharcoalx100.jobString>Создаёт древесный уголь</BIO_MakeCharcoalx100.jobString>
+	
+    <TM_AdvancedMedicinex5.label>Сделать передовая фитотерапия х5</TM_AdvancedMedicinex5.label>
+    <TM_AdvancedMedicinex5.description>Упаковка травяных отваров, извлеченных из различных лекарственных растений. Эти препараты менее эффективны, чем промышленные фармацевтические препараты, но гораздо эффективнее, чем целебные травы.\nЭто лекарство ценится племенами, так как известно, что в руках хорошего шамана оно может спасти жизнь людям.</TM_AdvancedMedicinex5.description>
+	<TM_AdvancedMedicinex5.jobString>Создаёт передовую фитотерапию</TM_AdvancedMedicinex5.jobString>
+
+    <TM_AdvancedMedicinex25.label>Сделать передовая фитотерапия х25</TM_AdvancedMedicinex25.label>
+    <TM_AdvancedMedicinex25.description>Упаковка травяных отваров, извлеченных из различных лекарственных растений. Эти препараты менее эффективны, чем промышленные фармацевтические препараты, но гораздо эффективнее, чем целебные травы.\nЭто лекарство ценится племенами, так как известно, что в руках хорошего шамана оно может спасти жизнь людям.</TM_AdvancedMedicinex25.description>
+	<TM_AdvancedMedicinex25.jobString>Создаёт передовую фитотерапию</TM_AdvancedMedicinex25.jobString>
+
+	<MakePsi_Fiber.label>Создать Пси Волокно</MakePsi_Fiber.label>
+	<MakePsi_Fiber.description>Далеко не все люди владеют секретом создания Пси Волокна.</MakePsi_Fiber.description>
+	<MakePsi_Fiber.jobString>Создаёт пси волокно</MakePsi_Fiber.jobString>
+
+	<MakePsi_Fiber_x5.label>Создать Пси Волокно х5</MakePsi_Fiber_x5.label>
+	<MakePsi_Fiber_x5.description>Далеко не все люди владеют секретом создания Пси Волокна.</MakePsi_Fiber_x5.description>
+	<MakePsi_Fiber_x5.jobString>Создаёт пси волокно</MakePsi_Fiber_x5.jobString>
+	
+	<SynthreadKitx25.label>Создать компоненты синткани х25</SynthreadKitx25.label>
+	<SynthreadKitx25.description>Cоздать набор компонентов для создания синткани</SynthreadKitx25.description>
+	<SynthreadKitx25.jobString>Создаёт компоненты синткани</SynthreadKitx25.jobString>
+	
+	<SynthreadKitx75.label>Создать компоненты синткани х75</SynthreadKitx75.label>
+	<SynthreadKitx75.description>Cоздать набор компонентов для создания синткани</SynthreadKitx75.description>
+	<SynthreadKitx75.jobString>Создаёт компоненты синткани</SynthreadKitx75.jobString>
+	
+	<HyperweaveKitx25.label>Создать компоненты гиперткани х25</HyperweaveKitx25.label>
+	<HyperweaveKitx25.description>Cоздать набор компонентов для создания гиперткани</HyperweaveKitx25.description>
+	<HyperweaveKitx25.jobString>Создаёт компоненты гиперткани</HyperweaveKitx25.jobString>
+
+	<HyperweaveKitx75.label>Создать компоненты гиперткани х75</HyperweaveKitx75.label>
+	<HyperweaveKitx75.description>Cоздать набор компонентов для создания гиперткани</HyperweaveKitx75.description>
+	<HyperweaveKitx75.jobString>Создаёт компоненты гиперткани</HyperweaveKitx75.jobString>
+	
+	<Make_ComponentIndustrialAlt.label>Создать компонент</Make_ComponentIndustrialAlt.label>
+	<Make_ComponentIndustrialAlt.description>Создать компонент из стали и полимеров</Make_ComponentIndustrialAlt.description>
+	<Make_ComponentIndustrialAlt.jobString>Создаёт компонент</Make_ComponentIndustrialAlt.jobString>
+	
+	<Make_ComponentSpacerAlt.label>Создать продвинутый компонент</Make_ComponentSpacerAlt.label>
+	<Make_ComponentSpacerAlt.description>Создать продвинутый компонент, заменив часть материалов полимерами</Make_ComponentSpacerAlt.description>
+	<Make_ComponentSpacerAlt.jobString>Создаёт продвинутый компонент</Make_ComponentSpacerAlt.jobString>
+	
+	<ArmoredClothx25.label>Создать компоненты армированной ткани х25</ArmoredClothx25.label>
+	<ArmoredClothx25.description>Создание армированной ткани из хитина и полимеров</ArmoredClothx25.description>
+	<ArmoredClothx25.jobString>Создаёт армированную ткань</ArmoredClothx25.jobString>
+
+	<ArmoredClothx75.label>Создать компоненты армированной ткань х75</ArmoredClothx75.label>
+	<ArmoredClothx75.description>Создание армированной ткани из хитина и полимеров</ArmoredClothx75.description>
+	<ArmoredClothx75.jobString>Создаёт армированную ткань</ArmoredClothx75.jobString>
+		
+</LanguageData>

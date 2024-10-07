@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<MortarStrike.label>Минометный обстрел</MortarStrike.label>
+	<MortarStrike.description>Вражеские войска обстреливают вас из минометов!</MortarStrike.description>
+	<MortarStrike.descriptionFuture>Вражеские войска обстреливают вас из минометов!</MortarStrike.descriptionFuture>
+	<MortarStrike.endMessage>Похоже, у противника закончились снаряды</MortarStrike.endMessage>
+	<MortarStrike.letterText>Вражеские войска обстреливают вас из минометов!</MortarStrike.letterText>
+	
+	<PMC_EMIField.label>ЭМИ-поле</PMC_EMIField.label>
+	<PMC_EMIField.description>Генератор электромагнитных помех создаёт поле, выводящее из строя все электрические устройства.</PMC_EMIField.description>
+	<PMC_EMIField.descriptionFuture>далёкий ЭМИ-генератор на [gameConditionDuration_duration] накроет [map_definite] своим полем помех, выводящим из строя все электрические устройства.</PMC_EMIField.descriptionFuture>
+	<PMC_EMIField.endMessage>ЭМИ-поле исчезло.</PMC_EMIField.endMessage>
+	<PMC_EMIField.letterText>Возникло ЭМИ-поле, выводящее из строя все электрические устройства.</PMC_EMIField.letterText>
+</LanguageData>

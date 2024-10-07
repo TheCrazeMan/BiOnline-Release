@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Gunpowder.label>Порох</Gunpowder.label>
+	<Gunpowder.description>Это взрывчатое вещество, которое используется в качестве главного компонента во многих видов огнестрельного оружия, в том числе в ружьях, пистолетах и пушках. Это составное вещество состоит из различных химических компонентов, которые взрываются при воздействии тепла или давления.</Gunpowder.description>
+
+	<Mixed_steel_package.label>Стальная смесь</Mixed_steel_package.label>
+	<Mixed_steel_package.description>Пакет с стальной смесью, позволяет легко и быстро получить необходимые компоненты для производства стали, что является важным преимуществом для производителей и ремесленников. Он также позволяет контролировать процесс создания стали, что гарантирует получение высококачественного конечного продукта. Стальная смесь - это универсальный материал, который находит широкое применение в различных отраслях промышленности и строительства.</Mixed_steel_package.description>
+	
+	<Mixed_Ceramics_package.label>Керамическая смесь</Mixed_Ceramics_package.label>
+	<Mixed_Ceramics_package.description>Пакет с керамической смесью, позволяет легко и быстро получить необходимые компоненты для производства керамики</Mixed_Ceramics_package.description>
+	
+	<Mixed_glass_package.label>Стеклянная смесь</Mixed_glass_package.label>
+	<Mixed_glass_package.description>Пакет с стеклянной смесью, позволяет легко и быстро получить необходимые компоненты для производства стекла</Mixed_glass_package.description>
+	
+	<TM_AdvancedMedicine.label>передовая фитотерапия</TM_AdvancedMedicine.label>
+	<TM_AdvancedMedicine.description>Упаковка травяных отваров, извлеченных из различных лекарственных растений. Эти препараты менее эффективны, чем промышленные фармацевтические препараты, но гораздо эффективнее, чем целебные травы.\nЭто лекарство ценится племенами, так как известно, что в руках хорошего шамана оно может спасти жизнь людям.</TM_AdvancedMedicine.description>
+
+	<spacecomponent.label>Космический компонент</spacecomponent.label>
+	<spacecomponent.description>Космический компонент. Необходим к для создания различных космических кораблей.</spacecomponent.description>
+	
+	<CombatProcessor.label>Боевой процессор</CombatProcessor.label>
+	<CombatProcessor.description>Боевой процессор необходим для создания боевого шаттла.</CombatProcessor.description>
+	
+</LanguageData>

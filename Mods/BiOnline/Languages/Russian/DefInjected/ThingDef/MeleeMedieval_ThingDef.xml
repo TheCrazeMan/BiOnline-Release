@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!--Каменный молот-->
+	<MeleeWeapon_Stony_BattleHammer.label>Каменный боевой молот</MeleeWeapon_Stony_BattleHammer.label>
+	<MeleeWeapon_Stony_BattleHammer.description>Каменный двуручный боевой молот один из самых распространённых видов оружия в средневековье. Он изготавливается из различных пород камня, таких как гранит, мрамор или известняк. Каменные молоты имеют массивный набалдашник и рукоять, которая была достаточно длинной для того, чтобы воин мог держать его двумя руками.</MeleeWeapon_Stony_BattleHammer.description>
+	<MeleeWeapon_Stony_BattleHammer.tools.0.label>рукоять</MeleeWeapon_Stony_BattleHammer.tools.0.label>
+	<MeleeWeapon_Stony_BattleHammer.tools.1.label>боевая часть</MeleeWeapon_Stony_BattleHammer.tools.1.label>
+	<!--Стальной молот-->
+	<MeleeWeapon_Metalic_BattleHammer.label>Стальной боевой молот</MeleeWeapon_Metalic_BattleHammer.label>
+	<MeleeWeapon_Metalic_BattleHammer.description>С развитием кузнечного дела в средневековье стали появляться двуручные боевые молоты из стали. Каменные молоты были более тяжёлыми и прочными, чем деревянные, но они также были более хрупкими. Стальные молоты были легче и прочнее каменных, что делало их более удобными в использовании.</MeleeWeapon_Metalic_BattleHammer.description>
+	<MeleeWeapon_Metalic_BattleHammer.tools.0.label>рукоять</MeleeWeapon_Metalic_BattleHammer.tools.0.label>
+	<MeleeWeapon_Metalic_BattleHammer.tools.1.label>боевая часть</MeleeWeapon_Metalic_BattleHammer.tools.1.label>
+	<!--Боевой тесак-->
+	<MeleeWeapon_BattleCleaver.label>Боевой тесак</MeleeWeapon_BattleCleaver.label>
+	<MeleeWeapon_BattleCleaver.description>Боевой тесак — Разновидность рубящего холодного оружия с длинным однолезвийным клинком и хорошо развитой гардой. Лезвие боевого тесака достаточно широкое и массивное. Его длина достигает 70–80 сантиметров.</MeleeWeapon_BattleCleaver.description>
+	<MeleeWeapon_BattleCleaver.tools.0.label>рукоять</MeleeWeapon_BattleCleaver.tools.0.label>
+	<MeleeWeapon_BattleCleaver.tools.1.label>остриё</MeleeWeapon_BattleCleaver.tools.1.label>
+	<MeleeWeapon_BattleCleaver.tools.2.label>лезвие</MeleeWeapon_BattleCleaver.tools.2.label>
+	<!--Моргенштерн-->	
+	<MeleeWeapon_MorningStar.label>Моргенштерн</MeleeWeapon_MorningStar.label>
+	<MeleeWeapon_MorningStar.description>Стальной моргенштерн — это оружие, которое используется в средневековье. Оно представляет собой металлический шар, усеянный шипами прикреплённый к рукояти.</MeleeWeapon_MorningStar.description>
+	<MeleeWeapon_MorningStar.tools.0.label>рукоять</MeleeWeapon_MorningStar.tools.0.label>
+	<MeleeWeapon_MorningStar.tools.1.label>боевая часть</MeleeWeapon_MorningStar.tools.1.label>
+	<!--Стальная дубина-->	
+	<MeleeWeapon_MetalicClub.label>Стальная дубина</MeleeWeapon_MetalicClub.label>
+	<MeleeWeapon_MetalicClub.description>Стальная дубина — это одноручное оружие, которое используется в средневековье. Оно представляет собой длинную рукоять с массивной боевой частью.</MeleeWeapon_MetalicClub.description>
+	<MeleeWeapon_MetalicClub.tools.0.label>рукоять</MeleeWeapon_MetalicClub.tools.0.label>
+	<MeleeWeapon_MetalicClub.tools.1.label>боевая часть</MeleeWeapon_MetalicClub.tools.1.label>
+</LanguageData>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Средневековье-->
+	<Cr_Crossbow.label>Арбалет</Cr_Crossbow.label>
+	<Cr_Crossbow.description>Стрелковое оружие, в котором для запуска снарядов, называемых болтами или колчанами, используется узел, похожий на лук, закрепленный на раме. Благодаря тому, что пользователю не нужно поддерживать натяжение вручную, арбалеты намного точнее луков. Арбалет намного прочнее обычного лука и способен пробить металл, однако он медленно заряжается и стреляет.\n\nCrossbows - бесшумное оружие, способное стрелять, не спугнув животных.</Cr_Crossbow.description>
+	<Cr_Crossbow.tools.Blunt.label>Тупой удар</Cr_Crossbow.tools.Blunt.label>
+	
+	<Cr_RepeatingCrossbow.label>Чо-ко-ну</Cr_RepeatingCrossbow.label>
+	<Cr_RepeatingCrossbow.description>Древний арбалет, созданный в Древнем Китае, имеет деревянный магазин в верхней части лука. В него помещаются болты, и рычаг нажимается и натягивается для их многократного запуска. Арбалет был разработан для стрельбы от бедра, что делало его довольно неточным. Болты повторяющегося арбалета были слишком слабы, чтобы пробить броню или далеко улететь.\n\nCrossbows - бесшумные стрелки, способные стрелять, не спугнув животных.</Cr_RepeatingCrossbow.description>
+	<Cr_RepeatingCrossbow.Blunt.label>Тупой удар</Cr_RepeatingCrossbow.Blunt.label>
+	
+	<Cr_BulletShootingCrossbow.label>Тяжёлый арбалет</Cr_BulletShootingCrossbow.label>
+	<Cr_BulletShootingCrossbow.description>Также называемый каменным луком, арбалет, стреляющий пулями, - это специальный арбалет, предназначенный для метания камней и примитивных пуль вместо болтов. Лук специально сконструирован с двумя разными струнами, чтобы действовать как рогатка. Несмотря на стрельбу пулями, маленькие боеприпасы были неэффективны для боя и использовались в основном для охоты на мелкую дичь. Этот тип арбалета, стреляющего пулями, является усовершенствованной версией, созданной англичанами для стрельбы свинцовыми пулями, которые были более прочными и точными.\n\nCrossbows - бесшумные стрелки, способные стрелять, не спугнув животных.</Cr_BulletShootingCrossbow.description>
+	<Cr_BulletShootingCrossbow.Blunt.label>Тупой удар</Cr_BulletShootingCrossbow.Blunt.label>
+	
+	<Gun_Bombarda.label>Бомбарда</Gun_Bombarda.label>
+	<Gun_Bombarda.description>Бомбарда — это орудие, которое используется в средневековье для осады крепостей и городов. Оно представляет собой большую однозарядную пушку, которая стреляла каменными или металлическими ядрами.</Gun_Bombarda.description>
+	<Gun_Bombarda.tools.0.label>рукоять</Gun_Bombarda.tools.0.label>
+	
+	<!--Самодельные пушки-->
+	
+	<BiO_Makeshift_Shotgun.label>"Аргумент"</BiO_Makeshift_Shotgun.label>
+	<BiO_Makeshift_Shotgun.description>Дробовик, сделанный колхозным умельцем из того, что он смог найти на металлоприёмке. Однозарядный, но убийственный. И для того, кто стреляет, и для того, в кого стреляют.</BiO_Makeshift_Shotgun.description>
+	
+	<BiO_Makeshift_Magnum.label>"Малютка-киллер"</BiO_Makeshift_Magnum.label>
+	<BiO_Makeshift_Magnum.description>Компактный самодельный пистолет. Из него определённо можно попасть. Если очень постараться.</BiO_Makeshift_Magnum.description>
+	
+	<BiO_Makeshift_AutoRifle.label>"Мусорщик"</BiO_Makeshift_AutoRifle.label>
+	<BiO_Makeshift_AutoRifle.description>Что-то напоминающее старый добрый автомат Калашникова, собранное где-то в Пакистане местными умельцами. Стреляет много, стреляет больно. Подойдёт, если ничего лучше не нашлось.</BiO_Makeshift_AutoRifle.description>
+	
+	<BiO_Makeshift_SMG.label>"Комар"</BiO_Makeshift_SMG.label>
+	<BiO_Makeshift_SMG.description>Этот комар будет явно злее тех, что водятся на вашей даче. Тем не менее, звёзд с неба он не хватает, но дать отпор неприятелю с дихлофосом вы точно сможете.</BiO_Makeshift_SMG.description>
+	
+	<BiO_Makeshift_Rifle.label>"Пугач"</BiO_Makeshift_Rifle.label>
+	<BiO_Makeshift_Rifle.description>Пугач - особенный тип. Только опьянев до конца, ты сможешь обращаться с ним. Никто не знает, почему Пугач вышел именно таким, но тем не менее, он убивает. И делает это достаточно неплохо.</BiO_Makeshift_Rifle.description>
+	
+	<!-- Тяжеленные пушки -->
+	
+	<BiO_NB_HeavyMachineGun.label>"Батяня"</BiO_NB_HeavyMachineGun.label>
+	<BiO_NB_HeavyMachineGun.description>Этот здоровенный пулемёт - настоящий отец всех ручных пулемётов. Пусть он и не отличается манёвренностью, огневой мощи ему не занимать: никто не останется в живых после хотя бы десятка выстрелов.</BiO_NB_HeavyMachineGun.description>
+	
+	<BiO_NB_HeavyShotgun.label>"Алабай"</BiO_NB_HeavyShotgun.label>
+	<BiO_NB_HeavyShotgun.description>Алабаи - действительно огромные собаки. Огромные и довольно добрые. Однако этот - исключение. Этот автоматический дробовик способен загрызть любого, кто подойдёт на расстояние менее двадцати метров.</BiO_NB_HeavyShotgun.description>
+	
+	<BiO_NB_HeavySMG.label>"Шмель"</BiO_NB_HeavySMG.label>
+	<BiO_NB_HeavySMG.description>Единственный из древних экземпляров, подходящий для любителей динамичных баталий. Этот компактный пистолет-пулемёт позволит вам легко пользоваться щитом, если вам с ним необходимо дополнительное бронирование.</BiO_NB_HeavySMG.description>
+	
+	<BiO_NB_GrenadeLauncher.label>"Календула"</BiO_NB_GrenadeLauncher.label>
+	<BiO_NB_GrenadeLauncher.description>Пускай вас не смущает столь мягкое название. "Календула" - один из самых разрушительных ручных гранатомётов, придуманных человеком. Три гранаты, вылетающие почти одновременно, не оставят ни шанса вашим неприятелям.</BiO_NB_GrenadeLauncher.description>
+
+	<BiO_NB_HeavyAssaultRifle.label>"Анархия"</BiO_NB_HeavyAssaultRifle.label>
+	<BiO_NB_HeavyAssaultRifle.description>Анархия - мать порядка. А это оружие - инструмент для его установления. Иронично, что именно эта штурмовая винтовка раньше стояла на вооружении у ряда развитых стран, которые славились своей тоталитарностью. Сейчас же её модифицировали, добавив подствольный гранатомёт, и, конечно же, красную букву "А".</BiO_NB_HeavyAssaultRifle.description>
+	
+	<!-- Плазменное оружие -->
+	
+	<PMC_PlasmaShotgun.label>Плазменный дробовик</PMC_PlasmaShotgun.label>
+	<PMC_PlasmaShotgun.description>Может кто-то и может поспорить с тем, что этот экземпляр не выглядит как дробовик, но этот "кто-то" уже превращён в булькающую зелёную лужицу.</PMC_PlasmaShotgun.description>
+	
+	<PMC_PlasmaSniper.label>Плазменная снайперская винтовка</PMC_PlasmaSniper.label>
+	<PMC_PlasmaSniper.description>Странно, что такое продвинутое оружие до сих пор использует продольно-скользящий механизм затвора... Впрочем это неважно, поскольку свою работу она выполняет на отлично.</PMC_PlasmaSniper.description>
+	
+	<PMC_PlasmaDMR.label>Плазменная марксманская винтовка</PMC_PlasmaDMR.label>
+	<PMC_PlasmaDMR.description>Полуавтоматическая снайперская винтовка, запускающая шары раскалённой плазмы, не оставляющие ни шанса врагам.</PMC_PlasmaDMR.description>
+	
+	<PMC_PlasmaMinigun.label>Плазменный миниган</PMC_PlasmaMinigun.label>
+	<PMC_PlasmaMinigun.description>Несмотря на свой грозный вид, это оружие создано не для уничтожения живой силы противника, а для её подавления. И поверьте, вам вряд ли захочется вылезать из своего окопа, когда над вами летят сотни раскалённых шаров плазмы.</PMC_PlasmaMinigun.description>
+	
+	<PMC_PlasmaHMG.label>Плазменный тяжёлый пулемёт</PMC_PlasmaHMG.label>
+	<PMC_PlasmaHMG.description>Лёгкая техника, тяжёлая техника - да кому какая разница? Пара очередей из этого монстра и у вас будет лишь кучка поплавленного металла.</PMC_PlasmaHMG.description>
+	
+	<!-- Оружие боссов -->
+	
+	<PMC_SpecOps_Assault.label>Болтер Курка</PMC_SpecOps_Assault.label>
+	<PMC_SpecOps_Assault.description>Массивное оружие, созданное по специальному заказу Курка. Стреляет разрывными, по факту, мини-ракетами. Мало какая броня способна остановить такое.</PMC_SpecOps_Assault.description>
+
+	<PMC_SpecOps_Sniper.label>Винтовка Nomad</PMC_SpecOps_Sniper.label>
+	<PMC_SpecOps_Sniper.description>Снайперская винтовка Nomad, созданная для поражения целей на безумных расстояниях. Стреляет ужасно больно.</PMC_SpecOps_Sniper.description>
+	
+	<PMC_SpecOps_HMG.label>Пушка IronClaw</PMC_SpecOps_HMG.label>
+	<PMC_SpecOps_HMG.description>Потешно тяжёлое оружие, используемое IronClaw. Имеет отвратительную точность и невозможный урон. Далеко не каждый способен просто поднять это оружие, не то что удержать его в руках.</PMC_SpecOps_HMG.description>
+	
+	<!-- Гранаты -->
+	
+	<Weapon_GrenadePlasma.label>Плазменная граната</Weapon_GrenadePlasma.label>
+	<Weapon_GrenadePlasma.description>Граната, содержащая большое количество раскалённой плазмы, готовой вырваться в любой момент</Weapon_GrenadePlasma.description>
+	
+	<Weapon_GrenadePlasmaOvercharge.label>Граната с перегруженной плазмой</Weapon_GrenadePlasmaOvercharge.label>
+	<Weapon_GrenadePlasmaOvercharge.description>Как плазменная, только злее и с перегруженной плазмой вместо обычной.</Weapon_GrenadePlasmaOvercharge.description>
+	
+</LanguageData>

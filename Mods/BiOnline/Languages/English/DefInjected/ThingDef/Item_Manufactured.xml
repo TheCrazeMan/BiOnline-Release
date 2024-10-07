@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<Book_Ammo.label>Ammo book</Book_Ammo.label>
+<Book_Ammo.description>This book is a manual for making ammunition for heavy weapons.Careful, there is a lot of text in Russian.</Book_Ammo.description>
+
+<Book_ImmunoBlockers.label>Immunoblockers book</Book_ImmunoBlockers.label>
+<Book_ImmunoBlockers.description>This book contains information on the manufacture of immune blockers, pills designed specifically for use with cyber-implants.</Book_ImmunoBlockers.description>
+
+</LanguageData>

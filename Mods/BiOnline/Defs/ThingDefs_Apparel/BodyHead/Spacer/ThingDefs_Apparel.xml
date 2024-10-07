@@ -1,0 +1,63 @@
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_IsoSuit</defName>
+    <label>IsoSuit</label>
+    <description>Dense suit that isolates your body from electricity so you won't get hurt. Atleast not that hard as you could get</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/IsoSuit/IsoSuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+	  <MarketValue>420</MarketValue>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1</Mass>
+	  <Bulk>1</Bulk>
+	  <ArmorRating_Electric>0.6</ArmorRating_Electric>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Legs</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/IsoSuit/IsoSuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+	  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+	<costList>
+		<Plasteel>15</Plasteel>
+		<Polymers>40</Polymers>
+	</costList>
+    <recipeMaker>
+	  <researchPrerequisite>Polymers</researchPrerequisite>
+      <recipeUsers Inherit="False">
+		<li>FabricationBench</li>
+      </recipeUsers>	
+      <displayPriority>170</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

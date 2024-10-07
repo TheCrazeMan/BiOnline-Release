@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<SynthreadKitx25.label>Make synthread x25</SynthreadKitx25.label>
+	<SynthreadKitx25.description>Make synthread out of devilstrand and chemicals.</SynthreadKitx25.description>
+	<SynthreadKitx25.jobString>Making synthread</SynthreadKitx25.jobString>
+	
+	<SynthreadKitx75.label>Make synthread x75</SynthreadKitx75.label>
+	<SynthreadKitx75.description>Make synthread out of devilstrand and chemicals.</SynthreadKitx75.description>
+	<SynthreadKitx75.jobString>Making synthread</SynthreadKitx75.jobString>
+	
+	<HyperweaveKitx25.label>Make hyperweave х25</HyperweaveKitx25.label>
+	<HyperweaveKitx25.description>Make hyperweave out of synthread, titanium and some chemistry magic.</HyperweaveKitx25.description>
+	<HyperweaveKitx25.jobString>Making hyperweave</HyperweaveKitx25.jobString>
+
+	<HyperweaveKitx75.label>Make hyperweave х75</HyperweaveKitx75.label>
+	<HyperweaveKitx75.description>Make hyperweave out of synthread, titanium and some chemistry magic.</HyperweaveKitx75.description>
+	<HyperweaveKitx75.jobString>Making hyperweave</HyperweaveKitx75.jobString>
+	
+</LanguageData>

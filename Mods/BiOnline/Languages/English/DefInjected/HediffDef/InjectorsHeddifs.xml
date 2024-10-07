@@ -1,0 +1,31 @@
+<LanguageData>
+
+	<DefleXitol_Effect.label>DefleXitol effect</DefleXitol_Effect.label>
+	<DefleXitol_Effect.description>This creature is now under the effect of DeflXitol, so it takes less damage from all incoming attacks.</DefleXitol_Effect.description>
+	<DefleXitol_Effect.labelNoun>Deflexitol effect</DefleXitol_Effect.labelNoun>
+
+	<PyroForm_Effect.label>PyroForm effect</PyroForm_Effect.label>
+	<PyroForm_Effect.description>This creature is now under the effects of Pyroform, and therefore cannot catch fire and can tolerate extremely high temperatures.</PyroForm_Effect.description>
+	<PyroForm_Effect.labelNoun>PyroForm effect</PyroForm_Effect.labelNoun>
+
+	<MulE_Effect.label>Mul-E</MulE_Effect.label>
+	<MulE_Effect.description>This creature is now under the effect of Mul-E, so it can carry larger loads, but takes more damage from all incoming attacks.</MulE_Effect.description>
+	<MulE_Effect.labelNoun>Mul-E effect</MulE_Effect.labelNoun>
+
+	<Trasylol_500k_Effect.label>Trasylol 500k effect</Trasylol_500k_Effect.label>
+	<Trasylol_500k_Effect.description>This creature is under the effects of Trasylol, and therefore hardly bleeds or feels any pain.</Trasylol_500k_Effect.description>
+	<Trasylol_500k_Effect.labelNoun>Trasylol 500k effect</Trasylol_500k_Effect.labelNoun>
+
+	<Regenostas_Effect.label>Regenostas effect</Regenostas_Effect.label>
+	<Regenostas_Effect.description>This creature is under the effects of Regenostas, so it cannot move, but it gains a huge boost to its natural regeneration.</Regenostas_Effect.description>
+	<Regenostas_Effect.labelNoun>Regenostas effect</Regenostas_Effect.labelNoun>
+
+	<Dofa_Effect.label>Dofa effect</Dofa_Effect.label>
+	<Dofa_Effect.description>This creature is under the effect of Dofa, and therefore makes any job somewhat more efficient.</Dofa_Effect.description>
+	<Dofa_Effect.labelNoun>Dofa effect</Dofa_Effect.labelNoun>
+
+	<Flexitol_Effect.label>Flexitol effect</Flexitol_Effect.label>
+	<Flexitol_Effect.description>This creature is in a state of complete high, as well as more quickly assimilates any information.</Flexitol_Effect.description>
+	<Flexitol_Effect.labelNoun>Flexitol effect</Flexitol_Effect.labelNoun>
+
+</LanguageData>

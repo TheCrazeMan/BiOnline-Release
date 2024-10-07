@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<VFEProps.PropDef Abstract="true" Name="AP_WallPropBase">
+		<useMatsInsteadOfSilver>true</useMatsInsteadOfSilver>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_WallPropBase">
+		<defName>AP_Prop_Walls_1</defName>
+		<category>AP_PropCategory_Walls</category>
+		<priority>1</priority>
+		<prop>AP_Hedge</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_WallPropBase">
+		<defName>AP_Prop_Walls_2</defName>
+		<category>AP_PropCategory_Walls</category>
+		<priority>2</priority>
+		<prop>AP_Hedge_Flowery</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_WallPropBase">
+		<defName>AP_Prop_Walls_3</defName>
+		<category>AP_PropCategory_Walls</category>
+		<priority>3</priority>
+		<prop>AP_Hedge_FloweryTwo</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_WallPropBase">
+		<defName>AP_Prop_Walls_Ocular</defName>
+		<category>AP_PropCategory_Walls</category>
+		<priority>3.5</priority>
+		<prop>AP_Hedge_Ocular</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_WallPropBase">
+		<defName>AP_Prop_Walls_4</defName>
+		<category>AP_PropCategory_Walls</category>
+		<priority>4</priority>
+		<prop>AP_LowHedge</prop>
+	</VFEProps.PropDef>
+	
+</Defs>

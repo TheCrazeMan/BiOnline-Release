@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>BiOnline Patches</name>
+	<author>TheCrazeMan, rekimchuk13</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>bionline.patches</packageId>
+	<description>Патчи</description>
+</ModMetaData>

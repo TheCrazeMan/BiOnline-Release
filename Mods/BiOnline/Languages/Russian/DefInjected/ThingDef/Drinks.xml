@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<RAW_Berry_braga.label>Не ферметированная ягодная брага</RAW_Berry_braga.label>
+<RAW_Berry_braga.description>Сырая сома. Требует дополнительной ферментации в кувшине.</RAW_Berry_braga.description>
+
+<RAW_Soma.label>Не ферметированная сома</RAW_Soma.label>
+<RAW_Soma.description>Сырая сома. Требует дополнительной ферментации в кувшине.</RAW_Soma.description>
+
+<RAW_FluTea.label>Не ферметированный напиток от гриппа</RAW_FluTea.label>
+<RAW_FluTea.description>Сырой напиток от гриппа. Требует дополнительной ферментации в кувшине.</RAW_FluTea.description>
+
+<RAW_ImmunityTea.label>Не ферметированный имунный напиток</RAW_ImmunityTea.label>
+<RAW_ImmunityTea.description>Сырой имунный напиток. Требует дополнительной ферментации в кувшине.</RAW_ImmunityTea.description>
+
+<RAW_CurativeTea.label>Не ферметированный целебный напиток</RAW_CurativeTea.label>
+<RAW_CurativeTea.description>Сырой целебный напиток. Требует дополнительной ферментации в кувшине.</RAW_CurativeTea.description>
+
+<RAW_DigestiveTea.label>Не ферметированный пищеварительный напиток</RAW_DigestiveTea.label>
+<RAW_DigestiveTea.description>Сырой пищеварительный напиток. Требует дополнительной ферментации в кувшине.</RAW_DigestiveTea.description>
+
+<RAW_HallucinationTea.label>Не ферметированный галлюциногенный напиток</RAW_HallucinationTea.label>
+<RAW_HallucinationTea.description>Сырой галлюциногенный напиток. Требует дополнительной ферментации в кувшине.</RAW_HallucinationTea.description>
+
+<RAW_InsanityTea.label>Не ферметированный напиток безумия</RAW_InsanityTea.label>
+<RAW_InsanityTea.description>Сырой напиток безумия. Требует дополнительной ферментации в кувшине.</RAW_InsanityTea.description>
+
+<RAW_HungerTea.label>Не ферметированный напиток от голода</RAW_HungerTea.label>
+<RAW_HungerTea.description>Сырой напиток от голода. Требует дополнительной ферментации в кувшине.</RAW_HungerTea.description>
+
+
+
+
+</LanguageData>

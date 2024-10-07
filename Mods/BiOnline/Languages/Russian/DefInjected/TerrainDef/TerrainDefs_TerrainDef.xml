@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/Misc/TerrainDefs.xml-->
+<SoftSandBuildable.label>мягкий песок</SoftSandBuildable.label>
+<SoftSandBuildable.tools.0.label>песок</SoftSandBuildable.tools.0.label>
+
+<SulphuricWater.label>Серная вода</SulphuricWater.label>
+
+<Solonchak.label>Солончак</Solonchak.label>
+
+<Stellacite.label>Стеллацит</Stellacite.label>
+
+</LanguageData>

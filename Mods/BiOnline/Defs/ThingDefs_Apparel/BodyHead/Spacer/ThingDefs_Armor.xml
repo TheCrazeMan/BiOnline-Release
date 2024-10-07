@@ -1,0 +1,1196 @@
+<Defs>
+
+	<ThingDef Name="SpacerApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+			<EquipDelay>2</EquipDelay>
+			<Beauty>-3</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>			
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="PMCSpacerApparelBase" ParentName="SpacerApparelBase" Abstract="True">
+		<tradeability>Sellable</tradeability>	
+	</ThingDef>
+
+	<!-- Штурмовик -->
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Apparel_PMC_EliteCombat</defName>
+		<label>Argus armor</label>
+		<description>Argus armor is designed by the Catharsis PMC for it's most elite troops. It's providing big spectrum of various defenses and includes life-sustain mechanism</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteCombat/EliteCombatArmor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteCombat/EliteCombatArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>		
+		</apparel>
+		<statBases>
+			<MarketValue>2515</MarketValue>
+			<MaxHitPoints>550</MaxHitPoints>
+			<Mass>55</Mass>
+			<Bulk>15</Bulk>
+			<WornBulk>1.2</WornBulk>
+			<ArmorRating_Sharp>21.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>69</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.64</ArmorRating_Heat>
+			<ArmorRating_Electric>0.125</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.25</Suppressability>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<ReloadSpeed>0.2</ReloadSpeed>
+			<MoveSpeed>0.2</MoveSpeed>
+			<CarryWeight>100</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Headgear_PMC_EliteCombat</defName>
+		<label>Argus helmet</label>
+		<description>Headset from the Argus complect. Provides toxicity resistance and aiming assistance, along with nice armor of your head.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteCombat/EliteCombatHelmet_UI</texPath>
+<!-- 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteCombat/EliteCombatHelmet</wornGraphicPath>
+<!-- 			<useWornGraphicMask>true</useWornGraphicMask> -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<statBases>
+			<MarketValue>1805</MarketValue>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Mass>8</Mass>
+			<Bulk>5</Bulk>
+			<WornBulk>0.5</WornBulk>
+			<ArmorRating_Sharp>21.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>69</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.64</ArmorRating_Heat>
+			<ArmorRating_Electric>0.125</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.25</Suppressability>
+			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+			<RangedCooldownFactor>-0.1</RangedCooldownFactor>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!-- Тяжик -->
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Apparel_PMC_EliteHeavy</defName>
+		<label>Balor armor</label>
+		<description>Balor armor is heavy and designed to tank as much damage as it can, while user provides everyone else with covering fire.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteHeavy/EliteHeavyArmor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteHeavy/EliteHeavyArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>		
+		</apparel>
+		<statBases>
+			<MarketValue>4215</MarketValue>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Mass>155</Mass>
+			<Bulk>20</Bulk>
+			<WornBulk>8</WornBulk>
+			<ArmorRating_Sharp>31.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>145</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.84</ArmorRating_Heat>
+			<ArmorRating_Electric>0.8</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.75</Suppressability>
+			<ReloadSpeed>0.5</ReloadSpeed>
+			<MoveSpeed>-2</MoveSpeed>
+			<CarryWeight>120</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Headgear_PMC_EliteHeavy</defName>
+		<label>Balor helmet</label>
+		<description>Heavy helmet of Balor armor set designed to save your head from strikes even from high-caliber weapons.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteHeavy/EliteHeavyHelmet_UI</texPath>
+<!-- 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteHeavy/EliteHeavyHelmet</wornGraphicPath>
+<!-- 			<useWornGraphicMask>true</useWornGraphicMask> -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<statBases>
+			<MarketValue>3205</MarketValue>
+			<MaxHitPoints>310</MaxHitPoints>
+			<Mass>15</Mass>
+			<Bulk>7</Bulk>
+			<WornBulk>1.5</WornBulk>
+			<ArmorRating_Sharp>27.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>85</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.84</ArmorRating_Heat>
+			<ArmorRating_Electric>0.8</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.25</Suppressability>
+			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+			<RangedCooldownFactor>-0.1</RangedCooldownFactor>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!-- Снипхуй -->
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Apparel_PMC_EliteSniper</defName>
+		<label>Oryon armor</label>
+		<description>That power armor was made for snipers and recons. It's light but provides enough level of defense to keep user alive under continuos fire.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteSniper/EliteSniperArmor_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteSniper/EliteSniperArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>		
+		</apparel>
+		<statBases>
+			<MarketValue>3515</MarketValue>
+			<MaxHitPoints>540</MaxHitPoints>
+			<Mass>30</Mass>
+			<Bulk>12</Bulk>
+			<WornBulk>2</WornBulk>
+			<ArmorRating_Sharp>22.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>69</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<ArmorRating_Electric>0.1</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed>0.66</ReloadSpeed>
+			<MoveSpeed>2</MoveSpeed>
+			<CarryWeight>60</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Headgear_PMC_EliteSniper</defName>
+		<label>Oryon helmet</label>
+		<description>Don't worry if you are bad shooter, with that helmet you will shoot like a trained professional, but it's full potential can be uncovered only if you are skilled enough to handle it.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteSniper/EliteSniperHelmet_UI</texPath>
+<!-- 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteSniper/EliteSniperHelmet</wornGraphicPath>
+<!-- 			<useWornGraphicMask>true</useWornGraphicMask> -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<statBases>
+			<MarketValue>2405</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>5</Mass>
+			<Bulk>3</Bulk>
+			<WornBulk>0.5</WornBulk>
+			<ArmorRating_Sharp>19.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<ArmorRating_Electric>0.3</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+			<RangedCooldownFactor>-0.3</RangedCooldownFactor>
+			<AimingDelayFactor>-0.4</AimingDelayFactor>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!-- Милишник -->
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Apparel_PMC_EliteMelee</defName>
+		<label>Aiax armor</label>
+		<description>That power armor was made for close quarter combatants. It's light, provides enough level of defense to keep user alive under continuos fire and echances user's reflexes.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteMelee/EliteMelee_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/EliteMelee/EliteMelee</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>		
+		</apparel>
+		<statBases>
+			<MarketValue>3515</MarketValue>
+			<MaxHitPoints>580</MaxHitPoints>
+			<Mass>30</Mass>
+			<Bulk>12</Bulk>
+			<WornBulk>1</WornBulk>
+			<ArmorRating_Sharp>26.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>69</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<ArmorRating_Electric>0.5</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>2</MoveSpeed>
+			<Suppressability>-0.75</Suppressability>			
+			<CarryWeight>60</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Headgear_PMC_EliteMelee</defName>
+		<label>Aiax helmet</label>
+		<description>Special helmet made for the best melee fighters.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteMelee/EliteMelee_UI</texPath>
+<!-- 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/EliteMelee/EliteMelee</wornGraphicPath>
+<!-- 			<useWornGraphicMask>true</useWornGraphicMask> -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<statBases>
+			<MarketValue>2405</MarketValue>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Mass>5</Mass>
+			<Bulk>3</Bulk>
+			<WornBulk>0.5</WornBulk>
+			<ArmorRating_Sharp>22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>60</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<ArmorRating_Electric>0.5</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.25</Suppressability>		
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!-- Курок (Trigger) -->
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Apparel_PMC_Trigger</defName>
+		<label>Trigger's armor</label>
+		<description>Custom power armor with golden shoulderpad made and used by Trigger.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/TriggerArmor/King_Armor_Icon</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/TriggerArmor/King_Armor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>		
+		</apparel>
+		<statBases>
+			<MarketValue>5515</MarketValue>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Mass>55</Mass>
+			<Bulk>15</Bulk>
+			<WornBulk>1.2</WornBulk>
+			<ArmorRating_Sharp>42.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>185</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.64</ArmorRating_Heat>
+			<ArmorRating_Electric>0.25</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.75</Suppressability>
+			<IncomingDamageFactor>-0.33</IncomingDamageFactor>
+			<ReloadSpeed>0.5</ReloadSpeed>
+			<MoveSpeed>0.25</MoveSpeed>
+			<CarryWeight>100</CarryWeight>
+			<CarryBulk>35</CarryBulk>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<comps>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Headgear_PMC_Trigger</defName>
+		<label>Trigger's helmet</label>
+		<description>Custom headgear that PMC boss Trigger uses.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/TriggerHelmet/Trigger_Headgear_UI</texPath>
+<!-- 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/TriggerHelmet/Trigger_Headgear</wornGraphicPath>
+<!-- 			<useWornGraphicMask>true</useWornGraphicMask> -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<statBases>
+			<MarketValue>3305</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>14</Mass>
+			<Bulk>5</Bulk>
+			<WornBulk>0.5</WornBulk>
+			<ArmorRating_Sharp>38.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>169</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.64</ArmorRating_Heat>
+			<ArmorRating_Electric>0.25</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.25</Suppressability>
+			<ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+			<RangedCooldownFactor>-0.3</RangedCooldownFactor>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>	
+		<comps>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>		
+	</ThingDef>
+
+	<!-- Nomad -->
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Apparel_NomadCoat</defName>
+		<label>Nomad's coat</label>
+		<description>Beloved coat of the great sniper Nomad.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/NomadCoat/NomadCoat_UI</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Cloth/NomadCoat/NomadCoat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+		<statBases>
+			<MarketValue>2515</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>2</Mass>
+			<Bulk>2</Bulk>
+			<WornBulk>0.2</WornBulk>
+			<ArmorRating_Sharp>2.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.64</ArmorRating_Heat>
+			<ArmorRating_Electric>0.6</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<RangedCooldownFactor>-0.5</RangedCooldownFactor>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<ReloadSpeed>0.5</ReloadSpeed>
+			<MoveSpeed>0.65</MoveSpeed>
+			<CarryBulk>30</CarryBulk>
+		</equippedStatOffsets>
+		<comps>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>		
+	</ThingDef>
+
+	<!-- IronClaw -->
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Apparel_PMC_IronClaw</defName>
+		<label>IronClaw's armor</label>
+		<description>Ultra heavy power armor that being used by PMC boss IronClaw.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/IronClawArmor/IronClawArmor_UI</texPath>		
+		</graphicData>
+		<apparel>
+			<drawData>
+			  <scale>1</scale>
+                <dataNorth>
+				  <layer>24</layer>
+                  <offset>(0, 0, -0.2)</offset>
+                </dataNorth>
+                <dataEast>
+				  <layer>24</layer>
+                  <offset>(-0.2, 0, -0.2)</offset>
+                </dataEast>
+                <dataSouth>
+				  <layer>24</layer>
+                  <offset>(0, 0, -0.2)</offset>
+                </dataSouth>
+                <dataWest>
+				  <layer>24</layer>
+                  <flip>true</flip>
+                </dataWest>
+			</drawData>			
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/IronClawArmor/IronClawArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>		
+		</apparel>
+		<statBases>
+			<MarketValue>6650</MarketValue>
+			<MaxHitPoints>2500</MaxHitPoints>
+			<Mass>225</Mass>
+			<Bulk>28</Bulk>
+			<WornBulk>4</WornBulk>
+			<ArmorRating_Sharp>54.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>215</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.64</ArmorRating_Heat>
+			<ArmorRating_Electric>0.75</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.75</Suppressability>
+			<IncomingDamageFactor>-0.33</IncomingDamageFactor>
+			<ReloadSpeed>1</ReloadSpeed>
+			<MoveSpeed>-2.15</MoveSpeed>
+			<CarryWeight>100</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<comps>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>		
+	</ThingDef>
+
+	<ThingDef ParentName="PMCSpacerApparelBase">
+		<defName>Headgear_PMC_IronClaw</defName>
+		<label>IronClaw's helmet</label>
+		<description>Custom headgear that PMC boss IronClaw uses.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/IronClawHelmet/IronClawHelmet_UI</texPath>
+<!-- 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/IronClawHelmet/IronClawHelmet</wornGraphicPath>
+<!-- 			<useWornGraphicMask>true</useWornGraphicMask> -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<statBases>
+			<MarketValue>4660</MarketValue>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Mass>32</Mass>
+			<Bulk>12</Bulk>
+			<WornBulk>5</WornBulk>
+			<ArmorRating_Sharp>48.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>185</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.64</ArmorRating_Heat>
+			<ArmorRating_Electric>1</ArmorRating_Electric>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.25</Suppressability>
+			<ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+			<RangedCooldownFactor>-0.75</RangedCooldownFactor>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_AdvancedShieldBelt</defName>
+    <label>advanced shield belt</label>
+    <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP.</description>
+    <thingClass>Apparel</thingClass>
+	<smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Body/Belt/Spacer/AdvancedBeltShield/AdvancedShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>3</Mass>
+	  <MarketValue>820</MarketValue>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.4</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Shield" />
+    </comps>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+	<!-- ##### Spacer ##### -->
+	<!-- +++++ Trooper	Helmet +++++ -->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Headgear_TrooperHelmet</defName>
+		<label>trooper helmet</label>
+		<description>A high-tech and lightweight armored helmet with a protective plasteel-weave plate.\n\nArmor like this is often used by imperial conscripts and late-midworld military forces.</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>1.7</generateCommonality>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/TrooperHelmet/TrooperHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>50</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>14500</WorkToMake>
+			<MaxHitPoints>190</MaxHitPoints>
+			<Mass>0.9</Mass>
+			<Flammability>0.25</Flammability>
+			<ArmorRating_Sharp>10.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.56</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+			<Bulk>4</Bulk>
+			<WornBulk>0.5</WornBulk>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/TrooperHelmet/TrooperHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>TrooperArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<!-- Vanilla Marine Helmet -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- +++++ Trooper Armor +++++ -->
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>Apparel_TrooperArmor</defName>
+		<label>trooper armor</label>
+		<description>A suit of light minimally-powered armor. Lightweight plasteel-weave plates block attacks, and neuro-memetic assistors in the lower body redistribute weight carried by its user. It is slimmer than other powered armor and can fit under clothes.\n\nArmor like this is often used by imperial conscripts and late-midworld military forces.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/TrooperArmor/TrooperArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>1.7</generateCommonality>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>130</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>20</Mass>
+			<Bulk>40</Bulk>
+			<WornBulk>6</WornBulk>
+			<Flammability>0.25</Flammability>
+			<ArmorRating_Sharp>8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>16</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.38</ArmorRating_Heat>
+			<Insulation_Cold>20</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/TrooperArmor/TrooperArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>TrooperArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<!-- Vanilla Power Armor -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- +++++ Siegebreaker Helmet +++++ -->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Headgear_HeavyMarineHelmet</defName>
+		<label>siegebreaker helmet</label>
+		<description>A heavily-armored high-tech helmet, with a solid plasteel-weave shell and omni-spectrum camera.\n\nArmor like this is often used by imperial stormtroopers and glitterworld peacekeepers.</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.25</generateCommonality>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/HeavyMarineHelmet/HeavyMarineHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<costList>
+			<HardenedGlass>20</HardenedGlass>
+			<Plasteel>45</Plasteel>
+			<Hyperweave>25</Hyperweave>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>28250</WorkToMake>
+			<MaxHitPoints>260</MaxHitPoints>
+			<Mass>2.5</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>20.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.48</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+			<Bulk>6</Bulk>
+			<WornBulk>2</WornBulk>
+			<NightVisionEfficiency_Apparel>0.75</NightVisionEfficiency_Apparel>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingCategories Inherit='False'>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Head/Spacer/HeavyMarineHelmet/HeavyMarineHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>CataphractArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<!-- Vanilla Marine Helmet -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- +++++ Siegebreaker Armor +++++ -->
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>Apparel_HeavyMarineArmor</defName>
+		<label>siegebreaker armor</label>
+		<description>A suit of heavy powered armor, built for increased protection while still maintaining mobility. Heavy layered plasteel-weave plates paired with a built-in energy shield emitter stop most attacks. Neuro-memetic assistors allow a human to wear this armor without immobilizing them entirely.\n\nArmor like this is often used by imperial stormtroopers and glitterworld peacekeepers.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/HeavyMarineArmor/HeavyMarineArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.1</generateCommonality>
+		<costList>
+			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>160</Plasteel>
+			<Uranium>40</Uranium>
+			<Apparel_ShieldBelt>1</Apparel_ShieldBelt>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToMake>77000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Bulk>100</Bulk>
+			<WornBulk>20</WornBulk>
+			<Mass>80</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>26</ArmorRating_Sharp>
+			<ArmorRating_Blunt>60</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.48</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>11</Insulation_Heat>
+			<EquipDelay>20</EquipDelay>
+			<EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>0.4</EnergyShieldEnergyMax>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryWeight>100</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<thingCategories Inherit='False'>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Body/Armor/Spacer/HeavyMarineArmor/HeavyMarineArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>CataphractArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<!-- Vanilla Power Armor -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Shield"/>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

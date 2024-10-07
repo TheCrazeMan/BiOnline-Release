@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Defs>
+
+	<!--Примитивное блюдо-->
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>PrimitiveMeal</defName>
+		<label>primitive meal</label>
+		<description>terrible cooked food. It has minimal protein, fat and carbohydrates. Its only plus, it's been heat treated.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/PrimitiveMeal</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>10</MarketValue>
+		  <WorkToMake>200</WorkToMake>
+		  <Nutrition>0.9</Nutrition>
+		  <Nutrients>0.15</Nutrients>
+		  <NutrientsLimit>0.25</NutrientsLimit>		
+		</statBases>
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	</ThingDef>
+	
+	<!--Печёный картофель-->
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>BakedPotatoes</defName>
+		<label>Baked potatoes</label>
+		<description>Baked potatoes, extremely easy to prepare and requires no fiddling around.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/BakedPotatoes</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>10</MarketValue>
+		  <WorkToMake>200</WorkToMake>
+		  <Nutrition>0.9</Nutrition>
+		  <Nutrients>0.15</Nutrients>
+		  <NutrientsLimit>0.25</NutrientsLimit>		
+		</statBases>
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	</ThingDef>
+	
+	<!--Рыба-->
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Fish</defName>
+		<label>Fish</label>
+		<description>Raw fish that hasn't been gutted. It's worth cleaning before consumption</description>
+		<graphicData>
+		  <texPath>Things/Food/Raw/Fish</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+		  <li>Corpses</li>
+		</thingCategories>	
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>All</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MaxHitPoints>75</MaxHitPoints>
+		  <MarketValue>10</MarketValue>
+		  <Mass>0.5</Mass>
+		  <Flammability>1</Flammability>
+		  <DeteriorationRate>6</DeteriorationRate>
+		  <Nutrition>0.25</Nutrition>
+		  <Nutrients>0.05</Nutrients>
+		  <NutrientsLimit>0.25</NutrientsLimit>		
+		  <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+		  <preferability>DesperateOnly</preferability>
+		  <foodType>Corpse</foodType>
+		  <ingestEffect>EatMeat</ingestEffect>
+		  <tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<intricate>false</intricate>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>2</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+	</ThingDef> 
+	
+	<!--Сырое мясо-->
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Fish_RAW</defName>
+		<label>Fish fillets</label>
+		<description>Fish fillets</description>
+		<graphicData>
+		  <texPath>Things/Food/Raw/Fish_RAW</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+		  <li>MeatRaw</li>
+		</thingCategories>		
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>All</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MaxHitPoints>75</MaxHitPoints>
+		  <MarketValue>2</MarketValue>
+		  <Mass>0.10</Mass>
+		  <Flammability>1</Flammability>
+		  <DeteriorationRate>6</DeteriorationRate>
+		  <Nutrition>0.15</Nutrition>
+		  <Nutrients>0.05</Nutrients>
+		  <NutrientsLimit>0.25</NutrientsLimit>		
+		  <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+		  <preferability>RawBad</preferability>
+		  <foodType>Meat</foodType>
+		  <ingestEffect>EatMeat</ingestEffect>
+		  <tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<intricate>false</intricate>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>2</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+	</ThingDef> 
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Dried_meat_RAW</defName>
+		<label>Raw dried meat</label>
+		<description>Raw dried meat. Requires further fermentation</description>
+		<graphicData>
+		  <texPath>Things/Food/Raw/Dried_meat_RAW</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+		  <li>MeatRaw</li>
+		</thingCategories>		
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MaxHitPoints>75</MaxHitPoints>
+		  <MarketValue>5</MarketValue>
+		  <Mass>0.10</Mass>
+		  <Flammability>1</Flammability>
+		  <DeteriorationRate>6</DeteriorationRate>
+		  <Nutrition>0.05</Nutrition>
+		  <Nutrients>0.05</Nutrients>
+		  <NutrientsLimit>0.10</NutrientsLimit>	
+		  <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+		  <preferability>RawBad</preferability>
+		  <foodType>Meat</foodType>
+		  <ingestEffect>EatMeat</ingestEffect>
+		   <tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<intricate>false</intricate>
+	</ThingDef> 
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Exquisite_meat</defName>
+		<label>Exquisite meat</label>
+		<description>Raw dried meat. Requires further fermentation</description>
+		<graphicData>
+		  <texPath>Things/Food/Raw/Exquisite_meat</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+		  <li>Exquisite_meat</li>
+		</thingCategories>		
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MaxHitPoints>75</MaxHitPoints>
+		  <MarketValue>2.5</MarketValue>
+		  <Mass>0.10</Mass>
+		  <Flammability>1</Flammability>
+		  <DeteriorationRate>6</DeteriorationRate>
+		  <Nutrition>0.05</Nutrition>
+		  <Nutrients>0.05</Nutrients>
+		  <NutrientsLimit>0.10</NutrientsLimit>	
+		  <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+		  <preferability>RawBad</preferability>
+		  <foodType>Meat</foodType>
+		  <ingestEffect>EatMeat</ingestEffect>
+		  <tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>2</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<intricate>false</intricate>
+	</ThingDef> 
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Exquisite_meat_bird</defName>
+		<label>Exquisite meat bird</label>
+		<description>Raw dried meat. Requires further fermentation</description>
+		<graphicData>
+		  <texPath>Things/Food/Raw/Exquisite_meat_bird</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+		  <li>Exquisite_meat</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MaxHitPoints>75</MaxHitPoints>
+		  <MarketValue>2.5</MarketValue>
+		  <Mass>0.10</Mass>
+		  <Flammability>1</Flammability>
+		  <DeteriorationRate>6</DeteriorationRate>
+		  <Nutrition>0.05</Nutrition>
+		  <Nutrients>0.05</Nutrients>
+		  <NutrientsLimit>0.10</NutrientsLimit>	
+		</statBases>
+		<ingestible>
+		  <preferability>RawBad</preferability>
+		  <foodType>Meat</foodType>
+		  <ingestEffect>EatMeat</ingestEffect>
+		  <tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>2</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<intricate>false</intricate>
+	</ThingDef> 
+	
+	<!--Тофу-->
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Tofu</defName>
+		<label>Tofu</label>
+		<description>Tofu, also called soybean curd, is a food product made from soybeans that is rich in protein. It can replace conventional meat</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/Tofu</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>	
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>All</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+		  <li>PlantFoodRaw</li>
+		</thingCategories>
+		<statBases>
+		  <MarketValue>1.4</MarketValue>
+		  <Mass>0.018</Mass>
+		  <Flammability>0.6</Flammability>
+		  <WorkToMake>700</WorkToMake>
+		  <DeteriorationRate>2</DeteriorationRate>
+		  <Nutrition>0.05</Nutrition>
+		  <Nutrients>0.05</Nutrients>
+		  <NutrientsLimit>0.25</NutrientsLimit>			  
+		</statBases>
+		<ingestible>
+		  <preferability>RawTasty</preferability>
+		  <foodType>VegetableOrFruit</foodType>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+		</ingestible>
+		<intricate>false</intricate>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>4</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		  <li Class="CompProperties_FoodPoisonable" />
+		</comps>
+	</ThingDef> 
+	
+	<!--Вяленное мясо-->
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Dried_meat</defName>
+		<label>Dried Meat</label>
+		<description>Dried meat to preserve and prolong shelf life.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/Dried_meat</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>	  
+		</graphicData>
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>		
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>13</MarketValue>
+			<Nutrition>0.05</Nutrition>
+			<Nutrients>0.08</Nutrients>
+			<NutrientsLimit>0.24</NutrientsLimit>
+			<DeteriorationRate>0.05</DeteriorationRate>
+		</statBases>	
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <foodType>Meal</foodType>
+		  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+		  <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		  <ingestEffect>EatMeat</ingestEffect>
+		</ingestible>
+		<tradeability>Buyable</tradeability>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>35</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>	
+	</ThingDef> 
+	
+	<!--Жаренное мясо-->
+	<ThingDef ParentName="MealCooked">
+		<defName>Fried_meat</defName>
+		<label>Fried meat</label>
+		<description>Roughly fried piece of meat. Very hard and does not taste good</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/Fried_meat</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>	  
+		</graphicData>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<Nutrition>0.6</Nutrition>
+			<Nutrients>0.24</Nutrients>
+			<NutrientsLimit>0.24</NutrientsLimit>			
+			<WorkToMake>300</WorkToMake>
+		</statBases>	
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+		  <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals> 
+		  <ingestEffect>EatMeat</ingestEffect>
+		</ingestible>
+		<tradeability>Buyable</tradeability>
+	</ThingDef> 
+
+	<ThingDef ParentName="MealCooked">
+		<defName>Sawdust_soup</defName>
+		<label>Sawdust soup</label>
+		<description>Watery soup with few ingredients. Sawdust is used for more richness. Very unpleasant tasting.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/Sawdust_soup</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>	  
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Nutrition>0.9</Nutrition>		
+			<WorkToMake>400</WorkToMake>
+			<Nutrients>0.12</Nutrients>
+			<NutrientsLimit>0.24</NutrientsLimit>	
+		</statBases>	
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>		
+		<ingestible>
+		  <tasteThought>AteSawdustSoup</tasteThought>
+		  <preferability>MealSimple</preferability>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<tradeability>Buyable</tradeability>
+	</ThingDef>
+
+	<!-- Консервы, маленьковая и большовая -->
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>SmallCan</defName>
+		<label>small tin can</label>
+		<description>Small tin can with not so good but still nutricious food.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/SmallCan</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.55</drawSize>
+		</graphicData>
+		<thingCategories>
+		  <li>FoodMeals</li>
+		</thingCategories>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>150</stackLimit>
+		<statBases>
+			<MarketValue>13</MarketValue>
+			<Nutrition>0.45</Nutrition>
+			<Nutrients>0.12</Nutrients>
+			<NutrientsLimit>0.24</NutrientsLimit>
+			<DeteriorationRate>0.05</DeteriorationRate>
+		</statBases>	
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <foodType>Meal</foodType>
+		  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+		  <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		  <ingestEffect>EatMeat</ingestEffect>
+		</ingestible>
+		<tradeability>Buyable</tradeability>	
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>BigCan</defName>
+		<label>big tin can</label>
+		<description>Big tin can with good and tasty food.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/BigCan</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>	  
+		</graphicData>
+		<thingCategories>
+		  <li>FoodMeals</li>
+		</thingCategories>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>18</MarketValue>
+			<Nutrition>0.9</Nutrition>
+			<Nutrients>0.245</Nutrients>
+			<NutrientsLimit>0.49</NutrientsLimit>
+			<DeteriorationRate>0.05</DeteriorationRate>
+		</statBases>	
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <foodType>Meal</foodType>
+		  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+		  <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		  <ingestEffect>EatMeat</ingestEffect>
+		</ingestible>
+		<tradeability>Buyable</tradeability>	
+	</ThingDef>
+
+	<!-- Ириска -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Toffee</defName>
+    <label>toffee</label>
+    <description>Toffee is a sweet confection made by caramelizing sugar with butter, often with added nuts or flavorings. It offers a rich, buttery taste, but is not particularly nutritious due to its high sugar and fat content.</description>
+    <graphicData>
+      <texPath>Things/Food/Meal/Toffee</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>2.2</MarketValue>
+      <Mass>0.075</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+      <Nutrition>0.06</Nutrition>
+	  <Nutrients>0.02</Nutrients>
+	  <NutrientsLimit>0.24</NutrientsLimit>	  
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <possessionCount>10</possessionCount>
+  </ThingDef>
+
+	<!-- Карамель (ведро чисто) -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Caramel</defName>
+    <label>caramel</label>
+    <description>Mostly melted sugar. Would not recommend eat it raw.</description>
+    <graphicData>
+      <texPath>Things/Food/Meal/Caramel/Caramel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>12.88</MarketValue>
+      <Mass>0.75</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>18</DeteriorationRate>
+      <Nutrition>1</Nutrition>
+	  <Nutrients>0.01</Nutrients>
+	  <NutrientsLimit>0.24</NutrientsLimit>	  
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>-1</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AteCaramelBucket</tasteThought>
+    </ingestible>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <possessionCount>10</possessionCount>
+  </ThingDef>
+
+  <ThoughtDef>
+    <defName>AteCaramelBucket</defName>
+    <durationDays>2</durationDays>
+    <stages>
+      <li>
+        <label>ate whole caramel bucket</label>
+        <description>I ate whole caramel bucket. It was yummy at the start, but now I feel nauseous.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+	<!-- Хлеп -->
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>BlackBread</defName>
+		<label>black bread</label>
+		<description>Black bread is a dense, dark-colored bread made from whole grain rye or other dark flours. It's known for its robust flavor and higher fiber content compared to white bread.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/BlackBread</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>	  
+		</graphicData>
+		<thingCategories>
+		  <li>Baking</li>
+		</thingCategories>		
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>15</MarketValue>
+			<Nutrition>0.50</Nutrition>
+			<Nutrients>0.08</Nutrients>
+			<NutrientsLimit>0.24</NutrientsLimit>
+			<DeteriorationRate>0.05</DeteriorationRate>
+		</statBases>	
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <foodType>Plant, Processed</foodType>
+		  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+		  <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+		</ingestible>
+		<tradeability>Buyable</tradeability>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>	
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>WhiteBread</defName>
+		<label>white bread</label>
+		<description>White bread is a light-colored bread made from refined wheat flour. It has a soft, fluffy texture and a mild, neutral taste. While it may lack the fiber content of whole grain bread, white bread is a popular choice for its versatility and appealing texture.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/WhiteBread</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>	
+		<thingCategories>
+		  <li>Baking</li>
+		</thingCategories>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>15</MarketValue>
+			<MeleeCounterParryBonus>0.33</MeleeCounterParryBonus>
+			<Bulk>0.35</Bulk>			
+			<Nutrition>0.50</Nutrition>
+			<Nutrients>0.13</Nutrients>
+			<NutrientsLimit>0.50</NutrientsLimit>
+			<DeteriorationRate>0.05</DeteriorationRate>
+		</statBases>	
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <foodType>Plant, Processed</foodType>
+		  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+		  <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		</ingestible>
+		<tradeability>Buyable</tradeability>
+	<weaponClasses>
+	  <li>Melee</li>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+	<weaponTags>
+		<li>CE_OneHandedWeapon</li>
+	</weaponTags>
+    <equipmentType>Primary</equipmentType>
+	<techLevel>Neolithic</techLevel>
+    <tools>
+		<li Class="CombatExtended.ToolCE">
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>0.8</power>
+			<cooldownTime>2.22</cooldownTime>
+			<chanceFactor>1.33</chanceFactor>
+			<armorPenetrationBlunt>0.138</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Base</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>bread</label>
+			<capacities>
+				<li>Poke</li>
+			</capacities>
+			<power>0.4</power>
+			<cooldownTime>3.33</cooldownTime>
+			<armorPenetrationBlunt>0.050</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Neck</linkedBodyPartsGroup>
+		</li>
+    </tools>
+    <equippedAngleOffset>-65</equippedAngleOffset>	
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>6</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+	<equippedStatOffsets>
+		<MeleeCritChance>0.1</MeleeCritChance>
+		<MeleeParryChance>0.33</MeleeParryChance>
+		<MeleeDodgeChance>0.07</MeleeDodgeChance>	
+	</equippedStatOffsets>	
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Candy</defName>
+		<label>Candy</label>
+		<description>A confectionery product, made of caramel. This wonderful treat, if consumed correctly and sensibly, can be very beneficial to the body.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/CandyPink</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.88</drawSize>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <MarketValue>2.2</MarketValue>
+		  <Mass>0.075</Mass>
+		  <Flammability>0.2</Flammability>
+		  <DeteriorationRate>8</DeteriorationRate>
+		  <Nutrition>0.06</Nutrition>
+		  <Nutrients>0.02</Nutrients>
+		  <NutrientsLimit>0.24</NutrientsLimit>	  
+		</statBases>
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<ingestible>
+		  <tasteThought>AteTheCandy</tasteThought>
+		  <preferability>DesperateOnly</preferability>
+		  <foodType>Processed</foodType>
+		  <joy>0.10</joy>
+		  <joyKind>Gluttonous</joyKind>
+		  <maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<possessionCount>10</possessionCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>SaltCandy</defName>
+		<label>Salt candy</label>
+		<description>A confectionery product made of caramel with added salt. This wonderful treat, if consumed correctly and sensibly, can be very beneficial to the body.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/CandyBlue</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.88</drawSize>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <MarketValue>2.2</MarketValue>
+		  <Mass>0.075</Mass>
+		  <Flammability>0.2</Flammability>
+		  <DeteriorationRate>8</DeteriorationRate>
+		  <Nutrition>0.06</Nutrition>
+		  <Nutrients>0.02</Nutrients>
+		  <NutrientsLimit>0.24</NutrientsLimit>	  
+		</statBases>
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<ingestible>
+		  <tasteThought>AteTheCandy</tasteThought>
+		  <preferability>DesperateOnly</preferability>
+		  <foodType>Processed</foodType>
+		  <joy>0.10</joy>
+		  <joyKind>Gluttonous</joyKind>
+		  <maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<possessionCount>10</possessionCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>ChocolateCandy</defName>
+		<label>Chocolate candy</label>
+		<description>A confectionery product, made of chocolate. This wonderful treat, when consumed correctly and sensibly, can be of great benefit to the body.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/ChocolateCandy</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.88</drawSize>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <MarketValue>2.2</MarketValue>
+		  <Mass>0.075</Mass>
+		  <Flammability>0.2</Flammability>
+		  <DeteriorationRate>8</DeteriorationRate>
+		  <Nutrition>0.06</Nutrition>
+		  <Nutrients>0.02</Nutrients>
+		  <NutrientsLimit>0.24</NutrientsLimit>	  
+		</statBases>
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<ingestible>
+		  <tasteThought>AteTheCandy</tasteThought>
+		  <preferability>DesperateOnly</preferability>
+		  <foodType>Processed</foodType>
+		  <joy>0.10</joy>
+		  <joyKind>Gluttonous</joyKind>
+		  <maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<possessionCount>10</possessionCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>PumpkinLollipop</defName>
+		<label>Fake-pumpkin lollipop</label>
+		<description>A confectionery product made of caramel. Carrot juice is added to this product as a coloring agent</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/PumpkinLollipop</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.88</drawSize>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <MarketValue>2.2</MarketValue>
+		  <Mass>0.075</Mass>
+		  <Flammability>0.2</Flammability>
+		  <DeteriorationRate>8</DeteriorationRate>
+		  <Nutrition>0.06</Nutrition>
+		  <Nutrients>0.02</Nutrients>
+		  <NutrientsLimit>0.24</NutrientsLimit>	  
+		</statBases>
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<ingestible>
+		  <tasteThought>AteTheCandy</tasteThought>
+		  <preferability>DesperateOnly</preferability>
+		  <foodType>Processed</foodType>
+		  <joy>0.10</joy>
+		  <joyKind>Gluttonous</joyKind>
+		  <maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<possessionCount>10</possessionCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Marmalade</defName>
+		<label>Marmalade</label>
+		<description>Fruit and berry marmalade is produced from raw materials containing pectin in an amount sufficient to form a jelly-like structure.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/Marmalade</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.88</drawSize>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <MarketValue>2.2</MarketValue>
+		  <Mass>0.075</Mass>
+		  <Flammability>0.2</Flammability>
+		  <DeteriorationRate>8</DeteriorationRate>
+		  <Nutrition>0.06</Nutrition>
+		  <Nutrients>0.02</Nutrients>
+		  <NutrientsLimit>0.24</NutrientsLimit>	  
+		</statBases>
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<ingestible>
+		  <tasteThought>AteTheCandy</tasteThought>
+		  <preferability>DesperateOnly</preferability>
+		  <foodType>Processed</foodType>
+		  <joy>0.10</joy>
+		  <joyKind>Gluttonous</joyKind>
+		  <maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<possessionCount>10</possessionCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Licorice</defName>
+		<label>Licorice</label>
+		<description>Licorice - A confection, usually flavored and colored black with black berry extract.</description>
+		<graphicData>
+		  <texPath>Things/Food/Meal/Licorice</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.88</drawSize>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <MarketValue>2.2</MarketValue>
+		  <Mass>0.075</Mass>
+		  <Flammability>0.2</Flammability>
+		  <DeteriorationRate>8</DeteriorationRate>
+		  <Nutrition>0.06</Nutrition>
+		  <Nutrients>0.02</Nutrients>
+		  <NutrientsLimit>0.24</NutrientsLimit>	  
+		</statBases>
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<ingestible>
+		  <tasteThought>AteTheLicorice</tasteThought>
+		  <preferability>DesperateOnly</preferability>
+		  <foodType>Processed</foodType>
+		  <joy>0.10</joy>
+		  <joyKind>Gluttonous</joyKind>
+		  <maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<possessionCount>10</possessionCount>
+	</ThingDef>
+
+</Defs>

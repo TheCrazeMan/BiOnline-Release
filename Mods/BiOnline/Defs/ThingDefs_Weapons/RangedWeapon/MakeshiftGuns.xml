@@ -1,0 +1,417 @@
+<Defs>
+
+	<!-- БАЗА -->
+	
+	<ThingDef Name="BaseMakeshiftMakeableGun" ParentName="BaseWeapon" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<tradeability>Sellable</tradeability>
+		<smeltable>true</smeltable>
+		<relicChance>0</relicChance>
+		<thingCategories>
+		  <li>WeaponsRanged</li>
+		</thingCategories>
+		<weaponClasses>
+		  <li>Ranged</li>
+		</weaponClasses>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<statBases>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<!--ПУШКИ-->
+	
+	<ThingDef ParentName="BaseMakeshiftMakeableGun">
+    <defName>BiO_Makeshift_Shotgun</defName>
+    <label>Argument</label> 
+    <description>Makeshift shotgun made with shit and sticks</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Industrial/MakeshiftShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <SightsEfficiency>0.6</SightsEfficiency>
+      <ShotSpread>0.6</ShotSpread>
+      <SwayFactor>1.91</SwayFactor>
+      <Bulk>1.90</Bulk>
+      <Mass>0.82</Mass>
+      <RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <ChunkSlagSteel>2</ChunkSlagSteel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
+        <warmupTime>1.6</warmupTime>
+        <range>10</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>0.6</reloadTime>
+        <ammoSet>AmmoSet_MakeshiftGauge</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMakeshiftMakeableGun">
+    <defName>BiO_Makeshift_Magnum</defName>
+    <label>SmallPortableKiller</label> 
+    <description>Makeshift pistol made with shit and sticks</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Industrial/MakeshiftPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.4</ShotSpread>
+      <SwayFactor>1.04</SwayFactor>
+      <Bulk>1.90</Bulk>
+      <Mass>0.82</Mass>
+      <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_44Magnum_HV_FMJ</defaultProjectile>
+        <warmupTime>1.6</warmupTime>
+        <range>15</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>1.8</reloadTime>
+        <ammoSet>AmmoSet_MakeshiftMagnum</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMakeshiftMakeableGun">
+    <defName>BiO_Makeshift_AutoRifle</defName>
+    <label>Trasher</label> 
+    <description>Makeshift automatic rifle made with shit and sticks</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Industrial/MakeshiftAssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <SightsEfficiency>0.7</SightsEfficiency>
+      <ShotSpread>0.32</ShotSpread>
+      <SwayFactor>1.24</SwayFactor>
+      <Bulk>1.90</Bulk>
+      <Mass>0.82</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <ChunkSlagSteel>6</ChunkSlagSteel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.12</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_127x55mm_FMJ</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <warmupTime>1.1</warmupTime>
+        <range>28</range>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>24</magazineSize>
+        <reloadTime>3.6</reloadTime>
+        <ammoSet>AmmoSet_MakeshiftSoviet</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMakeshiftMakeableGun">
+    <defName>BiO_Makeshift_SMG</defName>
+    <label>Mosquito</label> 
+    <description>Makeshift SMG made with shit and sticks</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Industrial/MakeshiftSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <SightsEfficiency>0.4</SightsEfficiency>
+      <ShotSpread>0.24</ShotSpread>
+      <SwayFactor>1.14</SwayFactor>
+      <Bulk>1.90</Bulk>
+      <Mass>0.82</Mass>
+      <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <ChunkSlagSteel>2</ChunkSlagSteel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.86</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x21mmGyurza_FMJ</defaultProjectile>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <warmupTime>1.1</warmupTime>
+        <range>20</range>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>35</magazineSize>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_MakeshiftKarov</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMakeshiftMakeableGun">
+    <defName>BiO_Makeshift_Rifle</defName>
+    <label>Pugach</label> 
+    <description>Makeshift rifle made with shit and sticks</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/Industrial/MakeshiftRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <SightsEfficiency>1.2</SightsEfficiency>
+      <ShotSpread>0.12</ShotSpread>
+      <SwayFactor>1.82</SwayFactor>
+      <Bulk>1.90</Bulk>
+      <Mass>0.82</Mass>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.12</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+        <warmupTime>2.1</warmupTime>
+        <range>36</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>4.2</reloadTime>
+        <ammoSet>AmmoSet_MakeshiftSniper</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+</Defs>

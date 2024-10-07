@@ -1,0 +1,133 @@
+<Patch>
+	<!--
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="Main"]</xpath>
+                </li> 
+
+            </operations>
+        </match>
+    </Operation> -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="DubsBadHygiene"]</xpath>
+                </li> 
+
+            </operations>
+        </match>
+    </Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>CAI 5000 - Advanced AI + Fog Of War</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="cai5000"]</xpath>
+                </li> 
+
+            </operations>
+        </match>
+    </Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Androids</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="ChjAndroid"]</xpath>
+                </li> 
+
+            </operations>
+        </match>
+    </Operation>
+	<!--
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="CE_Turrets"]</xpath>
+                </li> 
+
+            </operations>
+        </match>
+    </Operation>
+	-->
+	
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sd] Advanced Powergeneration (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="sd_adv_powergen_ResearchTab"]</xpath>
+                </li> 
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]</xpath>
+                </li> 
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SRTS Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="SRTSE"]</xpath>
+                </li> 
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

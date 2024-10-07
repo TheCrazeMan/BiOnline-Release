@@ -1,0 +1,67 @@
+<Patch>
+			
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Synthread"]/stuffProps/statFactors</xpath>
+		<value>
+			<Mass>0.95</Mass>
+			<BedRestEffectiveness>1.35</BedRestEffectiveness>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Synthread"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<value>
+			<StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Synthread"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<value>
+			<StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DevilstrandCloth"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<value>
+			<StuffPower_Armor_Sharp>0.2</StuffPower_Armor_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DevilstrandCloth"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<value>
+			<StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DevilstrandCloth"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>4</MarketValue>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Synthread"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>5.5</MarketValue>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Synthread"]/statBases</xpath>
+		<value>
+			<ArmorRating_Electric>0.1</ArmorRating_Electric>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Hyperweave"]/statBases</xpath>
+		<value>
+			<ArmorRating_Electric>0.2</ArmorRating_Electric>
+		</value>
+	</Operation>
+
+</Patch>

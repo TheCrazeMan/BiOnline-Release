@@ -1,0 +1,2936 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Fishing</defName>
+		<label>Fishing</label>
+		<description>Fishing</description>
+		<jobString>Fishing</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<requiredGiverWorkType>Hunting</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Animals>4</Animals>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Pierce</li>
+		</recipeUsers>
+		<workAmount>9000</workAmount>
+		<products>
+			<Fish>1</Fish>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+		
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_TofuX4</defName>
+		<label>Cook Tofu X4</label>
+		<description>Cook Tofu.</description>
+		<jobString>Cook Tofu.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<workAmount>400</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawSoy</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</abstractIngredients>
+		<products>
+			<Tofu>4</Tofu>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_TofuX16</defName>
+		<label>Cook Tofu X16</label>
+		<description>Cook Tofu.</description>
+		<jobString>Cook Tofu.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<workAmount>1600</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawSoy</li>
+			  </thingDefs>
+			</filter>
+			<count>32</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</abstractIngredients>
+		<products>
+			<Tofu>16</Tofu>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_SpiceX4</defName>
+		<label>Cook spice X4</label>
+		<description>Cook spice.</description>
+		<jobString>Cook spice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>400</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawBlackPepper</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Spice>4</Spice>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_SpiceX16</defName>
+		<label>Cook spice X16</label>
+		<description>Cook spice.</description>
+		<jobString>Cook spice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>1600</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawBlackPepper</li>
+			  </thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Spice>16</Spice>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_SpiceX50</defName>
+		<label>Cook spice X50</label>
+		<description>Cook spice.</description>
+		<jobString>Cook spice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>Chemical_Production</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>1500</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawBlackPepper</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SulfuricAcid</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Spice>50</Spice>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_SpiceX100</defName>
+		<label>Cook spice X100</label>
+		<description>Cook spice.</description>
+		<jobString>Cook spice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>Chemical_Production</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>3000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>15</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawBlackPepper</li>
+			  </thingDefs>
+			</filter>
+			<count>15</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SulfuricAcid</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Spice>100</Spice>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase"  Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>CookPrimitiveMeal</defName>
+		<label>cook Primitive Meal</label>
+		<description>Cook a straightforward meal from one ingredient.</description>
+		<jobString>Cooking Primitive meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+		  <li>ElectricStove</li>
+		  <li>FueledStove</li>
+		  <li>Campfire</li>
+		  <li>FirePit</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Vegetables</li>
+						<li>Exquisite_Vegetables</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</abstractIngredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Vegetables</li>
+				<li>Exquisite_Vegetables</li>
+			</categories>
+			<disallowedCategories>
+				<li>VegetablesFruitsOthers</li>
+				<li>Baking</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+		  <PrimitiveMeal>1</PrimitiveMeal>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase"  Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>CookPrimitiveMealX4</defName>
+		<label>cook Primitive Meal x4</label>
+		<description>Cook a straightforward meal from one ingredient.</description>
+		<jobString>Cooking Primitive meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>800</workAmount>
+		<recipeUsers>
+		  <li>ElectricStove</li>
+		  <li>FueledStove</li>
+		  <li>Campfire</li>
+		  <li>FirePit</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Vegetables</li>
+						<li>Exquisite_Vegetables</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</abstractIngredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Vegetables</li>
+				<li>Exquisite_Vegetables</li>
+			</categories>
+			<disallowedCategories>
+				<li>VegetablesFruitsOthers</li>
+				<li>Baking</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+		  <PrimitiveMeal>4</PrimitiveMeal>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookBakedPotatoes</defName>
+		<label>cook baked potatoes</label>
+		<description>Cook a straightforward meal from one ingredient.</description>
+		<jobString>Cooking baked potatoes meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+		  <li>ElectricStove</li>
+		  <li>FueledStove</li>
+		  <li>Campfire</li>
+		  <li>FirePit</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>VegetablesFruitsOthers</li>
+				<li>Baking</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+		  <BakedPotatoes>1</BakedPotatoes>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookBakedPotatoesx4</defName>
+		<label>cook baked potatoes x4</label>
+		<description>Cook baked potatoes meal.</description>
+		<jobString>Cooking baked potatoes meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>800</workAmount>
+		<recipeUsers>
+		  <li>ElectricStove</li>
+		  <li>FueledStove</li>
+		  <li>Campfire</li>
+		  <li>FirePit</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>VegetablesFruitsOthers</li>
+				<li>Baking</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+		  <BakedPotatoes>4</BakedPotatoes>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookSmallCan</defName>
+		<label>Cook conserva</label>
+		<description>Cook a fried meat from raw meat.</description>
+		<jobString>Cooking simple meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>ElectricStove</li>
+		  <li>FueledStove</li>
+		</recipeUsers>
+		<workAmount>600</workAmount>
+			<ingredients>
+			  <li>
+				<filter>
+				  <categories>
+					<li>Vegetables</li>
+					<li>Exquisite_Vegetables</li>
+					<li>MeatRaw</li>
+					<li>Exquisite_meat</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>10</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Steel</li>
+				  </thingDefs>
+				</filter>
+				<count>2</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Salt</li>
+				  </thingDefs>
+				</filter>
+				<count>4</count>
+			  </li>
+			</ingredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<requiredModules>
+					<li>PreservationModule</li>
+				</requiredModules>
+			</li>
+		</modExtensions>
+		<fixedIngredientFilter>
+		  <disallowedCategories>
+			<li>Baking</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<SmallCan>2</SmallCan>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookSmallCanX4</defName>
+		<label>Cook conserva x4</label>
+		<description>Cook a fried meat from raw meat.</description>
+		<jobString>Cooking simple meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>FueledStove</li>
+		  <li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>2400</workAmount>
+			<ingredients>
+			  <li>
+				<filter>
+				  <categories>
+					<li>Vegetables</li>
+					<li>Exquisite_Vegetables</li>
+					<li>MeatRaw</li>
+					<li>Exquisite_meat</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>40</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Steel</li>
+				  </thingDefs>
+				</filter>
+				<count>8</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Salt</li>
+				  </thingDefs>
+				</filter>
+				<count>16</count>
+			  </li>
+			</ingredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<requiredModules>
+					<li>PreservationModule</li>
+				</requiredModules>
+			</li>
+		</modExtensions>
+		<fixedIngredientFilter>
+		  <disallowedCategories>
+			<li>Baking</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<SmallCan>8</SmallCan>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookBigCan</defName>
+		<label>Cook balanced conserva</label>
+		<description>Cook a fried meat from raw meat.</description>
+		<jobString>Cooking simple meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>FueledStove</li>
+		  <li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>600</workAmount>
+			<ingredients>
+			  <li>
+				<filter>
+				  <categories>
+					<li>Vegetables</li>
+					<li>Exquisite_Vegetables</li>
+				  </categories>
+				</filter>
+				<count>6</count>
+			  </li>
+			  <li>
+				<filter>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>Exquisite_meat</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>6</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Steel</li>
+				  </thingDefs>
+				</filter>
+				<count>2</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Salt</li>
+				  </thingDefs>
+				</filter>
+				<count>2</count>
+			  </li>
+			</ingredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<requiredModules>
+					<li>PreservationModule</li>
+				</requiredModules>
+			</li>
+		</modExtensions>
+		<fixedIngredientFilter>
+		  <disallowedCategories>
+			<li>Baking</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<BigCan>1</BigCan>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookBigCanx4</defName>
+		<label>Cook balanced conserva x4</label>
+		<description>Cook a fried meat from raw meat.</description>
+		<jobString>Cooking simple meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>FueledStove</li>
+		  <li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>2400</workAmount>
+			<ingredients>
+			  <li>
+				<filter>
+				  <categories>
+					<li>Vegetables</li>
+					<li>Exquisite_Vegetables</li>
+				  </categories>
+				</filter>
+				<count>24</count>
+			  </li>
+			  <li>
+				<filter>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>Exquisite_meat</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>24</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Steel</li>
+				  </thingDefs>
+				</filter>
+				<count>8</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Salt</li>
+				  </thingDefs>
+				</filter>
+				<count>8</count>
+			  </li>
+			</ingredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<requiredModules>
+					<li>PreservationModule</li>
+				</requiredModules>
+			</li>
+		</modExtensions>
+		<fixedIngredientFilter>
+		  <disallowedCategories>
+			<li>Baking</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<BigCan>4</BigCan>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	  
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookFried_meat</defName>
+		<label>Cook fried meat</label>
+		<description>Cook a fried meat from raw meat.</description>
+		<jobString>Cooking simple meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+			<li>Campfire</li>
+		</recipeUsers>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<customSummary>protein</customSummary>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>Exquisite_meat</li>
+				  </categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<defaultIngredientFilter>
+		  <categories>
+			<li>MeatRaw</li>
+			<li>Exquisite_meat</li>
+		  </categories>
+		</defaultIngredientFilter>
+		<fixedIngredientFilter>
+		  <disallowedCategories>
+			<li>AnimalProductRaw</li>
+			<li>VegetablesFruitsOthers</li>
+			<li>Baking</li>
+			<li>Vegetables</li>
+			<li>Exquisite_Vegetables</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<Fried_meat>1</Fried_meat>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookFried_meatx4</defName>
+		<label>Cook fried meat x4</label>
+		<description>Cook a fried meat from raw meat.</description>
+		<jobString>Cooking simple meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+			<li>Campfire</li>
+		</recipeUsers>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<customSummary>protein</customSummary>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>Exquisite_meat</li>
+				  </categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<defaultIngredientFilter>
+		  <categories>
+			<li>MeatRaw</li>
+			<li>Exquisite_meat</li>
+		  </categories>
+		</defaultIngredientFilter>
+		<fixedIngredientFilter>
+		  <disallowedCategories>
+			<li>AnimalProductRaw</li>
+			<li>VegetablesFruitsOthers</li>
+			<li>Baking</li>
+			<li>Vegetables</li>
+			<li>Exquisite_Vegetables</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<Fried_meat>4</Fried_meat>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>CookSawdust_soup</defName>
+		<label>Cook sawdust soup</label>
+		<description>Cook soup with sawdust from raw vegetables or meat with the addition of sawdust.</description>
+		<jobString>Cooking sawdust soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>FirePit</li>
+		  <li>FueledStove</li>
+		  <li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>400</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <customSummary>vegetarian ingredients</customSummary>
+			  <categories>
+				<li>Vegetables</li>
+				<li>Exquisite_Vegetables</li>
+			  </categories>
+			</filter>
+			<count>3</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Hay</li>
+			  </thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		</ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </abstractIngredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>FoodRaw</li>
+		  </categories>
+		  <thingDefs>
+			<li>Hay</li>
+		  </thingDefs>
+		  <disallowedCategories>
+			<li>MeatRaw</li>
+			<li>AnimalProductRaw</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<Sawdust_soup>1</Sawdust_soup>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>CookSawdust_soupx4</defName>
+		<label>Cook sawdust soup x4</label>
+		<description>Cook soup with sawdust from raw vegetables or meat with the addition of sawdust.</description>
+		<jobString>Cooking sawdust soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+		  <li>FirePit</li>
+		  <li>FueledStove</li>
+		  <li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>1600</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <customSummary>vegetarian ingredients</customSummary>
+			  <categories>
+				<li>Vegetables</li>
+				<li>Exquisite_Vegetables</li>
+			  </categories>
+			</filter>
+			<count>12</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Hay</li>
+			  </thingDefs>
+			</filter>
+			<count>16</count>
+		  </li>
+		</ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </abstractIngredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>FoodRaw</li>
+		  </categories>
+		  <thingDefs>
+			<li>Hay</li>
+		  </thingDefs>
+		  <disallowedCategories>
+			<li>MeatRaw</li>
+			<li>AnimalProductRaw</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<Sawdust_soup>4</Sawdust_soup>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_Dried_meat_RAWx25</defName>
+		<label>Cook dried meat raw х25</label>
+		<description>Prepare the meat for drying.</description>
+		<jobString>Cooking dried meat raw.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingI</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>ButcherSpot</li>
+			<li>TableButcher</li>
+		</recipeUsers>
+		<workAmount>250</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+			    <li>Exquisite_meat</li>
+				<li>MeatRaw</li>
+			  </categories>
+			</filter>
+			<count>25</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+		    <li>Exquisite_meat</li>
+			<li>MeatRaw</li>
+		  </categories>
+		  <disallowedCategories>
+			<li>AnimalProductRaw</li>
+			<li>PlantFoodRaw</li>
+			<li>Baking</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		  <disallowedThingDefs>
+			<li>Meat_Megaspider</li>
+			<li>Meat_Human</li>
+			<li>Meat_Twisted</li>
+			<li>Dried_meat_RAW</li>
+		  </disallowedThingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Dried_meat_RAW>25</Dried_meat_RAW>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_Dried_meat_RAWx75</defName>
+		<label>Cook dried meat raw х75</label>
+		<description>Prepare the meat for drying.</description>
+		<jobString>Cooking dried meat raw.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingI</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>ButcherSpot</li>
+			<li>TableButcher</li>
+		</recipeUsers>
+		<workAmount>750</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+			    <li>Exquisite_meat</li>
+				<li>MeatRaw</li>
+			  </categories>
+			</filter>
+			<count>75</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>15</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+		    <li>Exquisite_meat</li>
+			<li>MeatRaw</li>
+		  </categories>
+		  <disallowedCategories>
+			<li>AnimalProductRaw</li>
+			<li>PlantFoodRaw</li>
+			<li>Baking</li>
+			<li>VegetablesFruitsOthers</li>
+		  </disallowedCategories>
+		  <disallowedThingDefs>
+			<li>Meat_Megaspider</li>
+			<li>Meat_Human</li>
+			<li>Meat_Twisted</li>
+			<li>Dried_meat_RAW</li>
+		  </disallowedThingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Dried_meat_RAW>75</Dried_meat_RAW>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_BlackBread</defName>
+		<label>Cook black bread x2</label>
+		<description>Cook black bread.</description>
+		<jobString>Cook black bread.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>1000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Flour</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+            <abstractIngredients>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>WaterForBill</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </abstractIngredients>
+		<products>
+			<BlackBread>2</BlackBread>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+		
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_BlackBreadYeasts</defName>
+		<label>Cook black bread x3</label>
+		<description>Cook black bread.</description>
+		<jobString>Cook black bread.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>1200</workAmount>
+			<ingredients>
+			  <li>
+				<filter>
+				  <thingDefs>
+						<li>Flour</li>
+				  </thingDefs>
+				</filter>
+				<count>1</count>
+			  </li>
+			  <li>
+				<filter>
+					<thingDefs>
+						<li>Yeasts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			  </li>
+			</ingredients>
+            <abstractIngredients>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>WaterForBill</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </abstractIngredients>
+		<products>
+			<BlackBread>3</BlackBread>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+			
+<!-- 	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_WhiteBread</defName>
+		<label>Cook white bread x3</label>
+		<description>Cook white bread.</description>
+		<jobString>Cook white bread.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>1000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Flour</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Yeasts</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Milk</li>
+			  </thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		  <li>
+			<filter>
+			  <categories>
+				<li>EggsUnfertilized</li>
+			  </categories>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<defaultIngredientFilter>
+		  <categories>
+			<li>EggsUnfertilized</li>
+		  </categories>
+		  <thingDefs>
+			<li>Milk</li>
+			<li>Yeasts</li>
+			<li>Sugar</li>
+			<li>Flour</li>
+		  </thingDefs>
+		<defaultIngredientFilter>
+		  <categories>
+			<li>MeatRaw</li>
+			<li>Exquisite_meat</li>
+		  </categories>
+		</defaultIngredientFilter>
+		  <disallowedCategories>
+			<li>AnimalProductRaw</li>
+			<li>PlantFoodRaw</li>
+			<li>VegetablesFruitsOthers</li>
+			<li>Baking</li>
+			<li>Vegetables</li>
+			<li>Exquisite_Vegetables</li>
+			<li>MeatRaw</li>
+			<li>Exquisite_meat</li>
+		  </disallowedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<WhiteBread>3</WhiteBread>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef> -->
+
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_WhiteBread</defName>
+		<label>Cook white bread x3</label>
+		<description>Cook white bread.</description>
+		<jobString>Cook white bread.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<workAmount>1200</workAmount>
+			<ingredients>
+			  <li>
+				<filter>
+				  <thingDefs>
+						<li>Flour</li>
+				  </thingDefs>
+				</filter>
+				<count>1</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+						<li>Sugar</li>
+				  </thingDefs>
+				</filter>
+				<count>1</count>
+			  </li>
+			  <li>
+				<filter>
+					<thingDefs>
+						<li>Yeasts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Milk</li>
+				  </thingDefs>
+				</filter>
+				<count>4</count>
+			  </li>
+			  <li>
+				<filter>
+				  <categories>
+					<li>EggsUnfertilized</li>
+				  </categories>
+				</filter>
+				<count>1</count>
+			  </li>
+			</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>EggsUnfertilized</li>
+		  </categories>
+		  <thingDefs>
+			<li>Milk</li>
+			<li>Yeasts</li>
+			<li>Sugar</li>
+			<li>Flour</li>
+		  </thingDefs>
+		  <disallowedCategories>
+			<li>PlantFoodRaw</li>
+			<li>VegetablesFruitsOthers</li>
+			<li>Baking</li>
+			<li>Vegetables</li>
+			<li>Exquisite_Vegetables</li>
+			<li>MeatRaw</li>
+			<li>Exquisite_meat</li>
+		  </disallowedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+		  <categories>
+			<li>EggsUnfertilized</li>
+		  </categories>
+		  <thingDefs>
+			<li>Milk</li>
+			<li>Yeasts</li>
+			<li>Sugar</li>
+			<li>Flour</li>
+		  </thingDefs>
+		  </defaultIngredientFilter>
+		<products>
+			<WhiteBread>3</WhiteBread>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+
+	<!--Напитки-->
+	
+	<RecipeDef ParentName="CookMealBase"  Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_PsychiteTeaX1</defName>
+		<label>Cook psychite tea X1</label>
+		<description>Cook psychite tea.</description>
+		<jobString>Cook psychite tea.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingI</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>2</Cooking>
+		</skillRequirements>
+		<workAmount>400</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>PsychoidLeaves</li>
+			  </thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</abstractIngredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>DrinksTab</buildingTabCategoryDef>
+			</li>
+		</modExtensions>
+		<products>
+			<PsychiteTea>1</PsychiteTea>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_PsychiteTeaX4</defName>
+		<label>Cook psychite tea X4</label>
+		<description>Cook psychite tea.</description>
+		<jobString>Cook psychite tea.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingI</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>2</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<workAmount>1600</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>PsychoidLeaves</li>
+			  </thingDefs>
+			</filter>
+			<count>16</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</abstractIngredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>DrinksTab</buildingTabCategoryDef>
+			</li>
+		</modExtensions>
+		<products>
+			<PsychiteTea>4</PsychiteTea>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_TeaDrinkx4</defName>
+		<label>Cook tea X4</label>
+		<description>Cook tea.</description>
+		<jobString>Cook tea.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>800</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>TeaLeaves</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</abstractIngredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>DrinksTab</buildingTabCategoryDef>
+			</li>
+		</modExtensions>
+		<products>
+			<TeaDrink>4</TeaDrink>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_TeaDrinkSweetx4</defName>
+		<label>Cook tea X4</label>
+		<description>Cook tea.</description>
+		<jobString>Cook tea.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>800</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>TeaLeaves</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</abstractIngredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>DrinksTab</buildingTabCategoryDef>
+			</li>
+		</modExtensions>
+		<products>
+			<TeaDrinkSugar>4</TeaDrinkSugar>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+		
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_Coffeex4</defName>
+		<label>Cook Coffee X4</label>
+		<description>Cook Coffee.</description>
+		<jobString>Cook Coffee.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>800</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CoffeeBeans</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</abstractIngredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>DrinksTab</buildingTabCategoryDef>
+			</li>
+		</modExtensions>
+		<products>
+			<Coffee>4</Coffee>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+		
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_CoffeeSweetx4</defName>
+		<label>Cook coffee sugar X4</label>
+		<description>Cook coffee sugar.</description>
+		<jobString>Cook coffee sugar.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>800</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CoffeeBeans</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</abstractIngredients>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>DrinksTab</buildingTabCategoryDef>
+			</li>
+		</modExtensions>
+		<products>
+			<CoffeeSugar>4</CoffeeSugar>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_MilkChocolateX10</defName>
+		<label>Cook chocolate X10</label>
+		<description>Cook chocolate.</description>
+		<jobString>Cook chocolate.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>3000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CocoaBeans</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Milk</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Chocolate>10</Chocolate>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_MilkChocolateX40</defName>
+		<label>Cook chocolate X40</label>
+		<description>Cook chocolate.</description>
+		<jobString>Cook chocolate.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>12000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CocoaBeans</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Milk</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Chocolate>40</Chocolate>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_ChocolateX10</defName>
+		<label>Cook chocolate X10</label>
+		<description>Cook chocolate.</description>
+		<jobString>Cook chocolate.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>3000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CocoaBeans</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </abstractIngredients>
+		<products>
+			<Chocolate>5</Chocolate>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_ChocolateX40</defName>
+		<label>Cook chocolate X40</label>
+		<description>Cook chocolate.</description>
+		<jobString>Cook chocolate.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>12000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CocoaBeans</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		</ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </abstractIngredients>
+		<products>
+			<Chocolate>20</Chocolate>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_CaramelX10</defName>
+		<label>Cook caramel  X10</label>
+		<description>Cook caramel.</description>
+		<jobString>Cook caramel.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>3000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </abstractIngredients>
+		<products>
+			<Caramel>10</Caramel>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_CaramelX40</defName>
+		<label>Cook caramel  X40</label>
+		<description>Cook caramel.</description>
+		<jobString>Cook caramel.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>12000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+        <abstractIngredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WaterForBill</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </abstractIngredients>
+		<products>
+			<Caramel>40</Caramel>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_ToffeeX10</defName>
+		<label>Cook toffee  X10</label>
+		<description>Cook toffee.</description>
+		<jobString>Cook toffee.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>3000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Milk</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Toffee>10</Toffee>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook_ToffeeX40</defName>
+		<label>Cook toffee  X40</label>
+		<description>Cook toffee.</description>
+		<jobString>Cook toffee.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<researchPrerequisite>CookingIII</researchPrerequisite>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workAmount>12000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Milk</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Toffee>40</Toffee>
+		</products>
+		<displayPriority>100</displayPriority>
+	</RecipeDef>
+	
+    <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Molasses_x25</defName>
+    <label>Make Molasses x25</label>
+    <description>The juice extracted from sugarcane is boiled until the sugar crystallizes and precipitates out into a precipitate.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling beet</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+		<li>FirePit</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Sugar</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+	<abstractIngredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WaterForBill</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+	</abstractIngredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Sugar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Molasses>25</Molasses>
+    </products>
+  </RecipeDef>
+
+   <RecipeDef Class="BiOnline.Recipes.ExtendedRecipeDef">
+    <defName>Molasses_x100</defName>
+    <label>Make Molasses x100</label>
+    <description>The juice extracted from sugarcane is boiled until the sugar crystallizes and precipitates out into a precipitate.</description>
+    <researchPrerequisite>CookingII</researchPrerequisite>
+    <jobString>Milling beet</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+		<li>FirePit</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Sugar</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+	<abstractIngredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WaterForBill</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+	</abstractIngredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Sugar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Molasses>100</Molasses>
+    </products>
+  </RecipeDef>
+  
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_CandyX10</defName>
+		<label>Cook candy  X10</label>
+		<description>Cook Candy.</description>
+		<jobString>Cook Candy.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>5000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Candy>10</Candy>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_CandyX40</defName>
+		<label>Cook candy  X40</label>
+		<description>Cook Candy.</description>
+		<jobString>Cook Candy.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>20000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<products>
+			<Candy>40</Candy>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_SaltCandyX10</defName>
+		<label>Cook salt candy  X10</label>
+		<description>Cook salt candy.</description>
+		<jobString>Cook salt candy.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>5000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<products>
+			<SaltCandy>10</SaltCandy>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_SaltCandyX40</defName>
+		<label>Cook salt candy  X40</label>
+		<description>Cook salt candy.</description>
+		<jobString>Cook salt candy.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>20000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Salt</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<products>
+			<SaltCandy>40</SaltCandy>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_ChocolateCandyX10</defName>
+		<label>Cook chocolate candy  X10</label>
+		<description>Cook chocolate candy.</description>
+		<jobString>Cook chocolate candy.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>5000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Chocolate</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<products>
+			<ChocolateCandy>10</ChocolateCandy>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_ChocolateCandyX40</defName>
+		<label>Cook chocolate candy  X40</label>
+		<description>Cook chocolate candy.</description>
+		<jobString>Cook chocolate candy.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>20000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Chocolate</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<products>
+			<ChocolateCandy>40</ChocolateCandy>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_PumpkinLollipopX10</defName>
+		<label>Cook fake-pumpkin lollipop  X10</label>
+		<description>Cook pumpkin lollipop.</description>
+		<jobString>Cook pumpkin lollipop.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>5000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawCarrots</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</abstractIngredients>
+		<products>
+			<PumpkinLollipop>10</PumpkinLollipop>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_PumpkinLollipopX40</defName>
+		<label>Cook fake-pumpkin lollipop  X40</label>
+		<description>Cook pumpkin lollipop.</description>
+		<jobString>Cook pumpkin lollipop.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>20000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawCarrots</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Caramel</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</abstractIngredients>
+		<products>
+			<PumpkinLollipop>40</PumpkinLollipop>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_MarmaladeX10</defName>
+		<label>Cook marmalade  X10</label>
+		<description>Cook marmalade.</description>
+		<jobString>Cook marmalade.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>5000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawGrape</li>
+				<li>RawBerries</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</abstractIngredients>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>RawGrape</li>
+				<li>RawBerries</li>
+				<li>Sugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Marmalade>10</Marmalade>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_MarmaladeX40</defName>
+		<label>Cook marmalade  X40</label>
+		<description>Cook marmalade.</description>
+		<jobString>Cook marmalade.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>20000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawGrape</li>
+				<li>RawBerries</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</abstractIngredients>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>RawGrape</li>
+				<li>RawBerries</li>
+				<li>Sugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Marmalade>40</Marmalade>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_LicoriceX10</defName>
+		<label>Cook Licorice  X10</label>
+		<description>Cook Licorice.</description>
+		<jobString>Cook Licorice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>5000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>TM_RawDarkBerries</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</abstractIngredients>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Licorice</li>
+				<li>Sugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Licorice>10</Licorice>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+ 	<RecipeDef ParentName="CookMealBase" Class="BiOnline.Recipes.ExtendedRecipeDef">
+		<defName>Cook_LicoriceX40</defName>
+		<label>Cook Licorice  X40</label>
+		<description>Cook Licorice.</description>
+		<jobString>Cook Licorice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>FirePit</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workAmount>20000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>TM_RawDarkBerries</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Sugar</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<abstractIngredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WaterForBill</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</abstractIngredients>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Licorice</li>
+				<li>Sugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Licorice>40</Licorice>
+		</products>
+		<displayPriority>100</displayPriority>
+		<modExtensions>
+			<li Class="BiOnline.Recipes.DefModExtension_RecipeDef">
+				<buildingTabCategoryDef>Sweet</buildingTabCategoryDef>
+			</li>
+		</modExtensions>	
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ButcherFishFlesh</defName>
+		<label>butcher fish</label>
+		<description>Butcher a fish to obtain its meat.</description>
+		<jobString>Butchering.</jobString>
+		<workAmount>100</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<uiIconThing>Fish_RAW</uiIconThing>
+		<recipeUsers>
+			<li>TableButcher</li>
+			<li>ButcherSpot</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Fish</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Fish</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Fish_RAW>4</Fish_RAW>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ButcherFishFleshx4</defName>
+		<label>butcher fish х4</label>
+		<description>Butcher a fish to obtain its meat.</description>
+		<jobString>Butchering.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<uiIconThing>Fish_RAW</uiIconThing>
+		<recipeUsers>
+			<li>TableButcher</li>
+			<li>ButcherSpot</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Fish</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Fish</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Fish_RAW>16</Fish_RAW>
+		</products>
+	</RecipeDef>
+
+</Defs>

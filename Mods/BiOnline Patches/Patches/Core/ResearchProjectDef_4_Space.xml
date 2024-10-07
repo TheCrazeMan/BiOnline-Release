@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+
+            <operations>          
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>MultiAnalyzer</defName>
+						<label>multi-analyzer</label>
+						<description>Build multi-analyzers which increase research speed and allow higher-level research projects.</description>
+						<baseCost>4000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>MicroelectronicsBasics</li>
+						  <li>Space_Age</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>Machining</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>0.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>AdvancedFabrication</defName>
+						<label>advanced fabrication</label>
+						<description>Fabricate advanced components from standard components and other materials.</description>
+						<baseCost>4000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>Metal_processingIII</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>2.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>PoweredArmor</defName>
+						<label>marine armor</label>
+						<description>Build marine armor, a general-use powered armor suit used by high-tech shock troops. Note that these also require advanced components.</description>
+						<baseCost>6000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>AdvancedFabrication</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>ComplexClothing</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>4.00</researchViewX>
+						<researchViewY>5.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>ChargedShot</defName>
+						<label>pulse-charged munitions</label>
+						<description>Build weapons which fire pulse-charged munitions for extra damage. Note that these also require advanced components.</description>
+						<baseCost>3000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>AdvancedFabrication</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>PrecisionRifling</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>4.0</researchViewX>
+						<researchViewY>7.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>RocketswarmLauncher</defName>
+						<label>rocketswarm launcher</label>
+						<description>Produce rocketswarm launchers, single-burst turrets which can devastate a wide area at a key moment in battle.</description>
+						<baseCost>3000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>CE_AdvancedLaunchers</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>HeavyTurrets</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<hideWhen>
+						  <turretsDisabled>true</turretsDisabled>
+						</hideWhen>
+						<researchViewX>2</researchViewX>
+						<researchViewY>5.5</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CataphractArmor"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CataphractArmor</defName>
+						<label>cataphract armor</label>
+						<description>Craft cataphract armor, heavy powered armor that slows the user but which can absorb extreme punishment. Note that these also require advanced components.</description>
+						<baseCost>6000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>PoweredArmor</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>5.50</researchViewY>
+						<techprintCount>2</techprintCount>
+						<techprintCommonality>3</techprintCommonality>
+						<techprintMarketValue>3000</techprintMarketValue>
+						<heldByFactionCategoryTags>
+						  <li>Empire</li>
+						</heldByFactionCategoryTags>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="BaseBodyPartEmpire_TierB">
+						<defName>NeuralComputation</defName>
+						<label>neural computation</label>
+						<description>Craft brain implants that assist thought and learning by use of a direct, shallow brain-computer interface.</description>
+						<prerequisites>
+						  <li>Bionics</li>
+						</prerequisites>
+						<hiddenPrerequisites><li>Prosthetics</li></hiddenPrerequisites>
+						<researchViewX>6.00</researchViewX>
+						<researchViewY>0.00</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="HighMechtech"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="MechtechBase">
+						<defName>HighMechtech</defName>
+						<label>high mechtech</label>
+						<description>The technology needed for your mechanitor to create and control high-tier mechanoids.\n\nYou can get powerfocus chips by using a mechanitor to summon a war queen threat.</description>
+						<baseCost>3000</baseCost>
+						<researchViewX>1.00</researchViewX>
+						<researchViewY>0.00</researchViewY>
+						<techprintMarketValue>1500</techprintMarketValue>
+						<prerequisites>
+						  <li>StandardMechtech</li>
+						  <li>MultiAnalyzer</li>
+						</prerequisites>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+<!-- 						<requiredStudied>
+						  <li>PowerfocusChip</li>
+						</requiredStudied> -->
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="MechtechBase">
+						<defName>UltraMechtech</defName>
+						<label>ultra mechtech</label>
+						<description>The advanced technology needed for your mechanitor to create and control ultra-tier mechanoids, including large mechs and ultra-tier mechanitor gear.\n\nYou can get nano structuring chips by using a mechanitor to summon an apocriton threat.</description>
+						<baseCost>5000</baseCost>
+						<techLevel>Ultra</techLevel>
+						<researchViewX>3.00</researchViewX>
+						<researchViewY>0.00</researchViewY>
+						<techprintMarketValue>2000</techprintMarketValue>
+						<prerequisites>
+						  <li>HighMechtech</li>
+						</prerequisites>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+<!-- 						<requiredStudied>
+						  <li>NanostructuringChip</li>
+						</requiredStudied> -->
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="WastepackAtomizer"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>WastepackAtomizer</defName>
+						<label>wastepack atomizer</label>
+						<description>Build wastepack atomizers which can safely dispose of toxic wastepacks by decomposing them at the molecular level.</description>
+						<baseCost>8000</baseCost>
+						<researchViewX>4.00</researchViewX>
+						<researchViewY>3.50</researchViewY>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>AdvancedFabrication</li>
+						</prerequisites>
+<!-- 						<requiredStudied>
+						  <li>NanostructuringChip</li>
+						</requiredStudied> -->
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Archogenetics"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Archogenetics</defName>
+						<label>archogenetics</label>
+						<description>Allows a gene assembler to use archite capsules to create seemingly-impossible genes. Archite genes and archite capsules can be obtained from traders.</description>
+						<techLevel>Industrial</techLevel>
+						<baseCost>2500</baseCost>
+						<researchViewX>6.00</researchViewX>
+						<researchViewY>1.50</researchViewY>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<prerequisites>
+						  <li>Bionics</li>
+						</prerequisites>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedLaunchers"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_AdvancedLaunchers</defName>
+						<label>advanced launchers</label>
+						<description>Allows production of more advanced launchers and munitions like the incendiary, triple rocket, or doomsday launcher and time-fuzed explosives.</description>
+						<baseCost>1000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<prerequisites>
+						  <li>CE_Launchers</li>
+						  <li>MultiAnalyzer</li>
+						</prerequisites>
+						<researchViewX>1</researchViewX>
+						<researchViewY>5.5</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_ChargeTurret"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_ChargeTurret</defName>
+						<label>charge blaster turrets</label>
+						<description>Learn to construct charge blaster turrets.</description>
+						<baseCost>500</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>ChargedShot</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>GunTurrets</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>5</researchViewX>
+						<researchViewY>7.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CE_HeavyTurret"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>CE_HeavyTurret</defName>
+						<label>heavy auto turrets</label>
+						<description>Learn to construct heavy auto-turrets.</description>
+						<baseCost>500</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>AdvancedFabrication</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>GunTurrets</li>
+						  <li>CE_TurretHeavyWeapons</li>
+						  <li>PrecisionRifling</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>4</researchViewX>
+						<researchViewY>7.0</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Cryptosleep</defName>
+						<label>cryptosleep casket</label>
+						<description>Construct cryptosleep caskets, which can put living beings in a state of indefinite suspended animation.</description>
+						<baseCost>2000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>ShipBasics</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>8.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Bionics</defName>
+						<label>bionic replacements</label>
+						<description>Build high-tech bionic body parts to replace lost limbs and eyes. Requires a skilled doctor to attach.</description>
+						<baseCost>2000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>MedicineIV</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>Prosthetics</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>0.00</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>SniperTurret</defName>
+						<label>uranium slug turret</label>
+						<description>Produce the armor-penetrating uranium slug turret. It fires uranium slugs which tear through plasteel like paper, but it's less effective at close range.</description>
+						<baseCost>3000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>CE_HeavyTurret</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>HeavyTurrets</li>
+						  <li>PrecisionRifling</li>
+						</hiddenPrerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<requiredResearchFacilities>
+						  <li>MultiAnalyzer</li>
+						</requiredResearchFacilities>
+						<hideWhen>
+						  <turretsDisabled>true</turretsDisabled>
+						</hideWhen>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>7.00</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="ShipResearchProjectBase">
+						<defName>ShipBasics</defName>
+						<label>starflight basics</label>
+						<description>Construct the structural and supportive elements of a starship. This is the first step in building a ship to leave this star system.</description>
+						<baseCost>4000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>Uranium_decay</li>
+						</prerequisites>
+						<researchViewX>7.00</researchViewX>
+						<researchViewY>4.50</researchViewY>
+						<discoveredLetterTitle>About: Launching the ship</discoveredLetterTitle>
+						<discoveredLetterText>Escaping from this planet - it would be freedom at last, and maybe a return home.\n\nBut also incredibly dangerous.\n\nA new Ship category is available in the Architect menu from which you may build ship parts once the appropriate technology is researched. Ships require several different parts in order to launch, including a ship reactor.\n\nShip reactors take 15 days to charge up and many desperate souls want off this planet. Once you begin that process, the ship reactor will emit an energy signature detectable from thousands of kilometers away. Raiders will flock to attack you in waves, with an intensity you've never seen. Mechanoids are also known to be attracted to such energy signatures.\n\nIt won't start until you activate your ship's reactor, but when it does, it'll be ferocious. You'll need to stockpile resources, weapons, and defenses for the onslaught if you hope to escape alive.</discoveredLetterText>
+						<discoveredLetterDisabledWhen>
+						  <bigThreatsDisabled>true</bigThreatsDisabled>
+						</discoveredLetterDisabledWhen>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="ShipResearchProjectBase">
+						<defName>ShipCryptosleep</defName>
+						<label>vacuum cryptosleep casket</label>
+						<description>Construct hardened cryptosleep caskets tough enough to be exposed to vacuum, for transporting people on the years-long journey between stars.</description>
+						<baseCost>2800</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>ShipBasics</li>
+						  <li>Cryptosleep</li>
+						</prerequisites>
+						<researchViewX>9.00</researchViewX>
+						<researchViewY>4.5</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ShipReactor"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="ShipResearchProjectBase">
+						<defName>ShipReactor</defName>
+						<label>starship reactor</label>
+						<description>Build a long-duration nuclear reactor to power a starship. Note that reactors have a long startup process that will attract raiders.</description>
+						<baseCost>6000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>ShipBasics</li>
+						</prerequisites>
+						<researchViewX>8.00</researchViewX>
+						<researchViewY>5.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ShipEngine"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="ShipResearchProjectBase">
+						<defName>ShipEngine</defName>
+						<label>Johnson-Tanaka drive</label>
+						<description>Construct a Johnson-Tanaka drive for a ship. The JT drive can push you to other stars by leveraging quantum scale effects to beam momentum to distant stars. Of course, as with all starships, it still takes many years to get anywhere.</description>
+						<baseCost>6000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>ShipBasics</li>
+						</prerequisites>
+						<researchViewX>8.00</researchViewX>
+						<researchViewY>6.5</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="ShipResearchProjectBase">
+						<defName>ShipComputerCore</defName>
+						<label>machine persuasion</label>
+						<description>Build a reward-signal system to persuade an existing persona core into serving as a ship's machine captain. Since people sleep during interstellar travel, a persona core is necessary to handle the complex decisions of a years-long starflight.</description>
+						<baseCost>3000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>ShipBasics</li>
+						</prerequisites>
+						<researchViewX>8.00</researchViewX>
+						<researchViewY>2.5</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="ShipResearchProjectBase">
+						<defName>ShipSensorCluster</defName>
+						<label>starflight sensors</label>
+						<description>Construct long-range sensors for a starship. These sensors are essential for navigation, communication, and threat avoidance.</description>
+						<baseCost>4000</baseCost>
+						<techLevel>Spacer</techLevel>
+						<prerequisites>
+						  <li>ShipBasics</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>LongRangeMineralScanner</li>
+						</hiddenPrerequisites>
+						<researchViewX>8.00</researchViewX>
+						<researchViewY>3.50</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Gunlink</defName>
+						<label>gunlink</label>
+						<description>Build wearable gunlinks to enhance your soldiers' shooting accuracy.</description>
+						<baseCost>2000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<prerequisites>
+						  <li>AdvancedFabrication</li>
+						</prerequisites>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>4</researchViewX>
+						<researchViewY>6.5</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="BaseBodyPartEmpire_TierB">
+						<defName>ArtificialMetabolism</defName>
+						<label>artificial metabolism</label>
+						<description>Craft bionics that process food more safely or efficiently than a biological stomach.</description>
+						<prerequisites>
+						  <li>MedicineIV</li>
+						</prerequisites>
+						<hiddenPrerequisites><li>Prosthetics</li></hiddenPrerequisites>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>1.0</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="BaseBodyPartEmpire_TierB">
+						<defName>MolecularAnalysis</defName>
+						<label>molecular analysis</label>
+						<description>Craft bionics with molecular analyzers for assisting the immune system or analyzing food.</description>
+						<prerequisites>
+						  <li>MedicineIV</li>
+						</prerequisites>
+						<hiddenPrerequisites><li>Prosthetics</li></hiddenPrerequisites>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>1.60</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>	
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef ParentName="BaseBodyPartEmpire_TierB">
+						<defName>CircadianInfluence</defName>
+						<label>circadian influence</label>
+						<description>Craft brain implants that chemically manipulate the circadian rhythm, reducing or altering the need to sleep.</description>
+						<prerequisites>
+						  <li>MedicineIV</li>
+						</prerequisites>
+						<hiddenPrerequisites><li>Prosthetics</li></hiddenPrerequisites>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>2.20</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>Bioregeneration</defName>
+						<label>bioregeneration</label>
+						<description>Unlock the biosculpter pod's bioregeneration cycle. This cycle heals old scars, regenerates small lost body parts like fingers and toes, and cures many of the physical maladies that come with old age.</description>
+						<baseCost>4000</baseCost>
+						<techLevel>Industrial</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<prerequisites>
+						  <li>MedicineIV</li>
+						</prerequisites>
+						<researchViewX>5.00</researchViewX>
+						<researchViewY>2.80</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>				
+
+                    </value>
+                </li>  					
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
+                    <value>
+                    
+					  <ResearchProjectDef>
+						<defName>ToxFiltration</defName>
+						<label>toxin filtration</label>
+						<description>Craft and install bionic organs that can filter out toxins from the environment and from enemy attacks.</description>
+						<techLevel>Spacer</techLevel>
+						<baseCost>2000</baseCost>
+						<prerequisites>
+						  <li>Bionics</li>
+						</prerequisites>
+						<hiddenPrerequisites>
+						  <li>Prosthetics</li>
+						</hiddenPrerequisites>
+						<researchViewX>6.00</researchViewX>
+						<researchViewY>2.00</researchViewY>
+						<tab>space</tab>
+					  </ResearchProjectDef>
+
+                    </value>
+                </li>	
+				
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
+                </li>	
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
+                </li>	
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
+                </li>	
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

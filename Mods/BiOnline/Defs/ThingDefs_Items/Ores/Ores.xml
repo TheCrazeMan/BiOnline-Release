@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableCopperOre</defName>
+		<label>Copper ore</label>
+		<description>Copper ore rock.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(175,73,27)</colorTwo>
+       		<color>(87,40,19)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1250</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>CopperOre</mineableThing>
+			<mineableYield>45</mineableYield>
+			<mineableScatterCommonality>1.3</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>10~16</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+            <li Class="BiOnline.Things.CompProperties_MineableProps"> <!-- Наш компонент -->
+                <biomeSettings> <!-- Список настроек --> 
+                    <!--
+                        Учитываются все биомы, что есть в настройках. Разделение нужно для настройки модификатор.
+
+                        В первом примере шанс и размер кластера умножаются на 10% (1.1)
+                        Во втором примере просто указываются биомы без модификаторов
+                        В третьем примере указан модификатор только для шанса
+                    -->
+                    <li>
+                        <biomeDefs> <!-- список биомов, где может появится руда -->
+                            <!--Холодные биомы-->
+                            <li>BorealForest</li>
+                            <li>Tundra</li>
+                            <li>ColdBog</li>
+                            <li>IceSheet</li>
+                            <li>SeaIce</li>
+
+                            <!--Нормальные биомы-->
+                            <li>TemperateForest</li>
+                            <li>TemperateSwamp</li>
+
+                            <!--Тропические биомы-->
+                            <li>TropicalSwamp</li>
+                            <li>TropicalRainforest</li>
+                            <!--Засушливые биомы-->
+                            <li>Desert</li>
+                            <li>ExtremeDesert</li>
+                            <li>AridShrubland</li>
+                        </biomeDefs>
+                    </li>
+                    <li>
+                        <biomeDefs>
+                            <li>TemperateForest</li>
+                            <li>TemperateSwamp</li>
+                        </biomeDefs>
+                        <mineableScatterCommonalityMultiplier>1.33</mineableScatterCommonalityMultiplier>
+                        <mineableScatterLumpSizeRangeMultiplier>1.25</mineableScatterLumpSizeRangeMultiplier>
+
+                    </li>
+
+                </biomeSettings>
+            </li>
+        </comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RockBase">
+		<defName>MineableLeadOre</defName>
+		<label>Lead ore</label>
+		<description>Lead ore rock.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(126,136,148)</colorTwo>
+      		<color>(78,84,92)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1250</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>LeadOre</mineableThing>
+			<mineableYield>70</mineableYield>
+			<mineableScatterCommonality>0.6</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>6~10</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_MineableProps"> 
+				<biomeSettings> 
+
+					<li>
+						<biomeDefs> <!-- список биомов, где может появится руда -->
+							<!--Холодные биомы-->
+							<li>BorealForest</li>
+							<li>Tundra</li>
+							<li>ColdBog</li>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							
+							<!--Нормальные биомы-->
+							<li>TemperateForest</li>
+							<li>TemperateSwamp</li>
+							
+							<!--Тропические биомы-->
+							<li>TropicalSwamp</li>
+							<li>TropicalRainforest</li>
+							<!--Засушливые биомы-->
+							<li>Desert</li>
+							<li>ExtremeDesert</li>
+							<li>AridShrubland</li>
+						</biomeDefs>
+					</li>
+					<li>
+						<biomeDefs>
+							<li>Desert</li>
+							<li>AridShrubland</li>
+						</biomeDefs>
+						<mineableScatterCommonalityMultiplier>1.33</mineableScatterCommonalityMultiplier>
+						<mineableScatterLumpSizeRangeMultiplier>1.25</mineableScatterLumpSizeRangeMultiplier>
+					</li>
+					<li>
+						<biomeDefs>
+							<li>ExtremeDesert</li>
+						</biomeDefs>
+						<mineableScatterCommonalityMultiplier>1.45</mineableScatterCommonalityMultiplier>
+						<mineableScatterLumpSizeRangeMultiplier>1.33</mineableScatterLumpSizeRangeMultiplier>
+					</li>					
+				</biomeSettings>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableTitaniumOre</defName>
+		<label>Titanium ore</label>
+		<description>Titanium ore rock.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(199,199,199)</colorTwo>
+     		<color>(56,56,56)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>3600</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Titanium_ore</mineableThing>
+			<mineableYield>25</mineableYield>
+			<mineableScatterCommonality>0.3</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>	
+
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableCeramiteOre</defName>
+		<label>Ceramite ore</label>
+		<description>Ceramite ore rock.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(122, 62, 6)</colorTwo>
+     		<color>(245, 189, 49)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Ceramite</mineableThing>
+			<mineableYield>45</mineableYield>
+			<mineableScatterCommonality>0.6</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>5~10</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_MineableProps"> 
+				<biomeSettings> 
+
+					<li>
+						<biomeDefs> <!-- список биомов, где может появится руда -->
+							<li>Desert</li>
+							<li>ExtremeDesert</li>
+						</biomeDefs>
+					</li>					
+				</biomeSettings>
+			</li>
+		</comps>
+	</ThingDef>	
+
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableChlorophyteOre</defName>
+		<label>Chlorophyte ore</label>
+		<description>Chlorophyte ore rock.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(61, 240, 12)</colorTwo>
+     		<color>(16, 102, 38)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Chlorophyte</mineableThing>
+			<mineableYield>45</mineableYield>
+			<mineableScatterCommonality>0.6</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>5~10</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_MineableProps"> 
+				<biomeSettings> 
+
+					<li>
+						<biomeDefs> <!-- список биомов, где может появится руда -->
+							<li>TemperateSwamp</li>
+							<li>TropicalSwamp</li>
+							<li>TropicalRainforest</li>								
+						</biomeDefs>
+					</li>
+				</biomeSettings>
+			</li>
+		</comps>
+	</ThingDef>	
+	
+	<ThingDef ParentName="RockBase">
+		<defName>MineableMithrilOre</defName>
+		<label>Mithril ore</label>
+		<description>Mithril ore rock.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(74, 46, 217)</colorTwo>
+     		<color>(190, 190, 190)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Mithril</mineableThing>
+			<mineableYield>45</mineableYield>
+			<mineableScatterCommonality>0.6</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>5~10</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+			<li Class="BiOnline.Things.CompProperties_MineableProps"> 
+				<biomeSettings> 
+
+					<li>
+						<biomeDefs> <!-- список биомов, где может появится руда -->
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>Tundra</li>
+						</biomeDefs>
+					</li>					
+				</biomeSettings>
+			</li>
+		</comps>
+	</ThingDef>	
+
+
+
+	<!-- Уголь -->
+	<ThingDef ParentName="RockBase">
+		<defName>BIO_MineableCoal</defName>
+		<label>Coal ore</label>
+		<description>Rock containing bits of coal.</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(31,31,31)</colorTwo>
+		  <color>(128,128,128)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>900</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>BIO_Coal</mineableThing>
+		  <mineableYield>50</mineableYield>
+		  <mineableScatterCommonality>1.1</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>12~25</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+  
+	<!-- Железо -->
+	<ThingDef ParentName="RockBase">
+		<defName>BIO_MineableIron</defName>
+		<label>Iron ore</label>
+		<description>Rock containing bits of iron.</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(200,183,183)</colorTwo>
+		  <color>(108,83,83)</color>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>BIO_IronOre</mineableThing>
+		  <mineableYield>40</mineableYield>
+		  <mineableScatterCommonality>1.5</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>15~25</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+	
+	<!-- Хладокамень -->
+	<ThingDef ParentName="RockBase">
+		<defName>BIO_Mineable_Cold_Stone</defName>
+		<label>Cold Stone</label>
+		<description>cold stone deposit.</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(41,99,166)</colorTwo>
+		  <color>(137,126,111)</color>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>600</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>BIO_Cold_Stone</mineableThing>
+		  <mineableYield>25</mineableYield>
+		  <mineableScatterCommonality>1</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>6~14</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<!--Сера-->
+	<ThingDef ParentName="RockBase">
+		<defName>BIO_Mineable_Sulfur</defName>
+		<label>Stone sulfur</label>
+		<description>Stone sulfur</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(184,181,16)</colorTwo>
+		  <color>(137,126,111)</color>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>600</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>BiO_Sulfur</mineableThing>
+		  <mineableYield>40</mineableYield>
+		  <mineableScatterCommonality>1.2</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>8~12</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+            <li Class="BiOnline.Things.CompProperties_MineableProps">
+                <biomeSettings>
+                    <li>
+                        <biomeDefs> <!-- список биомов, где может появится руда -->
+                            <!--Холодные биомы-->
+                            <li>BorealForest</li>
+                            <li>Tundra</li>
+                            <li>ColdBog</li>
+                            <li>IceSheet</li>
+                            <li>SeaIce</li>
+                            <!--Нормальные биомы-->
+                            <li>TemperateForest</li>
+                            <li>TemperateSwamp</li>
+							<li>LavenderField</li>
+							<li>Meadow</li>
+                            <!--Тропические биомы-->
+                            <li>TropicalSwamp</li>
+                            <li>TropicalRainforest</li>
+                            <!--Засушливые биомы-->
+                            <li>Desert</li>
+                            <li>ExtremeDesert</li>
+                            <li>AridShrubland</li>
+							<li>Oasis</li>
+							<li>ParchedSea</li>
+                        </biomeDefs>
+                    </li>
+                    <li>
+                        <biomeDefs>
+							<li>SulfurPlateau</li>
+                        </biomeDefs>
+                        <mineableScatterCommonalityMultiplier>5.35</mineableScatterCommonalityMultiplier>
+                        <mineableScatterLumpSizeRangeMultiplier>4.15</mineableScatterLumpSizeRangeMultiplier>
+                    </li>
+                </biomeSettings>
+            </li>
+        </comps>
+	</ThingDef>
+
+	<!--Соль-->
+	<ThingDef ParentName="RockBase">
+		<defName>BIO_Mineable_Salt</defName>
+		<label>Stone salt</label>
+		<description>Stone salt</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(201,154,123)</colorTwo>
+		  <color>(137,126,111)</color>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>800</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>Salt</mineableThing>
+		  <mineableYield>40</mineableYield>
+		  <mineableScatterCommonality>1</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>6~10</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+            <li Class="BiOnline.Things.CompProperties_MineableProps">
+                <biomeSettings>
+                    <li>
+                        <biomeDefs> <!-- список биомов, где может появится руда -->
+                            <!--Холодные биомы-->
+                            <li>BorealForest</li>
+                            <li>Tundra</li>
+                            <li>ColdBog</li>
+                            <li>IceSheet</li>
+                            <li>SeaIce</li>
+							<li>SulfurPlateau</li>
+                            <!--Нормальные биомы-->
+                            <li>TemperateForest</li>
+                            <li>TemperateSwamp</li>
+							<li>LavenderField</li>
+							<li>Meadow</li>
+                            <!--Тропические биомы-->
+                            <li>TropicalSwamp</li>
+                            <li>TropicalRainforest</li>
+                            <!--Засушливые биомы-->
+                            <li>Desert</li>
+                            <li>ExtremeDesert</li>
+                            <li>AridShrubland</li>
+							<li>Oasis</li>
+                        </biomeDefs>
+                    </li>
+                    <li>
+                        <biomeDefs>
+							<li>ParchedSea</li>
+                        </biomeDefs>
+                        <mineableScatterCommonalityMultiplier>5.35</mineableScatterCommonalityMultiplier>
+                        <mineableScatterLumpSizeRangeMultiplier>4.15</mineableScatterLumpSizeRangeMultiplier>
+                    </li>
+                </biomeSettings>
+            </li>
+        </comps>
+	</ThingDef>			
+
+	<!-- Селитра -->
+
+	<ThingDef ParentName="RockBase">
+		<defName>BIO_Mineable_Saltpeter</defName>
+		<label>Stone saltpeter</label>
+		<description>Stone saltpeter</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(212, 212, 218)</colorTwo>
+		  <color>(239, 241, 228)</color>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>1200</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>Saltpeter</mineableThing>
+		  <mineableYield>120</mineableYield>
+		  <mineableScatterCommonality>0.4</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>3~7</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+	
+</Defs>

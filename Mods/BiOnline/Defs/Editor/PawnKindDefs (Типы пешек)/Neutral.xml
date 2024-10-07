@@ -1,0 +1,143 @@
+<Defs>
+
+  <PawnKindDef>
+    <defName>CapturedHighmate</defName>
+    <label>captured highmate</label>
+    <combatPower>30</combatPower>
+    <race>Human</race>
+	<isFighter>false</isFighter>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>42</maxGenerationAge>	
+    <acceptArrestChanceFactor>1</acceptArrestChanceFactor>
+    <backstoryFilters>
+      <li>
+        <categories>
+		  <li>ImperialCommon</li>
+          <li>Offworld</li>
+          <li>Pirate</li>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+    <itemQuality>Poor</itemQuality>
+    <chemicalAddictionChance>0.33</chemicalAddictionChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>28~44</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">1</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>FarmerKikimor</defName>
+    <label>farmer</label>
+    <combatPower>30</combatPower>
+    <race>Human</race>
+	<isFighter>false</isFighter>
+    <minGenerationAge>5</minGenerationAge>
+    <maxGenerationAge>69</maxGenerationAge>	
+    <acceptArrestChanceFactor>1</acceptArrestChanceFactor>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+	<apparelRequired>
+      <li>Apparel_Shadecone</li>
+    </apparelRequired>
+    <skills>
+      <li>
+        <skill>Plants</skill>
+        <range>8~12</range>
+      </li>
+    </skills>	
+    <itemQuality>Normal</itemQuality>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>2.5~8</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Kikimor MayRequire="Ludeon.RimWorld.Biotech">1</Kikimor>
+      </xenotypeChances>
+    </xenotypeSet>	
+  </PawnKindDef>
+
+  <RulePackDef>
+    <defName>UmomName</defName>
+    <include>
+      <li>TribalWordUtility</li>
+    </include>	
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[WordTribal] 'Umom' [WordTribal]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <PawnKindDef>
+	<defName>Umom</defName>
+	<label>umom</label>
+	<nameMaker>UmomName</nameMaker>
+	<combatPower>30</combatPower>
+	<race>Human</race>
+	<isFighter>false</isFighter>
+    <acceptArrestChanceFactor>1</acceptArrestChanceFactor>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <skills>
+      <li>
+        <skill>Intellectual</skill>
+        <range>12~16</range>
+      </li>
+      <li>
+        <skill>Social</skill>
+        <range>10~16</range>
+      </li>	  
+    </skills>
+	<apparelMoney>500~700</apparelMoney>
+    <apparelRequired>
+	  <li>Apparel_TribalA</li>
+	  <li>Apparel_WarVeil</li>
+      <li>Apparel_LabCoat</li>
+    </apparelRequired>	
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>	
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+ 	<forcedAddictions>
+	  <li>Psychite</li>
+	</forcedAddictions>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <initialWillRange>0</initialWillRange>
+    <initialResistanceRange>0</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">1</Neanderthal>
+      </xenotypeChances>
+    </xenotypeSet>	
+  </PawnKindDef>
+
+</Defs>

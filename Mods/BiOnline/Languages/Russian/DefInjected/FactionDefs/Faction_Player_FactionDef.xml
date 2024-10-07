@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/FactionDefs/Faction_Player.xml-->
+<PlayerMedieval.label>поселение</PlayerMedieval.label>
+<PlayerMedieval.description>Ваше поселение.</PlayerMedieval.description>
+<PlayerMedieval.leaderTitle>лидер</PlayerMedieval.leaderTitle>
+<PlayerMedieval.pawnSingular>поселенец</PlayerMedieval.pawnSingular>
+<PlayerMedieval.pawnsPlural>поселенцы</PlayerMedieval.pawnsPlural>
+
+
+</LanguageData>

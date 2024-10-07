@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_WaterSprout_Fleck</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_WaterSproutAnimated</texPath>
+			<drawSize>2</drawSize>		
+			<shaderParameters>
+				<_NumFrames>6</_NumFrames>
+				<_FramesPerSec>6</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_WaterSprout_FleckLarge</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_WaterSproutAnimated</texPath>
+			<drawSize>4</drawSize>			
+			<shaderParameters>
+				<_NumFrames>6</_NumFrames>
+				<_FramesPerSec>6</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+	
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_WaterSproutLateral_Fleck</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_LateralWaterRight</texPath>
+			<drawSize>2</drawSize>		
+			<shaderParameters>
+				<_NumFrames>4</_NumFrames>
+				<_FramesPerSec>4</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_WaterSproutLateralInverted_Fleck</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_LateralWaterLeft</texPath>
+			<drawSize>2</drawSize>		
+			<shaderParameters>
+				<_NumFrames>4</_NumFrames>
+				<_FramesPerSec>4</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+	
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_SmallWaterSproutAnimated_Fleck</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_SmallWaterSproutAnimated</texPath>
+			<drawSize>2</drawSize>		
+			<shaderParameters>
+				<_NumFrames>4</_NumFrames>
+				<_FramesPerSec>4</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_SmallWaterSproutAnimatedInverted_Fleck</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_SmallWaterSproutAnimatedInverted</texPath>
+			<drawSize>2</drawSize>		
+			<shaderParameters>
+				<_NumFrames>4</_NumFrames>
+				<_FramesPerSec>4</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+	
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_TallWaterSprout_Fleck</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_TallWaterSprout</texPath>
+			<drawSize>2</drawSize>		
+			<shaderParameters>
+				<_NumFrames>4</_NumFrames>
+				<_FramesPerSec>4</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>AP_TallWaterSproutInverted_Fleck</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0</fadeOutTime>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<shaderType>TransparentAnimated</shaderType>
+			<texPath>Things/Mote/AP_TallWaterSproutInverted</texPath>
+			<drawSize>2</drawSize>		
+			<shaderParameters>
+				<_NumFrames>4</_NumFrames>
+				<_FramesPerSec>4</_FramesPerSec>
+			</shaderParameters>
+		</graphicData>
+	</FleckDef>
+  
+  </Defs>

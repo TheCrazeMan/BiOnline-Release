@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Gunlink"]/costList</xpath>
+		<value>
+			<costList>
+				<ComponentSpacer>1</ComponentSpacer>
+				<Plasteel>10</Plasteel>
+				<HardenedGlass>20</HardenedGlass>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Catapult_Boulder" or defName="Make_FSXDrugLab"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_GasMask"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>ToxGas</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]/recipeMaker/researchPrerequisites</xpath>
+		<value>
+		  <researchPrerequisites>
+			<li>ReconArmor</li>
+		  </researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PackJump"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>ReconArmor</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HydroponicsBasin" or defName="HydroponicsBasinx"]/researchPrerequisites/li</xpath>
+		<value>
+			<li>ElectronicsIII</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/researchPrerequisites/li</xpath>
+		<value>
+			<li>Machining</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WatermillGenerator"]/researchPrerequisites/li</xpath>
+		<value>
+			<li>Machining</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FueledStove"]/costList</xpath>
+		<value>
+			<costList>
+				<Iron>30</Iron>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientComplexRoomLoot_Default" or defName="MapGen_AncientComplexRoomLoot_Better" or defName="MapGen_AncientComplex_SecurityCrate"]/root[@Class= "ThingSetMaker_RandomOption"]/options/li/thingSetMaker[@Class="ThingSetMaker_Count"]/fixedParams/countRange</xpath>
+		<value>
+		  <countRange>0</countRange>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root/options/li[3]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]/recipeMaker/researchPrerequisite</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]/recipeMaker</xpath>
+		<value>
+		
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>	
+	
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Bedroll" or defName="BedrollDouble" or defName="Table2x4c" or defName="Table3x3c"]</xpath>
+		<value>
+
+			<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			</researchPrerequisites>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TableStonecutter" or defName="SimpleResearchBench"]/costList</xpath>
+	</Operation>  
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Pilum"]</xpath>
+		<value>
+		
+			<RecipeDef ParentName = "AmmoRecipeNeolithicBase">
+				<defName>MakeAmmo_Pilum</defName>
+				<label>make pila x5</label>
+				<description>Craft 5 pila.</description>
+				<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedAmmo</unfinishedThingDef>
+				<workAmount>2500</workAmount>
+				<jobString>Making pila.</jobString>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>WoodLog</li>
+							</thingDefs>
+						</filter>
+						<count>6</count>
+					</li>
+					<li>
+					<filter>
+						<categories>
+							<li>DefaultMetals</li>
+						</categories>
+					</filter>
+					<count>19</count>
+					</li>
+				</ingredients>
+				<fixedIngredientFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+					<categories>
+						<li>DefaultMetals</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>BIO_Coal</li>
+						<li>BIO_Coal</li>
+						<li>Iron</li>
+						<li>Copper</li>
+						<li>Lead</li>
+						<li>Lead</li>
+						<li>Lead</li>						
+						<li>Titanium_ore</li>
+						<li>Ceramite</li>
+						<li>Chlorophyte</li>
+						<li>Mithril</li>					
+					</disallowedThingDefs>
+				</fixedIngredientFilter>
+				<products>
+					<Pila>5</Pila>
+				</products>
+			</RecipeDef>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Lectern"]</xpath>
+		<value>
+
+			<researchPrerequisites>
+			<li>FurnitureII</li>
+			</researchPrerequisites>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="GibbetCage"]</xpath>
+		<value>
+
+			<researchPrerequisites>
+			<li>Smithing</li>
+			</researchPrerequisites>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Sandbags"]</xpath>
+		<value>
+		
+			<researchPrerequisites>
+			<li>Machining</li>
+			</researchPrerequisites>
+			
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Barricade"]</xpath>
+		<value>
+
+			<researchPrerequisites>
+			<li>Smithing</li>
+			</researchPrerequisites>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TableSculpting"]</xpath>
+		<value>
+
+			<researchPrerequisites>
+			<li>Stonecutting</li>
+			</researchPrerequisites>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TableSculpting"]/costList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TableButcher" or defName="FueledStove"]</xpath>
+		<value>
+
+			<researchPrerequisites>
+			<li>CookingII</li>
+			</researchPrerequisites>
+
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Bow_Short"]/recipeMaker</xpath>
+		<value>
+		
+			<researchPrerequisite>First_bow</researchPrerequisite>
+		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Stone"]</xpath>
+		<value>		
+
+			<researchPrerequisite>First_bow</researchPrerequisite>
+		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_GreatArrow_Stone"]</xpath>
+		<value>		
+
+			<researchPrerequisite>Improved_Bows</researchPrerequisite>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SteleBase" or @Name="ThroneBase"]/researchPrerequisites/li</xpath>
+		<value>		
+
+			<li>FurnitureII</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ToolCabinet"]/researchPrerequisites/li</xpath>
+		<value>		
+
+			<li>Tools</li>
+		
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SchoolDesk" or defName="Blackboard" or defName="BilliardsTable" or defName="StylingStation" or defName="Drape" or defName="Reliquary" or defName="Brazier" or defName="DarklightBrazier" or defName="ChessTable" or defName="Armchair"]/researchPrerequisites/li</xpath>
+		<value>		
+
+			<li>FurnitureII</li>
+		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SansComfortBedBase"]/researchPrerequisites/li</xpath>
+		<value>		
+		
+			<li>FurnitureIII</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Vent" or defName="Dresser" or defName="EndTable" or defName="PokerTable"]/researchPrerequisites/li</xpath>
+		<value>		
+
+			<li>FurnitureIII</li>
+		
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Venom"]</xpath>
+		<value>		
+
+			  <RecipeDef ParentName="AmmoRecipeNeolithicBase">
+				<defName>MakeAmmo_Arrow_Venom</defName>
+				<label>make venom arrows x10</label>
+				<description>Craft 10 venom arrows.</description>
+				<jobString>Making venom arrows.</jobString>
+				  <workAmount>900</workAmount>
+				<ingredients>
+				  <li>
+					<filter>
+					  <thingDefs>
+						<li>WoodLog</li>
+					  </thingDefs>
+					</filter>
+					<count>1</count>
+				  </li>
+				  <li>
+					<filter>
+					  <thingDefs>
+						<li>TM_RawShrooms</li>
+					  </thingDefs>
+					</filter>
+					<count>2</count>
+				  </li>
+				</ingredients>
+				<fixedIngredientFilter>
+				  <thingDefs>
+					<li>WoodLog</li>
+					<li>TM_RawShrooms</li>
+				  </thingDefs>
+				</fixedIngredientFilter>
+				<products>
+				  <Ammo_Arrow_Venom>10</Ammo_Arrow_Venom>
+				</products>
+				<researchPrerequisite>Improved_Bows</researchPrerequisite>
+				<recipeUsers>
+					<li>TribalBench</li>
+					<li>CraftingSpot</li>
+				</recipeUsers>
+			  </RecipeDef>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_GreatArrow_Venom"]</xpath>
+		<value>		
+
+			  <RecipeDef ParentName="AmmoRecipeNeolithicBase">
+				<defName>MakeAmmo_GreatArrow_Venom</defName>
+				<label>make venom great arrows x10</label>
+				<description>Craft 10 venom great arrows.</description>
+				<jobString>Making venom great arrows.</jobString>
+				<workAmount>1600</workAmount>
+				<ingredients>
+				  <li>
+					<filter>
+					  <thingDefs>
+						<li>WoodLog</li>
+					  </thingDefs>
+					</filter>
+					<count>2</count>
+				  </li>
+				  <li>
+					<filter>
+					  <thingDefs>
+						<li>TM_RawShrooms</li>
+					  </thingDefs>
+					</filter>
+					<count>2</count>
+				  </li>
+				</ingredients>
+				<fixedIngredientFilter>
+				  <thingDefs>
+					<li>WoodLog</li>
+					<li>TM_RawShrooms</li>
+				  </thingDefs>
+				</fixedIngredientFilter>
+				<products>
+				  <Ammo_GreatArrow_Venom>10</Ammo_GreatArrow_Venom>
+				</products>
+				<researchPrerequisite>Improved_Bows</researchPrerequisite>
+				<recipeUsers>
+					<li>TribalBench</li>
+					<li>CraftingSpot</li>
+				</recipeUsers>
+			  </RecipeDef>
+		
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CE_Apparel_TribalBackpack" or defName="CE_Apparel_ImprovGasMask"]/recipeMaker</xpath>
+		<value>
+		
+		  <researchPrerequisite>
+		  <li>Neolithic_Apparel</li>
+		  </researchPrerequisite>
+		  
+		</value>
+	</Operation>
+
+	<!--Средневековье-->
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="MorbidSlab_Medium" or defName="MorbidSlab_Broad"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>CoveringII</li>
+			
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="MakeMolotovCocktail"]</xpath>
+		<value>
+		
+		  <researchPrerequisite>Machining</researchPrerequisite>
+		  
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="AestheticShaper" or defName="AestheticNose" or defName="LoveEnhancer"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>MedicineIV</researchPrerequisite>
+			
+		</value>
+	</Operation>
+	
+
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="ToughskinGland" or defName="ArmorskinGland" or defName="StoneskinGland"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>MedicineIV</researchPrerequisite>
+			
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="Coagulator" or defName="HeaOperationngEnhancer" or defName="HealingEnhancer"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>MedicineIV</researchPrerequisite>
+			
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+	<xpath>Defs/ThingDef[defName="PsychiteTea"]/recipeMaker/researchPrerequisite</xpath>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[@Name="TreeBase"]/plant/sowResearchPrerequisites/li</xpath>
+		<value>
+		
+			<li>AgricultureI</li>
+			
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MemeDef[defName="TreeConnection"]/startingResearchProjects/li</xpath>
+		<value>
+		
+			<li>AgricultureI</li>
+		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PlantPot_Bonsai"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>AgricultureI</li>
+		
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Brewery" or defName="FermentingBarrel" or defName="BarrelProcessor"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>Fermentation</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Bow_Recurve"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>Improved_Bows</researchPrerequisite>
+		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Bow_Great"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>Improved_Bows</researchPrerequisite>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DrugLab"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>MedicineI</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WakeUp" or defName="GoJuice"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>Military_Injectors</researchPrerequisite>
+		
+		</value>
+	</Operation>
+		
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cooler" or @Name="FridgeBase"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>Air_Conditioner</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Autodoor"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>ElectronicsII</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NutrientPasteDispenser" or defName="Hopper"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>CookingIII</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FirefoamPopper"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>Mortars</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="CookMealSurvivalBulk"]/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>CookingIII</researchPrerequisite>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FirefoamPopper"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>Mortars</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Shell_Firefoam" or defName="Apparel_FirefoampopPack"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Turret_FoamTurret"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>GunTurrets</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeShell_Firefoam" or defName="MakeShell_60mmMortar_Firefoam" or defName="MakeAmmo_30x64mmFuel_Foam" or defName="MakeFirefoamGrenade"]/researchPrerequisite</xpath>
+		<value>
+		
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="TrapIEDBase"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>Mortars</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="SterileTile"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>MedicineII</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[@Name="FertilitySurgery"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>MedicineII</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HospitalBed"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>MedicineIII</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VitalsMonitor" or defName="GrowthVat"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>MedicineIII</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MoisturePump" or defName="GrowthVat"]/researchPrerequisites/li</xpath>
+		<value>
+		
+			<li>ElectronicsII</li>
+		
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,54 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[
+	defName="SmokeleafJoint" or
+	defName="Apparel_TribalHeaddress" or
+	defName="Apparel_WarMask" or
+	defName="Apparel_WarVeil" or
+	defName="Apparel_TribalA" or
+	defName="MeleeWeapon_Club" or
+	defName="MeleeWeapon_Knife" or
+	defName="Bow_Short" or
+	defName="Bow_Recurve" or
+	defName="Bow_Great" or
+	defName="Harp" or
+	defName="GhoulPlating" or
+	defName="GhoulBarbs" or
+	defName="Apparel_CultistMask" or
+	defName="Apparel_CeremonialCultistMask" or
+	defName="NerveSpiker" or
+	defName="Apparel_KidTribal" or
+	defName="Psycho" or
+	defName="CE_Apparel_TribalBackpack" or
+	defName="CE_Apparel_ImprovGasMask"
+	]/recipeMaker/recipeUsers</xpath>
+	<value>
+		<li>TribalBench</li>
+	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/RecipeDef[
+	defName="MakeMolotovCocktail" or
+	defName="MakeStickBomb" or
+	defName="MakeAmmo_Pilum"
+	]/recipeUsers</xpath>
+	<value>
+		<li>TribalBench</li>
+	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[
+	defName="Ammo_CrossbowBolt_Stone" or
+	defName="Ammo_Arrow_Stone" or
+	defName="Ammo_GreatArrow_Stone" or
+	defName="Ammo_SlingBullet_Stone"
+	]/tradeTags</xpath>
+	<value>
+		<li>CE_AutoEnableCrafting_TribalBench</li>
+	</value>
+	</Operation>
+
+</Patch>

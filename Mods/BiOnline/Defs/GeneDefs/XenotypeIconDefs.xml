@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeIconDef>
+    <defName>Kadavr</defName>
+    <texPath>UI/Icons/Xenotypes/Kadavr</texPath>
+  </XenotypeIconDef>
+
+</Defs>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/RecipeDef/Recipes_Production.xml-->
+<DigSand.label>Копать песок x250</DigSand.label>
+<DigSand.description>Выкопайте немного песка из земли</DigSand.description>
+<DigSand.jobString>Копает песок</DigSand.jobString>
+
+<DigSandMineshaft.label>Копать песок x125</DigSandMineshaft.label>
+<DigSandMineshaft.description>Выкопайте немного песка из земли</DigSandMineshaft.description>
+<DigSandMineshaft.jobString>Копает песок</DigSandMineshaft.jobString>
+
+<DigCrushedStone.label>Копать гравий x250</DigCrushedStone.label>
+<DigCrushedStone.description>Выкопайте немного камней из гравия</DigCrushedStone.description>
+<DigCrushedStone.jobString>Копать гравий</DigCrushedStone.jobString>
+
+<DigCrushedStoneMineshaft.label>Копать гравий x125</DigCrushedStoneMineshaft.label>
+<DigCrushedStoneMineshaft.description>Выкопайте немного камней из гравия</DigCrushedStoneMineshaft.description>
+<DigCrushedStoneMineshaft.jobString>Копать гравий</DigCrushedStoneMineshaft.jobString>
+
+<DigClay.label>Копать глину x250</DigClay.label>
+<DigClay.description>Выкопайте немного глины со дна реки</DigClay.description>
+<DigClay.jobString>Копает глину</DigClay.jobString>
+
+<Tier_1Melt_iron_x25.label>Выплавить железо x25</Tier_1Melt_iron_x25.label>
+<Tier_1Melt_iron_x25.description>Выплавить железо из руды</Tier_1Melt_iron_x25.description>
+<Tier_1Melt_iron_x25.jobString>Выплавляет железо.</Tier_1Melt_iron_x25.jobString>
+
+<Tier1_Melt_iron_x75.label>Выплавить железо x75</Tier1_Melt_iron_x75.label>
+<Tier1_Melt_iron_x75.description>Выплавить железо из руды</Tier1_Melt_iron_x75.description>
+<Tier1_Melt_iron_x75.jobString>Выплавляет железо.</Tier1_Melt_iron_x75.jobString>
+
+<Tier2_Melt_iron_x25.label>Выплавить железо x30</Tier2_Melt_iron_x25.label>
+<Tier2_Melt_iron_x25.description>Выплавить железо из руды</Tier2_Melt_iron_x25.description>
+<Tier2_Melt_iron_x25.jobString>Выплавляет железо.</Tier2_Melt_iron_x25.jobString>
+
+<Tier2_Melt_Iron_x105.label>Выплавить железо x105</Tier2_Melt_Iron_x105.label>
+<Tier2_Melt_Iron_x105.description>Выплавить железо из руды</Tier2_Melt_Iron_x105.description>
+<Tier2_Melt_Iron_x105.jobString>Выплавляет железо.</Tier2_Melt_Iron_x105.jobString>
+
+<Tier3_Melt_iron_x25.label>Выплавить железо x50</Tier3_Melt_iron_x25.label>
+<Tier3_Melt_iron_x25.description>Выплавить железо из руды</Tier3_Melt_iron_x25.description>
+<Tier3_Melt_iron_x25.jobString>Выплавляет железо.</Tier3_Melt_iron_x25.jobString>
+
+<Tier3_Melt_iron_x150.label>Выплавить железо x150</Tier3_Melt_iron_x150.label>
+<Tier3_Melt_iron_x150.description>Выплавить железо из руды</Tier3_Melt_iron_x150.description>
+<Tier3_Melt_iron_x150.jobString>Выплавляет железо.</Tier3_Melt_iron_x150.jobString>
+
+<Tier_1Melt_copper_x25.label>Выплавить медь x25</Tier_1Melt_copper_x25.label>
+<Tier_1Melt_copper_x25.description>Выплавить медь</Tier_1Melt_copper_x25.description>
+<Tier_1Melt_copper_x25.jobString>Выплавляет медь.</Tier_1Melt_copper_x25.jobString>
+
+<Tier1_Melt_copper_x75.label>Выплавить медь x75</Tier1_Melt_copper_x75.label>
+<Tier1_Melt_copper_x75.description>Выплавить медь</Tier1_Melt_copper_x75.description>
+<Tier1_Melt_copper_x75.jobString>Выплавляет медь.</Tier1_Melt_copper_x75.jobString>
+
+<Tier2_Melt_copper_x25.label>Выплавить медь x35</Tier2_Melt_copper_x25.label>
+<Tier2_Melt_copper_x25.description>Выплавить медь</Tier2_Melt_copper_x25.description>
+<Tier2_Melt_copper_x25.jobString>Выплавляет медь.</Tier2_Melt_copper_x25.jobString>
+
+<Tier2_Melt_copper_x75.label>Выплавить медь x105</Tier2_Melt_copper_x75.label>
+<Tier2_Melt_copper_x75.description>Выплавить медь</Tier2_Melt_copper_x75.description>
+<Tier2_Melt_copper_x75.jobString>Выплавляет медь.</Tier2_Melt_copper_x75.jobString>
+
+<Tier3_Melt_copper_x25.label>Выплавить медь x50</Tier3_Melt_copper_x25.label>
+<Tier3_Melt_copper_x25.description>Выплавить медь</Tier3_Melt_copper_x25.description>
+<Tier3_Melt_copper_x25.jobString>Выплавляет медь.</Tier3_Melt_copper_x25.jobString>
+
+<Tier3_Melt_copper_x150.label>Выплавить медь x150</Tier3_Melt_copper_x150.label>
+<Tier3_Melt_copper_x150.description>Выплавить медь</Tier3_Melt_copper_x150.description>
+<Tier3_Melt_copper_x150.jobString>Выплавляет медь.</Tier3_Melt_copper_x150.jobString>
+
+<Tier_1Melt_Lead_x25.label>Выплавить свинец x25</Tier_1Melt_Lead_x25.label>
+<Tier_1Melt_Lead_x25.description>Выплавить свинец</Tier_1Melt_Lead_x25.description>
+<Tier_1Melt_Lead_x25.jobString>Выплавляет свинец.</Tier_1Melt_Lead_x25.jobString>
+
+<Tier1_Melt_Lead_x75.label>Выплавить свинец x75</Tier1_Melt_Lead_x75.label>
+<Tier1_Melt_Lead_x75.description>Выплавить свинец</Tier1_Melt_Lead_x75.description>
+<Tier1_Melt_Lead_x75.jobString>Выплавляет свинец.</Tier1_Melt_Lead_x75.jobString>
+
+<Tier2_Melt_Lead_x25.label>Выплавить свинец x35</Tier2_Melt_Lead_x25.label>
+<Tier2_Melt_Lead_x25.description>Выплавить свинец</Tier2_Melt_Lead_x25.description>
+<Tier2_Melt_Lead_x25.jobString>Выплавляет свинец.</Tier2_Melt_Lead_x25.jobString>
+
+<Tier2_Melt_Lead_x75.label>Выплавить свинец x105</Tier2_Melt_Lead_x75.label>
+<Tier2_Melt_Lead_x75.description>Выплавить свинец</Tier2_Melt_Lead_x75.description>
+<Tier2_Melt_Lead_x75.jobString>Выплавляет свинец.</Tier2_Melt_Lead_x75.jobString>
+
+<Tier3_Melt_Lead_x25.label>Выплавить свинец x50</Tier3_Melt_Lead_x25.label>
+<Tier3_Melt_Lead_x25.description>Выплавить свинец</Tier3_Melt_Lead_x25.description>
+<Tier3_Melt_Lead_x25.jobString>Выплавляет свинец.</Tier3_Melt_Lead_x25.jobString>
+
+<Tier3_Melt_Lead_x150.label>Выплавить свинец x150</Tier3_Melt_Lead_x150.label>
+<Tier3_Melt_Lead_x150.description>Выплавить свинец</Tier3_Melt_Lead_x150.description>
+<Tier3_Melt_Lead_x150.jobString>Выплавляет свинец.</Tier3_Melt_Lead_x150.jobString>
+
+<Tier3_Titanium_Makex25.label>Выплавить Титан х25</Tier3_Titanium_Makex25.label>
+<Tier3_Titanium_Makex25.description>Выплавить Титан</Tier3_Titanium_Makex25.description>
+<Tier3_Titanium_Makex25.jobString>Выплавляет Титан.</Tier3_Titanium_Makex25.jobString>
+
+<Tier3_Titanium_Makex75.label>Выплавить Титан х75</Tier3_Titanium_Makex75.label>
+<Tier3_Titanium_Makex75.description>Выплавить Титан</Tier3_Titanium_Makex75.description>
+<Tier3_Titanium_Makex75.jobString>Выплавляет Титан.</Tier3_Titanium_Makex75.jobString>
+
+<Tier1_steel_Makex25.label>Выплавить сталь x25</Tier1_steel_Makex25.label>
+<Tier1_steel_Makex25.description>Выплавить сталь с использование химии</Tier1_steel_Makex25.description>
+<Tier1_steel_Makex25.jobString>Выплавялет сталь.</Tier1_steel_Makex25.jobString>
+
+<Tier1_steel_Makex75.label>Выплавить сталь  x75</Tier1_steel_Makex75.label>
+<Tier1_steel_Makex75.description>Выплавить сталь с использование химии</Tier1_steel_Makex75.description>
+<Tier1_steel_Makex75.jobString>Выплавялет сталь.</Tier1_steel_Makex75.jobString>
+
+<Tier3_Plasteel_Makex25.label>Выплавить пласталь x25</Tier3_Plasteel_Makex25.label>
+<Tier3_Plasteel_Makex25.description>Выплавить пласталь с использование химии.</Tier3_Plasteel_Makex25.description>
+<Tier3_Plasteel_Makex25.jobString>Выплавялет пласталь.</Tier3_Plasteel_Makex25.jobString>
+
+<Tier3_Plasteel_Makex75.label>Выплавить пласталь x75</Tier3_Plasteel_Makex75.label>
+<Tier3_Plasteel_Makex75.description>Выплавить пласталь с использование химии.</Tier3_Plasteel_Makex75.description>
+<Tier3_Plasteel_Makex75.jobString>Выплавялет пласталь.</Tier3_Plasteel_Makex75.jobString>
+
+</LanguageData>

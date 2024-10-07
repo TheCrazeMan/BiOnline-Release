@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>funkyshit.oremanager</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+            <operations>
+
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="BiO_MakeshiftArmor_Heavy_Helmet" or defName="VAE_Headgear_StoneWarMask" or defName="Headgear_HeavyMarineHelmet"]/apparel/layers</xpath>
+
+                    <value>
+                    
+						<li>StrappedHead</li>
+
+                    </value>
+
+                </li>
+				
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="BiO_MakeshiftArmor_Heavy_Helmet" or defName="BiO_Helmet_SelfRepair" or defName="BiO_Helmet_SelfRepair_Imperial" or defName="BiO_MakeshiftArmor_Heavy_Helmet_Makeshift" or defName="VAE_Headgear_StoneWarMask" or defName="Headgear_HeavyMarineHelmet"]/apparel/layers</xpath>
+
+                    <value>
+                    
+						<li>OnHead</li>
+
+                    </value>
+
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

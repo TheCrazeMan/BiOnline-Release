@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>Core</defName>
+		<label>Core</label>
+		<description>Basic game content.</description>
+		<color>188,90,188</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/CoreModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>DefaultRequired</defName>
+		<label>Default - Required</label>
+		<description>The mod is included in the assembly and is critical to the game.</description>
+		<color>52,199,89</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>DefaultRequiredConfig</defName>
+		<label>Default - Required Config</label>
+		<description>The mod is included in the default build, you can customize the configs to suit yourself.</description>
+		<color>30,114,51</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>DefaultOptional</defName>
+		<label>Default - Optional</label>
+		<description>The mod is included in the default assembly, but is optional.</description>
+		<color>255,204,0</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>WorkshopModFullyCompatible</defName>
+		<label>Workshop Mod - Fully Compatible</label>
+		<description>The mod has been tested for compatibility and is fully compatible with the assembly.</description>
+		<color>63,112,60</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>WorkshopModCompatible</defName>
+		<label>Workshop Mod - Compatible</label>
+		<description>The mod is partially compatible. Modification Needed - Mods requiring balance and conversions to work with Paragon.</description>
+		<color>217,219,73</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>WorkshopModIncompatible</defName>
+		<label>Workshop Mod - Incompatible</label>
+		<description>The mod has been tested for compatibility and is guaranteed to break your game.</description>
+		<color>190,51,68</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>Unknown</defName>
+		<label>Unknown Mod</label>
+		<description>The compatibility of this mod is not known (Default Option when not set).</description>
+		<color>180,180,180</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+	<BiOnline.ModIndicators.ModTypeDef>
+		<defName>EndMod</defName>
+		<label>End Mod - No Mods Below These</label>
+		<description>Just don't place mods below.</description>
+		<color>188,90,188</color>
+		<uiScale>0.75</uiScale>
+		<uiIconPath>UI/ModIndicator/DefaultModIcon</uiIconPath>
+	</BiOnline.ModIndicators.ModTypeDef>
+	<!---->
+</Defs>

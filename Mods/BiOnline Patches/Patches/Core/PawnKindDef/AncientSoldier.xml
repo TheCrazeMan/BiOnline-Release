@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--Биокод-->
+    <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/biocodeWeaponChance</xpath>
+        <value>
+			<biocodeWeaponChance>1</biocodeWeaponChance>
+		</value>
+    </Operation>
+	
+	<!--Растворитель-->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]</xpath>
+        <value>
+			<techHediffsRequired>
+				<li>DeathAcidifier</li>
+			</techHediffsRequired>
+		</value>
+    </Operation>
+	
+</Patch>

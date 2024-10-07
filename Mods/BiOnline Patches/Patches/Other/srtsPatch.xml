@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SRTS Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[tab="SRTSE" and not(defName="Research_RoyalShuttle")]</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[@ParentName="NECShipBase" and not(defName="Shuttle_Player" or defName="CombatShuttle_Player")]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

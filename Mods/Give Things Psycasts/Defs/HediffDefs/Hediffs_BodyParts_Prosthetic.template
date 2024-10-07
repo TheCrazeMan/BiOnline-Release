@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>TelekeneticHand</defName>
+    <label>telekenetic hand</label>
+    <labelNoun>a telekenetic hand</labelNoun>
+    <description>An installed telekenetic hand</description>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>hand</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>	  
+	        <li Class="GiveThingsPsycasts.CompProperties_GiveHediffsPsycasts">
+        <compClass>GiveThingsPsycasts.CompGiveHediffsPsycasts</compClass>
+			<PsycastDefName>TeleportFree</PsycastDefName>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>TelekeneticHand</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticBase">
+    <defName>TelekeneticHand</defName>
+    <label>telekenetic hand</label>
+    <description>Functions just as a normal hand but gives the wearer telekenetic abilities. The owner can move theirself or others short distances.</description>
+    <descriptionHyperlinks><RecipeDef>InstallTelekeneticHand</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>InstallTelekeneticHand</defName>
+    <label>install telekenetic hand</label>
+    <description>Install a telekenetic hand.</description>
+    <descriptionHyperlinks>
+      <ThingDef>TelekeneticHand</ThingDef>
+      <HediffDef>TelekeneticHand</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing telekenetic hand.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TelekeneticHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TelekeneticHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>TelekeneticHand</addsHediff>
+  </RecipeDef>
+</Defs>

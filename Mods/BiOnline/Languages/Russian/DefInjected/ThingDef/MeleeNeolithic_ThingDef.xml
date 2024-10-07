@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!--Деревянный молот-->
+	<MeleeWeapon_Wood_BattleHammer.label>Деревянный боевой молот</MeleeWeapon_Wood_BattleHammer.label>
+	<MeleeWeapon_Wood_BattleHammer.description>Двуручный боевой молот представляет простое, но эффективное оружие. Он изготавливался из дерева и имеет массивные размеры. Рукоять молота достаточно длинная, чтобы держать его двумя руками и наносить мощные удары.</MeleeWeapon_Wood_BattleHammer.description>
+	<MeleeWeapon_Wood_BattleHammer.tools.0.label>рукоять</MeleeWeapon_Wood_BattleHammer.tools.0.label>
+	<MeleeWeapon_Wood_BattleHammer.tools.1.label>боевая часть</MeleeWeapon_Wood_BattleHammer.tools.1.label>
+	<!--Копьё-->
+	<MeleeWeapon_StonySpear.label>Каменное копьё</MeleeWeapon_StonySpear.label>
+	<MeleeWeapon_StonySpear.description>Созданное из камня и дерева это оружие представляет собой длинную палку с прикреплённым к нему каменным наконечником. Каменные копья были одним из первых видов оружия, созданных человеком. Они использовались для охоты, защиты и сражений.</MeleeWeapon_StonySpear.description>
+	<MeleeWeapon_StonySpear.tools.0.label>древко</MeleeWeapon_StonySpear.tools.0.label>
+	<MeleeWeapon_StonySpear.tools.1.label>древко</MeleeWeapon_StonySpear.tools.1.label>
+	<MeleeWeapon_StonySpear.tools.2.label>боевая часть</MeleeWeapon_StonySpear.tools.2.label>
+	
+	<MeleeWeapon_FlameSpear.label>Огненное копьё</MeleeWeapon_FlameSpear.label>
+	<MeleeWeapon_FlameSpear.description>Созданное из камня и дерева это оружие представляет собой длинную палку с прикреплённым к нему каменным наконечником. Каменные копья были одним из первых видов оружия, созданных человеком. Они использовались для охоты, защиты и сражений./n/nВсё это справедливо и по отношению к огненному копью, лишь за тем исключением, что у этого есть маленький сюрприз.</MeleeWeapon_FlameSpear.description>
+	<MeleeWeapon_FlameSpear.tools.0.label>древко</MeleeWeapon_FlameSpear.tools.0.label>
+	<MeleeWeapon_FlameSpear.tools.1.label>древко</MeleeWeapon_FlameSpear.tools.1.label>
+	<MeleeWeapon_FlameSpear.tools.2.label>боевая часть</MeleeWeapon_FlameSpear.tools.2.label>	
+	
+</LanguageData>

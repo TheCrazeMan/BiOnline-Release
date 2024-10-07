@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Broots -->
+<ThingDef ParentName="RoughPlantBase">
+	<defName>TM_RawBroots</defName>
+	<label>White Broots</label>
+	<description>Fibrous white broots that grow wildly.\nTribal people hold the knowledge to use them to prepare medical beverages.</description>
+	<stackLimit>75</stackLimit>
+	<graphicData>
+		<texPath>Things/Plant/Raw/Broots_Raw</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>0.4</MarketValue>
+		<Mass>0.010</Mass>
+		<Flammability>1.2</Flammability>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>80</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<thingCategories>
+		<li>TM_MedicalHerbs</li>
+	</thingCategories>
+	<ingestible>
+		<optimalityOffsetFeedingAnimals>-12</optimalityOffsetFeedingAnimals>
+		<preferability>NeverForNutrition</preferability>
+	</ingestible>
+</ThingDef>
+
+<!-- Red Petals -->
+<ThingDef ParentName="RoughPlantBase">
+	<defName>TM_RawRedPetals</defName>
+	<label>Red Petals</label>
+	<description>Small and soft petals from a small plant.\nTribal people hold the knowledge to use them to prepare medical beverages.</description>
+	<stackLimit>75</stackLimit>
+	<graphicData>
+		<texPath>Things/Plant/Raw/RedPetals_Raw</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>0.4</MarketValue>
+		<Mass>0.010</Mass>
+		<Flammability>1.8</Flammability>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>30</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<thingCategories>
+		<li>TM_MedicalHerbs</li>
+	</thingCategories>
+	<ingestible>
+		<optimalityOffsetFeedingAnimals>-12</optimalityOffsetFeedingAnimals>
+		<preferability>NeverForNutrition</preferability>
+	</ingestible>
+</ThingDef>
+
+<!-- Shrooms -->
+<ThingDef ParentName="RoughPlantBase">
+	<defName>TM_RawShrooms</defName>
+	<label>Shrooms</label>
+	<description>Small mushrooms used by tribespeople to make medical beverages, useless for most advanced civilizations.</description>
+	<stackLimit>75</stackLimit>
+	<graphicData>
+		<texPath>Things/Plant/Raw/Shrooms_Raw</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>0.2</MarketValue>
+		<Mass>0.008</Mass>
+		<Flammability>1.8</Flammability>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>70</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<thingCategories>
+		<li>TM_MedicalHerbs</li>
+	</thingCategories>
+	<ingestible>
+		<optimalityOffsetFeedingAnimals>-12</optimalityOffsetFeedingAnimals>
+		<preferability>NeverForNutrition</preferability>
+		<outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Plant_ShroomsPoison</hediffDef>
+          <severity>0.1</severity>
+        </li>
+      </outcomeDoers>
+	</ingestible>
+</ThingDef>
+
+<!-- Dark Berries -->
+<ThingDef ParentName="RoughPlantBase">
+	<defName>TM_RawDarkBerries</defName>
+	<label>Raw dark berries</label>
+	<description>Small black fruits from a weird bush, those can be bad for organism, unless you know how to use them.</description>
+	<stackLimit>75</stackLimit>
+	<graphicData>
+		<texPath>Things/Plant/Raw/DarkBerries_Raw</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>0.1</MarketValue>
+		<Mass>0.008</Mass>
+		<Flammability>1.8</Flammability>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>30</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<thingCategories>
+		<li>TM_MedicalHerbs</li>
+	</thingCategories>
+	<ingestible>
+		<optimalityOffsetFeedingAnimals>-12</optimalityOffsetFeedingAnimals>
+		<preferability>NeverForNutrition</preferability>
+	</ingestible>
+</ThingDef>
+
+<!-- Травка души-->
+<ThingDef ParentName="RoughPlantBase">
+	<defName>BiO_AnimaGrass</defName>
+	<label>Anima grass</label>
+	<description>Cuted off bunch of anima grass. It is still glowing</description>
+	<stackLimit>30</stackLimit>
+	<tradeability>Sellable</tradeability>
+	<graphicData>
+		<texPath>Things/Item/Resource/Anima_grass</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>11</MarketValue>
+		<Mass>0.008</Mass>
+		<Flammability>1.8</Flammability>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>7</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<thingCategories>
+		<li>BiO_Special_Plants</li>
+	</thingCategories>
+	<ingestible>
+		<optimalityOffsetFeedingAnimals>-12</optimalityOffsetFeedingAnimals>
+		<preferability>NeverForNutrition</preferability>
+	</ingestible>
+</ThingDef>
+
+<!-- Морковь -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawCarrots</defName>
+    <label>carrots</label>
+    <description>Raw carrots.</description>
+    <thingCategories>
+      <li>Exquisite_Vegetables</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/RawPlants/RawCarrots</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+	  <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- Свёкла -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawBeet</defName>
+    <label>beets</label>
+    <description>Raw beets.</description>
+    <thingCategories>
+      <li>Exquisite_Vegetables</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/RawPlants/RawBeets</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<!-- Виноград -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawGrape</defName>
+    <label>grape</label>
+    <description>Raw grape.</description>
+	<thingCategories>
+		<li>VegetablesFruitsOthers</li>
+	</thingCategories>
+    <graphicData>
+      <texPath>Things/Item/RawPlants/RawGrape</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+	  <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- Помидоры -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawTomato</defName>
+    <label>tomatoes</label>
+    <description>Raw tomatoes.</description>
+    <thingCategories>
+      <li>Exquisite_Vegetables</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/RawPlants/RawTomato</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+	  <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- Чёрный перец -->
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>RawBlackPepper</defName>
+    <label>raw black pepper</label>
+    <description>Raw black pepper. Mill it to make a nice seasoning.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/RawPlants/RawBlackPepper</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+    </statBases>
+	<thingCategories>
+		<li>VegetablesFruitsOthers</li>
+	</thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>
+
+<!-- Какао -->
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>CocoaBeans</defName>
+    <label>cocoa beans</label>
+    <description>Raw cocoa beans. Can be used to make a chocolate</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/RawPlants/RawCacao</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+    </statBases>
+	<thingCategories>
+		<li>VegetablesFruitsOthers</li>
+	</thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>
+
+<!-- Чай -->
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>TeaLeaves</defName>
+    <label>tea leaves</label>
+    <description>Raw cocoa beans. Can be used to make a chocolate</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/RawPlants/TeaLeaves</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+    </statBases>
+	<thingCategories>
+		<li>VegetablesFruitsOthers</li>
+	</thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>
+
+	<!-- Пшеница -->
+
+<ThingDef ParentName="RoughPlantBase">
+	<defName>RawWheat</defName>
+	<label>wheat</label>
+	<description>Cuted off bunch of wheat. Can be used to make a flour.</description>
+	<stackLimit>500</stackLimit>
+	<thingCategories>
+		<li>VegetablesFruitsOthers</li>
+	</thingCategories>
+	<tradeability>Sellable</tradeability>
+	<graphicData>
+		<texPath>Things/Item/RawPlants/Wheat</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>1.1</MarketValue>
+		<Flammability>1.2</Flammability>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>18</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<ingestible>
+		<optimalityOffsetFeedingAnimals>-12</optimalityOffsetFeedingAnimals>
+		<preferability>NeverForNutrition</preferability>
+	</ingestible>
+</ThingDef>
+
+	<!--Соя-->
+
+<ThingDef ParentName="RoughPlantBase">
+	<defName>RawSoy</defName>
+	<label>wheat</label>
+	<description>Cuted off bunch of wheat. Can be used to make a flour.</description>
+	<stackLimit>75</stackLimit>
+	<thingCategories>
+		<li>VegetablesFruitsOthers</li>
+	</thingCategories>
+	<tradeability>Sellable</tradeability>
+	<graphicData>
+		<texPath>Things/Item/RawPlants/RawSoy</texPath>
+	</graphicData>
+	<statBases>
+		<MarketValue>0.8</MarketValue>
+		<Flammability>1.2</Flammability>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>18</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<ingestible>
+		<optimalityOffsetFeedingAnimals>-12</optimalityOffsetFeedingAnimals>
+		<preferability>NeverForNutrition</preferability>
+	</ingestible>
+</ThingDef>
+  
+</Defs>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WorldObjectDef>
+		<defName>BiOnlineMapHolder</defName>
+		<label>Paragon map holder</label>
+		<description>Paragon map holder</description>
+		<worldObjectClass>BiOnline.WorldObjects.Objects.BiOnlineMapHolder</worldObjectClass>
+		<texture>World/Objects/Expanding/DefaultExpandingIcon</texture>
+		<expandingIcon>false</expandingIcon>
+		<expandingIconPriority>100</expandingIconPriority>
+		<useDynamicDrawer>false</useDynamicDrawer>
+		<selectable>false</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<comps>
+			<li Class="BiOnline.WorldObjects.WorldObjectCompProperties_ExitMapGrid"/>
+		</comps>
+	</WorldObjectDef>
+	
+	<WorldObjectDef>
+		<defName>RandomPlace</defName>
+		<label>Unknown place</label>
+		<worldObjectClass>BiOnline.WorldObjects.RandomPlace</worldObjectClass>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>100</expandingIconPriority>
+		<texture>World/Objects/Expanding/DefaultExpandingIcon</texture>
+		<expandingIconTexture>World/Objects/UnknownObject/UnknownObject</expandingIconTexture>
+		<comps>
+			<li Class="WorldObjectCompProperties_Timeout"/>
+			<li Class="WorldObjectCompProperties_FormCaravan"/>
+		</comps>
+	</WorldObjectDef>
+	
+	<WorldObjectDef>
+		<defName>StoryRandomPlace</defName>
+		<label>Unknown place</label>
+		<worldObjectClass>BiOnline.WorldObjects.StoryRandomPlace</worldObjectClass>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>100</expandingIconPriority>
+		<texture>World/Objects/Expanding/DefaultExpandingIcon</texture>
+		<expandingIconTexture>World/Objects/UnknownObject/UnknownObject</expandingIconTexture>
+		<comps>
+			<li Class="WorldObjectCompProperties_FormCaravan"/>
+		</comps>
+	</WorldObjectDef>
+	
+<!-- 	<WorldObjectDef>
+		<defName>MeteoriteFall</defName>
+		<label>Meteorite</label>
+		<description>The place where the meteorite hit, we can try to mine it.</description>
+		<worldObjectClass>BiOnline.WorldObjects.RandomPlace_MeteoriteFall</worldObjectClass>
+		<texture>World/Objects/UnknownObject/MeteoriteFall</texture>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/Objects/UnknownObject/MeteoriteFall</expandingIconTexture>
+		<expandingIconPriority>100</expandingIconPriority>
+		<comps>
+			<li Class="WorldObjectCompProperties_FormCaravan"/>
+		</comps>
+	</WorldObjectDef> -->
+	
+</Defs>

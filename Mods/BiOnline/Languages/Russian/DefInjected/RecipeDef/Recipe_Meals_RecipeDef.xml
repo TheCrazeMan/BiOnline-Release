@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--Defs/RecipeDef/Recipe_Meals.xml-->
+<Cook_SpiceX4.label>Приготовить специи х4</Cook_SpiceX4.label>
+<Cook_SpiceX4.description>Приготовить специи.</Cook_SpiceX4.description>
+<Cook_SpiceX4.jobString>Приготовить специи.</Cook_SpiceX4.jobString>
+<Cook_SpiceX16.label>Приготовить специи X16</Cook_SpiceX16.label>
+<Cook_SpiceX16.description>Приготовить специи.</Cook_SpiceX16.description>
+<Cook_SpiceX16.jobString>Приготовить специи.</Cook_SpiceX16.jobString>
+<Cook_SpiceX50.label>Приготовить специи X50</Cook_SpiceX50.label>
+<Cook_SpiceX50.description>Приготовить специи.</Cook_SpiceX50.description>
+<Cook_SpiceX50.jobString>Приготовить специи.</Cook_SpiceX50.jobString>
+<Cook_SpiceX100.label>Приготовить специи X100</Cook_SpiceX100.label>
+<Cook_SpiceX100.description>Приготовить специи.</Cook_SpiceX100.description>
+<Cook_SpiceX100.jobString>Приготовить специи.</Cook_SpiceX100.jobString>
+<CookPrimitiveMeal.label>Приготовить примитивное блюдо</CookPrimitiveMeal.label>
+<CookPrimitiveMeal.description>Приготовить примитивное блюдо из единственного ингридиента.</CookPrimitiveMeal.description>
+<CookPrimitiveMeal.jobString>Готовит примитивное блюдо.</CookPrimitiveMeal.jobString>
+<CookPrimitiveMealX4.label>Приготовить примитивное блюдо X4</CookPrimitiveMealX4.label>
+<CookPrimitiveMealX4.description>Приготовить примитивное блюдо из единственного ингридиента.</CookPrimitiveMealX4.description>
+<CookPrimitiveMealX4.jobString>Готовит примитивное блюдо.</CookPrimitiveMealX4.jobString>
+<CookBakedPotatoes.label>Приготовить печёный картофель</CookBakedPotatoes.label>
+<CookBakedPotatoes.description>Приготовить печёный картофель</CookBakedPotatoes.description>
+<CookBakedPotatoes.jobString>Готовит печёный картофель</CookBakedPotatoes.jobString>
+<CookBakedPotatoesx4.label>Приготовить печёный картофель х4</CookBakedPotatoesx4.label>
+<CookBakedPotatoesx4.description>Приготовить печёный картофель х4</CookBakedPotatoesx4.description>
+<CookBakedPotatoesx4.jobString>Готовит печёный картофель</CookBakedPotatoesx4.jobString>
+<CookSmallCan.label>Приготовить простую консерву</CookSmallCan.label>
+<CookSmallCan.description>Скрутить консерву.</CookSmallCan.description>
+<CookSmallCan.jobString>Готовит простую консерву.</CookSmallCan.jobString>
+<CookSmallCanX4.label>Приготовить простую консерву x4</CookSmallCanX4.label>
+<CookSmallCanX4.description>Скрутить консерву.</CookSmallCanX4.description>
+<CookSmallCanX4.jobString>Готовит простую консерву.</CookSmallCanX4.jobString>
+<CookBigCan.label>Приготовить сбалансированную консерву</CookBigCan.label>
+<CookBigCan.description>Приготовить сбалансированную консерву.</CookBigCan.description>
+<CookBigCan.jobString>Готовит сбалансированную консерву.</CookBigCan.jobString>
+<CookBigCanx4.label>Приготовить сбалансированную консерву x4</CookBigCanx4.label>
+<CookBigCanx4.description>Приготовить сбалансированную консерву.</CookBigCanx4.description>
+<CookBigCanx4.jobString>Готовит сбалансированную консерву.</CookBigCanx4.jobString>
+<Cook_BlackBread.label>Приготовить чёрный хлеб x2</Cook_BlackBread.label>
+<Cook_BlackBread.description>Приготовить чёрный хлеб.</Cook_BlackBread.description>
+<Cook_BlackBread.jobString>Приготовить чёрный хлеб.</Cook_BlackBread.jobString>
+<Cook_BlackBreadYeasts.label>Приготовить чёрный хлеб x3</Cook_BlackBreadYeasts.label>
+<Cook_BlackBreadYeasts.description>Приготовить чёрный хлеб.</Cook_BlackBreadYeasts.description>
+<Cook_BlackBreadYeasts.jobString>Приготовить чёрный хлеб.</Cook_BlackBreadYeasts.jobString>
+<Cook_WhiteBread.label>Приготовить белый хлеб x3</Cook_WhiteBread.label>
+<Cook_WhiteBread.description>Приготовить белый хлеб.</Cook_WhiteBread.description>
+<Cook_WhiteBread.jobString>Приготовить белый хлеб.</Cook_WhiteBread.jobString>
+<Cook_WhiteBreadx12.label>Приготовить белый хлеб x12</Cook_WhiteBreadx12.label>
+<Cook_WhiteBreadx12.description>Приготовить белый хлеб.</Cook_WhiteBreadx12.description>
+<Cook_WhiteBreadx12.jobString>Приготовить белый хлеб.</Cook_WhiteBreadx12.jobString>
+<Cook_PsychiteTeaX1.label>Приготовить психиновый чай X1</Cook_PsychiteTeaX1.label>
+<Cook_PsychiteTeaX1.description>Приготовить психиновый чай.</Cook_PsychiteTeaX1.description>
+<Cook_PsychiteTeaX1.jobString>Приготовить психиновый чай.</Cook_PsychiteTeaX1.jobString>
+<Cook_PsychiteTeaX4.label>Приготовить психиновый чай X4</Cook_PsychiteTeaX4.label>
+<Cook_PsychiteTeaX4.description>Приготовить психиновый чай.</Cook_PsychiteTeaX4.description>
+<Cook_PsychiteTeaX4.jobString>Приготовить психиновый чай.</Cook_PsychiteTeaX4.jobString>
+<Cook_MilkChocolateX10.label>Приготовить шоколад X10</Cook_MilkChocolateX10.label>
+<Cook_MilkChocolateX10.description>Приготовить шоколад.</Cook_MilkChocolateX10.description>
+<Cook_MilkChocolateX10.jobString>Приготовить шоколад.</Cook_MilkChocolateX10.jobString>
+<Cook_MilkChocolateX40.label>Приготовить шоколад X40</Cook_MilkChocolateX40.label>
+<Cook_MilkChocolateX40.description>Приготовить шоколад.</Cook_MilkChocolateX40.description>
+<Cook_MilkChocolateX40.jobString>Приготовить шоколад.</Cook_MilkChocolateX40.jobString>
+<Cook_ChocolateX10.label>Приготовить шоколад X10</Cook_ChocolateX10.label>
+<Cook_ChocolateX10.description>Приготовить шоколад.</Cook_ChocolateX10.description>
+<Cook_ChocolateX10.jobString>Приготовить шоколад.</Cook_ChocolateX10.jobString>
+<Cook_ChocolateX40.label>Приготовить шоколад X40</Cook_ChocolateX40.label>
+<Cook_ChocolateX40.description>Приготовить шоколад.</Cook_ChocolateX40.description>
+<Cook_ChocolateX40.jobString>Приготовить шоколад.</Cook_ChocolateX40.jobString>
+<Cook_CaramelX10.label>Приготовить карамель  X10</Cook_CaramelX10.label>
+<Cook_CaramelX10.description>Приготовить карамель.</Cook_CaramelX10.description>
+<Cook_CaramelX10.jobString>Приготовить карамель.</Cook_CaramelX10.jobString>
+<Cook_CaramelX40.label>Приготовить карамель  X40</Cook_CaramelX40.label>
+<Cook_CaramelX40.description>Приготовить карамель.</Cook_CaramelX40.description>
+<Cook_CaramelX40.jobString>Приготовить карамель.</Cook_CaramelX40.jobString>
+<Cook_ToffeeX10.label>Приготовить ирис  X10</Cook_ToffeeX10.label>
+<Cook_ToffeeX10.description>Приготовить ирис.</Cook_ToffeeX10.description>
+<Cook_ToffeeX10.jobString>Приготовить ирис.</Cook_ToffeeX10.jobString>
+<Cook_ToffeeX40.label>Приготовить ирис  X40</Cook_ToffeeX40.label>
+<Cook_ToffeeX40.description>Приготовить ирис.</Cook_ToffeeX40.description>
+<Cook_ToffeeX40.jobString>Приготовить ирис.</Cook_ToffeeX40.jobString>
+<Molasses_x25.label>Сделать мелассу x25</Molasses_x25.label>
+<Molasses_x25.description>Сделать мелассу.</Molasses_x25.description>
+<Molasses_x25.jobString>Молет свёклу</Molasses_x25.jobString>
+<Molasses_x100.label>Сделать мелассу x100</Molasses_x100.label>
+<Molasses_x100.description>Сделать мелассу.</Molasses_x100.description>
+<Molasses_x100.jobString>Молет свёклу</Molasses_x100.jobString>
+<Make_RAW_FluTea.label>Приготовить неферментированный чай от гриппа</Make_RAW_FluTea.label>
+<Make_RAW_FluTea.description>Приготовить неферментированный чай от гриппа</Make_RAW_FluTea.description>
+<Make_RAW_FluTea.jobString>Готовит неферментированный чай от гриппа.</Make_RAW_FluTea.jobString>
+<Make_RAW_ImmunityTea.label>Приготовить неферментированный имунный чай</Make_RAW_ImmunityTea.label>
+<Make_RAW_ImmunityTea.description>Приготовить неферментированный имунный чай</Make_RAW_ImmunityTea.description>
+<Make_RAW_ImmunityTea.jobString>Готовит неферментированный имунный чай.</Make_RAW_ImmunityTea.jobString>
+<Make_RAW_CurativeTea.label>Приготовить неферментированный целебный чай</Make_RAW_CurativeTea.label>
+<Make_RAW_CurativeTea.description>Приготовить неферментированный целебный чай</Make_RAW_CurativeTea.description>
+<Make_RAW_CurativeTea.jobString>Готовит неферментированный целебный чай.</Make_RAW_CurativeTea.jobString>
+<Make_RAW_DigestiveTea.label>Приготовить неферментированный мочегонный чай</Make_RAW_DigestiveTea.label>
+<Make_RAW_DigestiveTea.description>Приготовить неферментированный мочегонный чай</Make_RAW_DigestiveTea.description>
+<Make_RAW_DigestiveTea.jobString>Готовит неферментированный мочегонный чай.</Make_RAW_DigestiveTea.jobString>
+<Make_RAW_HallucinationTea.label>Приготовить неферментированный галюциногенный чай</Make_RAW_HallucinationTea.label>
+<Make_RAW_HallucinationTea.description>Приготовить неферментированный галюциногенный чай</Make_RAW_HallucinationTea.description>
+<Make_RAW_HallucinationTea.jobString>Готовит неферментированный галюциногенный чай.</Make_RAW_HallucinationTea.jobString>
+<Make_RAW_InsanityTea.label>Приготовить неферментированный безумный чай</Make_RAW_InsanityTea.label>
+<Make_RAW_InsanityTea.description>Приготовить неферментированный безумный чай</Make_RAW_InsanityTea.description>
+<Make_RAW_InsanityTea.jobString>Готовит неферментированный безумный чай.</Make_RAW_InsanityTea.jobString>
+<Make_RAW_HungerTea.label>Приготовить неферментированный от голода чай</Make_RAW_HungerTea.label>
+<Make_RAW_HungerTea.description>Приготовить неферментированный от голода чай</Make_RAW_HungerTea.description>
+<Make_RAW_HungerTea.jobString>Готовит неферментированный от голода чай.</Make_RAW_HungerTea.jobString>
+<Make_RAW_Berry_braga.label>Приготовить ягодную брагу</Make_RAW_Berry_braga.label>
+<Make_RAW_Berry_braga.description>Приготовить ягодную брагу из свежих ягод</Make_RAW_Berry_braga.description>
+<Make_RAW_Berry_braga.jobString>Готовит ягодную брагу</Make_RAW_Berry_braga.jobString>
+<Make_RAW_Soma.label>Приготовить сому</Make_RAW_Soma.label>
+<Make_RAW_Soma.description>Приготовить сому из свежих ягод и грибов</Make_RAW_Soma.description>
+<Make_RAW_Soma.jobString>Готовит сому</Make_RAW_Soma.jobString>
+<CookFried_meat.label>Пожарить мясо х1</CookFried_meat.label>
+<CookFried_meat.description>Приготовьте жареное мясо из сырого.</CookFried_meat.description>
+<CookFried_meatx4.jobString>Жарит мясо</CookFried_meatx4.jobString>
+<CookFried_meatx4.label>Пожарить мясо х4</CookFried_meatx4.label>
+<CookFried_meatx4.description>Приготовьте жареное мясо из сырого.</CookFried_meatx4.description>
+<CookFried_meatx4.jobString>Жарит мясо</CookFried_meatx4.jobString>
+<Cook_Dried_meat_RAWx25.label>Приготовить мясо для сушки х25</Cook_Dried_meat_RAWx25.label>
+<Cook_Dried_meat_RAWx25.description>Подготовить мясо для дальнейшей сушки</Cook_Dried_meat_RAWx25.description>
+<Cook_Dried_meat_RAWx25.jobString>Готовит мясо для сушки</Cook_Dried_meat_RAWx25.jobString>
+<Cook_Dried_meat_RAWx75.label>Приготовить мясо для сушки х75</Cook_Dried_meat_RAWx75.label>
+<Cook_Dried_meat_RAWx75.description>Подготовить мясо для дальнейшей сушки</Cook_Dried_meat_RAWx75.description>
+<Cook_Dried_meat_RAWx75.jobString>Готовит мясо для сушки</Cook_Dried_meat_RAWx75.jobString>
+<Make_RawWortx1.label>Приготовить брагу х4</Make_RawWortx1.label>
+<Make_RawWortx1.description>Приготовить брагу из растений</Make_RawWortx1.description>
+<Make_RawWortx1.jobString>Готовит брагу</Make_RawWortx1.jobString>
+<Make_RawWortx4.label>Приготовить брагу х4</Make_RawWortx4.label>
+<Make_RawWortx4.description>Приготовить брагу из растений</Make_RawWortx4.description>
+<Make_RawWortx4.jobString>Готовит брагу</Make_RawWortx4.jobString>
+<Cook_TeaDrink.label>Заварить чай х4</Cook_TeaDrink.label>
+<Cook_TeaDrink.description>Заварить чай из чайного листа</Cook_TeaDrink.description>
+<Cook_TeaDrink.jobString>Заваривает чай</Cook_TeaDrink.jobString>
+<Cook_TeaDrinkx4.label>Завирить чай х4</Cook_TeaDrinkx4.label>
+<Cook_TeaDrinkx4.description>Заварить чай из чайного листа</Cook_TeaDrinkx4.description>
+<Cook_TeaDrinkx4.jobString>Заваривает чай</Cook_TeaDrinkx4.jobString>
+<Cook_TeaDrinkSweet.label>Заварить чай с сахаром х4</Cook_TeaDrinkSweet.label>
+<Cook_TeaDrinkSweet.description>Заварить чай с добавлением сахара</Cook_TeaDrinkSweet.description>
+<Cook_TeaDrinkSweet.jobString>Заваривает чай</Cook_TeaDrinkSweet.jobString>
+<Cook_TeaDrinkSweetx4.label>Заварить чай с сахаром х4</Cook_TeaDrinkSweetx4.label>
+<Cook_TeaDrinkSweetx4.description>Заварить чай с добавлением сахара</Cook_TeaDrinkSweetx4.description>
+<Cook_TeaDrinkSweetx4.jobString>Заваривает чай</Cook_TeaDrinkSweetx4.jobString>
+<Cook_Coffee.label>Заварить кофе х4</Cook_Coffee.label>
+<Cook_Coffee.description>Заварить кофе из кофейных бобов</Cook_Coffee.description>
+<Cook_Coffee.jobString>Заваривает кофе</Cook_Coffee.jobString>
+<Cook_Coffeex4.label>Заварить кофе х4</Cook_Coffeex4.label>
+<Cook_Coffeex4.description>Заварить кофе из кофейных бобов</Cook_Coffeex4.description>
+<Cook_Coffeex4.jobString>Заваривает кофе</Cook_Coffeex4.jobString>
+<Cook_CoffeeSweet.label>Заварить кофе с сахаром х2</Cook_CoffeeSweet.label>
+<Cook_CoffeeSweet.description>Заварить кофе с добавлением сахара</Cook_CoffeeSweet.description>
+<Cook_CoffeeSweet.jobString>Заваривает кофе</Cook_CoffeeSweet.jobString>
+<Cook_CoffeeSweetx4.label>Заварить кофе с сахаром х4</Cook_CoffeeSweetx4.label>
+<Cook_CoffeeSweetx4.description>Заварить кофе с добавлением сахара</Cook_CoffeeSweetx4.description>
+<Cook_CoffeeSweetx4.jobString>Заваривает кофе</Cook_CoffeeSweetx4.jobString>
+<CookSawdust_soup.label>Приготовить суп с опилками</CookSawdust_soup.label>
+<CookSawdust_soup.description>Приготовить суп с добавлением опилок. Противный, но лучше чем ничего</CookSawdust_soup.description>
+<CookSawdust_soup.jobString>Готовит суп с опилками</CookSawdust_soup.jobString>
+<CookSawdust_soupx4.label>Приготовить суп с опилками х4</CookSawdust_soupx4.label>
+<CookSawdust_soupx4.description>Приготовить суп с добавлением опилок. Противный, но лучше чем ничего</CookSawdust_soupx4.description>
+<CookSawdust_soupx4.jobString>Готовит суп с опилками</CookSawdust_soupx4.jobString>
+<Make_RawWortx1.label>Приготовить сусло</Make_RawWortx1.label>
+<Make_RawWortx1.description>Приготовить сусло из различных растений</Make_RawWortx1.description>
+<Make_RawWortx1.jobString>Готовит сусло</Make_RawWortx1.jobString>
+<Cook_CandyX10.label>Приготовить конфету х10</Cook_CandyX10.label>
+<Cook_CandyX10.description>Приготовить конфеты из жидкой карамели, маленькие и всегда при себе</Cook_CandyX10.description>
+<Cook_CandyX10.jobString>Готовит конфеты</Cook_CandyX10.jobString>
+<Cook_CandyX40.label>Приготовить конфету х40</Cook_CandyX40.label>
+<Cook_CandyX40.description>Приготовить конфеты из жидкой карамели, маленькие и всегда при себе</Cook_CandyX40.description>
+<Cook_CandyX40.jobString>Готовит конфету</Cook_CandyX40.jobString>
+<Cook_SaltCandyX10.label>Приготовить солённую конфету х10</Cook_SaltCandyX10.label>
+<Cook_SaltCandyX10.description>Приготовить солённые конфеты из жидкой карамели, маленькие и всегда при себе. Странная на вкус, но кто-то любит</Cook_SaltCandyX10.description>
+<Cook_SaltCandyX10.jobString>Готовит солённые конфеты</Cook_SaltCandyX10.jobString>
+<Cook_SaltCandyX40.label>Приготовить солённую конфету х40</Cook_SaltCandyX40.label>
+<Cook_SaltCandyX40.description>Приготовить солённые конфеты из жидкой карамели, маленькие и всегда при себе. Странная на вкус, но кто-то любит</Cook_SaltCandyX40.description>
+<Cook_SaltCandyX40.jobString>Готовит солённые конфеты</Cook_SaltCandyX40.jobString>
+<Cook_ChocolateCandyX10.label>Приготовить шоколадные конфеты х10</Cook_ChocolateCandyX10.label>
+<Cook_ChocolateCandyX10.description>Приготовить шоколадные конфеты, идельно дополняют чай или кофе, маленькие и всегда при себе.</Cook_ChocolateCandyX10.description>
+<Cook_ChocolateCandyX10.jobString>Готовит шоколадные конфеты</Cook_ChocolateCandyX10.jobString>
+<Cook_ChocolateCandyX40.label>Приготовить шоколадные конфеты х40</Cook_ChocolateCandyX40.label>
+<Cook_ChocolateCandyX40.description>Приготовить шоколадные конфеты, идельно дополняют чай или кофе, маленькие и всегда при себе.</Cook_ChocolateCandyX40.description>
+<Cook_ChocolateCandyX40.jobString>Готовит шоколадные конфеты</Cook_ChocolateCandyX40.jobString>
+<Cook_PumpkinLollipopX10.label>Приготовить лжетыкву на палочке х10</Cook_PumpkinLollipopX10.label>
+<Cook_PumpkinLollipopX10.description>Приготовить тыкву на палочке, палочка позволяет не испачкаться.</Cook_PumpkinLollipopX10.description>
+<Cook_PumpkinLollipopX10.jobString>Готовит карамель на палочке</Cook_PumpkinLollipopX10.jobString>
+
+<Cook_PumpkinLollipopX40.label>Приготовить лжетыкву на палочке х40</Cook_PumpkinLollipopX40.label>
+<Cook_PumpkinLollipopX40.description>Приготовить тыкву на палочке, палочка позволяет не испачкаться</Cook_PumpkinLollipopX40.description>
+<Cook_PumpkinLollipopX40.jobString>Готовит карамель на палочке</Cook_PumpkinLollipopX40.jobString>
+
+<Cook_MarmaladeX10.label>Приготовить мармеладные конфеты х10</Cook_MarmaladeX10.label>
+<Cook_MarmaladeX10.description>Приготовить мармеладные конфеты с ягодной начинкой</Cook_MarmaladeX10.description>
+<Cook_MarmaladeX10.jobString>Готовит мармелад</Cook_MarmaladeX10.jobString>
+
+<Cook_MarmaladeX40.label>Приготовить мармеладные конфеты х40</Cook_MarmaladeX40.label>
+<Cook_MarmaladeX40.description>Приготовить мармеладные конфеты с ягодной начинкой</Cook_MarmaladeX40.description>
+<Cook_MarmaladeX40.jobString>Готовит мармелад</Cook_MarmaladeX40.jobString>
+
+<Cook_LicoriceX10.label>Приготовить лакрицу х10</Cook_LicoriceX10.label>
+<Cook_LicoriceX10.description>Приготовить лакрицу из чёрных ягод. Очень странные на вкус...</Cook_LicoriceX10.description>
+<Cook_LicoriceX10.jobString>Готовит лакрицу</Cook_LicoriceX10.jobString>
+
+<Cook_LicoriceX40.label>Приготовить лакрицу х40</Cook_LicoriceX40.label>
+<Cook_LicoriceX40.description>Приготовить лакрицу из чёрных ягод. Очень странные на вкус...</Cook_LicoriceX40.description>
+<Cook_LicoriceX40.jobString>Готовит лакрицу</Cook_LicoriceX40.jobString>
+
+<Cook_TofuX4.label>Приготовить тофу х4</Cook_TofuX4.label>
+<Cook_TofuX4.description>Приготовить тофу из соевых бобов</Cook_TofuX4.description>
+<Cook_TofuX4.jobString>Готовит сою</Cook_TofuX4.jobString>
+
+<Cook_TofuX16.label>Приготовить тофу х16</Cook_TofuX16.label>
+<Cook_TofuX16.description>Приготовить тофу из соевых бобов</Cook_TofuX16.description>
+<Cook_TofuX16.jobString>Готовит сою</Cook_TofuX16.jobString>
+
+<Fishing.label>Ловить рыбу</Fishing.label>
+<Fishing.description>Ловить рыбу на пирсе</Fishing.description>
+<Fishing.jobString>Ловит рыбу</Fishing.jobString>
+
+<ButcherFishFlesh.label>Разделать рыбу</ButcherFishFlesh.label>
+<ButcherFishFlesh.description>Разделать рыбу на рыбное филе</ButcherFishFlesh.description>
+<ButcherFishFlesh.jobString>Разделывает рыбу</ButcherFishFlesh.jobString>
+
+<ButcherFishFleshx4.label>Разделать рыбу х4</ButcherFishFleshx4.label>
+<ButcherFishFleshx4.description>Разделать рыбу на рыбное филе</ButcherFishFleshx4.description>
+<ButcherFishFleshx4.jobString>Разделывает рыбу</ButcherFishFleshx4.jobString>
+
+</LanguageData>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Make_Apparel_Crown_PSY.label>Сделать псионическую корону.</Make_Apparel_Crown_PSY.label>
+	<Make_Apparel_Crown_PSY.description>Сделать псионическую корону.</Make_Apparel_Crown_PSY.description>
+	<Make_Apparel_Crown_PSY.jobString>Выковывает псионическую корону.</Make_Apparel_Crown_PSY.jobString>
+	
+	<Make_Apparel_Coronet_PSY.label>Сделать псионическую коронету.</Make_Apparel_Coronet_PSY.label>
+	<Make_Apparel_Coronet_PSY.description>Сделать псионическую корону.</Make_Apparel_Coronet_PSY.description>
+	<Make_Apparel_Coronet_PSY.jobString>Выковывает псионическую коронету.</Make_Apparel_Coronet_PSY.jobString>
+
+	<Craft_Apparel_PsyfocusShirt.label>Изготовить Рубашку из Эльтекса</Craft_Apparel_PsyfocusShirt.label>
+	<Craft_Apparel_PsyfocusShirt.description>Изготовить Рубашку из Эльтекса.</Craft_Apparel_PsyfocusShirt.description>
+	<Craft_Apparel_PsyfocusShirt.jobString>Изготавливает Рубашку из Эльтекса</Craft_Apparel_PsyfocusShirt.jobString>
+
+	<Craft_Apparel_PsyfocusVest.label>Изготовить Жилет из Эльтекса</Craft_Apparel_PsyfocusVest.label>
+	<Craft_Apparel_PsyfocusVest.description>Изготовить Жилет из Эльтекса.</Craft_Apparel_PsyfocusVest.description>
+	<Craft_Apparel_PsyfocusVest.jobString>Изготавливает Жилет из Эльтекса</Craft_Apparel_PsyfocusVest.jobString>
+
+	<Craft_Apparel_EltexSkullcap.label>Изготовить Тафью из Эльтекса</Craft_Apparel_EltexSkullcap.label>
+	<Craft_Apparel_EltexSkullcap.description>Изготовить Тафью из Эльтекса.</Craft_Apparel_EltexSkullcap.description>
+	<Craft_Apparel_EltexSkullcap.jobString>Изготавливает Тафью из Эльтекса</Craft_Apparel_EltexSkullcap.jobString>
+	
+	<Craft_Apparel_PsyfocusHelmet.label>Изготовить Шлем из Эльтекса</Craft_Apparel_PsyfocusHelmet.label>
+	<Craft_Apparel_PsyfocusHelmet.description>Изготовить Шлем из Эльтекса.</Craft_Apparel_PsyfocusHelmet.description>
+	<Craft_Apparel_PsyfocusHelmet.jobString>Изготавливает Шлем из Эльтекса</Craft_Apparel_PsyfocusHelmet.jobString>
+
+	<Craft_Apparel_PsyfocusRobe_PSY.label>Изготовить Мантию из Эльтекса</Craft_Apparel_PsyfocusRobe_PSY.label>
+	<Craft_Apparel_PsyfocusRobe_PSY.description>Изготовить Мантию из Эльтекса.</Craft_Apparel_PsyfocusRobe_PSY.description>
+	<Craft_Apparel_PsyfocusRobe_PSY.jobString>Изготавливает Мантию из Эльтекса</Craft_Apparel_PsyfocusRobe_PSY.jobString>
+</LanguageData>

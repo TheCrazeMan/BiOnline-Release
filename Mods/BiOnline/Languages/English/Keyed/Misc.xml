@@ -1,0 +1,52 @@
+<LanguageData>
+
+	<BiOnline.Settings.BiOnlineMod>BiOnline</BiOnline.Settings.BiOnlineMod>
+	<BiOnline.Settings.ShowStartInformation>Show starting information</BiOnline.Settings.ShowStartInformation>
+	
+	<BiOnline_StartingMessage>
+Welcome to the BiOnline server!  
+	
+Our goal is to save and improve vanilla rimworld style, without overpowered mods.
+At this moment we have:
+	
+Reworked combat system (Yes, this is Combat Extended, that's the only thing, which doesn't match with vanilla)
+	
+Advanced ore generation, that depends on the biome you live.
+Ceramite -> Deserts and extreme deserts
+Mithril -> Tundras and ice sheets
+Chlorophyte -> Regular and tropical swamps, and also tropical rainforest.
+
+There is also a bunch of non-biome ores, that you can mine all over the planet.
+
+But there is more. Each scenario have it's unique bonuses and some content. For example, starting with Lost Tribe will give you bonus to the world map movement and ability to brew elixirs.
+You can found more information in Discord.
+
+
+Join us in Discord:(https://discord.gg/RRCWT8M)
+Be our patron: (https://www.patreon.com/user?u=31778043)
+	
+Good luck!
+	</BiOnline_StartingMessage>
+	<BiOnline_StartingMessageHide>Don't show again</BiOnline_StartingMessageHide>
+	
+	<Dialog_InputPassword.Label>Administrator password is needed</Dialog_InputPassword.Label>
+	<Dialog_InputPassword.Password>Password</Dialog_InputPassword.Password>
+	<Dialog_InputPassword.Accept>Accept</Dialog_InputPassword.Accept>
+	<Dialog_InputPassword.Decline>Close</Dialog_InputPassword.Decline>
+	<Dialog_InputPassword.InccoretPassword>Wrong password</Dialog_InputPassword.InccoretPassword>
+	
+	<Requirement_Things_Item>\n- {0}: {1} out of {2}</Requirement_Things_Item>
+	<Requirement_Things_Category>\n- Item of category {0}: {1} out of {2}</Requirement_Things_Category>
+	<Requirement_ResearchTreeHeader>\nResearchment requirement:</Requirement_ResearchTreeHeader>
+	<Requirement_Things>\n- {0} in quantity {1}</Requirement_Things>
+	<Requirement_Things_Category_Req>\n- Any item of category {0} in quantity {1}</Requirement_Things_Category_Req>
+	<ResourceBox_GetInspectString>\nContained resources:</ResourceBox_GetInspectString>
+	
+	<DefModExtension_XenoTypeDef.Disabled>This Xenotype is disallowed on the starting screen.</DefModExtension_XenoTypeDef.Disabled>
+	<CompModularBuilding.ModuleSlotInfo>Expansion slot\nSuitable modules: {0}</CompModularBuilding.ModuleSlotInfo>
+	<Bill_DoInterface_Tip>Module is missing: {0}</Bill_DoInterface_Tip>
+	<RecipeDefRequiredFacility.AnyOf>\nAny out {0}</RecipeDefRequiredFacility.AnyOf>
+	<RecipeDefRequiredFacility.All>{0}</RecipeDefRequiredFacility.All>
+	<RecipeDefRequiredModule>{0}</RecipeDefRequiredModule>
+	
+</LanguageData>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/CombatExtended.AmmoSetDef[
+					defName="AmmoSet_CannonBall" or 
+					defName="AmmoSet_CannonBall_Mortar" or
+					defName="AmmoSet_MortarGrenade" or
+					defName="AmmoSet_MiniCannonBall"
+					]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

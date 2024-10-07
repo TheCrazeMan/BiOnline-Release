@@ -1,0 +1,1570 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Пример техи с новыми функциями-->
+	<!--
+	<ResearchProjectDef>
+	<defName>GreatbowTest</defName>
+	<label>greatbow</label>
+	<description>Craft greatbows for killing enemies at great range.</description>
+	<baseCost>600</baseCost>
+	<techLevel>Medieval</techLevel>
+	<researchViewX>1.00</researchViewX>
+	<researchViewY>0.70</researchViewY>
+	<modExtensions>
+		<li Class="BiOnline.Researches.ResearchDefModExtension">
+			<thingRequirements>
+				<li>
+					<thingDef>WoodLog</thingDef>
+					<count>10</count>
+				</li>
+				<li>
+					<thingCategory>FoodRaw</thingCategory>
+					<count>10</count>
+				</li>
+			</thingRequirements>
+			<defaultColor>(108,70,177,100)</defaultColor>
+		</li>
+	</modExtensions>
+	<tab>Tribal</tab>
+	<prerequisites>
+	<li>ComplexFurniture</li>
+	</prerequisites>	
+	</ResearchProjectDef>
+	-->
+	
+	<!--Неолит/Neolithic-->
+    <ResearchProjectDef>
+        <defName>AgricultureI</defName>
+        <label>Agriculture I</label>
+        <description>The first steps of man in agriculture. You will learn how to cultivate the soil and grow various wild crops yourself.</description>
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0</researchViewY>
+        <tags>
+            <li>TribalStart</li>		
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>
+        <tab>Tribal</tab>	
+    </ResearchProjectDef>
+	
+    <ResearchProjectDef>
+        <defName>First_bow</defName>
+        <label>First bow</label>
+        <description>A primitive short bow. It is easy to create and does not require huge skills.</description>
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>0</researchViewX>
+        <researchViewY>5</researchViewY>
+        <tab>Tribal</tab>	
+        <tags>
+            <li>TribalStart</li>		
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>		
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>Exploring_the_world</defName>
+        <label>Exploring the world</label>
+        <description>The world is full of mysteries and secrets that are waiting for their explorers. It is vast and uncharted, and we as humans strive to uncover its mysteries. Each new discovery is an opportunity to learn more about the past, present, and future of our planet. Let's embark on a journey to unravel as many mysteries.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>		
+        <tab>Tribal</tab>
+        <tags>
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>
+		<prerequisites>
+            <li>First_bow</li>
+			<li>AgricultureI</li>
+			<li>PassiveCooler</li>
+			<li>ComplexFurniture</li>
+			<li>Stonecutting</li>
+        </prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingCategory>FoodRaw</thingCategory>
+						<count>200</count>
+					</li>
+					<li>
+						<thingCategory>StoneBlocks</thingCategory>
+						<count>200</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+	
+    <ResearchProjectDef>
+        <defName>CookingI</defName>
+        <label>Cooking I</label>
+        <description>Cooking significantly improves the quality and variety of food for people of the Neolithic era. It allows them to get food that is not only nutritious, but also has a pleasant taste and aroma. You will also learn how to increase the shelf life of meat thanks to smoking and pemmican.</description>
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
+        <tab>Tribal</tab>
+        <tags>
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>		
+		<prerequisites>
+            <li>Exploring_the_world</li>
+        </prerequisites>		
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Cold_Stone_cooler</defName>
+        <label>Cold Stone cooler</label>
+        <description>Technology the use of a cold stone is one of the most important technologies of the Neolithic era, which will improve the living conditions of people. It allows them to cope with the hot climate and create comfortable conditions inside their homes. And also low temperatures allow you to freeze food for a long time</description>
+        <baseCost>600</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>Tribal</tab>
+		<prerequisites>
+            <li>Exploring_the_world</li>
+        </prerequisites>		
+    </ResearchProjectDef>	
+
+    <ResearchProjectDef>
+        <defName>Improved_Bows</defName>
+        <label>Improved Bows</label>
+        <description>A technology that allows people of the Neolithic era to improve their hunting and fighting skills. It includes the creation of long bows and new types of arrows for them, as well as the possibility of creating poisoned arrows.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>5</researchViewY>
+        <tab>Tribal</tab>
+        <tags>
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>
+		<prerequisites>
+            <li>Exploring_the_world</li>
+        </prerequisites>		
+    </ResearchProjectDef>	
+
+    <ResearchProjectDef>
+        <defName>Neolithic_Tools</defName>
+        <label>Neolithic Tools</label>
+        <description>The technology is revolutionary for its time and has significantly influenced the development of human civilization. It became the basis for the further development of many industries and remains important to this day. It includes making a stone axe, a stone pickaxe and a stone hammer.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>6.5</researchViewY>
+        <tab>Tribal</tab>
+        <tags>
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>
+		<prerequisites>
+            <li>Exploring_the_world</li>
+        </prerequisites>		
+    </ResearchProjectDef>	
+
+    <ResearchProjectDef>
+        <defName>Neolithic_Apparel</defName>
+        <label>Neolithic Apparel</label>
+        <description>the technology that allowed people of the Neolithic era to create clothes from animal skin. It includes the creation of tunics, capes, hats made of skins that protect the body from cold, rain and other adverse weather conditions.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>8</researchViewY>
+        <tab>Tribal</tab>
+        <tags>
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>
+		<prerequisites>
+            <li>Exploring_the_world</li>
+        </prerequisites>		
+    </ResearchProjectDef>	
+
+    <ResearchProjectDef>
+        <defName>Drinks</defName>
+        <label>Drinks</label>
+        <description>Technologies for the production of beverages, low-alcohol drink Soma and berry mash. Soma is produced by fermentation of plant materials, milk and other liquids. Berry braga was created from berries that were placed in fermentation tanks. The berries of blackberries, raspberries and other berry crops were usually used.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0</researchViewY>
+        <tab>Tribal</tab>
+		<prerequisites>
+            <li>CookingI</li>
+        </prerequisites>
+    </ResearchProjectDef>	
+
+    <ResearchProjectDef>
+        <defName>Study_of_metals</defName>
+        <label>Study of metals</label>
+        <description>We should do research on metals and their processing. There is definitely a future behind it and a lot of discoveries</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+        <tab>Tribal</tab>
+        <tags>
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>		
+		<prerequisites>
+            <li>Exploring_the_world</li>
+			<li>Cold_Stone_cooler</li>
+			<li>Improved_Bows</li>
+			<li>Neolithic_Tools</li>
+			<li>Neolithic_Apparel</li>
+        </prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingCategory>Resources</thingCategory>
+						<count>100</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>	
+	
+	
+	<!--Средневековье/Medieval-->
+	<ResearchProjectDef>
+        <defName>Medieval_Age</defName>
+        <label>Medieval Age</label>
+        <description>The Middle Ages were a transformative period in human history, characterized by a myriad of technological advancements that changed the course of civilization. From the emergence of sophisticated agricultural techniques to the development of ingenious weapons of war, the Middle Ages witnessed a remarkable explosion of human ingenuity and innovation.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>0</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>Medieval</tab>
+        <tags>
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>
+		<hiddenPrerequisites>
+            <li>Study_of_metals</li>
+        </hiddenPrerequisites>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>CookingII</defName>
+        <label>Cooking II</label>
+        <description>Advancements in cooking technology have transformed the way we prepare and enjoy food. With cutting-edge tools and techniques, cooking has become a precise and efficient art form that allows for unparalleled control over the cooking process.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+        <tab>Medieval</tab>
+        <tags>
+			<li>ClassicStart</li>
+        </tags>
+		<hiddenPrerequisites>
+            <li>CookingI</li>
+        </hiddenPrerequisites>
+		<prerequisites>
+            <li>Medieval_Age</li>
+        </prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>StonecuttingII</defName>
+        <label>stonecutting II</label>
+        <description>Advanced stonecutting desired to improve your defense.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Medieval_Age</li>
+		</prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>2.75</researchViewY>
+        <tab>Medieval</tab>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>CoveringI</defName>
+        <label>Covering I</label>
+        <description>Allows the use of available materials such as wood, plant fibers, and stones as floor coverings. This greatly adds convenience and beauty to any room.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>2.75</researchViewY>
+        <tab>Medieval</tab>
+		<prerequisites>
+			<li>Stonecutting</li>
+        </prerequisites>		
+        <tags>		
+            <li>Medieval</li>
+			<li>ClassicStart</li>
+        </tags>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>AgricultureII</defName>
+        <label>Agriculture II</label>
+        <description>The medieval period was a time of great advancement in agricultural technology, as farmers and laborers developed new tools and techniques to increase yields and improve crop management. These advancements built upon the foundations laid by the Neolithic period, including the domestication of plants and animals and the development of irrigation systems.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+        <tab>Medieval</tab>
+		<hiddenPrerequisites>
+            <li>AgricultureI</li>
+        </hiddenPrerequisites>
+		<prerequisites>
+            <li>Medieval_Age</li>
+        </prerequisites>		
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>Metal_processingI</defName>
+        <label>Metal processing I </label>
+        <description>During the medieval period, advancements in metal processing technology played a critical role in the development of medieval society. Metalworking was a highly skilled craft, and blacksmiths and other metalworkers developed innovative techniques for extracting, refining, and shaping metals.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+            <li>Medieval_Age</li>
+        </prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>CopperOre</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>BIO_IronOre</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>BIO_Coal</thingDef>
+						<count>50</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>			
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>FurnitureII</defName>
+        <label>Furniture II </label>
+        <description>During the medieval period, furniture-making became a highly skilled craft, and advancements in furniture technology made it possible to produce a wide range of functional and decorative pieces.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>5</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<hiddenPrerequisites>
+            <li>ComplexFurniture</li>
+        </hiddenPrerequisites>
+		<prerequisites>
+            <li>Medieval_Age</li>
+        </prerequisites>
+    </ResearchProjectDef>		
+	
+	<ResearchProjectDef>
+        <defName>Fermentation</defName>
+        <label>Fermentation</label>
+        <description>Fermentation has been used to preserve and transform food and beverages for thousands of years, and during the medieval period, advancements in fermentation technology played a critical role in the production of a wide range of foods and drinks.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+            <li>CookingII</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+<!-- 	<ResearchProjectDef>
+        <defName>Distillation</defName>
+        <label>Distillation</label>
+        <description>Distillation is the process of purifying liquids by separating them from other substances through evaporation and condensation. During the medieval period, advancements in distillation technology allowed for the production of a wide range of distilled liquids, including alcoholic beverages and medicinal compounds.</description>
+        <baseCost>200</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0</researchViewY>
+        <tab>Medieval</tab>
+		<prerequisites>
+            <li>Fermentation</li>
+        </prerequisites>
+    </ResearchProjectDef> -->
+
+	<ResearchProjectDef>
+        <defName>Potions</defName>
+        <label>Potions</label>
+        <description>Potion-making was a skilled craft that required knowledge of medicinal herbs and their properties. Potion-makers, known as apothecaries, would often work in conjunction with physicians to create remedies tailored to the specific needs of their patients.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>1</researchViewY>
+        <tab>Medieval</tab>
+        <hiddenPrerequisites>         
+            <li>TribeBorn</li>
+        </hiddenPrerequisites>		
+		<prerequisites>
+            <li>Fermentation</li>
+        </prerequisites>	
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(220,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>Book_writing</defName>
+        <label>Book writing</label>
+        <description>During the medieval period, the production of books was a complex and time-consuming process that required a range of specialized skills and technologies. Book production began with the creation of parchment or vellum, which were made from animal hides and then prepared with a mixture of chalk and flour to create a smooth surface for writing.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+            <li>Metal_processingI</li>
+        </prerequisites>
+    </ResearchProjectDef>
+	
+<!-- 	<ResearchProjectDef>
+        <defName>Glassmaking</defName>
+        <label>Glassmaking</label>
+        <description>Creating glass: Glass is a transparent or translucent material that is made by melting sand at high temperature. It is used for numerous crafting applications.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Medieval</techLevel>
+	    <researchViewX>2.00</researchViewX>
+	    <researchViewY>4.25</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+            <li>Metal_processingI</li>
+        </prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>BIO_Coal</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>Sand</thingDef>
+						<count>100</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>	
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>Ceramics</defName>
+        <label>Ceramics</label>
+        <description>Creating pottery: A hard material that is made by firing clay at high temperatures. Suitable for creating, bricks, walls. And in later stages can be used as armor plates</description>
+        <baseCost>800</baseCost>
+        <techLevel>Medieval</techLevel>
+	    <researchViewX>3.00</researchViewX>
+	    <researchViewY>4.25</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+            <li>Glassmaking</li>
+        </prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>BIO_Coal</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>Clay</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>Sand</thingDef>
+						<count>200</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef> -->
+
+	<ResearchProjectDef>
+        <defName>MedicineI</defName>
+        <label>Medicine I</label>
+        <description>During the medieval period, medicine was a complex and often mysterious field that combined scientific knowledge with superstition and folklore. The practice of medicine was dominated by physicians, who were highly educated and often associated with universities or religious institutions.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+            <li>Fermentation</li>
+        </prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>Book_PenoxycylineProduction</thingDef>
+						<count>1</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>CoveringII</defName>
+        <label>Covering II</label>
+        <description>Materials for creating concrete and steel surfaces, as well as elegant stone tiles used for laying on the floor.</description>
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>5</researchViewX>
+        <researchViewY>4</researchViewY>
+        <tab>Medieval</tab>
+		<hiddenPrerequisites>
+            <li>CoveringI</li>
+        </hiddenPrerequisites>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>		
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>Tools</defName>
+        <label>Tools</label>
+        <description>One key development in medieval tools technology was the use of iron and steel, which allowed for the creation of stronger and more durable tools. Blacksmiths and other metalworkers developed advanced techniques for working with these materials, such as forging and tempering, which allowed for the creation of tools that could withstand heavy use.</description>
+        <baseCost>400</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>5</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>Medieval</tab>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>Tension_forceI</defName>
+        <label>Tension force I</label>
+        <description>During the medieval period, advancements in tension force technology played a significant role in the construction of bridges, buildings, and other structures. Tension force technology involves the use of tension, or pulling force, to support a load or structure.</description>
+        <baseCost>400</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>4</researchViewX>
+        <researchViewY>5.5</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>Quilted_protection</defName>
+        <label>Quilted protection</label>
+        <description>During the medieval period, advancements in quilted protection technology played a critical role in protecting soldiers and knights in battle. Quilted armor, also known as gambesons or aketons, was made by layering padded fabric and stitching it together in a quilted pattern.</description>
+        <baseCost>400</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>6</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!-- 	<ResearchProjectDef>
+        <defName>Chain_Mail</defName>
+        <label>Chain Mail</label>
+        <description>Chain mail technology provided several advantages over other forms of armor. It was lightweight and flexible, allowing for greater mobility on the battlefield. It also provided a significant level of protection against slashing and piercing weapons, as the metal rings could absorb the impact of a blow.</description>
+        <baseCost>200</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>4</researchViewX>
+        <researchViewY>6</researchViewY>
+        <tab>Medieval</tab>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>Quilted_protection</li>
+		</prerequisites>
+    </ResearchProjectDef> -->
+
+	<ResearchProjectDef>
+        <defName>Tension_forceII</defName>
+        <label>Tension 	force II</label>
+        <description>Advanced medieval tension force technology involved the use of more precise calculations and engineering techniques for determining the optimal cable tensions and support structures. This allowed builders to construct larger and more complex structures than ever before, such as the soaring arches and vaults of Gothic cathedrals.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>5</researchViewX>
+        <researchViewY>5.5</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>Tension_forceI</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>Awakening_PSY</defName>
+        <label>Awakening PSY</label>
+        <description>According to medieval legends, eltex chunks were believed to contain dormant psy-energy that could be awakened through a special process. The process involved heating the eltex chunks in a furnace with certain rare herbs and minerals to create a potent elixir.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>6</researchViewX>
+        <researchViewY>7</researchViewY>
+        <tab>Medieval</tab>
+		<prerequisites>
+			<li>RoyalApparel</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>Imperialbeginning</li>
+		</hiddenPrerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>	
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>Filling_PSY</defName>
+        <label>Filling PSY</label>
+        <description>To infuse objects or materials with psy-energy, craftsmen would first obtain eltex chunks and carefully shape them into the desired size and shape. They would then place the eltex chunks in a special alchemical mixture that was made from a combination of rare herbs and minerals, as well as a small amount of psy-energy.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>7</researchViewX>
+        <researchViewY>7</researchViewY>
+        <tab>Medieval</tab>
+		<prerequisites>
+			<li>Awakening_PSY</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>Imperialbeginning</li>
+		</hiddenPrerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>Flintlock_firearms</defName>
+        <label>Flintlock firearms</label>
+        <description>The advent of medieval flintlock weaponry changed the course of battles. With a small piece of flint and a spark mechanism, soldiers could fire multiple shots rapidly, revolutionizing warfare. This technology also drove advancements in metallurgy to withstand the high pressures and heat generated during firing.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>7.0</researchViewX>
+        <researchViewY>5.5</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>Tension_forceII</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>Book_Flintlock_firearms</thingDef>
+						<count>1</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+        <defName>Lats</defName>
+        <label>Lats</label>
+        <description>Lats armor, also known as "lamellar armor," was a medieval armor made up of rectangular or polygonal plates laced together with cord or leather. This armor was highly effective at providing protection from slashing and cutting attacks, while also being lightweight and flexible, allowing for greater mobility.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>7</researchViewX>
+        <researchViewY>6</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>PlateArmor</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!-- 	<ResearchProjectDef>
+        <defName>Imperial_apparel</defName>
+        <label>Imperial apparel</label>
+        <description>The shimmering effect created by eltex is what makes Imperial Apparel unique and highly sought after by collectors and fashion enthusiasts alike. It is a symbol of power and wealth, and those who wear it are instantly recognized as members of an elite group.</description>
+        <baseCost>200</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>7</researchViewX>
+        <researchViewY>7</researchViewY>
+        <tab>Medieval</tab>
+		<prerequisites>
+			<li>Awakening_PSY</li>
+		</prerequisites>
+    </ResearchProjectDef> -->
+	
+    <ResearchProjectDef>
+        <defName>BIO_Electric_Revolution</defName>
+        <label>The Electric Revolution</label>
+        <description>After much research, your tribe has decided that it is worth switching to the extraction and use of electricity</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>8.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+        <tab>Medieval</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>Flintlock_firearms</li>
+			<li>PenoxycylineProduction</li>
+			<li>LongBlades</li>
+			<li>Lats</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>Book_BIO_Electric_Revolution</thingDef>
+						<count>1</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+	
+	
+	<!--Индустриальные/Industrial-->
+    <ResearchProjectDef>
+        <defName>Electricity</defName>
+        <label>Electricity</label>
+        <description>Electricity is a revolutionary technology that has transformed the way we live our lives. It is the flow of electrons through a conductor that generates a current, which can then be harnessed for various purposes.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>0</researchViewX>
+        <researchViewY>4</researchViewY>
+        <tab>Industrial</tab>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<hiddenPrerequisites>
+			<li>BIO_Electric_Revolution</li>
+		</hiddenPrerequisites>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>ElectronicsI</defName>
+        <label>Electronics I</label>
+        <description>The use of basic electronic components such as resistors, capacitors, and transistors has allowed the creation of simple circuits capable of performing various functions. These circuits can control the flow of electricity, amplify signals, and convert one form of energy to another. Simple electronics have a wide range of applications, from basic household appliances to more complex devices such as computers and mobile phones.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+<!--    	<ResearchProjectDef>
+        <defName>Electricity_generationI</defName>
+        <label>Electricity generation I</label>
+        <description>Through the use of basic principles of electromagnetism, it is possible to generate electricity from a variety of sources, such as wind, water, or steam. This simple electricity generation technology involves the use of rotating turbines which interact with magnetic fields to produce an electrical current.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2.5</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+    </ResearchProjectDef> -->
+	
+   	<ResearchProjectDef>
+        <defName>MedicineII</defName>
+        <label>Medicine II</label>
+        <description>Medical professionals developed advanced surgical techniques, such as antiseptic procedures and anesthesia, making it possible to perform more complex surgeries with a higher success rate. Additionally, the discovery and production of antibiotics revolutionized medicine, allowing doctors to cure once-deadly infections and diseases.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>7</researchViewY>
+        <tab>Industrial</tab>
+		<hiddenPrerequisites>
+			<li>MedicineI</li>
+		</hiddenPrerequisites>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>Injectors</defName>
+        <label>Injectors</label>
+        <description>Medical professionals developed advanced surgical techniques, such as antiseptic procedures and anesthesia, making it possible to perform more complex surgeries with a higher success rate. Additionally, the discovery and production of antibiotics revolutionized medicine, allowing doctors to cure once-deadly infections and diseases.</description>
+        <baseCost>1600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>7.5</researchViewY>
+        <tab>Industrial</tab>
+		<hiddenPrerequisites>
+			<li>NakedBrutality</li>
+		</hiddenPrerequisites>
+		<prerequisites>
+			<li>MedicineII</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,184,184,150)</defaultColor>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>	
+	
+   	<ResearchProjectDef>
+        <defName>FurnitureIII</defName>
+        <label>Furniture III</label>
+        <description>"Furniture 3" is a technology that combines unique functions that will appeal to lovers of convenience and practicality. It has a chalkboard for drawing, which is perfect for teachers and children</description>
+        <baseCost>400</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>Industrial</tab>
+		<hiddenPrerequisites>
+			<li>FurnitureII</li>
+		</hiddenPrerequisites>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Metal_processingII</defName>
+        <label>Metal processing II</label>
+        <description>Metal processing II is a technology that allows high-precision processing of three ores - Mithril, Ceramite and Chlorophyte. The technology is used to create durable armor, weapons, electronics and other advanced technical devices.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4.0</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+    </ResearchProjectDef> 	
+	
+   	<ResearchProjectDef>
+        <defName>CookingIII</defName>
+        <label>Cooking III</label>
+        <description>As society evolved beyond the Middle Ages, so did cooking technology. Innovations in food preparation and preservation allowed for more efficient and diverse culinary practices. Advanced cooking techniques like sous-vide, molecular gastronomy, and fusion cuisine became possible through the development of sophisticated kitchen tools and appliances.</description>
+        <baseCost>1600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
+        <tab>Industrial</tab>
+		<hiddenPrerequisites>
+			<li>CookingII</li>
+		</hiddenPrerequisites>
+		<prerequisites>
+			<li>ElectronicsI</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>ElectronicsII</defName>
+        <label>Electronics II</label>
+        <description>With the advancement of technology in modern times, new breakthroughs have been made in electronics. These innovations have enabled the creation of smaller, faster, and more efficient electronic devices.</description>
+        <baseCost>1600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>ElectronicsI</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>ElectronicsIII</defName>
+        <label>Electronics III</label>
+        <description>Another breakthrough in electronics. New components that are even smaller and even more efficient, allowing signals to be transmitted over long distances</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>10</researchViewX>
+        <researchViewY>1</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>ElectronicsII</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>Smart_Plumbing</defName>
+        <label>Smart plumbing</label>
+        <description>Maybe it's smarter than your dog! Just a joke, he is a good boy, for sure he'll outsmart those machines. Comfortable toilets, smart showers and all that unnecessary stuff.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+		<researchViewX>11</researchViewX>
+		<researchViewY>2.30</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+			<li>ElectronicsIII</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>ComponentIndustrial</thingDef>
+						<count>4</count>
+					</li>
+					<li>
+						<thingCategory>StoneBlocks</thingCategory>
+						<count>50</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>	
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>Air_Conditioner</defName>
+        <label>Air conditioner</label>
+        <description>In areas with hot and humid climates, keeping the air cool and dry can be a challenge. Advanced technology has allowed for the development of systems that can cool and dehumidify the air, providing a comfortable indoor environment even in the hottest of summers. These systems use a combination of refrigeration and circulation to remove heat and moisture from the air, creating a cooler and more pleasant indoor atmosphere.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>ElectronicsI</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>TrooperArmor</defName>
+        <label>Trooper armor</label>
+		<description>Lightweight power armor that can be worn under top clothing. It is the most cheap option among its class, but also the weakest.</description>
+		<baseCost>1600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>4.0</researchViewX>
+        <researchViewY>6.4</researchViewY>
+		<prerequisites>
+			<li>CE_SimpleNV</li>
+		</prerequisites>		
+        <tab>Industrial</tab>
+    </ResearchProjectDef>	
+	
+   	<ResearchProjectDef>
+        <defName>Military_Injectors</defName>
+        <label>Military injectors</label>
+        <description>Advanced military technology has been developed to provide soldiers with improved combat readiness and survival rates. One such advancement is the development of injectors, which can be administered by medical professionals or even the soldiers themselves to quickly deliver essential medications and nutrients in high-stress situations. These injectors are designed to be compact and easy to use, with specialized cartridges that allow for precise dosing of various medications and treatments.</description>
+        <baseCost>1600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>8.5</researchViewY>
+		<prerequisites>
+			<li>MedicineII</li>
+		</prerequisites>		
+        <tab>Industrial</tab>
+    </ResearchProjectDef>
+	
+<!--    	<ResearchProjectDef>
+        <defName>Electricity_generationII</defName>
+        <label>Electricity generation II</label>
+        <description>Advancements in the sphere of generation of electricity have revolutionized modern society. Through the use of specialized equipment and processes, electricity can now be generated on a massive scale, powering everything from homes and businesses to entire cities. These advancements have made electricity more accessible and reliable, helping to drive technological innovation and progress.</description>
+        <baseCost>1600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2.5</researchViewY>
+        <tab>Industrial</tab>
+		<recalculatePower>true</recalculatePower>
+		<prerequisites>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+    </ResearchProjectDef> -->
+	
+   	<ResearchProjectDef>
+        <defName>MedicineIII</defName>
+        <label>Medicine III</label>
+        <description>In the industrial era, medical technology continued to advance, leading to significant improvements in healthcare and disease prevention. New tools and techniques were developed to diagnose and treat illnesses, and the use of antiseptics and anesthesia became widespread in surgical procedures.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>10</researchViewX>
+        <researchViewY>7</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>MedicineII</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+   	<ResearchProjectDef>
+        <defName>Chemical_Production</defName>
+        <label>Chemical production</label>
+        <description>Production of basic chemicals and all the resulting. Does not include complex chemical operations</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3.5</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>DeepDrilling</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>BiO_Sulfur</thingDef>
+						<count>100</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>Polymers</defName>
+        <label>Polymers</label>
+        <description>Production of a range of polymers useful in a multitude of areas. Needs quite a bit more knowledge of chemistry.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>3.5</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>Chemical_Production</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>SulfuricAcid</thingDef>
+						<count>10</count>
+					</li>
+					<li>
+						<thingDef>Chemfuel</thingDef>
+						<count>100</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>Alternative_Energy</defName>
+        <label>Alternative energy</label>
+        <description>Alternative, green sources of energy. Not that chemical plants was so harmful to our nature, but they need fuel, and these doesn't!</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>8.0</researchViewX>
+        <researchViewY>2.0</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>Batteries</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>SulfuricAcid</thingDef>
+						<count>25</count>
+					</li>
+					<li>
+						<thingDef>Lead</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>Glass</thingDef>
+						<count>50</count>
+					</li>
+					<li>
+						<thingDef>ComponentIndustrial</thingDef>
+						<count>3</count>
+					</li>
+				</thingRequirements>				
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>
+	
+   	<ResearchProjectDef>
+        <defName>Space_Age</defName>
+        <label>Space age</label>
+        <description>"Space Age" is the latest technology that allows you access to the space age. With it you can launch a rocket and fly away from this planet. It also unlocks advanced cyberimplants and energy weapons, giving you incomparable possibilities.</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>12</researchViewX>
+        <researchViewY>4</researchViewY>
+        <tab>Industrial</tab>
+		<prerequisites>
+			<li>TransportPod</li>
+			<li>CE_AdvancedAmmo</li>
+			<li>MultibarrelWeapons</li>
+			<li>MicroelectronicsBasics</li>
+			<li>ReconArmor</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>Military_Injectors</li>
+			<li>MedicineIII</li>
+			<li>ColoredLights</li>
+			<li>ShieldBelt</li>
+			<li>HeavyTurrets</li>
+			<li>CE_AdvancedNV</li>
+		</hiddenPrerequisites>
+    </ResearchProjectDef>
+   
+   <!--Космические технологии-->
+
+    <ResearchProjectDef>
+        <defName>Metal_processingIII</defName>
+        <label>Metal processing IV</label>
+        <description>Metal processing IV is a technology that allows high-precision processing of three ores - Mithril, Ceramite and Chlorophyte. The technology is used to create durable armor, weapons, electronics and other advanced technical devices.</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>4.5</researchViewY>
+        <tab>space</tab>
+		<hiddenPrerequisites>
+			<li>Metal_processingII</li>
+		</hiddenPrerequisites>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>Titanium_ore</thingDef>
+						<count>100</count>
+					</li>
+					<li>
+						<thingDef>Polymers</thingDef>
+						<count>10</count>
+					</li>
+					<li>
+						<thingDef>SulfuricAcid</thingDef>
+						<count>10</count>
+					</li>
+					<li>
+						<thingCategory>BiomeMetals</thingCategory>
+						<count>100</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef> 	
+	
+    <ResearchProjectDef>
+        <defName>Electricity_generationIII</defName>
+        <label>Electricity generation III</label>
+        <description>The technology includes the creation of advanced solar panels, wind turbines, Advanced solar panels use advanced technologies such as multilayer materials and nanotechnology to get maximum energy from sunlight, even in low light conditions. Wind turbines are used in cases where solar panels cannot be used, for example, at night or in dense cloud cover.</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+        <tab>space</tab>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+    </ResearchProjectDef> 
+	
+<!--     <ResearchProjectDef>
+        <defName>AdvancedGeothermalPowerII</defName>
+        <label>Advanced geothermal power</label>
+        <description>A high-tech solution for obtaining energy from geothermal sources. This technology allows you to achieve maximum efficiency using geyser flows. Advanced geothermal energy has a huge potential for use both in large industrial enterprises and for domestic purposes. It serves as one of the main sources of renewable energy, helping to reduce emissions of harmful substances and reducing the environmental impact on the environment.</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>space</tab>
+		<prerequisites>
+			<li>Electricity_generationIII</li>
+		</prerequisites>
+    </ResearchProjectDef> 
+	 -->
+    <ResearchProjectDef>
+        <defName>Uranium_decay</defName>
+        <label>Uranium decay</label>
+        <description>Uranium fission is a technology used to create nuclear power plants. The technology is based on the process of fission of the uranium nucleus, which allows you to obtain a huge amount of energy used to generate electricity. The process of uranium fission is high-tech, and it requires sophisticated scientific knowledge and equipment. In order to get energy from nuclear fission, it is necessary to break the uranium nucleus into two lighter particles - nuclear fragments. This leads to the release of a huge amount of energy in the form of heat, which is then converted into electricity.</description>
+        <baseCost>10000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>4</researchViewX>
+        <researchViewY>4.50</researchViewY>
+        <tab>space</tab>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<thingRequirements>
+					<li>
+						<thingDef>Uranium</thingDef>
+						<count>300</count>
+					</li>
+					<li>
+						<thingDef>Lead</thingDef>
+						<count>100</count>
+					</li>
+				</thingRequirements>
+			</li>
+		</modExtensions>
+    </ResearchProjectDef>
+   
+	<ResearchProjectDef>
+		<defName>Cyber_Bionics</defName>
+		<label>Cyber Bionics</label>
+		<description>The technology that is used to create cyber limbs. These implants have a huge advantage over conventional limbs, as they are equipped with various sensors, sensors and microchips, which allows them to work more efficiently and accurately. However, one of the main problems when using cyber implants is rejection by the body. In order to solve this problem, it is necessary to use immunoblockers that prevent the rejection of cyber implants by the body. Cyber implants have a wide range of applications - from the restoration of limbs for people who have lost them as a result of injury or illness, to the creation of cyber prostheses for space travel. They can also be used to improve the performance and capabilities of the human body, including to improve vision, hearing and motor skills.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Bionics</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+		<li>RichExplorer</li>
+		</hiddenPrerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(184,255,255,150)</defaultColor>
+			</li>
+		</modExtensions>		
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>MedicineIV</defName>
+        <label>Medicine IV</label>
+        <description>This technology includes the most advanced incubators for breeding new lives, which provide optimal conditions for the health and development of infants. However, advanced medicine does not stop there. It also provides vital activity monitors that provide constant monitoring of the condition of patients. This means that doctors and medical professionals can receive instant patient data, which helps them to respond quickly to any changes and take immediate action.</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>4</researchViewX>
+        <researchViewY>0</researchViewY>
+        <tab>space</tab>
+		<hiddenPrerequisites>
+			<li>MedicineIII</li>
+		</hiddenPrerequisites>
+		<prerequisites>
+            <li>AdvancedFabrication</li>
+        </prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>SerumProduction</defName>
+        <label>Serum production</label>
+        <description>This technology provides our shamans access to the eldrich ways of encoding mechanite serums.</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>5</researchViewX>
+        <researchViewY>3.30</researchViewY>
+        <tab>space</tab>
+		<hiddenPrerequisites>
+			<li>TribeBorn</li>
+		</hiddenPrerequisites>
+		<prerequisites>
+            <li>MedicineIV</li>
+        </prerequisites>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(220,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>	
+	
+	<!--Имперский шаттл-->
+   
+    <ResearchProjectDef>
+        <defName>Research_RoyalShuttle</defName>
+        <label>Royal Shuttles</label>
+        <description>The Empire always reward their nobles handsomely, and to further reinforce that Relationship, They give their Knights their own personal shuttle, an impresive device capable of traversing the entire Star System. 
+        
+            (For Now, the only way to obtain the techprint is by having an Colonist be a knight or higher, there's no way to obtain the techprint if you rebel the Empire.)</description>
+        <baseCost>3500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>AdvancedFabrication</li>
+        </prerequisites>
+        <hiddenPrerequisites>          
+            <li>Imperialbeginning</li>
+        </hiddenPrerequisites>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>3.00</researchViewY>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <techprintCount>1</techprintCount>
+        <techprintCommonality>0</techprintCommonality>
+        <techprintMarketValue>1000</techprintMarketValue>
+		<heldByFactionCategoryTags>							
+		<li>Empire</li>
+		</heldByFactionCategoryTags>
+        <tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+   
+	<!--Имперское вооружение-->
+	
+	<ResearchProjectDef>
+        <defName>Melee_TECH</defName>
+        <label>Melee TECH</label>
+        <description>Thanks to imperial technology and biome ores, we were able to study imperial weapons</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+		<hiddenPrerequisites>
+            <li>Imperialbeginning</li>
+        </hiddenPrerequisites>
+		<prerequisites>
+			<li>Metal_processingIII</li>
+		</prerequisites>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+
+	<!-- Тяжёлые пушки голожопого-->
+
+	<ResearchProjectDef>
+        <defName>NB_HeavyWeapons</defName>
+        <label>Heavy weapons</label>
+        <description>Heavy weapons, specially designed to fight with mechs and insects.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+		<hiddenPrerequisites>
+            <li>NakedBrutality</li>
+			<li>Metal_processingIII</li>
+        </hiddenPrerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>6.50</researchViewY>
+        <tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,184,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+
+	<!-- Тяжёлые патроны к тяжёлым пушкам голожопого-->
+	
+	<ResearchProjectDef>
+        <defName>NB_HeavyAmmo</defName>
+        <label>Heavy ammo</label>
+        <description>Heavy ammo for the heavy weapons! \n\nP.s. You can research this tech with all scenarios, but you will need a specific book for that.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+		<hiddenPrerequisites>
+            <li>Metal_processingIII</li>
+        </hiddenPrerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>6.50</researchViewY>
+        <tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,184,184,150)</defaultColor>
+				<thingRequirements>
+					<li>
+						<thingDef>Book_Ammo</thingDef>
+						<count>1</count>
+					</li>
+				</thingRequirements>				
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>	
+
+	<!-- Иммуноблокаторы в отдельной техе -->
+
+	<ResearchProjectDef>
+        <defName>RE_ImmunoBlockers</defName>
+        <label>ImmunoBlockers</label>
+        <description>After a long time of researching, you are finally capable to fight cyberpsychosis. \n\nP.s. You can research this tech with all scenarios, but you will need a specific book for that.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+		<hiddenPrerequisites>
+            <li>MedicineIV</li>
+        </hiddenPrerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+        <tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(184,255,255,150)</defaultColor>
+				<thingRequirements>
+					<li>
+						<thingDef>Book_ImmunoBlockers</thingDef>
+						<count>1</count>
+					</li>
+				</thingRequirements>				
+			</li>
+		</modExtensions>		
+    </ResearchProjectDef>
+    	
+	<!--Синткань-->
+	
+<!-- 	<ResearchProjectDef>
+		<defName>BiO_Synthread</defName>
+		<label>Creating Synthread</label>
+		<description>Experiments on the fabric have shown that it can be improved with synthetics</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+		<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+		<li>BiofuelRefining</li>
+		</hiddenPrerequisites>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>3.80</researchViewY>
+		<tab>Industrial</tab>
+	</ResearchProjectDef>
+	 -->
+	<!--Эльтекс-->
+	
+<!-- 	<ResearchProjectDef>
+		<defName>BIO_Eltex</defName>
+		<label>Creating Eltex</label>
+		<description>Luxury textiles are used by the empire for truly delightful clothes. Not everyone can afford clothes made of such fabric.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		<li>MultiAnalyzer</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>		
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>8.00</researchViewY>
+		<tab>space</tab>
+	</ResearchProjectDef> -->
+	
+	<!--Имперская броня-->
+
+	<ResearchProjectDef>
+		<defName>BIO_Imperial_Armor</defName>
+		<label>Imperial Armor</label>
+		<description>Ordinary armor with minor modifications by imperial artisans</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		<li>PoweredArmor</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+		<li>Imperialbeginning</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>		
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>6.50</researchViewY>
+		<tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,255,184,150)</defaultColor>
+			</li>
+		</modExtensions>		
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Melee_TECH_Bladelink</defName>
+		<label>Blade link</label>
+		<description>Technology that grants access to creating bladelink weapons with their very own personalities.</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		<li>ShipComputerCore</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+		<li>Imperialbeginning</li>
+		<li>Melee_TECH</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>		
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+		<tab>space</tab>
+		<modExtensions>
+			<li Class="BiOnline.Researches.ResearchDefModExtension">
+				<defaultColor>(255,255,184,150)</defaultColor>
+				<thingRequirements>
+					<li>
+						<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li>
+						<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+						<count>1</count>
+					</li>
+					<li>
+						<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+						<count>1</count>
+					</li>					
+				</thingRequirements>
+			</li>
+		</modExtensions>
+	</ResearchProjectDef>	
+
+	<!--Пси броня-->
+
+<!-- 	<ResearchProjectDef>
+		<defName>BIO_psy_armor</defName>
+		<label>Psy Armour</label>
+		<description>Strong armor that does not restrict movement. It has unique Psy properties</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		<li>Imperialbeginning</li>
+		<li>CataphractArmor</li>
+		<li>BIO_Imperial_Armor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>		
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>8.00</researchViewY>
+		<tab>space</tab>
+	</ResearchProjectDef> -->
+
+</Defs>

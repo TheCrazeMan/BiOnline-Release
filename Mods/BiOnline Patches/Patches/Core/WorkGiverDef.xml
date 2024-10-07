@@ -1,0 +1,47 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+
+            <operations>
+				
+			    <li Class="PatchOperationReplace">
+                    <xpath>Defs/WorkGiverDef[defName="DoBillsSmelter"]</xpath>
+                    <value>
+                    
+						  <WorkGiverDef>
+							<defName>DoBillsSmelter</defName>
+							<label>smelt items</label>
+							<giverClass>WorkGiver_DoBill</giverClass>
+							<workType>Crafting</workType>
+							<priorityInType>80</priorityInType>
+							<fixedBillGiverDefs>
+							  <li>BiO_Smelter</li>
+							  <li>ElectricSmelter</li>
+							</fixedBillGiverDefs>
+							<verb>refine</verb>
+							<gerund>refining at</gerund>
+							<requiredCapacities>
+							  <li>Manipulation</li>
+							</requiredCapacities>
+							<prioritizeSustains>true</prioritizeSustains>
+						  </WorkGiverDef>
+
+                    </value>
+                </li> 
+				
+			    <li Class="PatchOperationRemove">
+                    <xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+
+                </li> 
+			
+			</operations>
+			
+		</match>
+	
+	</Operation>
+	
+</Patch>

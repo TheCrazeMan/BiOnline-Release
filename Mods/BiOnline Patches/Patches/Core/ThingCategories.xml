@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--Добавление стали в категорию с новыми металлами-->
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="Steel"  or defName="Plasteel" or defName="Bioferrite"]/stuffProps/categories</xpath>
+	<value>
+		<li>Alloys_NonConstruct</li>
+		<li>AlloysStrongMetals</li>
+	</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[
+	defName="MeleeWeapon_LongSword" or
+	defName="MeleeWeapon_Gladius" or
+	defName="MeleeWeapon_Mace" or
+	defName="MeleeWeapon_Spear" or
+	defName="MeleeWeapon_Knife" or
+	defName="MeleeWeapon_Ikwa" or
+	defName="MeleeWeapon_Axe" or
+	defName="MeleeWeapon_BreachAxe" or
+	defName="MeleeWeapon_Warhammer"]/stuffCategories</xpath>
+	<value>
+	<stuffCategories>
+	  <li>Alloys_NonConstruct</li>
+	</stuffCategories>
+	</value>
+	</Operation>
+	
+	<!--Добавление стали в категорию с новыми металлами-->
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="Steel" or defName="Plasteel"]/thingCategories</xpath>
+	<value>
+		<thingCategories>
+			<li>RefinedDefaultMetals</li>
+		</thingCategories>
+	</value>
+	</Operation>
+
+	<!--Удаление растений из общей категории еды-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@Name="PlantFoodRawBase"]/thingCategories</xpath>
+	</Operation>
+
+	<!--Добавление растений в категорию Vegetables-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RawToxipotato" or defName="RawPotatoes" or defName="RawRice" or defName="RawCorn" or defName="RawFungus" or defName="RawBerries" or defName="RawAgave"]</xpath>
+		<value>
+			<thingCategories>
+			<li>Vegetables</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<!-- Добавление пива и психинового чая в категорию напитков -->
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="Beer" or defName="PsychiteTea"]</xpath>
+		<value>
+			<thingCategories>
+				<li>Drinks</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+</Patch>

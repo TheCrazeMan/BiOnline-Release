@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Mim.label>.</Mim.label>
+	<Mim.description>Mime</Mim.description>
+
+	<RisenCorpse.label>Risen corpse</RisenCorpse.label>
+	<RisenCorpse.description>A terrible disease caused by some unknown parasites that begin to multiply in the human body only after death. If the body is infected, it can start to move and show signs of life after death. The only way to avoid danger from this disease, is to destroy the body. If this is not done within a short time, the corpse will begin to pose a threat to others and may lead to new infections.</RisenCorpse.description>
+
+	<Cyberpsychosis.label>Cyberpsychosis</Cyberpsychosis.label>
+	<Cyberpsychosis.description>Cyberpsychosis can be caused by a large number of implants. If you start to feel worse, use Immunoblockers or remove some of the implants.</Cyberpsychosis.description>
+	<Cyberpsychosis.stages.0.label>Hidden</Cyberpsychosis.stages.0.label>
+	<Cyberpsychosis.stages.1.label>Light</Cyberpsychosis.stages.1.label>
+	<Cyberpsychosis.stages.2.label>Middle</Cyberpsychosis.stages.2.label>
+	<Cyberpsychosis.stages.3.label>Heavy</Cyberpsychosis.stages.3.label>
+	<Cyberpsychosis.stages.4.label>Lethal</Cyberpsychosis.stages.4.label>
+	
+</LanguageData>

@@ -1,0 +1,38 @@
+<Defs>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Flechette</defName>
+		<label>Flechette</label>
+		<labelShort>Flechette</labelShort>
+		<description>Cartridge full of little sharp darts or pellets designed to penetrate armor.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>SlugAP</defName>
+		<label>AP slug</label>
+		<labelShort>AP slug</labelShort>
+		<description>Like a slugshot, but with much more power and penetration.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>DefaultPlasma</defName>
+		<label>Plasma</label>
+		<labelShort>Plasma</labelShort>
+		<description>Ionized heated to big temperatures concentrated gas.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>OverchargedPlasma</defName>
+		<label>Overcharged plasma</label>
+		<labelShort>OP</labelShort>
+		<description>Ionized overheated concentrated gas.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>HEBolts</defName>
+		<label>High-explosive bolts</label>
+		<labelShort>HE bolts</labelShort>
+		<description>High-explosive bolts used only by PMC due it's really heavy weight.</description>
+	</CombatExtended.AmmoCategoryDef>	
+
+</Defs>

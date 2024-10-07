@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <NeedDef>
+    <defName>Nutrients</defName>
+    <needClass>BiOnline.Needs.Need_Nutrients</needClass>
+    <label>Nutrients</label>
+    <description>Nutritional balance.</description>
+    <listPriority>799</listPriority>
+    <major>true</major>
+    <showForCaravanMembers>true</showForCaravanMembers>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <showUnitTicks>true</showUnitTicks>
+	<modExtensions>
+		<li Class="BiOnline.Needs.NeedNutrientsDefModExtension">
+			<baseMultiplier>10</baseMultiplier>
+		</li>
+	</modExtensions>
+  </NeedDef>
+
+</Defs>

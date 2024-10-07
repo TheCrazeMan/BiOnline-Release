@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<VFEProps.PropDef Abstract="true" Name="AP_FloorPropBase">
+		<useMatsInsteadOfSilver>true</useMatsInsteadOfSilver>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_FloorPropBase">
+		<defName>AP_Prop_Floors_Lawn</defName>
+		<category>AP_PropCategory_Floors</category>
+		<priority>0</priority>
+		<prop>AP_Lawn</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_FloorPropBase">
+		<defName>AP_Prop_Floors_1</defName>
+		<category>AP_PropCategory_Floors</category>
+		<priority>1</priority>
+		<prop>AP_CheckeredLawn</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_FloorPropBase">
+		<defName>AP_Prop_Floors_2</defName>
+		<category>AP_PropCategory_Floors</category>
+		<priority>2</priority>
+		<prop>AP_CircularLawn</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_FloorPropBase">
+		<defName>AP_Prop_Floors_3</defName>
+		<category>AP_PropCategory_Floors</category>
+		<priority>3</priority>
+		<prop>AP_Pool</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_FloorPropBase">
+		<defName>AP_Prop_Floors_4</defName>
+		<category>AP_PropCategory_Floors</category>
+		<priority>4</priority>
+		<prop>AP_PoolBorderTiles</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef ParentName="AP_FloorPropBase">
+		<defName>AP_Prop_Floors_5</defName>
+		<category>AP_PropCategory_Floors</category>
+		<priority>5</priority>
+		<prop>AP_ZenSand</prop>
+	</VFEProps.PropDef>
+	
+</Defs>

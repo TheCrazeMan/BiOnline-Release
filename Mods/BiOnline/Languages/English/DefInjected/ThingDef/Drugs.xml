@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ImmunoBlockerslow.label>Immunoblockers</ImmunoBlockerslow.label>
+  <ImmunoBlockerslow.description>Allows for a slight reduction in organ rejection and cyberpsychosis.</ImmunoBlockerslow.description>
+  <ImmunoBlockerslow.ingestible.ingestCommandString>Drink {lookup: {0}; Case; 3}</ImmunoBlockerslow.ingestible.ingestCommandString>
+  <ImmunoBlockerslow.ingestible.ingestReportString>Drinking {lookup: {0}; Case; 3}</ImmunoBlockerslow.ingestible.ingestReportString>
+  
+  <ImmunoBlockersStrong.label>Strong immunoblockers</ImmunoBlockersStrong.label>
+  <ImmunoBlockersStrong.description>Significantly reduces the effects of cyberpsychosis on the body</ImmunoBlockersStrong.description>
+  <ImmunoBlockersStrong.ingestible.ingestCommandString>Drink {lookup: {0}; Case; 3}</ImmunoBlockersStrong.ingestible.ingestCommandString>
+  <ImmunoBlockersStrong.ingestible.ingestReportString>Drinking {lookup: {0}; Case; 3}</ImmunoBlockersStrong.ingestible.ingestReportString>
+  
+</LanguageData>

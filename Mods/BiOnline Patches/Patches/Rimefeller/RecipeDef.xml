@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OilWell"]/costList</xpath>
+		<value>
+			<costList>
+			  <Cementum>60</Cementum>
+			  <Steel>120</Steel>
+			  <ComponentIndustrial>6</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DeepOilWell"]/costList</xpath>
+		<value>
+			<costList>
+			  <Cementum>60</Cementum>
+			  <Steel>120</Steel>
+			  <ComponentIndustrial>12</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OilStorage"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>300</Steel>
+			  <ComponentIndustrial>2</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pipelineValve"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>20</Steel>
+			  <ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OilPipeline"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>10</Steel>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ResourceConsole"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>120</Steel>
+			  <ComponentIndustrial>8</ComponentIndustrial>
+			  <Copper>40</Copper>
+			  <Glass>25</Glass>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+		@Name="ChemfuelHopperBase"or 
+		defName="SparkGrid"]/costList
+		</xpath>
+		<value>
+			<costList>
+			  <Steel>25</Steel>
+			  <ComponentIndustrial>1</ComponentIndustrial>
+			  <Copper>10</Copper>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CrudeCracker"]/costList</xpath>
+		<value>
+			<costList>
+			  <Cementum>120</Cementum>
+			  <Steel>400</Steel>
+			  <ComponentIndustrial>16</ComponentIndustrial>
+			  <Copper>80</Copper>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FuelPowerplant"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>150</Steel>
+			  <ComponentIndustrial>12</ComponentIndustrial>
+			  <Copper>100</Copper>
+			  <Lead>100</Lead>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NapalmRefiner"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>150</Steel>
+			  <ComponentIndustrial>5</ComponentIndustrial>
+			  <Copper>50</Copper>
+			  <Lead>50</Lead>
+			</costList>
+		</value>
+	</Operation>
+	
+
+	
+
+	
+
+</Patch>

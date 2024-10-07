@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Mim.label>.</Mim.label>
+	<Mim.description>Мим</Mim.description>
+
+	<RisenCorpse.label>Трупный паразит</RisenCorpse.label>
+	<RisenCorpse.description>Ужасная болезнь, вызванная некими неизвестными паразитами, которые начинают размножаться в организме человека только после его смерти. Если тело заряжено, то после смерти оно может начать двигаться и проявлять признаки жизни. Единственным способом избежать опасности со стороны этой болезни, является сжигание тела. Если этого не сделать в течение указанного времени, то труп начнет представлять угрозу окружающим и может привести к новым заражениям.</RisenCorpse.description>
+
+	<Cyberpsychosis.label>Киберпсихоз</Cyberpsychosis.label>
+	<Cyberpsychosis.description>Киберпсихоз может быть вызван большим количеством имплантатов. Если вы начинаете чувствовать себя хуже, используйте Иммуноблокаторы или удалите большую часть имплантатов.</Cyberpsychosis.description>
+	<Cyberpsychosis.stages.0.label>Скрытый</Cyberpsychosis.stages.0.label>
+	<Cyberpsychosis.stages.1.label>Лёгкий</Cyberpsychosis.stages.1.label>
+	<Cyberpsychosis.stages.2.label>Средний</Cyberpsychosis.stages.2.label>
+	<Cyberpsychosis.stages.3.label>Тяжёлый</Cyberpsychosis.stages.3.label>
+	<Cyberpsychosis.stages.4.label>Смертельный</Cyberpsychosis.stages.4.label>
+	
+	<ModuleCatharsisDisconnected.label>Модуль "Катарсис" повреждённый</ModuleCatharsisDisconnected.label>
+	<ModuleCatharsisDisconnected.description>Модуль "Катарсис" вживляется каждому бойцу ЧВК. Он реплицирует механитов из еды и поддерживает когерентность между ними. Механиты значительно улучшают функционирование организма во всех отношениях. \n\n В повреждённом модуле механиты перестают реплецировать и постепенно теряют когерентность. Носитель имеет около 3 лет что извлечь его, после 3 лет, механиты полностью потеряют когерентность и носитель умрёт. \n\n Стадии: \n Воздействие механитов - механиты улучшают функционирование организма \n\n Остаточное воздействие механитов - механиты не улучшают функционирование организма \n\n Малая декогерентность - механиты ухудшают функционирование организма \n\n Сильная декогерентность - носитель впадает в кому \n\n Полная декогерентность - смерть</ModuleCatharsisDisconnected.description>
+	<ModuleCatharsisDisconnected.stages.0.label>Воздействие механитов</ModuleCatharsisDisconnected.stages.0.label>
+	<ModuleCatharsisDisconnected.stages.1.label>Остаточное воздействие механитов</ModuleCatharsisDisconnected.stages.1.label>
+	<ModuleCatharsisDisconnected.stages.2.label>Малая декогерентность</ModuleCatharsisDisconnected.stages.2.label>
+	<ModuleCatharsisDisconnected.stages.3.label>Сильная декогерентность</ModuleCatharsisDisconnected.stages.3.label>
+	<ModuleCatharsisDisconnected.stages.4.label>Полная декогерентность</ModuleCatharsisDisconnected.stages.4.label>
+	
+	<BrainOvercharge.label>Ускорение мозга</BrainOvercharge.label>
+	<BrainOvercharge.description>Мозг данного существа ускорен с помощью кибернетического чипа, а потому работает в полтора раза эффективнее.</BrainOvercharge.description>
+	
+	<ElectircShock.label>Электрошок</ElectircShock.label>
+	<ElectircShock.description>Данное существо находится под действием электрошока, из-за чего практически не способно передвигаться.</ElectircShock.description>
+
+	<ModuleCatharsis.label>Модуль "Катарсис"</ModuleCatharsis.label>
+	<ModuleCatharsis.description>Модуль "Катарсис" вживляется каждому бойцу ЧВК. Он реплицирует механитов из еды и поддерживает когерентность между ними. Механиты значительно улучшают функционирование организма во всех отношениях. \n\n В повреждённом модуле механиты перестают реплецировать и постепенно теряют когерентность. Носитель имеет около 3 лет что извлечь его, после 3 лет, механиты полностью потеряют когерентность и носитель умрёт. \n\n Стадии: \n Воздействие механитов - механиты улучшают функционирование организма \n\n Остаточное воздействие механитов - механиты не улучшают функционирование организма \n\n Малая декогерентность - механиты ухудшают функционирование организма \n\n Сильная декогерентность - носитель впадает в кому \n\n Полная декогерентность - смерть</ModuleCatharsis.description>
+	<ModuleCatharsis.stages.0.label>Воздействие механитов</ModuleCatharsis.stages.0.label>
+	
+	<HotDrink.label>Выпит горячий напиток</HotDrink.label>
+	<HotDrink.description>Питье горячего кофе или чая согревает и бодрит.</HotDrink.description>
+	
+	<Blood_Hediff.label>Переливание крови</Blood_Hediff.label>
+	<Blood_Hediff.description>Внутривенная терапия (переливание крови)</Blood_Hediff.description>
+	
+	<Painkiller_Hediff.label>Обезболивающие</Painkiller_Hediff.label>
+	<Painkiller_Hediff.description>Внутривенная терапия (обезболивающие)</Painkiller_Hediff.description>
+	
+	<Nutrition_Hediff.label>Парентеральное питание</Nutrition_Hediff.label>
+	<Nutrition_Hediff.description>Внутривенная терапия (парентеральное питание)</Nutrition_Hediff.description>
+	
+	<Antibiotics_Hediff.label>Внутривенные антибиотики</Antibiotics_Hediff.label>
+	<Antibiotics_Hediff.description>Внутривенная терапия (антибиотики)</Antibiotics_Hediff.description>
+	
+	<NicotineEffect.label>Воздействие никотина</NicotineEffect.label>
+	<NicotineEffect.description>Никотин позволяет легко расслабиться.</NicotineEffect.description>
+	
+	<PlasmaBurn.label>Плазменный ожог</PlasmaBurn.label>
+	<PlasmaBurn.description>Ваши нервные окончания уже испарились, так что, полагаю, это не так уж и больно.</PlasmaBurn.description>
+	
+	<Medications_Effect.label>Действие лекарств</Medications_Effect.label>
+	<Medications_Effect.description>Лекарства облегчают боль и ускоряют работу почек и костного мозга.</Medications_Effect.description>
+	
+	<PutridSmell.label>Трупный запах</PutridSmell.label>
+	<PutridSmell.description>Ужасный трупный запах</PutridSmell.description>
+	<PutridSmellEffect.label>Эффект трупного запаха</PutridSmellEffect.label>
+	<PutridSmellEffect.description>Эффект трупного запаха</PutridSmellEffect.description>
+	
+</LanguageData>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Напитки -->
+
+  <TM_FluTeaEffect.label>Под действием чая от гриппа</TM_FluTeaEffect.label>
+  <TM_FluTeaEffect.description>Вырабатывает иммунитет к гриппу</TM_FluTeaEffect.description>
+
+  <TM_ImmunityTeaEffect.label>Под действием иммуного чая</TM_ImmunityTeaEffect.label>
+  <TM_ImmunityTeaEffect.description>Повышает скорость повышения иммунитета.</TM_ImmunityTeaEffect.description>
+  <TM_ImmunityTeaEffect.stages.0.label>Низкий</TM_ImmunityTeaEffect.stages.0.label>
+  <TM_ImmunityTeaEffect.stages.1.label>Высокий</TM_ImmunityTeaEffect.stages.1.label>
+
+  <TM_CurativeTeaEffect.label>Под действием целебного чая</TM_CurativeTeaEffect.label>
+  <TM_CurativeTeaEffect.description>Помогает уменьшить тяжесть различных заболеваний.</TM_CurativeTeaEffect.description>
+
+  <TM_DigestiveTeaEffect.label>Под действием пищеварительного чая</TM_DigestiveTeaEffect.label>
+  <TM_DigestiveTeaEffect.description>Помогает снизить тяжесть пищевого отравления.</TM_DigestiveTeaEffect.description>
+
+  <TM_HallucinationTeaEffect.label>Под действием галлюцинагенного чая</TM_HallucinationTeaEffect.label>
+  <TM_HallucinationTeaEffect.description>Употребление данного чая может вызывать различные галлюциногенные эффекты.</TM_HallucinationTeaEffect.description>
+
+  <TM_InsanityTeaEffect.label>Под действием чая безумия</TM_InsanityTeaEffect.label>
+  <TM_InsanityTeaEffect.description>Состояние полного безумия, не рекомендуется находиться рядом с пользователем, пока он экспериментирует с эффектами этого чая.</TM_InsanityTeaEffect.description>
+  <TM_InsanityTeaEffect.stages.0.label>Истощение</TM_InsanityTeaEffect.stages.0.label>
+  <TM_InsanityTeaEffect.stages.1.label>Трудно</TM_InsanityTeaEffect.stages.1.label>
+  <TM_InsanityTeaEffect.stages.2.label>Начальный</TM_InsanityTeaEffect.stages.2.label>
+
+  <TM_HungerTeaEffect.label>Под действием чая от голода</TM_HungerTeaEffect.label>
+  <TM_HungerTeaEffect.description>Сильно снижает уровень голода, но значительно снижает подвижность и повышает усталость.</TM_HungerTeaEffect.description>
+  
+  <Berry_braga_Effect.label>Под действием ягодной браги</Berry_braga_Effect.label>
+  <Berry_braga_Effect.description>В небольших количествах улучшает настроение и развязывает язык тем самым улучшая речь</Berry_braga_Effect.description>
+  
+  <Soma_Effect.label>Под действием сомы</Soma_Effect.label>
+  <Soma_Effect.description>Бодрит и придаёт активности. Так же способствует улучшению иммунитета</Soma_Effect.description>
+  
+  <!--Зелья-->
+  
+  <IronSkinElixir.label>Под действием зелья железной кожи</IronSkinElixir.label>
+  <IronSkinElixir.description>Укрепляет кожу, это особенно помогает в бою.</IronSkinElixir.description>
+  
+  <BerserkElixir.label>Под действием зелья берсерка</BerserkElixir.label>
+  <BerserkElixir.description>Ускоряет метаболизм, увеличивает скорость и зоркость глаз. Отлично подходит для боя.</BerserkElixir.description>
+  
+  <HealingElixir.label>Под действием зелья исцеления</HealingElixir.label>
+  <HealingElixir.description>Отлично помогает бороться с заражениями и болезнями.</HealingElixir.description>
+  
+  <GrowerElixir.label>Под действием зелья растеневода</GrowerElixir.label>
+  <GrowerElixir.description>Ускоряет мелкую моторику, что значительно ускоряет скорость сбора урожая.</GrowerElixir.description>
+  
+  <MinerElixir.label>Под действием зелья шахтёра</MinerElixir.label>
+  <MinerElixir.description>Увеличивает силу и точность работы, это значительно сказывается на скорости горных работ</MinerElixir.description>
+  
+</LanguageData>

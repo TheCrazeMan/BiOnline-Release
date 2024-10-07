@@ -1,0 +1,77 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>OnlineCity</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!--Бафф характеристик -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ScenarioDef[defName="OC_TheRichExplorer"]/scenario/parts</xpath>
+                    <value>
+                            <li Class="ScenPart_StartingResearch">
+                                <def>StartingResearch</def>
+                                <project>RichExplorer</project>
+                            </li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+							  <def>StartingThing_Defined</def>
+							  <thingDef>Seed_Potato</thingDef>
+							  <count>15</count>
+							</li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+							  <def>StartingThing_Defined</def>
+							  <thingDef>SeedCarrot</thingDef>
+							  <count>15</count>
+							</li>
+							
+                            <li Class="ScenPart_StartingResearch">
+                                <def>StartingResearch</def>
+                                <project>Batteries</project>
+                            </li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Copper</thingDef>
+								<count>200</count>
+							</li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Lead</thingDef>
+								<count>100</count>
+							</li>
+
+							<li Class="ScenPart_StartingThing_Defined">
+								<def>StartingThing_Defined</def>
+								<thingDef>Lead</thingDef>
+								<count>160</count>
+							</li>
+							
+							<li Class="ScenPart_StartingThing_Defined">
+							  <def>StartingThing_Defined</def>
+							  <thingDef>Ammo_6x24mmCharged</thingDef>
+							  <count>300</count>
+							</li>
+							
+							<li Class="ScenPart_DisableMapGen">
+							  <def>DisableExostriderRemains</def>
+							</li>
+							
+							<li Class="BiOnline.Scenarios.ScenPart_FactionReputationLimiter">
+								<def>FactionReputationLimiter</def>
+								<reputation>
+									<PMC>-100~80</PMC>
+								</reputation>
+							</li>	
+                    </value>
+                </li>
+				
+            </operations>
+        </match>
+		
+	</Operation>
+</Patch>

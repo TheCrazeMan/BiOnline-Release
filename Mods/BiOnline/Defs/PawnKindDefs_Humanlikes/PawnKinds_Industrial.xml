@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--База-->
+<!-- 	<PawnKindDef Name="FreeKingdomeBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>FreeKingdom</defaultFactionType>
+		<useFactionXenotypes>true</useFactionXenotypes>
+		<chemicalAddictionChance>0.20</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<invNutrition>2.55</invNutrition>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<apparelAllowHeadgearChance>100</apparelAllowHeadgearChance>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+	</PawnKindDef> -->
+</Defs>

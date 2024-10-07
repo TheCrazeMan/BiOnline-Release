@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyPartGroupDef>
+		<defName>ForeFlipers</defName>
+		<label>fore-flippers</label>
+		<listOrder>10</listOrder>
+	</BodyPartGroupDef>
+	<BodyPartGroupDef>
+		<defName>RearLeftClaws</defName>
+		<label>rear left claws</label>
+		<labelShort>claws</labelShort>
+	</BodyPartGroupDef>
+	<BodyPartGroupDef>
+		<defName>RearRightClaws</defName>
+		<label>rear right claws</label>
+		<labelShort>claws</labelShort>
+	</BodyPartGroupDef>
+</Defs>

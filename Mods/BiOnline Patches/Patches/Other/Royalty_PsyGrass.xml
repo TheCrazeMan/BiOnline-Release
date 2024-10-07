@@ -1,0 +1,55 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+
+            <operations>
+			
+			    <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
+                    <value>
+                    
+							  <ThingDef ParentName="PlantBaseNonEdible">
+								<defName>Plant_GrassAnima</defName>
+								<label>anima grass</label>
+								<description>A grass infused with luminous microorganisms. Tribal peoples find that anima grass grows around the base of an anima tree as they meditate. It seems to reflect some kind of strengthening of the tree's psychic power.\n\nOffworld scientists have tried to study the phenomenon, but the grass degenerates into normal plant matter when observed too closely.\n\nAnimals refuse eat anima grass. Tribal stories say this is done out of respect and fear.</description>
+								<statBases>
+								  <MaxHitPoints>85</MaxHitPoints>
+								  <Flammability>1.3</Flammability>
+								</statBases>
+								 <selectable>True</selectable>
+								<graphicData>
+								  <texPath>Things/Plant/Grass_Anima</texPath>
+								  <graphicClass>Graphic_Random</graphicClass>
+								</graphicData>
+								<plant>
+								  <fertilityMin>0.02</fertilityMin>
+								  <fertilitySensitivity>0</fertilitySensitivity>
+								  <sowMinSkill>0</sowMinSkill>
+								  <growDays>1</growDays>
+								  <lifespanDaysPerGrowDays>60</lifespanDaysPerGrowDays>
+								  <harvestTag>Standard</harvestTag>
+								  <harvestedThingDef>BiO_AnimaGrass</harvestedThingDef>
+								  <harvestYield>3</harvestYield>
+								  <harvestWork>40</harvestWork>
+								  <maxMeshCount>9</maxMeshCount>
+								  <visualSizeRange>0.3~0.45</visualSizeRange>
+								  <topWindExposure>0.4</topWindExposure>
+								  <wildOrder>1</wildOrder>
+								  <dieFromToxicFallout>False</dieFromToxicFallout>
+								  <allowAutoCut>false</allowAutoCut>
+								</plant>
+							  </ThingDef>
+
+                    </value>
+                </li> 
+			
+			</operations>
+			
+		</match>
+	
+	</Operation>
+	
+</Patch>

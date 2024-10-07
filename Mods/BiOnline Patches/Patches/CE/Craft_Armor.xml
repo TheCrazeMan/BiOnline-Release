@@ -1,0 +1,223 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Apparel_Backpack" or defName="CE_Apparel_TacVest"]/apparel/tags</xpath>
+		<value>
+		  <tags>
+			<li>Tactical</li>
+			<li>IndustrialBasic</li>
+			<li>IndustrialMilitaryBasic</li>			
+		  </tags>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="ApparelArmorCataphractBase"]/costList/DevilstrandCloth</xpath>
+		<value>
+			<Hyperweave>60</Hyperweave>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorMarineGrenadier"]/costList/DevilstrandCloth</xpath>
+		<value>
+			<Synthread>30</Synthread>
+			<Hyperweave>20</Hyperweave>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorCataphractPhoenix"]/costList/DevilstrandCloth</xpath>
+		<value>
+			<Hyperweave>60</Hyperweave>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]/costList/DevilstrandCloth</xpath>
+		<value>
+			<Synthread>40</Synthread>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="ApparelArmorPowerBase"]/costList/DevilstrandCloth</xpath>
+		<value>
+			<Synthread>30</Synthread>
+			<Hyperweave>20</Hyperweave>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="ApparelArmorReconBase"]/costList/DevilstrandCloth</xpath>
+		<value>
+			<Synthread>40</Synthread>
+		</value>
+	</Operation>	
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"]/costList/DevilstrandCloth</xpath>
+    <value>
+	  <HardenedGlass>15</HardenedGlass>
+      <Synthread>10</Synthread>
+	  <Hyperweave>10</Hyperweave>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetReconBase"]/costList/DevilstrandCloth</xpath>
+    <value>
+	  <HardenedGlass>10</HardenedGlass>
+      <Synthread>10</Synthread>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetCataphractBase"]/costList/DevilstrandCloth</xpath>
+    <value>
+	  <HardenedGlass>25</HardenedGlass>
+      <Hyperweave>25</Hyperweave>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechCommander"]/costList</xpath>
+    <value>
+	  <HardenedGlass>15</HardenedGlass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechlordHelmet"]/costList</xpath>
+    <value>
+	  <HardenedGlass>25</HardenedGlass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_SimpleNightVision"]/costList</xpath>
+    <value>
+		<costList>
+		  <Glass>5</Glass>
+		  <Steel>50</Steel>
+		  <Copper>40</Copper>
+		  <ComponentIndustrial>5</ComponentIndustrial>
+		</costList>	
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_AdvancedNightVision"]/costList</xpath>
+    <value>
+		<costList>
+		  <Glass>20</Glass>
+		  <Steel>40</Steel>
+		  <Plasteel>10</Plasteel>
+		  <Copper>60</Copper>
+		  <ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_BinocularsRadio"]/costList</xpath>
+    <value>
+		<costList>
+		  <Glass>10</Glass>
+		  <Steel>100</Steel>
+		  <ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_BinocularsRadio"]/costList</xpath>
+    <value>
+		<costList>
+		  <Glass>10</Glass>
+		  <Steel>100</Steel>
+		  <ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_GasMask"]/costList</xpath>
+    <value>
+		<costList>
+		  <Glass>10</Glass>
+		  <Steel>20</Steel>
+		  <BIO_Coal>2</BIO_Coal>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_ImprovGasMask"]/costList</xpath>
+    <value>
+		<costList>
+		  <Glass>2</Glass>
+		  <WoodLog>4</WoodLog>
+		  <Cloth>20</Cloth>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+  <xpath>/Defs/ThingDef[defName="CE_Apparel_GasMask"]</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_FlakJacket"]/costList</xpath>
+    <value>
+		<costList>
+			<Ceramics>25</Ceramics>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_FlakPants"]/costList</xpath>
+    <value>
+		<costList>
+			<Ceramics>15</Ceramics>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_FlakVest"]/costList</xpath>
+    <value>
+		<costList>
+			<Ceramics>90</Ceramics>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_CompositeVest"]/costList</xpath>
+    <value>
+		<costList>
+			<Ceramics>90</Ceramics>
+			<Plasteel>15</Plasteel>
+			<Cloth>20</Cloth>
+		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_CompositeVest"]/statBases/MaxHitPoints</xpath>
+    <value>
+		<MaxHitPoints>150</MaxHitPoints>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_AdvancedHelmet"]/statBases/MaxHitPoints</xpath>
+    <value>
+		<MaxHitPoints>110</MaxHitPoints>
+    </value>
+  </Operation>
+
+</Patch>

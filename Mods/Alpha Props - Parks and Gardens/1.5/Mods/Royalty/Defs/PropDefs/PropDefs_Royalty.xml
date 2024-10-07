@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<VFEProps.PropDef ParentName="AP_WallPropBase">
+		<defName>AP_Prop_Walls_Anima</defName>
+		<category>AP_PropCategory_Walls</category>
+		<priority>3.55</priority>
+		<prop>AP_Hedge_Anima</prop>
+	</VFEProps.PropDef>
+	<VFEProps.PropDef>
+		<defName>AP_Prop_Park_AnimaPearls</defName>
+		<category>VFE_PropCategory_Park</category>
+		<priority>503</priority>
+		<prop>AP_AnimaPearls</prop>
+	</VFEProps.PropDef>
+	
+	
+</Defs>

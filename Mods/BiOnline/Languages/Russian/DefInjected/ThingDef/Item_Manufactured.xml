@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<Chitin.label>Хитин</Chitin.label>
+<Chitin.description>Хитин - прочный и гибкий материал, который добывается из панцирей жуков. Обладает высокой устойчивостью к повреждениям и воздействию внешней среды. Этот материал используется в создании легкой и прочной брони.</Chitin.description>
+
+<Eltex.label>Эльтекс</Eltex.label>
+<Eltex.description>Ткань, усиливающая психочувствительные свойства.</Eltex.description>
+
+<Paper.label>Бумага</Paper.label>
+<Paper.description>Волокнистый материал. Представлен в виде листов, может использоваться для письма, рисования, печати, получен из целлюлозы: растения.</Paper.description>
+
+<Make_Paperx25.label>Сделать бумагу х25</Make_Paperx25.label>
+<Make_Paperx25.description>Создать листы бумаги из дерева</Make_Paperx25.description>
+
+<Make_Paperx75.label>Сделать бумагу х75</Make_Paperx75.label>
+<Make_Paperx75.description>Создать листы бумаги из дерева</Make_Paperx75.description>
+
+<Book_Flintlock_firearms.label>Книга по кремневому оружую</Book_Flintlock_firearms.label>
+<Book_Flintlock_firearms.description>Эта книга представляет собой записи которые помогут изучению кремневого оружия - одного из первых видов оружия, которое использовалось человеком в своей истории. В книге содержится информация о происхождении кремневого оружия, его разновидностях и способах изготовления.</Book_Flintlock_firearms.description>
+
+<Book_Smithing.label>Книга по ковке</Book_Smithing.label>
+<Book_Smithing.description>Эта книга является руководством по изучению искусства ковки - древнее искусство создания металлических изделий путем нагревания и формования металла. В книге содержится информация о разных типах кузнечного оборудования, материалах, инструментах и техниках, используемых в ковке. Книга также описывает основные приемы работы с металлом, такие как раскалывание, сгибание, растягивание и вытягивание. Книга является обязательной для всех, кто интересуется кузнечным делом и хочет научиться создавать красивые и функциональные металлические изделия.</Book_Smithing.description>
+
+<Book_PenoxycylineProduction.label>Книга по медицине</Book_PenoxycylineProduction.label>
+<Book_PenoxycylineProduction.description>Эта книга предназначена для изучения антибиотиков - В книге описывается процесс получения пенициллина, его действие на микроорганизмы и применение в медицине. Эта книга является необходимой для студентов медицинских школ, а также для всех, кто интересуется историей науки и медицины.</Book_PenoxycylineProduction.description>
+
+<Book_BIO_Electric_Revolution.label>Книга по электричеству</Book_BIO_Electric_Revolution.label>
+<Book_BIO_Electric_Revolution.description>Эта книга представляет собой вводный курс по электричеству и электронике. В книге содержится информация об основных понятиях электричества.</Book_BIO_Electric_Revolution.description>
+
+<Book_Ammo.label>Книга по боеприпасам</Book_Ammo.label>
+<Book_Ammo.description>Эта книга представляет собой пособие по изготовлению боеприпасов для тяжёлого оружия. Осторожно, много текста на русском.</Book_Ammo.description>
+
+<Book_ImmunoBlockers.label>Книга по иммуноблокаторам</Book_ImmunoBlockers.label>
+<Book_ImmunoBlockers.description>Эта книга содержит информацию о производстве иммуноблокаторов - таблеток, предназначенных специально для использования с кибер-имплантами.</Book_ImmunoBlockers.description>
+
+<Psi_Fiber.label>Пси-волокно</Psi_Fiber.label>
+<Psi_Fiber.description>Пси-волокно, изготовленное из травы души, небольшого количества хлорофита и золота.</Psi_Fiber.description>
+
+<MechSerumHealer_Uncoded.label>Незакодированная сыворотка исцеления</MechSerumHealer_Uncoded.label>
+<MechSerumHealer_Uncoded.description>Сырая сыворотка исцеления. Необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</MechSerumHealer_Uncoded.description>
+
+<MechSerumResurrector_Uncoded.label>Незакодированная сыворотка воскрешения</MechSerumResurrector_Uncoded.label>
+<MechSerumResurrector_Uncoded.description>Сырая сыворотка воскрешения. Необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</MechSerumResurrector_Uncoded.description>
+
+<Neurotrainer_Shooting_Uncoded.label>Незаконченный нейротренер (Дальний бой)</Neurotrainer_Shooting_Uncoded.label>
+<Neurotrainer_Shooting_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Shooting_Uncoded.description>
+
+<Neurotrainer_Melee_Uncoded.label>Незаконченный нейротренер (Ближний бой)</Neurotrainer_Melee_Uncoded.label>
+<Neurotrainer_Melee_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Melee_Uncoded.description>
+
+<Neurotrainer_Construction_Uncoded.label>Незаконченный нейротренер (Строительство)</Neurotrainer_Construction_Uncoded.label>
+<Neurotrainer_Construction_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Construction_Uncoded.description>
+
+<Neurotrainer_Mining_Uncoded.label>Незаконченный нейротренер (Горное дело)</Neurotrainer_Mining_Uncoded.label>
+<Neurotrainer_Mining_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Mining_Uncoded.description>
+
+<Neurotrainer_Cooking_Uncoded.label>Незаконченный нейротренер (Кулинария)</Neurotrainer_Cooking_Uncoded.label>
+<Neurotrainer_Cooking_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Cooking_Uncoded.description>
+
+<Neurotrainer_Plants_Uncoded.label>Незаконченный нейротренер (Растениеводство)</Neurotrainer_Plants_Uncoded.label>
+<Neurotrainer_Plants_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получть готовую к использованию версию.</Neurotrainer_Plants_Uncoded.description>
+
+<Neurotrainer_Animals_Uncoded.label>Незаконченный нейротренер (Животноводство)</Neurotrainer_Animals_Uncoded.label>
+<Neurotrainer_Animals_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Animals_Uncoded.description>
+
+<Neurotrainer_Crafting_Uncoded.label>Незаконченный нейротренер (Ремесло)</Neurotrainer_Crafting_Uncoded.label>
+<Neurotrainer_Crafting_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Crafting_Uncoded.description>
+
+<Neurotrainer_Artistic_Uncoded.label>Незаконченный нейротренер (Искусство)</Neurotrainer_Artistic_Uncoded.label>
+<Neurotrainer_Artistic_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Artistic_Uncoded.description>
+
+<Neurotrainer_Medicine_Uncoded.label>Незаконченный нейротренер (Медицина)</Neurotrainer_Medicine_Uncoded.label>
+<Neurotrainer_Medicine_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Medicine_Uncoded.description>
+
+<Neurotrainer_Social_Uncoded.label>Незаконченный нейротренер (Общение)</Neurotrainer_Social_Uncoded.label>
+<Neurotrainer_Social_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Social_Uncoded.description>
+
+<Neurotrainer_Intellectual_Uncoded.label>Незаконченный нейротренер (Умственный труд)</Neurotrainer_Intellectual_Uncoded.label>
+<Neurotrainer_Intellectual_Uncoded.description>Сырой нейротренер, необходимо ввести в кодировщик сывороток, чтобы получить готовую к использованию версию.</Neurotrainer_Intellectual_Uncoded.description>
+
+<Sugar.label>Сахар</Sugar.label>
+<Sugar.description>Куча сахара</Sugar.description>
+
+</LanguageData>

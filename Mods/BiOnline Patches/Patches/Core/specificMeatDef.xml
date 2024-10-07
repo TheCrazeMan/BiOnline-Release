@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cow" or defName="Goat" or defName="Yak" or defName="Horse" or defName="Pig" or defName="Sheep" or defName="Thrumbo"]/race</xpath>
+			<value>
+				<specificMeatDef>Exquisite_meat</specificMeatDef>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Chicken" or defName="Duck" or defName="Turkey" or defName="Goose"]/race</xpath>
+			<value>
+				<specificMeatDef>Exquisite_meat_bird</specificMeatDef>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Goose"]/race/useMeatFrom</xpath>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Apparel_PlateHelmet"]/apparel/tags</xpath>
+					<value>
+						<li>MedievalHeavyArmor</li>
+					</value>
+				</li>
+				<!--Рюкзак-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Apparel_TribalBackpack"]/apparel/tags</xpath>
+					<value>
+						<li>MedievalFabricArmor</li>
+						<li>MedievalLightArmor</li>
+						<li>MedievalHeavyArmor</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

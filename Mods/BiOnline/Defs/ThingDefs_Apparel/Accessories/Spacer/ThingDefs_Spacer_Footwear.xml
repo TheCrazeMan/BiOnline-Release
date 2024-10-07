@@ -1,0 +1,86 @@
+<Defs>
+ 
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>Footwear_MarineBoots</defName>
+		<label>marine boots</label>
+		<description>A pair of marine boots with layered plasteel plates and enhanced servomotors.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Body/Footwear/Spacer/PowerArmorBoots</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.1</generateCommonality>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>3.6</Mass>
+			<Bulk>6.75</Bulk>
+			<WornBulk>1.5</WornBulk>			
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>18</ArmorRating_Sharp>
+			<ArmorRating_Blunt>40.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+ 			<Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed>
+			<CarryWeight>6</CarryWeight>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>BootsAndGloves</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Footwear</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options"> <!-- Vanilla Power Armor -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+    </ThingDef>
+
+</Defs>

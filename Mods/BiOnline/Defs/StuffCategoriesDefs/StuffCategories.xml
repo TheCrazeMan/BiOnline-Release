@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StuffCategoryDef>
+		<defName>AlloysStrongMetals</defName>
+		<label>Strong metals</label>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>		
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Alloys_NonConstruct</defName>
+		<label>Refined metals</label>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>		
+	</StuffCategoryDef>
+	
+	<StuffCategoryDef>
+		<defName>Gold_NonConstruct</defName>
+		<label>Gold</label>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>		
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Glass</defName>
+		<label>Glass</label>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>		
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Brick</defName>
+		<label>Bricks</label>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>		
+	</StuffCategoryDef>
+	
+	<StuffCategoryDef>
+		<defName>Cementum</defName>
+		<label>Cementum</label>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>		
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Ceramics</defName>
+		<label>Ceramics</label>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>		
+	</StuffCategoryDef>
+	
+	<StuffCategoryDef>
+		<defName>StoneChunks</defName>
+		<label>stone chunks</label>
+		<destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+	</StuffCategoryDef>
+	
+</Defs>

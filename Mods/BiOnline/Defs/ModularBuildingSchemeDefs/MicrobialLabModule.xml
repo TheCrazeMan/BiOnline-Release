@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BiOnline.Things.ModularBuildingSchemeDef>
+        <defName>MicrobialLabModule</defName>
+        <parts>
+            <li>
+                <tag>MicrobialLab</tag>
+                <label>Microbial Lab module</label>
+				<groups>
+					<li>
+						<thingFilter>
+							<thingDefs>
+								<li>MicrobialLab</li>
+							</thingDefs>
+						</thingFilter>
+						<cellOffset>(2, 0, 0)</cellOffset>
+					</li>
+				</groups>
+            </li>
+        </parts>
+    </BiOnline.Things.ModularBuildingSchemeDef>
+
+</Defs>

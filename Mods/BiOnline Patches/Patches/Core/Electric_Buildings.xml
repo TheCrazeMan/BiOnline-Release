@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ToxifierGenerator" or defName="SolarGenerator" or defName="GeothermalGenerator" or defName="WindTurbine"]/researchPrerequisites</xpath>
+                    <value>
+                    
+                        <researchPrerequisites>
+							<li>Alternative_Energy</li>
+                        </researchPrerequisites>
+
+                    </value>
+                </li>			
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="PollutionPump"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+                    <value>
+                    
+						<basePowerConsumption>600</basePowerConsumption>
+						
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ToxifierGenerator"]/costList</xpath>
+                    <value>
+					
+						<costList>
+							<Steel>225</Steel>
+							<ComponentIndustrial>6</ComponentIndustrial>
+							<Copper>45</Copper>
+							<Lead>60</Lead>
+						</costList>
+
+						
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ToxifierGenerator"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+                    <value>
+                    
+						<basePowerConsumption>-600</basePowerConsumption>
+						
+                    </value>
+                </li>   
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="PowerConduit"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>1</Copper>
+                        </costList>
+
+                    </value>
+                </li>                 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="PowerSwitch"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>25</Copper>
+                            <Steel>15</Steel>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>                 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WoodFiredGenerator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Steel>100</Steel>
+                            <ComponentIndustrial>2</ComponentIndustrial>
+                            <Copper>25</Copper>
+                        </costList>
+
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Steel>100</Steel>
+                            <ComponentIndustrial>5</ComponentIndustrial>
+                            <Copper>50</Copper>
+                            <Lead>50</Lead>
+                        </costList>
+
+                    </value>
+                </li>
+
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ElectricSmelter"]/researchPrerequisites</xpath>
+                    <value>
+                    
+                        <researchPrerequisites>
+							<li>Metal_processingII</li>
+                        </researchPrerequisites>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ElectricStove"]/researchPrerequisites</xpath>
+                    <value>
+                    
+                        <researchPrerequisites>
+							<li>CookingIII</li>
+                        </researchPrerequisites>
+
+                    </value>
+                </li> 					
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="SunLamp" or defName="PollutionPump" or defName="Lighting_MURWallSunLight"]/researchPrerequisites</xpath>
+                    <value>
+                    
+                        <researchPrerequisites>
+							<li>ElectronicsII</li>
+                        </researchPrerequisites>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ShipLandingBeacon" or defName="WaterproofConduit " or defName="Heater" or defName="LightBall" or defName="Loudspeaker"]/researchPrerequisites</xpath>
+                    <value>
+                    
+                        <researchPrerequisites>
+							<li>ElectronicsI</li>
+                        </researchPrerequisites>
+
+                    </value>
+                </li> 				
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Battery"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>50</Copper>
+                            <Steel>25</Steel>
+                            <Lead>50</Lead>
+                            <ComponentIndustrial>2</ComponentIndustrial>
+							<SulfuricAcid>20</SulfuricAcid>
+                        </costList>
+
+                    </value>
+                </li>    
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="SolarGenerator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+							<Glass>200</Glass>
+                            <Copper>40</Copper>
+                            <Steel>100</Steel>
+                            <Silver>10</Silver>
+                            <ComponentIndustrial>3</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>                 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="GeothermalGenerator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>300</Copper>
+                            <Steel>340</Steel>
+                            <Lead>120</Lead>
+                            <ComponentIndustrial>8</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <WoodLog>280</WoodLog>
+                            <Steel>80</Steel>
+							<Copper>35</Copper>
+                            <ComponentIndustrial>2</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+               
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WindTurbine"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>40</Copper>
+                            <Steel>120</Steel>
+                            <ComponentIndustrial>3</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BioferriteGenerator"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+							<Shard>1</Shard>
+							<Bioferrite>100</Bioferrite>
+                            <Copper>40</Copper>
+                            <Steel>50</Steel>
+                            <ComponentIndustrial>4</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BioferriteShaper"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>20</Copper>
+							<Bioferrite>40</Bioferrite>
+                            <Steel>50</Steel>
+                            <ComponentIndustrial>2</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="SerumCentrifuge"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+							<Shard>1</Shard>
+                            <Copper>40</Copper>
+							<Bioferrite>80</Bioferrite>
+                            <Steel>100</Steel>
+                            <ComponentIndustrial>2</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ElectricInhibitor"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>20</Copper>
+                            <Steel>25</Steel>
+                            <ComponentIndustrial>2</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Electroharvester"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>20</Copper>
+                            <Steel>50</Steel>
+							<Bioferrite>25</Bioferrite>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BioferriteHarvester"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>20</Copper>
+                            <Steel>50</Steel>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="AtmosphericHeater"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+							<Shard>2</Shard>
+							<Bioferrite>150</Bioferrite>
+                            <Copper>20</Copper>
+                            <Steel>150</Steel>
+                            <ComponentIndustrial>8</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ProximityDetector"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Copper>5</Copper>
+                            <Steel>15</Steel>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="FrenzyInducer"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Shard>1</Shard>
+                            <Copper>15</Copper>
+							<Bioferrite>100</Bioferrite>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="SleepSuppressor"]/costList</xpath>
+                    <value>
+                    
+                        <costList>
+                            <Shard>1</Shard>
+                            <Copper>15</Copper>
+							<Bioferrite>100</Bioferrite>
+							<Steel>25</Steel>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+
+                    </value>
+                </li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

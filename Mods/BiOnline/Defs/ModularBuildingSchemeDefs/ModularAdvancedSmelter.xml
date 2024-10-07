@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiOnline.Things.ModularBuildingSchemeDef>
+		<defName>ModularAdvancedSmelter</defName>
+		<parts>
+			<li>
+				<tag>EfficiencyModule</tag>
+				<label>Efficiency module</label>
+				<groups>
+					<li>
+						<thingFilter>
+							<thingDefs>
+								<li>EfficiencyModule</li>
+							</thingDefs>
+						</thingFilter>
+						<cellOffset>(-3, 0, 0)</cellOffset>
+					</li>
+				</groups>
+			</li>
+			<li>
+				<tag>BiomeOresModule</tag>
+				<label>Biome ores module</label>
+				<groups>
+					<li>
+						<thingFilter>
+							<thingDefs>
+								<li>BiomeOresModule</li>
+							</thingDefs>
+						</thingFilter>
+						<cellOffset>(2, 0, 1)</cellOffset>
+					</li>
+				</groups>
+			</li>
+			<li>
+				<tag>MechanicalProcessingModule</tag>
+				<label>Mechanical processing module</label>
+				<groups>
+					<li>
+						<thingFilter>
+							<thingDefs>
+								<li>MechanicalProcessingModule</li>
+							</thingDefs>
+						</thingFilter>
+						<cellOffset>(0, 0, 1)</cellOffset>
+					</li>
+				</groups>
+			</li>
+			<li>
+				<tag>ChemicalProcessingModule</tag>
+				<label>Chemical processing module</label>
+				<groups>
+					<li>
+						<thingFilter>
+							<thingDefs>
+								<li>ChemicalProcessingModule</li>
+							</thingDefs>
+						</thingFilter>
+						<cellOffset>(-3, 0, 2)</cellOffset>
+					</li>
+				</groups>
+			</li>
+		</parts>
+	</BiOnline.Things.ModularBuildingSchemeDef>
+
+</Defs>

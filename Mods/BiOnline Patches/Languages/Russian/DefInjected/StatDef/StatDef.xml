@@ -1,0 +1,9 @@
+<LanguageData>
+
+	<WorkToMake.label>Объём работ для создания</WorkToMake.label>
+	<WorkToMake.description>Объём работ, необходимый для создания этого предмета, после того, как все материалы и инструменты собраны.</WorkToMake.description>
+
+	<WorkToBuild.label>Объём работ для постройки</WorkToBuild.label>
+	<WorkToBuild.description>Объём работ, необходимый для постройки этого сооружения, после того, как все материалы и инструменты собраны.\n\nЭта величина также влияет на объём работ для разборки сооружения.</WorkToBuild.description>
+
+</LanguageData>

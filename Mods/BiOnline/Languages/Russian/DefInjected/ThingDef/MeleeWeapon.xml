@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Пси оружие-->
+	<MeleeWeapon_Warhammer_PSY.label>молот (Пси)</MeleeWeapon_Warhammer_PSY.label>
+	<MeleeWeapon_Warhammer_PSY.description>Оружие на длинном древке, с массивной боевой частью. Удары, наносимые этим оружием, могут превращать внутренности противника в фарш даже сквозь броню.</MeleeWeapon_Warhammer_PSY.description>
+	<MeleeWeapon_Warhammer_PSY.tools.handle.label>рукоять</MeleeWeapon_Warhammer_PSY.tools.handle.label>
+	<MeleeWeapon_Warhammer_PSY.tools.head.label>боевая часть</MeleeWeapon_Warhammer_PSY.tools.head.label>	
+	
+	<MeleeWeapon_Spear_PSY.label>копьё (Пси)</MeleeWeapon_Spear_PSY.label>
+	<MeleeWeapon_Spear_PSY.description>Древко, увенчанное острым наконечником для нанесения колющих ударов.</MeleeWeapon_Spear_PSY.description>
+	<MeleeWeapon_Spear_PSY.tools.shaft.label>древко</MeleeWeapon_Spear_PSY.tools.shaft.label>
+	<MeleeWeapon_Spear_PSY.tools.point.label>остриё</MeleeWeapon_Spear_PSY.tools.point.label>	
+	
+	<MeleeWeapon_LongSword_PSY.label>длинный меч (Пси)</MeleeWeapon_LongSword_PSY.label>
+	<MeleeWeapon_LongSword_PSY.description>Длинный меч — древнее оружие королей, смертоносное в умелых руках. Подходит для колющих и рубящих ударов.</MeleeWeapon_LongSword_PSY.description>
+	<MeleeWeapon_LongSword_PSY.tools.handle.label>рукоять</MeleeWeapon_LongSword_PSY.tools.handle.label>
+	<MeleeWeapon_LongSword_PSY.tools.point.label>остриё</MeleeWeapon_LongSword_PSY.tools.point.label>
+	<MeleeWeapon_LongSword_PSY.tools.edge.label>лезвие</MeleeWeapon_LongSword_PSY.tools.edge.label>	
+	
+	<FrostmourneII.label>Фростморн</FrostmourneII.label>
+	<FrostmourneII.description>Страшный двуручный меч, украшенный рунами, он обладал силой разрушать и заключать в тюрьму души своих жертв и мог превращать живых в бездумную нежить.</FrostmourneII.description>
+	<FrostmourneII.tools.handle.label>рукоять</FrostmourneII.tools.handle.label>
+	<FrostmourneII.tools.point.label>остриё</FrostmourneII.tools.point.label>
+	<FrostmourneII.tools.edge.label>лезвие</FrostmourneII.tools.edge.label>	
+	
+	<MeleeWeapon_SacDagger.label>Жертвенный кинжал</MeleeWeapon_SacDagger.label>
+	<MeleeWeapon_SacDagger.description>Старый ржавый кинжал, используемый для проведения темных ритуалов и окультных вещей, может быть не так прост, как кажется.</MeleeWeapon_SacDagger.description>
+	<MeleeWeapon_SacDagger.tools.handle.label>рукоять</MeleeWeapon_SacDagger.tools.handle.label>
+	<MeleeWeapon_SacDagger.tools.point.label>остриё</MeleeWeapon_SacDagger.tools.point.label>
+	<MeleeWeapon_SacDagger.tools.edge.label>лезвие</MeleeWeapon_SacDagger.tools.edge.label>	
+</LanguageData>

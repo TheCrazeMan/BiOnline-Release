@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="BodyPartCyberBionicsBase" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+		  <texPath>Things/Item/Health/HealthItem</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.80</drawSize>
+		  <color>(84, 155, 155)</color>
+		</graphicData>	
+		<statBases>
+		  <WorkToMake>26000</WorkToMake>
+		  <MarketValue>2800</MarketValue>
+		  <Mass>4</Mass>
+		</statBases>
+		<thingCategories>
+		  <li>BodyPartsBionic</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker>
+			<researchPrerequisite>Cyber_Bionics</researchPrerequisite>
+			<recipeUsers>
+				<li>MedicalBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>		
+	</ThingDef>
+
+
+	<!-- Cyber arm -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>CyberBionicsArm</defName>
+		<label>Cyber bionics arm</label>
+		<labelNoun>Cyber bionics arm</labelNoun>
+		<description>An installed Cyber bionics arm.</description>
+		<descriptionHyperlinks><ThingDef>CyberBionicsArm</ThingDef></descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+				  <li>
+					<label>fist</label>
+					<capacities>
+					  <li>Blunt</li>
+					</capacities>
+					<power>14</power>
+					<cooldownTime>2</cooldownTime>
+					<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+					<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+				  </li>
+				</tools>
+			</li>
+		</comps>
+		<abilities>
+		  <li>ElectroDischarge</li>
+		</abilities>
+		<hediffGivers>
+		  <li Class="HediffGiver_AddSeverity">
+			<hediff>Cyberpsychosis</hediff> 
+			<severityAmount>0.2</severityAmount>
+			<mtbHours>24</mtbHours>
+		  </li>
+		</hediffGivers>
+		<spawnThingOnRemoved>CyberBionicsArm</spawnThingOnRemoved>
+		<addedPartProps>
+		  <solid>true</solid>
+		  <partEfficiency>1.75</partEfficiency>
+		  <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>	  
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartCyberBionicsBase">
+		<defName>CyberBionicsArm</defName>
+		<label>Cyber bionics arm</label>
+		<description>A super-technological iplant. It was used in the super-soldier program, but was soon deemed too dangerous because of its ability to cause unstable mental state of the wearer, or "cyber-psychosis". This implant uses many micro-servos, electric motors, artificial tendons and many more unclassified micro-devices.</description>
+		<descriptionHyperlinks><RecipeDef>InstallArchotechArm</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<AlloysMithril>25</AlloysMithril>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Titanium>30</Titanium>
+			<Eltex>12</Eltex>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallCyberBionicsArm</defName>
+		<label>install archotech arm</label>
+		<description>Install an archotech arm.</description>
+		<descriptionHyperlinks>
+		  <ThingDef>CyberBionicsArm</ThingDef>
+		  <HediffDef>CyberBionicsArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech arm.</jobString>
+		<skillRequirements>
+			<Medicine>16</Medicine>
+		</skillRequirements>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CyberBionicsArm</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>CyberBionicsArm</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CyberBionicsArm</addsHediff>
+	</RecipeDef>
+
+
+	<!-- Cyber leg -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>CyberBionicsLeg</defName>
+    <label>Cyber bionics leg</label>
+    <labelNoun>an cyber leg</labelNoun>
+    <description>An installed cyber leg.</description>
+    <descriptionHyperlinks><ThingDef>CyberBionicsLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>CyberBionicsLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <abilities>
+      <li>LongjumpFoot</li>
+    </abilities>
+	<hediffGivers>
+	  <li Class="HediffGiver_AddSeverity">
+		<hediff>Cyberpsychosis</hediff> 
+		<severityAmount>0.2</severityAmount>
+		<mtbHours>24</mtbHours>
+	  </li>
+	</hediffGivers>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartCyberBionicsBase">
+    <defName>CyberBionicsLeg</defName>
+    <label>Cyber bionics leg</label>
+    <description>A super-technological iplant. It was used in the super-soldier program, but was soon deemed too dangerous because of its ability to cause unstable mental state of the wearer, or "cyber-psychosis". This implant uses many micro-servos, electric motors, artificial tendons and many more unclassified micro-devices</description>
+    <descriptionHyperlinks>
+	<RecipeDef>InstallArchotechLeg</RecipeDef>
+	<AbilityDef>LongjumpFoot</AbilityDef>	
+	</descriptionHyperlinks>
+    <statBases>
+      <Mass>7</Mass>
+    </statBases>
+	<costList>
+		<AlloysMithril>25</AlloysMithril>
+		<ComponentSpacer>10</ComponentSpacer>
+		<Titanium>30</Titanium>
+		<Eltex>12</Eltex>
+	</costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallCyberBionicsLeg</defName>
+    <label>install cyber bionics leg</label>
+    <description>Install an cyber bionics leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CyberBionicsLeg</ThingDef>
+      <HediffDef>CyberBionicsLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cyber bionics leg.</jobString>
+	<skillRequirements>
+		<Medicine>16</Medicine>
+	</skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberBionicsLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CyberBionicsLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberBionicsLeg</addsHediff>
+  </RecipeDef>
+
+	<!-- Kidney -->
+
+   <ThingDef ParentName="BodyPartCyberBionicsBase">
+    <defName>CyberBionicsKidney</defName>
+    <label>Cyber bionics kidney</label>
+    <description>An advanced artificial kidney. Using a series of nanofilters, it can rapidly remove a vast range of toxins from the blood, making it effective against environmental toxins, venoms, and injected poisons.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallCyberBionicsKidney</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>2080</MarketValue>
+    </statBases>
+	<costList>
+		<AlloysMithril>20</AlloysMithril>
+		<ComponentSpacer>8</ComponentSpacer>
+		<Titanium>25</Titanium>
+		<Eltex>10</Eltex>
+	</costList>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>CyberBionicsKidney</defName>
+    <label>cyber bionic kidney</label>
+    <labelNoun>a detoxifier kidney</labelNoun>
+    <description>An installed detoxifier kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CyberBionicsKidney</ThingDef>
+    </descriptionHyperlinks>
+	<abilities>
+		<li>AdrenalineRush</li>
+		<li>AcceleratedRegeneration</li>
+	</abilities>
+		<hediffGivers>
+		  <li Class="HediffGiver_AddSeverity">
+			<hediff>Cyberpsychosis</hediff> 
+			<severityAmount>0.2</severityAmount>
+			<mtbHours>24</mtbHours>
+		  </li>
+		</hediffGivers>
+		<spawnThingOnRemoved>CyberBionicsKidney</spawnThingOnRemoved>
+		<addedPartProps>
+		  <partEfficiency>1.75</partEfficiency>
+		  <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>	
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallCyberBionicsKidney</defName>
+    <label>install cyber bionics kidney</label>
+    <description>Install a detoxifier kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CyberBionicsKidney</ThingDef>
+      <HediffDef>CyberBionicsKidney</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing detoxifier kidney.</jobString>
+	<skillRequirements>
+		<Medicine>16</Medicine>
+	</skillRequirements>	
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberBionicsKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CyberBionicsKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberBionicsKidney</addsHediff>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+  </RecipeDef>
+
+	<!-- Spine -->
+
+   <ThingDef ParentName="BodyPartCyberBionicsBase">
+    <defName>CyberBionicsSpine</defName>
+    <label>Cyber bionics spine</label>
+    <description>An advanced artificial Spine. Using a series of nanofilters, it can rapidly remove a vast range of toxins from the blood, making it effective against environmental toxins, venoms, and injected poisons.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallCyberBionicsSpine</RecipeDef>
+    </descriptionHyperlinks>
+	<costList>
+		<AlloysMithril>50</AlloysMithril>
+		<ComponentSpacer>16</ComponentSpacer>
+		<Titanium>80</Titanium>
+		<Eltex>25</Eltex>
+	</costList>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>CyberBionicsSpine</defName>
+    <label>cyberbionics spine</label>
+    <labelNoun>a cyberbionics spine</labelNoun>
+    <description>An installed cyberbionics spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CyberBionicsSpine</ThingDef>
+    </descriptionHyperlinks>
+<!-- 	<abilities>
+		<li>EMPWave</li>
+	</abilities> -->
+		<hediffGivers>
+		  <li Class="HediffGiver_AddSeverity">
+			<hediff>Cyberpsychosis</hediff> 
+			<severityAmount>0.2</severityAmount>
+			<mtbHours>24</mtbHours>
+		  </li>
+		</hediffGivers>
+		<spawnThingOnRemoved>CyberBionicsSpine</spawnThingOnRemoved>
+		<addedPartProps>
+		  <partEfficiency>1.75</partEfficiency>
+		  <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+		  <li>
+			<statOffsets>
+				<MoveSpeed>0.15</MoveSpeed>
+				<CarryWeight>135</CarryWeight>
+				<CarryingCapacity>50</CarryingCapacity>
+			</statOffsets>
+		  </li>	  
+		</stages>		
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallCyberBionicsSpine</defName>
+    <label>install cyber bionics Spine</label>
+    <description>Install a cyberbionics spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CyberBionicsSpine</ThingDef>
+      <HediffDef>CyberBionicsSpine</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing detoxifier Spine.</jobString>
+	<skillRequirements>
+		<Medicine>16</Medicine>
+	</skillRequirements>	
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberBionicsSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CyberBionicsSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberBionicsSpine</addsHediff>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+  </RecipeDef>
+
+	<!-- Chip -->
+
+   <ThingDef ParentName="BodyPartCyberBionicsBase">
+    <defName>CyberBionicsChip</defName>
+    <label>Cyber bionics Chip</label>
+    <description>An advanced artificial Chip. Using a series of nanofilters, it can rapidly remove a vast range of toxins from the blood, making it effective against environmental toxins, venoms, and injected poisons.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallCyberBionicsChip</RecipeDef>
+    </descriptionHyperlinks>
+	<costList>
+		<AlloysMithril>75</AlloysMithril>
+		<ComponentSpacer>20</ComponentSpacer>
+		<Titanium>120</Titanium>
+		<Eltex>30</Eltex>
+	</costList>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>CyberBionicsChip</defName>
+    <label>cyberbionics Chip</label>
+    <labelNoun>a cyberbionics Chip</labelNoun>
+    <description>An installed cyberbionics Chip.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CyberBionicsChip</ThingDef>
+    </descriptionHyperlinks>
+ 	<abilities>
+		<li>BrainOvercharge</li>
+	</abilities>
+		<hediffGivers>
+		  <li Class="HediffGiver_AddSeverity">
+			<hediff>Cyberpsychosis</hediff> 
+			<severityAmount>0.4</severityAmount>
+			<mtbHours>24</mtbHours>
+		  </li>
+		</hediffGivers>
+		<spawnThingOnRemoved>CyberBionicsChip</spawnThingOnRemoved>
+		<stages>
+		  <li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.15</offset>
+				</li>				
+			</capMods>
+		  </li>	  
+		</stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallCyberBionicsChip</defName>
+    <label>install cyber bionics Chip</label>
+    <description>Install a cyberbionics Chip.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CyberBionicsChip</ThingDef>
+      <HediffDef>CyberBionicsChip</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing detoxifier Chip.</jobString>
+	<skillRequirements>
+		<Medicine>16</Medicine>
+	</skillRequirements>	
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberBionicsChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CyberBionicsChip</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberBionicsChip</addsHediff>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+  </RecipeDef>
+
+</Defs>

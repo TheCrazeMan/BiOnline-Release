@@ -1,0 +1,117 @@
+<Defs>
+
+	<!-- Глина -->
+
+  <ThingDef ParentName="ResourceBase" Name="Clay">
+	<defName>Clay</defName>
+	<label>Clay</label>
+    <description>Just a regular clay ball. Can be used to make ceramics.</description>
+    <graphicData>
+      <texPath>Things/Item/Clay</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<stackLimit>500</stackLimit>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+	  <OreGridCommonality>1</OreGridCommonality>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>0.2</MarketValue>
+	  <Mass>0.58</Mass>
+	  <Flammability>0</Flammability>
+      <Beauty>-12</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+
+	<!-- Щебень -->
+
+  <ThingDef ParentName="ResourceBase" Name="CrushedStone">
+	<defName>CrushedStone</defName>
+	<label>Crushed stone</label>
+    <description>Stone, but crushed. Found his usage in many spheres.</description>
+    <graphicData>
+      <texPath>Things/Item/CrushedStone</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<stackLimit>500</stackLimit>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>	
+    <statBases>
+	  <OreGridCommonality>1</OreGridCommonality>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>0.04</MarketValue>
+	  <Mass>0.028</Mass>
+	  <Flammability>0</Flammability>
+      <Beauty>-12</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+
+	<!-- Песок -->
+
+  <ThingDef ParentName="ResourceBase" Name="Sand">
+	<defName>Sand</defName>
+	<label>Sand</label>
+    <description>Pile of sand.</description>
+    <graphicData>
+      <texPath>Things/Item/Sand</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<stackLimit>500</stackLimit>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>	
+    <statBases>
+	  <OreGridCommonality>1</OreGridCommonality>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>0.02</MarketValue>
+	  <Mass>0.016</Mass>
+	  <Flammability>0</Flammability>
+      <Beauty>-12</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+
+	<!-- Кофэ бобы -->
+
+  <ThingDef ParentName="ResourceBase" Name="CoffeeBeans">
+	<defName>CoffeeBeans</defName>
+	<label>Coffee beans</label>
+    <description>A pile of coffee beans.</description>
+    <graphicData>
+      <texPath>Things/Item/CoffeeBeans</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>1.75</MarketValue>
+	  <Mass>0.15</Mass>
+      <Beauty>-12</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

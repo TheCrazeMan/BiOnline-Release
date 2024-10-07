@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Безразличие к комфорту-->
+	<GeneDef>
+		<defName>IndifferenceComfort</defName>
+		<label>Indifference comfort</label>
+		<description>The gene completely removes the need for comfort. You simply don't care whether you sleep in luxury tonight or sleep in a haystack</description>
+		<iconPath>UI/Icons/Genes/IndifferenceComfort</iconPath>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<disablesNeeds>
+			<li>Comfort</li>
+		</disablesNeeds>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>3</biostatCpx>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>comfort</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_GeneDef">
+				<showInEditor>false</showInEditor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<!--Солнечная сила-->
+	<GeneDef ParentName="UVSensitivityBase">
+		<defName>SolarActivation</defName>
+		<label>Solar activation</label>
+		<labelShortAdj>UV-activation</labelShortAdj>
+		<description>When exposed to sunlight, physical and mental abilities are greatly enhanced. In daylight, the wearer becomes faster, stronger and tougher. This gene makes the host especially effective during daylight hours, turning the sun into a powerful source of energy.</description>
+		<iconPath>UI/Icons/Genes/SolarActivation</iconPath>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<dislikesSunlight>false</dislikesSunlight>
+		<conditionalStatAffecters>
+			<li Class="ConditionalStatAffecter_InSunlight">
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+					<PsychicSensitivity>0.40</PsychicSensitivity>
+					<ComfyTemperatureMax>50</ComfyTemperatureMax>
+					<MeleeDamageFactor>2.0</MeleeDamageFactor>
+				</statFactors>
+			</li>
+		</conditionalStatAffecters>
+		<biostatCpx>4</biostatCpx>
+		<biostatMet>-6</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>light</symbol>
+				</li>
+				<li>
+					<symbol>open</symbol>
+				</li>
+				<li>
+					<symbol>above</symbol>
+				</li>
+				<li>
+					<symbol>field</symbol>
+				</li>
+				<li>
+					<symbol>sky</symbol>
+				</li>
+				<li>
+					<symbol>bright</symbol>
+				</li>
+				<li>
+					<symbol>day</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_GeneDef">
+				<showInEditor>false</showInEditor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<!--Гнилостный запах-->
+	<GeneDef>
+		<defName>PutridSmell</defName>
+		<label>Putrid smell</label>
+		<labelShortAdj>Putrid smell</labelShortAdj>
+		<description>A carrier of this gene emits a repulsive odor. </description>
+		<geneClass>BiOnline.Genes.Gene_ForceHediff</geneClass>
+		<iconPath>UI/Icons/Genes/PutridSmell</iconPath>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_GeneDef">
+				<props Class="BiOnline.Genes.GeneProperties_ForceHediff">
+					<hediffDef>PutridSmell</hediffDef>
+					<canAffectAnyLivePart>false</canAffectAnyLivePart>
+					<severity>1</severity>
+				</props>
+				<showInEditor>false</showInEditor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<!--Водная сила-->
+	<GeneDef ParentName="UVSensitivityBase">
+		<defName>RainPower</defName>
+		<label>Rain power</label>
+		<labelShortAdj>Rain power</labelShortAdj>
+		<description>Under the influence of rain, physical and mental abilities are greatly increased. When it rains, the host becomes faster, stronger and more enduring. This gene makes the host especially efficient in rainy weather, turning precipitation into a powerful source of energy.</description>
+		<iconPath>UI/Icons/Genes/RainPower</iconPath>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<dislikesSunlight>false</dislikesSunlight>
+		<conditionalStatAffecters>
+			<li Class="BiOnline.Genes.ConditionalStatAffecter_RainRate">
+				<statFactors>
+					<MoveSpeed>2.5</MoveSpeed>
+					<MeleeDamageFactor>2.0</MeleeDamageFactor>
+				</statFactors>
+			</li>
+		</conditionalStatAffecters>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-4</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Dark</symbol>
+				</li>
+				<li>
+					<symbol>Rainy</symbol>
+				</li>
+				<li>
+					<symbol>Wet</symbol>
+				</li>
+				<li>
+					<symbol>Cloudy</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="BiOnline.Genes.DefModExtension_GeneDef">
+				<showInEditor>false</showInEditor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<!--Ластовидные конечности-->
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>FlipperLimbs</defName>
+		<label>Flipper limbs</label>
+		<description>Carriers of this gene have limbs that resemble goose paws. This reduces their ability to manipulate objects.</description>
+		<iconPath>UI/Icons/Genes/FlipperLimbs</iconPath>
+		<displayOrderInCategory>310</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.85</postFactor>
+			</li>
+		</capMods>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>Kikimor</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>Bog</symbol>
+				</li>
+				<li>
+					<symbol>Swamp</symbol>
+				</li>
+				<li>
+					<symbol>quagmire</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>Swamp</symbol>
+				</li>
+				<li>
+					<symbol>quagmire</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<!--Жировой мешок-->
+	<GeneDef>
+		<defName>FatSac</defName>
+		<label>flabsack</label>
+		<description>Carriers of this gene develop a large sack of extra fat between their throat, jaw and collarbones.</description>
+		<iconPath>UI/Icons/Genes/FatSac</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<texPath>Things/Pawn/Humanlike/Kikimor/Head/Fatsac/Fatsac</texPath>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<colorType>Skin</colorType>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Jaw</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<randomChosen>true</randomChosen>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>410</displayOrderInCategory>
+		<exclusionTags/>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>fat</symbol>
+				</li>
+				<li>
+					<symbol>chub</symbol>
+				</li>
+				<li>
+					<symbol>slob</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>fat</symbol>
+				</li>
+				<li>
+					<symbol>chub</symbol>
+				</li>
+				<li>
+					<symbol>slob</symbol>
+				</li>
+				<li>
+					<symbol>face</symbol>
+				</li>
+				<li>
+					<symbol>neck</symbol>
+				</li>
+				<li>
+					<symbol>jaw</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<!--Усы-->
+	<GeneDef ParentName="GeneNoseBase">
+		<defName>Nose_Kikimor</defName>
+		<label>barbels</label>
+		<description>Carriers of this gene grow fleshy barbel-like appendages on their upper lip.</description>
+		<iconPath>UI/Icons/Genes/Whiskers</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Skin</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/Kikimor/Head/Whiskers/Whiskers</li>
+					<li>Things/Pawn/Humanlike/Kikimor/Head/Whiskers/Whiskers2</li>
+					<li>Things/Pawn/Humanlike/Kikimor/Head/Whiskers/Whiskers3</li>
+					<li>Things/Pawn/Humanlike/Kikimor/Head/Whiskers/Whiskers4</li>
+					<li>Things/Pawn/Humanlike/Kikimor/Head/Whiskers/Whiskers5</li>
+				</texPaths>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<missingGeneRomanceChanceFactor>0.8</missingGeneRomanceChanceFactor>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>410</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>whisker</symbol>
+				</li>
+				<li>
+					<symbol>catfish</symbol>
+				</li>
+				<li>
+					<symbol>barbels</symbol>
+				</li>
+				<li>
+					<symbol>antennae</symbol>
+				</li>
+				<li>
+					<symbol>receptors</symbol>
+				</li>
+				<li>
+					<symbol>nose</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>whisker</symbol>
+				</li>
+				<li>
+					<symbol>catfish</symbol>
+				</li>
+				<li>
+					<symbol>barbels</symbol>
+				</li>
+				<li>
+					<symbol>antennae</symbol>
+				</li>
+				<li>
+					<symbol>receptors</symbol>
+				</li>
+				<li>
+					<symbol>nose</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

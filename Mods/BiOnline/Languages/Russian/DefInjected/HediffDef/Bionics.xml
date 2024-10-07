@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<CyberBionicsArm.label>Кибернетическая рука</CyberBionicsArm.label>
+	<CyberBionicsArm.labelNoun>Кибернетическая рука</CyberBionicsArm.labelNoun>
+	<CyberBionicsArm.description>Установленная кибернетическая рука.</CyberBionicsArm.description>
+	
+	<CyberBionicsLeg.label>Кибернетическая нога</CyberBionicsLeg.label>
+	<CyberBionicsLeg.labelNoun>Кибернетическая нога</CyberBionicsLeg.labelNoun>
+	<CyberBionicsLeg.description>Установленная кибернетическая нога.</CyberBionicsLeg.description>
+	
+	<CyberBionicsKidney.label>Кибернетическая почка</CyberBionicsKidney.label>
+	<CyberBionicsKidney.labelNoun>Кибернетическая почка</CyberBionicsKidney.labelNoun>
+	<CyberBionicsKidney.description>Установленная кибернетическая почка.</CyberBionicsKidney.description>
+	
+	<CyberBionicsChip.label>Кибернетический чип</CyberBionicsChip.label>
+	<CyberBionicsChip.labelNoun>Кибернетический чип</CyberBionicsChip.labelNoun>
+	<CyberBionicsChip.description>Установленный кибернетический чип.</CyberBionicsChip.description>
+	
+	<CyberBionicsSpine.label>Кибернетический позвоночник</CyberBionicsSpine.label>
+	<CyberBionicsSpine.labelNoun>Кибернетический позвоночник</CyberBionicsSpine.labelNoun>
+	<CyberBionicsSpine.description>Установленный кибернетический позвоночник.</CyberBionicsSpine.description>	
+
+	<PMCSpine.label>Позвоночник "Катарсиса"</PMCSpine.label>
+	<PMCSpine.labelNoun>Позвоночник "Катарсиса"</PMCSpine.labelNoun>
+	<PMCSpine.description>Установленный позвоночник "Катарсиса", позволяет двигаться значительно быстрее.</PMCSpine.description>
+	
+	<RifRafChip.label>Чип "Риф-Раф"</RifRafChip.label>
+	<RifRafChip.labelNoun>Чип "Риф-Раф"</RifRafChip.labelNoun>
+	<RifRafChip.description>Установленный чип "Риф-Раф", делает человека значительно более импульсивным, полезен, если необходимо вести огонь на подавление.</RifRafChip.description>
+
+	<BerserkerChip.label>Чип Берсерка</BerserkerChip.label>
+	<BerserkerChip.labelNoun>Чип Берсерка</BerserkerChip.labelNoun>
+	<BerserkerChip.description>Установленный чип Берсерка. Обостряет инстинкты, позволяя эффективнее сражаться в ближнем бою.</BerserkerChip.description>
+	
+</LanguageData>

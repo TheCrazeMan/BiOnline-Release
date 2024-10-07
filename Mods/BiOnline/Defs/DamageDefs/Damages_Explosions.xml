@@ -1,0 +1,94 @@
+<Defs>
+
+	<DamageDef Name="Plasma">
+		<defName>Plasma</defName>
+		<label>plasma</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<deathMessage>{0} has been electrocuted.</deathMessage>
+		<hediff>PlasmaBurn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Electric</armorCategory>
+		<minDamageToFragment>30</minDamageToFragment>
+		<defaultDamage>80</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>50</defaultArmorPenetration>
+		<buildingDamageFactor>3.2</buildingDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>25</explosionHeatEnergyPerCell>
+		<explosionCellFleck>Fleck_Vaporize</explosionCellFleck>
+		<explosionColorEdge>(99,238,33)</explosionColorEdge>
+		<explosionColorCenter>(99, 238, 33)</explosionColorCenter>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<combatLogRules>Damage_EMP</combatLogRules>
+		<modExtensions>
+			<li Class="CombatExtended.DamageDefExtensionCE">
+				<isAmbientDamage>true</isAmbientDamage>
+			</li>
+		</modExtensions>
+	</DamageDef>
+
+	<DamageDef Name="PlasmaOvercharge">
+		<defName>PlasmaOvercharge</defName>
+		<label>overcharged plasma</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<deathMessage>{0} has been electrocuted.</deathMessage>
+		<hediff>PlasmaBurn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Electric</armorCategory>
+		<minDamageToFragment>30</minDamageToFragment>
+		<defaultDamage>80</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>50</defaultArmorPenetration>
+		<buildingDamageFactor>7.5</buildingDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>45</explosionHeatEnergyPerCell>
+		<explosionCellFleck>Fleck_Vaporize</explosionCellFleck>
+		<explosionColorEdge>(145,83,238)</explosionColorEdge>
+		<explosionColorCenter>(145,83,238)</explosionColorCenter>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<combatLogRules>Damage_EMP</combatLogRules>
+		<modExtensions>
+			<li Class="CombatExtended.DamageDefExtensionCE">
+				<isAmbientDamage>true</isAmbientDamage>
+			</li>
+		</modExtensions>
+	</DamageDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>PlasmaBurn</defName>
+    <label>plasma burn</label>
+    <labelNoun>a plasma burn</labelNoun>
+    <description>A plasma burn. Your nerves already should've been melted, so it doesn't pain much.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>old plasma burn</permanentLabel>
+        <instantlyPermanentLabel>permanent plasma burn</instantlyPermanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0025</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00125</averagePainPerSeverityPermanent>
+      <bleedRate>0</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Burned off</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+
+</Defs>

@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Взрывной мешкочек -->
+
+  <BodyPartDef>
+    <defName>ExplosiveSack</defName>
+    <label>Explosive sack</label>
+    <hitPoints>30</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>10</bleedRate>
+  </BodyPartDef>
+
+	<!-- Тип тела для бомбера и эквита, с учётом мешкочка -->
+
+  <BodyDef>
+    <defName>Bomber</defName>
+    <label>beetle-like with claw</label>
+    <corePart>
+      <def>Shell</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>Elytra</def>
+          <customLabel>left elytra</customLabel>
+          <coverage>0.05</coverage>
+        </li>
+        <li>
+          <def>Elytra</def>
+          <customLabel>right elytra</customLabel>
+          <coverage>0.05</coverage>
+        </li>
+		<li>
+		  <def>ExplosiveSack</def>
+		  <coverage>0.1</coverage>
+		</li>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>InsectHeart</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Pronotum</def>
+          <coverage>0.18</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>InsectHead</def>
+              <coverage>0.65</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Brain</def>
+                  <coverage>0.2</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>left eye</customLabel>
+                  <coverage>0.12</coverage>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>right eye</customLabel>
+                  <coverage>0.12</coverage>
+                </li>
+                <li>
+                  <def>Antenna</def>
+                  <customLabel>left antenna</customLabel>
+                  <coverage>0.08</coverage>
+                </li>
+                <li>
+                  <def>Antenna</def>
+                  <customLabel>right antenna</customLabel>
+                  <coverage>0.08</coverage>
+                </li>
+                <li>
+                  <def>InsectNostril</def>
+                  <coverage>0.06</coverage>
+                </li>
+                <li>
+                  <def>InsectMouth</def>
+                  <coverage>0.08</coverage>
+                  <groups>
+                    <li>Mouth</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>HeadClaw</def>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>HeadClaw</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>InsectLeg</def>
+          <customLabel>front left leg</customLabel>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>InsectLeg</def>
+          <customLabel>front right leg</customLabel>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>InsectLeg</def>
+          <customLabel>middle left leg</customLabel>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>InsectLeg</def>
+          <customLabel>middle right leg</customLabel>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>InsectLeg</def>
+          <customLabel>rear left leg</customLabel>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>InsectLeg</def>
+          <customLabel>rear right leg</customLabel>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+	<!-- Оружие для эквита -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_EquiteOnly</defName>
+		<label>Equite's toxic needle</label>
+		<ammoTypes>
+			<Ammo_EquiteOnly>Bullet_EquiteToxicNeedle</Ammo_EquiteOnly>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="EquiteToxin" ParentName="AmmoBase">
+		<defName>Ammo_EquiteOnly</defName>
+		<label>Equite toxic needle</label>		
+		<graphicData>
+			<texPath>Things/Ammo/Railgun/Rifle</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Bulk>0</Bulk>
+			<Mass>0</Mass>
+		</statBases>
+		<ammoClass>Sabot</ammoClass>
+		<cookOffProjectile>Bullet_EquiteToxicNeedle</cookOffProjectile>
+	</ThingDef>
+
+  <DamageDef ParentName="Bullet">
+    <defName>BulletVeryToxic</defName>
+    <label>toxic needle</label>
+	<hediff>Bruise</hediff>
+    <additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Bullet</impactSoundType>
+  </DamageDef>
+
+	  <ThingDef ParentName="BaseBulletCE">
+		<defName>Bullet_EquiteToxicNeedle</defName>
+		<label>Equite's toxic needle</label>
+		<graphicData>
+			<texPath>Things/Projectile/ToxicNeedleShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+		  <damageDef>BulletVeryToxic</damageDef>
+		  <damageAmountBase>1</damageAmountBase>
+		  <armorPenetrationSharp>600</armorPenetrationSharp>
+		  <armorPenetrationBlunt>999</armorPenetrationBlunt>
+		  <speed>60</speed>
+		</projectile>
+	  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+	<defName>EquiteGun</defName>
+    <label>equite's tail</label>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Mim/Head/Average_Normal_east</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1400</MarketValue>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.34</ShotSpread>
+      <SwayFactor>0.51</SwayFactor>
+      <Bulk>0</Bulk>
+      <Mass>0</Mass>
+      <RangedWeapon_Cooldown>1.52</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EquiteToxicNeedle</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>1.3</warmupTime>
+        <range>16</range>
+        <soundCast>AcidSpray_Resolve</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+    </verbs>	
+    <techLevel>Animal</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <weaponTags>
+      <li>EquiteOnly</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>tail</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.75</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>6.755</armorPenetrationBlunt>		
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+	<comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>9999</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_EquiteOnly</ammoSet>
+      </li>	
+	</comps>
+  </ThingDef>
+
+	<!-- Бомбер -->
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>Bomber</defName>
+    <label>Bomber</label>
+    <description>A nimble little beetle with a couple of distinguishing features from megascarab. Its wings behind its back and a pouch of toxins make it a threat, albeit a small one. They are especially dangerous in large numbers.</description>
+    <statBases>
+      <MoveSpeed>5.25</MoveSpeed>
+      <ArmorRating_Blunt>2.18</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MarketValue>100</MarketValue>
+      <LeatherAmount>40</LeatherAmount>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>mandibles</label>
+        <capacities>
+          <li>ToxicBite</li>	<!-- Токсичный укус, взял у токсичной крысы -->
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>Bomber</body>
+	  <!-- Взрыв токсичным облаком -->
+	  <deathAction>
+        <workerClass>DeathActionWorker_ToxCloud</workerClass>
+      </deathAction>  
+      <baseBodySize>0.2</baseBodySize>
+      <baseHungerRate>0.10</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <lifeExpectancy>10</lifeExpectancy>
+      <wildness>0.2</wildness>
+      <trainability>Intermediate</trainability>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.12)</li>
+        <li>(0.07, 0, -0.05)</li>
+        <li>(0.0, 0, -0.08)</li>
+        <li>(-0.07, 0, -0.05)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Bomber</defName>
+    <label>Bomber</label>
+    <race>Bomber</race>
+    <combatPower>60</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Bomber/Bomber</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Bomber/Dessicated_Bomber</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Bomber/Bomber</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Bomber/Dessicated_Bomber</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Bomber/Bomber</texPath>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Bomber/Dessicated_Bomber</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+	<!-- Эквит, жук-стрелюн -->
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>Equite</defName>
+    <label>Equite</label>
+    <description>The Equite is already more similar to the spelopede in terms of characteristics, but has the distinctive feature of shooting toxin clots, as well as a higher movement speed than its counterpart in size. The armor of this beetle does not differ, except for the worse because of the toxin bag on the back.</description>
+    <statBases>
+      <MoveSpeed>3.95</MoveSpeed>
+      <ArmorRating_Blunt>2.18</ArmorRating_Blunt>
+      <ArmorRating_Sharp>4.72</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <MarketValue>400</MarketValue>
+      <LeatherAmount>40</LeatherAmount>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>mandibles</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>	
+      <body>CE_ArmoredBeetleLikeWithClaw</body>
+	  <!-- Взрыв токсичным облаком -->
+	  <deathAction>
+        <workerClass>DeathActionWorker_ToxCloud</workerClass>
+      </deathAction> 
+      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>2</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <lifeExpectancy>10</lifeExpectancy>
+      <wildness>0.2</wildness>
+      <trainability>Intermediate</trainability>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.12)</li>
+        <li>(0.07, 0, -0.05)</li>
+        <li>(0.0, 0, -0.08)</li>
+        <li>(-0.07, 0, -0.05)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Equite</defName>
+	<aiAvoidCover>true</aiAvoidCover>				<!-- Взял у сентипеды, но не заметил разницы, когда тестил -->
+    <destroyGearOnDrop>true</destroyGearOnDrop>		<!-- Уничтожение дропов, когда умирает -->
+    <canStrip>false</canStrip>
+	<forceNormalGearQuality>true</forceNormalGearQuality>
+    <weaponTags>
+      <li>EquiteOnly</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+    <label>Equite</label>
+    <race>Equite</race>
+    <combatPower>140</combatPower>					<!-- Чуть меньше, чем у мегапаука -->
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Equite/Equite</texPath>
+          <drawSize>2.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Equite/Dessicated_Equite</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Equite/Equite</texPath>
+          <drawSize>2.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Equite/Dessicated_Equite</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Equite/Equite</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Equite/Dessicated_Equite</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>0</min>
+          <max>0</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>	
+  </PawnKindDef>
+
+	<!-- Тип урона для риттера -->
+ 
+	<DamageDef ParentName="BluntBase">
+	<defName>BluntStun</defName>
+	<workerClass>DamageWorker_Blunt</workerClass>
+	<bluntStunDuration>30.0</bluntStunDuration>
+    <bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+      <points>
+        <li>(2, 2)</li>
+        <li>(2, 2)</li>
+      </points>
+    </bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+    <bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+      <points>
+        <li>(2, 2)</li>
+        <li>(2, 2)</li>
+      </points>
+    </bluntStunChancePerDamagePctOfCorePartToBodyCurve>	
+	</DamageDef>
+
+    <ToolCapacityDef>
+      <defName>BluntStun</defName>
+      <label>blunt</label>
+    </ToolCapacityDef>
+
+  <ManeuverDef Name="Stun">
+    <defName>Stun</defName>
+    <requiredCapacity>BluntStun</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>BluntStun</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+	<!-- Риттер -->
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>Ritter</defName>
+    <label>Ritter</label>
+    <description>A massive bug with even more massive forelimbs. Although it cannot boast of fast movement, its frontal armor can withstand multiple hits from large-caliber weapons, and its powerful melee attack can stun the enemy for a long time. Obviously, it's best not to let it get too close to you.</description>
+    <statBases>
+      <MoveSpeed>1.75</MoveSpeed>
+	  <MeleeDodgeChance>0.10</MeleeDodgeChance>
+	  <MeleeCritChance>0.75</MeleeCritChance>
+	  <MeleeParryChance>0.32</MeleeParryChance>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <PainShockThreshold>2</PainShockThreshold>
+      <PsychicSensitivity>0</PsychicSensitivity>	  
+      <ArmorRating_Blunt>68.48</ArmorRating_Blunt>
+      <ArmorRating_Sharp>16.72</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+      <MarketValue>1200</MarketValue>
+	  <Flammability>0.2</Flammability>
+      <LeatherAmount>40</LeatherAmount>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>head claw</label>
+        <capacities>
+          <li>BluntStun</li>
+        </capacities>
+        <power>57.5</power>	
+        <cooldownTime>1.72</cooldownTime>
+		<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+		<armorPenetrationSharp>60.25</armorPenetrationSharp>
+		<armorPenetrationBlunt>120.875</armorPenetrationBlunt>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>100</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>horn</label>
+        <capacities>
+          <li>BluntStun</li>
+        </capacities>
+        <power>64</power>
+        <cooldownTime>1.25</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<armorPenetrationSharp>100.8</armorPenetrationSharp>
+		<armorPenetrationBlunt>60.12</armorPenetrationBlunt>
+        <chanceFactor>0.1</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>100</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>CE_ArmoredBeetleLikeWithClaw</body>
+      <baseBodySize>3</baseBodySize>
+      <baseHungerRate>0.45</baseHungerRate>
+      <baseHealthScale>5</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <lifeExpectancy>10</lifeExpectancy>
+      <wildness>0.6</wildness>
+      <trainability>Intermediate</trainability>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+          <soundDeath>Pawn_BigInsect_Death</soundDeath>
+          <soundCall>Pawn_BigInsect_Call</soundCall>
+          <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.12)</li>
+        <li>(0.07, 0, -0.05)</li>
+        <li>(0.0, 0, -0.08)</li>
+        <li>(-0.07, 0, -0.05)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Ritter</defName>
+    <label>Ritter</label>
+    <race>Ritter</race>
+    <combatPower>420</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.65</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Ritter/Ritter</texPath>
+          <drawSize>3.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Ritter/Dessicated_Ritter</texPath>
+          <drawSize>3.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Ritter/Ritter</texPath>
+          <drawSize>3.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Ritter/Dessicated_Ritter</texPath>
+          <drawSize>3.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Ritter/Ritter</texPath>
+          <drawSize>3.75</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Insect/Ritter/Dessicated_Ritter</texPath>
+          <drawSize>3.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

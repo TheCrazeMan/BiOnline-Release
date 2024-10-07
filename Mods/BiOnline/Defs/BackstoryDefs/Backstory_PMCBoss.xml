@@ -1,0 +1,47 @@
+<Defs>
+
+	<!-- Это на новый год, когда-нибудь у парней будут собственные предыстории, имена и вообще квартира в Дубаях, но я не нашёл нихуя как им имена установить -->
+
+<!--   <BackstoryDef ParentName="Solid">
+    <defName>TriggerChildhood</defName>
+    <title>war mongrel</title>
+    <titleShort>war mongrel</titleShort>
+    <description>[PAWN_nameDef] grew up in ruins of past civilization. [PAWN_pronoun] .</description>
+    <skillGains>
+      <Mining>3</Mining>
+      <Construction>3</Construction>
+    </skillGains>
+    <forcedTraits>
+      <Undergrounder>0</Undergrounder>
+      <QuickSleeper>0</QuickSleeper>
+    </forcedTraits>
+  </BackstoryDef>
+  
+  <BackstoryDef ParentName="Solid">
+    <defName>TriggerAdulthood</defName>
+    <title>warboss</title>
+    <titleShort>warboss</titleShort>
+    <description>[PAWN_nameDef] carved living spaces and mined minerals from the sides of hills and mountains. [PAWN_pronoun] learned to feel at home picking through rock and shoring up cave walls.</description>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>TribalMiner</li>
+    </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+    <skillGains>
+      <Mining>6</Mining>
+      <Construction>2</Construction>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Mining</li>
+    </requiredWorkTags>
+    <forcedTraits>
+      <Undergrounder>0</Undergrounder>
+      <QuickSleeper>0</QuickSleeper>
+    </forcedTraits>
+    <possessions>
+      <Jade>3</Jade>
+    </possessions>
+  </BackstoryDef> -->
+
+</Defs>

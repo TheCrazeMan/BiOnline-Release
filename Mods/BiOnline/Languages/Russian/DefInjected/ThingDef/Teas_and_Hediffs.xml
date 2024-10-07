@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Flu Tea -->
+
+	<TM_FluTea.label>Напиток от гриппа</TM_FluTea.label>
+	<TM_FluTea.description>Традиционный напиток, приготовленный из красных лепестков и лекарственных трав, требует много времени для приготовления и сравнительно быстро теряет свои свойства, если его не употреблять.\n\nЭтот особый чай часто используется для предотвращения заболевания гриппом, эффект длится долго, но немедленное действие может быть раздражающим, учитывая, что на вкус он очень неприятен.</TM_FluTea.description>
+	<TM_FluTea.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</TM_FluTea.ingestible.ingestCommandString>
+	<TM_FluTea.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</TM_FluTea.ingestible.ingestReportString>
+
+	<!-- Curative Tea -->
+
+	<TM_ImmunityTea.label>Напиток для повышения иммунитета</TM_ImmunityTea.label>
+	<TM_ImmunityTea.description>Целебный напиток из темных ягод и белых грибов, он ужасен на вкус и может даже вызвать сильное оцепенение и рвоту, но зато он дает большой прирост к скорости усиления иммунитета.</TM_ImmunityTea.description>
+	<TM_ImmunityTea.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</TM_ImmunityTea.ingestible.ingestCommandString>
+	<TM_ImmunityTea.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</TM_ImmunityTea.ingestible.ingestReportString>
+
+	<!-- Severity Tea -->
+
+	<TM_CurativeTea.label>целебный напиток</TM_CurativeTea.label>
+	<TM_CurativeTea.description>Традиционный напиток, приготовленный в основном из мухоморов, его нужно пить в горячем виде, поэтому на это требуется некоторое время.\n\nНесмотря на то, что грибы обладают прекрасными медицинскими свойствами, они также вызывают сонливость.</TM_CurativeTea.description>
+	<TM_CurativeTea.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</TM_CurativeTea.ingestible.ingestCommandString>
+	<TM_CurativeTea.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</TM_CurativeTea.ingestible.ingestReportString>
+
+	<!-- Digestive Tea -->
+
+	<TM_DigestiveTea.label>Напиток для улучшения пищеварения</TM_DigestiveTea.label>
+	<TM_DigestiveTea.description>Целебный напиток из отваров и сильно разваренных корней, его долго готовить и очень противно пить, но он очень помогает смягчить последствия пищевого отравления, а также уменьшить чувство голода, улучшить обмен веществ и предотвратить пищевые отравления в будущем.</TM_DigestiveTea.description>
+	<TM_DigestiveTea.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</TM_DigestiveTea.ingestible.ingestCommandString>
+	<TM_DigestiveTea.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</TM_DigestiveTea.ingestible.ingestReportString>
+
+	<!-- Hallucination Tea -->
+
+	<TM_HallucinationTea.label>галлюциногенный напиток</TM_HallucinationTea.label>
+	<TM_HallucinationTea.description>Традиционный напиток, приготовленный из психолистьев, темных ягод и мухоморов. Последние должны пройти через процесс кипячения, чтобы усилить свойства галлюциногенов.\n\nЭтот чай используется племенными народами как метод релаксации и медитации, он вызывает состояние счастья и психической силы, однако снижает контроль над телом и делает пользователя гораздо более чувствительным к боли.</TM_HallucinationTea.description>
+	<TM_HallucinationTea.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</TM_HallucinationTea.ingestible.ingestCommandString>
+	<TM_HallucinationTea.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</TM_HallucinationTea.ingestible.ingestReportString>
+
+	<!-- Insanity Tea -->
+
+	<TM_InsanityTea.label>Напиток для безумия</TM_InsanityTea.label>
+	<TM_InsanityTea.description>Местный напиток, приготовленный из концентрированного отвара белых грибов и дымолиста, эти два ингредиента при совместном кипячении вступают в странную химическую реакцию.\n\nЭтот чай используется некоторыми древними племенами как способ "очищения души". Чай заставляет пользователя провести день или два в состоянии полного безумия, но после того, как действие чая усваивается организмом и пользователь возвращается к своему нормальному состоянию, многие люди говорили, что чувствуют себя гораздо более счастливыми и что теперь они понимают цель жизни. Некоторые люди также говорили, что теперь они живут в кошмаре и покончили жизнь самоубийством.</TM_InsanityTea.description>
+	<TM_InsanityTea.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</TM_InsanityTea.ingestible.ingestCommandString>
+	<TM_InsanityTea.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</TM_InsanityTea.ingestible.ingestReportString>
+
+	<!-- Hunger Tea -->
+
+	<TM_HungerTea.label>Напиток от голода</TM_HungerTea.label>
+	<TM_HungerTea.description>Густой напиток из высушенных красных лепестков и кожи животных. Красные лепестки выделяют странное вещество, которое вступает в реакцию с клетками кожи животных, что позволяет создать этот чай.\n\nПри употреблении чая человек испытывает странные ощущения в кишечнике, которые причиняют боль, если он слишком много двигается. Это происходит потому, что чай медленно помогает организму перерабатывать кислород и собственные экскременты в питательные вещества для поддержания жизни человека.\n\nЭтот чай обычно используется племенами, чтобы пережить голод.</TM_HungerTea.description>
+	<TM_HungerTea.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</TM_HungerTea.ingestible.ingestCommandString>
+	<TM_HungerTea.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</TM_HungerTea.ingestible.ingestReportString>
+
+	<!--Ягодная брага-->
+	
+	<Berry_braga.label>Ягодная брага</Berry_braga.label>
+	<Berry_braga.description>Брага имеет ярко-фиолетовый цвет и приятный аромат свежих ягод, который сразу же пробуждает вкусовые рецепторы. Этот напиток идеально подходит для тех, кто любит сладкие и фруктовые напитки, и кто хочет насладиться настоящей ягодной атмосферой.</Berry_braga.description>
+	<Berry_braga.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</Berry_braga.ingestible.ingestCommandString>
+	<Berry_braga.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</Berry_braga.ingestible.ingestReportString>	
+	
+	<!--Сома-->
+	
+	<Soma.label>Сома</Soma.label>
+	<Soma.description>Вкус сомы является сложным и многогранным, с тонкими нотками горького и сладкого, с легкой горчинкой и пряностями. Этот напиток идеально подходит для тех, кто хочет окунуться в атмосферу древних традиций и насладиться сложным и глубоким вкусом.</Soma.description>
+	<Soma.ingestible.ingestCommandString>Пить {lookup: {0}; Case; 3}</Soma.ingestible.ingestCommandString>
+	<Soma.ingestible.ingestReportString>Пьёт {lookup: {0}; Case; 3}</Soma.ingestible.ingestReportString>
+</LanguageData>

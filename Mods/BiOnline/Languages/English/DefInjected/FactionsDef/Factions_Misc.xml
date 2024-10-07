@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+<PlayerMedieval.label>kingdom</PlayerMedieval.label>
+<PlayerMedieval.description>That's your kingdom!</PlayerMedieval.description>
+<PlayerMedieval.leaderTitle>ruler</PlayerMedieval.leaderTitle>
+<PlayerMedieval.pawnSingular>settler</PlayerMedieval.pawnSingular>
+<PlayerMedieval.pawnsPlural>settlers</PlayerMedieval.pawnsPlural>
+
+</LanguageData>

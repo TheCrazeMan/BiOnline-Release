@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+            <operations>
+
+				<!--Маленький станок для мехов-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Fabricor"]</xpath>
+					<value>
+					
+						<RecipeDef ParentName="LightMechanoidRecipe">
+							<defName>Fabricor</defName>
+							<label>gestate fabricor</label>
+							<description>Gestate a fabricor mechanoid.</description>
+							<researchPrerequisite>HighMechtech</researchPrerequisite>
+							<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Glass</li>
+								  </thingDefs>
+								</filter>
+								<count>40</count>
+							  </li>							
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Plasteel</li>
+								  </thingDefs>
+								</filter>
+								<count>100</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>ComponentIndustrial</li>
+								  </thingDefs>
+								</filter>
+								<count>2</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Copper</li>
+								  </thingDefs>
+								</filter>
+								<count>15</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>SubcoreHigh</li>
+								  </thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+							<products>
+							  <Mech_Fabricor>1</Mech_Fabricor>
+							</products>
+							<descriptionHyperlinks>
+							  <ThingDef>Mech_Fabricor</ThingDef>
+							</descriptionHyperlinks>
+						</RecipeDef>					
+					
+					</value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Paramedic"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="LightMechanoidRecipe">
+						<defName>Paramedic</defName>
+						<label>gestate paramedic</label>
+						<description>Gestate a paramedic mechanoid.</description>
+						<researchPrerequisite>HighMechtech</researchPrerequisite>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>40</count>
+							  </li>							
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Plasteel</li>
+							  </thingDefs>
+							</filter>
+							<count>100</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>2</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>15</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreHigh</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_Paramedic>1</Mech_Paramedic>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_Paramedic</ThingDef>
+						</descriptionHyperlinks>
+					  </RecipeDef>					
+					
+					</value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[@Name="LightMechanoidRecipe"]</xpath>
+					<value>
+					
+						  <RecipeDef Name="LightMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+							<researchPrerequisite>BasicMechtech</researchPrerequisite>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Glass</li>
+								  </thingDefs>
+								</filter>
+								<count>40</count>
+							  </li>								
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Plasteel</li>
+								  </thingDefs>
+								</filter>
+								<count>50</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>ComponentIndustrial</li>
+								  </thingDefs>
+								</filter>
+								<count>2</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Copper</li>
+								  </thingDefs>
+								</filter>
+								<count>15</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>SubcoreBasic</li>
+								  </thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+						  </RecipeDef>					
+					
+					</value>
+                </li>
+
+				<!--Большой мех станок-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Scyther"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="MediumMechanoidRecipe">
+						<defName>Scyther</defName>
+						<label>gestate scyther</label>
+						<description>Gestate a scyther mechanoid.</description>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>40</count>
+							  </li>							
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>75</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysCeramite</li>
+							  </thingDefs>
+							</filter>
+							<count>15</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>4</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreRegular</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_Scyther>1</Mech_Scyther>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_Scyther</ThingDef>
+						</descriptionHyperlinks>
+					  </RecipeDef>				
+					
+					</value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Tunneler"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="HeavyMechanoidRecipe">
+						<defName>Tunneler</defName>
+						<label>gestate tunneler</label>
+						<description>Gestate a tunneler mechanoid.</description>
+						<researchPrerequisite>StandardMechtech</researchPrerequisite>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>40</count>
+							  </li>						
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>150</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysCeramite</li>
+							  </thingDefs>
+							</filter>
+							<count>15</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>4</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreRegular</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_Tunneler>1</Mech_Tunneler>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_Tunneler</ThingDef>
+						</descriptionHyperlinks>
+					  </RecipeDef>		
+					
+					</value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Pikeman"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="MediumMechanoidRecipe">
+						<defName>Pikeman</defName>
+						<label>gestate pikeman</label>
+						<description>Gestate a pikeman mechanoid.</description>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>60</count>
+							  </li>						
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>100</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>4</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreRegular</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_Pikeman>1</Mech_Pikeman>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_Pikeman</ThingDef>
+						</descriptionHyperlinks>
+					  </RecipeDef>			
+					
+					</value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Lancer"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="MediumMechanoidRecipe">
+						<defName>Lancer</defName>
+						<label>gestate lancer</label>
+						<description>Gestate a lancer mechanoid.</description>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>75</count>
+							  </li>						
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>75</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>4</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreRegular</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_Lancer>1</Mech_Lancer>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_Lancer</ThingDef>
+						</descriptionHyperlinks>
+						<researchPrerequisite>HighMechtech</researchPrerequisite>
+					  </RecipeDef>			
+					
+					</value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[@Name="CentipedeMechanoidRecipe"]</xpath>
+					<value>
+					
+					  <RecipeDef Name="CentipedeMechanoidRecipe" ParentName="HeavyMechanoidRecipe" Abstract="True">
+						<gestationCycles>6</gestationCycles>
+						<researchPrerequisite>HighMechtech</researchPrerequisite>
+						<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>120</count>
+							  </li>						
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>255</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>120</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>125</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>8</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreHigh</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+					  </RecipeDef>			
+					
+					</value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="CentipedeBlaster"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="CentipedeMechanoidRecipe">
+						<defName>CentipedeBlaster</defName>
+						<label>gestate centipede blaster</label>
+						<description>Gestate a centipede mechanoid armed with a heavy charge blaster.</description>
+						<researchPrerequisite>UltraMechtech</researchPrerequisite>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>120</count>
+							  </li>						
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>255</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>140</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>125</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>8</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreHigh</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_CentipedeBlaster>1</Mech_CentipedeBlaster>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_CentipedeBlaster</ThingDef>
+						</descriptionHyperlinks>
+					  </RecipeDef>			
+					
+					</value>
+                </li>
+				<!-- Legionary & Tesseron mechs -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[@Name="WalkerMediumMechanoidRecipe"]</xpath>
+					<value>
+					
+						<RecipeDef Name="WalkerMediumMechanoidRecipe" ParentName="MediumMechanoidRecipe" Abstract="True">
+							<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>65</count>
+							  </li>							
+							<li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>50</count>
+							</li>
+							<li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+							</li>
+							<li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>6</count>
+							</li>
+							<li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreHigh</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+							</li>
+							</ingredients>
+							<researchPrerequisite>UltraMechtech</researchPrerequisite>
+							<gestationCycles>4</gestationCycles>
+						</RecipeDef>		
+					
+					</value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Tesseron"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="WalkerMediumMechanoidRecipe">
+						<defName>Tesseron</defName>
+						<label>gestate tesseron</label>
+						<description>Gestate a tesseron mechanoid.</description>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>65</count>
+							  </li>						
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>60</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>7</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreHigh</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_Tesseron>1</Mech_Tesseron>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_Tesseron</ThingDef>
+						</descriptionHyperlinks>
+					  </RecipeDef>			
+					
+					</value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Scorcher"]</xpath>
+					<value>
+					
+					  <RecipeDef ParentName="MediumMechanoidRecipe">
+						<defName>Scorcher</defName>
+						<label>gestate scorcher</label>
+						<description>Gestate a scorcher mechanoid.</description>
+						<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>45</count>
+							  </li>						
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Steel</li>
+							  </thingDefs>
+							</filter>
+							<count>80</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>AlloysMithril</li>
+							  </thingDefs>
+							</filter>
+							<count>32</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>Copper</li>
+							  </thingDefs>
+							</filter>
+							<count>35</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>ComponentIndustrial</li>
+							  </thingDefs>
+							</filter>
+							<count>3</count>
+						  </li>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>SubcoreRegular</li>
+							  </thingDefs>
+							</filter>
+							<count>1</count>
+						  </li>
+						</ingredients>
+						<products>
+						  <Mech_Scorcher>1</Mech_Scorcher>
+						</products>
+						<descriptionHyperlinks>
+						  <ThingDef>Mech_Scorcher</ThingDef>
+						</descriptionHyperlinks>
+					  </RecipeDef>			
+					
+					</value>
+                </li>
+
+
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Diabolus"]</xpath>
+					<value>
+						
+						<RecipeDef ParentName="HeavyMechanoidRecipe">
+							<defName>Diabolus</defName>
+							<label>gestate diabolus</label>
+							<description>Gestate a diabolus mech.</description>
+							<gestationCycles>12</gestationCycles>
+							<researchPrerequisite>HighMechtech</researchPrerequisite>
+							<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>120</count>
+							  </li>							
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Steel</li>
+								  </thingDefs>
+								</filter>
+								<count>300</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>AlloysMithril</li>
+								  </thingDefs>
+								</filter>
+								<count>150</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Copper</li>
+								  </thingDefs>
+								</filter>
+								<count>135</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>ComponentSpacer</li>
+								  </thingDefs>
+								</filter>
+								<count>3</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>SignalChip</li>
+								  </thingDefs>
+								</filter>
+								<count>2</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>SubcoreHigh</li>
+								  </thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+							<products>
+							  <Mech_Diabolus>1</Mech_Diabolus>
+							</products>
+							<descriptionHyperlinks>
+							  <ThingDef>Mech_Diabolus</ThingDef>
+							</descriptionHyperlinks>
+						</RecipeDef>			
+					
+					</value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Centurion"]</xpath>
+					<value>
+					
+						<RecipeDef ParentName="SuperHeavyMechanoidRecipe">
+							<defName>Centurion</defName>
+							<label>gestate centurion</label>
+							<description>Gestate a centurion mechanoid.</description>
+							<products>
+							  <Mech_Centurion>1</Mech_Centurion>
+							</products>
+							<descriptionHyperlinks>
+							  <ThingDef>Mech_Centurion</ThingDef>
+							</descriptionHyperlinks>
+							<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>65</count>
+							  </li>							
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Steel</li>
+								  </thingDefs>
+								</filter>
+								<count>300</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>AlloysMithril</li>
+								  </thingDefs>
+								</filter>
+								<count>100</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Copper</li>
+								  </thingDefs>
+								</filter>
+								<count>135</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>ComponentSpacer</li>
+								  </thingDefs>
+								</filter>
+								<count>3</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>PowerfocusChip</li>
+								  </thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>SubcoreHigh</li>
+								  </thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+						</RecipeDef>			
+						
+					</value>
+                </li>
+				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Warqueen"]</xpath>
+					<value>
+					
+						<RecipeDef ParentName="SuperHeavyMechanoidRecipe">
+							<defName>Warqueen</defName>
+							<label>gestate war queen</label>
+							<description>Gestate a war queen mechanoid.</description>
+							<products>
+							  <Mech_Warqueen>1</Mech_Warqueen>
+							</products>
+							<descriptionHyperlinks>
+							  <ThingDef>Mech_Warqueen</ThingDef>
+							</descriptionHyperlinks>
+							<ingredients Inherit="False">
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>HardenedGlass</li>
+								  </thingDefs>
+								</filter>
+								<count>150</count>
+							  </li>							
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Steel</li>
+								  </thingDefs>
+								</filter>
+								<count>600</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>AlloysMithril</li>
+								  </thingDefs>
+								</filter>
+								<count>150</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>Copper</li>
+								  </thingDefs>
+								</filter>
+								<count>235</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>ComponentSpacer</li>
+								  </thingDefs>
+								</filter>
+								<count>6</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>NanostructuringChip</li>
+								  </thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>SubcoreHigh</li>
+								  </thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+						</RecipeDef>			
+					
+					</value>
+                </li>
+				
+				
+				<!--Еда-->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="Make_BabyFood" or defName="Make_BabyFoodBulk"]</xpath>
+					<value>
+					
+						<researchPrerequisite>CookingIII</researchPrerequisite>
+					
+					</value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="CookMealSimple" or defName="CookMealSimpleBulk"]</xpath>
+					<value>
+					
+						<researchPrerequisite>CookingI</researchPrerequisite>
+					
+					</value>
+                </li>
+				
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="CookMealFine" or defName="CookMealFineBulk" or defName="CookMealFine_Veg" or defName="CookMealFineBulk_Veg" or defName="CookMealFineBulk_Meat" or defName="CookMealFineBulk_Meat"]</xpath>
+					<value>
+					
+						<researchPrerequisite>CookingII</researchPrerequisite>
+					
+					</value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="CookMealLavish" or defName="CookMealLavishBulk" or defName="CookMealLavish_Meat" or defName="CookMealLavishBulk_Meat" or defName="CookMealLavish_Veg" or defName="CookMealLavishBulk_Veg"]</xpath>
+					<value>
+					
+						<researchPrerequisite>CookingIII</researchPrerequisite>
+					
+					</value>
+                </li>					
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]/ingredients/li/count</xpath>
+					<value>
+						<count>210</count>
+					</value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/ingredients/li/count</xpath>
+					<value>
+						<count>14</count>
+					</value>
+                </li>
+				
+            </operations>
+        </match>
+    </Operation>
+</Patch>

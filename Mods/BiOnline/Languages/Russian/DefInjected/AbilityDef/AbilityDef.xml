@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Псикасты-->
+	<WordOfSerenity_PSY.label>слово безмятежности</WordOfSerenity_PSY.label>
+	<WordOfSerenity_PSY.description>Произнести умиротворяющие слова, психически воздействующие на сознание, чтобы прекратить нервный срыв человека или животного. Цель после этого ненадолго погрузится в пси-сон. Необходимое количество пси-концентрации зависит от тяжести нервного срыва цели.</WordOfSerenity_PSY.description>
+	
+	<WordOfTrust_PSY.label>Слово доверия</WordOfTrust_PSY.label>
+	<WordOfTrust_PSY.description>Поговорить с пленником, психически воздействуя на его сознание, чтобы снизить сопротивление вербовке. Для осуществления непосредственно вербовки эта способность не применяется.</WordOfTrust_PSY.description>
+	
+	<Stun_PSY.label>оглушение</Stun_PSY.label>
+	<Stun_PSY.description>Мгновенно нарушает двигательные функции цели, не давая ей двигаться.</Stun_PSY.description>
+	
+	<Focus_PSY.label>пси-фокусировка</Focus_PSY.label>
+	<Focus_PSY.description>Психически вызванная ментальная фокусировка, улучшающая зрение, слух и возможности перемещения.</Focus_PSY.description>
+	
+	<BlindingPulse_PSY.label>ослепляющая волна</BlindingPulse_PSY.label>
+	<BlindingPulse_PSY.description>Нарушает работу зрительных центров мозга и временно ослепляет всех, кто находится рядом с указанным местом.</BlindingPulse_PSY.description>
+	
+	<!-- Способности кибер-имплантов -->
+	
+	<LongjumpFoot.label>Прыжок</LongjumpFoot.label>
+	<LongjumpFoot.description>Позволяет прыгнуть вплоть до 10 клеток. Позволяет перепрыгивать даже через очень высокие объекты.</LongjumpFoot.description>
+	
+	<FireSpear.label>Огненный заряд</FireSpear.label>
+	<FireSpear.description>Одноразовый способ кого-то поджарить. Будьте внимательны!</FireSpear.description>
+	
+</LanguageData>

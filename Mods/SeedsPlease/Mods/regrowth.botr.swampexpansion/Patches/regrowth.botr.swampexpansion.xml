@@ -1,0 +1,10 @@
+<Patch>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RG_Plant_SychiCap"]/plant/harvestedThingDef</xpath>
+        <value>
+            <harvestedThingDef>SychiCapFungus</harvestedThingDef>
+        </value>
+    </Operation>
+
+</Patch>

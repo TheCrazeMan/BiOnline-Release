@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!--Ивент мим-->
+
+	<VillagerMim.label>Житель</VillagerMim.label>
+	<VillagerMim.labelFemale>Жительница</VillagerMim.labelFemale>
+	<VillagerMim.labelMale>Житель</VillagerMim.labelMale>
+	<VillagerMim.labelPlural>Жители</VillagerMim.labelPlural>
+
+	<Mim.label>Мим</Mim.label>
+	<Mim.labelFemale>Мим</Mim.labelFemale>
+	<Mim.labelMale>Мим</Mim.labelMale>
+	<Mim.labelPlural>Мимы</Mim.labelPlural>
+
+	<!--MapEditor-->
+
+	<Thug.label>Вышибала</Thug.label>
+	<Thug.labelFemale>Вышибала</Thug.labelFemale>
+	<Thug.labelMale>Вышибала</Thug.labelMale>
+	<Thug.labelPlural>Вышибалы</Thug.labelPlural>
+
+	<Cultist.label>Культист</Cultist.label>
+	<Cultist.labelFemale>Культист</Cultist.labelFemale>
+	<Cultist.labelMale>Культист</Cultist.labelMale>
+	<Cultist.labelPlural>Культисты</Cultist.labelPlural>
+
+	<CapturedHighmate.label>Захваченный ангел</CapturedHighmate.label>
+	<CapturedHighmate.labelFemale>ангел</CapturedHighmate.labelFemale>
+	<CapturedHighmate.labelMale>ангел</CapturedHighmate.labelMale>
+	<CapturedHighmate.labelPlural>Захваченные ангелы</CapturedHighmate.labelPlural>
+
+	<Umom.label>Умом</Umom.label>
+	<Umom.labelFemale>умка</Umom.labelFemale>
+	<Umom.labelMale>умом</Umom.labelMale>
+	<Umom.labelPlural>Умомы</Umom.labelPlural>
+	
+	<WasterDrugDealer.label>Мусорщик наркоторговец</WasterDrugDealer.label>
+	<WasterDrugDealer.labelFemale>наркоторговец</WasterDrugDealer.labelFemale>
+	<WasterDrugDealer.labelMale>наркоторговец</WasterDrugDealer.labelMale>
+	<WasterDrugDealer.labelPlural>Мусорщики наркоторговцы</WasterDrugDealer.labelPlural>
+	
+	<FarmerKikimor.label>фермер</FarmerKikimor.label>
+
+	<!--Жуки-->
+
+	<Bomber.label>Бомбардир</Bomber.label>
+	<Bomber.labelFemale>Бомбардир</Bomber.labelFemale>
+	<Bomber.labelMale>Бомбардир</Bomber.labelMale>
+	<Bomber.labelPlural>Бомбардиры</Bomber.labelPlural>
+
+	<Equite.label>Эквит</Equite.label>
+	<Equite.labelFemale>Эквит</Equite.labelFemale>
+	<Equite.labelMale>Эквит</Equite.labelMale>
+	<Equite.labelPlural>Эквиты</Equite.labelPlural>
+
+	<Ritter.label>Риттер</Ritter.label>
+	<Ritter.labelFemale>Риттер</Ritter.labelFemale>
+	<Ritter.labelMale>Риттер</Ritter.labelMale>
+	<Ritter.labelPlural>Риттеры</Ritter.labelPlural>  
+
+	<!--Свободное королевство-->
+
+	<Medieval_Archer.label>Лучник</Medieval_Archer.label>
+	<Medieval_CrossbowmanLight.label>Лёгкий арбалетчик</Medieval_CrossbowmanLight.label>
+	<Medieval_Grenadier.label>Гренадёр</Medieval_Grenadier.label>
+	<Medieval_Warrior.label>Воин</Medieval_Warrior.label>
+	<Medieval_Musketeers.label>Мушкетёр</Medieval_Musketeers.label>
+	<Medieval_ShieldWarrior.label>Воин</Medieval_ShieldWarrior.label>
+	<Medieval_CrossbowmanHeavy.label>Тяжёлый арбалетчик</Medieval_CrossbowmanHeavy.label>
+	<Medieval_WarriorTwoHandled.label>Воин</Medieval_WarriorTwoHandled.label>
+	<Medieval_Bombardier.label>Бомбардир</Medieval_Bombardier.label>
+
+	<!-- Хламовники -->
+	<Scum.label>Отброс</Scum.label>
+	<TrasherMelee.label>Хламовник</TrasherMelee.label>
+	<TrasherSlaughter.label>Хламовник-убийца</TrasherSlaughter.label>
+	<TrasherKadavrElite.label>Элитный хламовник</TrasherKadavrElite.label>
+	<TrasherGunner.label>Хламовник с пушкой</TrasherGunner.label>
+	<TrasherRanger.label>Хламовник-стрелок</TrasherRanger.label>
+	<TrasherElite.label>Элитный хламовник</TrasherElite.label>
+	<TrasherGrenadier.label>Хламовник-гренадёр</TrasherGrenadier.label>
+	<TrasherHeavy.label>Тяжёлый хламовник</TrasherHeavy.label>
+	
+	<!-- ЧВК ЧВК ЧВК -->
+	
+	<PMC_Boss_Trigger.label>Курок</PMC_Boss_Trigger.label>
+	<PMC_RequestedElite_Sniper.label>элитный снайпер</PMC_RequestedElite_Sniper.label>
+	<PMC_RequestedElite_Heavy.label>элитный тяжёлый боец</PMC_RequestedElite_Heavy.label>
+	<PMC_RequestedElite_Assaulter.label>элитный штурмовик</PMC_RequestedElite_Assaulter.label>
+	<PMC_RequestedElite_Melee.label>элитный боец ближнего боя</PMC_RequestedElite_Melee.label>
+	<PMC_RequestedMedic.label>парамедик</PMC_RequestedMedic.label>
+	<PMC_RequestedEMP_II.label>эми-боец</PMC_RequestedEMP_II.label>
+	<PMC_RequestedEMP_I.label>эми-боец</PMC_RequestedEMP_I.label>
+	<PMC_RequestedArmorPiercier.label>пт боец</PMC_RequestedArmorPiercier.label>
+	<PMC_RequestedGrenadier.label>гранатомётчик</PMC_RequestedGrenadier.label>
+	<PMC_RequestedSniper.label>снайпер</PMC_RequestedSniper.label>
+	<PMC_RequestedTrooper_II.label>пехотинец</PMC_RequestedTrooper_II.label>
+	<PMC_RequestedTrooper_I.label>новобранец</PMC_RequestedTrooper_I.label>
+	
+	
+	<Bandit_Scav.label>Бандит</Bandit_Scav.label>
+	<Kadavr.label>Кадавр</Kadavr.label>
+
+	<!--Животные-->
+	<Alligator.label>Аллигатор</Alligator.label>
+	<Alligator.description>Аллигатор — это крупный рептилия, обитающий в пресноводных водно-болотных угодьях. Они являются хищниками на вершине пищевой цепи и питаются рыбой, земноводными, рептилиями, птицами и млекопитающими. Как и другие крокодилы, здоровые аллигаторы могут продолжать расти на протяжении всей своей жизни.</Alligator.description>
+
+	<Badger.label>барсук</Badger.label>
+	<Badger.description>Барсуки — это небольшие ночные млекопитающие с плоскими клинообразными телами, широкими лапами с длинными когтями и грубой шерстью. Барсуки обладают сильными конечностями и острыми когтями, которые помогают им рыть норы и находить пищу под землей. Они всеядны, и их рацион в основном состоит из дождевых червей, насекомых, личинок и мелких животных, таких как ежи и кролики.</Badger.description>
+
+	<BlackBear.label>барибал</BlackBear.label>
+	<BlackBear.description>Млекопитающее среднего размера, приспособленное к холодному климату. Толстый слой жира и шерсти медведей согревает их зимой.\n\nХотя их обычный рацион состоит из рыбы, ягод, меда и падали, черный медведь способен использовать свою массивную силу и смертельные когти, чтобы убить живую добычу. Они удивительно быстры для таких массивных существ.</BlackBear.description>
+
+	<Camel.label>верблюд</Camel.label>
+	<Camel.description>Крупное наземное млекопитающее, приспособленное к засушливым условиям. Одомашненные с древних времен, их шерсть и кожа обладают исключительными теплоизоляционными свойствами в условиях пустыни, а их молоко весьма питательно. Верблюд может использоваться как вьючное животное, но два горба делают его чрезвычайно неудобным для верховой езды.\n\nБлагодаря запасу воды в своих крупных горбах и возвращению влаги из дыхания при выдохе, он может обходиться без питья в течение нескольких недель.</Camel.description>
+
+	<CatBritishShorthair.label>британская короткошерстная кошка</CatBritishShorthair.label>
+	<CatBritishShorthair.description>Породистая версия обычной британской кошки с характерно коренастым телом, густой шерстью и очень широкой мордой. Несмотря на свой мощный вид из-за большой груди и массивных лап, эти кошки абсолютно безвредны. https://goo.su/ep67Rs</CatBritishShorthair.description>
+
+	<Hedgehog.label>ёж</Hedgehog.label>
+	<Hedgehog.description>Ежи — это небольшие млекопитающие с конической мордой, короткими ногами и телом, покрытым иглами, похожими на иглы дикобраза. В случае опасности ёж сворачивается в клубок, так что иглы покрывают всю его открытую поверхность тела и защищают его от хищников.</Hedgehog.description>
+
+	<Crocodile.label>крокодил</Crocodile.label>
+	<Crocodile.description>Крупное полуводное рептилия, чаще всего встречающаяся на берегах рек. Его хищные инстинкты в сочетании с чрезвычайно мощной челюстью позволяют ему справляться с гораздо более крупной добычей. Старые крокодилы могут вырастать до чудовищных размеров.</Crocodile.description>
+
+	<Giraffe.label>жираф</Giraffe.label>
+	<Giraffe.description>Жираф — одно из самых высоких млекопитающих в галактике, использующее свою длинную шею, чтобы дотянуться до листьев и веток, недоступных для более мелких травоядных.</Giraffe.description>
+
+	<Gorilla.label>горилла</Gorilla.label>
+	<Gorilla.description>Эти обитающие на земле травоядные обезьяны являются крупнейшими из ныне живущих приматов и ближайшими живыми родственниками человека после шимпанзе и бонобо. Как и у всех человекообразных обезьян, руки гориллы длиннее её ног. Гориллы обычно удивительно робки, хотя могут проявлять агрессию, колотя себя в грудь и бросаясь на противника, если их социальная группа находится под угрозой.</Gorilla.description>
+
+	<DesertTortoise.label>пустынная черепаха</DesertTortoise.label>
+	<DesertTortoise.description>Эта сильно бронированная рептилия, обитающая в пустыне, известна своей медлительностью и чрезвычайно прочным, плоским куполообразным панцирем, который делает её трудной для убийства. Несмотря на свой небольшой размер, пустынные черепахи являются отличными боевыми животными и относительно легко приручаются.</DesertTortoise.description>
+
+	<Hippopotamus.label>бегемот</Hippopotamus.label>
+	<Hippopotamus.description>Массивное полуводное копытное млекопитающее с толстой кожей и очень мощной челюстью.\n\nЧрезвычайно трудно приручить, эти чудовищные существа часто нападают при неудачных попытках.</Hippopotamus.description>
+
+	<Hyena.label>гиена</Hyena.label>
+	<Hyena.description>Крупное плотоядное, напоминающее собаку, чаще всего встречающееся в кустарниковых и пустынных районах. Гиены часто фигурируют в племенных легендах, а их смех может наводить страх во время длинных ночей в пустыне.</Hyena.description>
+
+	<Jaguar.label>ягуар</Jaguar.label>
+	<Jaguar.description>Крупный представитель семейства кошачьих и единственный существующий представитель рода Panthera, обитающий в Америке на старой Земле. Эта пятнистая кошка напоминает леопарда, но обычно больше и крепче. Ягуар любит плавать и в основном ведет одиночный, оппортунистический образ жизни, охотясь из засады на вершине пищевой цепи.</Jaguar.description>
+
+	<Kangaroo.label>кенгуру</Kangaroo.label>
+	<Kangaroo.description>Кенгуру — крупное сумчатое размером с человека с сильными ногами и мощными руками. Племенные охотники предпочитают кенгуру из-за его нежного мяса и жаростойкой кожи. Кенгуру становятся мощными противниками в ближнем бою и легко обучаются, превращаясь в суперсолдат.</Kangaroo.description>
+
+	<Koala.label>коала</Koala.label>
+	<Koala.description>Коалы легко узнаваемы по коренастому телу и большой круглой голове с пушистыми ушами. Они обычно обитают в засушливых и умеренных лесах, но их редко можно встретить в тропических районах. Коалы, любимцы королевских семей, являются отличными домашними животными благодаря их нежности.</Koala.description>
+
+	<Lemur.label>лемур</Lemur.label>
+	<Lemur.description>Маленький примат, лемуры ведут древесный и обычно ночной образ жизни. У них заостренная морда, большие глаза и длинный хвост. Несмотря на то, что они являются социальными существами, традиционно их считают менее умными, чем другие приматы, поскольку они не используют инструменты в дикой природе.</Lemur.description>
+
+	<Lion.label>лев</Lion.label>
+	<Lion.description>Царь животного мира, лев — это мускулистая кошка с глубокой грудью, короткой головой и заметной гривой. Будучи самой крупной из кошачьих, львы являются отличными боевыми животными, несмотря на свою дикую природу.</Lion.description>
+
+	<Megascorpion.label>мегаскорпион</Megascorpion.label>
+	<Megascorpion.description>Гигантский генетически модифицированный скорпион. Изначально созданный как идеальное оружие для убийств, он редко возвращается в свою естественную среду обитания — пустыню. Очень мощный яд в его жале помогает ему справляться даже с гораздо более крупной добычей. Как социальное существо, он не может размножаться в одиночку.</Megascorpion.description>
+
+	<Moose.label>лось</Moose.label>
+	<Moose.description>Крупнейший и самый тяжелый представитель семейства оленевых, хорошо адаптированный к жизни в холодном климате. Легко опознается по размеру рогов и длинным тонким ногам. Не может нести грузы, но прирученные лоси могут давать молоко. В отличие от большинства других видов оленей, лоси не образуют стада и ведут одиночный образ жизни. Хотя они обычно медлительны и малоподвижны, лоси могут становиться агрессивными и двигаться быстро, если их разозлить или напугать.</Moose.description>
+
+	<Pallas_cat.label>манул</Pallas_cat.label>
+	<Pallas_cat.description>Коренастая кошка размером с обычную домашнюю кошку, но гораздо более дикая. Адаптированный к прятанию в каменных расщелинах в родных степях, манул стал популярным как уничтожитель вредителей в различных укромных уголках космических кораблей.</Pallas_cat.description>
+
+	<Pug.label>мопс</Pug.label>
+	<Pug.description>Маленькая собака с физически отличительными чертами: морщинистая, короткомордая мордочка и закрученный хвост. Мопсы известны своей чрезвычайной общительностью и дружелюбностью, однако из-за многолетних генетических изменений у них очень короткая продолжительность жизни. Какую бы жизнь они ни проживали, они всегда будут радовать окружающих.</Pug.description>
+
+	<Seal.label>тюлень</Seal.label>
+	<Seal.description>Среднего размера полуводное млекопитающее, которое выходит на берег только для того, чтобы поесть, спариться и спастись от хищников. Будучи агрессивным охотником, тюлени способны справляться с гораздо более крупной добычей и известны каннибализмом в случае нехватки пищи.</Seal.description>
+
+	<Tiger.label>тигр</Tiger.label>
+	<Tiger.description>Тигр — крупнейший вид среди больших кошек. Его легко узнать по темным вертикальным полосам на рыжевато-оранжевой шерсти с более светлым низом. Он является хищником на вершине пищевой цепи, территориален и, как правило, одиночка. В дикой природе тигры в основном питаются крупными и средними млекопитающими.</Tiger.description>
+
+	<Walrus.label>морж</Walrus.label>
+	<Walrus.description>Крупное морское животное, встречающееся только в арктических регионах планеты, морж имеет выдающиеся клыки, которые являются ценным предметом роскоши по всей планете.</Walrus.description>
+
+	<Wildebeest.label>гну</Wildebeest.label>
+	<Wildebeest.description>Также называемый гну, этот дикий бык получил свое название благодаря угрожающим рогам, заостренной бороде и большой голове. Эти животные известны своими миграциями и размером своих стад.\n\nИз-за своей дикости он дает молоко гораздо медленнее, чем обычная корова.</Wildebeest.description>
+
+	<Zebra.label>зебра</Zebra.label>
+	<Zebra.description>Представитель семейства лошадиных, обитающий в засушливых и пустынных районах. Хотя она и не имеет таких размеров, как лошадь, благодаря годам эволюции она стала одним из самых быстрых копытных животных.</Zebra.description>
+
+
+</LanguageData>

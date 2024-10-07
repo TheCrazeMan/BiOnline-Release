@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Human">
+		<defName>Kadavr</defName>
+		<label>Kadavr</label>
+		<description>NEED</description>
+		<statBases>
+			<MarketValue>1100</MarketValue>
+			<MoveSpeed>4.6</MoveSpeed>
+			<Flammability>0.30</Flammability>
+		</statBases>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>teeth</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					<chanceFactor>0.07</chanceFactor>
+					<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+					<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+					<armorPenetrationSharp>0.15</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>4.49</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+				</li>
+			</tools>
+		<alienRace Inherit="False">
+			<generalSettings>
+				<alienPartGenerator>
+					<customDrawSize>1.0,1.0</customDrawSize>
+					<bodyTypes>
+						<li>Male</li>
+						<li>Female</li>
+						<li>Thin</li>
+					</bodyTypes>
+					<headTypes>
+					  <li>Male_AverageNormal</li>
+					  <li>Female_AverageNormal</li>
+					</headTypes>					
+				</alienPartGenerator>
+				<immuneToAge>false</immuneToAge>
+				<allowHumanBios>false</allowHumanBios>				
+			</generalSettings>
+			<graphicPaths>
+				<body>Things/Pawn/Humanlike/Kadavr/Body/</body>
+				<head>Things/Pawn/Humanlike/Kadavr/Head/</head>
+				<skeleton>Things/Pawn/Humanlike/HumanoidDessicated</skeleton>
+				<skull>Things/Pawn/Humanlike/Heads/None_Average_Skull</skull>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>		
+			<thoughtSettings>
+				<cannotReceiveThoughts/>
+				<canStillReceiveThoughts/>
+				<ateThoughtSpecific>
+				</ateThoughtSpecific>				
+			</thoughtSettings>		
+			<relationSettings>
+				<renamer/>
+			</relationSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<apparelList></apparelList>		
+				<whiteApparelList></whiteApparelList>
+				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+				<weaponList></weaponList>
+				<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
+				<foodList></foodList>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+				<xenotypeList>
+				<li>Kadavr</li>
+				</xenotypeList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

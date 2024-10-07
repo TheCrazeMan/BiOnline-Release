@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<Ammo_MakeshiftGauge_Buck.label>Самодельный патрон для дробовика (дробь)</Ammo_MakeshiftGauge_Buck.label>
+	<Ammo_MakeshiftGauge_Buck.description>Самодельная версия крупного патрона для дробовика</Ammo_MakeshiftGauge_Buck.description>
+	
+	<Ammo_MakeshiftGauge_Slug.label>Самодельный патрон для дробовика (пуля)</Ammo_MakeshiftGauge_Slug.label>
+	<Ammo_MakeshiftGauge_Slug.description>Самодельная версия крупного патрона для дробовика</Ammo_MakeshiftGauge_Slug.description>
+	
+	<Ammo_MakeshiftKarov.label>Самодельный патрон для пистолета-пулемёта</Ammo_MakeshiftKarov.label>
+	<Ammo_MakeshiftKarov.description>Самодельная версия патрона для пистолета-пулемёта</Ammo_MakeshiftKarov.description>
+	
+	<Ammo_MakeshiftMagnum.label>Самодельный патрон для пистолета</Ammo_MakeshiftMagnum.label>
+	<Ammo_MakeshiftMagnum.description>Самодельная версия патрона для пистолета</Ammo_MakeshiftMagnum.description>
+	
+	<Ammo_MakeshiftSniper.label>Самодельный патрон для винтовки</Ammo_MakeshiftSniper.label>
+	<Ammo_MakeshiftSniper.description>Самодельная версия патрона для винтовки</Ammo_MakeshiftSniper.description>
+	
+	<Ammo_MakeshiftSoviet.label>Самодельный патрон для автомата</Ammo_MakeshiftSoviet.label>
+	<Ammo_MakeshiftSoviet.description>Самодельная версия патрона для автомата</Ammo_MakeshiftSoviet.description>
+	
+	<Ammo_40x53mmVOG25Grenade_Incendiary.label>Снаряд гранатомётный 40x53mm ВОГ-25 (Зажигательный)</Ammo_40x53mmVOG25Grenade_Incendiary.label>
+	<Ammo_40x53mmVOG25Grenade_Incendiary.description>Зажигательная граната, предназначенная для стрельбы из гранатомёта ГП-25.</Ammo_40x53mmVOG25Grenade_Incendiary.description>
+	
+	<Ammo_40x53mmVOG25Grenade_Foam.label>Снаряд гранатомётный 40x53mm ВОГ-25 (Пена)</Ammo_40x53mmVOG25Grenade_Foam.label>
+	<Ammo_40x53mmVOG25Grenade_Foam.description>Граната с пожарной пеной, предназначенная для стрельбы из гранатомёта ГП-25.</Ammo_40x53mmVOG25Grenade_Foam.description>
+	
+	<Ammo_BallistaBolt.label>Болт баллисты</Ammo_BallistaBolt.label>
+	<Ammo_BallistaBolt.description>Болт баллисты.</Ammo_BallistaBolt.description>
+	
+	<Projectile_BallistaBolt.label>Болт баллисты</Projectile_BallistaBolt.label>
+	<Projectile_BallistaBolt.description>Болт баллисты.</Projectile_BallistaBolt.description>
+	
+	<Ammo_BallistaBoltExplosive.label>Взрывной болт баллисты</Ammo_BallistaBoltExplosive.label>
+	<Ammo_BallistaBoltExplosive.description>Болт баллисты.</Ammo_BallistaBoltExplosive.description>
+	
+	<Projectile_BallistaBoltExplosive.label>Взрывной болт баллисты</Projectile_BallistaBoltExplosive.label>
+	<Projectile_BallistaBoltExplosive.description>Болт баллисты.</Projectile_BallistaBoltExplosive.description>
+	
+	<Ammo_BallistaBoltExpansive.label>Бронебойный болт баллисты</Ammo_BallistaBoltExpansive.label>
+	<Ammo_BallistaBoltExpansive.description>Болт баллисты.</Ammo_BallistaBoltExpansive.description>
+	
+	<Projectile_BallistaBoltExpansive.label>Бронебойный болт баллисты</Projectile_BallistaBoltExpansive.label>
+	<Projectile_BallistaBoltExpansive.description>Болт баллисты.</Projectile_BallistaBoltExpansive.description>
+	
+	<Projectile_BeeSwarmBallistaBolt.label>Болт баллисты</Projectile_BeeSwarmBallistaBolt.label>
+	<Projectile_BeeSwarmBallistaBolt.description>Болт баллисты.</Projectile_BeeSwarmBallistaBolt.description>
+	
+	<Projectile_BeeSwarmBallistaBoltExplosive.label>Взрывной болт баллисты</Projectile_BeeSwarmBallistaBoltExplosive.label>
+	<Projectile_BeeSwarmBallistaBoltExplosive.description>Болт баллисты.</Projectile_BeeSwarmBallistaBoltExplosive.description>
+	
+	<Projectile_BeeSwarmBallistaBoltExpansive.label>Бронебойный болт баллисты</Projectile_BeeSwarmBallistaBoltExpansive.label>
+	<Projectile_BeeSwarmBallistaBoltExpansive.description>Болт баллисты.</Projectile_BeeSwarmBallistaBoltExpansive.description>
+	
+	<Ammo_12Gauge_SlugAP.label>Патрон 12 калибра (БП)</Ammo_12Gauge_SlugAP.label>
+	<Ammo_12Gauge_SlugAP.description>Патрон со стальной пулей и повышенной навеской пороха предназначенный для гладкоствольных ружий.</Ammo_12Gauge_SlugAP.description>
+	
+	<Ammo_12Gauge_Flechette.label>Патрон 12 калибра (флешетта)</Ammo_12Gauge_Flechette.label>
+	<Ammo_12Gauge_Flechette.description>Патрон начинённый гладкими стрелами-дротиками. Имеет огромный запас бронепробития и наносит огромные увечья</Ammo_12Gauge_Flechette.description>
+	
+	<RoundShot.label>Патрон для бомбарды</RoundShot.label>
+	<RoundShot.description>Примитивный патрон для бомбарды, представляющий из себя насыпку пороха в бумажке и стальной шарик.</RoundShot.description>
+	
+	<Ammo_PlasmaCell.label>Плазменная ячейка</Ammo_PlasmaCell.label>
+	<Ammo_PlasmaCell.description>Ячейка с концентрированной плазмой, представляет собой патрон для плазменного оружия.</Ammo_PlasmaCell.description>
+	
+	<Ammo_PlasmaCell_Overcharge.label>Ячейка с перегруженной плазмой</Ammo_PlasmaCell_Overcharge.label>
+	<Ammo_PlasmaCell_Overcharge.description>Ячейка с перегруженной плазмой, наносящей ещё большие повреждения и представляющая ещё большую опасность. Взрывоопасно!</Ammo_PlasmaCell_Overcharge.description>
+	
+	<Ammo_PMCShell_Bolter.label>Патрон для болтера</Ammo_PMCShell_Bolter.label>
+	<Ammo_PMCShell_Bolter.description>Патрон для тяжёлой пушки Курка.</Ammo_PMCShell_Bolter.description>
+	
+	<Ammo_PMCShell_Sniper.label>Патрон для болт-винтовки</Ammo_PMCShell_Sniper.label>
+	<Ammo_PMCShell_Sniper.description>Патрон для тяжёлой снайперской винтовки Nomad.</Ammo_PMCShell_Sniper.description>
+	
+	<Ammo_PMCShell_HMG.label>Патрон для болт-пулемёта</Ammo_PMCShell_HMG.label>
+	<Ammo_PMCShell_HMG.description>Патрон для тяжёлого пулемёта IronClaw.</Ammo_PMCShell_HMG.description>
+	
+</LanguageData>
